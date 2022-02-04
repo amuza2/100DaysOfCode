@@ -3,7 +3,7 @@ I write each progress I do
 
 The language That I'm using for this 100 Days is "Python"
 
-Day 1:
+## Day 1:
 
 Started learning Selenium
 
