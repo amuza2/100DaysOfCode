@@ -1,6 +1,6 @@
-Day 1:
+Day 2:
 
-Started learning Selenium
+Continue learning Selenium
 
 I learned:
 
