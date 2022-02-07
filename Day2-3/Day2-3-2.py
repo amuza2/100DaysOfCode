@@ -7,7 +7,6 @@ driver = webdriver.Chrome(path)
 driver.get(website)
 #driver.maximize_window()
 
-container = driver.find_element_by_class_name("adbl-impression-container ")
 products = driver.find_elements_by_css_selector(".productListItem")
 
 book_title, book_author, book_length = [], [], []
@@ -27,5 +26,5 @@ driver.quit()
 
 my_audio = {"title":book_title, "author":book_author, "length":book_length}
 df = pd.DataFrame(my_audio)
-df.to_csv("audible.csv", index=False)
+#df.to_csv("audible.csv", index=False)
 print(df.head())
