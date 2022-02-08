@@ -11,7 +11,6 @@ website = "https://www.audible.com/adblbestsellers?ref=a_search_t1_navTop_pl0cg1
 path = r"C:/SeleniumDrivers/chromedriver.exe"
 driver = webdriver.Chrome(path, options=options)
 driver.get(website)
-#driver.maximize_window()
 
 length = driver.find_elements_by_css_selector("ul.bc-list.pagingElements.bc-list-nostyle.bc-list-horizontal a")
 page = 1
