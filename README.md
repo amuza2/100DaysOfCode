@@ -20,3 +20,9 @@ more info [here](Day2-3/Day2-3.md)
 Learning more about Selenium
 
 more info [here](Day4/Day4.md)
+
+## Day 5-6:
+
+Learning more about Selenium, (1- login; 2- infinit scrolling)
+
+more info [here](Day5-6)
