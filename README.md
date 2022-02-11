@@ -26,3 +26,10 @@ code: [here](Day4)
 Learning more about Selenium, (1- login; 2- infinit scrolling)
 
 code: [here](Day5-6)
+
+## Day 5-6:
+
+scraping a website with scrapy
+
+code: [here](Day7)
+
