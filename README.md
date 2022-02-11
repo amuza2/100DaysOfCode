@@ -27,7 +27,7 @@ Learning more about Selenium, (1- login; 2- infinit scrolling)
 
 code: [here](Day5-6)
 
-## Day 5-6:
+## Day 7:
 
 scraping a website with scrapy
 
