@@ -29,7 +29,12 @@ code: [here](Day5-6)
 
 ## Day 7:
 
-scraping a website with scrapy
+scraping a website with scrapy using the basic template
 
 code: [here](Day7)
 
+## Day 8:
+
+scraping a website with scrapy using the Crawl template
+
+code: [here](Day8)
