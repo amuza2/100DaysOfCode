@@ -41,6 +41,6 @@ code: [here](Day8)
 
 ## Day 9-10:
 
-An upwork project for scraping clinic names and urls
+An upwork project for scraping clinique names and urls
 
 code: [here](Day9-10)
