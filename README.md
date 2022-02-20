@@ -38,3 +38,9 @@ code: [here](Day7)
 scraping a website with scrapy using the Crawl template
 
 code: [here](Day8)
+
+## Day 9-10:
+
+An upwork project for scraping clinic names and urls
+
+code: [here](Day9-10)
