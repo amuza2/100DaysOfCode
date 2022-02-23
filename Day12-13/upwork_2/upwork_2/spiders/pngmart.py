@@ -12,11 +12,11 @@ class PngmartSpider(scrapy.Spider):
             yield response.follow(url = link, callback=self.image_item)
 
     def image_item(self, response):
-        image_urls = []
+        file_urls = []
         title = response.css("header h1::text").get()
-        image = response.css(".download::attr(href)").get()
-        image_urls.append(response.urljoin(image))
+        file = response.css(".download::attr(href)").get()
+        file_urls.append(response.urljoin(file))
         yield { 
                 "title": title,
-                "image_urls": image_urls
+                "file_urls": file_urls
         }

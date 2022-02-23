@@ -12,8 +12,10 @@ BOT_NAME = 'upwork_2'
 SPIDER_MODULES = ['upwork_2.spiders']
 NEWSPIDER_MODULE = 'upwork_2.spiders'
 
+#ITEM_PIPELINES = {'upwork_2.pipelines.ImageDownloaderPipeline': 1}
 ITEM_PIPELINES = {'upwork_2.pipelines.ImageDownloaderPipeline': 1}
-IMAGES_STORE = 'Local_images'
+FILES_STORE = 'Local_files'
+#IMAGES_STORE = 'Local_images'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'upwork_2 (+http://www.yourdomain.com)'
