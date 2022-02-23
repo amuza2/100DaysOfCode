@@ -50,3 +50,9 @@ code: [here](Day9-10)
 scraper to download images using scrapy
 
 code: [here](Day11)
+
+## Day 12-13:
+
+Downloaded png images using scrapy
+
+code: [here](Day12-13)
