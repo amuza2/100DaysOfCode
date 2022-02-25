@@ -12,7 +12,12 @@ BOT_NAME = 'upwork_3'
 SPIDER_MODULES = ['upwork_3.spiders']
 NEWSPIDER_MODULE = 'upwork_3.spiders'
 
+ITEM_PIPELINES = {"upwork_3.pipelines.ImageDownloaderPipeline": 1}
+#ITEM_PIPELINES = {"scrapy.pipelines.images.ImagesPipeline": 1}
+IMAGES_STORE = "Local_images"
 
+FEED_EXPORT_FIELDS = ["title","subtitle","online_Orderable_State","price","priceCurrency" ,"consumption_Emission","model_Series","color","interior_Color" ,"condition","mileage","model","number_Of_PreviousOwners","transmission","warranty"]
+#FEED_EXPORT_ENCODING = "utf-8"
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'upwork_3 (+http://www.yourdomain.com)'
 
