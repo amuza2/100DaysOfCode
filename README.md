@@ -68,3 +68,9 @@ code: [here](Day14)
 scrape data from an API demo project
 
 code: [here](Day15)
+
+## Day 16:
+
+scrape data from an API demo project
+
+code: [here](Day16)
