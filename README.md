@@ -71,6 +71,6 @@ code: [here](Day15)
 
 ## Day 16:
 
-scrape data from an API and downloaded images
+scrape data from an API and download images
 
 code: [here](Day16)
