@@ -1,4 +1,4 @@
-# Scrapy settings for upwork_4 project
+# Scrapy settings for fiverr_1 project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,18 +7,21 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'upwork_4'
+BOT_NAME = 'fiverr_1'
 
-SPIDER_MODULES = ['upwork_4.spiders']
-NEWSPIDER_MODULE = 'upwork_4.spiders'
+SPIDER_MODULES = ['fiverr_1.spiders']
+NEWSPIDER_MODULE = 'fiverr_1.spiders'
 
-
+#USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36'
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'upwork_4 (+http://www.yourdomain.com)'
+#USER_AGENT = 'fiverr_1 (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
-
+ROBOTSTXT_OBEY = False
+FEED_EXPORT_ENCODING = "utf-8"
+CONCURRENT_REQUESTS = 2
+DOWNLOAD_DELAY = 0.5
+COOKIES_ENABLED = False
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
 
@@ -40,20 +43,28 @@ ROBOTSTXT_OBEY = True
 #DEFAULT_REQUEST_HEADERS = {
 #   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
 #   'Accept-Language': 'en',
+	#"User-Agent" : 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36'
 #}
 
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'upwork_4.middlewares.Upwork4SpiderMiddleware': 543,
+#    'fiverr_1.middlewares.Fiverr1SpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'upwork_4.middlewares.Upwork4DownloaderMiddleware': 543,
+#    'fiverr_1.middlewares.Fiverr1DownloaderMiddleware': 543,
 #}
-
+#DOWNLOADER_MIDDLEWARES = {
+	#'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
+	#'scrapy_useragents.downloadermiddlewares.useragents.UserAgentsMiddleware': 500,
+    # ...
+    #'rotating_proxies.middlewares.RotatingProxyMiddleware': 610,
+    #'rotating_proxies.middlewares.BanDetectionMiddleware': 620,
+    # ...
+#}
 # Enable or disable extensions
 # See https://docs.scrapy.org/en/latest/topics/extensions.html
 #EXTENSIONS = {
@@ -63,7 +74,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    'upwork_4.pipelines.Upwork4Pipeline': 300,
+#    'fiverr_1.pipelines.Fiverr1Pipeline': 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)

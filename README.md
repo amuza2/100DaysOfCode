@@ -69,8 +69,8 @@ scrape data from an API demo project
 
 code: [here](Day15)
 
-## Day 16:
+## Day 16-17:
 
 scrape data from an API and download images
 
-code: [here](Day16)
+code: [here](Day16-17)

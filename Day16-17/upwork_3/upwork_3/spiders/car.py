@@ -4,7 +4,6 @@ import json
 
 class CarSpider(scrapy.Spider):
     name = 'car'
-    #allowed_domains = ['dealer.porsche.com']
     page = 1
     start_urls = ['https://finder.porsche.com/api/ca/en-CA/search?orderBy=price_desc&distanceUnit=kilometer&condition=used&sellers=1606&page=1']
 
@@ -14,21 +13,16 @@ class CarSpider(scrapy.Spider):
         if all_items:
             for item in all_items:
                 title = item.get("description").get("title")
-                if title != None:
-                    title = title.encode("ascii", "ignore").decode("utf-8")
-                
+                title = title.encode("ascii", "ignore").decode("utf-8") if title is not None else ""
                 consuption = item.get("description").get("consumptionEmission")
-                if consuption != None:
-                    consuption = consuption.encode("ascii", "ignore").decode("utf-8")
+                consuption = consuption.encode("ascii", "ignore").decode("utf-8") if consuption is not None else ""
             
                 yield {
                     "online_Orderable_State": item.get("description").get("onlineOrderableState"),
                     "subtitle": item.get("description").get("subtitle"),
                     "title": title,
-
                     "price": item.get("description").get("price"),
                     "consumption_Emission": consuption,
-
                     "model_Series": item.get("description").get("modelSeries"),
                     "color": item.get("meta").get("color"),
                     "condition": item.get("meta").get("condition"),
