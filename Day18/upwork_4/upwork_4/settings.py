@@ -12,6 +12,7 @@ BOT_NAME = 'upwork_4'
 SPIDER_MODULES = ['upwork_4.spiders']
 NEWSPIDER_MODULE = 'upwork_4.spiders'
 ROBOTSTXT_OBEY = False
+"""
 #splash
 SPLASH_URL = 'http://localhost:8050/'
 DOWNLOADER_MIDDLEWARES = {
@@ -24,7 +25,7 @@ SPIDER_MIDDLEWARES = {
 }
 DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'
 HTTPCACHE_STORAGE = 'scrapy_splash.SplashAwareFSCacheStorage'
-
+"""
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'upwork_4 (+http://www.yourdomain.com)'
