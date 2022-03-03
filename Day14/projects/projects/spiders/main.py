@@ -22,7 +22,13 @@ class QuoteSpider(scrapy.Spider):
         #open_in_browser(response)
         items = ProjectsItem()
         all_div_quotes = response.css('div.quote')
+        for quote in all_div_quotes:
+            items["title"] = quote.css('span.text::text').get()
+            items["author"] = quote.css('.author::text').get()
+            items["tag"] = quote.css('.tag::text').get()
+            yield items
 
+        """
         for quotes in all_div_quotes:
             title = quotes.css('span.text::text').getall()
             author = quotes.css('.author::text').getall()
@@ -35,3 +41,4 @@ class QuoteSpider(scrapy.Spider):
                 items['tag'] = tag
 
             yield items
+        """
