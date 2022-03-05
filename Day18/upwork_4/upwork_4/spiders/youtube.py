@@ -1,5 +1,6 @@
 import scrapy
 from scrapy_selenium import SeleniumRequest
+from scrapy.selector import Selector
 
 
 class YoutubeSpider(scrapy.Spider):
@@ -18,10 +19,10 @@ class YoutubeSpider(scrapy.Spider):
         yield SeleniumRequest(wait_time=3, url=self.start_urls[0],screenshot=True, callback=self.parse)
     
     def parse(self, response):
-        img = response.meta["screenshot"]
-        with open("screenshot.png", "wb") as f:
-            f.write(img) 
-        titles = res.css(".ytd-grid-renderer #video-title::attr(href)").getall()
+        driver = Selector(response.body)
+        #with open("screenshot.png", "wb") as f:
+        #    f.write(img) 
+        titles = response.css(".ytd-grid-renderer #video-title::attr(href)").getall()
         yield {"titles": titles}
         
     def item_scrape(self, response):
