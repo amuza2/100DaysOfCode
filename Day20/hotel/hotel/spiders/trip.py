@@ -21,7 +21,7 @@ class TripSpider(scrapy.Spider):
                 profile_name = comment.css("h1 .Hgccy.b.dWeSQ::text").get()
                 id_review = ''.join((comment.css(".bCnPW.Pd a::attr(href)").get()).split('-')[1:4])
                 name_business_review = response.css(".LzYdF.b.W.o.q.ui_link::text").get()
-                ranking_review = response.css(".emWez.F1 span").get()
+                ranking_review = re.findall(r"\d+",response.css(".emWez.F1 span").get())
                 review_date = response.css(".bJaRP._Z.o .wlOhd a::text").get()
 
                 yield {
