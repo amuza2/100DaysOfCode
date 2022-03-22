@@ -6,6 +6,7 @@
 
 # useful for handling different item types with a single interface
 from scrapy.pipelines.files import FilesPipeline
+from slugify import slugify
 
 
 class ImageDownloaderPipeline(FilesPipeline):
