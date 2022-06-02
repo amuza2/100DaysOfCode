@@ -8,6 +8,7 @@ names: amount, person, house, days
 x = (15 * 30)/ 30
 """
 
+import fpdf
 
 class Bill:
     monthly_fee = 120
@@ -36,12 +37,9 @@ class Bill:
             print(f"{i[0]} pays {i[1]}")
 
     def to_pdf(self,filename="Billfile"):
-        with open("{filename}", 'w'):
+        pass
 
-med = Bill("med", 25)
-med.add_person("amine", 20)
+# med = Bill("med", 25)
+# med.add_person("amine", 20)
 
-med.show_result()
-
-
-
+# med.show_result()
