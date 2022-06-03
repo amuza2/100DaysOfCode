@@ -31,7 +31,6 @@ class Hotel:
         client.ngeust = ngeust
         client.ndays = ndays
 
-
         if client.name not in self.people_in_hotel:
             if nroom<self.arooms or ngeust<self.ageusts:
                 self.people_in_hotel[client.name] = [client.name,client.identity,client.promo_code]
@@ -40,8 +39,6 @@ class Hotel:
                 print(f"{client.name} now has a reservation.")
         else:
             print(f"{client.name} geust already has a reservation.")
-
-
 
 
     def capacity(self):

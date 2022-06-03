@@ -9,16 +9,22 @@ x = (15 * 30)/ 30
 """
 
 import fpdf
+from datetime import datetime
 
-class Bill:
+class Client:
+    def __init__(self, name):
+        self.name = name
+        self.day = datetime.
+
+
+class Flat:
     monthly_fee = 120
     people = []
     after_calc = []
 
 
-    def __init__(self,name,days):
-        self.people.append([name,days])
-
+    def __init__(self,client,days):
+        self.
 
     def pays(self):
         split = self.monthly_fee / len(self.people) 
@@ -39,7 +45,10 @@ class Bill:
     def to_pdf(self,filename="Billfile"):
         pass
 
-# med = Bill("med", 25)
-# med.add_person("amine", 20)
 
-# med.show_result()
+class CreatePDFReport:
+    def __init__(self, filename):
+        self.filename = filename
+
+    def to_pdf(self, flatmate)
+
