@@ -33,8 +33,11 @@ class Flat:
         self.people_in_flat = {}
         self.days_in_month = 30
 
+    def set_attribute(self,name,value):
+        self.__dict__[name] = value
 
     def add_person(self, client):
+        # set_attribute(client.name, client)
         self.people_in_flat[client.name] = client
         print(f"Client {client.name} has been added")
 
@@ -48,7 +51,7 @@ class Flat:
             setattr(Flat, "cost", cost)
             # print(f"{v.name} spent {days_in_flat.days-1} days, he has to pay: {cost}")
 
-        print(self.people_in_flat.__dict__)
+        # print(self.people_in_flat.__dict__)
 
 
 class CreatePDFReport:
@@ -62,10 +65,12 @@ class CreatePDFReport:
         pdf.cell(w=0,h=80,txt="Flatmates Bill",border=1,align='C',ln=1)
         pdf.cell(w=100,h=40,txt="Period:",border=1)
         pdf.set_font(family="Times",size=24,style='')
-        pdf.cell(w=120,h=40,txt=f"{flat.people_in_flat.date.month} {flat.people_in_flat.date.year}",border=1,ln=1)
-        pdf.cell(w=0,h=100,txt="",ln=1)
-
+        c = 1
         for i in flat.people_in_flat.values():
+            if c == 1:
+                pdf.cell(w=120,h=40,txt=f"{i.date.year} - {i.date.month}",border=1,ln=1)
+                pdf.cell(w=0,h=100,txt="",ln=1)
+                c = 0
             pdf.cell(w=110,h=40,txt=f"{i.name}:",border=1)
             pdf.cell(w=110,h=40,txt=f"{flat.cost}",border=1,ln=1)            
 
@@ -85,5 +90,5 @@ flat.add_person(zue)
 flat.bill()
 
 
-# export = CreatePDFReport("invoice")
-# export.to_pdf(flat)
+export = CreatePDFReport("invoice")
+export.to_pdf(flat)
