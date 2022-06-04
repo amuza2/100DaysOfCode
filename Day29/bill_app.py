@@ -13,16 +13,18 @@ from datetime import datetime, timedelta
 
 
 class Client:
+
     def __init__(self, name, phone):
         self.name = name
         self.phone = phone
         self.date = datetime.strptime(datetime.now().strftime("%Y %m %d"),"%Y %m %d")
 
+
     def update_info(self, name, phone, date):
         self.name = name
         self.phone = phone
         date = date.split()
-        self.date = datetime(date[0], date[1], date[2])
+        self.date = datetime(int(date[0]), int(date[1]), int(date[2]))
 
 class Flat:
 
@@ -42,8 +44,8 @@ class Flat:
 
         for i in self.people_in_flat.values():
             days_in_flat = datetime(i.date.year, i.date.month+1, 1) - i.date
-            c = (part * days_in_flat.days) / self.days_in_month
-            print(f"{i.name} spent {days_in_flat.days} days, he has to pay: {c}")
+            c = (part * (days_in_flat.days-1)) / self.days_in_month
+            print(f"{i.name} spent {days_in_flat.days-1} days, he has to pay: {c}")
 
 
     def to_pdf(self,filename="Billfile"):
@@ -61,8 +63,10 @@ flat = Flat()
 
 med = Client("med", 1234)
 zim = Client("zim", 5678)
-zim.update_info(date="2022 06 15")
+zue = Client("zue", 9874)
+zim.update_info(name="zim",phone="1234",date="2022 06 15")
 
-# flat.add_person(med)
-# flat.add_person(zim)
-# flat.bill()
+flat.add_person(med)
+flat.add_person(zim)
+flat.add_person(zue)
+flat.bill()
