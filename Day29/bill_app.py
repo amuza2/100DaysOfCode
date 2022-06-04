@@ -42,22 +42,36 @@ class Flat:
     def bill(self):
         part = self.fees / len(self.people_in_flat.keys())
 
-        for i in self.people_in_flat.values():
-            days_in_flat = datetime(i.date.year, i.date.month+1, 1) - i.date
-            c = (part * (days_in_flat.days-1)) / self.days_in_month
-            print(f"{i.name} spent {days_in_flat.days-1} days, he has to pay: {c}")
+        for k,v in self.people_in_flat.items():
+            days_in_flat = datetime(v.date.year, v.date.month+1, 1) - v.date
+            cost = (part * (days_in_flat.days-1)) // self.days_in_month
+            setattr(Flat, "cost", cost)
+            # print(f"{v.name} spent {days_in_flat.days-1} days, he has to pay: {cost}")
 
-
-    def to_pdf(self,filename="Billfile"):
-        pass
+        print(self.people_in_flat.__dict__)
 
 
 class CreatePDFReport:
     def __init__(self, filename):
         self.filename = filename
 
-    def to_pdf(self, flatmate):
-        pass
+    def to_pdf(self, flat):
+        pdf = fpdf.FPDF('p','pt','A4')
+        pdf.add_page()
+        pdf.set_font(family="Times",size=24,style='B')
+        pdf.cell(w=0,h=80,txt="Flatmates Bill",border=1,align='C',ln=1)
+        pdf.cell(w=100,h=40,txt="Period:",border=1)
+        pdf.set_font(family="Times",size=24,style='')
+        pdf.cell(w=120,h=40,txt=f"{flat.people_in_flat.date.month} {flat.people_in_flat.date.year}",border=1,ln=1)
+        pdf.cell(w=0,h=100,txt="",ln=1)
+
+        for i in flat.people_in_flat.values():
+            pdf.cell(w=110,h=40,txt=f"{i.name}:",border=1)
+            pdf.cell(w=110,h=40,txt=f"{flat.cost}",border=1,ln=1)            
+
+
+        pdf.output(f"{self.filename}.pdf")
+
 
 flat = Flat()
 
@@ -65,8 +79,11 @@ med = Client("med", 1234)
 zim = Client("zim", 5678)
 zue = Client("zue", 9874)
 zim.update_info(name="zim",phone="1234",date="2022 06 15")
-
 flat.add_person(med)
 flat.add_person(zim)
 flat.add_person(zue)
 flat.bill()
+
+
+# export = CreatePDFReport("invoice")
+# export.to_pdf(flat)
