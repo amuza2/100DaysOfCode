@@ -1,7 +1,7 @@
-from flat import Client, Flat
+from flat import Flat
 import fpdf
 import webbrowser
-
+import os
 
 
 class CreatePDFReport:
@@ -28,6 +28,11 @@ class CreatePDFReport:
             pdf.cell(w=110,h=40,txt=f"{i['name']}:",border=0)
             pdf.cell(w=110,h=40,txt=f"{i['cost']}",border=0,ln=1)            
 
-
+        try:
+        	os.chdir("files")
+        except:
+        	os.mkdir("files")
+        finally:
+        	os.chdir("files")
         pdf.output(f"{self.filename}.pdf")
         webbrowser.open(f"{self.filename}.pdf")
