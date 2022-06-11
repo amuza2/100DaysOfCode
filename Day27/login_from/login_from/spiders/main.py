@@ -7,7 +7,7 @@ class MainSpider(scrapy.Spider):
     allowed_domains = ['quotes.toscrape.com']
     start_urls = ['https://quotes.toscrape.com/login']
 
-    def authentication_failed(self, response):
+    def authentication(self, response):
         if response.css(".row.header-box p a::text").get() == "Logout":
             return True
 
@@ -18,5 +18,5 @@ class MainSpider(scrapy.Spider):
             )
 
     def after_login(self, response):
-        if self.authentication_failed(response):
+        if self.authentication(response):
             print("==> Loged in")
