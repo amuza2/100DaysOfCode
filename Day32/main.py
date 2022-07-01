@@ -10,7 +10,7 @@ Builder.load_file("frontend.kv")
 
 class FirstScreen(Screen):
 	def search_image(self):
-		pass
+		self.manager.current_screen.ids.img.source = "analytics.png"
 
 class RootWidget(ScreenManager):
 	pass
