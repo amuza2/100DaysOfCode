@@ -3,6 +3,7 @@ create a gui app that showes image when you write a name
 
 """
 import wikipedia
+import requests
 from kivy.app import App
 from kivy.uix.screenmanager import ScreenManager, Screen
 from kivy.lang import Builder
@@ -10,16 +11,21 @@ from kivy.lang import Builder
 Builder.load_file("frontend.kv")
 
 class FirstScreen(Screen):
-	def search_image(self):
+	def get_link(self):
 		query = self.manager.current_screen.ids.user_query.text
 		page = wikipedia.page(query)
 		image_link = page.images[0]
-		req = request.get(image_link)
-		with open("file/image.jpeg", "wb") as file:
+		return image_link
+
+	def download_image(self):
+		req = requests.get(self.get_link())
+		image_path = "image.jpg"
+		with open(image_path, "wb") as file:
 			file.write(req.content)
+		return image_path
 
-
-		# self.manager.current_screen.ids.img.source = "analytics.png"
+	def preview_image(self):
+		self.manager.current_screen.ids.img.source = self.download_image()
 
 class RootWidget(ScreenManager):
 	pass
