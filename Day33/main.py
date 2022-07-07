@@ -1,9 +1,11 @@
 import time
 import random
+import ipdb
 
 class Sprite():
 	def __init__(self, life, defence, damage):
 		self.level = 1
+		self.max_life = 150
 		self.exp = 0
 		self.life = life
 		self.defence = defence
@@ -12,16 +14,20 @@ class Sprite():
 		self.penetration = 60
 
 	def attack(self, user):
-		if random.randint(1, 10) <= self.critical:
-			if random.randint(1, 10) <= self.penetration:
-				user.life -= self.damage*2
+		if random.randint(1, 100) <= self.critical:
+			if random.randint(1, 100) <= self.penetration:
+				user.life -= abs(self.damage*2)
+				print("critical and penetration used")
 			else:	
-				user.life -= (self.damage - user.defence)*2
+				user.life -= abs((self.damage - user.defence)*2)
+				print("critical used")
 		else:
-			if random.randint(1, 10) <= self.penetration:
-				user.life -= self.damage*2
+			if random.randint(1, 100) <= self.penetration:
+				user.life -= self.damage
+				print("penetration used")
 			else:
-				user.life -= self.damage - user.defence
+				user.life -= abs(self.damage - user.defence)
+				print("no skill used")
 
 class Hero(Sprite):
 	pass
@@ -35,10 +41,50 @@ class Boss(Sprite):
 	pass
 
 hero = Hero(150, 30, 40)
-crops = Creature(50, 20, 50)
+crops = Creature(50, 5, 20)
+
+def level_up():
+	hero.life = hero.max_life
+	hero.level += 1
+	hero.exp = 0
+	print(f"your level is {hero.level}")
+	print()
+	print("""
+		Choose skill you want to level up:
+		1- Life
+		2- Defence
+		3- Damage
+		4- Critical hit
+		5- Penetration
+		""")
+	option = int(input())
+	if option == 1:
+		hero.max_life += 10
+		hero.life += 10
+		print(f"Now you have {hero.life} life")
+	elif option == 2:
+		hero.defence += 2
+		print(f"Now you have {hero.defence} defence")
+	elif option == 3:
+		hero.damage += 2
+		print(f"Now you have {hero.damage} damage")
+	elif option == 4:
+		if hero.critical < 90:
+			hero.critical += 1
+			print(f"Now you have {hero.critical} critical")
+	elif option == 5:
+		if hero.penetration < 50:
+			hero.penetration += 1
+			print(f"Now you have {hero.penetration} penetration")
+	else:
+		pass
 
 def attack_creature():
 	crops_number = int(input("How many crops do you want to fight: "))
+	CROPS = crops_number
+	get_exp = False
+	if crops_number > 1:
+		get_exp = True
 	print("""
 		Do you want 
 		  1- fast fight?
@@ -47,8 +93,9 @@ def attack_creature():
 	situation = int(input())
 	if situation == 2:
 		while True:
+			print("*---------------------------*")
 			print("you are attacking creature...")
-			time.sleep(2)
+			# time.sleep(2)
 			print("crop life is", crops.life)
 			hero.attack(crops)
 			print("crop life is", crops.life)
@@ -60,23 +107,28 @@ def attack_creature():
 					crops.life = 50
 				else:
 					print("crops dead you won!")
-					break
+					crops.life = 50
+					if get_exp:
+						hero.exp += CROPS * 50
+						if hero.exp >= hero.level*100:
+							level_up()
+					# break
 
-			else:	
-				print("crop life is ",crops.life)
-
-			time.sleep(2)
+			# time.sleep(2)
 			print("crop is attacking you...")
-			time.sleep(2)
+			# time.sleep(2)
 			print("hero life is", hero.life)
 			for i in range(crops_number):
+				# ipdb.set_trace()
 				crops.attack(hero)
 				print("hero life is", hero.life)
 			
 			if hero.life<=0:
 				print("you are dead, crop killed you!")
+				hero.life = hero.max_life
 				break
-			# print("Hero life is ",hero.life)
+			print("*                           *")
+			print("*---------------------------*")
 
 	else:
 		while True:
@@ -87,6 +139,16 @@ def attack_creature():
 					crops.life = 50
 				else:
 					print("crops dead you won!")
+					crops.life = 50
+					# ipdb.set_trace()
+					if get_exp:
+						hero.exp += CROPS * 50
+						if hero.exp >= hero.level*100:
+							level_up()
+					else:
+						hero.exp += 50
+						if hero.exp >= hero.level*100:
+							level_up()
 					break
 
 			for i in range(crops_number):
@@ -94,20 +156,25 @@ def attack_creature():
 			
 			if hero.life<=0:
 				print("you are dead, crops killed you!")
+				hero.life = hero.max_life
 				break
 
 def main():
-	print("""
-		1- Attack Creature
-		2- Attack Boss
+	while True:
+		print("""
+			1- Attack Creature
+			2- Attack Boss
+			3- Exit
 
-		what do you want to attack?
-		""")
-	choise = input()
-	if choise == '1':
-		attack_creature()
-	else:
-		print("not yet")
+			what do you want to attack?
+			""")
+		choice = int(input())
+		if choice == 1:
+			attack_creature()
+		elif choice == 2:
+			print("not yet")
+		else:
+			break
 
 	
 	
