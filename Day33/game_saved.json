@@ -1,0 +1,9 @@
+level: 6
+life: 180
+max_life: 180
+exp: 500
+defence: 30
+damage: 42
+critical: 50
+penetration: 60
+boss_level: 2
