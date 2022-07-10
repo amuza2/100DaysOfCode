@@ -1,26 +1,31 @@
+from kivy.app import App
+from kivy.uix.screenmanager import ScreenManager, Screen
+from kivy.lang import Builder
 
+Builder.load_file("frontend.kv")
 
-class Webcam:
-	def __init__(self):
-		pass
-
-	def draw():
-		pass
-
-	def start_recording(self):
-		pass
+class CameraScreen(Screen):
+	def start(self):
+		self.ids.camera.play = True
+		self.ids.camera_button.text = "Stop Camera"
+		self.ids.camera.texture = self.ids.camera._camera.texture
 
 	def stop(self):
-		pass
+		self.ids.camera.play = False
+		self.ids.camera_button.text = "Start Camera"
+		self.ids.camera.texture = None
 
 	def capture(self):
 		pass
 
-	def generate_link(self):
-		pass
+class ImageScreen(Screen):
+	pass
 
-	def copy_link(self):
-		pass
+class RootWidget(ScreenManager):
+	pass
 
-	def open_in_browser(self):
-		pass
+class MainApp(App):
+	def build(self):
+		return RootWidget()
+
+MainApp().run()
