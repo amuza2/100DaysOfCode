@@ -24,6 +24,8 @@ class CameraScreen(Screen):
 		if self.ids.camera.play == True:
 			self.ids.camera.export_to_png(file_path)
 
+		self.manager.current = "image_screen"
+
 class ImageScreen(Screen):
 	pass
 
