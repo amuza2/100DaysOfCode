@@ -1,10 +1,12 @@
 import PySimpleGUI as sg
 from tool import convert_to_bytes
 
+
+sg.theme("darkbrown")
 layout = [
         [sg.T("Select a file")],
         [sg.I(key="-IMG-",enable_events=True), sg.FileBrowse(file_types=(("All Files",["*.jpeg","*.jpg","*.png"]),
-        																 ("JPEG","*.jpeg"),("jpg","*.jpg"),("PNG","*.png")))],
+									("JPEG","*.jpeg"),("jpg","*.jpg"),("PNG","*.png")))],
         [sg.Image(key="-PHOTO-",size=(300,300))],
         [sg.Combo(["US","England","Spain"], default_value="US"), sg.Checkbox("check",key="-CHK-", enable_events=True),
         sg.Ok(),sg.Cancel(),sg.Button("Clear")]
