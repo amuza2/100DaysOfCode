@@ -3,6 +3,21 @@ from manage import *
 from tool import convert_to_bytes
 
 
+def create_contact_gui():
+	layout = [
+			[sg.T("First name",size=(10,1)),sg.I(),sg.FileBrowse(file_types=(("All Files",["*.jpeg","*.jpg","*.png"]),
+																			("JPEG","*.jpeg"),("jpg","*.jpg"),("PNG","*.png")))],
+			[sg.T("Last name",size=(10,1)),sg.I()],
+			[sg.T("Gender",size=(10,1)),sg.Combo(["Male","Female"])],
+			[sg.T("Age",size=(10,1)),sg.Slider(range=(1,100),orientation="horizontal")],
+			]
+	window = sg.Window("Create Contact", layout)
+	while True:
+		event, value = window.read()
+		if event == sg.WIN_CLOSED:
+			window.close()
+			break
+
 def create_user_gui():
 	layout = [
 			[sg.T("User name", size=(10,1)), sg.I(key="-USER-")],
@@ -96,8 +111,9 @@ def main():
 			list_user_gui()
 		elif event == "Delete user":
 			delete_user_gui()
-		
-		# print(event,value)
+		elif event == "Create contact":
+			create_contact_gui()
+
 
 if __name__ == "__main__":
 	sg.theme("DarkGrey")

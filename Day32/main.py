@@ -1,5 +1,5 @@
 """
-create a gui app that showes image when you write a name
+create a gui app that showes an image of what you write using wikipedia module
 
 """
 import wikipedia
