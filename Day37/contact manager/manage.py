@@ -34,9 +34,23 @@ def delete_user(username):
 	user.delete()
 
 
-def create_contact():
+def contact_list():
 	contact = Contact.objects()
 	return contact
+
+def create_contact(first_name,last_name,address,phone,mobile,email,gender,occupation,age,photo):
+	contact = Contact()
+	contact.first_name = first_name  
+	contact.last_name = last_name  
+	contact.address = address  
+	contact.phone = phone  
+	contact.mobile = mobile  
+	contact.email = email  
+	contact.gender = gender  
+	contact.occupation = occupation  
+	contact.age = age  
+	contact.photo = photo  
+	contact.save()
 
 def query_contact(email):
 	contact = Contact.objects(email=email).first()

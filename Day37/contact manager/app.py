@@ -1,22 +1,65 @@
 import PySimpleGUI as sg
 from manage import *
 from tool import convert_to_bytes
+import shutil
 
 
 def create_contact_gui():
+	sg.set_options(element_padding=(5,10))
+	layout_left = [
+			[sg.T("First name",size=(9,1)),sg.I(key="-FIRST-")],
+			[sg.T("Last name",size=(9,1)),sg.I(key="-LAST-")],
+			[sg.T("Address",size=(9,1)),sg.I(key="-ADD-")],
+			[sg.T("Phone",size=(9,1)),sg.I(size=(18,1),key="-PHONE-"),
+			sg.T("Mobile",size=(5,1)),sg.I(size=(17,1),key="-MOB-")],
+			[sg.T("Email",size=(9,1)),sg.I(key="-EMAIL-")],
+			[sg.T("Occupation",size=(9,1)),sg.I(key="-OCC-")],
+			[sg.T("Gender",size=(9,1)),sg.Combo(["Male","Female"],key="-GEN-")],
+			[sg.T("Age",size=(9,1)),sg.Slider(range=(16,50),orientation="h",size=(40,20),default_value=20,key="-AGE-")],
+			]
+	layout_right = [
+					[sg.T("Select image"),
+					sg.I(enable_events=True,key="-IMG-"),
+					sg.FileBrowse(key="-BROWSE-",file_types=(("All Files",["*.jpeg","*.jpg","*.png"]),
+												("JPEG","*.jpeg"),("jpg","*.jpg"),("PNG","*.png")))],
+					[sg.Image(key="-PHOTO-",data=convert_to_bytes("res/placeholder-image.png",resize=(300,300)))]
+					]
 	layout = [
-			[sg.T("First name",size=(10,1)),sg.I(),sg.FileBrowse(file_types=(("All Files",["*.jpeg","*.jpg","*.png"]),
-																			("JPEG","*.jpeg"),("jpg","*.jpg"),("PNG","*.png")))],
-			[sg.T("Last name",size=(10,1)),sg.I()],
-			[sg.T("Gender",size=(10,1)),sg.Combo(["Male","Female"])],
-			[sg.T("Age",size=(10,1)),sg.Slider(range=(1,100),orientation="horizontal")],
+			[sg.Frame("Contact Data",layout_left,vertical_alignment="center",pad=((10,10),(10,10))),sg.VerticalSeparator(),sg.Col(layout_right,element_justification="center")],
+			[sg.B("Add",enable_events=True),sg.Cancel()]
 			]
 	window = sg.Window("Create Contact", layout)
 	while True:
 		event, value = window.read()
-		if event == sg.WIN_CLOSED:
+		if event == sg.WIN_CLOSED or event == "Cancel":
 			window.close()
 			break
+		elif event == "-IMG-":
+			window["-PHOTO-"].update(data=convert_to_bytes(value["-IMG-"],resize=(300,300)))
+		elif event == "Add":
+			first_name = value["-FIRST-"]
+			last_name = value["-LAST-"]
+			address = value["-ADD-"]
+			phone = value["-PHONE-"]
+			mobile = value["-MOB-"]
+			email = value["-EMAIL-"]
+			gender = value["-GEN-"]
+			occupation = value["-OCC-"]
+			age = value["-AGE-"]
+			_photo = value["-IMG-"]
+			if _photo:
+				name = _photo.split("/")[-1]
+				photo = "imageDB/"+name
+				shutil.copy(_photo, photo)
+			else:
+				photo = ""
+			create_contact(first_name, last_name, address, phone, mobile, email, gender, occupation, age, photo)
+			for key in value:
+				if key != "-BROWSE-":
+					window[key].update("")
+			window["-PHOTO-"].update(data=convert_to_bytes("res/placeholder-image.png",resize=(300,300)))
+			window["-AGE-"].update(20)
+
 
 def create_user_gui():
 	layout = [
@@ -41,6 +84,35 @@ def create_user_gui():
 			admin_account()
 
 
+def list_contacts_gui():
+	layout = []
+	contacts = contact_list()
+	idx = 0
+	for con in contacts:
+		row = [sg.CB("",key=f"-ID-{idx}",enable_events=True),sg.I(con.email,size=(20,1),key=f"-EMAIL-{idx}"),sg.I(con.email,size=(25,1))]
+		layout.append(row)
+		idx += 1
+	layout.append([sg.B("Edit"),sg.B("Delete"),sg.Cancel()])
+	window = sg.Window("Contact list", layout)
+	selected = []
+	while True:
+		event, value = window.read()
+		print(event, value)
+		if event == sg.WIN_CLOSED or event == "Cancel":
+			window.close()
+			break
+		elif "-ID-" in event:
+			if value[event]:
+				selected.append(event)
+			else:
+				selected.remove(event)
+		elif event == "Delete":
+			if selected:
+				for d_con in selected:
+					delete_contact(value["-EMAIL-"+d_con.split('-')[-1]])
+				window.close()
+
+
 def list_user_gui():
 	layout = []
 	users = list_users()
@@ -48,12 +120,11 @@ def list_user_gui():
 	for user in users:
 		layout.append([sg.CB('',key=f"-ID-{idx}",enable_events=True),sg.I(user.username, size=(20,1),key=f"-USER-{idx}"),sg.I(user.email,size=(25,1))])
 		idx += 1
-	layout.append([sg.B("Delete"), sg.B("Cancel")])
+	layout.append([sg.B("Delete"), sg.Cancel()])
 	window = sg.Window("List Users", layout)
 	selected = []
 	while True:
 		event, value = window.read()
-		print(event, value)
 		if event == sg.WIN_CLOSED or event == "Cancel":
 			window.close()
 			break
@@ -113,6 +184,8 @@ def main():
 			delete_user_gui()
 		elif event == "Create contact":
 			create_contact_gui()
+		elif event == "List Contact":
+			list_contacts_gui()
 
 
 if __name__ == "__main__":
