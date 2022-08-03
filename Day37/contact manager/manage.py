@@ -1,6 +1,7 @@
 from mongoengine import connect
 from models import User, Contact
-import bcrypt
+import bcrypt, asyncio
+from faker import Faker
 
 
 def create_user(username, password, email):
@@ -51,6 +52,14 @@ def create_contact(first_name,last_name,address,phone,mobile,email,gender,occupa
 	contact.age = age  
 	contact.photo = photo  
 	contact.save()
+
+
+def create_contacts(num):
+	fake = facker()
+	contacts = []
+	for i in range(num):
+		contact = Contact()
+		contact
 
 def query_contact(email):
 	contact = Contact.objects(email=email).first()

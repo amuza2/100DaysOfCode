@@ -1,6 +1,10 @@
 import PIL.Image
 import io
 import base64
+from thispersondoesnotexist import get_online_person,save_picture,get_checksum_from_picture
+import asyncio, shutil
+
+
 
 def convert_to_bytes(file_or_bytes, resize=None):
 	if isinstance(file_or_bytes, str):
@@ -21,3 +25,14 @@ def convert_to_bytes(file_or_bytes, resize=None):
 	img.save(bio, format="PNG")
 	del img
 	return bio.getvalue()	
+
+
+async def get_person():
+	picture = await get_online_person()
+	file_name = get_checksum_from_picture(picture) + ".jpeg"
+	await save_picture(picture)
+	des_file = "images/" + file_name
+	shutil.move(file_name, des_file)
+	return des_file
+
+print(asyncio.run(get_person()))
