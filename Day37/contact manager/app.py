@@ -166,8 +166,8 @@ def list_contacts_gui():
 							shutil.copy(_photo, photo)
 						else:
 							photo = "res/placeholder-image.png"
-						else:
-							sg.popup("Please select a contact")
+					else:
+						sg.popup("Please select a contact")
 
 def list_user_gui():
 	layout = []

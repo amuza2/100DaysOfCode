@@ -1,4 +1,5 @@
 from mongoengine import *
+from mongoengine_pagination import DocumentPro
 
 
 class User(Document):
@@ -7,7 +8,7 @@ class User(Document):
 	email = EmailField(required=True, unique=True)
 
 
-class Contact(Document):
+class Contact(DocumentPro):
 	first_name = StringField(required=True)
 	last_name = StringField(required=True)
 	address = StringField()

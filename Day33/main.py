@@ -1,8 +1,5 @@
-import time
-import random
-import ipdb
-import os
-import json
+import time,random,ipdb,os,json
+
 
 class Sprite():
 	def __init__(self, life, defence, damage):

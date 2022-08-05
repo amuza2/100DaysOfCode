@@ -2,7 +2,7 @@ import PIL.Image
 import io
 import base64
 from thispersondoesnotexist import get_online_person,save_picture,get_checksum_from_picture
-import asyncio, shutil
+import asyncio, shutil, time
 
 
 
@@ -28,11 +28,10 @@ def convert_to_bytes(file_or_bytes, resize=None):
 
 
 async def get_person():
+	await asyncio.sleep(1)
 	picture = await get_online_person()
 	file_name = get_checksum_from_picture(picture) + ".jpeg"
 	await save_picture(picture)
 	des_file = "images/" + file_name
 	shutil.move(file_name, des_file)
 	return des_file
-
-print(asyncio.run(get_person()))
