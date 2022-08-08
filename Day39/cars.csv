@@ -1,0 +1,49 @@
+date,title,price,consumption_Emission,mileage
+04/15/2022,2019 Porsche 911 Turbo S,"$232,995 ",Gas  11.4 l/100 km,27600 KMT
+04/16/2022,2020 Porsche Taycan Turbo S,"$221,995 ",,11600 KMT
+04/17/2022,2018 Porsche 911 Turbo,"$219,995 ",Gas  11.4 l/100 km,15950 KMT
+04/18/2022,2020 Porsche The New 911 Carrera 4S,"$192,995 ",,5050 KMT
+04/19/2022,2019 Porsche Panamera GTS Sport Turismo,"$155,995 ",,15650 KMT
+04/20/2022,2017 Porsche 911 Carrera 4S,"$149,995 ",Gas  9.9 l/100 km,8000 KMT
+04/21/2022,2017 Porsche 911 Carrera 4S,"$136,995 ",Gas  9.9 l/100 km,59550 KMT
+04/22/2022,2017 Porsche 911 Carrera,"$134,995 ",Gas  10.1 l/100 km,12860 KMT
+04/23/2022,2017 Porsche 911 Carrera,"$129,595 ",Gas  9.4 l/100 km,35000 KMT
+04/24/2022,2020 Porsche Cayenne S Coup,"$118,995 ",,21350 KMT
+04/25/2022,2022 Porsche Cayenne Coupe,"$115,835 ",Gas  11.6 l/100 km,50 KMT
+04/26/2022,2020 Porsche Cayenne Coup,"$112,995 ",,27000 KMT
+04/27/2022,2022 Porsche Cayenne,"$110,505 ",Gas  11.5 l/100 km,50 KMT
+04/28/2022,2021 Porsche Cayenne,"$109,535 ",Gas  11.5 l/100 km,50 KMT
+04/29/2022,2021 Porsche 718 Boxster S,"$108,995 ",Gas  10.9 l/100 km,5000 KMT
+04/30/2022,2021 Porsche Cayenne,"$106,105 ",Gas  11.5 l/100 km,90 KMT
+05/01/2022,2022 Porsche Cayenne,"$105,735 ",Gas  11.5 l/100 km,90 KMT
+05/02/2022,2020 Porsche Cayenne Coup,"$103,995 ",Gas,28750 KMT
+05/03/2022,2021 Porsche Cayenne,"$101,335 ",Gas  11.5 l/100 km,50 KMT
+05/04/2022,2019 Porsche Cayenne S,"$97,995 ",Gas  11.8 l/100 km,59550 KMT
+05/05/2022,2021 Porsche Macan GTS,"$96,680 ",Gas  12.2 l/100 km,50 KMT
+05/06/2022,2022 Porsche The New Macan S,"$92,135 ",Gas  11.5 l/100 km,50 KMT
+05/07/2022,2018 Porsche 718 Boxster S,"$84,995 ",Gas  9.9 l/100 km,17950 KMT
+05/08/2022,2017 Porsche 718 Boxster S,"$84,995 ",Gas  9.9 l/100 km,20050 KMT
+05/09/2022,2021 Porsche Macan S,"$82,475 ",Gas  11.5 l/100 km,90 KMT
+05/10/2022,2019 Porsche 718 Cayman,"$81,995 ",Gas  9.8 l/100 km,26200 KMT
+05/11/2022,2022 Porsche The New Macan,"$79,045 ",Gas  11.3 l/100 km,90 KMT
+05/12/2022,2021 Porsche Cayenne S Coup,"$124,995 ",Gas  12.3 l/100 km,11000 KMT
+05/13/2022,2020 Porsche Panamera 4,"$126,995 ",Gas  10.7 l/100 km,9100 KMT
+05/14/2022,2021 Porsche Cayenne Coup,"$109,995 ",Gas  11.6 l/100 km,9250 KMT
+05/15/2022,2021 Porsche Macan,"$77,505 ",Gas  11.3 l/100 km,90 KMT
+05/16/2022,2021 Porsche Macan,"$77,335 ",Gas  11.3 l/100 km,90 KMT
+05/17/2022,2021 Porsche Macan,"$77,335 ",Gas  11.3 l/100 km,50 KMT
+05/18/2022,2021 Porsche Macan,"$77,335 ",Gas  11.3 l/100 km,90 KMT
+05/19/2022,2021 Porsche Macan,"$76,965 ",Gas  11.3 l/100 km,90 KMT
+05/20/2022,2021 Porsche Macan,"$76,965 ",Gas  11.3 l/100 km,50 KMT
+05/21/2022,2021 Porsche Macan,"$76,965 ",Gas  11.3 l/100 km,50 KMT
+05/22/2022,2021 Porsche Macan,"$76,965 ",Gas  11.3 l/100 km,50 KMT
+05/23/2022,2021 Porsche Macan,"$76,965 ",Gas  11.3 l/100 km,90 KMT
+05/24/2022,2021 Porsche Macan,"$76,965 ",Gas  11.3 l/100 km,50 KMT
+05/25/2022,2021 Porsche Macan,"$74,735 ",Gas  11.3 l/100 km,90 KMT
+05/26/2022,2021 Porsche Macan,"$74,735 ",Gas  11.3 l/100 km,90 KMT
+05/27/2022,2021 Porsche Macan,"$74,735 ",Gas  11.3 l/100 km,90 KMT
+05/28/2022,2021 Porsche Macan,"$74,735 ",Gas  11.3 l/100 km,50 KMT
+05/29/2022,2021 Porsche Macan,"$74,735 ",Gas  11.3 l/100 km,90 KMT
+05/30/2022,2021 Porsche Macan,"$74,735 ",Gas  11.3 l/100 km,90 KMT
+05/31/2022,2018 Porsche Cayenne Platinum Edition,"$64,995 ",Gas  12.1 l/100 km,29350 KMT
+06/01/2022,2021 Porsche Macan,"$68,995 ",Gas,12850 KMT
