@@ -1,20 +1,18 @@
-from docx import Document
+from docxtpl import DocxTemplate
+import datetime
 
 
 def create_invoice(info):
-	doc = Document()
-	doc.add_heading(f"Invoice from {info['client_name']} to {info['vendor_name']}")
+	today_date = datetime.date.today()
+	doc = DocxTemplate("invoice.docx")
+	context = {
+			"date": today_date,
+			"name": info["client_name"],
+			"vendor": info["vendor_name"],
+			"price": info["amount"],
+			"quantity": info["quantity"],
+			"delivery": today_date + datetime.timedelta(days=7)
+			}
+	doc.render(context)
+	doc.save("filename.docx")
 
-	name = doc.add_paragraph(f"Client name: ")
-	name.add_run(info['client_name']).bold = True
-
-	vendor = doc.add_paragraph(f"Vendor name: ")
-	vendor.add_run(info['vendor_name']).bold = True
-
-	amount = doc.add_paragraph(f"Amount: ")
-	amount.add_run(info["amount"]+ " DA").bold = True
-
-	quantity = doc.add_paragraph(f"Quantity: ")
-	quantity.add_run(info["quantity"]).bold = True
-
-	doc.save("invoice.docx")
