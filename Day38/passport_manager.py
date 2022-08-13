@@ -32,7 +32,7 @@ layout = [
 		[sg.I(size=(20,1),key="-DEPARTURE-"),sg.CalendarButton("Date of Departure",close_when_date_chosen=True,location=(0, 0))],
 		[sg.I(size=(20,1),key="-ARRIVAL-"),sg.CalendarButton("Date of Arrival",close_when_date_chosen=True,location=(0, 0),size=(13, 1))],
 		[sg.T("Choose your destination")],
-		[sg.Listbox(["mosco","algeries","tunis","new york","riad","cairo","tarablos","gaza"],select_mode="single",key="-CITIES-",size=(15, 5))],
+		[sg.Listbox(["London","New York","Tokyo","Berlin","Paris","Cairo","Mixico"],select_mode="single",key="-CITIES-",size=(15, 5))],
 		[sg.B("Add reservation",key="-ADD RESERVATION-"),sg.B("Show reservations table",key="-TABLE-"),sg.B("Reset")],
 		[sg.Exit()],
 		]
