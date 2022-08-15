@@ -26,12 +26,11 @@ window = sg.Window("Calculator", layout)
 num = [str(i) for i in range(10)]
 history = ''
 operator = ["-DEVID-","-MULTI-","-PLUS-","-MINUS-"]
-op = ''
 while True:
     event, values = window.read()
     if event == sg.WIN_CLOSED:
-        break
         window.close()
+        break
 
     elif event in num:
         if len(history) < 12:
@@ -54,16 +53,14 @@ while True:
         window["-INPUT-"].update(float(result))
     elif event == "-CLEAR-":
         if len(history)>0:
-            print(history)
             history = history[:-1]
             window["-INPUT-"].update(history)
     elif event == "-CEVERY-":
-        if len(history)>0:
-            history = ''
-            num_1 = 0
-            num_2 = 0
-            op = ''
-            window["-INPUT-"].update(history)
+        history = ''
+        num_1 = 0
+        num_2 = 0
+        op = ''
+        window["-INPUT-"].update(history)
     elif event == "-OPOSITE-":
         history = str(int(history) * -1)
         window["-INPUT-"].update(history)
