@@ -26,11 +26,13 @@ while True:
 		folder = value["FOLDER"]
 		try:
 			file_list = os.listdir(folder)
+			# print(file_list)
 		except:
 			file_list = []
 		fname = [
 				f for f in file_list if os.path.isfile(os.path.join(folder, f)) and f.lower().endswith((".png",".gif"))
 				]
+		# print(fname)
 		window["LISTBOX"].update(fname)
 	elif event == "LISTBOX":
 		try:
