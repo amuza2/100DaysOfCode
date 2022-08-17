@@ -3,8 +3,6 @@ import os,shutil,zipfile
 
 col_1 = [
 		[sg.CB("Compress",key="-CBCOM-")],
-		[sg.CB("Recursive",key="-CBREC-")],
-		[sg.T("Extension"), sg.I("*.*",key="-EXTENSION-")],
 		]
 
 layout = [
@@ -39,23 +37,18 @@ while True:
 			source_path = values["-SOURCEFOLDER-"]
 			destination_path = values["-DESTINATIONFOLDER-"]
 			file_name = values["-FILENAME-"]
-
-			files_source = os.path.dirname(source_path)
-			folder_name = os.path.basename(source_path)
+			folder_name = os.path.basename(values["-SOURCEFOLDER-"])
 			file_path = os.path.join(os.getcwd(),f"{file_name}.zip")
-			# shutil.make_archive(file_name, "zip",files_source,folder_name)
 			
-
 			compress = False
 			if values["-CBCOM-"]:
 				compress = zipfile.ZIP_DEFLATED
 			with zipfile.ZipFile(f"{file_name}.zip", 'w',compression=compress) as f:
-				for i in fname:
-					file = os.path.join(values['-SOURCEFOLDER-'],i)
-					file.split('/')
-					f.write(file,f"{folder_name}\\")
-			# shutil.move(file_path, destination_path)
-			print("Zip files Created")
+				for image_name in fname:
+					file = os.path.join(source_path,image_name)
+					f.write(file,arcname=os.path.join(f"{folder_name}/", image_name))
+			shutil.move(file_path, destination_path)
+			print("Zip files Created and moved to destination")
 
 
 
