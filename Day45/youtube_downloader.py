@@ -7,9 +7,7 @@
 """
 
 from pytube import YouTube
-from pytube import Stream
 
 yt = YouTube("https://www.youtube.com/watch?v=BJ76PGWSooE")
-stream = yt.streams.get_by_resolution("720p")
-# stream.filter(res="480")
+stream = yt.streams.get_lowest_resolution()
 stream.download()
