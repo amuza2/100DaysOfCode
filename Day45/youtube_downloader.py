@@ -1,13 +1,30 @@
 """
 	This is Youtube Downloader project
-	used the pytube module
-	download mp3 and mp4 files
-	customize the resolution for the video
+	used the youtube_dl module
+	For downloading Youtube video as mp3
 
 """
 
-from pytube import YouTube
+import youtube_dl
 
-yt = YouTube("https://www.youtube.com/watch?v=BJ76PGWSooE")
-stream = yt.streams.get_lowest_resolution()
-stream.download()
+
+def run():
+    video_urls = ["https://www.youtube.com/watch?v=pmlNSa1szEA",
+    			"https://www.youtube.com/watch?v=voICYzatU5c"]
+    
+    for video_url in video_urls:
+	    video_info = youtube_dl.YoutubeDL().extract_info(
+	        url = video_url,download=False)
+	    filename = f"{video_info['title']}.mp3"
+	    options={
+	        'format':'bestaudio/best',
+	        'keepvideo':False,
+	        'outtmpl':filename,
+	    }
+
+	    with youtube_dl.YoutubeDL(options) as ydl:
+	        ydl.download([video_info['webpage_url']])
+    print("Download complete... {}".format(filename))
+
+if __name__=='__main__':
+	run()
