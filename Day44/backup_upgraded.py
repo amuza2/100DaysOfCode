@@ -14,13 +14,13 @@ col_1 = [[sg.CB("Compress",key="-CBCOM-")]]
 layout = [
 		[sg.T("Choose Source Folder:",size=(19,1)),
 			sg.I(key="-SOURCEFOLDER-",enable_events=True),
-			sg.FolderBrowse()],
+			sg.FolderBrowse(size=(10,1))],
 		[sg.T("Choose Destination Folder:",size=(19,1)),
-			sg.I(key="-DESTINATIONFOLDER-"),sg.FolderBrowse()],
+			sg.I(key="-DESTINATIONFOLDER-"),sg.FolderBrowse(size=(10,1))],
 		[sg.T("File name:",size=(19,1)), sg.I(key="-FILENAME-")],
 		[sg.T("File List:")],
 		[sg.Listbox(values='',key="-LISTBOX-", size=(50,15)),sg.Col(col_1)],
-		[sg.B("Backup",button_color="green"),sg.Exit()],
+		[sg.B("Backup",button_color="green",size=(10,1)),sg.Exit(button_color="red")],
 		]
 
 window = sg.Window("Backup tool", layout,size=(600,450))
