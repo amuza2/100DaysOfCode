@@ -1,4 +1,14 @@
-import time,random,ipdb,os,json
+"""
+	In this project I am Creating an RPG game
+	hero vs creature and bosses
+
+"""
+
+import time
+import random
+import ipdb
+import os
+import json
 
 
 class Sprite():
@@ -10,24 +20,24 @@ class Sprite():
 		self.defence = defence
 		self.damage = damage
 		self.critical = 50
-		self.penetration = 60
+		self.penetration = 30
 		self.boss_level = 1
 
 	def attack(self, user):
 		if random.randint(1, 100) <= self.critical:
 			if random.randint(1, 100) <= self.penetration:
 				user.life -= abs(self.damage*2)
-				# print("critical and penetration used")
+				print("critical and penetration used")
 			else:	
 				user.life -= abs((self.damage - user.defence)*2)
-				# print("critical used")
+				print("critical used")
 		else:
 			if random.randint(1, 100) <= self.penetration:
 				user.life -= self.damage
-				# print("penetration used")
+				print("penetration used")
 			else:
 				user.life -= abs(self.damage - user.defence)
-				# print("no skill used")
+				print("no skill used")
 
 class Hero(Sprite):
 	pass
@@ -62,8 +72,15 @@ def load_game():
 	hero.penetration = data["penetration"]
 	hero.boss_level = data["boss_level"]
 
-def display_game_info(user):
-	print(f"\tlife: {user.life}\n\tdamage: {user.damage}\n\tdefence: {user.defence}\n\tLevel: {user.level}")
+def display_game_info(user,other):
+	# print(f"\tlife: {user.life}\n\tdamage: {user.damage}\n\tdefence: {user.defence}\n\tLevel: {user.level}")
+	print(f"""
+HERO:            CREATURE:
+	  life: {user.life}           life: {other.life}       
+	damage: {user.damage}          damage: {other.damage}
+   defence: {user.defence}         defence: {other.defence}
+	 level: {user.level}            level: {other.level}
+		""")
 
 def level_up():
 	hero.life = hero.max_life
@@ -116,10 +133,7 @@ def attack_creature():
 	if situation == 2:
 		while True:
 			print("*---------------------------*")
-			print("HERO:")
-			display_game_info(hero)
-			print("Crops:")
-			display_game_info(crops)
+			display_game_info(hero,crops)
 			print()
 			print("you are attacking creature...")
 			# time.sleep(2)
