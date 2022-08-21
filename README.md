@@ -74,3 +74,52 @@ code: [here](Day15)
 scrape data from an API and download images
 
 code: [here](Day16-17)
+
+## Day 18:
+
+tried to extract titles from youtube using scrapy
+
+code: [here](Day18)
+
+## Day 19:
+
+extacted data from a website using scrapy
+
+code: [here](Day19)
+
+## Day 20:
+
+Extracted data from a hotel website using scrapy
+
+code: [here](Day20)
+
+## Day 21:
+
+Extracted data from a yellow pages website using scrapy
+
+code: [here](Day21)
+
+## Day 22:
+
+create a coffee machine tool
+
+code: [here](Day22)
+
+## Day 23:
+
+Extracted jobs using scrapy
+
+code: [here](Day23)
+
+## Day 24:
+
+Extracted computer data using scrapy
+
+code: [here](Day24)
+
+## Day 25:
+
+Create PDFs using PyPDF2 module
+
+code: [here](Day25)
+
