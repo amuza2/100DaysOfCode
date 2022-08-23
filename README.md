@@ -123,3 +123,9 @@ Create PDFs using PyPDF2 module
 
 code: [here](Day25)
 
+## Day 26:
+
+Created with Tkinter GUI :clock time, count down timer and multiplication table
+
+code: [here](Day26)
+
