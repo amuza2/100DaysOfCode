@@ -101,7 +101,7 @@ def list_contacts_gui():
 	while True:
 		event, value = window.read()
 		print(event, value)
-		if event == sg.WIN_CLOSED or event == "Cancel":
+		if event in (sg.WIN_CLOSED,"Cancel"):
 			window.close()
 			break
 		elif "-ID-" in event:
