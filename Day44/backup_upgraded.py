@@ -9,8 +9,6 @@ import zipfile
 import PySimpleGUI as sg
 
 
-col_1 = [[sg.CB("Compress",key="-CBCOM-")]]
-
 layout = [
 		[sg.T("Choose Source Folder:",size=(19,1)),
 			sg.I(key="-SOURCEFOLDER-",enable_events=True),
@@ -18,8 +16,9 @@ layout = [
 		[sg.T("Choose Destination Folder:",size=(19,1)),
 			sg.I(key="-DESTINATIONFOLDER-"),sg.FolderBrowse(size=(10,1))],
 		[sg.T("File name:",size=(19,1)), sg.I(key="-FILENAME-")],
+		[sg.CB("Compress",key="-CBCOM-")],
 		[sg.T("File List:")],
-		[sg.Listbox(values='',key="-LISTBOX-", size=(50,15)),sg.Col(col_1)],
+		[sg.Listbox(values='',key="-LISTBOX-", size=(80,15))],
 		[sg.B("Backup",button_color="green",size=(10,1)),sg.Exit(button_color="red")],
 		]
 
@@ -55,4 +54,5 @@ while True:
 					f.write(file,arcname=os.path.join(f"{folder_name}/", image_name))
 			shutil.move(file_path, destination_path)
 			print("Zip files Created and moved to destination")
+			sg.popup("File created")
 	print(event, values)
