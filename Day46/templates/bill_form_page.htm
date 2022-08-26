@@ -6,5 +6,24 @@
 </head>
 <body>
 	<h2>this is the form page</h2>
+	<form action="/results" method="post">
+		{{billform.amount.label}} {{billform.amount}}
+		<br>
+		{{billform.period.label}} {{billform.period}}
+		<hr>
+		<p>First Flatemate</p>
+		{{billform.name_1.label}} {{billform.name_1}}
+		<br>
+		{{billform.days_in_house_1.label}} {{billform.days_in_house_1}}
+		<hr>
+		<p>Second Flatemate</p>
+		{{billform.name_2.label}} {{billform.name_2}}
+		<br>
+		{{billform.days_in_house_1.label}} {{billform.days_in_house_1}}
+		<br>
+		{{billform.button}}
+
+
+	</form>
 </body>
 </html>
