@@ -38,20 +38,19 @@ class ResultPage(MethodView):
 
 
 class BillForm(Form):
-	
 	amount = StringField("Bill Amount: ", default=100)
 	period = StringField("Bill Period: ",default="December 2022")
 	name_1 = StringField("Name: ", default="Moh")
 	days_in_house_1 = StringField("Days in the house: ",default=15)
 	name_2 = StringField("Name: ",default="Amine")
 	days_in_house_2 = StringField("Days in the house: ",default=20)
-
 	button = SubmitField("Calculate")
 
-
+	
 app.add_url_rule('/', view_func=HomePage.as_view("home_page"))
 app.add_url_rule("/bill",view_func=BillFormPage.as_view("bill_form_page"))
 app.add_url_rule("/results", view_func=ResultPage.as_view("results_page"))
+
 if "__main__" == __name__:
 	app.jinja_env.auto_reload = True
 	app.config['TEMPLATES_AUTO_RELOAD'] = True

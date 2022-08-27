@@ -2,6 +2,7 @@ class Bill:
 	"""
 	Object contain data about a bill, such as
 	total amount and period of the bill
+
 	"""
 
 	def __init__(self, amount, period):
