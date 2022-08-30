@@ -1,5 +1,8 @@
 import PySimpleGUI as sg
 
+
+
+sg.theme("DarkGrey3")
 col_1 = [
         [sg.B('7',size=(4,2),font="bold"),sg.B('8',size=(4,2),font="bold"),sg.B('9',size=(4,2),font="bold")],
         [sg.B('4',size=(4,2),font="bold"),sg.B('5',size=(4,2),font="bold"),sg.B('6',size=(4,2),font="bold")],

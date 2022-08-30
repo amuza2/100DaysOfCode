@@ -5,6 +5,7 @@
 import PySimpleGUI as sg
 from time import time
 
+sg.theme("default")
 layout= [
 		[sg.T("00:00",font="None 20 bold",key="-LABEL-")],
 		[sg.T()],
