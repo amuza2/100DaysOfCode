@@ -1,8 +1,9 @@
 import PySimpleGUI as sg
 
+
 layout = [
 		[sg.CalendarButton("Set date",size=(10,1)),sg.T("-- -- -- --",key="-DATE-")],
-		[sg.T("Write Task:",size=(10,1)),sg.I(key="-TASK-",font="None 15",size=(32,1))],
+		[sg.T("Write Task:",size=(10,1)),sg.I(key="-TASK-",font="None 15",size=(43,1))],
 		[sg.Table(values='',headings=["Index","Date","Task"],key="-TABLE-",size=(500,10),auto_size_columns=False,col_widths=[5,9,30],vertical_scroll_only=False,justification="l",font="None 15")],
 		[sg.B("Add",button_color="green",size=(10,1)),sg.B("Delete", key="-DEL-",button_color="red"),sg.Exit()],
 		]
