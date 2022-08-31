@@ -2,9 +2,35 @@ from account import *
 
 class Bank:
 
-	def __init__(self):
+	def __init__(self, hours, address, phone):
 		self.accountDict = {}
 		self.nextAccountNumber = 0
+		self.hours = hours
+		self.address = address
+		self.phone = phone
+
+
+	def askForValidAccountNumber(self):
+		userAccountNumber = input("Enter your user account number: ")
+		try:
+			userAccountNumber = int(userAccountNumber)
+		except ValueError:
+			raise AbordTransaction("The account number must be an integer.")
+		if userAccountNumber not in self.accountDict:
+			raise AbordTransaction("There is not account " + str(userAccountNumber))
+		return userAccountNumber
+
+	def askForValidPassword(self, oUserAccount):
+		userPassword = input("Enter you account password: ")
+		if userPassword != oUserAccount.password:
+			raise AbordTransaction("Your password is incorrect")
+
+
+	def getUserAccount(self):
+		userAccountNumber = self.askForValidAccountNumber()
+		oAccount = self.accountDict[userAccountNumber]
+		self.askForValidPassword(oAccount)
+		return oAccount
 
 	def createAccount(self, theName, theStartingAmount,ThePassword):
 		oAccount = Account(theName, theStartingAmount, ThePassword)
@@ -45,14 +71,28 @@ class Bank:
 
 	def deposit(self):
 		print("*** Desposit ***")
-		userAccountNumber = int(input("Enter your user account number: "))
-		userDepositAmount = int(input("Enter your amount to deposit to your account: "))
-		userPassword = input("Enter your account password: ")
-		oUserAccount = self.accountDict[userAccountNumber]
-		userBalance = oUserAccount.deposit(userDepositAmount, userPassword)
-		if userBalance is not None:
-			print("Your balance account is now:", userBalance)
+		oUserAccount = self.getUserAccount() 
+		userDepositAmount = input("Enter your amount to deposit to your account: ")
+		userBalance = oUserAccount.deposit(userDepositAmount)
+		print("You Diposited:", userDepositAmount)
+		print("Your new balance is", str(userBalance))
 		print()
+
+
+	def withdraw(self):
+		print("*** withdraw ***")
+		oUserAccount = self.accountDict[userAccountNumber]
+		userAmountWithdraw = input("Enter the amount to withdraw: ")
+		userBalance = oUserAccount.withdraw(userAmountWithdraw)
+		print("You withdraw:", userAmountWithdraw)
+		print("Your new balance is" ,str(userBalance))
+		print()
+
+	def getInfo(self):
+		print("Hours:     ", self.hourse)
+		print("Address:   ", self.address)
+		print("Phone:     ", self.phone)
+		print("We currently have", len(self.accountDict),"account(s) open.")
 
 	def showInfo(self):
 		print("*** Show bank account details ***")
@@ -61,15 +101,3 @@ class Bank:
 			print("user account number:", userAccountNumber)
 			oAccount.show()
 		print()
-
-	def withdraw(self):
-		print("*** withdraw ***")
-		userAccountNumber = int(input("Enter your user account number: "))
-		userAmountWithdraw = int(input("Enter the amount to withdraw: "))
-		userPassword = input("Enter user account password: ")
-		oUserAccount = self.accountDict[userAccountNumber]
-		userbalance = oUserAccount.withdraw(userAmountWithdraw, userPassword)
-		if userBalance is not None:
-			print("Your account balance now is", userBalance)
-
-

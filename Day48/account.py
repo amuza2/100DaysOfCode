@@ -1,41 +1,43 @@
+class AbordTransaction(Exception):
+	""" raise this exception to abord bank transaction"""
+	pass
 
 class Account:
 
 	def __init__(self, name, balance, password):
 		self.name = name
-		self.balance = int(balance)
+		self.balance = self.validateAmount(balance)
 		self.password = password
 
 
-	def deposit(self,amountToDeposit, password):
+	def validateAmount(self, amount):
+		try:
+			amount = int(amount)
+		except ValueError:
+			raise AbordTransaction("Amount must be an integer")
+		if amount <= 0:
+			raise AbordTransaction("amount must be positive")
+
+
+	def checkPasswordMatch(self, password):
 		if password != self.password:
-			print("Sorry incorrect password")
-			return None
-		if amountToDeposit < 0:
-			print("You can't deposit a negative amount")
-			return None
+			raise AbordTransaction("Incorrect Password!")
+
+	def deposit(self,amountToDeposit):
+		amountToDeposit = self.validateAmount(amountToDeposit)
 		self.balance += amountToDeposit
 		return self.balance
 
 	
-	def withdraw(self, amountToWithdraw, password):
-		if password != self.password:
-			print("Sorry incorrect password")
-			return None
-		if amountToWithdraw < 0:
-			print("You can't withdraw a negative amount")
-			return None
+	def withdraw(self, amountToWithdraw):
+		amountToWithdraw = self.validateAmount(amountToWithdraw)
 		if amountToWithdraw > self.balace:
-			print("You can't withdraw more then you have in your account")
-			return None
-		self.balance += amountToWithdraw
+			raise AbordTransaction("You can't withdraw more then you have in your account")
+		self.balance -= amountToWithdraw
 		return self.balance
 
 
-	def getBalance(self, password):
-		if password != self.password:
-			print("Sorry incorrect password")
-			return None
+	def getBalance(self):
 		return self.balance
 
 
