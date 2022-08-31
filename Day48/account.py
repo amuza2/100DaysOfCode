@@ -1,10 +1,11 @@
 
 class Account:
 
-	def __init__(self,name, balance, password):
+	def __init__(self, name, balance, password):
 		self.name = name
 		self.balance = int(balance)
 		self.password = password
+
 
 	def deposit(self,amountToDeposit, password):
 		if password != self.password:
@@ -28,12 +29,16 @@ class Account:
 			print("You can't withdraw more then you have in your account")
 			return None
 		self.balance += amountToWithdraw
+		return self.balance
+
 
 	def getBalance(self, password):
 		if password != self.password:
 			print("Sorry incorrect password")
 			return None
 		return self.balance
+
+
 	def show(self):
 		print("      Name:", self.name)
 		print("      Balance:", self.balance)
