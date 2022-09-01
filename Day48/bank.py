@@ -50,10 +50,9 @@ class Bank:
 
 	def closeAccount(self):
 		print("*** Close Account ***")
-		userAccountNumber = int(input("Enter you user account number: "))
-		userPassword = input("Enter you account password: ")
-		oUserAccount = self.accountDict[userAccountNumber]
-		userBalance = oUserAccount.getBalance(userPassword)
+		userAccountNumber = self.askForValidAccountNumber()
+		self.askForValidPassword(self.accountDict[userAccountNumber])
+		userBalance = oUserAccount.getBalance()
 		if userBalance is not None:
 			print(f"you have {userBalance} to withdraw before colsing your account")
 		del self.accountDict[userAccountNumber]
@@ -62,10 +61,8 @@ class Bank:
 
 	def balance(self):
 		print("*** show balance ***")
-		userAccountNumber = int(input("Enter you user account number: "))
-		userPassword = input("Enter your account password: ")
-		oUserAccount = self.accountDict[userAccountNumber]
-		userBalance = oUserAccount.getBalance(userPassword)
+		oUserAccount = self.getUserAccount()
+		userBalance = oUserAccount.getBalance()
 		print("Your Balance account is", userBalance)
 		print()
 
