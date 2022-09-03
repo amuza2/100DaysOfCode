@@ -42,26 +42,21 @@ while True:
 			pygame.quit()
 			sys.exit()
 
-		elif event.type == pygame.KEYDOWN:
-			if event.key == pygame.K_LEFT:
-				ballX -= N_PIXELS_TO_MOVE
-			elif event.key == pygame.K_RIGHT:
-				ballX += N_PIXELS_TO_MOVE
-			elif event.key == pygame.K_UP:
-				ballY -= N_PIXELS_TO_MOVE
-			elif event.key == pygame.K_DOWN:
-				ballY += N_PIXELS_TO_MOVE
+	keyPressedTuple = pygame.key.get_pressed()
+	if keyPressedTuple[pygame.K_LEFT]:
+		ballX -= N_PIXELS_TO_MOVE
+	if keyPressedTuple[pygame.K_RIGHT]:
+		ballX += N_PIXELS_TO_MOVE
+	if keyPressedTuple[pygame.K_UP]:
+		ballY -= N_PIXELS_TO_MOVE
+	if keyPressedTuple[pygame.K_DOWN]:
+		ballY += N_PIXELS_TO_MOVE
+
 	ballRect = pygame.Rect(ballX, ballY, BALL_WIDTH_HEIGHT, BALL_WIDTH_HEIGHT)
 	if ballRect.colliderect(targetRect):
 		print("Ball is touching the target")
 
-		# if event.type == pygame.MOUSEBUTTONUP:
-		# 	mouseX, mouseY = event.pos
-		# 	if ballRect.collidepoint(event.pos):
-		# 		ballX = random.randrange(MAX_WIDTH)
-		# 		ballY = random.randrange(MAX_HEIGHT)
-		# 		ballRect = pygame.Rect(ballX, ballY, BALL_WIDTH_HEIGHT, BALL_WIDTH_HEIGHT)
-
+		
 
 	window.fill(BLACK)
 	window.blit(targetImage, (TARGET_X,TARGET_Y))
