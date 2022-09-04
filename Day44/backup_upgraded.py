@@ -15,8 +15,7 @@ layout = [
 			sg.FolderBrowse(size=(10,1))],
 		[sg.T("Choose Destination Folder:",size=(19,1)),
 			sg.I(key="-DESTINATIONFOLDER-"),sg.FolderBrowse(size=(10,1))],
-		[sg.T("File name:",size=(19,1)), sg.I(key="-FILENAME-")],
-		[sg.CB("Compress",key="-CBCOM-")],
+		[sg.T("Write File name:",size=(19,1)), sg.I(key="-FILENAME-"),sg.CB("Compress",key="-CBCOM-")],
 		[sg.T("File List:")],
 		[sg.Listbox(values='',key="-LISTBOX-", size=(80,15))],
 		[sg.B("Backup",button_color="green",size=(10,1)),sg.Exit(button_color="red")],
@@ -54,5 +53,5 @@ while True:
 					f.write(file,arcname=os.path.join(f"{folder_name}/", image_name))
 			shutil.move(file_path, destination_path)
 			print("Zip files Created and moved to destination")
-			sg.popup("File created")
+			sg.popup("File Created")
 	print(event, values)
