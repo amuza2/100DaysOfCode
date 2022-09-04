@@ -39,5 +39,7 @@ while True:
 	pygame.draw.rect(window, RED, (250, 150, 100, 50),0)
 	pygame.draw.rect(window, RED, (400, 150, 100, 50),1)
 
+	
+
 	pygame.display.update()
 	clock.tick(FRAME_PER_SECOND)
