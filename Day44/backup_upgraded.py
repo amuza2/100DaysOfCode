@@ -10,12 +10,12 @@ import PySimpleGUI as sg
 
 
 layout = [
-		[sg.T("Choose Source Folder:",size=(19,1)),
+		[sg.T("Source Folder:",size=(15,1)),
 			sg.I(key="-SOURCEFOLDER-",enable_events=True),
-			sg.FolderBrowse(size=(10,1))],
-		[sg.T("Choose Destination Folder:",size=(19,1)),
-			sg.I(key="-DESTINATIONFOLDER-"),sg.FolderBrowse(size=(10,1))],
-		[sg.T("Write File name:",size=(19,1)), sg.I(key="-FILENAME-"),sg.CB("Compress",key="-CBCOM-")],
+			sg.FolderBrowse(size=(12,1))],
+		[sg.T("Destination Folder:",size=(15,1)),
+			sg.I(key="-DESTINATIONFOLDER-"),sg.FolderBrowse(size=(12,1))],
+		[sg.T("Write File name:",size=(15,1)), sg.I(key="-FILENAME-"),sg.CB("Compress",key="-CBCOM-")],
 		[sg.T("File List:")],
 		[sg.Listbox(values='',key="-LISTBOX-", size=(80,15))],
 		[sg.B("Backup",button_color="green",size=(10,1)),sg.Exit(button_color="red")],
@@ -40,11 +40,12 @@ while True:
 			sg.popup("Add a file name")
 		else:
 			source_path = values["-SOURCEFOLDER-"]
-			destination_path = values["-DESTINATIONFOLDER-"]
 			file_name = values["-FILENAME-"]
 			folder_name = os.path.basename(values["-SOURCEFOLDER-"])
-			file_path = os.path.join(os.getcwd(),f"{file_name}.zip")
 			COMPRESS = False
+			file_path = os.path.join(os.getcwd(),f"{file_name}.zip")
+			destination_path = values["-DESTINATIONFOLDER-"]
+			
 			if values["-CBCOM-"]:
 				COMPRESS = zipfile.ZIP_DEFLATED
 			with zipfile.ZipFile(f"{file_name}.zip", 'w',compression=COMPRESS) as f:
