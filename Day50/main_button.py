@@ -20,9 +20,14 @@ buttonBDown = "images/buttonBDown.png"
 buttonCUp= "images/buttonCUp.png"
 buttonCDown = "images/buttonCDown.png"
 
+class CallbackTest():
+	def myMethod(self):
+		print("User pressed Button C, Called myMethod")
+oCallbacktest = CallbackTest()
+
 oButtonA = SimpleButton(window, (25,30), buttonAUp, buttonADown)
 oButtonB = SimpleButton(window, (150,30), buttonBUp, buttonBDown)
-oButtonC = SimpleButton(window, (275,30), buttonCUp, buttonCDown)
+oButtonC = SimpleButton(window, (275,30), buttonCUp, buttonCDown,callback=oCallbacktest.myMethod)
 
 while True:
 

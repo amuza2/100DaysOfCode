@@ -8,7 +8,7 @@ class SimpleButton():
 	STATE_ARMED = "armed"
 	STATE_DISARMED = "disarmed"
 
-	def __init__(self, window, loc, up, down):
+	def __init__(self, window, loc, up, down, callback=None):
 		self.window = window
 		self.loc = loc
 		self.surfaceUp = pygame.image.load(up)
@@ -17,8 +17,8 @@ class SimpleButton():
 		self.rect = self.surfaceUp.get_rect()
 		self.rect[0] = loc[0]
 		self.rect[1] = loc[1]
-
 		self.state = SimpleButton.STATE_IDLE
+		self.callback = callback
 
 	def handleEvent(self, eventObj):
 		if eventObj.type not in (MOUSEMOTION, MOUSEBUTTONUP, MOUSEBUTTONDOWN):
@@ -31,7 +31,10 @@ class SimpleButton():
 		elif self.state == SimpleButton.STATE_ARMED:
 			if (eventObj.type == MOUSEBUTTONUP) and eventPointInButtonRect:
 				self.state = SimpleButton.STATE_IDLE
+				if self.callback is not None:
+					self.callback()
 				return True # Click on button
+				
 			if (eventObj.type == MOUSEMOTION) and (not eventPointInButtonRect):
 				self.state = SimpleButton.STATE_DISARMED 
 		elif self.state == SimpleButton.STATE_DISARMED:

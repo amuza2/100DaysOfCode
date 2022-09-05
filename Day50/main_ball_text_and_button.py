@@ -38,7 +38,7 @@ while True:
 
 	oBall.update()
 	frameCounter += 1
-	oFrameCountDisplay.setValue(str(frameCounter))
+	oFrameCountDisplay.setValue(str(frameCounter//60))
 	window.fill(BLACK)
 	oBall.draw()
 	oFrameCountLabel.draw()
