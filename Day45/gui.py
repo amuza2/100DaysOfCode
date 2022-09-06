@@ -18,7 +18,7 @@ layout = [
 urls = []
 l = []
 c = 1
-window = sg.Window("Youtube to audio converter", layout)
+window = sg.Window("Youtube to MP3", layout)
 while True:
 	event, values = window.read()
 	if event in (sg.WIN_CLOSED, "Exit"):
