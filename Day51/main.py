@@ -11,8 +11,7 @@ pygame.init()
 window = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
 clock = pygame.time.Clock()
 
-oInputText = pygwidgets.InputText(window, (100,100), "Button",textColor=(255,255,0))
-userText = ""
+oInputText = pygwidgets.InputText(window, (100,100), "",textColor=BLACK,fontSize=50)
 while True:
 
     for event in pygame.event.get():
@@ -20,8 +19,9 @@ while True:
             pygame.quit()
             sys.exit()
 
-    if oInputText.handleEvent(event):
-        userText = oInputText.getValue()
+        if oInputText.handleEvent(event):
+            userText = oInputText.getValue()
+            print("You added a string:", userText)
 
     window.fill(BLACK)    
     oInputText.draw()   
