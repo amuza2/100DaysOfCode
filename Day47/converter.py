@@ -13,7 +13,7 @@ import PySimpleGUI as sg
 
 values_list = ["Kilo to Mile","Mile to kilo", "Sec to Min","Min to Sec"]
 layout = [
-		[sg.I(key="-INPUT-"), sg.DD(default_value=values_list[0],values=values_list,size=(15,1),key="-SPIN-")],
+		[sg.I(key="-INPUT-",size=(25,1)), sg.DD(default_value=values_list[0],values=values_list,size=(15,1),key="-SPIN-")],
 		[sg.T("---",key="-OUTPUT-")],
 		[sg.B("Convert",size=(10,1),button_color="green",key="-CONVERT-"),sg.Exit(button_color="red")]
 		]
