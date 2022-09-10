@@ -7,14 +7,14 @@ from time import time
 
 sg.theme("default")
 layout= [
-		[sg.T("0:0",font="None 20 bold",key="-LABEL-")],
+		[sg.T("0.0",font="None 20 bold",key="-LABEL-")],
 		[sg.T()],
 		[sg.B("Start",size=(15,1),button_color="green",key="-START-")],
 		[sg.B("Stop",size=(15,1),button_color="red",key="-STOP-")]
 		]
 active = False
 pause = False
-b_pause = False
+b_pause = "idle"
 window = sg.Window("StopWatch",layout,size=(250,150),element_justification="Center")
 while True:
 	event, values = window.read(timeout=10)
@@ -22,22 +22,22 @@ while True:
 		window.close()
 		break
 	if event == "-START-":
-		if b_pause:
+		if b_pause != "idle":
 			pause = True
-			b_pause = False
+			b_pause = "idle"
 			active = False
 			window["-START-"].update("Continue")
 		else:
 			active = True
-			b_pause = True
+			b_pause = "running"
 			window["-START-"].update("Pause")
 
-		if pause == False:
+		if not pause:
 			start_time = time()
 
 	if active:
 		if pause:
-			updated_time += 0.01
+			updated_time += 0.015
 			running_time = round(updated_time - start_time,1)
 		else:
 			updated_time = time()
@@ -47,7 +47,7 @@ while True:
 
 	if event == "-STOP-":
 		active = False
-		b_pause = False
+		b_pause = "idle"
 		pause = False
 		window["-LABEL-"].update("0.0")
 		window["-START-"].update("Start")
