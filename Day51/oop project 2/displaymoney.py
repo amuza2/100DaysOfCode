@@ -31,3 +31,4 @@ class DisplayMoney(pygwidgets.DisplayText):
 		else:
 			theText = money + self.currencySymbol
 		super().setValue(theText)
+
