@@ -55,7 +55,8 @@ class Balloon():
 
 
 class BalloonSmall(Balloon):
-	balloonImage = pygame.image.load("images/redBalloonsmall.png")
+	smallBallon = random.choice(["redBalloon.png","greenBalloon.png","blueBalloon.png","orangeBalloon.png","pinkBalloon.png","purpleBalloon.png"])
+	balloonImage = pygame.image.load(f"images/{smallBallon}")
 	def __init__(self, window, maxWidth, maxHeight, ID):
 		oImage = pygwidgets.Image(window, (0,0), BalloonSmall.balloonImage)
 		super().__init__(window, maxWidth, maxHeight, oImage, ID, "Small", 30, 3.1)
