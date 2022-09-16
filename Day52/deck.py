@@ -33,3 +33,15 @@ class Deck():
 		self.playingDeckList.insert(0, oCard)
 
 
+if __name__ == "__main__":
+	import pygame
+
+	WINDOW_WIDTH = 100
+	WINDOW_HEIGHT = 100
+
+	pygame.init()
+	window = pygame.display.set_mode((WINDOW_WIDTH,WINDOW_HEIGHT))
+	oDeck = Deck(window)
+	for i in range(1, 53):
+		oCard = oDeck.getCard()
+		print("Name: ", oCard.getName(), "   Value:",oCard.getValue())
