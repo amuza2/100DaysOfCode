@@ -10,7 +10,7 @@ from openpyxl import Workbook
 
 
 class WebdataPipeline:
-    cols = ["Name", "price", "url"]
+    cols = ["Name", "price", "url", "availability"]
 
     def open_spider(self, spider):
         self.workbook = Workbook()
@@ -19,7 +19,7 @@ class WebdataPipeline:
         self.sheet.append(self.cols)
 
     def process_item(self, item, spider):
-        self.sheet.append([item["title"], item["price"], item["url"]])
+        self.sheet.append([item["title"], item["price"], item["url"], item["available"]])
         return item
 
     def close_spider(self, spider):
