@@ -5,8 +5,8 @@
 
 """
 import PySimpleGUI as sg
-from youtube_downloader import run
-import threading
+from youtube_downloader import ConvertToMp3
+from threading import Thread
 
 
 layout = [
@@ -16,31 +16,29 @@ layout = [
 		]
 
 urls = []
-l = []
-c = 1
 window = sg.Window("Youtube to MP3", layout)
 while True:
+	oDownload = ConvertToMp3()
 	event, values = window.read()
 	if event in (sg.WIN_CLOSED, "Exit"):
 		window.close()
 		break
-	if urls:
-		l = [i.split()[-1] for i in urls]
-			
-	if event == "-ADD-":
-		urls.append(f"{c}- {values['-URL-']}")
-		window["-LB-"].update('')
-		window["-LB-"].update(urls)
-		window["-URL-"].update('')
-		c+=1
+	
+	if event == "-ADD-" and values["-URL-"]:
+			Thread(target=oDownload.get_video_title, args=(values["-URL-"],), daemon=True).start()
+			urls.append(values['-URL-'])
+			window["-LB-"].update('')
+			window["-LB-"].update([oDownload.show_title])
+			window["-URL-"].update('')
 	elif event == "-REMOVE-":
 		if values["-LB-"]:
 			s = "".join(values["-LB-"])
 			urls.remove(s)
 			window["-LB-"].update(urls)
 	elif event == "-DOWN-":
-		if l:
-			threading.Thread(target=run, args=(l,),daemon=True).start()
+		if urls:
+			
+			Thread(target=oDownload.run, args=(urls,),daemon=True).start()
 			
 
 	print(event, values)
