@@ -4,9 +4,7 @@
 from youtube_dl import YoutubeDL
 
 class ConvertToMp3():
-	"""
-		this class has method to convert mp4 youtube vids into mp3
-	"""
+	""" this class has method to convert mp4 youtube vids into mp3 """
 
 	def __init__(self):
 		self.video_title = None
@@ -19,22 +17,14 @@ class ConvertToMp3():
 		self.video_title = self.video_info.get('title', None)
 		return self.video_title
 
-	@property
-	def show_title(self):
-		return self.video_title
-
-	def run(self, video_urls):
+	def run(self, video_url):
 		""" This method iterate through urls get video info and download file """
 		for video_url in video_urls:
-			self.download_to_mp3(video_url)
-
-	def download_to_mp3(self, url):
-		""" Download the file """
-		self.filename = str(self.video_title) + ".mp3"
-		self.options={'format':'bestaudio/best', 'keepvideo':False, 'outtmpl':self.filename}
-		with YoutubeDL(self.options) as ydl:
-			self.video_info = ydl.extract_info(url=url,download=False)
-			self.video_title = self.video_info.get('title', None)
-			ydl.download([self.video_info['webpage_url']])
-
+			video_info = YoutubeDL().extract_info(url=video_url,download=False)
+			video_title = video_info.get("title", None)
+			filename = str(video_title) + ".mp3"
+			options={'format':'bestaudio/best', 'keepvideo':False, 'outtmpl':filename}
+			
+			with YoutubeDL(options) as ydl:
+				ydl.download([video_info['webpage_url']])
 

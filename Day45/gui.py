@@ -15,9 +15,10 @@ layout = [
 		[sg.B("Download",key="-DOWN-",font="None 10 bold",size=(15,1)),sg.B("Remove",key="-REMOVE-",font="None 10 bold",size=(10,1)),sg.Exit(button_color="red",font="None 10 bold")],
 		]
 
-urls = []
+urls = {}
 window = sg.Window("Youtube to MP3", layout)
 while True:
+	active = True
 	oDownload = ConvertToMp3()
 	event, values = window.read()
 	if event in (sg.WIN_CLOSED, "Exit"):
@@ -25,20 +26,29 @@ while True:
 		break
 	
 	if event == "-ADD-" and values["-URL-"]:
-			Thread(target=oDownload.get_video_title, args=(values["-URL-"],), daemon=True).start()
-			urls.append(values['-URL-'])
-			window["-LB-"].update('')
-			window["-LB-"].update([oDownload.show_title])
-			window["-URL-"].update('')
+			try:
+				# Thread(target=oDownload.get_video_title, args=(values["-URL-"]),daemon=True).start()
+				
+				file_title = oDownload.get_video_title(values['-URL-'])
+			except:
+				print("Not a real link")
+				active = False
+			if active:
+				urls[values["-URL-"]] = file_title
+				window["-LB-"].update('')
+				window["-LB-"].update(list(urls.values()))
+				window["-URL-"].update('')
 	elif event == "-REMOVE-":
 		if values["-LB-"]:
-			s = "".join(values["-LB-"])
-			urls.remove(s)
+			for k, v in urls.items():
+				if v == values["-LB-"][0]:
+					del urls[k]
+					break
 			window["-LB-"].update(urls)
 	elif event == "-DOWN-":
 		if urls:
-			
-			Thread(target=oDownload.run, args=(urls,),daemon=True).start()
+			for i in range(len(list(urls.keys()))):
+				Thread(target=oDownload.run, args=(list(urls.keys()),),daemon=True).start()
 			
 
 	print(event, values)
