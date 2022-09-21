@@ -1,6 +1,5 @@
 import scrapy
 from webdata.items import WebdataItem
-from urllib.parse import urljoin
 from scrapy.loader import ItemLoader
 
 class MainSpider(scrapy.Spider):
