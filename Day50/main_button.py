@@ -36,12 +36,12 @@ while True:
 			pygame.quit()
 			sys.exit()
 
-	if oButtonA.handleEvent(event):
-		print("You pressed button A")
-	elif oButtonB.handleEvent(event):
-		print("You pressed button B")
-	elif oButtonC.handleEvent(event):
-		print("You pressed button C")
+		if oButtonA.handleEvent(event):
+			print("You pressed button A")
+		elif oButtonB.handleEvent(event):
+			print("You pressed button B")
+		elif oButtonC.handleEvent(event):
+			print("You pressed button C")
 
 	window.fill(BLACK)
 
