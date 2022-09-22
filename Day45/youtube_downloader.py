@@ -7,15 +7,12 @@ class ConvertToMp3():
 	""" this class has method to convert mp4 youtube vids into mp3 """
 
 	def __init__(self):
-		self.video_title = None
-		self.video_info = None
-		self.filename = None
-		self.options = None
+		pass
 
 	def get_video_title(self, url):
-		self.video_info = YoutubeDL().extract_info(url=url,download=False)
-		self.video_title = self.video_info.get('title', None)
-		return self.video_title
+		video_info = YoutubeDL().extract_info(url=url,download=False)
+		video_title = video_info.get('title', None)
+		return video_title
 
 	def run(self, video_url):
 		""" This method iterate through urls get video info and download file """
