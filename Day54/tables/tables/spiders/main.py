@@ -9,14 +9,14 @@ class MainSpider(scrapy.Spider):
 
     def parse(self, response):
         item = TablesItem()
-        my_dict = {}
+        my_products = {}
         for value in response.xpath("//table/tr"):
             heading = value.xpath(".//th/text()").get()
             data = value.xpath(".//td/text()").get()
 
             item["heading"] = heading
             item["data"] = data
-            my_dict[heading] = data
+            my_products[heading] = data
         
-        yield my_dict
+        yield my_products
 
