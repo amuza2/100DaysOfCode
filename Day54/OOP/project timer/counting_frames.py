@@ -16,7 +16,7 @@ class CountingFrames():
 			self.n_frames_elapsed += 1
 			if self.n_frames_elapsed >= self.n_frames_to_wait:
 				self.timer_running = False
-		return not self.timer_running
+				return not self.timer_running
 
 	def counter(self):
 		return self.n_frames_elapsed

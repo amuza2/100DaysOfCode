@@ -16,6 +16,7 @@ window = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
 
 label_1 = pygwidgets.DisplayText(window, loc=(200,100),value="Timer running",fontSize=24,textColor=GREY,justified="left")
 start_button = pygwidgets.TextButton(window, loc=(200,150), text="Start")
+click_me = pygwidgets.TextButton(window, loc=(80,150), text="click me")
 label_2 = pygwidgets.DisplayText(window, loc=(230,200),value="0",fontSize=24,textColor=GREY,justified="center")
 oCounter = CountingFrames()
 
@@ -31,15 +32,18 @@ while True:
 			start_button.disable()
 			label_1.show()
 
+		if click_me.handleEvent(event):
+			print("Click on me")
+
 	label_2.setValue(int(oCounter.counter()))
 	if oCounter.update():
 		start_button.enable()
 		label_1.hide()
-		print("Timer ended by counting frames")
 
 	window.fill(BLACK)
 	label_1.draw()
 	label_2.draw()
 	start_button.draw()
+	click_me.draw()
 	pygame.display.update()
 	clock.tick(FRAME_PER_SECOND)
