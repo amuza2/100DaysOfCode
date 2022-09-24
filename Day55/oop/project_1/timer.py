@@ -7,7 +7,7 @@ class Timer():
 		self.nickname = nickname
 		self.callback = callback
 		self.saved_seconds_elapsed = 0.0
-		self.running = running
+		self.running = False
 
 	def start(self, new_time_in_seconds=None):
 		if new_time_in_seconds != None:
