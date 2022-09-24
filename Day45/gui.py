@@ -28,7 +28,6 @@ while True:
 	if event == "-ADD-" and values["-URL-"]:
 			try:
 				# Thread(target=oDownload.get_video_title, args=(values["-URL-"]),daemon=True).start()
-				
 				file_title = oDownload.get_video_title(values['-URL-'])
 			except:
 				print("Not a real link")
@@ -44,11 +43,10 @@ while True:
 				if v == values["-LB-"][0]:
 					del urls[k]
 					break
-			window["-LB-"].update(urls)
+			window["-LB-"].update(urls.values())
 	elif event == "-DOWN-":
 		if urls:
-			for i in range(len(list(urls.keys()))):
-				Thread(target=oDownload.run, args=(list(urls.keys()),),daemon=True).start()
+			Thread(target=oDownload.run, args=(list(urls.keys()),),daemon=True).start()
 			
-
 	print(event, values)
+	print("URLS:", urls)

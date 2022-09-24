@@ -16,7 +16,7 @@ class ConvertToMp3():
 
 	def run(self, video_url):
 		""" This method iterate through urls get video info and download file """
-		for video_url in video_urls:
+		for video_url in video_url:
 			video_info = YoutubeDL().extract_info(url=video_url,download=False)
 			video_title = video_info.get("title", None)
 			filename = str(video_title) + ".mp3"
