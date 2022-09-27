@@ -3,6 +3,8 @@ from pygame.locals import *
 import sys
 import random
 from ball import *
+import os
+os.chdir(r'C:\Users\REALMAN\Desktop\psill\youtubework\100DaysOfCode\Day49\ball oop')
 
 
 BLACK = (0,0,0)
