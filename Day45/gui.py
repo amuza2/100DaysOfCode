@@ -17,6 +17,19 @@ layout = [
 
 urls = {}
 window = sg.Window("Youtube to MP3", layout)
+
+def add_url(active):
+	try:
+			file_title = oDownload.get_video_title(values['-URL-'])
+	except:
+			print("Make sure the url is corrent")
+			active = False
+	if active:
+		urls[values["-URL-"]] = file_title
+		window["-LB-"].update('')
+		window["-LB-"].update(list(urls.values()))
+		window["-URL-"].update('')
+
 while True:
 	active = True
 	oDownload = ConvertToMp3()
@@ -24,19 +37,9 @@ while True:
 	if event in (sg.WIN_CLOSED, "Exit"):
 		window.close()
 		break
-	
 	if event == "-ADD-" and values["-URL-"]:
-			try:
-				# Thread(target=oDownload.get_video_title, args=(values["-URL-"]),daemon=True).start()
-				file_title = oDownload.get_video_title(values['-URL-'])
-			except:
-				print("Not a real link")
-				active = False
-			if active:
-				urls[values["-URL-"]] = file_title
-				window["-LB-"].update('')
-				window["-LB-"].update(list(urls.values()))
-				window["-URL-"].update('')
+			# add_url(active)
+			Thread(target=add_url, args=(active,),daemon=True).start()
 	elif event == "-REMOVE-":
 		if values["-LB-"]:
 			for k, v in urls.items():
