@@ -7,6 +7,7 @@
 import PySimpleGUI as sg
 from youtube_downloader import ConvertToMp3
 from threading import Thread
+import concurrent.futures
 
 
 layout = [
@@ -16,7 +17,7 @@ layout = [
 		]
 
 urls = {}
-window = sg.Window("Youtube to MP3", layout)
+window = sg.Window("Youtube to MP3", layout, icon="download.ico")
 
 def add_url(active):
 	try:
@@ -49,7 +50,9 @@ while True:
 			window["-LB-"].update(urls.values())
 	elif event == "-DOWN-":
 		if urls:
-			Thread(target=oDownload.run, args=(list(urls.keys()),),daemon=True).start()
+			with concurrent.futures.ThreadPoolExecutor() as excecuter:
+				excecuter.map(oDownload.run, urls)
+			# Thread(target=, args=(list(urls.keys()),),daemon=True).start()
 			
 	print(event, values)
 	print("URLS:", urls)
