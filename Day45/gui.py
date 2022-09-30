@@ -16,10 +16,10 @@ urls = {}
 oDownload = ConvertToMp3()
 layout = [
 			[sg.B("Add",key="-ADD-",size=(10,1),font="None 10 bold",button_color="#007339"),sg.I(key="-URL-")],
-			[sg.LB(values='',key="-LB-",size=(60,10),horizontal_scroll=True,enable_events=True)],
+			[sg.LB(values='',key="-LB-",size=(60,10),horizontal_scroll=True)],
 			[	sg.B("Download",key="-DOWN-",font="None 10 bold",size=(15,1),button_color=('white', '#007339')),
 				sg.B("Remove",key="-REMOVE-",font="None 10 bold",size=(10,1),button_color=("#735700")),sg.Exit(button_color=('white', 'firebrick4'),font="None 10 bold"),
-				sg.T("Single",key="-LABEL_TOGGLE-",font="None 10 bold",size=(6,1)),sg.Button(image_data=toggle_btn_off, key='-TOGGLE-', button_color=(sg.theme_background_color(), sg.theme_background_color()), border_width=0, metadata=False,enable_events=True)
+				sg.T("Single",key="-LABEL_TOGGLE-",font="None 10 bold",size=(6,1)),sg.Button(image_data=toggle_btn_off, key='-TOGGLE-', button_color=(sg.theme_background_color(), sg.theme_background_color()), border_width=0, metadata=False)
 			],
 			# [sg.B("testing",key="-testing-")],
 		]
