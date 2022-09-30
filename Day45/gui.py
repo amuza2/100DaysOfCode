@@ -21,7 +21,7 @@ layout = [
 				sg.B("Remove",key="-REMOVE-",font="None 10 bold",size=(10,1),button_color=("#735700")),sg.Exit(button_color=('white', 'firebrick4'),font="None 10 bold"),
 				sg.T("Single",key="-LABEL_TOGGLE-",font="None 10 bold",size=(6,1)),sg.Button(image_data=toggle_btn_off, key='-TOGGLE-', button_color=(sg.theme_background_color(), sg.theme_background_color()), border_width=0, metadata=False,enable_events=True)
 			],
-			[sg.B("testing",key="-testing-",)],
+			# [sg.B("testing",key="-testing-")],
 		]
 
 window = sg.Window("Youtube to MP3", layout, icon="download.ico")
