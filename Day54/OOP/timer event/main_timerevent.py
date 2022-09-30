@@ -15,7 +15,7 @@ clock = pygame.time.Clock()
 window = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
 
 start_button = pygwidgets.TextButton(window, loc=(230,300), text="Start")
-label_1 = pygwidgets.DisplayText(window, loc=(230, 200), value="timer running")
+label_1 = pygwidgets.DisplayText(window, loc=(230, 200), value="timer running",textColor=WHITE,fontSize=36)
 
 label_1.hide()
 oTimer_event = TimerEvent()
@@ -31,7 +31,7 @@ while True:
 			start_button.disable()
 			label_1.show()
 
-		if event.type == oTimer_event.timer_event_id():
+		if event.type == oTimer_event.show_timer():
 			start_button.enable()
 			label_1.hide()
 

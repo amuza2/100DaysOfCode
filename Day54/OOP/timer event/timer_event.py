@@ -9,5 +9,5 @@ class TimerEvent():
 	def start_timer(self):
 		pygame.time.set_timer(self.timer_event_id, int(self.timer_length * 1000))
 
-	def timer_event_id(self):
+	def show_timer(self):
 		return self.timer_event_id
