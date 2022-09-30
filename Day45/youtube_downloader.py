@@ -10,13 +10,17 @@ class ConvertToMp3():
 		pass
 
 	def get_video_title(self, url):
+		"""  get video title 
+			 url: youtube url
+		"""
 		video_info = YoutubeDL().extract_info(url=url,download=False)
 		video_title = video_info.get('title', None)
 		return video_title
 
 	def run(self, video_url):
-		""" This method iterate through urls get video info and download file """
-		# for video_url in video_url:
+		""" This method take video_url, get video info and download file 
+			video_url: youtube url
+		"""
 		video_info = YoutubeDL().extract_info(url=video_url,download=False)
 		video_title = video_info.get("title", None)
 		filename = str(video_title) + ".mp3"
