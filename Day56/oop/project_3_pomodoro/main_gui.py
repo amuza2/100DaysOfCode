@@ -1,15 +1,24 @@
+"""Summary
+
+Attributes:
+    layout (list): PySimpleGUI element
+    oTimer (class): Time controller
+    running (bool): Description
+    window (TYPE): Description
+"""
 import PySimpleGUI as sg
 from countdowntimer import *
 
 layout = [
-        [sg.T("Pomodoro",key="-TITLE-")],
-        [sg.T("round: 0",key="-ROUNDS-")],
-        [sg.T("00:00",key="-TIME_LABEL-")],
-        [sg.B("Start",key="-START-")],
-        ]
-        
+    [sg.T("Pomodoro", key="-TITLE-")],
+    [sg.T("round: 0", key="-ROUNDS-")],
+    [sg.T("00:00", key="-TIME_LABEL-")],
+    [sg.B("Start", key="-START-", button_color=('white', '#007339'), size=(10, 1))],
+]
+
 oTimer = CountDownTimer(50)
-window = sg.Window("Pomodoro",layout, size=(200,150), element_justification="Center", icon="Sprite-0001.ico")
+window = sg.Window("Pomodoro", layout, size=(200, 150),
+                   element_justification="Center", icon="Sprite-0001.ico")
 running = False
 while True:
         event, values = window.read(timeout=1)
