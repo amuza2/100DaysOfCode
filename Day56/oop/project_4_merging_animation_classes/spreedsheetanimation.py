@@ -5,7 +5,7 @@ from animation import Animation
 
 class SimpleSpriteSheetAnimation(Animation):
 
-    def __init__(self, window, loc, image_path, n_images, width, height, duration_per_image):
+    def __init__(self, window, loc, image_path, n_images, width, height, duration_per_image, loop):
         self.n_images = n_images
         self.image_list = []
         sprite_sheet_image = pygame.image.load(image_path)
@@ -28,7 +28,7 @@ class SimpleSpriteSheetAnimation(Animation):
 
         self.playing = False
         self.index = 0
-        super().__init__(window, loc, duration_per_image)
+        super().__init__(window, loc, duration_per_image, loop)
 
     def update(self):
         if not self.playing:
@@ -39,5 +39,6 @@ class SimpleSpriteSheetAnimation(Animation):
             if self.index < self.n_images:
                 self.image_start_time = time.time()
             else:
-                self.playing = False
+                if not self.loop_animation:
+                    self.playing = False
                 self.index = 0

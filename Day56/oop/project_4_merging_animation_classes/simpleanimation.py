@@ -5,7 +5,7 @@ from animation import Animation
 
 class SimpleAnimation(Animation):
 
-    def __init__(self, window, loc, pic_paths, duration_per_image):
+    def __init__(self, window, loc, pic_paths, duration_per_image, loop):
         self.image_list = []
         self.playing = False
         self.index = 0
@@ -14,7 +14,7 @@ class SimpleAnimation(Animation):
             image = pygame.Surface.convert_alpha(image)
             self.image_list.append(image)
         self.n_images = len(self.image_list)
-        super().__init__(window, loc, duration_per_image)
+        super().__init__(window, loc, duration_per_image, loop)
 
     def update(self):
         if not self.playing:
