@@ -1,3 +1,8 @@
+"""
+    I made a video that explain the code
+    https://www.youtube.com/watch?v=Xq5VDKkUCpo
+
+"""
 import PySimpleGUI as sg
 from youtube_downloader import ConvertToMp3
 from threading import Thread
@@ -12,7 +17,7 @@ layout = [
      sg.B("Remove", key="-REMOVE-", font="None 10 bold",
           size=(10, 1), button_color=("#735700")),
      sg.Exit(button_color=('white', 'firebrick4'), font="None 10 bold"), ],
-    [sg.B("testing", key="-testing-", visible=False)],
+    # [sg.B("testing", key="-testing-", visible=False)],
 ]
 
 urls = {}
