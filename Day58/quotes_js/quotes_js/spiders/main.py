@@ -9,14 +9,15 @@ class MainSpider(scrapy.Spider):
                              meta={"playwright": True})
 
     def parse(self, response):
-        quotes = response.xpath("[class='quote']")
+        quotes = response.xpath("//div[@class='quote']")
         for quote in quotes:
-            theqoute = quote.xpath("[class='text']").get()
-            author = quote.xpath("[class='author']").get()
-            tags = quote.xpath("[class='tags'] [class='tag']")
+            theqoute = quote.xpath("./span[@class='text']/text()").get()
+            author = quote.xpath(".//small[@class='author']/text()").get()
+            tags = quote.xpath(".//div[@class='tags']//a[@class='tag']")
             all_tags = ""
             for tag in tags:
-                all_tags += f"{tag} "
+                t = tag.xpath(".//text()").get()
+                all_tags += f"{t } "
             tags = all_tags
 
             yield {
