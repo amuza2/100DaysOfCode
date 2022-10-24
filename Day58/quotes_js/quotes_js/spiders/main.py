@@ -6,9 +6,11 @@ class MainSpider(scrapy.Spider):
 
     def start_requests(self):
         yield scrapy.Request(url="https://quotes.toscrape.com/js",
-                             meta={"playwright": True})
+                             meta={"playwright": True,
+                                   "playwright_include_page": True,
+                                   })
 
-    def parse(self, response):
+    async def parse(self, response):
         quotes = response.xpath("//div[@class='quote']")
         for quote in quotes:
             theqoute = quote.xpath("./span[@class='text']/text()").get()
