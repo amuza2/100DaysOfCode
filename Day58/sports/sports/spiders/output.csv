@@ -1,21 +1,33 @@
-TEAMS,GP,w,d,l,f,a,gd,p
-Arsenal,11,9,1,1,25,11,+14,28
-Manchester City,11,8,2,1,36,11,+25,26
-Tottenham Hotspur,12,7,2,3,23,14,+9,23
-Newcastle United,12,5,6,1,20,10,+10,21
-Chelsea,11,6,3,2,16,11,+5,21
-Manchester United,11,6,2,3,16,16,0,20
-Fulham,12,5,3,4,22,22,0,18
-Liverpool,11,4,4,3,22,13,+9,16
-Brighton & Hove Albion,11,4,3,4,15,14,+1,15
-West Ham United,12,4,2,6,11,12,-1,14
-Brentford,12,3,5,4,18,21,-3,14
-Everton,12,3,4,5,11,12,-1,13
-Crystal Palace,11,3,4,4,12,16,-4,13
-AFC Bournemouth,12,3,4,5,10,25,-15,13
-Aston Villa,12,3,3,6,11,16,-5,12
-Southampton,12,3,3,6,11,19,-8,12
-Leicester City,12,3,2,7,21,24,-3,11
-Leeds United,11,2,3,6,13,18,-5,9
-Wolverhampton Wanderers,12,2,3,7,5,18,-13,9
-Nottingham Forest,12,2,3,7,8,23,-15,9
+Groups,TEAMS,GP,w,d,l,f,a,gd,p
+Group A,Napoli,5,5,0,0,20,4,+16,15
+Group A,Liverpool,5,4,0,1,15,6,+9,12
+Group A,Ajax Amsterdam,5,1,0,4,8,15,-7,3
+Group A,Rangers,5,0,0,5,1,19,-18,0
+Group B,Club Brugge,5,3,1,1,7,4,+3,10
+Group B,FC Porto,5,3,0,2,10,6,+4,9
+Group B,Atletico Madrid,5,1,2,2,4,7,-3,5
+Group B,Bayer Leverkusen,5,1,1,3,4,8,-4,4
+Group C,Bayern Munich,5,5,0,0,16,2,+14,15
+Group C,Internazionale,5,3,1,1,10,5,+5,10
+Group C,Barcelona,5,1,1,3,8,10,-2,4
+Group C,Viktoria Plzen,5,0,0,5,3,20,-17,0
+Group D,Tottenham Hotspur,5,2,2,1,6,5,+1,8
+Group D,Sporting CP,5,2,1,2,7,7,0,7
+Group D,Eintracht Frankfurt,5,2,1,2,5,7,-2,7
+Group D,Marseille,5,2,0,3,7,6,+1,6
+Group E,Chelsea,5,3,1,1,8,3,+5,10
+Group E,AC Milan,5,2,1,2,8,7,+1,7
+Group E,FC Salzburg,5,1,3,1,5,5,0,6
+Group E,Dinamo Zagreb,5,1,1,3,3,9,-6,4
+Group F,Real Madrid,5,3,1,1,10,5,+5,10
+Group F,RB Leipzig,5,3,0,2,9,9,0,9
+Group F,Shakhtar Donetsk,5,1,3,1,8,6,+2,6
+Group F,Celtic,5,0,2,3,3,10,-7,2
+Group G,Manchester City,5,3,2,0,11,1,+10,11
+Group G,Borussia Dortmund,5,2,2,1,9,4,+5,8
+Group G,Sevilla,5,1,2,2,5,9,-4,5
+Group G,FC Copenhagen,5,0,2,3,0,11,-11,2
+Group H,Paris Saint-Germain ,5,3,2,0,14,6,+8,11
+Group H,Benfica,5,3,2,0,10,6,+4,11
+Group H,Juventus,5,1,0,4,8,11,-3,3
+Group H,Maccabi Haifa,5,1,0,4,6,15,-9,3
