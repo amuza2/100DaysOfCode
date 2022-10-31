@@ -7,14 +7,8 @@ class MainSpider(scrapy.Spider):
     start_urls = ['https://www.espn.com/soccer/table/_/league/eng.1']
 
     def parse(self, response):
-        gp = []
-        w = []
-        d = []
-        l = []
-        f = []
-        a = []
-        gd = []
-        p = []
+        gp, w, d, l, f, a, gd, p = [], [], [], [], [], [], [], []
+
         teams = response.css(".Table__TD .hide-mobile a::text").getall()
         # header = response.css(
         # ".Table__Scroller .Table__header-group.Table__THEAD a::text").getall()
