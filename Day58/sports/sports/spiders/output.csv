@@ -1,33 +1,24 @@
-Groups,TEAMS,GP,w,d,l,f,a,gd,p
-Group A,Napoli,5,5,0,0,20,4,+16,15
-Group A,Liverpool,5,4,0,1,15,6,+9,12
-Group A,Ajax Amsterdam,5,1,0,4,8,15,-7,3
-Group A,Rangers,5,0,0,5,1,19,-18,0
-Group B,Club Brugge,5,3,1,1,7,4,+3,10
-Group B,FC Porto,5,3,0,2,10,6,+4,9
-Group B,Atletico Madrid,5,1,2,2,4,7,-3,5
-Group B,Bayer Leverkusen,5,1,1,3,4,8,-4,4
-Group C,Bayern Munich,5,5,0,0,16,2,+14,15
-Group C,Internazionale,5,3,1,1,10,5,+5,10
-Group C,Barcelona,5,1,1,3,8,10,-2,4
-Group C,Viktoria Plzen,5,0,0,5,3,20,-17,0
-Group D,Tottenham Hotspur,5,2,2,1,6,5,+1,8
-Group D,Sporting CP,5,2,1,2,7,7,0,7
-Group D,Eintracht Frankfurt,5,2,1,2,5,7,-2,7
-Group D,Marseille,5,2,0,3,7,6,+1,6
-Group E,Chelsea,5,3,1,1,8,3,+5,10
-Group E,AC Milan,5,2,1,2,8,7,+1,7
-Group E,FC Salzburg,5,1,3,1,5,5,0,6
-Group E,Dinamo Zagreb,5,1,1,3,3,9,-6,4
-Group F,Real Madrid,5,3,1,1,10,5,+5,10
-Group F,RB Leipzig,5,3,0,2,9,9,0,9
-Group F,Shakhtar Donetsk,5,1,3,1,8,6,+2,6
-Group F,Celtic,5,0,2,3,3,10,-7,2
-Group G,Manchester City,5,3,2,0,11,1,+10,11
-Group G,Borussia Dortmund,5,2,2,1,9,4,+5,8
-Group G,Sevilla,5,1,2,2,5,9,-4,5
-Group G,FC Copenhagen,5,0,2,3,0,11,-11,2
-Group H,Paris Saint-Germain ,5,3,2,0,14,6,+8,11
-Group H,Benfica,5,3,2,0,10,6,+4,11
-Group H,Juventus,5,1,0,4,8,11,-3,3
-Group H,Maccabi Haifa,5,1,0,4,6,15,-9,3
+title,kindle,Paperback
+Python 3.10: A Complete Guide Book To Python Programming For Beginners,$0.00,$16.99
+"Learn Python Programming: An in-depth introduction to the fundamentals of Python, 3rd Edition",,$37.11
+Python 3: The Comprehensive Guide to Hands-On Python Programming,,$55.62
+Tiny Python 3.10 Notebook: Curated Examples,,$9.99
+Python Basics: A Practical Introduction to Python 3,$9.99,$39.99
+A complete Reference Book on Python 3.1,$2.99,
+Python in easy steps,$9.99,$10.66
+Beginning Python: Using Python 2.6 and Python 3.1,$24.00,$39.99
+Murach's Python for Data Analysis (Training & Reference),,$59.50
+Python Programming for Beginners: The #1 Python Programming Crash Course for Beginners to Learn Python Coding Well & Fast (with Hands-On Exercises),,
+Python Programming For Beginners: The Ultimate Crash Course to Learn Python Coding Quickly and Easily | Step-by-Step Guide With Hands-on Exercises & Beginners Projects,,$15.97
+PYTHON FOR BEGINNERS: Enter the Real World of Python and Learn How to Think Like a Programmer,,$14.99
+"Expert Python Programming: Master Python by learning the best coding practices and advanced programming concepts, 4th Edition",$28.49,$39.94
+"Learn Python Programming: An in-depth introduction to the fundamentals of Python, 3rd Edition",$28.49,$37.11
+"Fluent Python: Clear, Concise, and Effective Programming",$50.99,$25.51
+Pragmatic Python Programming: Learning Python the Smart Way,$26.49,$10.50
+"Python Object-Oriented Programming: Build robust and maintainable object-oriented Python applications and libraries, 4th Edition",$28.49,$38.24
+Django for Professionals: Production websites with Python & Django (Welcome to Django),$39.00,$39.00
+"Python Crash Course, 2nd Edition: A Hands-On, Project-Based Introduction to Programming",$23.99,$21.49
+"Python Architecture Patterns: Master API design, event-driven structures, and package management in Python",$21.09,$41.99
+Python for Beginners: The Biggest Python Programming Crash Course for Beginners | Learn Python Coding Like a PRO in 7 Days! + Hands-On Workbook,,$17.95
+C++20 STL Cookbook: Leverage the latest features of the STL to solve real-world problems,,$39.99
+,,
