@@ -13,7 +13,6 @@ class MainSpider(scrapy.Spider):
             title = box.css(
                 "h2 span::text").get()
 
-            # if title == "Expert Python Programming: Master Python by learning the best coding practices and advanced programming concepts, 4th Edition":
             prices = box.css(".a-price:nth-child(1) span::text").getall()
             book_type = box.css(
                 ".s-link-style.a-text-bold::text").getall()
@@ -24,14 +23,9 @@ class MainSpider(scrapy.Spider):
             book_t = {}
             if len(book_type) > 2:
                 book_type.remove("Digital")
-            print("==>", title)
-            print("===>", prices)
-            print("===>", book_type)
-            print("===>", selected_price)
             if selected_price:
                 for j in range(len(book_type)):
                     book_t[book_type[j]] = selected_price[j]
-            print("===>", book_t)
 
             yield {
                 "title": title,
