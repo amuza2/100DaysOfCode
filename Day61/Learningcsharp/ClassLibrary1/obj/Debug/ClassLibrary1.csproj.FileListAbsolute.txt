@@ -1,0 +1,6 @@
+C:\Users\REALMAN\source\repos\learningcsharp\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+C:\Users\REALMAN\source\repos\learningcsharp\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\Users\REALMAN\source\repos\learningcsharp\ClassLibrary1\obj\Debug\ClassLibrary1.csproj.AssemblyReference.cache
+C:\Users\REALMAN\source\repos\learningcsharp\ClassLibrary1\obj\Debug\ClassLibrary1.csproj.CoreCompileInputs.cache
+C:\Users\REALMAN\source\repos\learningcsharp\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\Users\REALMAN\source\repos\learningcsharp\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
