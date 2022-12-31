@@ -1,0 +1,39 @@
+body, *, fore, *:after{
+	box-sizing: border-box;
+}
+
+html, body{
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 16px;
+	color: #474747;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Economica', sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin: 0 0 1em;
+}
+
+h2 {
+	font-size: 1.6rem;
+}
+
+h3 {
+	font-size: 1.2rem;
+}
+
+.fixed-width {
+	width: 940px;
+	margin: 0 auto;
+}
+
+/*====================
+  Header
+======================*/
+.page-header {
+	border: 1px solid red;
+	}
+	.page-header > div {
+		border: 1px solid blue;
+	}
