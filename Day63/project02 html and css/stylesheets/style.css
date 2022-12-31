@@ -1,0 +1,55 @@
+body {
+	margin: 0;
+}
+
+/*=====================
+	Header
+======================*/
+#logo {
+	width: 100px;
+	height: 100px;
+	background: limegreen;
+	font-size: 64px;
+	text-align: center;
+	line-height: 100px;
+	text-decoration: none;
+	border-radius: 15px 50px;
+	float: left;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+nav {
+	display: table;
+	height: 100px;
+}
+nav ul{
+	display: table-cell;
+	vertical-align: middle;
+	margin-right: 2em;
+	padding-left: 50px;
+}
+nav ul li {
+	float: left;
+	padding: 20px;
+}
+.content {
+	width: 980px;
+	margin: 0 auto;
+}
+header {
+	background: lightskyblue;
+	padding: 20px;
+}
+a:hover {
+	text-decoration: underline;
+	color: black;
+}
+.clearfix {
+	clear: both;
+}
