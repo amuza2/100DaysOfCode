@@ -1,0 +1,25 @@
+body{
+	margin: 0;
+}
+.pharagraph{
+	color: #222;
+	background: #d3d3d3;
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	padding: 20px;
+	border: 4px solid #222;
+	border-radius: 30px;
+}
+.buttons button{
+	margin-left: auto;
+	margin-right: auto;
+	background: white;
+	border: 1px solid #cfd9de;
+	border-radius: 18px;
+	font-size: 16px;
+	color: #0f1419;
+	font-weight: bolder;
+	padding: 8px 16px;
+}
