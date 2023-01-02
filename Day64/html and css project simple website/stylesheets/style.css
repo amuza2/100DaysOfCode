@@ -1,0 +1,21 @@
+body{
+	background-image: url("../images/outdoor.jpg");
+	color: #e8e8e8;
+	text-align: center;
+}
+h2{
+	font-family: 'Yeon Sung', cursive;
+	color: #1c87c9;
+	margin-top: 30px;
+}
+h1{
+	font-family: 'Holtwood One SC', serif;
+	-webkit-text-stroke: 1px #1c87c9;
+	margin-top: 50px;
+}
+.btn{
+	font-family: 'Holtwood One SC', serif;
+	padding: 7px 15px;
+	border: none;
+	color: #1c87c9;
+}
