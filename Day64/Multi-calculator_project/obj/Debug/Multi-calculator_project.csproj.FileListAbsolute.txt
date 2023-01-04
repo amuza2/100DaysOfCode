@@ -1,0 +1,8 @@
+C:\Users\REALMAN\source\repos\learningcsharp\Multi-calculator_project\bin\Debug\Multi-calculator_project.exe.config
+C:\Users\REALMAN\source\repos\learningcsharp\Multi-calculator_project\bin\Debug\Multi-calculator_project.exe
+C:\Users\REALMAN\source\repos\learningcsharp\Multi-calculator_project\bin\Debug\Multi-calculator_project.pdb
+C:\Users\REALMAN\source\repos\learningcsharp\Multi-calculator_project\obj\Debug\Multi-calculator_project.csproj.AssemblyReference.cache
+C:\Users\REALMAN\source\repos\learningcsharp\Multi-calculator_project\obj\Debug\Multi-calculator_project.csproj.SuggestedBindingRedirects.cache
+C:\Users\REALMAN\source\repos\learningcsharp\Multi-calculator_project\obj\Debug\Multi-calculator_project.csproj.CoreCompileInputs.cache
+C:\Users\REALMAN\source\repos\learningcsharp\Multi-calculator_project\obj\Debug\Multi-calculator_project.exe
+C:\Users\REALMAN\source\repos\learningcsharp\Multi-calculator_project\obj\Debug\Multi-calculator_project.pdb
