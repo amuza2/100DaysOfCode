@@ -15,7 +15,7 @@ namespace Multi_calculator_project
             Console.WriteLine("2- 1st Degree equation");
             Console.WriteLine("3- 2nd Degree equation");
             Console.WriteLine("4- Exit the program");
-            Console.WriteLine("choose from 1 to 3");
+            Console.WriteLine("choose from 1 to 4");
         }
         public static double addition(double value1, double value2)
         {
@@ -38,6 +38,13 @@ namespace Multi_calculator_project
             return result;
         }
         
+        public static void DisplayOperation(string operators)
+        {
+            if (operators == "+") { Console.WriteLine("You are doing Addition"); }
+            else if (operators == "-") { Console.WriteLine("You are doing Subtraction"); }
+            else if (operators == "*") { Console.WriteLine("You are doing multiplication"); }
+            else { Console.WriteLine("You are doing Division"); }
+        }
         static void Main(string[] args)
         {
             bool work = true;
@@ -45,16 +52,18 @@ namespace Multi_calculator_project
             while(work)
             {
                 // display the menu
-                menu();
 
                 // let the user choose a valid task 
                 int choosen;
                 bool parseChecker;
                 do
                 {
+                    menu();
+                    Console.WriteLine();
                     Console.Write("Choose a task: ");
                     parseChecker = int.TryParse(Console.ReadLine(), out choosen);
                     Console.Clear();
+                    
                 } while (!parseChecker);
 
                 /*  Start getting into each task
@@ -70,7 +79,7 @@ namespace Multi_calculator_project
                     repeat1:
                     do
                     {
-                        Console.WriteLine("Which arithmetic Operation you want to do? (+ - * /)");
+                        Console.Write("Which arithmetic Operation you want to do? (+ - * /): ");
                         op = Console.ReadLine();
                         
                         // make sure the user added only one operator
@@ -95,9 +104,10 @@ namespace Multi_calculator_project
                     double num1;
                     do
                     {
+                        DisplayOperation(op);
                         Console.Write("Enter the frist number: ");
                         parseChecker = double.TryParse(Console.ReadLine(), out num1);
-                        Console.Clear();
+                        if (!parseChecker) { Console.Clear(); }
                     }while (!parseChecker);
 
                     // make sure the user writes a valid second number
@@ -128,6 +138,7 @@ namespace Multi_calculator_project
                     string useAgain = Console.ReadLine();
                     if (useAgain.ToUpper() == "Y")
                     {
+                        Console.Clear();
                         goto repeat1;
                     }
                     Console.Clear();
@@ -240,13 +251,14 @@ namespace Multi_calculator_project
                     {
                         goto repeat3;
                     }
-                    Console.Clear();
+                    //Console.Clear();
                 }
                 else if (choosen == 4)
                 {
                     // exit the program
                     work = false;
                 }
+                
 
             }
 
