@@ -1,34 +1,36 @@
 body{
-	background: url("../images/outdoor.jpg");
-	background-size: cover;
-	color: #fff;
+	margin: 0;
+	color: #415785;
 	text-align: center;
-	font-family: 'Holtwood One SC', serif;
+	font-family: Orbitron, sans-serif;
 }
-@font-face{
-	src: url("../fonts/PIXELADE.TTF");
-	font-family: pixelart;
+.hero{
+	background: url("https://media.giphy.com/media/D35fOVm9gSQ91icJeR/giphy-downsized-large.gif");
+	background-size: cover;
+	padding: 20px 0 400px 0;
 }
-h2{
-	font-family: 'Yeon Sung', cursive;
-	color: #1c87c9;
-	margin-top: 30px;
+.logo {
+	width: 150px;
 }
 h1{
 	font-family: inherit;
-	-webkit-text-stroke: 1px #1c87c9;
-	margin-top: 50px;
+	font-size: 45px;
+	text-shadow: 0px 0px 3px black;
 }
 .btn{
-	font-family: pixelart;
-	font-size: 30px;
-	padding: 7px 15px;background: white;
+	font-family: inherit;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 5px 15px;
+	background: white;
 	border: none;
-	color: #1c87c9;
-}
-.btn:hover{
-	border: 1px solid #71AAE5;
+	color: inherit;
 }
 span {
 	border-bottom: 6px solid white;
+}
+footer{
+	padding-top: 10px;
+	background-color: aliceblue;
+		
 }
