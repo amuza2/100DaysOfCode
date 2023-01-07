@@ -1,0 +1,11 @@
+@charset "utf-8";
+body{
+	text-align: center;
+	font-family: "beyond the mountains", sans-serif
+}
+.profile-image{
+	width: 100px;
+	height: 100px;
+	border-radius: 100px;
+	object-fit: cover;
+}
