@@ -1,0 +1,8 @@
+C:\Users\REALMAN\source\repos\learningcsharp\basics_learning\bin\Debug\basics_learning.exe.config
+C:\Users\REALMAN\source\repos\learningcsharp\basics_learning\bin\Debug\basics_learning.exe
+C:\Users\REALMAN\source\repos\learningcsharp\basics_learning\bin\Debug\basics_learning.pdb
+C:\Users\REALMAN\source\repos\learningcsharp\basics_learning\obj\Debug\basics_learning.csproj.AssemblyReference.cache
+C:\Users\REALMAN\source\repos\learningcsharp\basics_learning\obj\Debug\basics_learning.csproj.SuggestedBindingRedirects.cache
+C:\Users\REALMAN\source\repos\learningcsharp\basics_learning\obj\Debug\basics_learning.csproj.CoreCompileInputs.cache
+C:\Users\REALMAN\source\repos\learningcsharp\basics_learning\obj\Debug\basics_learning.exe
+C:\Users\REALMAN\source\repos\learningcsharp\basics_learning\obj\Debug\basics_learning.pdb

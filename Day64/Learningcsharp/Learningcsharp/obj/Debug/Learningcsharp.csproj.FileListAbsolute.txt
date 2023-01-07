@@ -1,0 +1,11 @@
+C:\Users\REALMAN\source\repos\Learningcsharp\Learningcsharp\bin\Debug\Learningcsharp.exe.config
+C:\Users\REALMAN\source\repos\Learningcsharp\Learningcsharp\bin\Debug\Learningcsharp.exe
+C:\Users\REALMAN\source\repos\Learningcsharp\Learningcsharp\bin\Debug\Learningcsharp.pdb
+C:\Users\REALMAN\source\repos\Learningcsharp\Learningcsharp\obj\Debug\Learningcsharp.csproj.AssemblyReference.cache
+C:\Users\REALMAN\source\repos\Learningcsharp\Learningcsharp\obj\Debug\Learningcsharp.csproj.SuggestedBindingRedirects.cache
+C:\Users\REALMAN\source\repos\Learningcsharp\Learningcsharp\obj\Debug\Learningcsharp.csproj.CoreCompileInputs.cache
+C:\Users\REALMAN\source\repos\Learningcsharp\Learningcsharp\obj\Debug\Learningcsharp.exe
+C:\Users\REALMAN\source\repos\Learningcsharp\Learningcsharp\obj\Debug\Learningcsharp.pdb
+C:\Users\REALMAN\source\repos\learningcsharp\Learningcsharp\bin\Debug\ClassLibrary1.dll
+C:\Users\REALMAN\source\repos\learningcsharp\Learningcsharp\bin\Debug\ClassLibrary1.pdb
+C:\Users\REALMAN\source\repos\learningcsharp\Learningcsharp\obj\Debug\Learningcsharp.csproj.CopyComplete

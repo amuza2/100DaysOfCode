@@ -1,0 +1,8 @@
+C:\Users\REALMAN\source\repos\learningcsharp\ageProgram\bin\Debug\ageProgram.exe.config
+C:\Users\REALMAN\source\repos\learningcsharp\ageProgram\bin\Debug\ageProgram.exe
+C:\Users\REALMAN\source\repos\learningcsharp\ageProgram\bin\Debug\ageProgram.pdb
+C:\Users\REALMAN\source\repos\learningcsharp\ageProgram\obj\Debug\ageProgram.csproj.AssemblyReference.cache
+C:\Users\REALMAN\source\repos\learningcsharp\ageProgram\obj\Debug\ageProgram.csproj.SuggestedBindingRedirects.cache
+C:\Users\REALMAN\source\repos\learningcsharp\ageProgram\obj\Debug\ageProgram.csproj.CoreCompileInputs.cache
+C:\Users\REALMAN\source\repos\learningcsharp\ageProgram\obj\Debug\ageProgram.exe
+C:\Users\REALMAN\source\repos\learningcsharp\ageProgram\obj\Debug\ageProgram.pdb
