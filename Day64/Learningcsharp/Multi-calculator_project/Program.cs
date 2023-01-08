@@ -37,7 +37,7 @@ namespace Multi_calculator_project
             Console.WriteLine($"*{spaceLeft}3- 2nd Degree equation{spaceRight}*");
             Console.WriteLine($"*{spaceLeft}4- Play a guess game  {spaceRight}*");
             Console.WriteLine($"*{spaceLeft}5- Exit the program   {spaceRight}*");
-            Console.WriteLine("**************** Choose from 1 to 4 ****************");
+            Console.WriteLine("**************** Choose from 1 to 5 ****************");
         }
         public static double addition(double value1, double value2)
         {
@@ -108,6 +108,8 @@ namespace Multi_calculator_project
                  *  number 1 is Arithmetic Operation
                  *  number 2 is 1st degree equation
                  *  number 3 is 2nd degree equation
+                 *  number 4 is a guessing game
+                 *  number 5 is exit the program
                  */
                 if (choosen == 1) 
                 {
@@ -133,7 +135,7 @@ namespace Multi_calculator_project
                         if (!operators.Contains(op))
                         {
                             Console.Clear();
-                            Console.WriteLine("*              Please add a valid operator*              ");
+                            Console.WriteLine("*              Please add a valid operator              *");
                         }
                         else
                         {
@@ -161,7 +163,19 @@ namespace Multi_calculator_project
                         { 
                             Console.Clear();
                             DisplayOperation(op);
+                            Console.ForegroundColor = ConsoleColor.Green;
+                            Console.WriteLine("******************* Simple Calculator ***************");
+                            Console.ResetColor();
                             Console.WriteLine($"*              Enter the frist number: {num1}        *");
+                        }else if (parseChecker && num2 == 0)
+                        {
+                            Console.Clear();
+                            Console.ForegroundColor = ConsoleColor.Green;
+                            Console.WriteLine("******************* Simple Calculator ***************");
+                            Console.ResetColor();
+                            Console.WriteLine($"*              Enter the frist number: {num1}        *");
+                            Console.WriteLine("*            You can't add the value zero           *");
+                            parseChecker = false;
                         }
                     } while (!parseChecker);
 
@@ -382,10 +396,10 @@ namespace Multi_calculator_project
                             if (number == choosedNumber)
                             {
                                 Console.ForegroundColor = ConsoleColor.Green;
-                                Console.WriteLine($"*       You got it right in {guessCounter} guesses        *");
+                                Console.WriteLine($"*       You got it right in {guessCounter} guesses              *");
                                 Console.ResetColor();
                                 Console.ForegroundColor = ConsoleColor.Yellow;
-                                Console.Write("*    Do you want to play again [Y/N]?    *");
+                                Console.Write("*       Do you want to play again [Y/N]?           *");
                                 Console.ResetColor();
                                 string playGameAgain = Console.ReadLine();
                                 if (playGameAgain.ToUpper() == "Y")
