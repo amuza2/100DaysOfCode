@@ -1,21 +1,69 @@
-body,td,th {
-    font-size: 16px;
-    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #121212;
+.title{
+	text-align: center;
 }
-.align-right {
-    float: right;
-    margin-left: 10px;
+#section1{
+	background: #E8C2C2;
+	widows: 350px;
+	margin: 100px;
+	height: 500px;
 }
-body {
-    background-color: #EBEBEB;
-}.align-left {
-    float: left;
-    margin-right: 10px;
+
+#section2{
+	background: #ffc;
+	position: relative;
+	top: 10px;
+	left:10px;
+	width: 190px;
+	height: 125px;
 }
-.paragraph{
-	color: blue;
+
+#section3{
+	color:#0f0;
+	background: #060;
+	position: absolute;
+	top:170px;
+	left: 320px;
+	height: 125px;
+	width: 190px;
 }
-.changeColor{
-	color:blue;
+#section4{
+	color: #639;
+	background-image: url("../images/laptop.jpg");
+	background-repeat: repeat;
+	position: absolute;
+	top: 170px;
+	left: 520px;
+	width: 190px;
+	height: 125px;
+}
+#section5{
+	color: #900;
+	background: #f99;
+	position: relative;
+	padding: 20px;
+	top: 50px;
+	left:10px;
+	width: 250px;
+	height: 125px;
+}
+#section6 {
+	color: #393;
+	background: #dfd;
+	padding: 10px 10px 15px 80px;
+	position: absolute;
+	top: 330px;
+	left: 420px;
+	width: 190px;
+	height: 145px;
+	border: 2px solid #090;
+}
+#section7 {
+	background-color: transparent;
+	position: absolute;
+	color: #009;
+	top: 450px;
+	left: 120px;
+	
+	
+	
 }
