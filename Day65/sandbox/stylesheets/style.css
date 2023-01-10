@@ -1,0 +1,15 @@
+body,td,th {
+    font-size: 16px;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #121212;
+}
+.align-right {
+    float: right;
+    margin-left: 10px;
+}
+body {
+    background-color: #EBEBEB;
+}.align-left {
+    float: left;
+    margin-right: 10px;
+}
