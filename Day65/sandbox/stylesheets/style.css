@@ -13,3 +13,9 @@ body {
     float: left;
     margin-right: 10px;
 }
+.paragraph{
+	color: blue;
+}
+.changeColor{
+	color:blue;
+}
