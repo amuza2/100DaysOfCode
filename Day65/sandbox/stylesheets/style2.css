@@ -1,13 +1,18 @@
 /* CSS Document */
 body{
 	font-family: 'Happy Monkey', cursive;
-	text-align: center;
-	background: #a2d2ff;
+	background: linear-gradient(skyblue, pink);
 	color: white;
-	text-shadow: 0px 0px 1px black;
 }
-
-
+.container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.title{
+	text-shadow: 0 0 1px black;
+}
 .imageLaptop{
 	width: 150px;
 	height: 150px;
@@ -15,7 +20,78 @@ body{
 	border: 7px solid #EFB0C9;
 }
 
-h3, h4{
+.age, .birthYear{
+	text-shadow: 0 0 1px black;
+	padding: 5px 10px;;
+	border-radius: 10%;
 	background: #EFB0C9;
+}
+.age {
+	margin: 10px 0 -10px 0;
+}
+
+/* first gift */
+.centerit{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	margin-top: 40px;
 	
+}
+.happy, .textHover{
+	text-shadow: 0 0 1px black;
+}
+.gift1Img{
+	background-image: url("../images/gift.jpg");
+	background-size: cover;
+	width: 350px;
+	height: 350px;
+	border: 6px solid #292929;
+	border-radius: 10%;
+	margin-top: 10px;
+}
+.gift1Img:hover{
+	background-image: url("../images/shoes.jpg");
+}
+.happy{
+	margin: 0 0 10px;
+}
+.textHover{
+	margin: 0 0 10px;
+}
+
+/* Second gift */
+.gift2Img:hover{
+	background-image: url("../images/snow.jpg");
+}
+
+/* third gift */
+.gift3Img:hover{
+	background-image: url("../images/shoesNike.jpg");
+}
+/* fourth gift */
+.gift4Img:hover{
+	background-image: url("../images/headset.jpg");
+}
+
+/* fifth gift */
+.gift5Img{
+	height: 200px;
+}
+.gift5Img:hover{
+	background-image: url("../images/laptop.jpg");
+	background-size: cover;
+}
+
+/* footer */
+.ftrText{
+	width: 410px;
+	font-style: italic;
+	text-shadow: 0 0 1px black;
+	text-align: center;
+	padding: 10px 0 0;
+}
+.ftrText a{
+	color: white;
 }
