@@ -3,6 +3,7 @@ body{
 	font-family: 'Happy Monkey', cursive;
 	background: linear-gradient(skyblue, pink);
 	color: white;
+	text-shadow: 0 0 1px black;
 }
 .container{
 	display: flex;
@@ -10,9 +11,7 @@ body{
 	justify-content: center;
 	align-items: center;
 }
-.title{
-	text-shadow: 0 0 1px black;
-}
+
 .imageLaptop{
 	width: 150px;
 	height: 150px;
@@ -21,7 +20,6 @@ body{
 }
 
 .age, .birthYear{
-	text-shadow: 0 0 1px black;
 	padding: 5px 10px;;
 	border-radius: 10%;
 	background: #EFB0C9;
@@ -38,9 +36,6 @@ body{
 	align-items: center;
 	margin-top: 40px;
 	
-}
-.happy, .textHover{
-	text-shadow: 0 0 1px black;
 }
 .gift1Img{
 	background-image: url("../images/gift.jpg");
@@ -88,7 +83,6 @@ body{
 .ftrText{
 	width: 410px;
 	font-style: italic;
-	text-shadow: 0 0 1px black;
 	text-align: center;
 	padding: 10px 0 0;
 }
