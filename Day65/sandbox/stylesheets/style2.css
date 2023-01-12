@@ -1,2 +1,21 @@
 /* CSS Document */
+body{
+	font-family: 'Happy Monkey', cursive;
+	text-align: center;
+	background: #a2d2ff;
+	color: white;
+	text-shadow: 0px 0px 1px black;
+}
 
+
+.imageLaptop{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border: 7px solid #EFB0C9;
+}
+
+h3, h4{
+	background: #EFB0C9;
+	
+}

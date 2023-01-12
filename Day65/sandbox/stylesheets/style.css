@@ -1,69 +1,17 @@
-.title{
-	text-align: center;
+.container{
+	border: 8px solid #016a26;
+	height: 360px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
 }
-#section1{
-	background: #E8C2C2;
-	widows: 350px;
-	margin: 100px;
-	height: 500px;
-}
-
-#section2{
-	background: #ffc;
-	position: relative;
-	top: 10px;
-	left:10px;
-	width: 190px;
-	height: 125px;
-}
-
-#section3{
-	color:#0f0;
-	background: #060;
-	position: absolute;
-	top:170px;
-	left: 320px;
-	height: 125px;
-	width: 190px;
-}
-#section4{
-	color: #639;
-	background-image: url("../images/laptop.jpg");
-	background-repeat: repeat;
-	position: absolute;
-	top: 170px;
-	left: 520px;
-	width: 190px;
-	height: 125px;
-}
-#section5{
-	color: #900;
-	background: #f99;
-	position: relative;
-	padding: 20px;
-	top: 50px;
-	left:10px;
-	width: 250px;
-	height: 125px;
-}
-#section6 {
-	color: #393;
-	background: #dfd;
-	padding: 10px 10px 15px 80px;
-	position: absolute;
-	top: 330px;
-	left: 420px;
-	width: 190px;
-	height: 145px;
-	border: 2px solid #090;
-}
-#section7 {
-	background-color: transparent;
-	position: absolute;
-	color: #009;
-	top: 450px;
-	left: 120px;
-	
-	
-	
+.item{
+	width: 50px;
+	height: 50px;
+	margin: 2px;
+	padding: 10px;
+	font-size: 50px;
+	border: 2px solid black;
+	background: linear-gradient(#14463d, #016a26)
 }
