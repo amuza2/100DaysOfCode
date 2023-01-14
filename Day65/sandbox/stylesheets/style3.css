@@ -3,6 +3,11 @@
 body{
 	font-family: Pacifico, sans-serif;
 }
+.container{
+	width: 960px;
+	margin: 0 auto;
+}
+/* Header */
 .logo{
 	display: block;
 	margin-left: auto;
@@ -26,6 +31,7 @@ body{
 	color: crimson;
 }
 
+/* main Content*/
 .intro{
 	text-align: left;
 }
@@ -47,15 +53,17 @@ body{
 	padding: 0 15px 30px;
 }
 .article02 h5{
-	margin: -8px 0 10px 0;
+	margin: -12px 0 10px 0;
 	background: black;
 	color: white;
-	width: 120px;
+	width: 110px;
+	margin-left: 120px;
+	text-align: center;
 }
 .clearfix{
 	clear: both;
 }
-/* copywrite */
+/* Footer */
 footer{
 	display: block;
 	margin-left: auto;

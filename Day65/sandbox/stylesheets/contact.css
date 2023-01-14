@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+body{
+	margin-top: -10px;
+	font-family: Pacifico, sans-serif;
+}
+.container{
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.form{
+	border: 2px solid black;
+	border-radius: 5px;
+	padding: 10px 0 30px;
+	text-align: center;
+}
+.formTitle{
+	margin-top: -25px;
+	margin-left: 400px;
+	background: black;
+	width: 170px;
+	color: white;
+	text-align: center;		
+}
+.formInput input[type="text"],
+.formInput input[type="number"],
+.formInput input[type="email"],
+.formInput textarea{
+	margin-bottom: 15px;
+	font-size: 30px;
+	width: 50%;
+	text-transform: uppercase;
+	font-family: Pacifico, sans-serif;
+}
+.formInput textarea{
+	resize: none;
+	font-size: 14px;
+}
+label{
+	border: 1px solid black;
+	border-bottom: none;
+	background: rgba(146,216,255,0.65);
+	display: block;
+	font-size: 14px;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 3px;
+}
+.button{
+	font-family: Pacifico, sans-serif;
+	background: rgba(146,216,255,0.65);
+	border: 1px solid rgba(9,9,9,0.60);
+	padding: 5px 10px;
+}
