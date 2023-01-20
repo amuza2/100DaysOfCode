@@ -1,1 +1,36 @@
 @charset "utf-8";
+html{
+	background: rgba(22,58,196,1.00);
+}
+body{
+	background: rgba(47,144,23,1.00);
+	margin: 0 auto;
+	width: 40%;
+	border: 4px solid black;
+}
+header{
+	padding: 20px 0 0 0;
+	margin: 0 auto;
+}
+
+.img{
+	width: 250px;
+	border-radius: 150%;
+	display: block;
+	margin: 0 auto;
+	border: 10px ridge gold;
+}
+.arti{
+	padding: 20px;
+}
+.head1{
+	color: blue;
+}
+.head2{
+	color: orange;
+}
+p::first-letter{
+	font-family: Pacifico;
+	font-size: 36px;
+	line-height: .5;
+}
