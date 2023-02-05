@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+body{
+	padding: 1.5rem;
+	font-size: 1.5rem;
+}
+nav{
+	width: 15%;
+}
+main{
+	width: 85%;
+}
+ul{
+	flex-flow: column wrap;
+}
+/*
+p{
+	color:red;
+}*/
