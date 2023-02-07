@@ -24,61 +24,64 @@ def ask_to_play_again():
 	if yes_or_no.lower() == "y":
 		play = True
 	return play
-tries = 9
-guess_counter = 0
-play = False
-answer = get_random_numbers()
-while True:
-	# show menu just when starting the game
-	if not play:
-		menu()
-		play = True
 
-	# make sure the length is equal to 3
-	guess_counter += 1
+def main():
+	tries = 9
+	guess_counter = 0
+	play = False
+	answer = get_random_numbers()
 	while True:
-		guess = input(f"Guess #{guess_counter}: ")
-		if len(guess) == 3:
-			break
-		# else:
-			# os.system("cls")
+		# show menu just when starting the game
+		if not play:
+			menu()
+			play = True
 
-	# print how many tries 
-	print(f"You have {tries} chance(s) left")
+		# make sure the length is equal to 3
+		guess_counter += 1
+		while True:
+			guess = input(f"Guess #{guess_counter}: ")
+			if len(guess) == 3:
+				break
 
-	#check each number position
-	pico, fermi, bagel = 0, 0, 0
-	for i in range(3):
-		if guess[i] == answer[i]:
-			fermi += 1
-		elif guess[i] in answer:
-			pico += 1
+		# print how many tries 
+		print(f"You have {tries} chance(s) left")
+
+		#check each number position
+		pico, fermi, bagel = 0, 0, 0
+		for i in range(3):
+			if guess[i] == answer[i]:
+				fermi += 1
+			elif guess[i] in answer:
+				pico += 1
+			else:
+				bagel += 1
+
+		if fermi == 3:
+			print("You got it right!")
+			if not ask_to_play_again():
+				print("Thanks for playing")
+				break
+			else:
+				os.system("cls")
+				play = False
+				guess_counter = 0
+		elif bagel == 3:
+			print("Bagels")
 		else:
-			bagel += 1
+			print(f"{pico * 'Pico '} {fermi * 'fermi '}")
 
-	if fermi == 3:
-		print("You got it right!")
-		if not ask_to_play_again():
-			print("Thanks for playing")
-			break
-		else:
-			os.system("cls")
-			play = False
-			guess_counter = 0
-	elif bagel == 3:
-		print("Bagels")
-	else:
-		print(f"{pico * 'Pico '} {fermi * 'fermi '}")
+		# check if the user enter 10 tries
+		if tries == 0:
+			print("All your tries have finished!\nGame Over")
+			print(f"the answer was :{answer}")
+			if not ask_to_play_again():
+				print("Thanks for playing")
+				break
+			else:
+				play = False
+				guess_counter = 0
+				os.system("cls")
+		tries -= 1
 
-	# check if the user enter 10 tries
-	if tries == 0:
-		print("All your tries have finished!\nGame Over")
-		print(f"the answer was :{answer}")
-		if not ask_to_play_again():
-			print("Thanks for playing")
-			break
-		else:
-			play = False
-			guess_counter = 0
-			os.system("cls")
-	tries -= 1
+if __name__ == '__main__':
+	main()
