@@ -13,7 +13,7 @@ I have thought up a number.
 You have 10 guesses to get it.
 		""")
 
-def get_random_numbers(length=3):
+def get_random_numbers(length):
 	answer = ''
 	for i in range(length):
 		answer += str(random.randint(0,9))
@@ -25,7 +25,7 @@ def main():
 		number_of_tries = 10
 		game_result = False
 		menu()
-		answer = get_random_numbers()
+		answer = get_random_numbers(numbers_length)
 		print("the result is:", answer)
 
 		while number_of_tries > 0:
