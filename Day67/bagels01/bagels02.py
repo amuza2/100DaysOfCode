@@ -2,8 +2,8 @@ import random, os
 
 numbers_length = 3
 def menu():
-	print("""
-I am thinking of 3 digits number. try to guess what it is.
+	print(f"""
+I am thinking of {numbers_length} digits number. try to guess what it is.
 here are some clues:
 When I say:	        That means:
    Pico               One digit is correct but in the wrong position.
