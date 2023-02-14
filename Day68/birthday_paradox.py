@@ -19,7 +19,8 @@ for i in range(100_000):
         birthday[z] = '*'
         if temp in birthday and temp != '*':
             matches += 1
-            birthday[birthday.index(temp)] = '*'
+            break
+            # birthday[birthday.index(temp)] = '*'
         else:
             birthday[z] = temp
 
