@@ -2,10 +2,10 @@ import random
 import datetime
 
 number_of_birthdays = 23
-dates = []
 matches = 0
-birthday = []
 for i in range(100_000):
+    birthday = []
+    dates = []
     if i % 5000 == 0:
         print("reached", i)
     for j in range(number_of_birthdays):
@@ -15,12 +15,14 @@ for i in range(100_000):
         birthday.append(dates[j].strftime("%b %d"))
 
     for z in range(number_of_birthdays):
-        temp = birthday[i]
-        birthday[i] = '*'
-        if temp in birthday:
+        temp = birthday[z]
+        birthday[z] = '*'
+        if temp in birthday and temp != '*':
             matches += 1
-        birthday[i] = temp
+            birthday[birthday.index(temp)] = '*'
+        else:
+            birthday[z] = temp
 
 for i in range(number_of_birthdays):
     print(birthday[i], end=", ")
-print("matches:", matches)
+print("\nmatches:", matches)
