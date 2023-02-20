@@ -1,21 +1,42 @@
-﻿// See https://aka.ms/new-console-template for more information
-static int[] RoundUp(int number, int[] list)
-  {
-    int[] arr = new int[2];
-    if (list.Length == 0) return new int[0];
-    bool single = true; 
-    arr[0] = list[0];
-    foreach(int i in list)
-      {
-        if (i == arr[0]) continue;
-        if (Math.Abs(number - i) < Math.Abs(number - arr[0])) arr[0] = i;
-        else if (Math.Abs(number - i) == Math.Abs(number - arr[0])) {arr[1] = i; single=false;}
-      }
-    if (single)
+﻿using System;
+using System.Collections.Generic;
+
+namespace Code_Coach_Challenge
+{
+    class Program
     {
-      //int[] arr1 = {arr[0]};
-      return arr[0].ToArray();
+        static void Main(string[] args)
+        {
+            Console.Write("Enter a value: ");
+            string postText = Console.ReadLine();
+
+            Post post = new Post();
+            post.Text = postText;
+            post.ShowPost();
+
+        }
     }
-    return arr;
-  }
-RoundUp(1, new int[] {-32,12,8,-10,-2});
+
+    class Post
+    {
+        private string text;
+        
+        //write a constructor here
+        public Post()
+        {
+            Console.WriteLine("New post");
+        }
+
+        public void ShowPost()
+        {
+            Console.WriteLine(text);
+        }
+        
+        //write a property for member text
+        public string Text
+        {
+            get {return text;}
+            set {text = value;}
+        }
+    }
+}
