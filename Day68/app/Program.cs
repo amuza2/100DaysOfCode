@@ -7,36 +7,22 @@ namespace Code_Coach_Challenge
     {
         static void Main(string[] args)
         {
-            Console.Write("Enter a value: ");
-            string postText = Console.ReadLine();
+            const string filename = "Testfile.txt";
 
-            Post post = new Post();
-            post.Text = postText;
-            post.ShowPost();
+            // using (StreamWriter sw = File.CreateText(filename)){
+            //     sw.WriteLine("This is a text file.");
+            // }
+            File.AppendAllText(filename, "This is a new text.");
+            // using (StreamWriter sw = File.AppendText(filename)){
+
+            // }
+
+
+            string content;
+            content = File.ReadAllText(filename);
+            Console.WriteLine(content);
 
         }
     }
 
-    class Post
-    {
-        private string text;
-        
-        //write a constructor here
-        public Post()
-        {
-            Console.WriteLine("New post");
-        }
-
-        public void ShowPost()
-        {
-            Console.WriteLine(text);
-        }
-        
-        //write a property for member text
-        public string Text
-        {
-            get {return text;}
-            set {text = value;}
-        }
-    }
 }
