@@ -15,7 +15,32 @@ body{
 	padding: 1rem;
 	font-size: 1rem;
 }
-
+<input type="button" value="Back" onclick="history.back()" /><nav class="pagination">
+  <ul>
+    <li class="prev"><a href="#"><span>&lsaquo; Prev</span></a></li>
+    <li><a href="#"><span>1</span></a></li>
+    <li><a class="active" href="#"><span>2</span></a></li>
+    <li><a href="#"><span>3</span></a></li>
+    <li><a href="#"><span>4</span></a></li>
+    <li><a href="#"><span>5</span></a></li>
+    <li class="next"><a href="#"><span>Next &rsaquo;</span></a></li>
+  </ul>
+</nav><!-- Set the name of the default CSS style sheet -->
+<meta http-equiv="default-style" content="default stylesheet title" />
+<!-- Defines a time interval in seconds for the document to refresh itself -->
+<meta http-equiv="refresh" content="300" />
+<!-- Specify a legacy document mode that Internet Explorer should use to display a webpage -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<!-- Alternative form of setting the charset attribute. A document must not contain both a meta element with an http-equiv attribute in the encoding declaration state and a meta element with the charset attribute present. -->
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<!-- Control the behavior of search engine crawling and indexing. -->
+<meta name="http-equiv" content="X-Robots-Tag : noindex, follow" />
+<!-- The name of the Web application that the page represents -->
+<meta name="application-name" content="Sample Application Name" />
+<!-- Name of the author of the document -->
+<meta name="author" content="John Doe"/>
+<!-- Specifies the software package used to generate the document -->
+<meta name="generator" content="SomeWebPageGenerator 4.0"/>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
 nav{
 	width: 100%;
 }
@@ -30,9 +55,12 @@ nav, main {
 ul{
 	display: flex;
 	flex-flow: row wrap;
+	
 	justify-content: center;
 }
+
 li{
 	list-style: none;
 	padding: 10px;
+	border: 1px black solid;
 }
