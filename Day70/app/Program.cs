@@ -5,38 +5,21 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace SoloLearn
-{
+namespace SoloLearn;
 class Program
-{
-    public void Palindrome(string value)
-    {
-        bool pal = true;
-        int odd = 0;
-        int len = value.Length;
-
-        if(len % 2 == 1) odd = 1;
-        for(int i = 0; i < len; i++)
-        {
-            if(value[i] != value[len - 1 - i])
-            {
-                Console.WriteLine($"{value[i]} at index {i} != {value[len - 1]} at index {len - i - 1}");
-                pal = false;
-                break;
-            }
-            if(i == (len / 2) + odd) break;
-        }
-        if(pal == false) Console.WriteLine("It's not!");
-        else Console.WriteLine("It is!");
-        Console.WriteLine("----------------------");
-    }
-    
+{    
     static void Main(string[] args)
     {
-        Program p = new Program();
-        p.Palindrome("mohammed");
-        p.Palindrome("radar");
-        p.Palindrome("abccba");
+        String[] pairs = { "Color1=red", "Color2=green", "Color3=blue",
+                 "Title=Code Repository" };
+        foreach (var pair in pairs) 
+        {
+            int position = pair.IndexOf("=");
+            if (position < 0)
+                continue;
+            Console.WriteLine($"Key: {pair.Substring(0, position)}, Value: '{pair.Substring(position + 1)}'");
+                            
+        }
     }
 }
-}
+
