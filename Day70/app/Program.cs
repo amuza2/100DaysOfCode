@@ -3,23 +3,34 @@
 namespace SoloLearn;
 class Program
 {    
-    class Dog
+    class Animal
     {
-        public const int ONE = 1;
-        public static int count = 1;
-        public Dog()
+        public virtual void SayHi()
         {
-            count++;
+            Console.WriteLine("Hi I am Animal");
         }
-        public static void Bark()
+    }
+    class Cat : Animal
+    {
+        public override void SayHi()
         {
-            Console.WriteLine("Woof!");
+            Console.WriteLine("Hi I am Cat");
+        }
+    }
+    class Dog : Animal
+    {
+        public override void SayHi()
+        {
+            //base.SayHi();
+            Console.WriteLine("Hi I am Dog");
         }
     }
     static void Main(string[] args)
     {
-        Dog a = new Dog();
-        Console.WriteLine(Dog.ONE);
+        Cat c = new Cat();
+        c.SayHi();
+        Dog d = new Dog();
+        d.SayHi();
     }
 }
 
