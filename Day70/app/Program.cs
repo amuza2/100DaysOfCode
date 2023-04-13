@@ -1,36 +1,31 @@
 ﻿using System;
 
-namespace SoloLearn;
-class Program
-{    
-    class Animal
+namespace SoloLearn
+{
+    class Program
     {
-        public virtual void SayHi()
+        static int LetterCounter(string str, char k)
         {
-            Console.WriteLine("Hi I am Animal");
+            int counter = 0;
+            int NoResult = -1;
+            int index = 0;
+            for(int i = 0; i < str.Length; i++)
+            {
+                if(str[i] == k)
+                {
+                    counter++;
+                    if(counter == 2){
+                        index = i;
+                        break;
+                    }
+                }
+            }
+            if(counter > 1) return index;
+            else return NoResult; 
         }
-    }
-    class Cat : Animal
-    {
-        public override void SayHi()
+       static void Main(string[] args)
         {
-            Console.WriteLine("Hi I am Cat");
-        }
-    }
-    class Dog : Animal
-    {
-        public override void SayHi()
-        {
-            //base.SayHi();
-            Console.WriteLine("Hi I am Dog");
-        }
-    }
-    static void Main(string[] args)
-    {
-        Cat c = new Cat();
-        c.SayHi();
-        Dog d = new Dog();
-        d.SayHi();
-    }
+            Console.WriteLine(LetterCounter("Hello World;", 'l'));
+        } 
+    }        
 }
-
