@@ -1,20 +1,10 @@
 ﻿using System;
+using System.Linq;
 
 namespace SoloLearn
 {
     class Program
     {
-        static void AddSpace(ref string result, string part)
-        {
-            if(result.Length != 0)
-            {
-                result += $" {part}";
-            }
-            else
-            {
-                result += part;
-            }
-        }
         static void Output(string[] value)
         {
             foreach(string i in value)
@@ -22,37 +12,25 @@ namespace SoloLearn
                 Console.WriteLine(i);
             }
         }
-        static string Remove(string s)
+        static bool PowerOfTwo(int n)
         {
-            string[] words = s.Split(' ');
-            //Output(words);
-            string result = "";
-            foreach(string k in words)
+            string res = "";
+            for(int i = 0; i < n + 1; i++)
             {
-                //Console.WriteLine(">>> " + k);
-                if(!k.Contains('!')) AddSpace(ref result, k);
-                else
-                {
-                    int counter = 0;
-                    foreach(char c in k)
-                    {
-                        if(c == '!') counter++;
-                    }
-                    if(counter != 1)
-                    {
-                        AddSpace(ref result, k);
-                    } 
-                }
+                res += $" {Math.Pow(2,i)}";
+                if(Math.Pow(2,i) > n) break;
             }
-            return result;
+            string[] res2 = res.Split(' ');
+            if(res2.Contains($"{n}")) return true;
+            return false;
         }
        static void Main(string[] args)
         {
-            Console.WriteLine(Remove("!Hi! ! !Hi!"));
-            Console.WriteLine(Remove("Hi! Hi!"));
-            Console.WriteLine(Remove("Hi !Hi! Hi!"));
-            Console.WriteLine(Remove("Hi! !Hi! Hi!"));
-            Console.WriteLine(Remove("Hi! Hi!! Hi!"));
+            Console.WriteLine("464280 >> " + PowerOfTwo(464280));
+            Console.WriteLine("4096 >> " + PowerOfTwo(4096));
+            Console.WriteLine("333 >> " + PowerOfTwo(333));
+            Console.WriteLine("2 >> " + PowerOfTwo(2));
+            Console.WriteLine("5 >> " + PowerOfTwo(5));
             
         } 
     }        
