@@ -4,28 +4,56 @@ namespace SoloLearn
 {
     class Program
     {
-        static int LetterCounter(string str, char k)
+        static void AddSpace(ref string result, string part)
         {
-            int counter = 0;
-            int NoResult = -1;
-            int index = 0;
-            for(int i = 0; i < str.Length; i++)
+            if(result.Length != 0)
             {
-                if(str[i] == k)
+                result += $" {part}";
+            }
+            else
+            {
+                result += part;
+            }
+        }
+        static void Output(string[] value)
+        {
+            foreach(string i in value)
+            {
+                Console.WriteLine(i);
+            }
+        }
+        static string Remove(string s)
+        {
+            string[] words = s.Split(' ');
+            //Output(words);
+            string result = "";
+            foreach(string k in words)
+            {
+                //Console.WriteLine(">>> " + k);
+                if(!k.Contains('!')) AddSpace(ref result, k);
+                else
                 {
-                    counter++;
-                    if(counter == 2){
-                        index = i;
-                        break;
+                    int counter = 0;
+                    foreach(char c in k)
+                    {
+                        if(c == '!') counter++;
                     }
+                    if(counter != 1)
+                    {
+                        AddSpace(ref result, k);
+                    } 
                 }
             }
-            if(counter > 1) return index;
-            else return NoResult; 
+            return result;
         }
        static void Main(string[] args)
         {
-            Console.WriteLine(LetterCounter("Hello World;", 'l'));
+            Console.WriteLine(Remove("!Hi! ! !Hi!"));
+            Console.WriteLine(Remove("Hi! Hi!"));
+            Console.WriteLine(Remove("Hi !Hi! Hi!"));
+            Console.WriteLine(Remove("Hi! !Hi! Hi!"));
+            Console.WriteLine(Remove("Hi! Hi!! Hi!"));
+            
         } 
     }        
 }
