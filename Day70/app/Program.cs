@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Text;
 
 namespace SoloLearn
 {
@@ -14,39 +15,23 @@ namespace SoloLearn
         }
         static string Calculator(string txt)
         {
-            string result = "";
-            string[] s = txt.Split(' ');
-            int part1 = s[0].Length;
-            int part2 = s[s.Length - 1].Length;
-            string op = s[1];
-            int c = 0;
-            if(op == "+")
-            {
-                c = part1 + part2;
-            }else if(op == "-")
-            {
-                c = part1 - part2;
-            }else if(op == "*")
-            {
-                c = part1 * part2;
-            }else
-            {
-                c = part1 / part2;
-            }
-            for(int i=0; i<c; i++)
-            {
-                result += ".";
-            }
-            return result;
+            string[] s = txt.Split(" ");            
+            int part1 = s[0].Length,
+                part2 = s[s.Length - 1].Length,
+                    c = txt.Contains('+') ? part1 + part2:
+                        txt.Contains('-') ? part1 - part2:
+                        txt.Contains('*') ? part1 * part2:
+                                    part1 / part2;
+            return new StringBuilder().Insert(0, ".", c).ToString();
         }
        static void Main(string[] args)
         {
             Console.WriteLine($">> " + Calculator("..... + ..............."));
-            /*Console.WriteLine(">> " + Calculator("..... - ..."));
+            Console.WriteLine(">> " + Calculator("..... - ..."));
             Console.WriteLine(">> " + Calculator("..... - ."));
             Console.WriteLine(">> " + Calculator("...... * ..."));
             Console.WriteLine(">> " + Calculator("..... * .."));
-            */
+            
         } 
     }        
 }
