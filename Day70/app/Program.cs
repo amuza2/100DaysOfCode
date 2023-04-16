@@ -12,26 +12,41 @@ namespace SoloLearn
                 Console.WriteLine(i);
             }
         }
-        static bool PowerOfTwo(int n)
+        static string Calculator(string txt)
         {
-            string res = "";
-            for(int i = 0; i < n + 1; i++)
+            string result = "";
+            string[] s = txt.Split(' ');
+            int part1 = s[0].Length;
+            int part2 = s[s.Length - 1].Length;
+            string op = s[1];
+            int c = 0;
+            if(op == "+")
             {
-                res += $" {Math.Pow(2,i)}";
-                if(Math.Pow(2,i) > n) break;
+                c = part1 + part2;
+            }else if(op == "-")
+            {
+                c = part1 - part2;
+            }else if(op == "*")
+            {
+                c = part1 * part2;
+            }else
+            {
+                c = part1 / part2;
             }
-            string[] res2 = res.Split(' ');
-            if(res2.Contains($"{n}")) return true;
-            return false;
+            for(int i=0; i<c; i++)
+            {
+                result += ".";
+            }
+            return result;
         }
        static void Main(string[] args)
         {
-            Console.WriteLine("464280 >> " + PowerOfTwo(464280));
-            Console.WriteLine("4096 >> " + PowerOfTwo(4096));
-            Console.WriteLine("333 >> " + PowerOfTwo(333));
-            Console.WriteLine("2 >> " + PowerOfTwo(2));
-            Console.WriteLine("5 >> " + PowerOfTwo(5));
-            
+            Console.WriteLine($">> " + Calculator("..... + ..............."));
+            /*Console.WriteLine(">> " + Calculator("..... - ..."));
+            Console.WriteLine(">> " + Calculator("..... - ."));
+            Console.WriteLine(">> " + Calculator("...... * ..."));
+            Console.WriteLine(">> " + Calculator("..... * .."));
+            */
         } 
     }        
 }
