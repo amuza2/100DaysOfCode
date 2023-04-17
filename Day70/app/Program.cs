@@ -13,23 +13,22 @@ namespace SoloLearn
                 Console.WriteLine(i);
             }
         }
-
-        struct Book
-        {
-            public string title;
-            public double price;
-            public string author;
-        }
+        enum TrafficLight {Green, Red, Yellow};
         
        static void Main(string[] args)
         {
-            Book b;
-            b.title = "Test";
-            b.price = 123.99;
-            b.author = "Mohammed";
-
-            Console.WriteLine(b.title);
-
+            TrafficLight x = TrafficLight.Red;
+            switch(x){
+                case TrafficLight.Green:
+                    Console.WriteLine("Go!");
+                    break;
+                case TrafficLight.Red:
+                    Console.WriteLine("Stop!");
+                    break;
+                case TrafficLight.Yellow:
+                    Console.WriteLine("Caution!");
+                    break;
+            }
         } 
     }        
 }
