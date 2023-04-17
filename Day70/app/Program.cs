@@ -13,25 +13,23 @@ namespace SoloLearn
                 Console.WriteLine(i);
             }
         }
-        static string Calculator(string txt)
+
+        struct Book
         {
-            string[] s = txt.Split(" ");            
-            int part1 = s[0].Length,
-                part2 = s[s.Length - 1].Length,
-                    c = txt.Contains('+') ? part1 + part2:
-                        txt.Contains('-') ? part1 - part2:
-                        txt.Contains('*') ? part1 * part2:
-                                    part1 / part2;
-            return new StringBuilder().Insert(0, ".", c).ToString();
+            public string title;
+            public double price;
+            public string author;
         }
+        
        static void Main(string[] args)
         {
-            Console.WriteLine($">> " + Calculator("..... + ..............."));
-            Console.WriteLine(">> " + Calculator("..... - ..."));
-            Console.WriteLine(">> " + Calculator("..... - ."));
-            Console.WriteLine(">> " + Calculator("...... * ..."));
-            Console.WriteLine(">> " + Calculator("..... * .."));
-            
+            Book b;
+            b.title = "Test";
+            b.price = 123.99;
+            b.author = "Mohammed";
+
+            Console.WriteLine(b.title);
+
         } 
     }        
 }
