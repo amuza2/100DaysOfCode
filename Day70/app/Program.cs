@@ -13,22 +13,23 @@ namespace SoloLearn
                 Console.WriteLine(i);
             }
         }
-        enum TrafficLight {Green, Red, Yellow};
-        
+        public static int NbDig(int n, int d)
+        {
+            string s = "";
+            int counter = 0;
+            for(int i=0; i<=n; i++)
+            {
+                s = Math.Pow(i,2).ToString();
+                foreach(char v in s)
+                {
+                    if((int)Char.GetNumericValue(v) == d) counter++;
+                }
+            }
+            return counter;
+        }
        static void Main(string[] args)
         {
-            TrafficLight x = TrafficLight.Red;
-            switch(x){
-                case TrafficLight.Green:
-                    Console.WriteLine("Go!");
-                    break;
-                case TrafficLight.Red:
-                    Console.WriteLine("Stop!");
-                    break;
-                case TrafficLight.Yellow:
-                    Console.WriteLine("Caution!");
-                    break;
-            }
+            Console.WriteLine(NbDig(5750,0));
         } 
     }        
 }
