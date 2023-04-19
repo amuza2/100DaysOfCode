@@ -17,19 +17,21 @@ namespace SoloLearn
         
        static void Main(string[] args)
         {
-            Queue<int> q = new Queue<int>();
-            q.Enqueue(5);
-            q.Enqueue(10);
-            q.Enqueue(15);
-            Console.WriteLine("Queue: ");
-            foreach(int i in q) Console.Write(i + " ");
-            Console.WriteLine("\nCount: " +q.Count);
-            Console.WriteLine("Dequeue: " + q.Dequeue());
-            Console.Write("Queue: ");
-            int[] arr = q.ToArray();
-            Array.Sort(arr);
-            foreach(int i in arr) Console.Write(i + " ");
-            Console.WriteLine("\nCount: " + arr.Count());        
+            Dictionary<string, int> d = new Dictionary<string, int>();
+            d.Add("Uno", 1);
+            d.Add("One", 1);
+            d.Add("Two", 2);
+            Console.WriteLine(d.ContainsKey("One"));
+            d.Remove("One");
+            Console.WriteLine(d.ContainsKey("One"));
+
+            foreach(int s in d.Values)
+            {
+                Console.WriteLine(s);
+            }
+
+            Console.WriteLine($"\nCount: {d.Count}");
+
 
         }
     }        
