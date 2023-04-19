@@ -17,21 +17,19 @@ namespace SoloLearn
         
        static void Main(string[] args)
         {
-            Stack<int> s = new Stack<int>();
-            s.Push(30);
-            s.Push(31);
-            s.Push(32);
-            Console.Write("Stack: ");
-            foreach(int i in s) Console.Write(i + " "); 
-            Console.Write("\nCount: " + s.Count);
-            Console.Write("\nTop: " + s.Peek());
-            Console.Write("\nPop: " + s.Pop());
-            Console.Write("\nStack: ");
-            foreach(int i in s) Console.Write(i + " ");
-            Console.WriteLine("\nCount: " + s.Count);
-            //s.Clear();
-            bool isThere = s.Contains(30);
-            Console.WriteLine(isThere);            
+            Queue<int> q = new Queue<int>();
+            q.Enqueue(5);
+            q.Enqueue(10);
+            q.Enqueue(15);
+            Console.WriteLine("Queue: ");
+            foreach(int i in q) Console.Write(i + " ");
+            Console.WriteLine("\nCount: " +q.Count);
+            Console.WriteLine("Dequeue: " + q.Dequeue());
+            Console.Write("Queue: ");
+            int[] arr = q.ToArray();
+            Array.Sort(arr);
+            foreach(int i in arr) Console.Write(i + " ");
+            Console.WriteLine("\nCount: " + arr.Count());        
 
         }
     }        
