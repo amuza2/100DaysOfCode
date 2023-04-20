@@ -17,22 +17,23 @@ namespace SoloLearn
         
        static void Main(string[] args)
         {
-            HashSet<int> hs = new HashSet<int>();
-            hs.Add(5);
-            hs.Add(10);
-            hs.Add(15);
-            hs.Add(0);
+            int discount = 5;
 
-            foreach(int i in hs)
+            Dictionary<string, double> coffee = new Dictionary<string, double>();
+            coffee.Add("Americano", 50);
+            coffee.Add("Latte", 70);
+            coffee.Add("Flat White", 60);
+            coffee.Add("Espresso", 60);
+            coffee.Add("Cappuccino", 80);
+            coffee.Add("Mocha", 90);
+
+
+            //your code goes here
+            foreach(string k in coffee.Keys)
             {
-                Console.Write(i + " ");
+                double t = (100-Convert.ToDouble(discount)) / 100;
+                Console.WriteLine(k + ": " + coffee[k] * t);
             }
-            Console.WriteLine("\nCount: " + hs.Count);
-
-            HashSet<int> hs2 = new HashSet<int>();
-            hs2.Add(10);
-            hs2.Add(15);
-            hs2.Add(0);
 
         }
     }        
