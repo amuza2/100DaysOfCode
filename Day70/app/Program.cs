@@ -17,21 +17,22 @@ namespace SoloLearn
         
        static void Main(string[] args)
         {
-            Dictionary<string, int> d = new Dictionary<string, int>();
-            d.Add("Uno", 1);
-            d.Add("One", 1);
-            d.Add("Two", 2);
-            Console.WriteLine(d.ContainsKey("One"));
-            d.Remove("One");
-            Console.WriteLine(d.ContainsKey("One"));
+            HashSet<int> hs = new HashSet<int>();
+            hs.Add(5);
+            hs.Add(10);
+            hs.Add(15);
+            hs.Add(0);
 
-            foreach(int s in d.Values)
+            foreach(int i in hs)
             {
-                Console.WriteLine(s);
+                Console.Write(i + " ");
             }
+            Console.WriteLine("\nCount: " + hs.Count);
 
-            Console.WriteLine($"\nCount: {d.Count}");
-
+            HashSet<int> hs2 = new HashSet<int>();
+            hs2.Add(10);
+            hs2.Add(15);
+            hs2.Add(0);
 
         }
     }        
