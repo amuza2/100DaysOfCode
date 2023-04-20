@@ -7,34 +7,38 @@ namespace SoloLearn
 {
     class Program
     {
-        static void Output(string[] value)
+        static void Output<T>(T[] value)
         {
-            foreach(string i in value)
+            foreach(T i in value)
             {
                 Console.WriteLine(i);
             }
         }
-        
+        public static string IsItANum(string str)
+        {
+            string res = "";
+            bool AddValue = false;
+
+            foreach(char s in str)
+            {
+                if(s == '0')
+                {
+                    AddValue = true;
+                }
+                if(AddValue)
+                {
+                    bool isDigit = Char.IsDigit(s);
+                    if(isDigit) res += s;
+                }  
+            }
+            if(res.Length == 11) {return res;}
+
+            return "Not a phone number";
+        }
        static void Main(string[] args)
         {
-            int discount = 5;
-
-            Dictionary<string, double> coffee = new Dictionary<string, double>();
-            coffee.Add("Americano", 50);
-            coffee.Add("Latte", 70);
-            coffee.Add("Flat White", 60);
-            coffee.Add("Espresso", 60);
-            coffee.Add("Cappuccino", 80);
-            coffee.Add("Mocha", 90);
-
-
-            //your code goes here
-            foreach(string k in coffee.Keys)
-            {
-                double t = (100-Convert.ToDouble(discount)) / 100;
-                Console.WriteLine(k + ": " + coffee[k] * t);
-            }
-
+            string res = IsItANum("0192387415456");
+            Console.WriteLine(res);
         }
     }        
 }
