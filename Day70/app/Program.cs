@@ -21,13 +21,10 @@ namespace SoloLearn
 
        static void Main(string[] args)
         {
-            Book b1 = new Book("Intoduction to C#", "Mohammed", 175, 20);
-            Magazine m1 = new Magazine("Build Cross-platform mobile apps with MAUI", "Mohammed", 250, 10);
-            //Console.WriteLine(b1.GetInfo());
-            Console.WriteLine(b1.GetDescription());
-            Console.WriteLine(b1.Price);
-            Console.WriteLine(m1.GetDescription());
-            Console.WriteLine(m1.Price);
+            Book b1 = new Book("C# for starters", "Mohammed", 255, 35);
+            Console.WriteLine(b1.ToString());
+            Console.WriteLine(b1.ToString('F'));
+            Console.WriteLine(b1.ToString('B'));
 
         }  
     }        
