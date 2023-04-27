@@ -1,18 +1,32 @@
-﻿using System.Text.RegularExpressions;
+﻿using System;
+namespace Learning;
 
-string substring = "localhost/v1/getemp/666#123";
 
-// Create a regular expression pattern that matches any character that is not alphanumeric
-string pattern = @"^[a-zA-Z0-9]+$";
-
-// Use the Regex.IsMatch() method to check if the substring matches the pattern
-bool containsNonAlphanumeric = Regex.IsMatch(substring, pattern);
-
-if (containsNonAlphanumeric)
+abstract class Shape
 {
-    Console.WriteLine("The substring contains only alphanumeric characters.");
+    public abstract double Area();
+    public void Dispplay() {Console.WriteLine("This is a shape.");}
 }
-else
+
+class Rectangle : Shape
 {
-    Console.WriteLine("Invalid");
+    public double Width {get; set;}
+    public double Height {get; set;}
+    public override double Area()
+    {
+        return Width * Height;
+    }
+
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Rectangle r = new Rectangle();
+        r.Width = 20;
+        r.Height = 2;
+        Console.WriteLine(r.Area());
+        r.Dispplay();
+    }
 }
