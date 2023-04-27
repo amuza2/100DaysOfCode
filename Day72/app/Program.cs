@@ -1,32 +1,41 @@
 ﻿using System;
 namespace Learning;
 
-
-abstract class Shape
+interface ILogger
 {
-    public abstract double Area();
-    public void Dispplay() {Console.WriteLine("This is a shape.");}
+    void Log(string message);
+    void LogError(string errorMessage);
 }
 
-class Rectangle : Shape
+class FileLogger : ILogger
 {
-    public double Width {get; set;}
-    public double Height {get; set;}
-    public override double Area()
+    string filePath;
+    public FileLogger(string filePath)
     {
-        return Width * Height;
+        this.filePath = filePath;
     }
-
+    public void Log(string message)
+    {
+        using(StreamWriter writer = new StreamWriter(filePath, true))
+        {
+            writer.WriteLine(message);
+        }
+    }
+    public void LogError(string errorMessage)
+    {
+        using(StreamWriter writer = new StreamWriter(filePath, true))
+        {
+            writer.WriteLine("ERROR: " + errorMessage);
+        }
+    }
 }
-
 class Program
 {
     static void Main(string[] args)
     {
-        Rectangle r = new Rectangle();
-        r.Width = 20;
-        r.Height = 2;
-        Console.WriteLine(r.Area());
-        r.Dispplay();
+        ILogger ins = new FileLogger("log.txt");
+        ins.Log("This is a log message!");
+        ins.LogError("This is an error message!"); 
+
     }
 }

@@ -1,0 +1,2 @@
+This is a log message!
+ERROR: This is an error message!
