@@ -1,20 +1,32 @@
 ﻿using System;
 namespace Learning;
 
-
+interface IShape 
+{
+    void Draw();
+    void Finish(){
+        Console.WriteLine("Done!");
+    }
+}
+class Circle : IShape 
+{
+    public void Draw() {
+        Console.WriteLine("Circle Draw");
+    }
+    public void Finish(){
+        Console.WriteLine("End!");
+    }
+}
 
 class Program
 {
     static void Main(string[] args)
     {
-        Chair officeChair = new Chair("Brown", "Plastic");
-        Chair gamingChair = new Chair("Red", "Wood");
+        IShape c = new Circle();
+        Circle a = new Circle();
+        c.Finish();
+        a.Finish();        
 
-        Car damagedCar = new Car(80F, "Blue");
 
-        damagedCar.DestroyablesNearby.Add(officeChair);
-        damagedCar.DestroyablesNearby.Add(gamingChair);
-
-        damagedCar.Destroy();
     }
 }
