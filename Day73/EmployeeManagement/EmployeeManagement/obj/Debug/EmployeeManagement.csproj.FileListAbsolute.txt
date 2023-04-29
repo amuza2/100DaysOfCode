@@ -1,0 +1,11 @@
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\EmployeeManagement\EmployeeManagement\bin\Debug\EmployeeManagement.exe.config
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\EmployeeManagement\EmployeeManagement\bin\Debug\EmployeeManagement.exe
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\EmployeeManagement\EmployeeManagement\bin\Debug\EmployeeManagement.pdb
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\EmployeeManagement\EmployeeManagement\obj\Debug\EmployeeManagement.csproj.AssemblyReference.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\EmployeeManagement\EmployeeManagement\obj\Debug\EmployeeManagement.csproj.SuggestedBindingRedirects.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\EmployeeManagement\EmployeeManagement\obj\Debug\EmployeeManagement.EmployeeForm.resources
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\EmployeeManagement\EmployeeManagement\obj\Debug\EmployeeManagement.Properties.Resources.resources
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\EmployeeManagement\EmployeeManagement\obj\Debug\EmployeeManagement.csproj.GenerateResource.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\EmployeeManagement\EmployeeManagement\obj\Debug\EmployeeManagement.csproj.CoreCompileInputs.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\EmployeeManagement\EmployeeManagement\obj\Debug\EmployeeManagement.exe
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\EmployeeManagement\EmployeeManagement\obj\Debug\EmployeeManagement.pdb
