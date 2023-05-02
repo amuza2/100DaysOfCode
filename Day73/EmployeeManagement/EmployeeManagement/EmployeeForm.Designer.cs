@@ -31,48 +31,48 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmployeeForm));
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.IDtextBox = new System.Windows.Forms.TextBox();
-            this.FirstNametextBox = new System.Windows.Forms.TextBox();
-            this.LastNametextBox = new System.Windows.Forms.TextBox();
-            this.EmailtextBox = new System.Windows.Forms.TextBox();
-            this.JobTitletextBox = new System.Windows.Forms.TextBox();
-            this.PhonetextBox = new System.Windows.Forms.TextBox();
-            this.DivisioncomboBox = new System.Windows.Forms.ComboBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.FindByDivisioncomboBox = new System.Windows.Forms.ComboBox();
-            this.FindByIDradioButton = new System.Windows.Forms.RadioButton();
-            this.FindByDepartmentradioButton = new System.Windows.Forms.RadioButton();
-            this.SearchtextBox = new System.Windows.Forms.TextBox();
-            this.Searchbutton = new System.Windows.Forms.Button();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
+            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorRefrechData = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorUpdateItem = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.DivisioncomboBox = new System.Windows.Forms.ComboBox();
+            this.PhonetextBox = new System.Windows.Forms.TextBox();
+            this.JobTitletextBox = new System.Windows.Forms.TextBox();
+            this.EmailtextBox = new System.Windows.Forms.TextBox();
+            this.LastNametextBox = new System.Windows.Forms.TextBox();
+            this.FirstNametextBox = new System.Windows.Forms.TextBox();
+            this.IDtextBox = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.FindByDepartmentradioButton = new System.Windows.Forms.RadioButton();
+            this.FindByIDradioButton = new System.Windows.Forms.RadioButton();
+            this.FindByDivisioncomboBox = new System.Windows.Forms.ComboBox();
+            this.SearchtextBox = new System.Windows.Forms.TextBox();
+            this.Searchbutton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -116,6 +116,31 @@
             this.bindingNavigator1.TabIndex = 0;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            // 
+            // bindingNavigatorMoveFirstItem
+            // 
+            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
+            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
+            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveFirstItem.Text = "Move first";
+            // 
+            // bindingNavigatorMovePreviousItem
+            // 
+            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
+            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
+            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMovePreviousItem.Text = "Move previous";
+            // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
@@ -131,42 +156,88 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
+            // 
+            // bindingNavigatorMoveNextItem
+            // 
+            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
+            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
+            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveNextItem.Text = "Move next";
+            // 
+            // bindingNavigatorMoveLastItem
+            // 
+            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
+            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
+            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
-            // toolStripSeparator1
+            // bindingNavigatorAddNewItem
             // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
+            this.bindingNavigatorAddNewItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(74, 22);
+            this.bindingNavigatorAddNewItem.Text = "Add new";
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
             this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
             // 
+            // bindingNavigatorRefrechData
+            // 
+            this.bindingNavigatorRefrechData.Image = global::EmployeeManagement.Properties.Resources.save1;
+            this.bindingNavigatorRefrechData.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.bindingNavigatorRefrechData.Name = "bindingNavigatorRefrechData";
+            this.bindingNavigatorRefrechData.Size = new System.Drawing.Size(51, 22);
+            this.bindingNavigatorRefrechData.Text = "Save";
+            // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
             this.toolStripSeparator4.Size = new System.Drawing.Size(6, 25);
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.ForeColor = System.Drawing.Color.Red;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(60, 22);
+            this.bindingNavigatorDeleteItem.Text = "Delete";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            // 
+            // bindingNavigatorUpdateItem
+            // 
+            this.bindingNavigatorUpdateItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.bindingNavigatorUpdateItem.Image = global::EmployeeManagement.Properties.Resources.updateIcon3;
+            this.bindingNavigatorUpdateItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.bindingNavigatorUpdateItem.Name = "bindingNavigatorUpdateItem";
+            this.bindingNavigatorUpdateItem.Size = new System.Drawing.Size(65, 22);
+            this.bindingNavigatorUpdateItem.Text = "Update";
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
             // statusStrip1
             // 
@@ -177,6 +248,14 @@
             this.statusStrip1.Size = new System.Drawing.Size(800, 22);
             this.statusStrip1.TabIndex = 1;
             this.statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.ForeColor = System.Drawing.Color.OrangeRed;
+            this.toolStripStatusLabel1.Image = global::EmployeeManagement.Properties.Resources.updateIcon2;
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(58, 17);
+            this.toolStripStatusLabel1.Text = "Status:";
             // 
             // groupBox1
             // 
@@ -202,6 +281,121 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Employee Info";
             // 
+            // DivisioncomboBox
+            // 
+            this.DivisioncomboBox.FormattingEnabled = true;
+            this.DivisioncomboBox.Location = new System.Drawing.Point(92, 188);
+            this.DivisioncomboBox.Name = "DivisioncomboBox";
+            this.DivisioncomboBox.Size = new System.Drawing.Size(152, 21);
+            this.DivisioncomboBox.TabIndex = 13;
+            // 
+            // PhonetextBox
+            // 
+            this.PhonetextBox.Location = new System.Drawing.Point(92, 162);
+            this.PhonetextBox.Name = "PhonetextBox";
+            this.PhonetextBox.Size = new System.Drawing.Size(152, 20);
+            this.PhonetextBox.TabIndex = 12;
+            // 
+            // JobTitletextBox
+            // 
+            this.JobTitletextBox.Location = new System.Drawing.Point(92, 136);
+            this.JobTitletextBox.Name = "JobTitletextBox";
+            this.JobTitletextBox.Size = new System.Drawing.Size(152, 20);
+            this.JobTitletextBox.TabIndex = 11;
+            // 
+            // EmailtextBox
+            // 
+            this.EmailtextBox.Location = new System.Drawing.Point(92, 110);
+            this.EmailtextBox.Name = "EmailtextBox";
+            this.EmailtextBox.Size = new System.Drawing.Size(152, 20);
+            this.EmailtextBox.TabIndex = 10;
+            // 
+            // LastNametextBox
+            // 
+            this.LastNametextBox.Location = new System.Drawing.Point(92, 84);
+            this.LastNametextBox.Name = "LastNametextBox";
+            this.LastNametextBox.Size = new System.Drawing.Size(152, 20);
+            this.LastNametextBox.TabIndex = 9;
+            // 
+            // FirstNametextBox
+            // 
+            this.FirstNametextBox.Location = new System.Drawing.Point(92, 58);
+            this.FirstNametextBox.Name = "FirstNametextBox";
+            this.FirstNametextBox.Size = new System.Drawing.Size(152, 20);
+            this.FirstNametextBox.TabIndex = 8;
+            // 
+            // IDtextBox
+            // 
+            this.IDtextBox.Location = new System.Drawing.Point(92, 32);
+            this.IDtextBox.Name = "IDtextBox";
+            this.IDtextBox.ReadOnly = true;
+            this.IDtextBox.Size = new System.Drawing.Size(72, 20);
+            this.IDtextBox.TabIndex = 7;
+            this.IDtextBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(24, 191);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(47, 13);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "Division:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(24, 165);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(41, 13);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Phone:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(24, 139);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(50, 13);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Job Title:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(24, 113);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(35, 13);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Email:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(24, 87);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(59, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Last name:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(24, 60);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(60, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "First Name:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(24, 35);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(46, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Auto ID:";
+            // 
             // groupBox2
             // 
             this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -215,121 +409,6 @@
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Employee List";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(24, 35);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Auto ID:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(24, 60);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(60, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "First Name:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(24, 87);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Last name:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(24, 113);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Email:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(24, 139);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(50, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Job Title:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(24, 165);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(41, 13);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Phone:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(24, 191);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(47, 13);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Division:";
-            // 
-            // IDtextBox
-            // 
-            this.IDtextBox.Location = new System.Drawing.Point(92, 32);
-            this.IDtextBox.Name = "IDtextBox";
-            this.IDtextBox.ReadOnly = true;
-            this.IDtextBox.Size = new System.Drawing.Size(72, 20);
-            this.IDtextBox.TabIndex = 7;
-            this.IDtextBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // FirstNametextBox
-            // 
-            this.FirstNametextBox.Location = new System.Drawing.Point(92, 58);
-            this.FirstNametextBox.Name = "FirstNametextBox";
-            this.FirstNametextBox.Size = new System.Drawing.Size(152, 20);
-            this.FirstNametextBox.TabIndex = 8;
-            // 
-            // LastNametextBox
-            // 
-            this.LastNametextBox.Location = new System.Drawing.Point(92, 84);
-            this.LastNametextBox.Name = "LastNametextBox";
-            this.LastNametextBox.Size = new System.Drawing.Size(152, 20);
-            this.LastNametextBox.TabIndex = 9;
-            // 
-            // EmailtextBox
-            // 
-            this.EmailtextBox.Location = new System.Drawing.Point(92, 110);
-            this.EmailtextBox.Name = "EmailtextBox";
-            this.EmailtextBox.Size = new System.Drawing.Size(152, 20);
-            this.EmailtextBox.TabIndex = 10;
-            // 
-            // JobTitletextBox
-            // 
-            this.JobTitletextBox.Location = new System.Drawing.Point(92, 136);
-            this.JobTitletextBox.Name = "JobTitletextBox";
-            this.JobTitletextBox.Size = new System.Drawing.Size(152, 20);
-            this.JobTitletextBox.TabIndex = 11;
-            // 
-            // PhonetextBox
-            // 
-            this.PhonetextBox.Location = new System.Drawing.Point(92, 162);
-            this.PhonetextBox.Name = "PhonetextBox";
-            this.PhonetextBox.Size = new System.Drawing.Size(152, 20);
-            this.PhonetextBox.TabIndex = 12;
-            // 
-            // DivisioncomboBox
-            // 
-            this.DivisioncomboBox.FormattingEnabled = true;
-            this.DivisioncomboBox.Location = new System.Drawing.Point(92, 188);
-            this.DivisioncomboBox.Name = "DivisioncomboBox";
-            this.DivisioncomboBox.Size = new System.Drawing.Size(152, 21);
-            this.DivisioncomboBox.TabIndex = 13;
             // 
             // dataGridView1
             // 
@@ -357,13 +436,16 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Advanced Search";
             // 
-            // FindByDivisioncomboBox
+            // FindByDepartmentradioButton
             // 
-            this.FindByDivisioncomboBox.FormattingEnabled = true;
-            this.FindByDivisioncomboBox.Location = new System.Drawing.Point(42, 116);
-            this.FindByDivisioncomboBox.Name = "FindByDivisioncomboBox";
-            this.FindByDivisioncomboBox.Size = new System.Drawing.Size(202, 21);
-            this.FindByDivisioncomboBox.TabIndex = 13;
+            this.FindByDepartmentradioButton.AutoSize = true;
+            this.FindByDepartmentradioButton.Location = new System.Drawing.Point(42, 75);
+            this.FindByDepartmentradioButton.Name = "FindByDepartmentradioButton";
+            this.FindByDepartmentradioButton.Size = new System.Drawing.Size(163, 17);
+            this.FindByDepartmentradioButton.TabIndex = 15;
+            this.FindByDepartmentradioButton.TabStop = true;
+            this.FindByDepartmentradioButton.Text = "Find employee by department";
+            this.FindByDepartmentradioButton.UseVisualStyleBackColor = true;
             // 
             // FindByIDradioButton
             // 
@@ -376,16 +458,13 @@
             this.FindByIDradioButton.Text = "Find Employee by ID";
             this.FindByIDradioButton.UseVisualStyleBackColor = true;
             // 
-            // FindByDepartmentradioButton
+            // FindByDivisioncomboBox
             // 
-            this.FindByDepartmentradioButton.AutoSize = true;
-            this.FindByDepartmentradioButton.Location = new System.Drawing.Point(42, 75);
-            this.FindByDepartmentradioButton.Name = "FindByDepartmentradioButton";
-            this.FindByDepartmentradioButton.Size = new System.Drawing.Size(163, 17);
-            this.FindByDepartmentradioButton.TabIndex = 15;
-            this.FindByDepartmentradioButton.TabStop = true;
-            this.FindByDepartmentradioButton.Text = "Find employee by department";
-            this.FindByDepartmentradioButton.UseVisualStyleBackColor = true;
+            this.FindByDivisioncomboBox.FormattingEnabled = true;
+            this.FindByDivisioncomboBox.Location = new System.Drawing.Point(42, 116);
+            this.FindByDivisioncomboBox.Name = "FindByDivisioncomboBox";
+            this.FindByDivisioncomboBox.Size = new System.Drawing.Size(202, 21);
+            this.FindByDivisioncomboBox.TabIndex = 13;
             // 
             // SearchtextBox
             // 
@@ -408,85 +487,6 @@
             this.Searchbutton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Searchbutton.UseVisualStyleBackColor = true;
             // 
-            // toolStripStatusLabel1
-            // 
-            this.toolStripStatusLabel1.ForeColor = System.Drawing.Color.OrangeRed;
-            this.toolStripStatusLabel1.Image = global::EmployeeManagement.Properties.Resources.updateIcon2;
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(58, 17);
-            this.toolStripStatusLabel1.Text = "Status:";
-            // 
-            // bindingNavigatorMoveFirstItem
-            // 
-            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveFirstItem.Text = "Move first";
-            // 
-            // bindingNavigatorMovePreviousItem
-            // 
-            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
-            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMovePreviousItem.Text = "Move previous";
-            // 
-            // bindingNavigatorMoveNextItem
-            // 
-            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
-            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
-            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveNextItem.Text = "Move next";
-            // 
-            // bindingNavigatorMoveLastItem
-            // 
-            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
-            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveLastItem.Text = "Move last";
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(74, 22);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
-            // bindingNavigatorRefrechData
-            // 
-            this.bindingNavigatorRefrechData.Image = global::EmployeeManagement.Properties.Resources.save1;
-            this.bindingNavigatorRefrechData.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.bindingNavigatorRefrechData.Name = "bindingNavigatorRefrechData";
-            this.bindingNavigatorRefrechData.Size = new System.Drawing.Size(51, 22);
-            this.bindingNavigatorRefrechData.Text = "Save";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.ForeColor = System.Drawing.Color.Red;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(60, 22);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
-            // 
-            // bindingNavigatorUpdateItem
-            // 
-            this.bindingNavigatorUpdateItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.bindingNavigatorUpdateItem.Image = global::EmployeeManagement.Properties.Resources.updateIcon3;
-            this.bindingNavigatorUpdateItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.bindingNavigatorUpdateItem.Name = "bindingNavigatorUpdateItem";
-            this.bindingNavigatorUpdateItem.Size = new System.Drawing.Size(65, 22);
-            this.bindingNavigatorUpdateItem.Text = "Update";
-            // 
             // EmployeeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -503,6 +503,7 @@
             this.Name = "EmployeeForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Employee Form";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.EmployeeForm_FormClosing);
             this.Load += new System.EventHandler(this.EmployeeForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);

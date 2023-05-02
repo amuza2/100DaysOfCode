@@ -12,7 +12,7 @@ namespace EmployeeManagement
         public static SqlCommand cmd = new SqlCommand("", con);
         public static DataSet ds;
         public static SqlDataAdapter da;
-        public static BindingSource bc;
+        public static BindingSource bs;
         public static string sql;
 
         public static void openConnection()

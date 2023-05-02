@@ -12,7 +12,7 @@ public class Publication
         get {return _name;}
         set {
             if(value == ""){
-                Console.WriteLine("You can't enter black");
+                Console.WriteLine("You can't enter blank");
             }
             _name = value;
         }
