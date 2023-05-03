@@ -17,7 +17,6 @@ class Circle : IShape
         Console.WriteLine("End!");
     }
 }
-
 class Program
 {
     static void Main(string[] args)
@@ -25,8 +24,6 @@ class Program
         IShape c = new Circle();
         Circle a = new Circle();
         c.Finish();
-        a.Finish();        
-
-
+        a.Finish();       
     }
 }
