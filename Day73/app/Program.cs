@@ -1,31 +1,44 @@
 ﻿using System;
 namespace learning;
 
-class Employee
+class Staff
 {
-    //int matricule;
-    int category;
-    public int Category {set; get;}
-    //public int Service {set; get};
-    //public string Matricule {set; get};
-    public Employee(int cat)
+    protected string name;
+    protected int numberOfStuff;
+    public int NumberOfStuff
     {
-        category = cat;
+        get{return numberOfStuff;}
+        set
+        {
+            if(value > 0) numberOfStuff = value;
+        }
     }
-    public int getCategoty()
+    public Staff(string n_ame)
     {
-        return category;
+        name = n_ame;
+        Console.WriteLine($"Account of name: {name} created");
+    }
+    public string CalculateFree()
+    {
+        return $"Fee of {name} is {numberOfStuff * 5}";
     }
 }
+
+class Worker : Staff
+{
+    public Worker(int n, string n_ame) : base(n_ame)
+    {
+        Console.WriteLine($"Child name is {n_ame} and num is {n}");
+    }
+}
+
 
 class Program{
 
     static void Main(string[] args)
         {
-            Employee e = new Employee(15);
-            e.Category = 20;
-            Console.WriteLine(e.Category);
-            Console.WriteLine(e.getCategoty());
-
+            Worker w1 = new Worker(5, "med");
+            Worker w2 = new Worker(10, "amuza");
+            
         }
 }
