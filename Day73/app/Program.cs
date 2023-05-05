@@ -18,7 +18,7 @@ class Staff
         name = n_ame;
         Console.WriteLine($"Account of name: {name} created");
     }
-    public string CalculateFree()
+    public virtual string CalculateFree()
     {
         return $"Fee of {name} is {numberOfStuff * 5}";
     }
@@ -28,17 +28,47 @@ class Worker : Staff
 {
     public Worker(int n, string n_ame) : base(n_ame)
     {
-        Console.WriteLine($"Child name is {n_ame} and num is {n}");
+        numberOfStuff = n;
     }
 }
 
+class VipWorker : Staff
+{
+    int bonus;
+    public VipWorker(int bs, int n, string n_ame) : base(n_ame)
+    {
+        bonus = bs;
+        numberOfStuff = n;
+        Console.WriteLine($"VIP {n_ame} created");
+    }
+
+    public override string CalculateFree()
+    {
+        //return base.CalculateFree();
+        return $"Fee of {name} is {numberOfStuff * 5 + bonus}";
+    }
+}
 
 class Program{
-
     static void Main(string[] args)
         {
-            Worker w1 = new Worker(5, "med");
-            Worker w2 = new Worker(10, "amuza");
+            Staff[] companyMember = new Staff[5];
+            int index = 0;
+            companyMember[index++] = new Worker(5, "med");
+            companyMember[index++] = new Worker(10, "amuza");
+            companyMember[index++] = new VipWorker(5, 12, "Chami");
+            Console.WriteLine(typeof(Worker));
+            foreach(Staff s in companyMember)
+            {
+                if(s != null)
+                {
+                    Console.Write(s.GetType() + " ");
+                    Console.WriteLine(s.CalculateFree());
+
+                }
+            }
+            
+
             
         }
 }
