@@ -1,0 +1,56 @@
+[
+  {
+    "ID": 1,
+    "FirstName": "m",
+    "LastName": "c",
+    "section": "2",
+    "birthday": {
+      "year": 193,
+      "month": 3,
+      "day": 1
+    },
+    "birthPlace": "sidi",
+    "startFormation": {
+      "year": 2022,
+      "month": 10,
+      "day": 1
+    },
+    "endFormation": {
+      "year": 2025,
+      "month": 5,
+      "day": 1
+    },
+    "certificateReleaseDate": {
+      "year": 0,
+      "month": 0,
+      "day": 0
+    }
+  },
+  {
+    "ID": 2,
+    "FirstName": "c",
+    "LastName": "b",
+    "section": "2",
+    "birthday": {
+      "year": 1994,
+      "month": 10,
+      "day": 1
+    },
+    "birthPlace": "gouraya",
+    "startFormation": {
+      "year": 2022,
+      "month": 10,
+      "day": 1
+    },
+    "endFormation": {
+      "year": 2025,
+      "month": 5,
+      "day": 1
+    },
+    "certificateReleaseDate": {
+      "year": 0,
+      "month": 0,
+      "day": 0
+    }
+  }
+]

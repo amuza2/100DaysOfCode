@@ -1,0 +1,12 @@
+C:\Users\REALMAN\source\repos\learningcsharp\selfLearning\bin\Debug\selfLearning.exe.config
+C:\Users\REALMAN\source\repos\learningcsharp\selfLearning\bin\Debug\selfLearning.exe
+C:\Users\REALMAN\source\repos\learningcsharp\selfLearning\bin\Debug\selfLearning.pdb
+C:\Users\REALMAN\source\repos\learningcsharp\selfLearning\obj\Debug\selfLearning.csproj.AssemblyReference.cache
+C:\Users\REALMAN\source\repos\learningcsharp\selfLearning\obj\Debug\selfLearning.csproj.SuggestedBindingRedirects.cache
+C:\Users\REALMAN\source\repos\learningcsharp\selfLearning\obj\Debug\selfLearning.csproj.CoreCompileInputs.cache
+C:\Users\REALMAN\source\repos\learningcsharp\selfLearning\obj\Debug\selfLearning.exe
+C:\Users\REALMAN\source\repos\learningcsharp\selfLearning\obj\Debug\selfLearning.pdb
+C:\Users\REALMAN\source\repos\learningcsharp\selfLearning\bin\Debug\TextToAsciiArt.dll
+C:\Users\REALMAN\source\repos\learningcsharp\selfLearning\obj\Debug\selfLearning.csproj.CopyComplete
+C:\Users\REALMAN\source\repos\learningcsharp\selfLearning\bin\Debug\Newtonsoft.Json.dll
+C:\Users\REALMAN\source\repos\learningcsharp\selfLearning\bin\Debug\Newtonsoft.Json.xml

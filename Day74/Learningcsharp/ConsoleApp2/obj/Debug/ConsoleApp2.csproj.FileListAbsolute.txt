@@ -1,0 +1,3 @@
+C:\Users\REALMAN\source\repos\learningcsharp\ConsoleApp2\obj\Debug\ConsoleApp2.csproj.AssemblyReference.cache
+C:\Users\REALMAN\source\repos\learningcsharp\ConsoleApp2\obj\Debug\ConsoleApp2.csproj.SuggestedBindingRedirects.cache
+C:\Users\REALMAN\source\repos\learningcsharp\ConsoleApp2\obj\Debug\ConsoleApp2.csproj.CoreCompileInputs.cache

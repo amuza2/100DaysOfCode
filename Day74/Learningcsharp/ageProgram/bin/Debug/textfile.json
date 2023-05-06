@@ -1,0 +1,53 @@
+[
+    {
+        "ID": 1,
+        "FirstName": "textName",
+        "LastName": "TestLastName",
+        "section": "2",
+        "birthday":
+        {
+            "year": 1993,
+            "month": 3,
+            "day": 19
+        },
+        "birthPlace": "sidi Ghilas",
+        "startFormation":
+        {
+            "year": 2022,
+            "month": 10,
+            "day": 1
+        },
+        "endFormation":
+        {
+            "year": 2025,
+            "month": 5,
+            "day": 1
+        },
+    },
+    {
+        "ID": 2,
+        "FirstName": "textName2",
+        "LastName": "TestLastName2",
+        "section": "2",
+        "birthday":
+        {
+            "year": 1993,
+            "month": 3,
+            "day": 19
+        },
+        "birthPlace": "sidi Ghilas",
+        "startFormation":
+        {
+            "year": 2022,
+            "month": 10,
+            "day": 1
+        },
+        "endFormation":
+        {
+            "year": 2025,
+            "month": 5,
+            "day": 1
+        },
+    }
+]
+    
