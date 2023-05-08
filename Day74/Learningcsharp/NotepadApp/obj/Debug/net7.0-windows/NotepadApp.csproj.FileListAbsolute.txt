@@ -1,0 +1,17 @@
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\NotepadApp\bin\Debug\net7.0-windows\NotepadApp.exe
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\NotepadApp\bin\Debug\net7.0-windows\NotepadApp.deps.json
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\NotepadApp\bin\Debug\net7.0-windows\NotepadApp.runtimeconfig.json
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\NotepadApp\bin\Debug\net7.0-windows\NotepadApp.dll
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\NotepadApp\bin\Debug\net7.0-windows\NotepadApp.pdb
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\NotepadApp\obj\Debug\net7.0-windows\NotepadApp.csproj.AssemblyReference.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\NotepadApp\obj\Debug\net7.0-windows\NotepadApp.Form1.resources
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\NotepadApp\obj\Debug\net7.0-windows\NotepadApp.csproj.GenerateResource.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\NotepadApp\obj\Debug\net7.0-windows\NotepadApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\NotepadApp\obj\Debug\net7.0-windows\NotepadApp.AssemblyInfoInputs.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\NotepadApp\obj\Debug\net7.0-windows\NotepadApp.AssemblyInfo.cs
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\NotepadApp\obj\Debug\net7.0-windows\NotepadApp.csproj.CoreCompileInputs.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\NotepadApp\obj\Debug\net7.0-windows\NotepadApp.dll
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\NotepadApp\obj\Debug\net7.0-windows\refint\NotepadApp.dll
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\NotepadApp\obj\Debug\net7.0-windows\NotepadApp.pdb
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\NotepadApp\obj\Debug\net7.0-windows\NotepadApp.genruntimeconfig.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\NotepadApp\obj\Debug\net7.0-windows\ref\NotepadApp.dll
