@@ -1,0 +1,17 @@
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\DateTimeApp\bin\Debug\net7.0-windows\DateTimeApp.exe
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\DateTimeApp\bin\Debug\net7.0-windows\DateTimeApp.deps.json
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\DateTimeApp\bin\Debug\net7.0-windows\DateTimeApp.runtimeconfig.json
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\DateTimeApp\bin\Debug\net7.0-windows\DateTimeApp.dll
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\DateTimeApp\bin\Debug\net7.0-windows\DateTimeApp.pdb
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\DateTimeApp\obj\Debug\net7.0-windows\DateTimeApp.csproj.AssemblyReference.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\DateTimeApp\obj\Debug\net7.0-windows\DateTimeApp.Home.resources
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\DateTimeApp\obj\Debug\net7.0-windows\DateTimeApp.csproj.GenerateResource.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\DateTimeApp\obj\Debug\net7.0-windows\DateTimeApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\DateTimeApp\obj\Debug\net7.0-windows\DateTimeApp.AssemblyInfoInputs.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\DateTimeApp\obj\Debug\net7.0-windows\DateTimeApp.AssemblyInfo.cs
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\DateTimeApp\obj\Debug\net7.0-windows\DateTimeApp.csproj.CoreCompileInputs.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\DateTimeApp\obj\Debug\net7.0-windows\DateTimeApp.dll
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\DateTimeApp\obj\Debug\net7.0-windows\refint\DateTimeApp.dll
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\DateTimeApp\obj\Debug\net7.0-windows\DateTimeApp.pdb
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\DateTimeApp\obj\Debug\net7.0-windows\DateTimeApp.genruntimeconfig.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\DateTimeApp\obj\Debug\net7.0-windows\ref\DateTimeApp.dll

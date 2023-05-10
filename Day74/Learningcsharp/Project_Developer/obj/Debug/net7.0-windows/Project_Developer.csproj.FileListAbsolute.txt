@@ -1,0 +1,17 @@
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\Project_Developer\bin\Debug\net7.0-windows\Project_Developer.exe
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\Project_Developer\bin\Debug\net7.0-windows\Project_Developer.deps.json
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\Project_Developer\bin\Debug\net7.0-windows\Project_Developer.runtimeconfig.json
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\Project_Developer\bin\Debug\net7.0-windows\Project_Developer.dll
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\Project_Developer\bin\Debug\net7.0-windows\Project_Developer.pdb
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\Project_Developer\obj\Debug\net7.0-windows\Project_Developer.csproj.AssemblyReference.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\Project_Developer\obj\Debug\net7.0-windows\Project_Developer.Form1.resources
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\Project_Developer\obj\Debug\net7.0-windows\Project_Developer.csproj.GenerateResource.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\Project_Developer\obj\Debug\net7.0-windows\Project_Developer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\Project_Developer\obj\Debug\net7.0-windows\Project_Developer.AssemblyInfoInputs.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\Project_Developer\obj\Debug\net7.0-windows\Project_Developer.AssemblyInfo.cs
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\Project_Developer\obj\Debug\net7.0-windows\Project_Developer.csproj.CoreCompileInputs.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\Project_Developer\obj\Debug\net7.0-windows\Project_Developer.dll
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\Project_Developer\obj\Debug\net7.0-windows\refint\Project_Developer.dll
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\Project_Developer\obj\Debug\net7.0-windows\Project_Developer.pdb
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\Project_Developer\obj\Debug\net7.0-windows\Project_Developer.genruntimeconfig.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\Project_Developer\obj\Debug\net7.0-windows\ref\Project_Developer.dll
