@@ -1,0 +1,13 @@
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\PurchaseProduct\bin\Debug\PurchaseProduct.exe.config
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\PurchaseProduct\bin\Debug\PurchaseProduct.exe
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\PurchaseProduct\bin\Debug\PurchaseProduct.pdb
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\PurchaseProduct\bin\Debug\Guna.UI2.dll
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\PurchaseProduct\obj\Debug\PurchaseProduct.csproj.AssemblyReference.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\PurchaseProduct\obj\Debug\PurchaseProduct.csproj.SuggestedBindingRedirects.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\PurchaseProduct\obj\Debug\PurchaseProduct.Properties.Resources.resources
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\PurchaseProduct\obj\Debug\PurchaseProduct.purchaseProduct.resources
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\PurchaseProduct\obj\Debug\PurchaseProduct.csproj.GenerateResource.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\PurchaseProduct\obj\Debug\PurchaseProduct.csproj.CoreCompileInputs.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\PurchaseProduct\obj\Debug\PurchaseProduct.csproj.CopyComplete
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\PurchaseProduct\obj\Debug\PurchaseProduct.exe
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\PurchaseProduct\obj\Debug\PurchaseProduct.pdb
