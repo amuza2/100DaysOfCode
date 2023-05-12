@@ -38,20 +38,20 @@
             this.txtbxFirstName = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtbxLastName = new Guna.UI2.WinForms.Guna2TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.guna2RadioButton1 = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.guna2RadioButton2 = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.label7 = new System.Windows.Forms.Label();
-            this.guna2TextBox5 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.label9 = new System.Windows.Forms.Label();
-            this.guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.radioPassport = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.radioIDcard = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.lblChDocNumber = new System.Windows.Forms.Label();
+            this.txtbxDocumentNumber = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lblChDocIssueDate = new System.Windows.Forms.Label();
+            this.datetimeIssue = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.lblChDocExpireDate = new System.Windows.Forms.Label();
+            this.datetimeExpire = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.monthCalander = new System.Windows.Forms.MonthCalendar();
-            this.guna2NumericUpDown1 = new Guna.UI2.WinForms.Guna2NumericUpDown();
+            this.updownBaggage = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.btnOrderTicket = new Guna.UI2.WinForms.Guna2GradientButton();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2NumericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updownBaggage)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -214,138 +214,142 @@
             this.label6.TabIndex = 0;
             this.label6.Text = "Travel document:";
             // 
-            // guna2RadioButton1
+            // radioPassport
             // 
-            this.guna2RadioButton1.Animated = true;
-            this.guna2RadioButton1.AutoSize = true;
-            this.guna2RadioButton1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton1.CheckedState.BorderThickness = 0;
-            this.guna2RadioButton1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton1.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2RadioButton1.CheckedState.InnerOffset = -4;
-            this.guna2RadioButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.guna2RadioButton1.Location = new System.Drawing.Point(184, 388);
-            this.guna2RadioButton1.Name = "guna2RadioButton1";
-            this.guna2RadioButton1.Size = new System.Drawing.Size(88, 20);
-            this.guna2RadioButton1.TabIndex = 6;
-            this.guna2RadioButton1.Text = "Passport";
-            this.guna2RadioButton1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2RadioButton1.UncheckedState.BorderThickness = 2;
-            this.guna2RadioButton1.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton1.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton1.UseVisualStyleBackColor = true;
+            this.radioPassport.Animated = true;
+            this.radioPassport.AutoSize = true;
+            this.radioPassport.Checked = true;
+            this.radioPassport.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.radioPassport.CheckedState.BorderThickness = 0;
+            this.radioPassport.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.radioPassport.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.radioPassport.CheckedState.InnerOffset = -4;
+            this.radioPassport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radioPassport.Location = new System.Drawing.Point(184, 388);
+            this.radioPassport.Name = "radioPassport";
+            this.radioPassport.Size = new System.Drawing.Size(88, 20);
+            this.radioPassport.TabIndex = 6;
+            this.radioPassport.TabStop = true;
+            this.radioPassport.Text = "Passport";
+            this.radioPassport.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.radioPassport.UncheckedState.BorderThickness = 2;
+            this.radioPassport.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.radioPassport.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.radioPassport.UseVisualStyleBackColor = true;
+            this.radioPassport.CheckedChanged += new System.EventHandler(this.radioPassport_CheckedChanged);
             // 
-            // guna2RadioButton2
+            // radioIDcard
             // 
-            this.guna2RadioButton2.Animated = true;
-            this.guna2RadioButton2.AutoSize = true;
-            this.guna2RadioButton2.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton2.CheckedState.BorderThickness = 0;
-            this.guna2RadioButton2.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton2.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2RadioButton2.CheckedState.InnerOffset = -4;
-            this.guna2RadioButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.guna2RadioButton2.Location = new System.Drawing.Point(282, 388);
-            this.guna2RadioButton2.Name = "guna2RadioButton2";
-            this.guna2RadioButton2.Size = new System.Drawing.Size(73, 20);
-            this.guna2RadioButton2.TabIndex = 7;
-            this.guna2RadioButton2.Text = "ID card";
-            this.guna2RadioButton2.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2RadioButton2.UncheckedState.BorderThickness = 2;
-            this.guna2RadioButton2.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton2.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton2.UseVisualStyleBackColor = true;
+            this.radioIDcard.Animated = true;
+            this.radioIDcard.AutoSize = true;
+            this.radioIDcard.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.radioIDcard.CheckedState.BorderThickness = 0;
+            this.radioIDcard.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.radioIDcard.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.radioIDcard.CheckedState.InnerOffset = -4;
+            this.radioIDcard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radioIDcard.Location = new System.Drawing.Point(282, 388);
+            this.radioIDcard.Name = "radioIDcard";
+            this.radioIDcard.Size = new System.Drawing.Size(73, 20);
+            this.radioIDcard.TabIndex = 7;
+            this.radioIDcard.Text = "ID card";
+            this.radioIDcard.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.radioIDcard.UncheckedState.BorderThickness = 2;
+            this.radioIDcard.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.radioIDcard.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.radioIDcard.UseVisualStyleBackColor = true;
+            this.radioIDcard.CheckedChanged += new System.EventHandler(this.radioIDcard_CheckedChanged);
             // 
-            // label7
+            // lblChDocNumber
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("KenPixel", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(365, 390);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(147, 16);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Document Number:";
+            this.lblChDocNumber.AutoSize = true;
+            this.lblChDocNumber.Font = new System.Drawing.Font("KenPixel", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblChDocNumber.Location = new System.Drawing.Point(365, 390);
+            this.lblChDocNumber.Name = "lblChDocNumber";
+            this.lblChDocNumber.Size = new System.Drawing.Size(144, 16);
+            this.lblChDocNumber.TabIndex = 0;
+            this.lblChDocNumber.Text = "Passport Number:";
             // 
-            // guna2TextBox5
+            // txtbxDocumentNumber
             // 
-            this.guna2TextBox5.Animated = true;
-            this.guna2TextBox5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox5.DefaultText = "";
-            this.guna2TextBox5.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox5.DisabledState.Parent = this.guna2TextBox5;
-            this.guna2TextBox5.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox5.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox5.FocusedState.Parent = this.guna2TextBox5;
-            this.guna2TextBox5.Font = new System.Drawing.Font("KenPixel", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox5.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox5.HoverState.Parent = this.guna2TextBox5;
-            this.guna2TextBox5.Location = new System.Drawing.Point(519, 382);
-            this.guna2TextBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2TextBox5.Name = "guna2TextBox5";
-            this.guna2TextBox5.PasswordChar = '\0';
-            this.guna2TextBox5.PlaceholderText = "";
-            this.guna2TextBox5.SelectedText = "";
-            this.guna2TextBox5.ShadowDecoration.Parent = this.guna2TextBox5;
-            this.guna2TextBox5.Size = new System.Drawing.Size(169, 32);
-            this.guna2TextBox5.TabIndex = 8;
+            this.txtbxDocumentNumber.Animated = true;
+            this.txtbxDocumentNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtbxDocumentNumber.DefaultText = "";
+            this.txtbxDocumentNumber.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtbxDocumentNumber.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtbxDocumentNumber.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtbxDocumentNumber.DisabledState.Parent = this.txtbxDocumentNumber;
+            this.txtbxDocumentNumber.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtbxDocumentNumber.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtbxDocumentNumber.FocusedState.Parent = this.txtbxDocumentNumber;
+            this.txtbxDocumentNumber.Font = new System.Drawing.Font("KenPixel", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbxDocumentNumber.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtbxDocumentNumber.HoverState.Parent = this.txtbxDocumentNumber;
+            this.txtbxDocumentNumber.Location = new System.Drawing.Point(519, 382);
+            this.txtbxDocumentNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtbxDocumentNumber.Name = "txtbxDocumentNumber";
+            this.txtbxDocumentNumber.PasswordChar = '\0';
+            this.txtbxDocumentNumber.PlaceholderText = "";
+            this.txtbxDocumentNumber.SelectedText = "";
+            this.txtbxDocumentNumber.ShadowDecoration.Parent = this.txtbxDocumentNumber;
+            this.txtbxDocumentNumber.Size = new System.Drawing.Size(169, 32);
+            this.txtbxDocumentNumber.TabIndex = 8;
             // 
-            // label8
+            // lblChDocIssueDate
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("KenPixel", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(35, 440);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(182, 16);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "Passwport issue date:";
+            this.lblChDocIssueDate.AutoSize = true;
+            this.lblChDocIssueDate.Font = new System.Drawing.Font("KenPixel", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblChDocIssueDate.Location = new System.Drawing.Point(35, 440);
+            this.lblChDocIssueDate.Name = "lblChDocIssueDate";
+            this.lblChDocIssueDate.Size = new System.Drawing.Size(182, 16);
+            this.lblChDocIssueDate.TabIndex = 0;
+            this.lblChDocIssueDate.Text = "Passwport issue date:";
             // 
-            // guna2DateTimePicker1
+            // datetimeIssue
             // 
-            this.guna2DateTimePicker1.Animated = true;
-            this.guna2DateTimePicker1.AutoRoundedCorners = true;
-            this.guna2DateTimePicker1.BorderRadius = 17;
-            this.guna2DateTimePicker1.CheckedState.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("KenPixel", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.HoverState.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(238, 430);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.ShadowDecoration.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(237, 36);
-            this.guna2DateTimePicker1.TabIndex = 9;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2023, 5, 12, 11, 15, 39, 780);
+            this.datetimeIssue.Animated = true;
+            this.datetimeIssue.AutoRoundedCorners = true;
+            this.datetimeIssue.BorderRadius = 17;
+            this.datetimeIssue.CheckedState.Parent = this.datetimeIssue;
+            this.datetimeIssue.Font = new System.Drawing.Font("KenPixel", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datetimeIssue.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.datetimeIssue.HoverState.Parent = this.datetimeIssue;
+            this.datetimeIssue.Location = new System.Drawing.Point(238, 430);
+            this.datetimeIssue.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.datetimeIssue.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.datetimeIssue.Name = "datetimeIssue";
+            this.datetimeIssue.ShadowDecoration.Parent = this.datetimeIssue;
+            this.datetimeIssue.Size = new System.Drawing.Size(237, 36);
+            this.datetimeIssue.TabIndex = 9;
+            this.datetimeIssue.Value = new System.DateTime(2023, 5, 12, 11, 15, 39, 780);
             // 
-            // label9
+            // lblChDocExpireDate
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("KenPixel", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(35, 496);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(191, 16);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Passwport expiry date:";
+            this.lblChDocExpireDate.AutoSize = true;
+            this.lblChDocExpireDate.Font = new System.Drawing.Font("KenPixel", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblChDocExpireDate.Location = new System.Drawing.Point(35, 496);
+            this.lblChDocExpireDate.Name = "lblChDocExpireDate";
+            this.lblChDocExpireDate.Size = new System.Drawing.Size(191, 16);
+            this.lblChDocExpireDate.TabIndex = 0;
+            this.lblChDocExpireDate.Text = "Passwport expiry date:";
             // 
-            // guna2DateTimePicker2
+            // datetimeExpire
             // 
-            this.guna2DateTimePicker2.Animated = true;
-            this.guna2DateTimePicker2.AutoRoundedCorners = true;
-            this.guna2DateTimePicker2.BorderRadius = 17;
-            this.guna2DateTimePicker2.CheckedState.Parent = this.guna2DateTimePicker2;
-            this.guna2DateTimePicker2.Font = new System.Drawing.Font("KenPixel", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker2.HoverState.Parent = this.guna2DateTimePicker2;
-            this.guna2DateTimePicker2.Location = new System.Drawing.Point(238, 486);
-            this.guna2DateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
-            this.guna2DateTimePicker2.ShadowDecoration.Parent = this.guna2DateTimePicker2;
-            this.guna2DateTimePicker2.Size = new System.Drawing.Size(237, 36);
-            this.guna2DateTimePicker2.TabIndex = 10;
-            this.guna2DateTimePicker2.Value = new System.DateTime(2023, 5, 12, 11, 15, 39, 780);
+            this.datetimeExpire.Animated = true;
+            this.datetimeExpire.AutoRoundedCorners = true;
+            this.datetimeExpire.BorderRadius = 17;
+            this.datetimeExpire.CheckedState.Parent = this.datetimeExpire;
+            this.datetimeExpire.Font = new System.Drawing.Font("KenPixel", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datetimeExpire.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.datetimeExpire.HoverState.Parent = this.datetimeExpire;
+            this.datetimeExpire.Location = new System.Drawing.Point(238, 486);
+            this.datetimeExpire.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.datetimeExpire.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.datetimeExpire.Name = "datetimeExpire";
+            this.datetimeExpire.ShadowDecoration.Parent = this.datetimeExpire;
+            this.datetimeExpire.Size = new System.Drawing.Size(237, 36);
+            this.datetimeExpire.TabIndex = 10;
+            this.datetimeExpire.Value = new System.DateTime(2023, 5, 12, 11, 15, 39, 780);
             // 
             // label10
             // 
@@ -374,26 +378,31 @@
             this.monthCalander.Name = "monthCalander";
             this.monthCalander.TabIndex = 3;
             // 
-            // guna2NumericUpDown1
+            // updownBaggage
             // 
-            this.guna2NumericUpDown1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2NumericUpDown1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2NumericUpDown1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2NumericUpDown1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2NumericUpDown1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2NumericUpDown1.DisabledState.Parent = this.guna2NumericUpDown1;
-            this.guna2NumericUpDown1.DisabledState.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(177)))), ((int)(((byte)(177)))));
-            this.guna2NumericUpDown1.DisabledState.UpDownButtonForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(203)))), ((int)(((byte)(203)))));
-            this.guna2NumericUpDown1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2NumericUpDown1.FocusedState.Parent = this.guna2NumericUpDown1;
-            this.guna2NumericUpDown1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2NumericUpDown1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2NumericUpDown1.Location = new System.Drawing.Point(286, 547);
-            this.guna2NumericUpDown1.Name = "guna2NumericUpDown1";
-            this.guna2NumericUpDown1.ShadowDecoration.Parent = this.guna2NumericUpDown1;
-            this.guna2NumericUpDown1.Size = new System.Drawing.Size(130, 36);
-            this.guna2NumericUpDown1.TabIndex = 11;
-            this.guna2NumericUpDown1.UpDownButtonFillColor = System.Drawing.Color.CornflowerBlue;
+            this.updownBaggage.BackColor = System.Drawing.Color.Transparent;
+            this.updownBaggage.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.updownBaggage.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.updownBaggage.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.updownBaggage.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.updownBaggage.DisabledState.Parent = this.updownBaggage;
+            this.updownBaggage.DisabledState.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(177)))), ((int)(((byte)(177)))));
+            this.updownBaggage.DisabledState.UpDownButtonForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(203)))), ((int)(((byte)(203)))));
+            this.updownBaggage.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.updownBaggage.FocusedState.Parent = this.updownBaggage;
+            this.updownBaggage.Font = new System.Drawing.Font("KenPixel", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updownBaggage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.updownBaggage.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.updownBaggage.Location = new System.Drawing.Point(286, 547);
+            this.updownBaggage.Name = "updownBaggage";
+            this.updownBaggage.ShadowDecoration.Parent = this.updownBaggage;
+            this.updownBaggage.Size = new System.Drawing.Size(130, 36);
+            this.updownBaggage.TabIndex = 11;
+            this.updownBaggage.UpDownButtonFillColor = System.Drawing.Color.CornflowerBlue;
             // 
             // btnOrderTicket
             // 
@@ -419,33 +428,33 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(747, 679);
             this.Controls.Add(this.btnOrderTicket);
-            this.Controls.Add(this.guna2NumericUpDown1);
+            this.Controls.Add(this.updownBaggage);
             this.Controls.Add(this.monthCalander);
-            this.Controls.Add(this.guna2DateTimePicker2);
-            this.Controls.Add(this.guna2DateTimePicker1);
-            this.Controls.Add(this.guna2RadioButton2);
-            this.Controls.Add(this.guna2RadioButton1);
+            this.Controls.Add(this.datetimeExpire);
+            this.Controls.Add(this.datetimeIssue);
+            this.Controls.Add(this.radioIDcard);
+            this.Controls.Add(this.radioPassport);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtbxLastName);
-            this.Controls.Add(this.guna2TextBox5);
+            this.Controls.Add(this.txtbxDocumentNumber);
             this.Controls.Add(this.txtbxFirstName);
             this.Controls.Add(this.txtboxDeparture);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtbxDestination);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label9);
+            this.Controls.Add(this.lblChDocNumber);
+            this.Controls.Add(this.lblChDocExpireDate);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.lblChDocIssueDate);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("KenPixel", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ticketReservation";
             this.Text = "Ticket Reservation";
-            ((System.ComponentModel.ISupportInitialize)(this.guna2NumericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.updownBaggage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -463,18 +472,18 @@
         private Guna.UI2.WinForms.Guna2TextBox txtbxFirstName;
         private Guna.UI2.WinForms.Guna2TextBox txtbxLastName;
         private System.Windows.Forms.Label label6;
-        private Guna.UI2.WinForms.Guna2RadioButton guna2RadioButton1;
-        private Guna.UI2.WinForms.Guna2RadioButton guna2RadioButton2;
-        private System.Windows.Forms.Label label7;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox5;
-        private System.Windows.Forms.Label label8;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
-        private System.Windows.Forms.Label label9;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker2;
+        private Guna.UI2.WinForms.Guna2RadioButton radioPassport;
+        private Guna.UI2.WinForms.Guna2RadioButton radioIDcard;
+        private System.Windows.Forms.Label lblChDocNumber;
+        private Guna.UI2.WinForms.Guna2TextBox txtbxDocumentNumber;
+        private System.Windows.Forms.Label lblChDocIssueDate;
+        private Guna.UI2.WinForms.Guna2DateTimePicker datetimeIssue;
+        private System.Windows.Forms.Label lblChDocExpireDate;
+        private Guna.UI2.WinForms.Guna2DateTimePicker datetimeExpire;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.MonthCalendar monthCalander;
-        private Guna.UI2.WinForms.Guna2NumericUpDown guna2NumericUpDown1;
+        private Guna.UI2.WinForms.Guna2NumericUpDown updownBaggage;
         private Guna.UI2.WinForms.Guna2GradientButton btnOrderTicket;
     }
 }

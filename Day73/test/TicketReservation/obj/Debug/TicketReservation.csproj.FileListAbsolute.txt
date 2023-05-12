@@ -11,3 +11,4 @@ C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\TicketReserva
 C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\TicketReservation\obj\Debug\TicketReservation.csproj.CopyComplete
 C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\TicketReservation\obj\Debug\TicketReservation.exe
 C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\TicketReservation\obj\Debug\TicketReservation.pdb
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\TicketReservation\obj\Debug\TicketReservation.ConfirmReservationForm.resources
