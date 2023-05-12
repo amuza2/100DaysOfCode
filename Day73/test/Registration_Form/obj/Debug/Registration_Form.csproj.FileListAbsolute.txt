@@ -1,0 +1,13 @@
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\Registration_Form\bin\Debug\Registration_Form.exe.config
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\Registration_Form\bin\Debug\Registration_Form.exe
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\Registration_Form\bin\Debug\Registration_Form.pdb
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\Registration_Form\bin\Debug\Guna.UI2.dll
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\Registration_Form\obj\Debug\Registration_Form.csproj.AssemblyReference.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\Registration_Form\obj\Debug\Registration_Form.csproj.SuggestedBindingRedirects.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\Registration_Form\obj\Debug\Registration_Form.Properties.Resources.resources
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\Registration_Form\obj\Debug\Registration_Form.csproj.GenerateResource.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\Registration_Form\obj\Debug\Registration_Form.csproj.CoreCompileInputs.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\Registration_Form\obj\Debug\Registration_Form.csproj.CopyComplete
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\Registration_Form\obj\Debug\Registration_Form.exe
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\Registration_Form\obj\Debug\Registration_Form.pdb
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\Registration_Form\obj\Debug\Registration_Form.Registration_Form.resources

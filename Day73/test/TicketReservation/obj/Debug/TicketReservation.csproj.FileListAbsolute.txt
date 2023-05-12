@@ -1,0 +1,13 @@
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\TicketReservation\bin\Debug\TicketReservation.exe.config
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\TicketReservation\bin\Debug\TicketReservation.exe
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\TicketReservation\bin\Debug\TicketReservation.pdb
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\TicketReservation\bin\Debug\Guna.UI2.dll
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\TicketReservation\obj\Debug\TicketReservation.csproj.AssemblyReference.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\TicketReservation\obj\Debug\TicketReservation.csproj.SuggestedBindingRedirects.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\TicketReservation\obj\Debug\TicketReservation.Properties.Resources.resources
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\TicketReservation\obj\Debug\TicketReservation.ticketReservation.resources
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\TicketReservation\obj\Debug\TicketReservation.csproj.GenerateResource.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\TicketReservation\obj\Debug\TicketReservation.csproj.CoreCompileInputs.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\TicketReservation\obj\Debug\TicketReservation.csproj.CopyComplete
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\TicketReservation\obj\Debug\TicketReservation.exe
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\TicketReservation\obj\Debug\TicketReservation.pdb
