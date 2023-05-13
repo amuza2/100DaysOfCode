@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PurchaseProduct", "Purchase
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketReservation", "TicketReservation\TicketReservation.csproj", "{9E760A42-DC61-4D96-92F4-FF503C920E01}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clinic Directory", "Clinic Directory\Clinic Directory.csproj", "{38BC09A8-5D33-491B-8EA8-FA17F7BE6211}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{9E760A42-DC61-4D96-92F4-FF503C920E01}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E760A42-DC61-4D96-92F4-FF503C920E01}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E760A42-DC61-4D96-92F4-FF503C920E01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38BC09A8-5D33-491B-8EA8-FA17F7BE6211}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38BC09A8-5D33-491B-8EA8-FA17F7BE6211}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38BC09A8-5D33-491B-8EA8-FA17F7BE6211}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38BC09A8-5D33-491B-8EA8-FA17F7BE6211}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

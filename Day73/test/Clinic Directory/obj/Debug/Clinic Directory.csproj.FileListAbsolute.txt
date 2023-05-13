@@ -1,0 +1,13 @@
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\Clinic Directory\bin\Debug\Clinic Directory.exe.config
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\Clinic Directory\bin\Debug\Clinic Directory.exe
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\Clinic Directory\bin\Debug\Clinic Directory.pdb
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\Clinic Directory\bin\Debug\Guna.UI2.dll
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\Clinic Directory\obj\Debug\Clinic Directory.csproj.AssemblyReference.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\Clinic Directory\obj\Debug\Clinic Directory.csproj.SuggestedBindingRedirects.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\Clinic Directory\obj\Debug\Clinic_Directory.ClinicDirectoryForm.resources
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\Clinic Directory\obj\Debug\Clinic_Directory.Properties.Resources.resources
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\Clinic Directory\obj\Debug\Clinic Directory.csproj.GenerateResource.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\Clinic Directory\obj\Debug\Clinic Directory.csproj.CoreCompileInputs.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\Clinic Directory\obj\Debug\Clinic Directory.csproj.CopyComplete
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\Clinic Directory\obj\Debug\Clinic Directory.exe
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\Clinic Directory\obj\Debug\Clinic Directory.pdb
