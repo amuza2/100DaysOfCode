@@ -63,6 +63,7 @@ namespace TicketReservation
 
             ConfirmReservationForm confirmReservationForm = new ConfirmReservationForm(mydict);
             confirmReservationForm.Show();
+            this.Hide();
 
 
         }

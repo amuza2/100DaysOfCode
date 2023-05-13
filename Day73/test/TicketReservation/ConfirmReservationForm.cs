@@ -45,5 +45,10 @@ namespace TicketReservation
         {
             Application.Exit();
         }
+
+        private void ConfirmReservationForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
