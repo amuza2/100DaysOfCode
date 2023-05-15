@@ -1,0 +1,11 @@
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\ClinicDirectory_v2\bin\Debug\ClinicDirectory_v2.exe.config
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\ClinicDirectory_v2\bin\Debug\ClinicDirectory_v2.exe
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\ClinicDirectory_v2\bin\Debug\ClinicDirectory_v2.pdb
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\ClinicDirectory_v2\obj\Debug\ClinicDirectory_v2.csproj.AssemblyReference.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\ClinicDirectory_v2\obj\Debug\ClinicDirectory_v2.csproj.SuggestedBindingRedirects.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\ClinicDirectory_v2\obj\Debug\ClinicDirectory_v2.CliniDirectory_v2.resources
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\ClinicDirectory_v2\obj\Debug\ClinicDirectory_v2.Properties.Resources.resources
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\ClinicDirectory_v2\obj\Debug\ClinicDirectory_v2.csproj.GenerateResource.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\ClinicDirectory_v2\obj\Debug\ClinicDirectory_v2.csproj.CoreCompileInputs.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\ClinicDirectory_v2\obj\Debug\ClinicDirectory_v2.exe
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day73\test\ClinicDirectory_v2\obj\Debug\ClinicDirectory_v2.pdb

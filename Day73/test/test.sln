@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketReservation", "Ticket
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clinic Directory", "Clinic Directory\Clinic Directory.csproj", "{38BC09A8-5D33-491B-8EA8-FA17F7BE6211}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClinicDirectory_v2", "ClinicDirectory_v2\ClinicDirectory_v2.csproj", "{EA6CF68F-F40C-4761-96A0-3144A16CD399}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{38BC09A8-5D33-491B-8EA8-FA17F7BE6211}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38BC09A8-5D33-491B-8EA8-FA17F7BE6211}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38BC09A8-5D33-491B-8EA8-FA17F7BE6211}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA6CF68F-F40C-4761-96A0-3144A16CD399}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA6CF68F-F40C-4761-96A0-3144A16CD399}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA6CF68F-F40C-4761-96A0-3144A16CD399}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA6CF68F-F40C-4761-96A0-3144A16CD399}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
