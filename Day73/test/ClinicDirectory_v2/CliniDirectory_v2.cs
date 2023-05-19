@@ -70,6 +70,7 @@ namespace ClinicDirectory_v2
             lblClinicAddress.Text = dtClinic.Rows[comboBox1.SelectedIndex]["Address"].ToString();
             lblContactNumber.Text = dtClinic.Rows[comboBox1.SelectedIndex]["Contact Number"].ToString();
             lblClinicRating.Text = dtClinic.Rows[comboBox1.SelectedIndex]["Rating"].ToString();
+
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
