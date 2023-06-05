@@ -74,10 +74,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CMS.Display\Display.cs" />
+    <Compile Include="CMS.Models\Cours.cs" />
+    <Compile Include="CMS.Models\CourseSubject.cs" />
+    <Compile Include="CMS.Models\CSCourse.cs" />
+    <Compile Include="CMS.Models\ICours.cs" />
+    <Compile Include="CMS.Models\IStudent.cs" />
+    <Compile Include="CMS.Models\Staff.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CMS.Models\Student.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include=".editorconfig" />
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
