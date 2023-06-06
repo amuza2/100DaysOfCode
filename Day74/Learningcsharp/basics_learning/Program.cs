@@ -16,24 +16,8 @@ namespace SoloLearn
     {
         static void Main(string[] args)
         {
-            Cours c1 = new Cours()
-            {
-                CourseId = 1,
-                CourseName = "C#"
-            };
-            Student student1 = new Student()
-            {
-                FirstName = "Test",
-                LastName = "Test2",
-                StudentId = 001
-            };
-            Console.WriteLine(student1.GetId());
-            Console.WriteLine(student1.GetFullName());
-
-            ICours csCourse = new CSCourse()
-            {
-
-            };
+            Cours cours = new CSCourse();
+            cours.AddSubject(new CourseSubject(301, "programming"));
         }
     }
 }

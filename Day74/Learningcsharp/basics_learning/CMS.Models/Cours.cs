@@ -8,14 +8,15 @@ namespace basics_learning.CMS.Models
 {
     internal class Cours : ICours
     {
-        private List<CourseSubject> subjects = new List<CourseSubject>();
+        public List<CourseSubject> subjects = new List<CourseSubject>();
         public List<CourseSubject> Subjects { get { return subjects; } private set { subjects = value; } }
         public int CourseId;
         public string CourseName;
         public static int MaxSubject = 8;
 
-        public void AddSubject(CourseSubject subject)
+        public virtual void AddSubject(CourseSubject subject)
         {
+            //Console.WriteLine("Calling Cours.AddSubject(CourseSubject)");
             subjects.Add(subject);
         }
 

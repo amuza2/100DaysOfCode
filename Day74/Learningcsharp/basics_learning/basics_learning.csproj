@@ -78,8 +78,10 @@
     <Compile Include="CMS.Models\Cours.cs" />
     <Compile Include="CMS.Models\CourseSubject.cs" />
     <Compile Include="CMS.Models\CSCourse.cs" />
+    <Compile Include="CMS.Models\Hobby.cs" />
     <Compile Include="CMS.Models\ICours.cs" />
     <Compile Include="CMS.Models\IStudent.cs" />
+    <Compile Include="CMS.Models\Person.cs" />
     <Compile Include="CMS.Models\Staff.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

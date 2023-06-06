@@ -6,14 +6,19 @@ using System.Threading.Tasks;
 
 namespace basics_learning.CMS.Models
 {
-    internal class Student
+    internal class Student : Person
     {
-        public string FirstName = default;
-        public string LastName = String.Empty;
+        public List<string> Hobbies { get; set; }
         public int StudentId = 10000;
         public readonly int MaxEnrolledCourses = 3;
         public static int MaxBooksAllowed = 6;
+
         public Student()
+        {
+            Console.WriteLine("student created!");
+        }
+
+        public Student(string firstname, string lastname) : base(firstname, lastname)
         {
             Console.WriteLine("Student added...");
         }
@@ -22,7 +27,7 @@ namespace basics_learning.CMS.Models
         {
             return StudentId;
         }
-        public string GetFullName() 
+        public override string GetFullName()
         {
             return $"{FirstName} {LastName}";
         }

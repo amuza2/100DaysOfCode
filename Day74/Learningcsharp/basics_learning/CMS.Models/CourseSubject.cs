@@ -10,5 +10,11 @@ namespace basics_learning.CMS.Models
     {
         public int Id;
         public string SubjectName;
+
+        public CourseSubject(int id, string name) 
+        { 
+            Id = id;
+            SubjectName = name;
+        }
     }
 }

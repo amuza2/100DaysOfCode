@@ -6,23 +6,12 @@ using System.Threading.Tasks;
 
 namespace basics_learning.CMS.Models
 {
-    internal class CSCourse : ICours
+    internal class CSCourse : Cours
     {
-        public List<CourseSubject> Subjects => throw new NotImplementedException();
-
-        public void AddSubject(CourseSubject subject)
+        public sealed override void AddSubject(CourseSubject subject)
         {
-            throw new NotImplementedException();
-        }
-
-        public void AddSubject(List<CourseSubject> subjectsRange)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void RemoveSubject(CourseSubject subject)
-        {
-            throw new NotImplementedException();
+            Console.WriteLine("Calling Cours.AddSubject(CourseSubject)");
+            base.AddSubject(subject);
         }
     }
 }
