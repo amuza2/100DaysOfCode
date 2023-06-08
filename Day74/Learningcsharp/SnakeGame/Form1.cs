@@ -158,7 +158,7 @@ namespace SnakeGame
                 GameOver();
                 return;
             }
-            
+
             // Check if snake ate a bonus
             if (gameBoardField[snakeXY[0].x, snakeXY[0].y] == GameBoardFields.Bonus)
             {
@@ -172,6 +172,10 @@ namespace SnakeGame
                 // Add score
                 this.Text = "Snake - Score: " + snakeLength;
             }
+
+            // Draw snake head
+            g.DrawImage(imgList.Images[5], snakeXY[0].x * 35, snakeXY[0].y * 35);
+            gameBoardField[snakeXY[0].x, snakeXY[0].y] = GameBoardFields.Snake;
 
             picBoardGame.Refresh();
 

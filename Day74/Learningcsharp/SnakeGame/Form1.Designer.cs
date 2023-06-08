@@ -46,7 +46,6 @@
             // 
             // timer
             // 
-            timer.Enabled = true;
             timer.Interval = 500;
             timer.Tick += Timer_Tick;
             // 
