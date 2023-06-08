@@ -75,6 +75,7 @@ namespace SnakeGame
             }
         }
 
+        // Setting the bonues in the game
         private void Bonus()
         {
             int x, y;
@@ -91,6 +92,7 @@ namespace SnakeGame
 
         }
 
+        // Setting up the keys direction
         private void frmSnake_KeyDown(object sender, KeyEventArgs e)
         {
             switch (e.KeyCode)
@@ -109,6 +111,7 @@ namespace SnakeGame
                     break;
             }
         }
+        // Stop the game
         private void GameOver()
         {
             timer.Enabled = false;
@@ -118,11 +121,10 @@ namespace SnakeGame
         private void Timer_Tick(object sender, EventArgs e)
         {
             // Delete the end of the snake part
-            g.FillRectangle(Brushes.Black, snakeXY[snakeLength - 1].x * 35, snakeXY[snakeLength - 1].y * 35,
+            g.FillRectangle(Brushes.White, snakeXY[snakeLength - 1].x * 35, snakeXY[snakeLength - 1].y * 35,
                                             35, 35);
             // Make the end of the snake as a Free space
             gameBoardField[snakeXY[snakeLength - 1].x, snakeXY[snakeLength - 1].y] = GameBoardFields.Free;
-            //picBoardGame.Refresh();
 
             // Move Snake field on the previous position
             for (int i = snakeLength; i >= 1; i--)
@@ -149,8 +151,29 @@ namespace SnakeGame
                     break;
             }
 
-            // Check if snake hit the wall
+            // Check if snake hit the wall and his own body
+            if (snakeXY[0].x < 1 || snakeXY[0].x > 10 || snakeXY[0].y < 1 || snakeXY[0].y > 10 ||
+                gameBoardField[snakeXY[0].x, snakeXY[0].y] == GameBoardFields.Snake)
+            {
+                GameOver();
+                return;
+            }
+            
+            // Check if snake ate a bonus
+            if (gameBoardField[snakeXY[0].x, snakeXY[0].y] == GameBoardFields.Bonus)
+            {
+                gameBoardField[snakeXY[snakeLength].x, snakeXY[snakeLength].y] = GameBoardFields.Snake;
+                g.DrawImage(imgList.Images[4], snakeXY[snakeLength].x * 35, snakeXY[snakeLength].y * 35);
+                snakeLength++;
 
+                // Create a bonus when one is eaten
+                if (snakeLength < 96) Bonus();
+
+                // Add score
+                this.Text = "Snake - Score: " + snakeLength;
+            }
+
+            picBoardGame.Refresh();
 
 
 
