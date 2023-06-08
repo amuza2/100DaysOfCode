@@ -21,11 +21,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormLogin_v1", "WinFormD
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "loginForm_v2", "loginForm_v2\loginForm_v2.csproj", "{4C5333EA-9FEE-4723-B534-EB47EB5EC94C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotepadApp", "NotepadApp\NotepadApp.csproj", "{F46964EC-7C22-42C2-ACED-594943CB475F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NotepadApp", "NotepadApp\NotepadApp.csproj", "{F46964EC-7C22-42C2-ACED-594943CB475F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateTimeApp", "DateTimeApp\DateTimeApp.csproj", "{7D638923-3A71-4711-94A1-6510A4C069E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DateTimeApp", "DateTimeApp\DateTimeApp.csproj", "{7D638923-3A71-4711-94A1-6510A4C069E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project_Developer", "Project_Developer\Project_Developer.csproj", "{F3656802-841D-48DE-8E97-5B550FAE03D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project_Developer", "Project_Developer\Project_Developer.csproj", "{F3656802-841D-48DE-8E97-5B550FAE03D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnakeGame", "SnakeGame\SnakeGame.csproj", "{27683629-D5BB-4528-8310-48BF1943D872}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,10 @@ Global
 		{F3656802-841D-48DE-8E97-5B550FAE03D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3656802-841D-48DE-8E97-5B550FAE03D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3656802-841D-48DE-8E97-5B550FAE03D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27683629-D5BB-4528-8310-48BF1943D872}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27683629-D5BB-4528-8310-48BF1943D872}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27683629-D5BB-4528-8310-48BF1943D872}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27683629-D5BB-4528-8310-48BF1943D872}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

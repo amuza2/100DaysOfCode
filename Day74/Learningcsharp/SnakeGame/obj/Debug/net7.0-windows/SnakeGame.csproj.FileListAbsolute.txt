@@ -1,0 +1,17 @@
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\SnakeGame\obj\Debug\net7.0-windows\SnakeGame.csproj.AssemblyReference.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\SnakeGame\obj\Debug\net7.0-windows\SnakeGame.Form1.resources
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\SnakeGame\obj\Debug\net7.0-windows\SnakeGame.csproj.GenerateResource.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\SnakeGame\obj\Debug\net7.0-windows\SnakeGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\SnakeGame\obj\Debug\net7.0-windows\SnakeGame.AssemblyInfoInputs.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\SnakeGame\obj\Debug\net7.0-windows\SnakeGame.AssemblyInfo.cs
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\SnakeGame\obj\Debug\net7.0-windows\SnakeGame.csproj.CoreCompileInputs.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\SnakeGame\bin\Debug\net7.0-windows\SnakeGame.exe
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\SnakeGame\bin\Debug\net7.0-windows\SnakeGame.deps.json
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\SnakeGame\bin\Debug\net7.0-windows\SnakeGame.runtimeconfig.json
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\SnakeGame\bin\Debug\net7.0-windows\SnakeGame.dll
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\SnakeGame\bin\Debug\net7.0-windows\SnakeGame.pdb
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\SnakeGame\obj\Debug\net7.0-windows\SnakeGame.dll
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\SnakeGame\obj\Debug\net7.0-windows\refint\SnakeGame.dll
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\SnakeGame\obj\Debug\net7.0-windows\SnakeGame.pdb
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\SnakeGame\obj\Debug\net7.0-windows\SnakeGame.genruntimeconfig.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\SnakeGame\obj\Debug\net7.0-windows\ref\SnakeGame.dll
