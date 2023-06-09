@@ -121,9 +121,10 @@ namespace SnakeTest
 
         private void Timer_Tick(object sender, EventArgs e)
         {
-            g.FillRectangle(Brushes.Black, SnakeXY[SnakeLength - 1].x * 35, SnakeXY[SnakeLength - 1].y * 35, 35, 35);
+            g.FillRectangle(Brushes.White, SnakeXY[SnakeLength - 1].x * 35, SnakeXY[SnakeLength - 1].y * 35, 35, 35);
+            board[SnakeXY[SnakeLength - 1].x, SnakeXY[SnakeLength - 1].y] = GameBoardGame.Free;
             // Move the snake body to new position
-            for (int i = 1; i <= 2; i++)
+            for (int i = SnakeLength - 1; i >= 1; i--)
             {
                 SnakeXY[i].x = SnakeXY[i - 1].x;
                 SnakeXY[i].y = SnakeXY[i - 1].y;
@@ -147,11 +148,31 @@ namespace SnakeTest
                     SnakeXY[0].y++;
                     break;
             }
+
+            // Check if the snake hit a wall or it's awn body
+            if (SnakeXY[0].x < 1 || SnakeXY[0].x > 10 || SnakeXY[0].y < 1 || SnakeXY[0].y > 10
+                || board[SnakeXY[0].x, SnakeXY[0].y] == GameBoardGame.Snake)
+            {
+                GameOver();
+                return;
+            }
+            // Check if snake ate a bonus
+            if (board[SnakeXY[0].x, SnakeXY[0].y] == GameBoardGame.Bonus)
+            {
+                board[SnakeXY[0].x, SnakeXY[0].y] = GameBoardGame.Snake;
+                g.DrawImage(imageList.Images[5], SnakeXY[SnakeLength].x * 35, SnakeXY[SnakeLength].y * 35);
+                SnakeLength++;
+
+                // Create a bonus if one is eaten
+                if(SnakeLength > 96) 
+                {
+                    Bonus();
+                }
+                // Add score
+                this.Text = "Snake Game Test - Score: " + SnakeLength;
+            }
+
             picGameBoard.Refresh();
-
-
-
-
         }
     }
 }
