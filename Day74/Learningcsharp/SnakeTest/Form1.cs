@@ -78,8 +78,8 @@ namespace SnakeTest
             int imageIndex = rand.Next(1, 5);
             do
             {
-                randomPositionX = rand.Next(1, 10);
-                randomPositionY = rand.Next(1, 10);
+                randomPositionX = rand.Next(1, 11);
+                randomPositionY = rand.Next(1, 11);
 
             } while (board[randomPositionX, randomPositionY] != GameBoardGame.Free);
 
@@ -124,7 +124,7 @@ namespace SnakeTest
             g.FillRectangle(Brushes.White, SnakeXY[SnakeLength - 1].x * 35, SnakeXY[SnakeLength - 1].y * 35, 35, 35);
             board[SnakeXY[SnakeLength - 1].x, SnakeXY[SnakeLength - 1].y] = GameBoardGame.Free;
             // Move the snake body to new position
-            for (int i = SnakeLength - 1; i >= 1; i--)
+            for (int i = SnakeLength; i >= 1; i--)
             {
                 SnakeXY[i].x = SnakeXY[i - 1].x;
                 SnakeXY[i].y = SnakeXY[i - 1].y;
@@ -159,18 +159,22 @@ namespace SnakeTest
             // Check if snake ate a bonus
             if (board[SnakeXY[0].x, SnakeXY[0].y] == GameBoardGame.Bonus)
             {
-                board[SnakeXY[0].x, SnakeXY[0].y] = GameBoardGame.Snake;
+                board[SnakeXY[SnakeLength].x, SnakeXY[SnakeLength].y] = GameBoardGame.Snake;
                 g.DrawImage(imageList.Images[5], SnakeXY[SnakeLength].x * 35, SnakeXY[SnakeLength].y * 35);
                 SnakeLength++;
 
                 // Create a bonus if one is eaten
-                if(SnakeLength > 96) 
+                if (SnakeLength < 96)
                 {
                     Bonus();
                 }
                 // Add score
                 this.Text = "Snake Game Test - Score: " + SnakeLength;
             }
+
+            // Draw snake head
+            g.DrawImage(imageList.Images[6], SnakeXY[0].x * 35, SnakeXY[0].y * 35);
+            board[SnakeXY[0].x, SnakeXY[0].y] = GameBoardGame.Snake;
 
             picGameBoard.Refresh();
         }
