@@ -45,7 +45,7 @@ namespace SnakeGame
             }
             for (int i = 0; i <= 11; i++)
             {
-                // Draw left nad bottom walls
+                // Draw left and bottom walls
                 g.DrawImage(imgList.Images[6], 0, i * 35);
                 g.DrawImage(imgList.Images[6], 385, i * 35);
             }
@@ -95,6 +95,7 @@ namespace SnakeGame
         // Setting up the keys direction
         private void frmSnake_KeyDown(object sender, KeyEventArgs e)
         {
+            bool singleTime = true;
             switch (e.KeyCode)
             {
                 case Keys.Up:
@@ -109,6 +110,12 @@ namespace SnakeGame
                 case Keys.Right:
                     direction = Directions.Right;
                     break;
+            }
+            // press space to start the game
+            if (e.KeyCode == Keys.Space && singleTime)
+            {
+                timer.Enabled = true;
+                singleTime = false;
             }
         }
         // Stop the game
