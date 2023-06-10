@@ -1,0 +1,13 @@
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day75\GamesProjects\game1\bin\Debug\game1.exe.config
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day75\GamesProjects\game1\bin\Debug\game1.exe
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day75\GamesProjects\game1\bin\Debug\game1.pdb
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day75\GamesProjects\game1\bin\Debug\Guna.UI2.dll
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day75\GamesProjects\game1\obj\Debug\TicTacToe.csproj.AssemblyReference.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day75\GamesProjects\game1\obj\Debug\TicTacToe.csproj.SuggestedBindingRedirects.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day75\GamesProjects\game1\obj\Debug\game1.Form1.resources
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day75\GamesProjects\game1\obj\Debug\game1.Properties.Resources.resources
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day75\GamesProjects\game1\obj\Debug\TicTacToe.csproj.GenerateResource.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day75\GamesProjects\game1\obj\Debug\TicTacToe.csproj.CoreCompileInputs.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day75\GamesProjects\game1\obj\Debug\TicTacToe.csproj.CopyComplete
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day75\GamesProjects\game1\obj\Debug\game1.exe
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day75\GamesProjects\game1\obj\Debug\game1.pdb
