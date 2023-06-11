@@ -39,6 +39,8 @@
             this.btnH = new Guna.UI2.WinForms.Guna2Button();
             this.btnI = new Guna.UI2.WinForms.Guna2Button();
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
+            this.lblPlayer1 = new Guna.UI.WinForms.GunaLabel();
+            this.lblPlayer2 = new Guna.UI.WinForms.GunaLabel();
             this.SuspendLayout();
             // 
             // btnA
@@ -54,7 +56,7 @@
             this.btnA.HoverState.Parent = this.btnA;
             this.btnA.Location = new System.Drawing.Point(265, 132);
             this.btnA.Name = "btnA";
-            this.btnA.PressedColor = System.Drawing.Color.DarkOrange;
+            this.btnA.PressedColor = System.Drawing.Color.White;
             this.btnA.ShadowDecoration.Parent = this.btnA;
             this.btnA.Size = new System.Drawing.Size(44, 45);
             this.btnA.TabIndex = 0;
@@ -188,12 +190,36 @@
             this.btnI.TabIndex = 0;
             this.btnI.Click += new System.EventHandler(this.Button_Clicked);
             // 
+            // lblPlayer1
+            // 
+            this.lblPlayer1.AutoSize = true;
+            this.lblPlayer1.Font = new System.Drawing.Font("KenPixel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlayer1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblPlayer1.Location = new System.Drawing.Point(55, 61);
+            this.lblPlayer1.Name = "lblPlayer1";
+            this.lblPlayer1.Size = new System.Drawing.Size(26, 28);
+            this.lblPlayer1.TabIndex = 1;
+            this.lblPlayer1.Text = "0";
+            // 
+            // lblPlayer2
+            // 
+            this.lblPlayer2.AutoSize = true;
+            this.lblPlayer2.Font = new System.Drawing.Font("KenPixel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlayer2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblPlayer2.Location = new System.Drawing.Point(632, 61);
+            this.lblPlayer2.Name = "lblPlayer2";
+            this.lblPlayer2.Size = new System.Drawing.Size(26, 28);
+            this.lblPlayer2.TabIndex = 1;
+            this.lblPlayer2.Text = "0";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Sienna;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblPlayer2);
+            this.Controls.Add(this.lblPlayer1);
             this.Controls.Add(this.btnI);
             this.Controls.Add(this.btnF);
             this.Controls.Add(this.btnC);
@@ -206,6 +232,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -221,6 +248,8 @@
         private Guna.UI2.WinForms.Guna2Button btnH;
         private Guna.UI2.WinForms.Guna2Button btnI;
         private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
+        private Guna.UI.WinForms.GunaLabel lblPlayer1;
+        private Guna.UI.WinForms.GunaLabel lblPlayer2;
     }
 }
 

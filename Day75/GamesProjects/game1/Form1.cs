@@ -15,12 +15,11 @@ namespace game1
     {
         
         char who = 'o';
-        int turnCounter = 0;
+        int player1Score = 0;
+        int player2Score = 0;
         public Form1()
         {
-            InitializeComponent();
-            
-                        
+            InitializeComponent();          
         }
 
         private void Button_Clicked(object sender, EventArgs e)
@@ -32,19 +31,17 @@ namespace game1
                 if(who == 'o') bt.Text = "O"; else bt.Text = "X";
                 if (who == 'o') who = 'x'; else who = 'o';
                 bt.Enabled = false;
-                turnCounter++;
                 bt.ForeColor = Color.Red;
                 bt.BackColor = Color.Red;
                 CheckTheWinner(bt);
             }
-            
         }
 
         private void ChangeBackColor(Guna2Button button1, Guna2Button button2, Guna2Button button3)
         {
-            button1.BackColor = Color.Green;
-            button2.BackColor = Color.Green;
-            button3.BackColor = Color.Green;
+            button1.FillColor = Color.Green;
+            button2.FillColor = Color.Green;
+            button3.FillColor = Color.Green;
         }
 
         // Horizantal
@@ -123,26 +120,60 @@ namespace game1
             return false;
         }
 
+        private char getWinnerChar(Guna2Button button)
+        {
+            char value = Char.Parse(button.Text);
+            return value;
+        }
+
         private void CheckTheWinner(Guna2Button bt)
         {
+            char winnerChar = 'a';
             bool isWinner = false;
-
 
             switch (bt.Name)
             {
                 case "btnA":
-                    if(HLine1() || VLine1() || DLine1()) isWinner = true;
+                    if(HLine1() || VLine1() || DLine1()) winnerChar = getWinnerChar(bt);
                     break;
                 case "btn.B":
-                    if(HLine1() || VLine2()) isWinner = true;
+                    if(HLine1() || VLine2()) winnerChar = getWinnerChar(bt);
                     break;
                 case "btnC":
-                    if(HLine1() || VLine3() || DLine2()) isWinner = true;
+                    if(HLine1() || VLine3() || DLine2()) winnerChar = getWinnerChar(bt);
                     break;
                 case "btnD":
-
+                    if(VLine1() || HLine2()) winnerChar = getWinnerChar(bt);
+                    break;
+                case "btnE":
+                    if(HLine2() || VLine2() || DLine1() || DLine2()) winnerChar = getWinnerChar(bt);
+                    break;
+                case "btnF":
+                    if (HLine2() || VLine3()) winnerChar = getWinnerChar(bt);
+                    break;
+                case "btnG":
+                    if(HLine3() || VLine1() || DLine2()) winnerChar = getWinnerChar(bt);
+                    break;
+                case "btnH":
+                    if(HLine3() || VLine2()) winnerChar = getWinnerChar(bt);
+                    break;
+                case "btnI":
+                    if(HLine3() || VLine3() || DLine1()) winnerChar = getWinnerChar(bt);
                     break;
             }
+
+            if (winnerChar == 'O')
+            {
+                player1Score++;
+                isWinner = true;
+            }
+            else if (winnerChar == 'X')
+            {
+                player2Score++;
+                isWinner = true;
+            }
+            lblPlayer1.Text = player1Score.ToString();
+            lblPlayer2.Text = player2Score.ToString();
         }
     }
 }
