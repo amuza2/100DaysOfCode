@@ -1,5 +1,4 @@
-﻿using Guna.UI2.WinForms;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,7 +23,7 @@ namespace game1
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            Guna2Button bt = sender as Guna2Button;
+            Button bt = sender as Button;
             
             if(bt != null )
             {
@@ -37,11 +36,11 @@ namespace game1
             }
         }
 
-        private void ChangeBackColor(Guna2Button button1, Guna2Button button2, Guna2Button button3)
+        private void ChangeBackColor(Button button1, Button button2, Button button3)
         {
-            button1.FillColor = Color.Green;
-            button2.FillColor = Color.Green;
-            button3.FillColor = Color.Green;
+            button1.BackColor = Color.Green;
+            button2.BackColor = Color.Green;
+            button3.BackColor = Color.Green;
         }
 
         // Horizantal
@@ -120,13 +119,13 @@ namespace game1
             return false;
         }
 
-        private char getWinnerChar(Guna2Button button)
+        private char getWinnerChar(Button button)
         {
             char value = Char.Parse(button.Text);
             return value;
         }
 
-        private void CheckTheWinner(Guna2Button bt)
+        private void CheckTheWinner(Button bt)
         {
             char winnerChar = 'a';
             bool isWinner = false;
@@ -174,6 +173,11 @@ namespace game1
             }
             lblPlayer1.Text = player1Score.ToString();
             lblPlayer2.Text = player2Score.ToString();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

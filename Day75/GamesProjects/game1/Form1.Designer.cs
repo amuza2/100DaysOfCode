@@ -28,196 +28,202 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.btnA = new Guna.UI2.WinForms.Guna2Button();
-            this.btnB = new Guna.UI2.WinForms.Guna2Button();
-            this.btnC = new Guna.UI2.WinForms.Guna2Button();
-            this.btnD = new Guna.UI2.WinForms.Guna2Button();
-            this.btnE = new Guna.UI2.WinForms.Guna2Button();
-            this.btnF = new Guna.UI2.WinForms.Guna2Button();
-            this.btnG = new Guna.UI2.WinForms.Guna2Button();
-            this.btnH = new Guna.UI2.WinForms.Guna2Button();
-            this.btnI = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.lblPlayer1 = new Guna.UI.WinForms.GunaLabel();
             this.lblPlayer2 = new Guna.UI.WinForms.GunaLabel();
+            this.btnA = new System.Windows.Forms.Button();
+            this.btnB = new System.Windows.Forms.Button();
+            this.btnC = new System.Windows.Forms.Button();
+            this.btnD = new System.Windows.Forms.Button();
+            this.btnE = new System.Windows.Forms.Button();
+            this.btnF = new System.Windows.Forms.Button();
+            this.btnG = new System.Windows.Forms.Button();
+            this.btnH = new System.Windows.Forms.Button();
+            this.btnI = new System.Windows.Forms.Button();
+            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
+            this.btnReset = new Guna.UI2.WinForms.Guna2Button();
+            this.btnExit = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
-            // 
-            // btnA
-            // 
-            this.btnA.Animated = true;
-            this.btnA.BackColor = System.Drawing.Color.SlateBlue;
-            this.btnA.BorderColor = System.Drawing.Color.IndianRed;
-            this.btnA.CheckedState.Parent = this.btnA;
-            this.btnA.CustomImages.Parent = this.btnA;
-            this.btnA.FillColor = System.Drawing.Color.LightSalmon;
-            this.btnA.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnA.ForeColor = System.Drawing.Color.White;
-            this.btnA.HoverState.Parent = this.btnA;
-            this.btnA.Location = new System.Drawing.Point(265, 132);
-            this.btnA.Name = "btnA";
-            this.btnA.PressedColor = System.Drawing.Color.White;
-            this.btnA.ShadowDecoration.Parent = this.btnA;
-            this.btnA.Size = new System.Drawing.Size(44, 45);
-            this.btnA.TabIndex = 0;
-            this.btnA.Click += new System.EventHandler(this.Button_Clicked);
-            // 
-            // btnB
-            // 
-            this.btnB.Animated = true;
-            this.btnB.CheckedState.Parent = this.btnB;
-            this.btnB.CustomImages.Parent = this.btnB;
-            this.btnB.FillColor = System.Drawing.Color.LightSalmon;
-            this.btnB.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnB.ForeColor = System.Drawing.Color.White;
-            this.btnB.HoverState.Parent = this.btnB;
-            this.btnB.Location = new System.Drawing.Point(324, 132);
-            this.btnB.Name = "btnB";
-            this.btnB.ShadowDecoration.Parent = this.btnB;
-            this.btnB.Size = new System.Drawing.Size(44, 45);
-            this.btnB.TabIndex = 0;
-            this.btnB.Click += new System.EventHandler(this.Button_Clicked);
-            // 
-            // btnC
-            // 
-            this.btnC.Animated = true;
-            this.btnC.CheckedState.Parent = this.btnC;
-            this.btnC.CustomImages.Parent = this.btnC;
-            this.btnC.FillColor = System.Drawing.Color.LightSalmon;
-            this.btnC.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnC.ForeColor = System.Drawing.Color.White;
-            this.btnC.HoverState.Parent = this.btnC;
-            this.btnC.Location = new System.Drawing.Point(382, 132);
-            this.btnC.Name = "btnC";
-            this.btnC.ShadowDecoration.Parent = this.btnC;
-            this.btnC.Size = new System.Drawing.Size(44, 45);
-            this.btnC.TabIndex = 0;
-            this.btnC.Click += new System.EventHandler(this.Button_Clicked);
-            // 
-            // btnD
-            // 
-            this.btnD.Animated = true;
-            this.btnD.CheckedState.Parent = this.btnD;
-            this.btnD.CustomImages.Parent = this.btnD;
-            this.btnD.FillColor = System.Drawing.Color.LightSalmon;
-            this.btnD.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnD.ForeColor = System.Drawing.Color.White;
-            this.btnD.HoverState.Parent = this.btnD;
-            this.btnD.Location = new System.Drawing.Point(265, 188);
-            this.btnD.Name = "btnD";
-            this.btnD.ShadowDecoration.Parent = this.btnD;
-            this.btnD.Size = new System.Drawing.Size(44, 45);
-            this.btnD.TabIndex = 0;
-            this.btnD.Click += new System.EventHandler(this.Button_Clicked);
-            // 
-            // btnE
-            // 
-            this.btnE.Animated = true;
-            this.btnE.CheckedState.Parent = this.btnE;
-            this.btnE.CustomImages.Parent = this.btnE;
-            this.btnE.FillColor = System.Drawing.Color.LightSalmon;
-            this.btnE.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnE.ForeColor = System.Drawing.Color.White;
-            this.btnE.HoverState.Parent = this.btnE;
-            this.btnE.Location = new System.Drawing.Point(324, 188);
-            this.btnE.Name = "btnE";
-            this.btnE.ShadowDecoration.Parent = this.btnE;
-            this.btnE.Size = new System.Drawing.Size(44, 45);
-            this.btnE.TabIndex = 0;
-            this.btnE.Click += new System.EventHandler(this.Button_Clicked);
-            // 
-            // btnF
-            // 
-            this.btnF.Animated = true;
-            this.btnF.CheckedState.Parent = this.btnF;
-            this.btnF.CustomImages.Parent = this.btnF;
-            this.btnF.FillColor = System.Drawing.Color.LightSalmon;
-            this.btnF.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnF.ForeColor = System.Drawing.Color.White;
-            this.btnF.HoverState.Parent = this.btnF;
-            this.btnF.Location = new System.Drawing.Point(382, 188);
-            this.btnF.Name = "btnF";
-            this.btnF.ShadowDecoration.Parent = this.btnF;
-            this.btnF.Size = new System.Drawing.Size(44, 45);
-            this.btnF.TabIndex = 0;
-            this.btnF.Click += new System.EventHandler(this.Button_Clicked);
-            // 
-            // btnG
-            // 
-            this.btnG.Animated = true;
-            this.btnG.CheckedState.Parent = this.btnG;
-            this.btnG.CustomImages.Parent = this.btnG;
-            this.btnG.FillColor = System.Drawing.Color.LightSalmon;
-            this.btnG.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnG.ForeColor = System.Drawing.Color.White;
-            this.btnG.HoverState.Parent = this.btnG;
-            this.btnG.Location = new System.Drawing.Point(265, 244);
-            this.btnG.Name = "btnG";
-            this.btnG.ShadowDecoration.Parent = this.btnG;
-            this.btnG.Size = new System.Drawing.Size(44, 45);
-            this.btnG.TabIndex = 0;
-            this.btnG.Click += new System.EventHandler(this.Button_Clicked);
-            // 
-            // btnH
-            // 
-            this.btnH.Animated = true;
-            this.btnH.CheckedState.Parent = this.btnH;
-            this.btnH.CustomImages.Parent = this.btnH;
-            this.btnH.FillColor = System.Drawing.Color.LightSalmon;
-            this.btnH.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnH.ForeColor = System.Drawing.Color.White;
-            this.btnH.HoverState.Parent = this.btnH;
-            this.btnH.Location = new System.Drawing.Point(324, 244);
-            this.btnH.Name = "btnH";
-            this.btnH.ShadowDecoration.Parent = this.btnH;
-            this.btnH.Size = new System.Drawing.Size(44, 45);
-            this.btnH.TabIndex = 0;
-            this.btnH.Click += new System.EventHandler(this.Button_Clicked);
-            // 
-            // btnI
-            // 
-            this.btnI.Animated = true;
-            this.btnI.CheckedState.Parent = this.btnI;
-            this.btnI.CustomImages.Parent = this.btnI;
-            this.btnI.FillColor = System.Drawing.Color.LightSalmon;
-            this.btnI.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnI.ForeColor = System.Drawing.Color.White;
-            this.btnI.HoverState.Parent = this.btnI;
-            this.btnI.Location = new System.Drawing.Point(382, 244);
-            this.btnI.Name = "btnI";
-            this.btnI.ShadowDecoration.Parent = this.btnI;
-            this.btnI.Size = new System.Drawing.Size(44, 45);
-            this.btnI.TabIndex = 0;
-            this.btnI.Click += new System.EventHandler(this.Button_Clicked);
             // 
             // lblPlayer1
             // 
             this.lblPlayer1.AutoSize = true;
-            this.lblPlayer1.Font = new System.Drawing.Font("KenPixel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlayer1.Font = new System.Drawing.Font("KenPixel", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPlayer1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblPlayer1.Location = new System.Drawing.Point(55, 61);
+            this.lblPlayer1.Location = new System.Drawing.Point(68, 61);
             this.lblPlayer1.Name = "lblPlayer1";
-            this.lblPlayer1.Size = new System.Drawing.Size(26, 28);
+            this.lblPlayer1.Size = new System.Drawing.Size(41, 44);
             this.lblPlayer1.TabIndex = 1;
             this.lblPlayer1.Text = "0";
             // 
             // lblPlayer2
             // 
             this.lblPlayer2.AutoSize = true;
-            this.lblPlayer2.Font = new System.Drawing.Font("KenPixel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlayer2.Font = new System.Drawing.Font("KenPixel", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPlayer2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.lblPlayer2.Location = new System.Drawing.Point(632, 61);
             this.lblPlayer2.Name = "lblPlayer2";
-            this.lblPlayer2.Size = new System.Drawing.Size(26, 28);
+            this.lblPlayer2.Size = new System.Drawing.Size(41, 44);
             this.lblPlayer2.TabIndex = 1;
             this.lblPlayer2.Text = "0";
+            // 
+            // btnA
+            // 
+            this.btnA.Font = new System.Drawing.Font("KenPixel", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnA.Location = new System.Drawing.Point(434, 118);
+            this.btnA.Name = "btnA";
+            this.btnA.Size = new System.Drawing.Size(104, 89);
+            this.btnA.TabIndex = 2;
+            this.btnA.UseVisualStyleBackColor = true;
+            this.btnA.Click += new System.EventHandler(this.Button_Clicked);
+            // 
+            // btnB
+            // 
+            this.btnB.Font = new System.Drawing.Font("KenPixel", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnB.Location = new System.Drawing.Point(544, 118);
+            this.btnB.Name = "btnB";
+            this.btnB.Size = new System.Drawing.Size(104, 89);
+            this.btnB.TabIndex = 2;
+            this.btnB.UseVisualStyleBackColor = true;
+            this.btnB.Click += new System.EventHandler(this.Button_Clicked);
+            // 
+            // btnC
+            // 
+            this.btnC.Font = new System.Drawing.Font("KenPixel", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnC.Location = new System.Drawing.Point(654, 118);
+            this.btnC.Name = "btnC";
+            this.btnC.Size = new System.Drawing.Size(104, 89);
+            this.btnC.TabIndex = 2;
+            this.btnC.UseVisualStyleBackColor = true;
+            this.btnC.Click += new System.EventHandler(this.Button_Clicked);
+            // 
+            // btnD
+            // 
+            this.btnD.Font = new System.Drawing.Font("KenPixel", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnD.Location = new System.Drawing.Point(434, 213);
+            this.btnD.Name = "btnD";
+            this.btnD.Size = new System.Drawing.Size(104, 89);
+            this.btnD.TabIndex = 2;
+            this.btnD.UseVisualStyleBackColor = true;
+            this.btnD.Click += new System.EventHandler(this.Button_Clicked);
+            // 
+            // btnE
+            // 
+            this.btnE.Font = new System.Drawing.Font("KenPixel", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnE.Location = new System.Drawing.Point(544, 213);
+            this.btnE.Name = "btnE";
+            this.btnE.Size = new System.Drawing.Size(104, 89);
+            this.btnE.TabIndex = 2;
+            this.btnE.UseVisualStyleBackColor = true;
+            this.btnE.Click += new System.EventHandler(this.Button_Clicked);
+            // 
+            // btnF
+            // 
+            this.btnF.Font = new System.Drawing.Font("KenPixel", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnF.Location = new System.Drawing.Point(654, 213);
+            this.btnF.Name = "btnF";
+            this.btnF.Size = new System.Drawing.Size(104, 89);
+            this.btnF.TabIndex = 2;
+            this.btnF.UseVisualStyleBackColor = true;
+            this.btnF.Click += new System.EventHandler(this.Button_Clicked);
+            // 
+            // btnG
+            // 
+            this.btnG.Font = new System.Drawing.Font("KenPixel", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnG.Location = new System.Drawing.Point(434, 308);
+            this.btnG.Name = "btnG";
+            this.btnG.Size = new System.Drawing.Size(104, 89);
+            this.btnG.TabIndex = 2;
+            this.btnG.UseVisualStyleBackColor = true;
+            this.btnG.Click += new System.EventHandler(this.Button_Clicked);
+            // 
+            // btnH
+            // 
+            this.btnH.Font = new System.Drawing.Font("KenPixel", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnH.Location = new System.Drawing.Point(544, 308);
+            this.btnH.Name = "btnH";
+            this.btnH.Size = new System.Drawing.Size(104, 89);
+            this.btnH.TabIndex = 2;
+            this.btnH.UseVisualStyleBackColor = true;
+            this.btnH.Click += new System.EventHandler(this.Button_Clicked);
+            // 
+            // btnI
+            // 
+            this.btnI.Font = new System.Drawing.Font("KenPixel", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnI.Location = new System.Drawing.Point(654, 308);
+            this.btnI.Name = "btnI";
+            this.btnI.Size = new System.Drawing.Size(104, 89);
+            this.btnI.TabIndex = 2;
+            this.btnI.UseVisualStyleBackColor = true;
+            this.btnI.Click += new System.EventHandler(this.Button_Clicked);
+            // 
+            // gunaLabel1
+            // 
+            this.gunaLabel1.AutoSize = true;
+            this.gunaLabel1.Font = new System.Drawing.Font("KenPixel", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.gunaLabel1.Location = new System.Drawing.Point(12, 17);
+            this.gunaLabel1.Name = "gunaLabel1";
+            this.gunaLabel1.Size = new System.Drawing.Size(169, 44);
+            this.gunaLabel1.TabIndex = 3;
+            this.gunaLabel1.Text = "PLayer 1";
+            // 
+            // gunaLabel2
+            // 
+            this.gunaLabel2.AutoSize = true;
+            this.gunaLabel2.Font = new System.Drawing.Font("KenPixel", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.gunaLabel2.Location = new System.Drawing.Point(560, 17);
+            this.gunaLabel2.Name = "gunaLabel2";
+            this.gunaLabel2.Size = new System.Drawing.Size(176, 44);
+            this.gunaLabel2.TabIndex = 3;
+            this.gunaLabel2.Text = "Player 2";
+            // 
+            // btnReset
+            // 
+            this.btnReset.Animated = true;
+            this.btnReset.AutoRoundedCorners = true;
+            this.btnReset.BorderRadius = 21;
+            this.btnReset.CheckedState.Parent = this.btnReset;
+            this.btnReset.CustomImages.Parent = this.btnReset;
+            this.btnReset.Font = new System.Drawing.Font("KenPixel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReset.ForeColor = System.Drawing.Color.White;
+            this.btnReset.HoverState.Parent = this.btnReset;
+            this.btnReset.Location = new System.Drawing.Point(434, 434);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.ShadowDecoration.Parent = this.btnReset;
+            this.btnReset.Size = new System.Drawing.Size(162, 45);
+            this.btnReset.TabIndex = 4;
+            this.btnReset.Text = "Reset Game";
+            // 
+            // btnExit
+            // 
+            this.btnExit.Animated = true;
+            this.btnExit.AutoRoundedCorners = true;
+            this.btnExit.BorderRadius = 21;
+            this.btnExit.CheckedState.Parent = this.btnExit;
+            this.btnExit.CustomImages.Parent = this.btnExit;
+            this.btnExit.Font = new System.Drawing.Font("KenPixel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.ForeColor = System.Drawing.Color.White;
+            this.btnExit.HoverState.Parent = this.btnExit;
+            this.btnExit.Location = new System.Drawing.Point(602, 434);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.ShadowDecoration.Parent = this.btnExit;
+            this.btnExit.Size = new System.Drawing.Size(156, 45);
+            this.btnExit.TabIndex = 4;
+            this.btnExit.Text = "Exit Game";
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Sienna;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 517);
+            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.btnReset);
+            this.Controls.Add(this.gunaLabel2);
+            this.Controls.Add(this.gunaLabel1);
             this.Controls.Add(this.lblPlayer2);
             this.Controls.Add(this.lblPlayer1);
             this.Controls.Add(this.btnI);
@@ -238,18 +244,21 @@
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2Button btnA;
-        private Guna.UI2.WinForms.Guna2Button btnB;
-        private Guna.UI2.WinForms.Guna2Button btnC;
-        private Guna.UI2.WinForms.Guna2Button btnD;
-        private Guna.UI2.WinForms.Guna2Button btnE;
-        private Guna.UI2.WinForms.Guna2Button btnF;
-        private Guna.UI2.WinForms.Guna2Button btnG;
-        private Guna.UI2.WinForms.Guna2Button btnH;
-        private Guna.UI2.WinForms.Guna2Button btnI;
-        private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
         private Guna.UI.WinForms.GunaLabel lblPlayer1;
         private Guna.UI.WinForms.GunaLabel lblPlayer2;
+        private System.Windows.Forms.Button btnA;
+        private System.Windows.Forms.Button btnB;
+        private System.Windows.Forms.Button btnC;
+        private System.Windows.Forms.Button btnD;
+        private System.Windows.Forms.Button btnE;
+        private System.Windows.Forms.Button btnF;
+        private System.Windows.Forms.Button btnG;
+        private System.Windows.Forms.Button btnH;
+        private System.Windows.Forms.Button btnI;
+        private Guna.UI.WinForms.GunaLabel gunaLabel1;
+        private Guna.UI.WinForms.GunaLabel gunaLabel2;
+        private Guna.UI2.WinForms.Guna2Button btnReset;
+        private Guna.UI2.WinForms.Guna2Button btnExit;
     }
 }
 
