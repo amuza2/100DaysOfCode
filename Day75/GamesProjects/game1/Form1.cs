@@ -207,5 +207,10 @@ namespace game1
                 Drawcounter = 0;
             }
         }
+
+        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+
+        }
     }
 }
