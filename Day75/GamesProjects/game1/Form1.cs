@@ -14,6 +14,8 @@ namespace game1
     {
         
         char who = 'o';
+        char winnerChar = 'a';
+        int Drawcounter = 0;
         int player1Score = 0;
         int player2Score = 0;
         public Form1()
@@ -25,14 +27,18 @@ namespace game1
         {
             Button bt = sender as Button;
             
-            if(bt != null )
+            if(bt != null)
             {
-                if(who == 'o') bt.Text = "O"; else bt.Text = "X";
+                Drawcounter++;
+                bt.Font = new Font(bt.Font.FontFamily, 40, FontStyle.Regular);
+                if (who == 'o') bt.Text = "O"; else bt.Text = "X";
                 if (who == 'o') who = 'x'; else who = 'o';
                 bt.Enabled = false;
-                bt.ForeColor = Color.Red;
-                bt.BackColor = Color.Red;
+                
+                //bt.ForeColor = Color.Red;
+                //bt.BackColor = Color.Red;
                 CheckTheWinner(bt);
+                
             }
         }
 
@@ -127,7 +133,7 @@ namespace game1
 
         private void CheckTheWinner(Button bt)
         {
-            char winnerChar = 'a';
+            
             bool isWinner = false;
 
             switch (bt.Name)
@@ -160,6 +166,7 @@ namespace game1
                     if(HLine3() || VLine3() || DLine1()) winnerChar = getWinnerChar(bt);
                     break;
             }
+            if (Drawcounter == 9 && winnerChar == 'a') MessageBox.Show("Draw game", "End Game");
 
             if (winnerChar == 'O')
             {
@@ -178,6 +185,23 @@ namespace game1
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            foreach (Button button in panel1.Controls)
+            {
+                button.Enabled = true;
+                button.BackColor = Color.White;
+                button.Text = string.Empty;
+                player1Score = 0;
+                player2Score = 0;
+                lblPlayer1.Text = "0";
+                lblPlayer2.Text = "0";
+                who = 'o';
+                winnerChar = 'a';
+                Drawcounter = 0;
+            }
         }
     }
 }
