@@ -14,13 +14,15 @@ namespace game1
     {
         
         char who = 'o';
-        char winnerChar = 'a';
+        char winnerPlayer = 'a';
+        bool isWinner = false;
         int Drawcounter = 0;
         int player1Score = 0;
         int player2Score = 0;
+        
         public Form1()
         {
-            InitializeComponent();          
+            InitializeComponent();            
         }
 
         private void Button_Clicked(object sender, EventArgs e)
@@ -34,11 +36,7 @@ namespace game1
                 if (who == 'o') bt.Text = "O"; else bt.Text = "X";
                 if (who == 'o') who = 'x'; else who = 'o';
                 bt.Enabled = false;
-                
-                //bt.ForeColor = Color.Red;
-                //bt.BackColor = Color.Red;
                 CheckTheWinner(bt);
-                
             }
         }
 
@@ -133,53 +131,59 @@ namespace game1
 
         private void CheckTheWinner(Button bt)
         {
-            
-            bool isWinner = false;
-
             switch (bt.Name)
             {
                 case "btnA":
-                    if(HLine1() || VLine1() || DLine1()) winnerChar = getWinnerChar(bt);
+                    if(HLine1() || VLine1() || DLine1()) winnerPlayer = getWinnerChar(bt);
                     break;
                 case "btn.B":
-                    if(HLine1() || VLine2()) winnerChar = getWinnerChar(bt);
+                    if(HLine1() || VLine2()) winnerPlayer = getWinnerChar(bt);
                     break;
                 case "btnC":
-                    if(HLine1() || VLine3() || DLine2()) winnerChar = getWinnerChar(bt);
+                    if(HLine1() || VLine3() || DLine2()) winnerPlayer = getWinnerChar(bt);
                     break;
                 case "btnD":
-                    if(VLine1() || HLine2()) winnerChar = getWinnerChar(bt);
+                    if(VLine1() || HLine2()) winnerPlayer = getWinnerChar(bt);
                     break;
                 case "btnE":
-                    if(HLine2() || VLine2() || DLine1() || DLine2()) winnerChar = getWinnerChar(bt);
+                    if(HLine2() || VLine2() || DLine1() || DLine2()) winnerPlayer = getWinnerChar(bt);
                     break;
                 case "btnF":
-                    if (HLine2() || VLine3()) winnerChar = getWinnerChar(bt);
+                    if (HLine2() || VLine3()) winnerPlayer = getWinnerChar(bt);
                     break;
                 case "btnG":
-                    if(HLine3() || VLine1() || DLine2()) winnerChar = getWinnerChar(bt);
+                    if(HLine3() || VLine1() || DLine2()) winnerPlayer = getWinnerChar(bt);
                     break;
                 case "btnH":
-                    if(HLine3() || VLine2()) winnerChar = getWinnerChar(bt);
+                    if(HLine3() || VLine2()) winnerPlayer = getWinnerChar(bt);
                     break;
                 case "btnI":
-                    if(HLine3() || VLine3() || DLine1()) winnerChar = getWinnerChar(bt);
+                    if(HLine3() || VLine3() || DLine1()) winnerPlayer = getWinnerChar(bt);
                     break;
             }
-            if (Drawcounter == 9 && winnerChar == 'a') MessageBox.Show("Draw game", "End Game");
 
-            if (winnerChar == 'O')
+            if (winnerPlayer == 'O')
             {
                 player1Score++;
                 isWinner = true;
             }
-            else if (winnerChar == 'X')
+            else if (winnerPlayer == 'X')
             {
                 player2Score++;
                 isWinner = true;
             }
             lblPlayer1.Text = player1Score.ToString();
             lblPlayer2.Text = player2Score.ToString();
+
+            if (Drawcounter == 9 && winnerPlayer == 'a') MessageBox.Show("Draw game", "End Game");
+            else if(isWinner)
+            {
+                foreach (Button item in panel1.Controls)
+                {
+                    if (item.Enabled) item.Enabled = false;
+                }
+            }
+
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -199,7 +203,7 @@ namespace game1
                 lblPlayer1.Text = "0";
                 lblPlayer2.Text = "0";
                 who = 'o';
-                winnerChar = 'a';
+                winnerPlayer = 'a';
                 Drawcounter = 0;
             }
         }

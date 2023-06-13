@@ -72,7 +72,7 @@
             // btnA
             // 
             this.btnA.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnA.Font = new System.Drawing.Font("Arial Narrow", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnA.Font = new System.Drawing.Font("KenPixel", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnA.Location = new System.Drawing.Point(15, 8);
             this.btnA.Name = "btnA";
             this.btnA.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -84,7 +84,7 @@
             // btnB
             // 
             this.btnB.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnB.Font = new System.Drawing.Font("Arial Narrow", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnB.Font = new System.Drawing.Font("KenPixel", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnB.Location = new System.Drawing.Point(125, 8);
             this.btnB.Name = "btnB";
             this.btnB.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -96,7 +96,7 @@
             // btnC
             // 
             this.btnC.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnC.Font = new System.Drawing.Font("Arial Narrow", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnC.Font = new System.Drawing.Font("KenPixel", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnC.Location = new System.Drawing.Point(235, 8);
             this.btnC.Name = "btnC";
             this.btnC.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -108,7 +108,7 @@
             // btnD
             // 
             this.btnD.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnD.Font = new System.Drawing.Font("Arial Narrow", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnD.Font = new System.Drawing.Font("KenPixel", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnD.Location = new System.Drawing.Point(15, 103);
             this.btnD.Name = "btnD";
             this.btnD.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -120,7 +120,7 @@
             // btnE
             // 
             this.btnE.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnE.Font = new System.Drawing.Font("Arial Narrow", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnE.Font = new System.Drawing.Font("KenPixel", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnE.Location = new System.Drawing.Point(125, 103);
             this.btnE.Name = "btnE";
             this.btnE.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -132,7 +132,7 @@
             // btnF
             // 
             this.btnF.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnF.Font = new System.Drawing.Font("Arial Narrow", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnF.Font = new System.Drawing.Font("KenPixel", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnF.Location = new System.Drawing.Point(235, 103);
             this.btnF.Name = "btnF";
             this.btnF.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -144,7 +144,7 @@
             // btnG
             // 
             this.btnG.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnG.Font = new System.Drawing.Font("Arial Narrow", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnG.Font = new System.Drawing.Font("KenPixel", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnG.Location = new System.Drawing.Point(15, 198);
             this.btnG.Name = "btnG";
             this.btnG.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -156,7 +156,7 @@
             // btnH
             // 
             this.btnH.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnH.Font = new System.Drawing.Font("Arial Narrow", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnH.Font = new System.Drawing.Font("KenPixel", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnH.Location = new System.Drawing.Point(125, 198);
             this.btnH.Name = "btnH";
             this.btnH.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -168,7 +168,7 @@
             // btnI
             // 
             this.btnI.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnI.Font = new System.Drawing.Font("Arial Narrow", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnI.Font = new System.Drawing.Font("KenPixel", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnI.Location = new System.Drawing.Point(235, 198);
             this.btnI.Name = "btnI";
             this.btnI.RightToLeft = System.Windows.Forms.RightToLeft.No;
