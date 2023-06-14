@@ -16,21 +16,31 @@ namespace game1
         char who = 'o';
         char winnerPlayer = 'a';
         bool isWinner = false;
+        bool startRound = true;
         int Drawcounter = 0;
         int player1Score = 0;
         int player2Score = 0;
+        int roundCounter = 0;
         
         public Form1()
         {
-            InitializeComponent();            
+            InitializeComponent();     
+            RadioButton1.Checked = true;
         }
 
         private void Button_Clicked(object sender, EventArgs e)
         {
             Button bt = sender as Button;
-            
             if(bt != null)
             {
+                if (RadioButton1.Checked && startRound) who = 'o';
+                else if (RadioButton2.Checked && startRound) who = 'x';
+                if (startRound)
+                {
+                    RadioButton1.Enabled = false;
+                    RadioButton2.Enabled = false;
+                    startRound = false;
+                }
                 Drawcounter++;
                 bt.Font = new Font(bt.Font.FontFamily, 40, FontStyle.Regular);
                 if (who == 'o') bt.Text = "O"; else bt.Text = "X";
@@ -172,8 +182,8 @@ namespace game1
                 player2Score++;
                 isWinner = true;
             }
-            lblPlayer1.Text = player1Score.ToString();
-            lblPlayer2.Text = player2Score.ToString();
+            lblScorePlayer1.Text = player1Score.ToString();
+            lblScorePlayer2.Text = player2Score.ToString();
 
             if (Drawcounter == 9 && winnerPlayer == 'a') MessageBox.Show("Draw game", "End Game");
             else if(isWinner)
@@ -198,19 +208,79 @@ namespace game1
                 button.Enabled = true;
                 button.BackColor = Color.White;
                 button.Text = string.Empty;
-                player1Score = 0;
-                player2Score = 0;
-                lblPlayer1.Text = "0";
-                lblPlayer2.Text = "0";
-                who = 'o';
+            }
+            player1Score = 0;
+            player2Score = 0;
+            lblScorePlayer1.Text = "0";
+            lblScorePlayer2.Text = "0";
+            winnerPlayer = 'a';
+            Drawcounter = 0;
+            isWinner = false;
+            roundCounter = 0;
+            lblRoundNumber.Text = "0";
+            startRound = true;
+            RadioButton1.Enabled = true;
+            RadioButton2.Enabled = true;
+        }
+
+        private void textboxPlayer1_Click(object sender, EventArgs e)
+        {
+            TextPlayer1.Text = "";
+        }
+
+        private void textboxPlayer2_Click(object sender, EventArgs e)
+        {
+            TextPlayer2.Text = "";
+        }
+
+        private void RadioButton_CheckedChange(object sender, EventArgs e)
+        {
+            RadioButton rd = (RadioButton)sender;
+            if(rd.Checked)
+            {
+                if (rd.Name == RadioButton1.Name) who = 'o';
+                else who = 'x';
+            }
+            RadioButton1.ForeColor = Color.White;
+            RadioButton2.ForeColor = Color.White;
+        }
+
+        private void btnNextRound(object sender, EventArgs e)
+        {
+            if (isWinner || Drawcounter == 9)
+            {
+                foreach (Button button in panel1.Controls)
+                {
+                    button.Enabled = true;
+                    button.BackColor = Color.White;
+                    button.Text = string.Empty;
+                }
                 winnerPlayer = 'a';
                 Drawcounter = 0;
+                isWinner = false;
+                roundCounter++;
+                lblRoundNumber.Text = roundCounter.ToString();
+                startRound = true;
+                RadioButton1.Enabled = true;
+                RadioButton2.Enabled = true;
             }
         }
 
-        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        private void textboxPlayer_Click(object sender, EventArgs e)
         {
+            TextBox tb = (TextBox)sender;
+            tb.Text = "";
+        }
 
+        private void textBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                TextBox tb = (TextBox)sender;
+                if (tb.Name == "TextPlayer1") lblPlayer1.Text = tb.Text;
+                else if(tb.Name == "TextPlayer2") lblPlayer2.Text = tb.Text;
+            }
+            
         }
     }
 }

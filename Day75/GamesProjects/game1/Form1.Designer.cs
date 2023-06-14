@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblPlayer1 = new Guna.UI.WinForms.GunaLabel();
-            this.lblPlayer2 = new Guna.UI.WinForms.GunaLabel();
+            this.lblScorePlayer1 = new Guna.UI.WinForms.GunaLabel();
+            this.lblScorePlayer2 = new Guna.UI.WinForms.GunaLabel();
             this.btnA = new System.Windows.Forms.Button();
             this.btnB = new System.Windows.Forms.Button();
             this.btnC = new System.Windows.Forms.Button();
@@ -48,49 +48,49 @@
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
+            this.lblPlayer1 = new Guna.UI.WinForms.GunaLabel();
+            this.lblPlayer2 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel7 = new Guna.UI.WinForms.GunaLabel();
+            this.lblRoundNumber = new Guna.UI.WinForms.GunaLabel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.guna2RadioButton1 = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.guna2RadioButton2 = new Guna.UI2.WinForms.Guna2RadioButton();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.TextPlayer1 = new System.Windows.Forms.TextBox();
+            this.TextPlayer2 = new System.Windows.Forms.TextBox();
+            this.RadioButton1 = new System.Windows.Forms.RadioButton();
+            this.RadioButton2 = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // lblPlayer1
+            // lblScorePlayer1
             // 
-            this.lblPlayer1.AutoSize = true;
-            this.lblPlayer1.BackColor = System.Drawing.Color.Indigo;
-            this.lblPlayer1.Font = new System.Drawing.Font("KenPixel", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlayer1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblPlayer1.Location = new System.Drawing.Point(64, 415);
-            this.lblPlayer1.Name = "lblPlayer1";
-            this.lblPlayer1.Size = new System.Drawing.Size(41, 44);
-            this.lblPlayer1.TabIndex = 1;
-            this.lblPlayer1.Text = "0";
+            this.lblScorePlayer1.AutoSize = true;
+            this.lblScorePlayer1.BackColor = System.Drawing.Color.Indigo;
+            this.lblScorePlayer1.Font = new System.Drawing.Font("KenPixel", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScorePlayer1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblScorePlayer1.Location = new System.Drawing.Point(64, 415);
+            this.lblScorePlayer1.Name = "lblScorePlayer1";
+            this.lblScorePlayer1.Size = new System.Drawing.Size(41, 44);
+            this.lblScorePlayer1.TabIndex = 1;
+            this.lblScorePlayer1.Text = "0";
             // 
-            // lblPlayer2
+            // lblScorePlayer2
             // 
-            this.lblPlayer2.AutoSize = true;
-            this.lblPlayer2.BackColor = System.Drawing.Color.Indigo;
-            this.lblPlayer2.Font = new System.Drawing.Font("KenPixel", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlayer2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblPlayer2.Location = new System.Drawing.Point(246, 415);
-            this.lblPlayer2.Name = "lblPlayer2";
-            this.lblPlayer2.Size = new System.Drawing.Size(41, 44);
-            this.lblPlayer2.TabIndex = 1;
-            this.lblPlayer2.Text = "0";
+            this.lblScorePlayer2.AutoSize = true;
+            this.lblScorePlayer2.BackColor = System.Drawing.Color.Indigo;
+            this.lblScorePlayer2.Font = new System.Drawing.Font("KenPixel", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScorePlayer2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblScorePlayer2.Location = new System.Drawing.Point(294, 414);
+            this.lblScorePlayer2.Name = "lblScorePlayer2";
+            this.lblScorePlayer2.Size = new System.Drawing.Size(41, 44);
+            this.lblScorePlayer2.TabIndex = 1;
+            this.lblScorePlayer2.Text = "0";
             // 
             // btnA
             // 
@@ -247,7 +247,7 @@
             this.panel1.Controls.Add(this.btnC);
             this.panel1.Controls.Add(this.btnI);
             this.panel1.Controls.Add(this.btnF);
-            this.panel1.Location = new System.Drawing.Point(401, 194);
+            this.panel1.Location = new System.Drawing.Point(437, 194);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(351, 290);
             this.panel1.TabIndex = 5;
@@ -298,57 +298,6 @@
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.aboutToolStripMenuItem.Text = "About";
             // 
-            // guna2TextBox1
-            // 
-            this.guna2TextBox1.Animated = true;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "Player1";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Font = new System.Drawing.Font("KenPixel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(16, 109);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.SelectionStart = 7;
-            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(296, 38);
-            this.guna2TextBox1.TabIndex = 8;
-            // 
-            // guna2TextBox2
-            // 
-            this.guna2TextBox2.Animated = true;
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "Player2";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.FocusedState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Font = new System.Drawing.Font("KenPixel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Location = new System.Drawing.Point(488, 109);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderText = "";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.ShadowDecoration.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Size = new System.Drawing.Size(296, 38);
-            this.guna2TextBox2.TabIndex = 8;
-            // 
             // gunaLabel1
             // 
             this.gunaLabel1.AutoSize = true;
@@ -386,29 +335,29 @@
             this.gunaLabel3.Text = "Score";
             this.gunaLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // gunaLabel4
+            // lblPlayer1
             // 
-            this.gunaLabel4.AutoSize = true;
-            this.gunaLabel4.BackColor = System.Drawing.Color.DarkRed;
-            this.gunaLabel4.Font = new System.Drawing.Font("KenPixel", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.gunaLabel4.Location = new System.Drawing.Point(29, 363);
-            this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(132, 36);
-            this.gunaLabel4.TabIndex = 9;
-            this.gunaLabel4.Text = "Player1";
+            this.lblPlayer1.AutoSize = true;
+            this.lblPlayer1.BackColor = System.Drawing.Color.DarkRed;
+            this.lblPlayer1.Font = new System.Drawing.Font("KenPixel", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlayer1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblPlayer1.Location = new System.Drawing.Point(29, 363);
+            this.lblPlayer1.Name = "lblPlayer1";
+            this.lblPlayer1.Size = new System.Drawing.Size(132, 36);
+            this.lblPlayer1.TabIndex = 9;
+            this.lblPlayer1.Text = "Player1";
             // 
-            // gunaLabel5
+            // lblPlayer2
             // 
-            this.gunaLabel5.AutoSize = true;
-            this.gunaLabel5.BackColor = System.Drawing.Color.DarkRed;
-            this.gunaLabel5.Font = new System.Drawing.Font("KenPixel", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.gunaLabel5.Location = new System.Drawing.Point(197, 363);
-            this.gunaLabel5.Name = "gunaLabel5";
-            this.gunaLabel5.Size = new System.Drawing.Size(138, 36);
-            this.gunaLabel5.TabIndex = 9;
-            this.gunaLabel5.Text = "Player2";
+            this.lblPlayer2.AutoSize = true;
+            this.lblPlayer2.BackColor = System.Drawing.Color.DarkRed;
+            this.lblPlayer2.Font = new System.Drawing.Font("KenPixel", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlayer2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblPlayer2.Location = new System.Drawing.Point(248, 363);
+            this.lblPlayer2.Name = "lblPlayer2";
+            this.lblPlayer2.Size = new System.Drawing.Size(138, 36);
+            this.lblPlayer2.TabIndex = 9;
+            this.lblPlayer2.Text = "Player2";
             // 
             // gunaLabel6
             // 
@@ -422,17 +371,17 @@
             this.gunaLabel6.TabIndex = 9;
             this.gunaLabel6.Text = "Round Number:";
             // 
-            // gunaLabel7
+            // lblRoundNumber
             // 
-            this.gunaLabel7.AutoSize = true;
-            this.gunaLabel7.BackColor = System.Drawing.Color.Indigo;
-            this.gunaLabel7.Font = new System.Drawing.Font("KenPixel", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel7.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.gunaLabel7.Location = new System.Drawing.Point(294, 477);
-            this.gunaLabel7.Name = "gunaLabel7";
-            this.gunaLabel7.Size = new System.Drawing.Size(41, 44);
-            this.gunaLabel7.TabIndex = 1;
-            this.gunaLabel7.Text = "0";
+            this.lblRoundNumber.AutoSize = true;
+            this.lblRoundNumber.BackColor = System.Drawing.Color.Indigo;
+            this.lblRoundNumber.Font = new System.Drawing.Font("KenPixel", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRoundNumber.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblRoundNumber.Location = new System.Drawing.Point(294, 477);
+            this.lblRoundNumber.Name = "lblRoundNumber";
+            this.lblRoundNumber.Size = new System.Drawing.Size(41, 44);
+            this.lblRoundNumber.TabIndex = 1;
+            this.lblRoundNumber.Text = "0";
             // 
             // pictureBox2
             // 
@@ -454,50 +403,6 @@
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
-            // guna2RadioButton1
-            // 
-            this.guna2RadioButton1.AutoSize = true;
-            this.guna2RadioButton1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton1.CheckedState.BorderThickness = 0;
-            this.guna2RadioButton1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton1.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2RadioButton1.CheckedState.InnerOffset = -4;
-            this.guna2RadioButton1.Font = new System.Drawing.Font("KenPixel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2RadioButton1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.guna2RadioButton1.Location = new System.Drawing.Point(16, 156);
-            this.guna2RadioButton1.Name = "guna2RadioButton1";
-            this.guna2RadioButton1.Size = new System.Drawing.Size(299, 32);
-            this.guna2RadioButton1.TabIndex = 10;
-            this.guna2RadioButton1.TabStop = true;
-            this.guna2RadioButton1.Text = "Plauer 1 start playing";
-            this.guna2RadioButton1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2RadioButton1.UncheckedState.BorderThickness = 2;
-            this.guna2RadioButton1.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton1.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton1.UseVisualStyleBackColor = true;
-            // 
-            // guna2RadioButton2
-            // 
-            this.guna2RadioButton2.AutoSize = true;
-            this.guna2RadioButton2.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton2.CheckedState.BorderThickness = 0;
-            this.guna2RadioButton2.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton2.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2RadioButton2.CheckedState.InnerOffset = -4;
-            this.guna2RadioButton2.Font = new System.Drawing.Font("KenPixel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2RadioButton2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.guna2RadioButton2.Location = new System.Drawing.Point(485, 156);
-            this.guna2RadioButton2.Name = "guna2RadioButton2";
-            this.guna2RadioButton2.Size = new System.Drawing.Size(303, 32);
-            this.guna2RadioButton2.TabIndex = 10;
-            this.guna2RadioButton2.TabStop = true;
-            this.guna2RadioButton2.Text = "Plauer 2 start playing";
-            this.guna2RadioButton2.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2RadioButton2.UncheckedState.BorderThickness = 2;
-            this.guna2RadioButton2.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton2.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton2.UseVisualStyleBackColor = true;
-            // 
             // guna2Button1
             // 
             this.guna2Button1.Animated = true;
@@ -514,7 +419,59 @@
             this.guna2Button1.Size = new System.Drawing.Size(144, 45);
             this.guna2Button1.TabIndex = 4;
             this.guna2Button1.Text = "Next Round";
-            this.guna2Button1.Click += new System.EventHandler(this.btnExit_Click);
+            this.guna2Button1.Click += new System.EventHandler(this.btnNextRound);
+            // 
+            // TextPlayer1
+            // 
+            this.TextPlayer1.Font = new System.Drawing.Font("KenPixel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextPlayer1.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.TextPlayer1.Location = new System.Drawing.Point(16, 116);
+            this.TextPlayer1.Name = "TextPlayer1";
+            this.TextPlayer1.Size = new System.Drawing.Size(287, 31);
+            this.TextPlayer1.TabIndex = 11;
+            this.TextPlayer1.Text = "Player 1";
+            this.TextPlayer1.Click += new System.EventHandler(this.textboxPlayer_Click);
+            this.TextPlayer1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox_KeyDown);
+            // 
+            // TextPlayer2
+            // 
+            this.TextPlayer2.Font = new System.Drawing.Font("KenPixel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextPlayer2.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.TextPlayer2.Location = new System.Drawing.Point(485, 116);
+            this.TextPlayer2.Name = "TextPlayer2";
+            this.TextPlayer2.Size = new System.Drawing.Size(287, 31);
+            this.TextPlayer2.TabIndex = 11;
+            this.TextPlayer2.Text = "PLayer 2";
+            this.TextPlayer2.Click += new System.EventHandler(this.textboxPlayer_Click);
+            this.TextPlayer2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox_KeyDown);
+            // 
+            // RadioButton1
+            // 
+            this.RadioButton1.AutoSize = true;
+            this.RadioButton1.Font = new System.Drawing.Font("KenPixel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RadioButton1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.RadioButton1.Location = new System.Drawing.Point(12, 153);
+            this.RadioButton1.Name = "RadioButton1";
+            this.RadioButton1.Size = new System.Drawing.Size(299, 32);
+            this.RadioButton1.TabIndex = 12;
+            this.RadioButton1.TabStop = true;
+            this.RadioButton1.Text = "PLAYER 1 START PLAYING";
+            this.RadioButton1.UseVisualStyleBackColor = true;
+            this.RadioButton1.CheckedChanged += new System.EventHandler(this.RadioButton_CheckedChange);
+            // 
+            // RadioButton2
+            // 
+            this.RadioButton2.AutoSize = true;
+            this.RadioButton2.Font = new System.Drawing.Font("KenPixel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RadioButton2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.RadioButton2.Location = new System.Drawing.Point(485, 153);
+            this.RadioButton2.Name = "RadioButton2";
+            this.RadioButton2.Size = new System.Drawing.Size(303, 32);
+            this.RadioButton2.TabIndex = 12;
+            this.RadioButton2.TabStop = true;
+            this.RadioButton2.Text = "PLAYER 2 START PLAYING";
+            this.RadioButton2.UseVisualStyleBackColor = true;
+            this.RadioButton2.CheckedChanged += new System.EventHandler(this.RadioButton_CheckedChange);
             // 
             // Form1
             // 
@@ -522,25 +479,25 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Sienna;
             this.ClientSize = new System.Drawing.Size(800, 562);
-            this.Controls.Add(this.guna2RadioButton2);
-            this.Controls.Add(this.guna2RadioButton1);
+            this.Controls.Add(this.RadioButton2);
+            this.Controls.Add(this.RadioButton1);
+            this.Controls.Add(this.TextPlayer2);
+            this.Controls.Add(this.TextPlayer1);
             this.Controls.Add(this.gunaLabel2);
-            this.Controls.Add(this.gunaLabel5);
+            this.Controls.Add(this.lblPlayer2);
             this.Controls.Add(this.gunaLabel6);
-            this.Controls.Add(this.gunaLabel4);
+            this.Controls.Add(this.lblPlayer1);
             this.Controls.Add(this.gunaLabel3);
             this.Controls.Add(this.gunaLabel1);
-            this.Controls.Add(this.guna2TextBox2);
-            this.Controls.Add(this.guna2TextBox1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnReset);
-            this.Controls.Add(this.lblPlayer2);
-            this.Controls.Add(this.gunaLabel7);
-            this.Controls.Add(this.lblPlayer1);
+            this.Controls.Add(this.lblScorePlayer2);
+            this.Controls.Add(this.lblRoundNumber);
+            this.Controls.Add(this.lblScorePlayer1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
@@ -557,8 +514,8 @@
 
         #endregion
 
-        private Guna.UI.WinForms.GunaLabel lblPlayer1;
-        private Guna.UI.WinForms.GunaLabel lblPlayer2;
+        private Guna.UI.WinForms.GunaLabel lblScorePlayer1;
+        private Guna.UI.WinForms.GunaLabel lblScorePlayer2;
         private System.Windows.Forms.Button btnA;
         private System.Windows.Forms.Button btnB;
         private System.Windows.Forms.Button btnC;
@@ -577,20 +534,20 @@
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
         private Guna.UI.WinForms.GunaLabel gunaLabel3;
-        private Guna.UI.WinForms.GunaLabel gunaLabel4;
-        private Guna.UI.WinForms.GunaLabel gunaLabel5;
+        private Guna.UI.WinForms.GunaLabel lblPlayer1;
+        private Guna.UI.WinForms.GunaLabel lblPlayer2;
         private Guna.UI.WinForms.GunaLabel gunaLabel6;
-        private Guna.UI.WinForms.GunaLabel gunaLabel7;
+        private Guna.UI.WinForms.GunaLabel lblRoundNumber;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private Guna.UI2.WinForms.Guna2RadioButton guna2RadioButton1;
-        private Guna.UI2.WinForms.Guna2RadioButton guna2RadioButton2;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private System.Windows.Forms.TextBox TextPlayer1;
+        private System.Windows.Forms.TextBox TextPlayer2;
+        private System.Windows.Forms.RadioButton RadioButton1;
+        private System.Windows.Forms.RadioButton RadioButton2;
     }
 }
 
