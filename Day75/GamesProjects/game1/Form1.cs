@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace game1
 {
@@ -39,11 +40,13 @@ namespace game1
                 {
                     RadioButton1.Enabled = false;
                     RadioButton2.Enabled = false;
+                    RadioButton1.AutoSize = false;
+                    RadioButton1.ForeColor = Color.White;
+                    RadioButton2.ForeColor = Color.White;
                     startRound = false;
                 }
                 Drawcounter++;
                 bt.Font = new Font(bt.Font.FontFamily, 40, FontStyle.Regular);
-                bt.ForeColor = Color.Black;
                 if (who == 'o') bt.Text = "O"; else bt.Text = "X";
                 if (who == 'o') who = 'x'; else who = 'o';
                 bt.Enabled = false;
@@ -208,7 +211,6 @@ namespace game1
             {
                 button.Enabled = true;
                 button.BackColor = Color.White;
-                button.ForeColor = Color.Black;
                 button.Text = string.Empty;
             }
             player1Score = 0;
@@ -239,7 +241,7 @@ namespace game1
 
         private void RadioButton_CheckedChange(object sender, EventArgs e)
         {
-            RadioButton rd = (RadioButton)sender;
+            System.Windows.Forms.RadioButton rd = (System.Windows.Forms.RadioButton)sender;
             if(rd.Checked)
             {
                 if (rd.Name == RadioButton1.Name) who = 'o';
@@ -256,7 +258,6 @@ namespace game1
                 {
                     button.Enabled = true;
                     button.BackColor = Color.White;
-                    button.ForeColor = Color.Black;
                     button.Text = string.Empty;
                 }
                 winnerPlayer = 'a';
@@ -291,6 +292,21 @@ namespace game1
         {
             if (who == 'o') lblPlayerTurn.Text = "Player 1";
             else if (who == 'x') lblPlayerTurn.Text = "Player 2";
+        }
+
+        private void newGameToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            btnReset_Click(this, EventArgs.Empty);
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            btnExit_Click(this, EventArgs.Empty);
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("This game was developed by Mohammed Chami\nContact => Twitter: @mohamuza", "About");
         }
     }
 }

@@ -72,6 +72,8 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.panel12 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -85,6 +87,7 @@
             this.panel8.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel10.SuspendLayout();
+            this.panel12.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblScorePlayer1
@@ -296,12 +299,14 @@
             this.newGameToolStripMenuItem.Name = "newGameToolStripMenuItem";
             this.newGameToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.newGameToolStripMenuItem.Text = "New Game";
+            this.newGameToolStripMenuItem.Click += new System.EventHandler(this.newGameToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -316,6 +321,7 @@
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // gunaLabel1
             // 
@@ -360,7 +366,7 @@
             this.lblPlayer1.BackColor = System.Drawing.Color.Maroon;
             this.lblPlayer1.Font = new System.Drawing.Font("KenPixel", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPlayer1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblPlayer1.Location = new System.Drawing.Point(27, 9);
+            this.lblPlayer1.Location = new System.Drawing.Point(17, 9);
             this.lblPlayer1.Name = "lblPlayer1";
             this.lblPlayer1.Size = new System.Drawing.Size(138, 36);
             this.lblPlayer1.TabIndex = 9;
@@ -372,7 +378,7 @@
             this.lblPlayer2.BackColor = System.Drawing.Color.Maroon;
             this.lblPlayer2.Font = new System.Drawing.Font("KenPixel", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPlayer2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblPlayer2.Location = new System.Drawing.Point(225, 61);
+            this.lblPlayer2.Location = new System.Drawing.Point(216, 61);
             this.lblPlayer2.Name = "lblPlayer2";
             this.lblPlayer2.Size = new System.Drawing.Size(144, 36);
             this.lblPlayer2.TabIndex = 9;
@@ -396,7 +402,7 @@
             this.lblRoundNumber.BackColor = System.Drawing.Color.Transparent;
             this.lblRoundNumber.Font = new System.Drawing.Font("KenPixel", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRoundNumber.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblRoundNumber.Location = new System.Drawing.Point(248, 501);
+            this.lblRoundNumber.Location = new System.Drawing.Point(20, 7);
             this.lblRoundNumber.Name = "lblRoundNumber";
             this.lblRoundNumber.Size = new System.Drawing.Size(41, 44);
             this.lblRoundNumber.TabIndex = 1;
@@ -528,7 +534,7 @@
             this.panel5.Controls.Add(this.panel7);
             this.panel5.Controls.Add(this.panel6);
             this.panel5.Controls.Add(this.lblPlayer2);
-            this.panel5.Location = new System.Drawing.Point(16, 282);
+            this.panel5.Location = new System.Drawing.Point(16, 300);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(395, 163);
             this.panel5.TabIndex = 14;
@@ -550,7 +556,7 @@
             this.panel7.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel7.Location = new System.Drawing.Point(0, 52);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(219, 111);
+            this.panel7.Size = new System.Drawing.Size(201, 111);
             this.panel7.TabIndex = 1;
             // 
             // panel8
@@ -561,17 +567,18 @@
             this.panel8.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel8.Location = new System.Drawing.Point(0, 0);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(186, 111);
+            this.panel8.Size = new System.Drawing.Size(195, 111);
             this.panel8.TabIndex = 0;
             // 
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.Chocolate;
+            this.panel9.Controls.Add(this.panel11);
             this.panel9.Controls.Add(this.lblScorePlayer1);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel9.Location = new System.Drawing.Point(0, 58);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(186, 53);
+            this.panel9.Size = new System.Drawing.Size(195, 53);
             this.panel9.TabIndex = 0;
             // 
             // panel10
@@ -579,10 +586,27 @@
             this.panel10.BackColor = System.Drawing.Color.Chocolate;
             this.panel10.Controls.Add(this.lblScorePlayer2);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel10.Location = new System.Drawing.Point(219, 110);
+            this.panel10.Location = new System.Drawing.Point(201, 110);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(176, 53);
+            this.panel10.Size = new System.Drawing.Size(194, 53);
             this.panel10.TabIndex = 2;
+            // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.Chocolate;
+            this.panel11.Location = new System.Drawing.Point(192, 30);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(200, 100);
+            this.panel11.TabIndex = 15;
+            // 
+            // panel12
+            // 
+            this.panel12.BackColor = System.Drawing.Color.Chocolate;
+            this.panel12.Controls.Add(this.lblRoundNumber);
+            this.panel12.Location = new System.Drawing.Point(247, 492);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(76, 54);
+            this.panel12.TabIndex = 15;
             // 
             // Form1
             // 
@@ -590,6 +614,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Sienna;
             this.ClientSize = new System.Drawing.Size(819, 562);
+            this.Controls.Add(this.panel12);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.RadioButton2);
@@ -603,7 +628,6 @@
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnReset);
-            this.Controls.Add(this.lblRoundNumber);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
@@ -630,6 +654,8 @@
             this.panel9.PerformLayout();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
+            this.panel12.ResumeLayout(false);
+            this.panel12.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -680,6 +706,8 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Panel panel12;
     }
 }
 
