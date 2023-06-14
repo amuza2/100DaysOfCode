@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.lblScorePlayer1 = new Guna.UI.WinForms.GunaLabel();
             this.lblScorePlayer2 = new Guna.UI.WinForms.GunaLabel();
             this.btnA = new System.Windows.Forms.Button();
@@ -49,7 +50,7 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
+            this.lblPlayerTurn = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.lblPlayer1 = new Guna.UI.WinForms.GunaLabel();
             this.lblPlayer2 = new Guna.UI.WinForms.GunaLabel();
@@ -62,19 +63,37 @@
             this.TextPlayer2 = new System.Windows.Forms.TextBox();
             this.RadioButton1 = new System.Windows.Forms.RadioButton();
             this.RadioButton2 = new System.Windows.Forms.RadioButton();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panel8.SuspendLayout();
+            this.panel9.SuspendLayout();
+            this.panel10.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblScorePlayer1
             // 
             this.lblScorePlayer1.AutoSize = true;
-            this.lblScorePlayer1.BackColor = System.Drawing.Color.Indigo;
+            this.lblScorePlayer1.BackColor = System.Drawing.Color.Transparent;
             this.lblScorePlayer1.Font = new System.Drawing.Font("KenPixel", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblScorePlayer1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblScorePlayer1.Location = new System.Drawing.Point(64, 415);
+            this.lblScorePlayer1.Location = new System.Drawing.Point(78, 4);
             this.lblScorePlayer1.Name = "lblScorePlayer1";
             this.lblScorePlayer1.Size = new System.Drawing.Size(41, 44);
             this.lblScorePlayer1.TabIndex = 1;
@@ -83,10 +102,10 @@
             // lblScorePlayer2
             // 
             this.lblScorePlayer2.AutoSize = true;
-            this.lblScorePlayer2.BackColor = System.Drawing.Color.Indigo;
+            this.lblScorePlayer2.BackColor = System.Drawing.Color.Transparent;
             this.lblScorePlayer2.Font = new System.Drawing.Font("KenPixel", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblScorePlayer2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblScorePlayer2.Location = new System.Drawing.Point(294, 414);
+            this.lblScorePlayer2.Location = new System.Drawing.Point(71, 4);
             this.lblScorePlayer2.Name = "lblScorePlayer2";
             this.lblScorePlayer2.Size = new System.Drawing.Size(41, 44);
             this.lblScorePlayer2.TabIndex = 1;
@@ -259,7 +278,7 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(819, 24);
             this.menuStrip1.TabIndex = 6;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -275,13 +294,13 @@
             // newGameToolStripMenuItem
             // 
             this.newGameToolStripMenuItem.Name = "newGameToolStripMenuItem";
-            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.newGameToolStripMenuItem.Text = "New Game";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             // 
             // helpToolStripMenuItem
@@ -295,7 +314,7 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.aboutToolStripMenuItem.Text = "About";
             // 
             // gunaLabel1
@@ -304,23 +323,23 @@
             this.gunaLabel1.BackColor = System.Drawing.Color.DarkRed;
             this.gunaLabel1.Font = new System.Drawing.Font("KenPixel", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.gunaLabel1.Location = new System.Drawing.Point(29, 224);
+            this.gunaLabel1.Location = new System.Drawing.Point(98, 3);
             this.gunaLabel1.Name = "gunaLabel1";
             this.gunaLabel1.Size = new System.Drawing.Size(198, 36);
             this.gunaLabel1.TabIndex = 9;
             this.gunaLabel1.Text = "Player Turn";
             // 
-            // gunaLabel2
+            // lblPlayerTurn
             // 
-            this.gunaLabel2.AutoSize = true;
-            this.gunaLabel2.BackColor = System.Drawing.Color.Indigo;
-            this.gunaLabel2.Font = new System.Drawing.Font("KenPixel", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.gunaLabel2.Location = new System.Drawing.Point(29, 268);
-            this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(33, 36);
-            this.gunaLabel2.TabIndex = 9;
-            this.gunaLabel2.Text = "-";
+            this.lblPlayerTurn.AutoSize = true;
+            this.lblPlayerTurn.BackColor = System.Drawing.Color.Transparent;
+            this.lblPlayerTurn.Font = new System.Drawing.Font("KenPixel", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlayerTurn.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblPlayerTurn.Location = new System.Drawing.Point(119, 3);
+            this.lblPlayerTurn.Name = "lblPlayerTurn";
+            this.lblPlayerTurn.Size = new System.Drawing.Size(33, 36);
+            this.lblPlayerTurn.TabIndex = 9;
+            this.lblPlayerTurn.Text = "-";
             // 
             // gunaLabel3
             // 
@@ -328,7 +347,7 @@
             this.gunaLabel3.BackColor = System.Drawing.Color.DarkRed;
             this.gunaLabel3.Font = new System.Drawing.Font("KenPixel", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.gunaLabel3.Location = new System.Drawing.Point(29, 319);
+            this.gunaLabel3.Location = new System.Drawing.Point(145, 9);
             this.gunaLabel3.Name = "gunaLabel3";
             this.gunaLabel3.Size = new System.Drawing.Size(105, 36);
             this.gunaLabel3.TabIndex = 9;
@@ -338,34 +357,34 @@
             // lblPlayer1
             // 
             this.lblPlayer1.AutoSize = true;
-            this.lblPlayer1.BackColor = System.Drawing.Color.DarkRed;
+            this.lblPlayer1.BackColor = System.Drawing.Color.Maroon;
             this.lblPlayer1.Font = new System.Drawing.Font("KenPixel", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPlayer1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblPlayer1.Location = new System.Drawing.Point(29, 363);
+            this.lblPlayer1.Location = new System.Drawing.Point(27, 9);
             this.lblPlayer1.Name = "lblPlayer1";
-            this.lblPlayer1.Size = new System.Drawing.Size(132, 36);
+            this.lblPlayer1.Size = new System.Drawing.Size(138, 36);
             this.lblPlayer1.TabIndex = 9;
-            this.lblPlayer1.Text = "Player1";
+            this.lblPlayer1.Text = "Player 1";
             // 
             // lblPlayer2
             // 
             this.lblPlayer2.AutoSize = true;
-            this.lblPlayer2.BackColor = System.Drawing.Color.DarkRed;
+            this.lblPlayer2.BackColor = System.Drawing.Color.Maroon;
             this.lblPlayer2.Font = new System.Drawing.Font("KenPixel", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPlayer2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblPlayer2.Location = new System.Drawing.Point(248, 363);
+            this.lblPlayer2.Location = new System.Drawing.Point(225, 61);
             this.lblPlayer2.Name = "lblPlayer2";
-            this.lblPlayer2.Size = new System.Drawing.Size(138, 36);
+            this.lblPlayer2.Size = new System.Drawing.Size(144, 36);
             this.lblPlayer2.TabIndex = 9;
-            this.lblPlayer2.Text = "Player2";
+            this.lblPlayer2.Text = "Player 2";
             // 
             // gunaLabel6
             // 
             this.gunaLabel6.AutoSize = true;
-            this.gunaLabel6.BackColor = System.Drawing.Color.DarkRed;
+            this.gunaLabel6.BackColor = System.Drawing.Color.Transparent;
             this.gunaLabel6.Font = new System.Drawing.Font("KenPixel", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel6.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.gunaLabel6.Location = new System.Drawing.Point(29, 483);
+            this.gunaLabel6.Location = new System.Drawing.Point(13, 504);
             this.gunaLabel6.Name = "gunaLabel6";
             this.gunaLabel6.Size = new System.Drawing.Size(231, 36);
             this.gunaLabel6.TabIndex = 9;
@@ -374,10 +393,10 @@
             // lblRoundNumber
             // 
             this.lblRoundNumber.AutoSize = true;
-            this.lblRoundNumber.BackColor = System.Drawing.Color.Indigo;
+            this.lblRoundNumber.BackColor = System.Drawing.Color.Transparent;
             this.lblRoundNumber.Font = new System.Drawing.Font("KenPixel", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRoundNumber.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblRoundNumber.Location = new System.Drawing.Point(294, 477);
+            this.lblRoundNumber.Location = new System.Drawing.Point(248, 501);
             this.lblRoundNumber.Name = "lblRoundNumber";
             this.lblRoundNumber.Size = new System.Drawing.Size(41, 44);
             this.lblRoundNumber.TabIndex = 1;
@@ -473,40 +492,144 @@
             this.RadioButton2.UseVisualStyleBackColor = true;
             this.RadioButton2.CheckedChanged += new System.EventHandler(this.RadioButton_CheckedChange);
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.panel4);
+            this.panel2.Controls.Add(this.panel3);
+            this.panel2.Location = new System.Drawing.Point(16, 191);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(395, 85);
+            this.panel2.TabIndex = 13;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Chocolate;
+            this.panel4.Controls.Add(this.lblPlayerTurn);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel4.Location = new System.Drawing.Point(0, 43);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(395, 42);
+            this.panel4.TabIndex = 1;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.DarkRed;
+            this.panel3.Controls.Add(this.gunaLabel1);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(395, 42);
+            this.panel3.TabIndex = 0;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.Maroon;
+            this.panel5.Controls.Add(this.panel10);
+            this.panel5.Controls.Add(this.panel7);
+            this.panel5.Controls.Add(this.panel6);
+            this.panel5.Controls.Add(this.lblPlayer2);
+            this.panel5.Location = new System.Drawing.Point(16, 282);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(395, 163);
+            this.panel5.TabIndex = 14;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.DarkRed;
+            this.panel6.Controls.Add(this.gunaLabel3);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel6.Location = new System.Drawing.Point(0, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(395, 52);
+            this.panel6.TabIndex = 0;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.Sienna;
+            this.panel7.Controls.Add(this.panel8);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel7.Location = new System.Drawing.Point(0, 52);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(219, 111);
+            this.panel7.TabIndex = 1;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.Maroon;
+            this.panel8.Controls.Add(this.panel9);
+            this.panel8.Controls.Add(this.lblPlayer1);
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel8.Location = new System.Drawing.Point(0, 0);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(186, 111);
+            this.panel8.TabIndex = 0;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.Chocolate;
+            this.panel9.Controls.Add(this.lblScorePlayer1);
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel9.Location = new System.Drawing.Point(0, 58);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(186, 53);
+            this.panel9.TabIndex = 0;
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.Chocolate;
+            this.panel10.Controls.Add(this.lblScorePlayer2);
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel10.Location = new System.Drawing.Point(219, 110);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(176, 53);
+            this.panel10.TabIndex = 2;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Sienna;
-            this.ClientSize = new System.Drawing.Size(800, 562);
+            this.ClientSize = new System.Drawing.Size(819, 562);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.RadioButton2);
             this.Controls.Add(this.RadioButton1);
             this.Controls.Add(this.TextPlayer2);
             this.Controls.Add(this.TextPlayer1);
-            this.Controls.Add(this.gunaLabel2);
-            this.Controls.Add(this.lblPlayer2);
             this.Controls.Add(this.gunaLabel6);
-            this.Controls.Add(this.lblPlayer1);
-            this.Controls.Add(this.gunaLabel3);
-            this.Controls.Add(this.gunaLabel1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnReset);
-            this.Controls.Add(this.lblScorePlayer2);
             this.Controls.Add(this.lblRoundNumber);
-            this.Controls.Add(this.lblScorePlayer1);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Tic Tac Toe Game v0.1";
             this.panel1.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -535,7 +658,7 @@
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
-        private Guna.UI.WinForms.GunaLabel gunaLabel2;
+        private Guna.UI.WinForms.GunaLabel lblPlayerTurn;
         private Guna.UI.WinForms.GunaLabel gunaLabel3;
         private Guna.UI.WinForms.GunaLabel lblPlayer1;
         private Guna.UI.WinForms.GunaLabel lblPlayer2;
@@ -548,6 +671,15 @@
         private System.Windows.Forms.TextBox TextPlayer2;
         private System.Windows.Forms.RadioButton RadioButton1;
         private System.Windows.Forms.RadioButton RadioButton2;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Panel panel9;
     }
 }
 

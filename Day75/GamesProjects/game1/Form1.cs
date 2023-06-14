@@ -12,7 +12,6 @@ namespace game1
 {
     public partial class Form1 : Form
     {
-        
         char who = 'o';
         char winnerPlayer = 'a';
         bool isWinner = false;
@@ -26,6 +25,7 @@ namespace game1
         {
             InitializeComponent();     
             RadioButton1.Checked = true;
+            lblPlayerTurn.Text = "Player 1";
         }
 
         private void Button_Clicked(object sender, EventArgs e)
@@ -43,10 +43,12 @@ namespace game1
                 }
                 Drawcounter++;
                 bt.Font = new Font(bt.Font.FontFamily, 40, FontStyle.Regular);
+                bt.ForeColor = Color.Black;
                 if (who == 'o') bt.Text = "O"; else bt.Text = "X";
                 if (who == 'o') who = 'x'; else who = 'o';
                 bt.Enabled = false;
                 CheckTheWinner(bt);
+                PlayerTurnCheck();
             }
         }
 
@@ -146,7 +148,7 @@ namespace game1
                 case "btnA":
                     if(HLine1() || VLine1() || DLine1()) winnerPlayer = getWinnerChar(bt);
                     break;
-                case "btn.B":
+                case "btnB":
                     if(HLine1() || VLine2()) winnerPlayer = getWinnerChar(bt);
                     break;
                 case "btnC":
@@ -175,16 +177,16 @@ namespace game1
             if (winnerPlayer == 'O')
             {
                 player1Score++;
+                lblScorePlayer1.Text = player1Score.ToString();
                 isWinner = true;
             }
             else if (winnerPlayer == 'X')
             {
                 player2Score++;
+                lblScorePlayer2.Text = player2Score.ToString();
                 isWinner = true;
             }
-            lblScorePlayer1.Text = player1Score.ToString();
-            lblScorePlayer2.Text = player2Score.ToString();
-
+            
             if (Drawcounter == 9 && winnerPlayer == 'a') MessageBox.Show("Draw game", "End Game");
             else if(isWinner)
             {
@@ -193,7 +195,6 @@ namespace game1
                     if (item.Enabled) item.Enabled = false;
                 }
             }
-
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -207,6 +208,7 @@ namespace game1
             {
                 button.Enabled = true;
                 button.BackColor = Color.White;
+                button.ForeColor = Color.Black;
                 button.Text = string.Empty;
             }
             player1Score = 0;
@@ -221,6 +223,8 @@ namespace game1
             startRound = true;
             RadioButton1.Enabled = true;
             RadioButton2.Enabled = true;
+            if (RadioButton1.Checked) lblPlayerTurn.Text = "Player 1";
+            else if (RadioButton2.Checked) lblPlayerTurn.Text = "Player 2";
         }
 
         private void textboxPlayer1_Click(object sender, EventArgs e)
@@ -241,8 +245,7 @@ namespace game1
                 if (rd.Name == RadioButton1.Name) who = 'o';
                 else who = 'x';
             }
-            RadioButton1.ForeColor = Color.White;
-            RadioButton2.ForeColor = Color.White;
+            PlayerTurnCheck();
         }
 
         private void btnNextRound(object sender, EventArgs e)
@@ -253,6 +256,7 @@ namespace game1
                 {
                     button.Enabled = true;
                     button.BackColor = Color.White;
+                    button.ForeColor = Color.Black;
                     button.Text = string.Empty;
                 }
                 winnerPlayer = 'a';
@@ -263,6 +267,8 @@ namespace game1
                 startRound = true;
                 RadioButton1.Enabled = true;
                 RadioButton2.Enabled = true;
+            if(RadioButton1.Checked) lblPlayerTurn.Text = "Player 1";
+            else if(RadioButton2.Checked) lblPlayerTurn.Text = "Player 2";
             }
         }
 
@@ -279,8 +285,12 @@ namespace game1
                 TextBox tb = (TextBox)sender;
                 if (tb.Name == "TextPlayer1") lblPlayer1.Text = tb.Text;
                 else if(tb.Name == "TextPlayer2") lblPlayer2.Text = tb.Text;
-            }
-            
+            }   
+        }
+        private void PlayerTurnCheck()
+        {
+            if (who == 'o') lblPlayerTurn.Text = "Player 1";
+            else if (who == 'x') lblPlayerTurn.Text = "Player 2";
         }
     }
 }
