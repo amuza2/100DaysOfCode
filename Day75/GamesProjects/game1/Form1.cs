@@ -13,19 +13,19 @@ namespace game1
 {
     public partial class Form1 : Form
     {
-        char who = 'o';
-        char winnerPlayer = 'a';
-        bool isWinner = false;
-        bool startRound = true;
-        int Drawcounter = 0;
-        int player1Score = 0;
-        int player2Score = 0;
-        int roundCounter = 0;
+        char who = 'o';               // Track who is playing
+        bool isWinner = false;        // Track the winner player
+        char winnerPlayer = 'a';      // Track which player is winner
+        bool startRound = true;       // Track start of the round
+        int Drawcounter = 0;          // Track if the game is draw
+        int player1Score = 0;         // Player 1 score counter
+        int player2Score = 0;         // Player 2 score counter
+        int roundCounter = 0;         // count the number of rounds played
         
         public Form1()
         {
             InitializeComponent();     
-            RadioButton1.Checked = true;
+            RadioButton1.Checked = true;      // set player 1 start player
             lblPlayerTurn.Text = "Player 1";
         }
 
@@ -34,27 +34,27 @@ namespace game1
             Button bt = sender as Button;
             if(bt != null)
             {
+                // Select wich player want to start the game
                 if (RadioButton1.Checked && startRound) who = 'o';
                 else if (RadioButton2.Checked && startRound) who = 'x';
+                // Hide the radio button when start playing
                 if (startRound)
                 {
-                    RadioButton1.Enabled = false;
-                    RadioButton2.Enabled = false;
-                    RadioButton1.AutoSize = false;
-                    RadioButton1.ForeColor = Color.White;
-                    RadioButton2.ForeColor = Color.White;
+                    RadioButton1.Visible = false;
+                    RadioButton2.Visible = false;
                     startRound = false;
                 }
-                Drawcounter++;
-                bt.Font = new Font(bt.Font.FontFamily, 40, FontStyle.Regular);
-                if (who == 'o') bt.Text = "O"; else bt.Text = "X";
+                Drawcounter++;           // Add to counter +1 when a player fills the board
+                bt.Font = new Font(bt.Font.FontFamily, 40, FontStyle.Regular); // set board font & size
+                if (who == 'o') bt.Text = "O"; else bt.Text = "X";          // chage turns between the two players
                 if (who == 'o') who = 'x'; else who = 'o';
-                bt.Enabled = false;
-                CheckTheWinner(bt);
-                PlayerTurnCheck();
+                bt.Enabled = false;                                         // Disable board button after clicking on it
+                CheckTheWinner(bt);                                         // Check the winner
+                PlayerTurnCheck();                                          // Change player's turn in labels
             }
         }
 
+        // When a player wins fill the 3 buttons with a color
         private void ChangeBackColor(Button button1, Button button2, Button button3)
         {
             button1.BackColor = Color.Green;
@@ -62,6 +62,7 @@ namespace game1
             button3.BackColor = Color.Green;
         }
 
+        // Check for wins
         // Horizantal
         private bool HLine1()
         {
@@ -143,7 +144,7 @@ namespace game1
             char value = Char.Parse(button.Text);
             return value;
         }
-
+        // Get how is the winner
         private void CheckTheWinner(Button bt)
         {
             switch (bt.Name)
@@ -199,12 +200,12 @@ namespace game1
                 }
             }
         }
-
+        // Exit the game when clicking in the exit button
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
+        // Reset game and thier values when clicking on reset button
         private void btnReset_Click(object sender, EventArgs e)
         {
             foreach (Button button in panel1.Controls)
@@ -223,22 +224,11 @@ namespace game1
             roundCounter = 0;
             lblRoundNumber.Text = "0";
             startRound = true;
-            RadioButton1.Enabled = true;
-            RadioButton2.Enabled = true;
+            RadioButton1.Visible = true;
+            RadioButton2.Visible = true;
             if (RadioButton1.Checked) lblPlayerTurn.Text = "Player 1";
             else if (RadioButton2.Checked) lblPlayerTurn.Text = "Player 2";
         }
-
-        private void textboxPlayer1_Click(object sender, EventArgs e)
-        {
-            TextPlayer1.Text = "";
-        }
-
-        private void textboxPlayer2_Click(object sender, EventArgs e)
-        {
-            TextPlayer2.Text = "";
-        }
-
         private void RadioButton_CheckedChange(object sender, EventArgs e)
         {
             System.Windows.Forms.RadioButton rd = (System.Windows.Forms.RadioButton)sender;
@@ -249,7 +239,7 @@ namespace game1
             }
             PlayerTurnCheck();
         }
-
+        // Continue playing next round button
         private void btnNextRound(object sender, EventArgs e)
         {
             if (isWinner || Drawcounter == 9)
@@ -266,19 +256,19 @@ namespace game1
                 roundCounter++;
                 lblRoundNumber.Text = roundCounter.ToString();
                 startRound = true;
-                RadioButton1.Enabled = true;
-                RadioButton2.Enabled = true;
+                RadioButton1.Visible = true;
+                RadioButton2.Visible = true;
             if(RadioButton1.Checked) lblPlayerTurn.Text = "Player 1";
             else if(RadioButton2.Checked) lblPlayerTurn.Text = "Player 2";
             }
         }
-
+        // Empty the textboxe when the player 1 or 2 click on it
         private void textboxPlayer_Click(object sender, EventArgs e)
         {
             TextBox tb = (TextBox)sender;
             tb.Text = "";
         }
-
+        // Press enter on textbox to change the label
         private void textBox_KeyDown(object sender, KeyEventArgs e)
         {
             if(e.KeyCode == Keys.Enter)
@@ -288,22 +278,23 @@ namespace game1
                 else if(tb.Name == "TextPlayer2") lblPlayer2.Text = tb.Text;
             }   
         }
+        // Change label turns accourding to player
         private void PlayerTurnCheck()
         {
             if (who == 'o') lblPlayerTurn.Text = "Player 1";
             else if (who == 'x') lblPlayerTurn.Text = "Player 2";
         }
-
+        // Reset game when you click on new game menu
         private void newGameToolStripMenuItem_Click(object sender, EventArgs e)
         {
             btnReset_Click(this, EventArgs.Empty);
         }
-
+        // Exit from the game when clicking on Exit on menu
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             btnExit_Click(this, EventArgs.Empty);
         }
-
+        // Show a popup when clicking on the about menu
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("This game was developed by Mohammed Chami\nContact => Twitter: @mohamuza", "About");
