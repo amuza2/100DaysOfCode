@@ -67,12 +67,12 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -82,11 +82,11 @@
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
-            this.panel6.SuspendLayout();
+            this.panel10.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel9.SuspendLayout();
-            this.panel10.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.panel12.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -297,14 +297,14 @@
             // newGameToolStripMenuItem
             // 
             this.newGameToolStripMenuItem.Name = "newGameToolStripMenuItem";
-            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.newGameToolStripMenuItem.Text = "New Game";
             this.newGameToolStripMenuItem.Click += new System.EventHandler(this.newGameToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -319,7 +319,7 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -453,7 +453,7 @@
             this.TextPlayer1.Location = new System.Drawing.Point(16, 116);
             this.TextPlayer1.Name = "TextPlayer1";
             this.TextPlayer1.Size = new System.Drawing.Size(287, 31);
-            this.TextPlayer1.TabIndex = 11;
+            this.TextPlayer1.TabIndex = 15;
             this.TextPlayer1.Text = "Player 1";
             this.TextPlayer1.Click += new System.EventHandler(this.textboxPlayer_Click);
             this.TextPlayer1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox_KeyDown);
@@ -465,7 +465,7 @@
             this.TextPlayer2.Location = new System.Drawing.Point(485, 116);
             this.TextPlayer2.Name = "TextPlayer2";
             this.TextPlayer2.Size = new System.Drawing.Size(287, 31);
-            this.TextPlayer2.TabIndex = 11;
+            this.TextPlayer2.TabIndex = 15;
             this.TextPlayer2.Text = "PLayer 2";
             this.TextPlayer2.Click += new System.EventHandler(this.textboxPlayer_Click);
             this.TextPlayer2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox_KeyDown);
@@ -539,15 +539,15 @@
             this.panel5.Size = new System.Drawing.Size(395, 163);
             this.panel5.TabIndex = 14;
             // 
-            // panel6
+            // panel10
             // 
-            this.panel6.BackColor = System.Drawing.Color.DarkRed;
-            this.panel6.Controls.Add(this.gunaLabel3);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel6.Location = new System.Drawing.Point(0, 0);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(395, 52);
-            this.panel6.TabIndex = 0;
+            this.panel10.BackColor = System.Drawing.Color.Chocolate;
+            this.panel10.Controls.Add(this.lblScorePlayer2);
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel10.Location = new System.Drawing.Point(201, 110);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(194, 53);
+            this.panel10.TabIndex = 2;
             // 
             // panel7
             // 
@@ -581,16 +581,6 @@
             this.panel9.Size = new System.Drawing.Size(195, 53);
             this.panel9.TabIndex = 0;
             // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.Chocolate;
-            this.panel10.Controls.Add(this.lblScorePlayer2);
-            this.panel10.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel10.Location = new System.Drawing.Point(201, 110);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(194, 53);
-            this.panel10.TabIndex = 2;
-            // 
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.Color.Chocolate;
@@ -598,6 +588,16 @@
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(200, 100);
             this.panel11.TabIndex = 15;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.DarkRed;
+            this.panel6.Controls.Add(this.gunaLabel3);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel6.Location = new System.Drawing.Point(0, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(395, 52);
+            this.panel6.TabIndex = 0;
             // 
             // panel12
             // 
@@ -645,15 +645,15 @@
             this.panel3.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
             this.ResumeLayout(false);

@@ -57,7 +57,7 @@
             this.btnCheckall.ShadowDecoration.Parent = this.btnCheckall;
             this.btnCheckall.Size = new System.Drawing.Size(332, 55);
             this.btnCheckall.TabIndex = 1;
-            this.btnCheckall.Text = "Toutes options";
+            this.btnCheckall.Text = "All options";
             this.btnCheckall.Click += new System.EventHandler(this.btnCheckall_Click);
             // 
             // cbVolant
@@ -66,9 +66,9 @@
             this.cbVolant.Location = new System.Drawing.Point(61, 54);
             this.cbVolant.Margin = new System.Windows.Forms.Padding(4);
             this.cbVolant.Name = "cbVolant";
-            this.cbVolant.Size = new System.Drawing.Size(152, 24);
+            this.cbVolant.Size = new System.Drawing.Size(225, 24);
             this.cbVolant.TabIndex = 0;
-            this.cbVolant.Text = "Volant (8 000$)";
+            this.cbVolant.Text = "Steering Wheel (8 000$)";
             this.cbVolant.UseVisualStyleBackColor = true;
             this.cbVolant.CheckedChanged += new System.EventHandler(this.cbVolant_CheckedChanged);
             // 
@@ -78,9 +78,9 @@
             this.cbWheel.Location = new System.Drawing.Point(61, 105);
             this.cbWheel.Margin = new System.Windows.Forms.Padding(4);
             this.cbWheel.Name = "cbWheel";
-            this.cbWheel.Size = new System.Drawing.Size(144, 24);
+            this.cbWheel.Size = new System.Drawing.Size(155, 24);
             this.cbWheel.TabIndex = 0;
-            this.cbWheel.Text = "Roues (5 000$)";
+            this.cbWheel.Text = "Wheels (5 000$)";
             this.cbWheel.UseVisualStyleBackColor = true;
             this.cbWheel.CheckedChanged += new System.EventHandler(this.cbWheel_CheckedChanged);
             // 
@@ -102,9 +102,9 @@
             this.cbBrakes.Location = new System.Drawing.Point(61, 212);
             this.cbBrakes.Margin = new System.Windows.Forms.Padding(4);
             this.cbBrakes.Name = "cbBrakes";
-            this.cbBrakes.Size = new System.Drawing.Size(151, 24);
+            this.cbBrakes.Size = new System.Drawing.Size(154, 24);
             this.cbBrakes.TabIndex = 0;
-            this.cbBrakes.Text = "Friens (4 000$)";
+            this.cbBrakes.Text = "Brakes (4 000$)";
             this.cbBrakes.UseVisualStyleBackColor = true;
             this.cbBrakes.CheckedChanged += new System.EventHandler(this.cbBrakes_CheckedChanged);
             // 
@@ -153,7 +153,7 @@
             this.tbPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbPrice.HoverState.Parent = this.tbPrice;
             this.tbPrice.Location = new System.Drawing.Point(41, 332);
-            this.tbPrice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbPrice.Margin = new System.Windows.Forms.Padding(4);
             this.tbPrice.Name = "tbPrice";
             this.tbPrice.PasswordChar = '\0';
             this.tbPrice.PlaceholderText = "";
@@ -179,7 +179,7 @@
             this.btnAucunoptions.ShadowDecoration.Parent = this.btnAucunoptions;
             this.btnAucunoptions.Size = new System.Drawing.Size(332, 55);
             this.btnAucunoptions.TabIndex = 1;
-            this.btnAucunoptions.Text = "Aucun Option";
+            this.btnAucunoptions.Text = "No Option";
             this.btnAucunoptions.Click += new System.EventHandler(this.btnAucunoptions_Click);
             // 
             // btnQuit
@@ -198,7 +198,7 @@
             this.btnQuit.ShadowDecoration.Parent = this.btnQuit;
             this.btnQuit.Size = new System.Drawing.Size(332, 55);
             this.btnQuit.TabIndex = 1;
-            this.btnQuit.Text = "Quiter";
+            this.btnQuit.Text = "Exit";
             this.btnQuit.Click += new System.EventHandler(this.btnQuit_Click);
             // 
             // Form1
