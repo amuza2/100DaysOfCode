@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>Tan Gravam || Full Stack Web Developer [HTML, CSS, JavaScript]</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- Use container to make the content in the center of the page -->
+    <div class="container">
+      <header id="header">
+        <div id="personal-info">
+          <div class="avatar-container">
+            <img src="https://assets.codepen.io/9277864/avatar.webp" alt="Tan Gravam" width="100" height="100" />
+          </div>
+          <div class="header-info-container">
+            <h1>Tan Gravam</h1>
+            <p>Full Stack Web Developer
+              <br>[HTML, CSS, JavaScript]
+            </p>
+            <img src="https://assets.codepen.io/9277864/mood-rock.svg" alt="Rock" widht="25" height="25" />
+          </div>
+          <div class="header-icons">
+            <div class="header-icons-row first-icons">
+              <div class="header-icon-4"></div>
+              <div class="header-icon-2"></div>
+              <div class="header-icon-3"></div>
+            </div>
+            <div class="header-icons-row">
+              <div class="header-icon-7"></div>
+              <div class="header-icon-10"></div>
+              <div class="header-icon-12"></div>
+            </div>
+          </div>
+        </div>
+        <nav class="nav-container">
+          <ul>
+            <li class="active-bg" id="menu-item-1">
+              <button id="bio-btn" onClick="btnClick('bio')" class="blue-line">
+                <img src="https://assets.codepen.io/9277864/about-me.svg" alt="Bio" width="40" height="40" />
+                <p>Bio</p>
+              </button>
+            </li>
+            <li id="menu-item-2">
+              <button id="experience-btn" onClick="btnClick('experience')">
+                <img src="https://assets.codepen.io/9277864/office-work.svg" alt="Experience" width="40" height="40" />
+                <p>Experience</p>
+              </button>
+            </li>
+            <li id="menu-item-3">
+              <button id="portfolio-btn" onClick="btnClick('portfolio')">
+                <img src="https://assets.codepen.io/9277864/page.svg" alt="Portfolio" width="40" height="40" />
+                <p>Portfolio</p>
+              </button>
+            </li>
+            <li id="menu-item-4">
+              <button id="contact-btn" onClick="btnClick('contact')">
+                <img src="https://assets.codepen.io/9277864/contact.svg" alt="Contact" width="40" height="40" />
+                <p>Contact</p>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section id="bio">
+          <h2>Bio</h2>
+          <p><span class="emoji">🙋‍♂️</span> Hey,</p>
+          <p>My name is Tan, but people generally call me Gravam. I have 18 years of experience in total. Last 12 years, I have been working in FinTech and am interested in Web Design and Web Development, especially HTML, CSS, JavaScript, React, NextJS, Vue, and Nuxt3.</p>
+          <p>I know how difficult it is to learn technical things, especially making them live, so I share:</p>
+          <ul>
+            <li><span class="emoji">👉</span> What I know technically and conceptually</li>
+            <li><span class="emoji">👉</span> Industry best practices</li>
+            <li><span class="emoji">👉</span> Some of my small projects</li>
+          </ul>
+          <p>That would be great if we connected on social media, especially on Twitter, kept in touch, and shared how we live this life.</p>
+
+          <div class="social-media">
+            <div><a href="#" target="_blank"><img src="https://assets.codepen.io/9277864/social-media-facebook.svg" alt="Facebook" width="28" height="28" /></a></div>
+            <div><a href="#" target="_blank"><img src="https://assets.codepen.io/9277864/social-media-twitter.svg" alt="Twitter" width="28" height="28" /></a></div>
+            <div><a href="#" target="_blank"><img src="https://assets.codepen.io/9277864/social-instagram-1.svg" alt="Instagram" width="28" height="28" /></a></div>
+            <div><a href="#" target="_blank"><img src="https://assets.codepen.io/9277864/linkedin.svg" alt="Linkedin" width="28" height="28" /></a></div>
+            <div><a href="#" target="_blank"><img src="https://assets.codepen.io/9277864/social-media-google.svg" alt="Google" width="28" height="28" /></a></div>
+          </div>
+        </section>
+        <section id="experience" class="display-none">
+          <h2>Experience</h2>
+          <div class="history">
+            <div data-year="2023">
+              <h3>Full-Stack Developer - <span>Freelancer</span></h3>
+              <p>Building web applications</p>
+            </div>
+            <div data-year="2015">
+              <h3>Solution Architecht- <span>Tech Company</span></h3>
+              <p>Responsible for designing financial business processes</p>
+            </div>
+            <div data-year="2010">
+              <h3>Developer - <span>Consulting Company</span></h3>
+              <p>Responsible for building treasury and accounting applications</p>
+            </div>
+            <div data-year="2006">
+              <h3>Business Analyst - <span>Local Company</span></h3>
+              <p>Responsible for analysing the business processes for accounting</p>
+            </div>
+            <div data-year="2004">
+              <h3>Accountant - <span>Local Company</span></h3>
+              <p>Accounting clerk</p>
+            </div>
+          </div>
+        </section>
+        <section id="portfolio" class="display-none">
+          <h2>Portfolio</h2>
+          <div class="grid">
+            <div class="grid-item">
+              <a href="#" target="_blank">
+                <div class="portfolio-image">
+                  <img src="https://assets.codepen.io/9277864/schedule-milestone-2.svg" alt="Project 1" width="200" height="200" />
+                </div>
+                <div class="portfolio-description">
+                  <h3>Portfolio Item 1</h3>
+                  <p>Project Explanation</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="grid-item">
+              <a href="#" target="_blank">
+                <div class="portfolio-image">
+                  <img src="https://assets.codepen.io/9277864/designer-desk-1.svg" alt="Project 2" width="200" height="200" />
+                </div>
+                <div class="portfolio-description">
+                  <h3>Portfolio Item 1</h3>
+                  <p>Project Explanation</p>
+                </div>
+              </a>
+            </div>
+            <div class="grid-item">
+              <a href="#" target="_blank">
+                <div class="portfolio-image">
+                  <img src="https://assets.codepen.io/9277864/project-timeline-2.svg" alt="Project 3" width="200" height="200" />
+                </div>
+                <div class="portfolio-description">
+                  <h3>Portfolio Item 1</h3>
+                  <p>Project Explanation</p>
+                </div>
+              </a>
+            </div>
+            <div class="grid-item">
+              <a href="#" target="_blank">
+                <div class="portfolio-image">
+                  <img src="https://assets.codepen.io/9277864/business-presentation-1.svg" alt="Project 4" width="200" height="200" />
+                </div>
+                <div class="portfolio-description">
+                  <h3>Portfolio Item 1</h3>
+                  <p>Project Explanation</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="grid-item">
+              <a href="#" target="_blank">
+                <div class="portfolio-image">
+                  <img src="https://assets.codepen.io/9277864/product-development-1.svg" alt="Project 5" width="200" height="200" />
+                </div>
+                <div class="portfolio-description">
+                  <h3>Portfolio Item 1</h3>
+                  <p>Project Explanation</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section id="contact" class="display-none">
+          <h2>Contact</h2>
+          <div>
+            <div class="contact-item">
+              <p><img src="https://assets.codepen.io/9277864/location-user.svg" alt="Address Icon" width="25" height="25" /></p>
+              <address>345 Spear St San Francisco CA 94105</address>
+            </div>
+            <div class="contact-item">
+              <p><img src="https://assets.codepen.io/9277864/envelope-letter.svg" alt="Email Icon" width="25" height="25" /></p>
+              <address>info@gravam.com</address>
+            </div>
+            <div class="contact-item">
+              <p><img src="https://assets.codepen.io/9277864/mobile-phone-1.svg" alt="Phone Icon" width="25" height="25" /></p>
+              <address>111-222-333</address>
+            </div>
+
+            <div class="follow-btn">
+              <a href="#" target="_blank">Follow Me on Twitter!</a>
+            </div>
+          </div>
+        </section>
+      </main>
+      <img src="https://assets.codepen.io/9277864/u%2B1f6f5.svg" alt="Bike" width="70" height="70" id="bike1" class="bike1" />
+      <img src="https://assets.codepen.io/9277864/u%2B1f6f5.svg" alt="Bike" width="70" height="70" id="bike2" class="bike2" />
+    </div>
+  </div>
+  <div class="codepen-footer">
+    <small>Created by <a href="https://twitter.com/intent/follow?screen_name=TanGravam" target="_top">@TanGravam</a></small>
+    <small><a href="https://www.gravam.com/" target="_top">Go to My Website</a></small>
+  </div>
+</body>
+
+</html>
