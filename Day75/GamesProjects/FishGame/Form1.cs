@@ -16,5 +16,32 @@ namespace FishGame
         {
             InitializeComponent();
         }
+
+        private void picPlayer_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Direction_click(object sender, EventArgs e)
+        {
+            int x = picPlayer.Location.X;
+            int y = picPlayer.Location.Y;
+            switch (e.KeyCode)
+            {
+                case Keys.Left:
+                    x -= 10;
+                    break;
+                case Keys.Right:
+                    x += 10;
+                    break;
+                case Keys.Up:
+                    y -= 10;
+                    break;
+                case Keys.Down:
+                    y += 10;
+                    break;
+            }
+            picPlayer.Location = new Point(x, y);
+        }
     }
 }

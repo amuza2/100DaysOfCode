@@ -1,0 +1,13 @@
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day75\GamesProjects\FishGame\bin\Debug\FishGame.exe.config
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day75\GamesProjects\FishGame\bin\Debug\FishGame.exe
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day75\GamesProjects\FishGame\bin\Debug\FishGame.pdb
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day75\GamesProjects\FishGame\obj\Debug\FishGame.csproj.AssemblyReference.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day75\GamesProjects\FishGame\obj\Debug\FishGame.csproj.SuggestedBindingRedirects.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day75\GamesProjects\FishGame\obj\Debug\FishGame.Form1.resources
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day75\GamesProjects\FishGame\obj\Debug\FishGame.Properties.Resources.resources
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day75\GamesProjects\FishGame\obj\Debug\FishGame.csproj.GenerateResource.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day75\GamesProjects\FishGame\obj\Debug\FishGame.csproj.CoreCompileInputs.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day75\GamesProjects\FishGame\obj\Debug\FishGame.exe
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day75\GamesProjects\FishGame\obj\Debug\FishGame.pdb
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day75\GamesProjects\FishGame\bin\Debug\Guna.UI2.dll
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day75\GamesProjects\FishGame\obj\Debug\FishGame.csproj.CopyComplete

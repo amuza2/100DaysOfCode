@@ -30,24 +30,11 @@
         {
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            picGameBoard = new PictureBox();
-            timer = new System.Windows.Forms.Timer(components);
             imageList = new ImageList(components);
-            ((System.ComponentModel.ISupportInitialize)picGameBoard).BeginInit();
+            timer = new System.Windows.Forms.Timer(components);
+            picBoardGame = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)picBoardGame).BeginInit();
             SuspendLayout();
-            // 
-            // picGameBoard
-            // 
-            picGameBoard.Location = new Point(12, 12);
-            picGameBoard.Name = "picGameBoard";
-            picGameBoard.Size = new Size(478, 426);
-            picGameBoard.TabIndex = 0;
-            picGameBoard.TabStop = false;
-            // 
-            // timer
-            // 
-            timer.Interval = 500;
-            timer.Tick += Timer_Tick;
             // 
             // imageList
             // 
@@ -55,31 +42,42 @@
             imageList.ImageStream = (ImageListStreamer)resources.GetObject("imageList.ImageStream");
             imageList.TransparentColor = Color.Transparent;
             imageList.Images.SetKeyName(0, "wall.png");
-            imageList.Images.SetKeyName(1, "bonus4.png");
-            imageList.Images.SetKeyName(2, "bonus3.png");
-            imageList.Images.SetKeyName(3, "bonus2.png");
-            imageList.Images.SetKeyName(4, "bonus1.png");
-            imageList.Images.SetKeyName(5, "snake_body.png");
-            imageList.Images.SetKeyName(6, "snake_head.png");
+            imageList.Images.SetKeyName(1, "snake_head.png");
+            imageList.Images.SetKeyName(2, "snake_body.png");
+            imageList.Images.SetKeyName(3, "bonus4.png");
+            imageList.Images.SetKeyName(4, "bonus3.png");
+            imageList.Images.SetKeyName(5, "bonus2.png");
+            imageList.Images.SetKeyName(6, "bonus1.png");
+            // 
+            // timer
+            // 
+            timer.Enabled = true;
+            timer.Interval = 500;
+            // 
+            // picBoardGame
+            // 
+            picBoardGame.Location = new Point(12, 29);
+            picBoardGame.Name = "picBoardGame";
+            picBoardGame.Size = new Size(682, 409);
+            picBoardGame.TabIndex = 0;
+            picBoardGame.TabStop = false;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(764, 450);
-            Controls.Add(picGameBoard);
+            Controls.Add(picBoardGame);
             Name = "Form1";
             Text = "Form1";
-            Load += Form1_Load;
-            KeyDown += Key_Pressed;
-            ((System.ComponentModel.ISupportInitialize)picGameBoard).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picBoardGame).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private PictureBox picGameBoard;
-        private System.Windows.Forms.Timer timer;
         private ImageList imageList;
+        private System.Windows.Forms.Timer timer;
+        private PictureBox picBoardGame;
     }
 }
