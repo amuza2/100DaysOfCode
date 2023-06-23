@@ -51,7 +51,6 @@
             // 
             // timer
             // 
-            timer.Enabled = true;
             timer.Interval = 500;
             // 
             // picBoardGame

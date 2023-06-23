@@ -8,22 +8,31 @@ namespace SnakeTest
 {
     public class Snake
     {
+        enum Direction { Up, Down, Left, Right }
+        public int length {  get; set; }
+        public Direction Direction { get; set; }
         public List<Point> Body { get; set; }
-        public Point Direction { get; set; }
 
-        public Snake(Point startingPosition)
+        public Snake(Point SnakePosition)
         {
-            Body = new List<Point> { startingPosition };
-            Direction = new Point(0, 1); // Start by moving down
+            length = 1;
+            Direction = Direction.Right;
+            Body = new List<Point>();
+            Body.Add(SnakePosition); // Initial position of the snake
         }
-
         public void Move()
         {
-            // Add a new head to the snake in the current direction
-            Body.Insert(0, new Point(Body[0].X + Direction.X, Body[0].Y + Direction.Y));
+            // Logic to move the snake based on the current direction
+        }
 
-            // Remove the tail of the snake
-            Body.RemoveAt(Body.Count - 1);
+        public bool CheckCollision()
+        {
+            // Check if the snake collides with the given point
+        }
+
+        public void HandleUserInput(Keys keys)
+        {
+            // Logic to update snake direction
         }
     }
 

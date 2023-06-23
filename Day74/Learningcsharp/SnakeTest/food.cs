@@ -15,6 +15,11 @@ namespace SnakeTest
             Random rnd = new Random();
             Position = new Point(rnd.Next(0, 20), rnd.Next(0, 20)); // Random position within a 20x20 grid
         }
+
+        public bool CheckCollision(Point snakeHead)
+        {
+            // Generate new position for the food
+        }
     }
 
 }
