@@ -9,3 +9,14 @@ C:\Users\REALMAN\source\repos\learningcsharp\ageProgram\obj\Debug\ageProgram.pdb
 C:\Users\REALMAN\source\repos\learningcsharp\ageProgram\bin\Debug\Newtonsoft.Json.dll
 C:\Users\REALMAN\source\repos\learningcsharp\ageProgram\bin\Debug\Newtonsoft.Json.xml
 C:\Users\REALMAN\source\repos\learningcsharp\ageProgram\obj\Debug\ageProgram.csproj.CopyComplete
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\ageProgram\bin\Debug\ageProgram.exe.config
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\ageProgram\bin\Debug\ageProgram.exe
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\ageProgram\bin\Debug\ageProgram.pdb
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\ageProgram\bin\Debug\Newtonsoft.Json.dll
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\ageProgram\bin\Debug\Newtonsoft.Json.xml
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\ageProgram\obj\Debug\ageProgram.csproj.AssemblyReference.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\ageProgram\obj\Debug\ageProgram.csproj.SuggestedBindingRedirects.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\ageProgram\obj\Debug\ageProgram.csproj.CoreCompileInputs.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\ageProgram\obj\Debug\ageProgram.csproj.CopyComplete
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\ageProgram\obj\Debug\ageProgram.exe
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\ageProgram\obj\Debug\ageProgram.pdb
