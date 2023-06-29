@@ -28,5 +28,10 @@ namespace Console_Game_1
         {
             return 5;
         }
+        public override void SpecialAttack(Player player)
+        {
+            player.Health -= 10;
+            Console.WriteLine("The goblin used its special attack on you!");
+        }
     }
 }

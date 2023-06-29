@@ -70,7 +70,7 @@ namespace Console_Game_1
                         bool isAttacked = Player.SpecialAttack(monster);
                         if(monster.Health > 0 && isAttacked)
                         {
-                            monster.Attack(Player);
+                            monster.SpecialAttack(Player);
                         }
                     }
                 }

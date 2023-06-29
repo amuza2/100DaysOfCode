@@ -28,5 +28,10 @@ namespace Console_Game_1
         {
             return 10;
         }
+        public override void SpecialAttack(Player player)
+        {
+            player.Health -= 30;
+            Console.WriteLine("The dragon used its special attack on you!");
+        }
     }
 }
