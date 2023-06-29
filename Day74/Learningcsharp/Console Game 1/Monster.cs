@@ -12,6 +12,8 @@ namespace Console_Game_1
         public int Health { get; set; }
 
         public abstract void Attack(Player player);
+        public abstract Item DropItem();
+        public abstract int GiveExperice();
     }
 }
 

@@ -19,5 +19,14 @@ namespace Console_Game_1
             player.Health -= 20;
             Console.WriteLine("The dragon attacked you!");
         }
+
+        public override Item? DropItem()
+        {
+            return ItemFactory.CreateItem();
+        }
+        public override int GiveExperice()
+        {
+            return 10;
+        }
     }
 }

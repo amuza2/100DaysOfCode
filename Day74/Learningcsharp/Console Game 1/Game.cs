@@ -10,7 +10,6 @@ namespace Console_Game_1
     public class Game
     {
         public Player Player { get; set; }
-
         public Game()
         {
             Player = new Player();
@@ -35,14 +34,44 @@ namespace Console_Game_1
                         }
                         else
                         {
-                            Player.LevelUp();
-                            Console.WriteLine($"You defeated the {monster.Name} and leveled up to level {Player.Level}!");
+                            Player.GainExperice(monster.GiveExperice());                           
+                            Item droppedItem = monster.DropItem();
+                            if(droppedItem != null)
+                            {
+                                Player.Inventory.Add(droppedItem);
+                                Console.WriteLine($"You defeated the {monster.Name} and found a {droppedItem.Name}");
+                            }
+                            else
+                            {
+                                Console.WriteLine($"You defeated the {monster.Name} didn't drop anything!");
+                            }
                         }
                     }
                     else if (action == "run")
                     {
                         Console.WriteLine("You run away!");
                         break;
+                    }
+                    else if (action == "use item")
+                    {
+                        if(Player.Inventory.Count > 0)
+                        {
+                            Console.WriteLine("Which item do you want to use?");
+                            for (int i = 0; i < Player.Inventory.Count; i++)
+                            {
+                                Console.WriteLine($"{i + 1} - {Player.Inventory[i].Name}");
+                            }
+                            int itemIndex = int.Parse(Console.ReadLine()) - 1;
+                            Player.UseItem(Player.Inventory[itemIndex]);
+                        }else { Console.WriteLine("Inventory is empty:"); }
+                    }
+                    else if (action == "special attack")
+                    {
+                        bool isAttacked = Player.SpecialAttack(monster);
+                        if(monster.Health > 0 && isAttacked)
+                        {
+                            monster.Attack(Player);
+                        }
                     }
                 }
                 if (Player.Health <= 0)
