@@ -29,7 +29,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Project_Developer", "Projec
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SnakeGame", "SnakeGame\SnakeGame.csproj", "{27683629-D5BB-4528-8310-48BF1943D872}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnakeTest", "SnakeTest\SnakeTest.csproj", "{A4B95BDF-181F-41A6-91EC-6892D69A0640}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SnakeTest", "SnakeTest\SnakeTest.csproj", "{A4B95BDF-181F-41A6-91EC-6892D69A0640}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tictactoe", "tictactoe\tictactoe.csproj", "{043F490D-BCA8-46F6-9AC4-ECB2D48F8F95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console Game 1", "Console Game 1\Console Game 1.csproj", "{4CD7A9B7-B408-48C4-AC0C-B9AE92953E38}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +97,14 @@ Global
 		{A4B95BDF-181F-41A6-91EC-6892D69A0640}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4B95BDF-181F-41A6-91EC-6892D69A0640}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4B95BDF-181F-41A6-91EC-6892D69A0640}.Release|Any CPU.Build.0 = Release|Any CPU
+		{043F490D-BCA8-46F6-9AC4-ECB2D48F8F95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{043F490D-BCA8-46F6-9AC4-ECB2D48F8F95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{043F490D-BCA8-46F6-9AC4-ECB2D48F8F95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{043F490D-BCA8-46F6-9AC4-ECB2D48F8F95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CD7A9B7-B408-48C4-AC0C-B9AE92953E38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CD7A9B7-B408-48C4-AC0C-B9AE92953E38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CD7A9B7-B408-48C4-AC0C-B9AE92953E38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CD7A9B7-B408-48C4-AC0C-B9AE92953E38}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
