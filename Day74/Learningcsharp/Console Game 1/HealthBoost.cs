@@ -11,7 +11,7 @@ namespace Console_Game_1
         public HealthBoost() 
         {
             Name = "Health Boost";
-            Value = 3;
+            Value = 20;
         }
         public override void PotionAbility(Player player)
         {

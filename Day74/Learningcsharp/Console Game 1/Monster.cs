@@ -15,6 +15,8 @@ namespace Console_Game_1
         public abstract Item DropItem();
         public abstract int GiveExperice();
         public abstract void SpecialAttack(Player player);
+        public abstract string DrawHealth();
+        public abstract string DrawFace();
     }
 }
 

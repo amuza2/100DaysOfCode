@@ -65,5 +65,14 @@ namespace Console_Game_1
             }
             else { Console.WriteLine("You don't have enough experience:"); return false; }
         }
+
+        public string DrawHealth()
+        {
+            return "Player HP: " + Health;
+        }
+        public string DrawFace()
+        {
+            return @"";
+        }
     }
 }

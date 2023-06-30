@@ -11,7 +11,7 @@ namespace Console_Game_1
         public AttackBoost() 
         {
             Name = "Attack Boost";
-            Value = 2;
+            Value = 10;
         }
         public override void PotionAbility(Player player)
         {

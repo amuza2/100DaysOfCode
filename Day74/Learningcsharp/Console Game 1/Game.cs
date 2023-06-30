@@ -9,12 +9,12 @@ namespace Console_Game_1
 {
     public class Game
     {
+        bool isMonster = true;
         public Player Player { get; set; }
         public Game()
         {
             Player = new Player();
         }
-
         public void Start()
         {
             Console.WriteLine("Welcome to the game!");
@@ -23,7 +23,13 @@ namespace Console_Game_1
                 Monster monster = MonsterFactory.CreateMonster();
                 while (monster.Health > 0 && Player.Health > 0)
                 {
-                    Console.WriteLine($"You encounter a {monster.Name}! What do you do? (fight/run)");
+                    if (isMonster)
+                    {
+                        Console.Write(monster.DrawFace());
+                        isMonster = false;
+                    }
+                    Console.WriteLine($"You encounter a {monster.Name}! What do you do? (fight/run/use item/special attack/exit)");
+                    Console.WriteLine(Player.DrawHealth() + " | " + monster.DrawHealth());
                     string action = Console.ReadLine();
                     if (action == "fight")
                     {
@@ -34,9 +40,10 @@ namespace Console_Game_1
                         }
                         else
                         {
-                            Player.GainExperice(monster.GiveExperice());                           
+                            isMonster = true;
+                            Player.GainExperice(monster.GiveExperice());
                             Item droppedItem = monster.DropItem();
-                            if(droppedItem != null)
+                            if (droppedItem != null)
                             {
                                 Player.Inventory.Add(droppedItem);
                                 Console.WriteLine($"You defeated the {monster.Name} and found a {droppedItem.Name}");
@@ -49,12 +56,14 @@ namespace Console_Game_1
                     }
                     else if (action == "run")
                     {
+                        isMonster = true;
+                        Console.Clear();
                         Console.WriteLine("You run away!");
                         break;
                     }
                     else if (action == "use item")
                     {
-                        if(Player.Inventory.Count > 0)
+                        if (Player.Inventory.Count > 0)
                         {
                             Console.WriteLine("Which item do you want to use?");
                             for (int i = 0; i < Player.Inventory.Count; i++)
@@ -63,16 +72,18 @@ namespace Console_Game_1
                             }
                             int itemIndex = int.Parse(Console.ReadLine()) - 1;
                             Player.UseItem(Player.Inventory[itemIndex]);
-                        }else { Console.WriteLine("Inventory is empty:"); }
+                        }
+                        else { Console.WriteLine("Inventory is empty:"); }
                     }
                     else if (action == "special attack")
                     {
                         bool isAttacked = Player.SpecialAttack(monster);
-                        if(monster.Health > 0 && isAttacked)
+                        if (monster.Health > 0 && isAttacked)
                         {
                             monster.SpecialAttack(Player);
                         }
                     }
+                    else if (action == "exit") Environment.Exit(0);
                 }
                 if (Player.Health <= 0)
                 {
