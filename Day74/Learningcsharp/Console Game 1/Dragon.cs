@@ -26,7 +26,7 @@ namespace Console_Game_1
         }
         public override int GiveExperice()
         {
-            return 10;
+            return 20;
         }
         public override void SpecialAttack(Player player)
         {

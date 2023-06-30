@@ -11,8 +11,14 @@ namespace Console_Game_1
         private static List<Monster> MonsterList = new List<Monster>();
         public static Monster CreateMonster()
         {
-            AddGoblin();
-            AddDragon();
+            bool active = true;
+            if (active)
+            {
+                AddGoblin();
+                AddDragon();
+                AddBee();
+                active = false;
+            }
             return GetRandomMonster();
         }
         private static Monster GetRandomMonster()
@@ -30,6 +36,11 @@ namespace Console_Game_1
         {
             Dragon dragon = new Dragon();
             MonsterList.Add(dragon);
+        }
+        private static void AddBee()
+        {
+            Bee bee = new Bee();
+            MonsterList.Add(bee);
         }
         
     }

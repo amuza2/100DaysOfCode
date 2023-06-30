@@ -40,6 +40,7 @@ namespace Console_Game_1
                         }
                         else
                         {
+                            Console.Clear();
                             isMonster = true;
                             Player.GainExperice(monster.GiveExperice());
                             Item droppedItem = monster.DropItem();
@@ -71,6 +72,7 @@ namespace Console_Game_1
                                 Console.WriteLine($"{i + 1} - {Player.Inventory[i].Name}");
                             }
                             int itemIndex = int.Parse(Console.ReadLine()) - 1;
+                            if (itemIndex == -1) {break;}
                             Player.UseItem(Player.Inventory[itemIndex]);
                         }
                         else { Console.WriteLine("Inventory is empty:"); }
