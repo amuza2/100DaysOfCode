@@ -15,7 +15,7 @@ namespace Console_Game_1
         }
         public override void PotionAbility(Player player)
         {
-            player.Health += Value;
+            player.AddHealth(Value);
             Console.WriteLine($"You used {Name} Potion and added {Value} to your Health");
         }
     }

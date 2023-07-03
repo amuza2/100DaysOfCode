@@ -71,6 +71,8 @@ namespace Console_Game_1
                             {
                                 Console.WriteLine($"{i + 1} - {Player.Inventory[i].Name}");
                             }
+                            Console.WriteLine();
+                            Console.WriteLine("0 - Exit");
                             int itemIndex = int.Parse(Console.ReadLine()) - 1;
                             if (itemIndex == -1) {break;}
                             Player.UseItem(Player.Inventory[itemIndex]);
