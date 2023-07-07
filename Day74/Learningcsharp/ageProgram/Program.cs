@@ -6,23 +6,16 @@ using System.Collections.Generic;
 
 class Program
 {
-    class Shape
-    {
-
-    }
-    class Square : Shape
-    {
-
-    }
+    
     static void Main(string[] args)
     {
-        Shape shape = new Shape();
-        Square square = new Square();
-        Shape s = new Square();
+        Dictionary<int, int[]> cellMap = new Dictionary<int, int[]>();
+        cellMap.Add(1, new int[] {0,2});
+        int input = int.Parse(Console.ReadLine());
+        int i = cellMap[input][0];
+        int j = cellMap[input][1];
+        Console.WriteLine(i + " " + j);
 
-        Console.WriteLine(shape.GetType());
-        Console.WriteLine(square.GetType());
-        Console.WriteLine(s.GetType());
     }
         
 }

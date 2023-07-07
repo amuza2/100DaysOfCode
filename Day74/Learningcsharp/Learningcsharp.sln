@@ -33,7 +33,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SnakeTest", "SnakeTest\Snak
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tictactoe", "tictactoe\tictactoe.csproj", "{043F490D-BCA8-46F6-9AC4-ECB2D48F8F95}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console Game 1", "Console Game 1\Console Game 1.csproj", "{4CD7A9B7-B408-48C4-AC0C-B9AE92953E38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Console Game 1", "Console Game 1\Console Game 1.csproj", "{4CD7A9B7-B408-48C4-AC0C-B9AE92953E38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game 2 TicTacToe Console", "Game 2 TicTacToe Console\Game 2 TicTacToe Console.csproj", "{19A5156E-18B2-4545-9BBE-9767B9DCC2CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +107,10 @@ Global
 		{4CD7A9B7-B408-48C4-AC0C-B9AE92953E38}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CD7A9B7-B408-48C4-AC0C-B9AE92953E38}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CD7A9B7-B408-48C4-AC0C-B9AE92953E38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19A5156E-18B2-4545-9BBE-9767B9DCC2CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19A5156E-18B2-4545-9BBE-9767B9DCC2CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19A5156E-18B2-4545-9BBE-9767B9DCC2CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19A5156E-18B2-4545-9BBE-9767B9DCC2CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

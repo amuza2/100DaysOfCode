@@ -1,0 +1,15 @@
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\Game 2 TicTacToe Console\bin\Debug\net7.0\Game 2 TicTacToe Console.exe
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\Game 2 TicTacToe Console\bin\Debug\net7.0\Game 2 TicTacToe Console.deps.json
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\Game 2 TicTacToe Console\bin\Debug\net7.0\Game 2 TicTacToe Console.runtimeconfig.json
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\Game 2 TicTacToe Console\bin\Debug\net7.0\Game 2 TicTacToe Console.dll
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\Game 2 TicTacToe Console\bin\Debug\net7.0\Game 2 TicTacToe Console.pdb
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\Game 2 TicTacToe Console\obj\Debug\net7.0\Game 2 TicTacToe Console.csproj.AssemblyReference.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\Game 2 TicTacToe Console\obj\Debug\net7.0\Game 2 TicTacToe Console.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\Game 2 TicTacToe Console\obj\Debug\net7.0\Game 2 TicTacToe Console.AssemblyInfoInputs.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\Game 2 TicTacToe Console\obj\Debug\net7.0\Game 2 TicTacToe Console.AssemblyInfo.cs
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\Game 2 TicTacToe Console\obj\Debug\net7.0\Game 2 TicTacToe Console.csproj.CoreCompileInputs.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\Game 2 TicTacToe Console\obj\Debug\net7.0\Game 2 TicTacToe Console.dll
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\Game 2 TicTacToe Console\obj\Debug\net7.0\refint\Game 2 TicTacToe Console.dll
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\Game 2 TicTacToe Console\obj\Debug\net7.0\Game 2 TicTacToe Console.pdb
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\Game 2 TicTacToe Console\obj\Debug\net7.0\Game 2 TicTacToe Console.genruntimeconfig.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\Game 2 TicTacToe Console\obj\Debug\net7.0\ref\Game 2 TicTacToe Console.dll
