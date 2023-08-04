@@ -3,19 +3,21 @@ using System.IO;
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json;
 using System.Collections.Generic;
+using System.Text;
 
 class Program
 {
     
     static void Main(string[] args)
     {
-        Dictionary<int, int[]> cellMap = new Dictionary<int, int[]>();
-        cellMap.Add(1, new int[] {0,2});
-        int input = int.Parse(Console.ReadLine());
-        int i = cellMap[input][0];
-        int j = cellMap[input][1];
-        Console.WriteLine(i + " " + j);
-
+        using (var writer = new FileStream("products.csv", FileMode.CreateNew, FileAccess.Write))
+        {
+            string dataToAppend1 = "Macbook Pro Mid 2014,8GB,512GB SSD,USB 3.0x3,15 screen,Refurbished,750";
+            writer.(dataToAppend1);
+            string dataToAppend2 = "Macbook Pro Late 2019,16GB,512GB SSD,USB 3.0x3,15 screen,Refurbished,1250";
+            writer.WriteLine(dataToAppend2);
+        }
+            Console.WriteLine("CSV file create successfully!");
     }
         
 }

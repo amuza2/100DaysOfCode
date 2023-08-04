@@ -1,0 +1,10 @@
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\tictactoe\bin\Debug\tictactoe.exe.config
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\tictactoe\bin\Debug\tictactoe.exe
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\tictactoe\bin\Debug\tictactoe.pdb
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\tictactoe\obj\Debug\tictactoe.csproj.AssemblyReference.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\tictactoe\obj\Debug\tictactoe.csproj.SuggestedBindingRedirects.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\tictactoe\obj\Debug\tictactoe.Properties.Resources.resources
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\tictactoe\obj\Debug\tictactoe.csproj.GenerateResource.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\tictactoe\obj\Debug\tictactoe.csproj.CoreCompileInputs.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\tictactoe\obj\Debug\tictactoe.exe
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day74\Learningcsharp\tictactoe\obj\Debug\tictactoe.pdb
