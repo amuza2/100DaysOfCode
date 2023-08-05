@@ -36,11 +36,18 @@ blank_card = " ___ \n|## |\n|###|\n|_##|"
 
 # Logic
 def draw_players_cards(players_list, blank_Card = None):
+    printing_list = ["","","",""]
     for i in range(len(players_list)):
-        if(blank_Card != None and i != 0):
-            print(blank_card, end = " ")
+        if (i > 0 and blank_Card != None):
+            a = blank_Card.split('\n')
         else:
-            print(players_list[i], end = " ")
+            a = players_list[i].split('\n')
+        printing_list[0] += a[0] + ' '
+        printing_list[1] += a[1] + ' '
+        printing_list[2] += a[2] + ' '
+        printing_list[3] += a[3] + ' '
+    for i in printing_list:
+        print(i)
 
 def check_card_value(index, card_drawn):
     val = 0
@@ -60,7 +67,7 @@ def check_card_value(index, card_drawn):
     return val
 
 while True:
-    if (player_money > 0):
+    if (player_money <= 0):
         print("You don't have enough money to play")
         break
     draw_cards()
@@ -108,7 +115,7 @@ while True:
     print()
 
     while True:
-        print("(H)it, (S)tand, (D)ouble down, (E)ough")
+        print("(H)it, (S)tand, (D)ouble down, (Q)uit")
         player_choice = input("> ")
         if(player_choice.upper() == 'H'):
             index = random.randint(0, len(card_drawn) - 1)

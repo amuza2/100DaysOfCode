@@ -7,15 +7,15 @@ sg.theme('DarkGrey7')
 sg.set_options(font=('Helvetica', 14))
 
 # Images filenames
-rock_image = r"C:\Users\REALMAN\Documents\Python\rock-paper-scissors\rock.png"
-paper_image = r"C:\Users\REALMAN\Documents\Python\rock-paper-scissors\paper.png"
-scissor_image = r"C:\Users\REALMAN\Documents\Python\rock-paper-scissors\scissor.png"
+rock_image = r"C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day78\rock-paper-scissors\rock.png"
+paper_image = r"C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day78\rock-paper-scissors\paper.png"
+scissor_image = r"C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day78\rock-paper-scissors\scissor.png"
 
 layout = [
     [sg.Text('Choose your move:',size=(20, 1), justification='center')],
-    [sg.Image(filename=rock_image, key='-ROCK-', enable_events=True), 
-     sg.Image(filename=paper_image, key='-PAPER-', enable_events=True),
-     sg.Image(filename=scissor_image, key='-SCISSORS-', enable_events=True)],
+    [sg.Image(filename=rock_image, key='ROCK', enable_events=True), 
+     sg.Image(filename=paper_image, key='PAPER', enable_events=True),
+     sg.Image(filename=scissor_image, key='SCISSORS', enable_events=True)],
     [sg.Output(size=(30, 10), key="OUTPUT")]
 ]
 
@@ -27,6 +27,7 @@ while True:
         break
     
     user_choice = event
+    print(user_choice)
     
     # Generate computer's choice
     computer_choice = random.choice(['Rock', 'Paper', 'Scissors'])
