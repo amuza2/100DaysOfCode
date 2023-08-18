@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "ouSIlP5ZKIQ8aNfrDBghl1xrMB5V+laPihlyngLvGMCiMXGe4oiXhOqQFbZ2ioKx7gCWmN0Y1X6S7GtQAjePDA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\REALMAN\\Desktop\\psill\\playground\\100DaysOfCode\\Day79\\Monogame\\pong\\pong.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\REALMAN\\.nuget\\packages\\monogame.content.builder.task\\3.8.1.303\\monogame.content.builder.task.3.8.1.303.nupkg.sha512",
+    "C:\\Users\\REALMAN\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.1.303\\monogame.framework.desktopgl.3.8.1.303.nupkg.sha512"
+  ],
+  "logs": []
+}
