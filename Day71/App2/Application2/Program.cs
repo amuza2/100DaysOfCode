@@ -5,4 +5,6 @@ Console.WriteLine("hi the");
 for (int i = 0; i < 10; i++)
 {
     Console.WriteLine("hi there");
+    Console.WriteLine("rgrg");
 }
+
