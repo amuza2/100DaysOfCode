@@ -13,3 +13,4 @@ C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day71\app\obj\Debug\net7
 C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day71\app\obj\Debug\net7.0\app.pdb
 C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day71\app\obj\Debug\net7.0\app.genruntimeconfig.cache
 C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day71\app\obj\Debug\net7.0\ref\app.dll
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day71\app\obj\Debug\net7.0\app.sourcelink.json

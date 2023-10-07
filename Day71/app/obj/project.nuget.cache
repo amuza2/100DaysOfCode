@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "7ijT01cyxXcSw0Ln4VHax6gZ5LxetO7/5RcdqZsSIeQG1+HfwzhoCHeZi3yPs2UZNrtP54NeCtfJ0An8YPUzzg==",
+  "dgSpecHash": "H8khu4wOPavw+JPFuSMZRoIY+K8yfl39hZpfX+mGpwF/UNlD2Wti4j14cyVjUxUL+wFlQGtwjCZTbMrpfAgPEA==",
   "success": true,
   "projectFilePath": "C:\\Users\\REALMAN\\Desktop\\psill\\playground\\100DaysOfCode\\Day71\\app\\app.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\REALMAN\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.5\\microsoft.netcore.app.ref.7.0.5.nupkg.sha512",
+    "C:\\Users\\REALMAN\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.5\\microsoft.windowsdesktop.app.ref.7.0.5.nupkg.sha512",
+    "C:\\Users\\REALMAN\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.5\\microsoft.aspnetcore.app.ref.7.0.5.nupkg.sha512",
+    "C:\\Users\\REALMAN\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.5\\microsoft.netcore.app.host.win-x64.7.0.5.nupkg.sha512"
+  ],
   "logs": []
 }

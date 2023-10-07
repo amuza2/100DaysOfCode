@@ -1,0 +1,16 @@
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day71\App2\Application2\bin\Debug\net8.0\Application2.exe
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day71\App2\Application2\bin\Debug\net8.0\Application2.deps.json
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day71\App2\Application2\bin\Debug\net8.0\Application2.runtimeconfig.json
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day71\App2\Application2\bin\Debug\net8.0\Application2.dll
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day71\App2\Application2\bin\Debug\net8.0\Application2.pdb
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day71\App2\Application2\obj\Debug\net8.0\Application2.csproj.AssemblyReference.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day71\App2\Application2\obj\Debug\net8.0\Application2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day71\App2\Application2\obj\Debug\net8.0\Application2.AssemblyInfoInputs.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day71\App2\Application2\obj\Debug\net8.0\Application2.AssemblyInfo.cs
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day71\App2\Application2\obj\Debug\net8.0\Application2.csproj.CoreCompileInputs.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day71\App2\Application2\obj\Debug\net8.0\Application2.sourcelink.json
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day71\App2\Application2\obj\Debug\net8.0\Application2.dll
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day71\App2\Application2\obj\Debug\net8.0\refint\Application2.dll
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day71\App2\Application2\obj\Debug\net8.0\Application2.pdb
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day71\App2\Application2\obj\Debug\net8.0\Application2.genruntimeconfig.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day71\App2\Application2\obj\Debug\net8.0\ref\Application2.dll
