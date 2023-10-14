@@ -64,26 +64,19 @@ namespace DataEntryProject
         private void btnAccept_Click(object sender, EventArgs e)
         {
             string dataEntry = "";
-            bool isEmpty = false;
             if(txtName.Text.Trim().Equals("") || txtAddress.Text.Trim().Equals("")
                 || txtCity.Text.Trim().Equals("") || txtState.Text.Trim().Equals("")
                 || txtZip.Text.Trim().Equals(""))
             {
                 MessageBox.Show("Please fill all text boxes","Error",MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtName.Focus();
-                isEmpty = true;
                 return;
             }
             dataEntry = txtName.Text + "\r\n" + txtAddress.Text + "\r\n"
                 + txtCity.Text + "\r\n" + txtState.Text + "\r\n" + txtZip.Text;
             MessageBox.Show(dataEntry, "Data Entry", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            bool isAllDigit = txtZip.Text.All(char.IsDigit);
-            if (!isAllDigit && !isEmpty)
-            {
-                MessageBox.Show("Zip code must be digit only", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                isEmpty = false;
-            }
+            
 
         }
 
@@ -101,6 +94,28 @@ namespace DataEntryProject
                     case "txtZip": btnAccept.Focus(); break;
                 }
             }
+            if(textBoxSender.Equals("txtZip"))
+            {
+                if(e.KeyChar >= '0' && e.KeyChar <= '9' || e.KeyChar == '8')
+                {
+                    e.Handled = false;
+                }
+                else
+                {
+                    e.Handled = true;
+                }
+            }
+
+        }
+
+        private void btnButton_Hover(object sender, EventArgs e)
+        {
+            ((Guna2Button)sender).FillColor = Color.DarkGreen;
+        }
+
+        private void btnButton_Leave(object sender, EventArgs e)
+        {
+            ((Guna2Button)sender).FillColor = Color.FromArgb(255, 94, 148, 255);
         }
     }
 }

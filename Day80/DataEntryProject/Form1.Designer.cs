@@ -30,26 +30,28 @@
         {
             this.components = new System.ComponentModel.Container();
             this.grbDataEntry = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.grbTimer = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
-            this.txtName = new Guna.UI.WinForms.GunaTextBox();
-            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
-            this.txtAddress = new Guna.UI.WinForms.GunaTextBox();
-            this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
-            this.txtCity = new Guna.UI.WinForms.GunaTextBox();
-            this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
-            this.txtState = new Guna.UI.WinForms.GunaTextBox();
-            this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
-            this.txtZip = new Guna.UI.WinForms.GunaTextBox();
-            this.btnAccept = new Guna.UI2.WinForms.Guna2Button();
             this.btnClear = new Guna.UI2.WinForms.Guna2Button();
-            this.btnStart = new Guna.UI2.WinForms.Guna2Button();
-            this.btnPause = new Guna.UI2.WinForms.Guna2Button();
-            this.btnExit = new Guna.UI2.WinForms.Guna2Button();
+            this.btnAccept = new Guna.UI2.WinForms.Guna2Button();
+            this.txtZip = new Guna.UI.WinForms.GunaTextBox();
+            this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
+            this.txtState = new Guna.UI.WinForms.GunaTextBox();
+            this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
+            this.txtCity = new Guna.UI.WinForms.GunaTextBox();
+            this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
+            this.txtAddress = new Guna.UI.WinForms.GunaTextBox();
+            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
+            this.txtName = new Guna.UI.WinForms.GunaTextBox();
+            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
+            this.grbTimer = new Guna.UI2.WinForms.Guna2GroupBox();
             this.txtTimer = new Guna.UI.WinForms.GunaTextBox();
+            this.btnExit = new Guna.UI2.WinForms.Guna2Button();
+            this.btnPause = new Guna.UI2.WinForms.Guna2Button();
+            this.btnStart = new Guna.UI2.WinForms.Guna2Button();
             this.timTimer = new System.Windows.Forms.Timer(this.components);
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.grbDataEntry.SuspendLayout();
             this.grbTimer.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // grbDataEntry
@@ -75,160 +77,26 @@
             this.grbDataEntry.TabIndex = 0;
             this.grbDataEntry.Text = "Data Entry";
             // 
-            // grbTimer
+            // btnClear
             // 
-            this.grbTimer.Controls.Add(this.txtTimer);
-            this.grbTimer.Controls.Add(this.btnExit);
-            this.grbTimer.Controls.Add(this.btnPause);
-            this.grbTimer.Controls.Add(this.btnStart);
-            this.grbTimer.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.grbTimer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.grbTimer.Location = new System.Drawing.Point(354, 31);
-            this.grbTimer.Name = "grbTimer";
-            this.grbTimer.ShadowDecoration.Parent = this.grbTimer;
-            this.grbTimer.Size = new System.Drawing.Size(300, 391);
-            this.grbTimer.TabIndex = 1;
-            this.grbTimer.Text = "Timer";
-            // 
-            // gunaLabel1
-            // 
-            this.gunaLabel1.AutoSize = true;
-            this.gunaLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel1.Location = new System.Drawing.Point(26, 84);
-            this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(39, 15);
-            this.gunaLabel1.TabIndex = 0;
-            this.gunaLabel1.Text = "Name";
-            // 
-            // txtName
-            // 
-            this.txtName.BaseColor = System.Drawing.Color.White;
-            this.txtName.BorderColor = System.Drawing.Color.Silver;
-            this.txtName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtName.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtName.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txtName.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtName.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtName.Location = new System.Drawing.Point(83, 76);
-            this.txtName.Name = "txtName";
-            this.txtName.PasswordChar = '\0';
-            this.txtName.SelectedText = "";
-            this.txtName.Size = new System.Drawing.Size(194, 30);
-            this.txtName.TabIndex = 0;
-            this.txtName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput_KeyPress);
-            // 
-            // gunaLabel2
-            // 
-            this.gunaLabel2.AutoSize = true;
-            this.gunaLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel2.Location = new System.Drawing.Point(26, 130);
-            this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(49, 15);
-            this.gunaLabel2.TabIndex = 0;
-            this.gunaLabel2.Text = "Address";
-            // 
-            // txtAddress
-            // 
-            this.txtAddress.BaseColor = System.Drawing.Color.White;
-            this.txtAddress.BorderColor = System.Drawing.Color.Silver;
-            this.txtAddress.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtAddress.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtAddress.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txtAddress.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtAddress.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtAddress.Location = new System.Drawing.Point(83, 122);
-            this.txtAddress.Name = "txtAddress";
-            this.txtAddress.PasswordChar = '\0';
-            this.txtAddress.SelectedText = "";
-            this.txtAddress.Size = new System.Drawing.Size(194, 30);
-            this.txtAddress.TabIndex = 2;
-            this.txtAddress.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput_KeyPress);
-            // 
-            // gunaLabel3
-            // 
-            this.gunaLabel3.AutoSize = true;
-            this.gunaLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel3.Location = new System.Drawing.Point(26, 177);
-            this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(28, 15);
-            this.gunaLabel3.TabIndex = 0;
-            this.gunaLabel3.Text = "City";
-            // 
-            // txtCity
-            // 
-            this.txtCity.BaseColor = System.Drawing.Color.White;
-            this.txtCity.BorderColor = System.Drawing.Color.Silver;
-            this.txtCity.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCity.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtCity.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txtCity.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtCity.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtCity.Location = new System.Drawing.Point(83, 169);
-            this.txtCity.Name = "txtCity";
-            this.txtCity.PasswordChar = '\0';
-            this.txtCity.SelectedText = "";
-            this.txtCity.Size = new System.Drawing.Size(194, 30);
-            this.txtCity.TabIndex = 3;
-            this.txtCity.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput_KeyPress);
-            // 
-            // gunaLabel4
-            // 
-            this.gunaLabel4.AutoSize = true;
-            this.gunaLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel4.Location = new System.Drawing.Point(26, 222);
-            this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(33, 15);
-            this.gunaLabel4.TabIndex = 0;
-            this.gunaLabel4.Text = "State";
-            // 
-            // txtState
-            // 
-            this.txtState.BaseColor = System.Drawing.Color.White;
-            this.txtState.BorderColor = System.Drawing.Color.Silver;
-            this.txtState.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtState.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtState.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txtState.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtState.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtState.Location = new System.Drawing.Point(83, 214);
-            this.txtState.Name = "txtState";
-            this.txtState.PasswordChar = '\0';
-            this.txtState.SelectedText = "";
-            this.txtState.Size = new System.Drawing.Size(194, 30);
-            this.txtState.TabIndex = 4;
-            this.txtState.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput_KeyPress);
-            // 
-            // gunaLabel5
-            // 
-            this.gunaLabel5.AutoSize = true;
-            this.gunaLabel5.BackColor = System.Drawing.Color.Transparent;
-            this.gunaLabel5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel5.Location = new System.Drawing.Point(26, 268);
-            this.gunaLabel5.Name = "gunaLabel5";
-            this.gunaLabel5.Size = new System.Drawing.Size(24, 15);
-            this.gunaLabel5.TabIndex = 0;
-            this.gunaLabel5.Text = "Zip";
-            // 
-            // txtZip
-            // 
-            this.txtZip.BaseColor = System.Drawing.Color.White;
-            this.txtZip.BorderColor = System.Drawing.Color.Silver;
-            this.txtZip.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtZip.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtZip.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txtZip.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtZip.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtZip.Location = new System.Drawing.Point(83, 260);
-            this.txtZip.Name = "txtZip";
-            this.txtZip.PasswordChar = '\0';
-            this.txtZip.SelectedText = "";
-            this.txtZip.Size = new System.Drawing.Size(194, 30);
-            this.txtZip.TabIndex = 5;
-            this.txtZip.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput_KeyPress);
+            this.btnClear.Animated = true;
+            this.btnClear.AutoRoundedCorners = true;
+            this.btnClear.BackColor = System.Drawing.Color.Transparent;
+            this.btnClear.BorderRadius = 15;
+            this.btnClear.CheckedState.Parent = this.btnClear;
+            this.btnClear.CustomImages.Parent = this.btnClear;
+            this.btnClear.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnClear.ForeColor = System.Drawing.Color.White;
+            this.btnClear.HoverState.Parent = this.btnClear;
+            this.btnClear.Location = new System.Drawing.Point(166, 325);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.ShadowDecoration.Parent = this.btnClear;
+            this.btnClear.Size = new System.Drawing.Size(111, 32);
+            this.btnClear.TabIndex = 7;
+            this.btnClear.Text = "Clear";
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            this.btnClear.MouseLeave += new System.EventHandler(this.btnButton_Leave);
+            this.btnClear.MouseHover += new System.EventHandler(this.btnButton_Hover);
             // 
             // btnAccept
             // 
@@ -248,44 +116,201 @@
             this.btnAccept.TabIndex = 6;
             this.btnAccept.Text = "Accept";
             this.btnAccept.Click += new System.EventHandler(this.btnAccept_Click);
+            this.btnAccept.MouseLeave += new System.EventHandler(this.btnButton_Leave);
+            this.btnAccept.MouseHover += new System.EventHandler(this.btnButton_Hover);
             // 
-            // btnClear
+            // txtZip
             // 
-            this.btnClear.Animated = true;
-            this.btnClear.AutoRoundedCorners = true;
-            this.btnClear.BackColor = System.Drawing.Color.Transparent;
-            this.btnClear.BorderRadius = 15;
-            this.btnClear.CheckedState.Parent = this.btnClear;
-            this.btnClear.CustomImages.Parent = this.btnClear;
-            this.btnClear.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnClear.ForeColor = System.Drawing.Color.White;
-            this.btnClear.HoverState.Parent = this.btnClear;
-            this.btnClear.Location = new System.Drawing.Point(166, 325);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.ShadowDecoration.Parent = this.btnClear;
-            this.btnClear.Size = new System.Drawing.Size(111, 32);
-            this.btnClear.TabIndex = 7;
-            this.btnClear.Text = "Clear";
-            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            this.txtZip.BaseColor = System.Drawing.Color.White;
+            this.txtZip.BorderColor = System.Drawing.Color.Silver;
+            this.txtZip.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtZip.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtZip.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtZip.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtZip.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtZip.Location = new System.Drawing.Point(83, 260);
+            this.txtZip.Name = "txtZip";
+            this.txtZip.PasswordChar = '\0';
+            this.txtZip.SelectedText = "";
+            this.txtZip.Size = new System.Drawing.Size(194, 30);
+            this.txtZip.TabIndex = 5;
+            this.txtZip.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput_KeyPress);
             // 
-            // btnStart
+            // gunaLabel5
             // 
-            this.btnStart.Animated = true;
-            this.btnStart.AutoRoundedCorners = true;
-            this.btnStart.BackColor = System.Drawing.Color.Transparent;
-            this.btnStart.BorderRadius = 15;
-            this.btnStart.CheckedState.Parent = this.btnStart;
-            this.btnStart.CustomImages.Parent = this.btnStart;
-            this.btnStart.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnStart.ForeColor = System.Drawing.Color.White;
-            this.btnStart.HoverState.Parent = this.btnStart;
-            this.btnStart.Location = new System.Drawing.Point(89, 130);
-            this.btnStart.Name = "btnStart";
-            this.btnStart.ShadowDecoration.Parent = this.btnStart;
-            this.btnStart.Size = new System.Drawing.Size(111, 32);
-            this.btnStart.TabIndex = 8;
-            this.btnStart.Text = "Start";
-            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
+            this.gunaLabel5.AutoSize = true;
+            this.gunaLabel5.BackColor = System.Drawing.Color.Transparent;
+            this.gunaLabel5.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaLabel5.Location = new System.Drawing.Point(26, 268);
+            this.gunaLabel5.Name = "gunaLabel5";
+            this.gunaLabel5.Size = new System.Drawing.Size(24, 15);
+            this.gunaLabel5.TabIndex = 0;
+            this.gunaLabel5.Text = "Zip";
+            // 
+            // txtState
+            // 
+            this.txtState.BaseColor = System.Drawing.Color.White;
+            this.txtState.BorderColor = System.Drawing.Color.Silver;
+            this.txtState.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtState.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtState.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtState.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtState.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtState.Location = new System.Drawing.Point(83, 214);
+            this.txtState.Name = "txtState";
+            this.txtState.PasswordChar = '\0';
+            this.txtState.SelectedText = "";
+            this.txtState.Size = new System.Drawing.Size(194, 30);
+            this.txtState.TabIndex = 4;
+            this.txtState.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput_KeyPress);
+            // 
+            // gunaLabel4
+            // 
+            this.gunaLabel4.AutoSize = true;
+            this.gunaLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaLabel4.Location = new System.Drawing.Point(26, 222);
+            this.gunaLabel4.Name = "gunaLabel4";
+            this.gunaLabel4.Size = new System.Drawing.Size(33, 15);
+            this.gunaLabel4.TabIndex = 0;
+            this.gunaLabel4.Text = "State";
+            // 
+            // txtCity
+            // 
+            this.txtCity.BaseColor = System.Drawing.Color.White;
+            this.txtCity.BorderColor = System.Drawing.Color.Silver;
+            this.txtCity.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCity.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtCity.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtCity.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtCity.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCity.Location = new System.Drawing.Point(83, 169);
+            this.txtCity.Name = "txtCity";
+            this.txtCity.PasswordChar = '\0';
+            this.txtCity.SelectedText = "";
+            this.txtCity.Size = new System.Drawing.Size(194, 30);
+            this.txtCity.TabIndex = 3;
+            this.txtCity.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput_KeyPress);
+            // 
+            // gunaLabel3
+            // 
+            this.gunaLabel3.AutoSize = true;
+            this.gunaLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaLabel3.Location = new System.Drawing.Point(26, 177);
+            this.gunaLabel3.Name = "gunaLabel3";
+            this.gunaLabel3.Size = new System.Drawing.Size(28, 15);
+            this.gunaLabel3.TabIndex = 0;
+            this.gunaLabel3.Text = "City";
+            // 
+            // txtAddress
+            // 
+            this.txtAddress.BaseColor = System.Drawing.Color.White;
+            this.txtAddress.BorderColor = System.Drawing.Color.Silver;
+            this.txtAddress.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtAddress.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtAddress.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtAddress.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtAddress.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtAddress.Location = new System.Drawing.Point(83, 122);
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.PasswordChar = '\0';
+            this.txtAddress.SelectedText = "";
+            this.txtAddress.Size = new System.Drawing.Size(194, 30);
+            this.txtAddress.TabIndex = 2;
+            this.txtAddress.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput_KeyPress);
+            // 
+            // gunaLabel2
+            // 
+            this.gunaLabel2.AutoSize = true;
+            this.gunaLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaLabel2.Location = new System.Drawing.Point(26, 130);
+            this.gunaLabel2.Name = "gunaLabel2";
+            this.gunaLabel2.Size = new System.Drawing.Size(49, 15);
+            this.gunaLabel2.TabIndex = 0;
+            this.gunaLabel2.Text = "Address";
+            // 
+            // txtName
+            // 
+            this.txtName.BaseColor = System.Drawing.Color.White;
+            this.txtName.BorderColor = System.Drawing.Color.Silver;
+            this.txtName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtName.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtName.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtName.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtName.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtName.Location = new System.Drawing.Point(83, 76);
+            this.txtName.Name = "txtName";
+            this.txtName.PasswordChar = '\0';
+            this.txtName.SelectedText = "";
+            this.txtName.Size = new System.Drawing.Size(194, 30);
+            this.txtName.TabIndex = 0;
+            this.txtName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput_KeyPress);
+            // 
+            // gunaLabel1
+            // 
+            this.gunaLabel1.AutoSize = true;
+            this.gunaLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaLabel1.Location = new System.Drawing.Point(26, 84);
+            this.gunaLabel1.Name = "gunaLabel1";
+            this.gunaLabel1.Size = new System.Drawing.Size(39, 15);
+            this.gunaLabel1.TabIndex = 0;
+            this.gunaLabel1.Text = "Name";
+            // 
+            // grbTimer
+            // 
+            this.grbTimer.Controls.Add(this.txtTimer);
+            this.grbTimer.Controls.Add(this.btnExit);
+            this.grbTimer.Controls.Add(this.btnPause);
+            this.grbTimer.Controls.Add(this.btnStart);
+            this.grbTimer.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.grbTimer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.grbTimer.Location = new System.Drawing.Point(354, 31);
+            this.grbTimer.Name = "grbTimer";
+            this.grbTimer.ShadowDecoration.Parent = this.grbTimer;
+            this.grbTimer.Size = new System.Drawing.Size(300, 391);
+            this.grbTimer.TabIndex = 1;
+            this.grbTimer.Text = "Timer";
+            // 
+            // txtTimer
+            // 
+            this.txtTimer.BaseColor = System.Drawing.Color.White;
+            this.txtTimer.BorderColor = System.Drawing.Color.Silver;
+            this.txtTimer.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTimer.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtTimer.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.txtTimer.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtTimer.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTimer.Location = new System.Drawing.Point(67, 69);
+            this.txtTimer.Name = "txtTimer";
+            this.txtTimer.PasswordChar = '\0';
+            this.txtTimer.ReadOnly = true;
+            this.txtTimer.SelectedText = "";
+            this.txtTimer.Size = new System.Drawing.Size(160, 38);
+            this.txtTimer.TabIndex = 0;
+            this.txtTimer.Text = "00:00:00";
+            this.txtTimer.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // btnExit
+            // 
+            this.btnExit.Animated = true;
+            this.btnExit.AutoRoundedCorners = true;
+            this.btnExit.BackColor = System.Drawing.Color.Transparent;
+            this.btnExit.BorderRadius = 15;
+            this.btnExit.CheckedState.Parent = this.btnExit;
+            this.btnExit.CustomImages.Parent = this.btnExit;
+            this.btnExit.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnExit.ForeColor = System.Drawing.Color.White;
+            this.btnExit.HoverState.Parent = this.btnExit;
+            this.btnExit.Location = new System.Drawing.Point(89, 325);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.ShadowDecoration.Parent = this.btnExit;
+            this.btnExit.Size = new System.Drawing.Size(111, 32);
+            this.btnExit.TabIndex = 9;
+            this.btnExit.Text = "Exit";
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnPause
             // 
@@ -307,48 +332,33 @@
             this.btnPause.Text = "Pause";
             this.btnPause.Click += new System.EventHandler(this.btnPause_Click);
             // 
-            // btnExit
+            // btnStart
             // 
-            this.btnExit.Animated = true;
-            this.btnExit.AutoRoundedCorners = true;
-            this.btnExit.BackColor = System.Drawing.Color.Transparent;
-            this.btnExit.BorderRadius = 15;
-            this.btnExit.CheckedState.Parent = this.btnExit;
-            this.btnExit.CustomImages.Parent = this.btnExit;
-            this.btnExit.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnExit.ForeColor = System.Drawing.Color.White;
-            this.btnExit.HoverState.Parent = this.btnExit;
-            this.btnExit.Location = new System.Drawing.Point(89, 325);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.ShadowDecoration.Parent = this.btnExit;
-            this.btnExit.Size = new System.Drawing.Size(111, 32);
-            this.btnExit.TabIndex = 9;
-            this.btnExit.Text = "Exit";
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // txtTimer
-            // 
-            this.txtTimer.BaseColor = System.Drawing.Color.White;
-            this.txtTimer.BorderColor = System.Drawing.Color.Silver;
-            this.txtTimer.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTimer.FocusedBaseColor = System.Drawing.Color.White;
-            this.txtTimer.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.txtTimer.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txtTimer.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTimer.Location = new System.Drawing.Point(67, 69);
-            this.txtTimer.Name = "txtTimer";
-            this.txtTimer.PasswordChar = '\0';
-            this.txtTimer.ReadOnly = true;
-            this.txtTimer.SelectedText = "";
-            this.txtTimer.Size = new System.Drawing.Size(160, 38);
-            this.txtTimer.TabIndex = 0;
-            this.txtTimer.Text = "00:00:00";
-            this.txtTimer.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnStart.Animated = true;
+            this.btnStart.AutoRoundedCorners = true;
+            this.btnStart.BackColor = System.Drawing.Color.Transparent;
+            this.btnStart.BorderRadius = 15;
+            this.btnStart.CheckedState.Parent = this.btnStart;
+            this.btnStart.CustomImages.Parent = this.btnStart;
+            this.btnStart.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnStart.ForeColor = System.Drawing.Color.White;
+            this.btnStart.HoverState.Parent = this.btnStart;
+            this.btnStart.Location = new System.Drawing.Point(89, 130);
+            this.btnStart.Name = "btnStart";
+            this.btnStart.ShadowDecoration.Parent = this.btnStart;
+            this.btnStart.Size = new System.Drawing.Size(111, 32);
+            this.btnStart.TabIndex = 8;
+            this.btnStart.Text = "Start";
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // timTimer
             // 
             this.timTimer.Interval = 1000;
             this.timTimer.Tick += new System.EventHandler(this.timTimer_Tick);
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // frmDataEntry
             // 
@@ -362,6 +372,7 @@
             this.grbDataEntry.ResumeLayout(false);
             this.grbDataEntry.PerformLayout();
             this.grbTimer.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -387,6 +398,7 @@
         private Guna.UI2.WinForms.Guna2Button btnPause;
         private Guna.UI2.WinForms.Guna2Button btnStart;
         private System.Windows.Forms.Timer timTimer;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
 
