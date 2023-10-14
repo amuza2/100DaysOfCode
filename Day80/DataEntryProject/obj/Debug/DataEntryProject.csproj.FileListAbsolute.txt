@@ -1,0 +1,14 @@
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day80\DataEntryProject\bin\Debug\DataEntryProject.exe.config
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day80\DataEntryProject\bin\Debug\DataEntryProject.exe
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day80\DataEntryProject\bin\Debug\DataEntryProject.pdb
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day80\DataEntryProject\bin\Debug\Guna.UI.dll
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day80\DataEntryProject\bin\Debug\Guna.UI2.dll
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day80\DataEntryProject\obj\Debug\DataEntryProject.csproj.AssemblyReference.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day80\DataEntryProject\obj\Debug\DataEntryProject.csproj.SuggestedBindingRedirects.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day80\DataEntryProject\obj\Debug\DataEntryProject.frmDataEntry.resources
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day80\DataEntryProject\obj\Debug\DataEntryProject.Properties.Resources.resources
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day80\DataEntryProject\obj\Debug\DataEntryProject.csproj.GenerateResource.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day80\DataEntryProject\obj\Debug\DataEntryProject.csproj.CoreCompileInputs.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day80\DataEntryProject\obj\Debug\DataEntryProject.csproj.CopyComplete
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day80\DataEntryProject\obj\Debug\DataEntryProject.exe
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day80\DataEntryProject\obj\Debug\DataEntryProject.pdb
