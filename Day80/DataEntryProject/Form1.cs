@@ -96,7 +96,7 @@ namespace DataEntryProject
             }
             if(textBoxSender.Equals("txtZip"))
             {
-                if(e.KeyChar >= '0' && e.KeyChar <= '9' || e.KeyChar == '8')
+                if(e.KeyChar >= '0' && e.KeyChar <= '9' || e.KeyChar == (char)Keys.Back)
                 {
                     e.Handled = false;
                 }
