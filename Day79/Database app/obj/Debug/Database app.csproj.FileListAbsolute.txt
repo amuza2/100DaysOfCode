@@ -1,0 +1,13 @@
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day79\Database app\bin\Debug\Database app.exe.config
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day79\Database app\bin\Debug\Database app.exe
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day79\Database app\bin\Debug\Database app.pdb
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day79\Database app\bin\Debug\Guna.UI.dll
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day79\Database app\obj\Debug\Database app.csproj.AssemblyReference.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day79\Database app\obj\Debug\Database app.csproj.SuggestedBindingRedirects.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day79\Database app\obj\Debug\Database_app.Form1.resources
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day79\Database app\obj\Debug\Database_app.Properties.Resources.resources
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day79\Database app\obj\Debug\Database app.csproj.GenerateResource.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day79\Database app\obj\Debug\Database app.csproj.CoreCompileInputs.cache
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day79\Database app\obj\Debug\Database app.csproj.CopyComplete
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day79\Database app\obj\Debug\Database app.exe
+C:\Users\REALMAN\Desktop\psill\playground\100DaysOfCode\Day79\Database app\obj\Debug\Database app.pdb

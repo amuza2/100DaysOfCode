@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClinicDirectory_v2", "Clini
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataEntryProject", "..\..\Day80\DataEntryProject\DataEntryProject.csproj", "{46E0F3EB-B718-462A-9720-2C84B19AC659}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database app", "..\..\Day79\Database app\Database app.csproj", "{1E23E3C3-F835-411D-AB11-0F3D4D458E8D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{46E0F3EB-B718-462A-9720-2C84B19AC659}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46E0F3EB-B718-462A-9720-2C84B19AC659}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46E0F3EB-B718-462A-9720-2C84B19AC659}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E23E3C3-F835-411D-AB11-0F3D4D458E8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E23E3C3-F835-411D-AB11-0F3D4D458E8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E23E3C3-F835-411D-AB11-0F3D4D458E8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E23E3C3-F835-411D-AB11-0F3D4D458E8D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
