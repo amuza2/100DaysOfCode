@@ -1,0 +1,7 @@
+C:\Users\moham\source\repos\learning\Challenges\bin\Debug\Challenges.exe.config
+C:\Users\moham\source\repos\learning\Challenges\bin\Debug\Challenges.exe
+C:\Users\moham\source\repos\learning\Challenges\bin\Debug\Challenges.pdb
+C:\Users\moham\source\repos\learning\Challenges\obj\Debug\Codewars.csproj.AssemblyReference.cache
+C:\Users\moham\source\repos\learning\Challenges\obj\Debug\Codewars.csproj.CoreCompileInputs.cache
+C:\Users\moham\source\repos\learning\Challenges\obj\Debug\Challenges.exe
+C:\Users\moham\source\repos\learning\Challenges\obj\Debug\Challenges.pdb

@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "learningDelegateAndEvent", "learningDelegateAndEvent\learningDelegateAndEvent.csproj", "{125DF819-9051-422B-943C-9390EE027097}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyManager", "CurrencyManager\CurrencyManager.csproj", "{F5C33FE3-E19D-495C-ADFD-CF1676919358}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exm01", "exm01\exm01.csproj", "{B66991D4-5282-436E-A3F6-A0E580025234}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codewars", "Challenges\Codewars.csproj", "{9CB87656-DB18-4571-A53E-7218FAED3155}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{125DF819-9051-422B-943C-9390EE027097}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{125DF819-9051-422B-943C-9390EE027097}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{125DF819-9051-422B-943C-9390EE027097}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{125DF819-9051-422B-943C-9390EE027097}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5C33FE3-E19D-495C-ADFD-CF1676919358}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5C33FE3-E19D-495C-ADFD-CF1676919358}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5C33FE3-E19D-495C-ADFD-CF1676919358}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5C33FE3-E19D-495C-ADFD-CF1676919358}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B66991D4-5282-436E-A3F6-A0E580025234}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B66991D4-5282-436E-A3F6-A0E580025234}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B66991D4-5282-436E-A3F6-A0E580025234}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B66991D4-5282-436E-A3F6-A0E580025234}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CB87656-DB18-4571-A53E-7218FAED3155}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CB87656-DB18-4571-A53E-7218FAED3155}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CB87656-DB18-4571-A53E-7218FAED3155}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CB87656-DB18-4571-A53E-7218FAED3155}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {69CFD8EF-616F-42B8-85A7-87407715200B}
+	EndGlobalSection
+EndGlobal

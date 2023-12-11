@@ -1,0 +1,13 @@
+C:\Users\moham\source\repos\learning\CurrencyManager\bin\Debug\CurrencyManager.exe.config
+C:\Users\moham\source\repos\learning\CurrencyManager\bin\Debug\CurrencyManager.exe
+C:\Users\moham\source\repos\learning\CurrencyManager\bin\Debug\CurrencyManager.pdb
+C:\Users\moham\source\repos\learning\CurrencyManager\bin\Debug\Guna.UI2.dll
+C:\Users\moham\source\repos\learning\CurrencyManager\obj\Debug\CurrencyManager.csproj.AssemblyReference.cache
+C:\Users\moham\source\repos\learning\CurrencyManager\obj\Debug\CurrencyManager.frmTitles.resources
+C:\Users\moham\source\repos\learning\CurrencyManager\obj\Debug\CurrencyManager.Properties.Resources.resources
+C:\Users\moham\source\repos\learning\CurrencyManager\obj\Debug\CurrencyManager.csproj.GenerateResource.cache
+C:\Users\moham\source\repos\learning\CurrencyManager\obj\Debug\CurrencyManager.csproj.CoreCompileInputs.cache
+C:\Users\moham\source\repos\learning\CurrencyManager\obj\Debug\CurrencyManager.csproj.CopyComplete
+C:\Users\moham\source\repos\learning\CurrencyManager\obj\Debug\CurrencyManager.exe
+C:\Users\moham\source\repos\learning\CurrencyManager\obj\Debug\CurrencyManager.pdb
+C:\Users\moham\source\repos\learning\CurrencyManager\bin\Debug\Books.accdb

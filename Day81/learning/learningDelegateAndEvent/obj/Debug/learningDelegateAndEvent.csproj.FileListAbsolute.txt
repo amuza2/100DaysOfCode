@@ -1,0 +1,10 @@
+C:\Users\moham\source\repos\learning\learningDelegateAndEvent\bin\Debug\learningDelegateAndEvent.exe.config
+C:\Users\moham\source\repos\learning\learningDelegateAndEvent\bin\Debug\learningDelegateAndEvent.exe
+C:\Users\moham\source\repos\learning\learningDelegateAndEvent\bin\Debug\learningDelegateAndEvent.pdb
+C:\Users\moham\source\repos\learning\learningDelegateAndEvent\obj\Debug\learningDelegateAndEvent.csproj.AssemblyReference.cache
+C:\Users\moham\source\repos\learning\learningDelegateAndEvent\obj\Debug\learningDelegateAndEvent.Form1.resources
+C:\Users\moham\source\repos\learning\learningDelegateAndEvent\obj\Debug\learningDelegateAndEvent.Properties.Resources.resources
+C:\Users\moham\source\repos\learning\learningDelegateAndEvent\obj\Debug\learningDelegateAndEvent.csproj.GenerateResource.cache
+C:\Users\moham\source\repos\learning\learningDelegateAndEvent\obj\Debug\learningDelegateAndEvent.csproj.CoreCompileInputs.cache
+C:\Users\moham\source\repos\learning\learningDelegateAndEvent\obj\Debug\learningDelegateAndEvent.exe
+C:\Users\moham\source\repos\learning\learningDelegateAndEvent\obj\Debug\learningDelegateAndEvent.pdb
