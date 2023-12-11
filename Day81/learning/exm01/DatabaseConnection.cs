@@ -52,6 +52,7 @@ namespace exm01
                 DataTable dataTable = new DataTable();
                 adapter.Fill(dataTable);
                 dataset.Tables.Add(dataTable);
+                return dataset;
             }
         }
         public void SaveDataSet(DataSet dataSet, SqlDataAdapter adapter, string tableName)

@@ -11,15 +11,23 @@ namespace CodeWars
 {
     internal class Program
     {
-        public static bool BetterThanAverage(int[] ClassPoints, int YourPoints)
+        public static string CuckooClock(string inputTime, int chimes)
         {
-            int lengthOfList = ClassPoints.Length;
-            int sumOfPoints = ClassPoints.Sum();
-            int resultValue = (sumOfPoints + YourPoints) / (lengthOfList + 1);
-            if (YourPoints > resultValue) return true;
-            return false;
-        }
+            string[] splitTime = inputTime.Split(':');
+            int hour = int.Parse(splitTime[0]);
+            int minute = int.Parse(splitTime[1]);
+            int leftTimeInHour = Math.Abs(59 - minute);
+            int champsCounter = 0;
+            for (int i = 0; i < 12; i++)
+            {
+                champsCounter += leftTimeInHour % 15;
+                if (minute == 0) champsCounter += hour;
+                
+                hour++;
 
+            }
+            return inputTime;
+        }
         static void Main(string[] args)
         {
 
