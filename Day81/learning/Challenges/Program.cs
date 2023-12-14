@@ -11,18 +11,6 @@ namespace CodeWars
 {
     internal class Program
     {
-        public static string ReverseWords(string str)
-        {
-            string result = "";
-            string[] arr =  str.Split(' ');
-            foreach (var item in arr)
-            {
-                result += item.Reverse().ToString() + " ";
-                Console.WriteLine(result);
-            }
-            return result.Trim();
-        }
-
         //public static string CuckooClock(string inputTime, int chimes)
         //{
         //    string[] splitTime = inputTime.Split(':');
@@ -40,9 +28,21 @@ namespace CodeWars
         //    }
         //    return inputTime;
         //}
+        public static int[] TwoOldestAges(int[] ages)
+        {
+            Array.Sort(ages);
+            Array.Reverse(ages);
+            Console.WriteLine($"{ages[0]} {ages[1]} {ages[2]} {ages[3]}");
+            int[] result = { ages[0], ages[1] };
+            return result;
+        }
+
         static void Main(string[] args)
         {
-            Console.WriteLine(ReverseWords("This is an example!"));
+            foreach(var item in TwoOldestAges(new int[] { 1, 2, 10, 8 }))
+            {
+                Console.WriteLine(item);
+            }
         }
     }
 }
