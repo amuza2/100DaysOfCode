@@ -30,19 +30,39 @@ namespace CodeWars
         //}
         public static int[] TwoOldestAges(int[] ages)
         {
-            Array.Sort(ages);
-            Array.Reverse(ages);
-            Console.WriteLine($"{ages[0]} {ages[1]} {ages[2]} {ages[3]}");
-            int[] result = { ages[0], ages[1] };
-            return result;
+            int oldest1 = -1;
+            int oldest2 = -1;
+            foreach (int age in ages)
+            {
+                if (age > oldest1)
+                {
+                    oldest2 = oldest1;
+                    oldest1 = age;
+                }
+                else if (age > oldest2)
+                {
+                    oldest2 = age;
+                }
+            }
+            return new int[] { oldest2, oldest1 };
         }
-
+        // old 1 = 10
+        // old 2 = 8
+        public static void Print(int[] arr)
+        {
+            foreach (var item in arr)
+            {
+                Console.Write(item + " ");
+            }
+            Console.WriteLine();
+        }
         static void Main(string[] args)
         {
-            foreach(var item in TwoOldestAges(new int[] { 1, 2, 10, 8 }))
-            {
-                Console.WriteLine(item);
-            }
+            Print(TwoOldestAges(new int[] { 1, 2, 10, 8 }));
+            Print(TwoOldestAges(new int[] { 117,116, 115, 112, 108, 107, 106, 86, 85, 76, 72, 66 ,58 ,32 ,24 ,17 ,14 ,11 ,8 ,0 }));
+            //Print(TwoOldestAges(new int[] { 1, 2, 10, 8 }));
+
+
         }
     }
 }
