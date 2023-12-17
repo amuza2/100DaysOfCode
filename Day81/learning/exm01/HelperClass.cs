@@ -6,6 +6,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
+using static Guna.UI2.Native.WinApi;
 
 namespace exm01
 {
@@ -13,30 +15,19 @@ namespace exm01
     {
         public virtual void addButton(Guna2TextBox txbID, Guna2TextBox txbName, DataTable dataTable, Guna2DataGridView dataGridView)
         {
-            string id = txbID.Text;
-            string name = txbName.Text;
             // Check if the value we want to add is already in the table
-            bool valueExits = false;
-            foreach (DataRow row in dataTable.Rows)
-            {
-                if (row["id_realisator"].ToString() == id || row["realisator_name"].ToString() == name)
-                {
-                    valueExits = true;
-                    break;
-                }
-            }
+            bool hasDuplicate = checkDuplicatevalues(txbID, txbName, dataTable, "id_realisator", "realisator_name");
             // add values to the table
-            if (!valueExits)
+            if(!hasDuplicate)
             {
                 DataRow newRow = dataTable.NewRow();
-                newRow["id_realisator"] = id;
-                newRow["realisator_name"] = name;
+                newRow["id_realisator"] = txbID.Text;
+                newRow["realisator_name"] = txbName.Text;
                 dataTable.Rows.Add(newRow);
                 dataGridView.DataSource = dataTable;
+                txbID.Text = "";
+                txbName.Text = "";
             }
-            // show a message box that there is a duplicate value
-            else MessageBox.Show("Value already exits", "Dublicate", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
         }
         public virtual void clearButton(Guna2TextBox txbID, Guna2TextBox txbName, DataTable dataTable, Guna2DataGridView dataGridView)
         {
@@ -54,28 +45,19 @@ namespace exm01
                 txbName.Text = selectedRow.Cells["realisator_name"].Value.ToString().Trim();
             }
         }
-        public virtual void editButton(Guna2TextBox txbID, Guna2TextBox txbName, DataTable dataTable, Guna2DataGridView dataGridView)
+        public virtual void editButton(Guna2TextBox txbID, Guna2TextBox txbName, DataTable dataTable, Guna2DataGridView dataGridView, string column1, string column2)
         {
-            string name = txbName.Text;
-            bool valueExits = false;
-            foreach (DataRow row in dataTable.Rows)
-            {
-                if (row["realisator_name"].ToString() == name)
-                {
-                    valueExits = true;
-                    break;
-                }
-            }
-            if (!valueExits)
+            bool hasDuplicate = checkDuplicatevalues(txbName, dataTable, "realisator_name");
+            if (!hasDuplicate)
             {
                 if (dataGridView.SelectedRows.Count > 0)
                 {
                     DataGridViewRow selectedRow = dataGridView.SelectedRows[0];
-                    selectedRow.Cells["id_realisator"].Value = txbID.Text;
-                    selectedRow.Cells["realisator_name"].Value = txbName.Text;
+                    selectedRow.Cells[column1].Value = txbID.Text;
+                    selectedRow.Cells[column2].Value = txbName.Text;
+                    dataGridView.DataSource = dataTable; // update datatable
                 }
             }
-            else MessageBox.Show("Value already exits", "Dublicate", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
         public virtual void deleteButton(Guna2TextBox txbID, Guna2TextBox txbName, Guna2DataGridView dataGridView, DataTable dataTable)
         {
@@ -86,6 +68,34 @@ namespace exm01
                 txbID.Text = "";
                 txbName.Text = "";
             }
+        }
+        // check duplicate values
+        private bool checkDuplicatevalues(Guna2TextBox txbName, DataTable dataTable, string column1)
+        {
+            bool hasDuplicate = false;
+            string name = txbName.Text;
+            foreach (DataRow row in dataTable.Rows)
+            {
+                if (row[column1].ToString() == name)
+                {
+                    MessageBox.Show("Value already exits", "Dublicate", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    hasDuplicate = true;
+                }
+            }
+            return hasDuplicate;
+        }
+        private bool checkDuplicatevalues(Guna2TextBox txbID, Guna2TextBox txbName, DataTable dataTable, string column1, string column2)
+        {
+            bool hasDuplicate = false;
+            foreach (DataRow row in dataTable.Rows)
+            {
+                if (row["id_realisator"].ToString() == txbID.Text || row["realisator_name"].ToString() == txbName.Text)
+                {
+                    MessageBox.Show("Value already exits", "Dublicate", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    hasDuplicate = true;
+                }
+            }
+            return hasDuplicate;
         }
 
 

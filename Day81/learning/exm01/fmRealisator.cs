@@ -38,6 +38,7 @@ namespace exm01
             dgvRealisator.DataSource = realisatorTable;
             dgvRealisator.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             txbConnectionChecker.Text = connection.State.ToString();
+            
         }
 
         private void fmRealisator_Load_1(object sender, EventArgs e)
@@ -78,7 +79,7 @@ namespace exm01
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            helperClass.editButton(txbId, txbName, realisatorTable, dgvRealisator);
+            helperClass.editButton(txbId, txbName, realisatorTable, dgvRealisator, "id_realisator", "realisator_name");
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
