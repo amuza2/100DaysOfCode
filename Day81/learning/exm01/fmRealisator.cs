@@ -73,5 +73,10 @@ namespace exm01
             helperClass.deleteButton(txbId, txbName, dgvRealisator, realisatorTable);
 
         }
+
+        private void txbId_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            helperClass.allowIntOnly(e);
+        }
     }
 }

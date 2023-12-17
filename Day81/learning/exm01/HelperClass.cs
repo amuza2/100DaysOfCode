@@ -116,7 +116,13 @@ namespace exm01
             }
             else errorProvider.SetError(name, "");
             return isNotEmpty;
-            
+        }
+        public void allowIntOnly(KeyPressEventArgs e)
+        {
+            if(!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
 
 

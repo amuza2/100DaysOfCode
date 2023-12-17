@@ -18,11 +18,8 @@ namespace exm01
         private DatabaseConnection dbConnection;
         private SqlConnection connection = new SqlConnection();
         private DataSet dataSet;
-        private SqlDataAdapter filmAdapter = new SqlDataAdapter();
-        private SqlDataAdapter realisatorAdapter = new SqlDataAdapter();
-
-        private DataTable dataTableFilm = new DataTable();
-        private DataTable dataTableRealisator = new DataTable();
+        private DataTable dataTableFilm;
+        private DataTable dataTableRealisator;
         public fmFilm()
         {
             InitializeComponent();
@@ -35,17 +32,9 @@ namespace exm01
 
         private void fmFilm_Load_1(object sender, EventArgs e)
         {
-            dbConnection = DatabaseConnection.Instance;
-            connection = dbConnection.GetConnection();
-            SqlCommand sqlCommandFilm = dbConnection.CreateCommand("SELECT * FROM film");
-            SqlCommand sqlCommandRealisator = dbConnection.CreateCommand("SELECT * FROM realisator");
-
-            //dataSet = dbConnection.fillAdapterToDataSet(sqlCommandFilm, "dsFilm");
-            //dbConnection.addDataSetTable(dataSet, "dsFilm");
-            //dbConnection.addDataSetTable(dataSet, "dsRealisator");
-            //dataSet = dbConnection.fillAdapterToDataSet(sqlCommandRealisator);
-
+            dataSet = DatabaseConnection.Instance.dataSet;
             dataTableRealisator = dataSet.Tables["dsRealisator"];
+            dataTableRealisator = dataSet.Tables["dsFilm"];
 
             dgvFilm.DataSource = dataSet.Tables["dsFilm"];
             dgvFilm.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
