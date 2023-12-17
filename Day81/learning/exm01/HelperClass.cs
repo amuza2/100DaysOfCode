@@ -124,6 +124,13 @@ namespace exm01
                 e.Handled = true;
             }
         }
+        public void comboFiller(Guna2ComboBox comboBox,DataTable dataTable, string columnToShow, string columnToHide)
+        {
+            
+            comboBox.DataSource = dataTable;
+            comboBox.DisplayMember = columnToShow;
+            comboBox.ValueMember = columnToHide;
+        }
 
 
     }

@@ -27,7 +27,7 @@ namespace exm01
             dbConnection = DatabaseConnection.Instance;
             connection = dbConnection.GetConnection();
             SqlCommand sqlCommandRealisator = dbConnection.CreateCommand("SELECT * FROM realisator");
-            SqlCommand sqlCommandFilm = dbConnection.CreateCommand("SELECT * FROM film");
+            SqlCommand sqlCommandFilm = dbConnection.CreateCommand("SELECT id_film, title_film, length_film, released_date, realisator.realisator_name FROM film \r\nINNER JOIN realisator ON film.id_realisator = realisator.id_realisator");
             mainDataSet = dbConnection.fillAdapterToDataSet(sqlCommandRealisator, "dsRealisator");
             mainDataSet = dbConnection.fillAdapterToDataSet(sqlCommandFilm, "dsFilm");
             dbConnection.Disconnecting();
