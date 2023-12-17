@@ -24,18 +24,18 @@ namespace exm01
         private SqlConnection connection;
         private SqlCommand sqlCommand;
         SqlDataAdapter adapter;
-        private DataSet dataSet;
-        private DataTable dataTable;
+        private DataSet dataSet = new DataSet();
+        private DataTable realisatorTable;
+        HelperClass helperClass = new HelperClass();
 
         private void fmRealisator_Load(object sender, EventArgs e)
         {
             dbConnection = DatabaseConnection.Instance;
             connection = dbConnection.GetConnection();
             sqlCommand = dbConnection.CreateCommand("SELECT * FROM realisator");
-            dataSet = new DataSet();
-            dbConnection.addTableDataSet(dataSet, sqlCommand, "dsRealisator");
-            dataTable = dataSet.Tables["dsRealisator"];
-            dgvRealisator.DataSource = dataTable;
+            dataSet = dbConnection.fillAdapterToDataSet(sqlCommand, "dsRealisator");
+            realisatorTable = dbConnection.dataSet.Tables["dsRealisator"];
+            dgvRealisator.DataSource = realisatorTable;
             dgvRealisator.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             txbConnectionChecker.Text = connection.State.ToString();
         }
@@ -47,26 +47,7 @@ namespace exm01
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            string id = txbId.Text;
-            string name = txbName.Text;
-            bool valueExits = false;
-            foreach (DataRow row in dataTable.Rows)
-            {
-                if (row["id_realisator"].ToString() == id || row["realisator_name"].ToString() == name)
-                {
-                    valueExits = true;
-                    break;
-                }
-            }
-            if (!valueExits)
-            {
-                DataRow newRow = dataTable.NewRow();
-                newRow["id_realisator"] = id;
-                newRow["realisator_name"] = name;
-                dataTable.Rows.Add(newRow);
-                dgvRealisator.DataSource = dataTable;
-            }
-            else MessageBox.Show("Value already exits", "Dublicate", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            helperClass.addButton(txbId, txbName, realisatorTable, dgvRealisator);
         }
 
         private void fmRealisator_FormClosing(object sender, FormClosingEventArgs e)
@@ -87,52 +68,22 @@ namespace exm01
 
         private void btnClear_Click(object sender, EventArgs e)
         {
-            dataTable.Clear();
-            dgvRealisator.DataSource = dataTable;
+            helperClass.clearButton(txbId, txbName, realisatorTable, dgvRealisator);
         }
 
         private void DataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if(e.RowIndex >= 0) // Check if a row is selected
-            {
-                DataGridViewRow selectedRow = dgvRealisator.Rows[e.RowIndex];
-                txbId.Text = selectedRow.Cells["id_realisator"].Value.ToString().Trim();
-                txbName.Text = selectedRow.Cells["realisator_name"].Value.ToString().Trim();
-            }
+            helperClass.dataGridViewCellClick(sender, e, txbId, txbName, dgvRealisator);
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            string name = txbName.Text;
-            bool valueExits = false;
-            foreach (DataRow row in dataTable.Rows)
-            {
-                if (row["realisator_name"].ToString() == name)
-                {
-                    valueExits = true;
-                    break;
-                }
-            }
-            if (!valueExits)
-            {
-                if (dgvRealisator.SelectedRows.Count > 0)
-                {
-                    DataGridViewRow selectedRow = dgvRealisator.SelectedRows[0];
-                    selectedRow.Cells["id_realisator"].Value = txbId.Text;
-                    selectedRow.Cells["realisator_name"].Value = txbName.Text;
-                }
-            }
-            else MessageBox.Show("Value already exits", "Dublicate", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            helperClass.editButton(txbId, txbName, realisatorTable, dgvRealisator);
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            string id = txbName.Text;
-            if(dgvRealisator.SelectedRows.Count > 0)
-            {
-                dgvRealisator.Rows.Remove(dgvRealisator.SelectedRows[0]);
-                //DataGridViewRow selectedRow = dgvRealisator.SelectedRows[0];
-            }
+            helperClass.deleteButton(txbId, txbName, dgvRealisator, realisatorTable);
 
         }
     }

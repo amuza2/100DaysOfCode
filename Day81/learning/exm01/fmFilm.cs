@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.Common;
+using System.Data.Odbc;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
@@ -39,8 +40,10 @@ namespace exm01
             SqlCommand sqlCommandFilm = dbConnection.CreateCommand("SELECT * FROM film");
             SqlCommand sqlCommandRealisator = dbConnection.CreateCommand("SELECT * FROM realisator");
 
-            dbConnection.addTableDataSet(dataSet, sqlCommandFilm, "dsFilm");
-            dbConnection.addTableDataSet(dataSet, sqlCommandRealisator, "dsRealisator");
+            //dataSet = dbConnection.fillAdapterToDataSet(sqlCommandFilm, "dsFilm");
+            //dbConnection.addDataSetTable(dataSet, "dsFilm");
+            //dbConnection.addDataSetTable(dataSet, "dsRealisator");
+            //dataSet = dbConnection.fillAdapterToDataSet(sqlCommandRealisator);
 
             dataTableRealisator = dataSet.Tables["dsRealisator"];
 
