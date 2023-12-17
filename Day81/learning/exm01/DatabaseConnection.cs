@@ -14,7 +14,7 @@ namespace exm01
     {
         private static DatabaseConnection _instance;
         private SqlConnection _connection;
-        public DataSet dataSet { get; private set; }
+        public DataSet dataSet = new DataSet();
 
         private DatabaseConnection()
         {
@@ -50,10 +50,13 @@ namespace exm01
         {
             using(SqlDataAdapter adapter = new SqlDataAdapter(sqlCommand))
             {
-                dataSet = new DataSet();
                 adapter.Fill(dataSet, dsTableName);
                 return dataSet;
             }
+        }
+        public DataSet GetDataSet()
+        {
+            return dataSet;
         }
         public DataTable addDataSetTable(DataSet _dataset, string tableName)
         {

@@ -22,22 +22,20 @@ namespace exm01
         }
         private DatabaseConnection dbConnection;
         private SqlConnection connection;
-        private SqlCommand sqlCommand;
-        SqlDataAdapter adapter;
         private DataSet dataSet = new DataSet();
         private DataTable realisatorTable;
         HelperClass helperClass = new HelperClass();
 
         private void fmRealisator_Load(object sender, EventArgs e)
         {
-            dbConnection = DatabaseConnection.Instance;
-            connection = dbConnection.GetConnection();
-            sqlCommand = dbConnection.CreateCommand("SELECT * FROM realisator");
-            dataSet = dbConnection.fillAdapterToDataSet(sqlCommand, "dsRealisator");
-            realisatorTable = dbConnection.dataSet.Tables["dsRealisator"];
+            dataSet = DatabaseConnection.Instance.dataSet;
+            //dbConnection = DatabaseConnection.Instance;
+            //connection = dbConnection.GetConnection();
+            //sqlCommand = dbConnection.CreateCommand("SELECT * FROM realisator");
+            //dataSet = dbConnection.fillAdapterToDataSet(sqlCommand, "dsRealisator");
+            realisatorTable = dataSet.Tables["dsRealisator"];
             dgvRealisator.DataSource = realisatorTable;
             dgvRealisator.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            txbConnectionChecker.Text = connection.State.ToString();
             
         }
 
@@ -48,23 +46,11 @@ namespace exm01
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            helperClass.addButton(txbId, txbName, realisatorTable, dgvRealisator);
+            helperClass.addButton(txbId, txbName, realisatorTable, dgvRealisator, errorProvider);
         }
 
         private void fmRealisator_FormClosing(object sender, FormClosingEventArgs e)
         {
-            try
-            {
-                dbConnection.SaveDataSet(dataSet, adapter, "dsRealisator");
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("An error occurred while saving the data: " + ex.Message);
-            }
-            finally
-            {
-                dbConnection.Disconnecting();
-            }
         }
 
         private void btnClear_Click(object sender, EventArgs e)

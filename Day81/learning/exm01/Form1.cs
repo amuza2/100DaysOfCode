@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,10 @@ namespace exm01
 {
     public partial class Form1 : Form
     {
+        private DatabaseConnection dbConnection;
+        private SqlConnection connection;
+        SqlDataAdapter adapter;
+        private DataSet mainDataSet = new DataSet();
         public Form1()
         {
             InitializeComponent();
@@ -19,7 +24,13 @@ namespace exm01
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            dbConnection = DatabaseConnection.Instance;
+            connection = dbConnection.GetConnection();
+            SqlCommand sqlCommandRealisator = dbConnection.CreateCommand("SELECT * FROM realisator");
+            SqlCommand sqlCommandFilm = dbConnection.CreateCommand("SELECT * FROM film");
+            mainDataSet = dbConnection.fillAdapterToDataSet(sqlCommandRealisator, "dsRealisator");
+            mainDataSet = dbConnection.fillAdapterToDataSet(sqlCommandFilm, "dsFilm");
+            dbConnection.Disconnecting();
         }
 
         private void gestionToolStripMenuItem_Click(object sender, EventArgs e)

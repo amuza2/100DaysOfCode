@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
             this.btnEdit = new Guna.UI2.WinForms.Guna2Button();
             this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
@@ -45,11 +45,12 @@
             this.cenimaDatabaseDataSet = new exm01.cenimaDatabaseDataSet();
             this.realisatorTableAdapter = new exm01.cenimaDatabaseDataSetTableAdapters.realisatorTableAdapter();
             this.cenimaDatabaseDataSet11 = new exm01.cenimaDatabaseDataSet();
-            this.txbConnectionChecker = new Guna.UI2.WinForms.Guna2TextBox();
+            this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvRealisator)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.realisatorBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cenimaDatabaseDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cenimaDatabaseDataSet11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // btnAdd
@@ -186,34 +187,34 @@
             this.txbName.SelectedText = "";
             this.txbName.ShadowDecoration.Parent = this.txbName;
             this.txbName.Size = new System.Drawing.Size(200, 36);
-            this.txbName.TabIndex = 2;
+            this.txbName.TabIndex = 3;
             // 
             // dgvRealisator
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgvRealisator.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.dgvRealisator.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvRealisator.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvRealisator.BackgroundColor = System.Drawing.Color.White;
             this.dgvRealisator.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvRealisator.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvRealisator.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvRealisator.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvRealisator.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvRealisator.ColumnHeadersHeight = 21;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvRealisator.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvRealisator.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgvRealisator.EnableHeadersVisualStyles = false;
             this.dgvRealisator.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvRealisator.Location = new System.Drawing.Point(55, 192);
@@ -266,36 +267,17 @@
             this.cenimaDatabaseDataSet11.DataSetName = "cenimaDatabaseDataSet1";
             this.cenimaDatabaseDataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // txbConnectionChecker
+            // errorProvider
             // 
-            this.txbConnectionChecker.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txbConnectionChecker.DefaultText = "";
-            this.txbConnectionChecker.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txbConnectionChecker.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txbConnectionChecker.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txbConnectionChecker.DisabledState.Parent = this.txbConnectionChecker;
-            this.txbConnectionChecker.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txbConnectionChecker.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txbConnectionChecker.FocusedState.Parent = this.txbConnectionChecker;
-            this.txbConnectionChecker.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txbConnectionChecker.HoverState.Parent = this.txbConnectionChecker;
-            this.txbConnectionChecker.Location = new System.Drawing.Point(119, 12);
-            this.txbConnectionChecker.Name = "txbConnectionChecker";
-            this.txbConnectionChecker.PasswordChar = '\0';
-            this.txbConnectionChecker.PlaceholderText = "";
-            this.txbConnectionChecker.SelectedText = "";
-            this.txbConnectionChecker.ShadowDecoration.Parent = this.txbConnectionChecker;
-            this.txbConnectionChecker.Size = new System.Drawing.Size(200, 36);
-            this.txbConnectionChecker.TabIndex = 2;
+            this.errorProvider.ContainerControl = this;
             // 
             // fmRealisator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(990, 450);
             this.Controls.Add(this.dgvRealisator);
             this.Controls.Add(this.txbName);
-            this.Controls.Add(this.txbConnectionChecker);
             this.Controls.Add(this.txbId);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -311,6 +293,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.realisatorBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cenimaDatabaseDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cenimaDatabaseDataSet11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -331,6 +314,6 @@
         private System.Windows.Forms.BindingSource realisatorBindingSource;
         private cenimaDatabaseDataSetTableAdapters.realisatorTableAdapter realisatorTableAdapter;
         private exm01.cenimaDatabaseDataSet cenimaDatabaseDataSet11;
-        private Guna.UI2.WinForms.Guna2TextBox txbConnectionChecker;
+        private System.Windows.Forms.ErrorProvider errorProvider;
     }
 }

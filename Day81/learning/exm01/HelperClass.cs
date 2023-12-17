@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -13,15 +14,16 @@ namespace exm01
 {
     internal class HelperClass
     {
-        public virtual void addButton(Guna2TextBox txbID, Guna2TextBox txbName, DataTable dataTable, Guna2DataGridView dataGridView)
+        public void addButton(Guna2TextBox txbID, Guna2TextBox txbName, DataTable dataTable, Guna2DataGridView dataGridView, ErrorProvider errorProvider)
         {
             // Check if the value we want to add is already in the table
             bool hasDuplicate = checkDuplicatevalues(txbID, txbName, dataTable, "id_realisator", "realisator_name");
             // add values to the table
-            if(!hasDuplicate)
+            bool isNotEmpty = isNotEmptyControl(txbID, txbName, errorProvider);
+            if (!hasDuplicate && isNotEmpty)
             {
                 DataRow newRow = dataTable.NewRow();
-                newRow["id_realisator"] = txbID.Text;
+                newRow["id_realisator"] = int.Parse(txbID.Text);
                 newRow["realisator_name"] = txbName.Text;
                 dataTable.Rows.Add(newRow);
                 dataGridView.DataSource = dataTable;
@@ -89,13 +91,32 @@ namespace exm01
             bool hasDuplicate = false;
             foreach (DataRow row in dataTable.Rows)
             {
-                if (row["id_realisator"].ToString() == txbID.Text || row["realisator_name"].ToString() == txbName.Text)
+                if (row["id_realisator"].ToString() == txbID.Text.ToString() || row["realisator_name"].ToString() == txbName.Text)
                 {
                     MessageBox.Show("Value already exits", "Dublicate", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     hasDuplicate = true;
                 }
             }
             return hasDuplicate;
+        }
+        private bool isNotEmptyControl(Guna2TextBox id, Guna2TextBox name, ErrorProvider errorProvider)
+        {
+            bool isNotEmpty = true;
+            string errorMessage = "can't be empty";
+            if (string.IsNullOrEmpty(id.Text.Trim().ToString()))
+            {
+                isNotEmpty = false;
+                errorProvider.SetError(id, errorMessage);
+            }
+            else errorProvider.SetError(id, "");
+            if (string.IsNullOrEmpty(name.Text.Trim()))
+            {
+                isNotEmpty = false;
+                errorProvider.SetError(name, errorMessage);
+            }
+            else errorProvider.SetError(name, "");
+            return isNotEmpty;
+            
         }
 
 
