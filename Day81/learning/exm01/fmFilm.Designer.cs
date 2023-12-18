@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -50,9 +50,11 @@
             this.cenimaDatabaseDataSet = new exm01.cenimaDatabaseDataSet();
             this.filmTableAdapter = new exm01.cenimaDatabaseDataSetTableAdapters.filmTableAdapter();
             this.dtpDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvFilm)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.filmBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cenimaDatabaseDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -125,7 +127,7 @@
             this.txbId.SelectedText = "";
             this.txbId.ShadowDecoration.Parent = this.txbId;
             this.txbId.Size = new System.Drawing.Size(364, 36);
-            this.txbId.TabIndex = 1;
+            this.txbId.TabIndex = 0;
             this.txbId.TextChanged += new System.EventHandler(this.txbId_TextChanged);
             this.txbId.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbId_KeyPress);
             // 
@@ -171,7 +173,7 @@
             this.txbLength.SelectedText = "";
             this.txbLength.ShadowDecoration.Parent = this.txbLength;
             this.txbLength.Size = new System.Drawing.Size(364, 36);
-            this.txbLength.TabIndex = 1;
+            this.txbLength.TabIndex = 2;
             // 
             // cbxfilm
             // 
@@ -190,7 +192,7 @@
             this.cbxfilm.Name = "cbxfilm";
             this.cbxfilm.ShadowDecoration.Parent = this.cbxfilm;
             this.cbxfilm.Size = new System.Drawing.Size(364, 36);
-            this.cbxfilm.TabIndex = 3;
+            this.cbxfilm.TabIndex = 5;
             // 
             // btnAdd
             // 
@@ -206,7 +208,7 @@
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.ShadowDecoration.Parent = this.btnAdd;
             this.btnAdd.Size = new System.Drawing.Size(180, 45);
-            this.btnAdd.TabIndex = 4;
+            this.btnAdd.TabIndex = 6;
             this.btnAdd.Text = "Ajouter";
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
@@ -224,7 +226,7 @@
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.ShadowDecoration.Parent = this.btnEdit;
             this.btnEdit.Size = new System.Drawing.Size(180, 45);
-            this.btnEdit.TabIndex = 4;
+            this.btnEdit.TabIndex = 7;
             this.btnEdit.Text = "Modifier";
             // 
             // btnDelete
@@ -241,7 +243,7 @@
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.ShadowDecoration.Parent = this.btnDelete;
             this.btnDelete.Size = new System.Drawing.Size(180, 45);
-            this.btnDelete.TabIndex = 4;
+            this.btnDelete.TabIndex = 8;
             this.btnDelete.Text = "Supprimer";
             // 
             // btnClear
@@ -258,35 +260,35 @@
             this.btnClear.Name = "btnClear";
             this.btnClear.ShadowDecoration.Parent = this.btnClear;
             this.btnClear.Size = new System.Drawing.Size(180, 45);
-            this.btnClear.TabIndex = 4;
+            this.btnClear.TabIndex = 9;
             this.btnClear.Text = "Vider";
             // 
             // dgvFilm
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgvFilm.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.dgvFilm.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.dgvFilm.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvFilm.BackgroundColor = System.Drawing.Color.White;
             this.dgvFilm.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvFilm.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvFilm.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvFilm.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvFilm.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dgvFilm.ColumnHeadersHeight = 21;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvFilm.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvFilm.DefaultCellStyle = dataGridViewCellStyle9;
             this.dgvFilm.EnableHeadersVisualStyles = false;
             this.dgvFilm.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvFilm.Location = new System.Drawing.Point(28, 261);
@@ -343,8 +345,12 @@
             this.dtpDate.Name = "dtpDate";
             this.dtpDate.ShadowDecoration.Parent = this.dtpDate;
             this.dtpDate.Size = new System.Drawing.Size(364, 36);
-            this.dtpDate.TabIndex = 6;
+            this.dtpDate.TabIndex = 4;
             this.dtpDate.Value = new System.DateTime(2023, 12, 4, 15, 13, 22, 139);
+            // 
+            // errorProvider2
+            // 
+            this.errorProvider2.ContainerControl = this;
             // 
             // fmFilm
             // 
@@ -372,6 +378,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvFilm)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.filmBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cenimaDatabaseDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -397,5 +404,6 @@
         private System.Windows.Forms.BindingSource filmBindingSource;
         private cenimaDatabaseDataSetTableAdapters.filmTableAdapter filmTableAdapter;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtpDate;
+        private System.Windows.Forms.ErrorProvider errorProvider2;
     }
 }

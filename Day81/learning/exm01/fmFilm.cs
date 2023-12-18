@@ -28,18 +28,12 @@ namespace exm01
             dataTableFilm = dataSet.Tables[dsFilm];
             dgvFilm.DataSource = dataTableFilm;
             dgvFilm.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-
             helperClass.comboFiller(cbxfilm, dataTableRealisator, "realisator_Name", "id_realisator");
-
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            string id = txbId.Text;
-            string title = txbTitle.Text;
-            string length = txbLength.Text;
-            string releasedDate = dtpDate.Text;
-            string comboFilm = cbxfilm.Text;
+            helperClass.addButton(txbId, txbTitle,txbLength,dtpDate, cbxfilm, dataTableFilm, dgvFilm, errorProvider2);
         }
 
         private void txbId_TextChanged(object sender, EventArgs e)

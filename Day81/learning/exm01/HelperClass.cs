@@ -1,4 +1,5 @@
 ﻿using Guna.UI2.WinForms;
+using Microsoft.VisualBasic;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -31,7 +32,30 @@ namespace exm01
                 txbName.Text = "";
             }
         }
-        public virtual void clearButton(Guna2TextBox txbID, Guna2TextBox txbName, DataTable dataTable, Guna2DataGridView dataGridView)
+        public void addButton(Guna2TextBox txbID, Guna2TextBox txbTitle, Guna2TextBox txbLength,Guna2DateTimePicker dtpDate, Guna2ComboBox cmbFilm, DataTable dataTable, Guna2DataGridView dataGridView, ErrorProvider errorProvider)
+        {
+            // Check if the value we want to add is already in the table
+            bool hasDuplicate = checkDuplicatevalues(txbID, txbTitle, dataTable, "title_film", "realisator_name");
+            // add values to the table
+            bool isNotEmpty = isNotEmptyControl(txbID, txbTitle, txbLength, errorProvider);
+            if (!hasDuplicate && isNotEmpty)
+            {
+                DataRow newRow = dataTable.NewRow();
+                newRow["id_film"] = int.Parse(txbID.Text);
+                newRow["title_film"] = txbTitle.Text;
+                newRow["length_film"] = txbLength.Text;
+                newRow["released_date"] = dtpDate.Text;
+                newRow["realisator_name"] = cmbFilm.Text;
+                dataTable.Rows.Add(newRow);
+                dataGridView.DataSource = dataTable;
+                txbID.Text = "";
+                txbTitle.Text = "";
+                txbLength.Text = "";
+                dtpDate.ResetText();
+                cmbFilm.ResetText();
+            }
+        }
+        public void clearButton(Guna2TextBox txbID, Guna2TextBox txbName, DataTable dataTable, Guna2DataGridView dataGridView)
         {
             dataTable.Clear();
             dataGridView.DataSource = dataTable;
@@ -86,12 +110,28 @@ namespace exm01
             }
             return hasDuplicate;
         }
+        
         private bool checkDuplicatevalues(Guna2TextBox txbID, Guna2TextBox txbName, DataTable dataTable, string column1, string column2)
         {
             bool hasDuplicate = false;
             foreach (DataRow row in dataTable.Rows)
             {
-                if (row["id_realisator"].ToString() == txbID.Text.ToString() || row["realisator_name"].ToString() == txbName.Text)
+                if (row[column1].ToString() == txbID.Text.ToString() || row[column2].ToString() == txbName.Text)
+                {
+                    MessageBox.Show("Value already exits", "Dublicate", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    hasDuplicate = true;
+                }
+            }
+            return hasDuplicate;
+        }
+        private bool checkDuplicatevalues(Guna2TextBox val1, Guna2ComboBox val2, DataTable dataTable, string column1, string colimn2)
+        {
+            bool hasDuplicate = false;
+            string title = val1.Text;
+            string realisator = val2.Text;
+            foreach (DataRow row in dataTable.Rows)
+            {
+                if (row[column1].ToString() == title && row[colimn2].ToString() == realisator)
                 {
                     MessageBox.Show("Value already exits", "Dublicate", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     hasDuplicate = true;
@@ -117,6 +157,30 @@ namespace exm01
             else errorProvider.SetError(name, "");
             return isNotEmpty;
         }
+        private bool isNotEmptyControl(Guna2TextBox val1, Guna2TextBox val2, Guna2TextBox val3,  ErrorProvider errorProvider)
+        {
+            bool isNotEmpty = true;
+            string errorMessage = "can't be empty";
+            if (string.IsNullOrEmpty(val1.Text.Trim().ToString()))
+            {
+                isNotEmpty = false;
+                errorProvider.SetError(val1, errorMessage);
+            }
+            else errorProvider.SetError(val1, "");
+            if (string.IsNullOrEmpty(val2.Text.Trim()))
+            {
+                isNotEmpty = false;
+                errorProvider.SetError(val2, errorMessage);
+            }
+            else errorProvider.SetError(val2, "");
+            if (string.IsNullOrEmpty(val3.Text.Trim()))
+            {
+                isNotEmpty = false;
+                errorProvider.SetError(val3, errorMessage);
+            }
+            else errorProvider.SetError(val3, "");
+            return isNotEmpty;
+        }
         public void allowIntOnly(KeyPressEventArgs e)
         {
             if(!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
@@ -125,8 +189,7 @@ namespace exm01
             }
         }
         public void comboFiller(Guna2ComboBox comboBox,DataTable dataTable, string columnToShow, string columnToHide)
-        {
-            
+        {            
             comboBox.DataSource = dataTable;
             comboBox.DisplayMember = columnToShow;
             comboBox.ValueMember = columnToHide;
