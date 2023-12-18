@@ -46,21 +46,21 @@ namespace exm01
                 newRow["released_date"] = dtpDate.Text;
                 newRow["realisator_name"] = cmbFilm.Text;
                 dataTable.Rows.Add(newRow);
-                dataGridView.DataSource = dataTable;
                 resetControls(txbID, txbTitle, txbLength, dtpDate, cmbFilm);
+                dataGridView.DataSource = dataTable;
             }
         }
         public void clearButton(Guna2TextBox txbID, Guna2TextBox txbName, DataTable dataTable, Guna2DataGridView dataGridView)
         {
             dataTable.Clear();
-            dataGridView.DataSource = dataTable;
             resetControls(txbID, txbName);
+            dataGridView.DataSource = dataTable;
         }
         public void clearButton(Guna2TextBox txbID, Guna2TextBox txbTitle, Guna2TextBox txbLength, Guna2DateTimePicker dtpDate, Guna2ComboBox cmbFilm, DataTable dataTable, Guna2DataGridView dataGridView)
         {
             dataTable.Clear();
-            dataGridView.DataSource = dataTable;
             resetControls(txbID, txbTitle, txbLength, dtpDate, cmbFilm);
+            dataGridView.DataSource = dataTable;
         }
         // put items from the datagridview into the controls in order to modify them
         public void dataGridViewCellClick(object sender, DataGridViewCellEventArgs e, Guna2TextBox txbID, Guna2TextBox txbName, Guna2DataGridView dataGridView)
@@ -119,10 +119,23 @@ namespace exm01
         {
             if (dataGridView.SelectedRows.Count > 0)
             {
+                int selectedIndex = dataGridView.SelectedRows[0].Index;
                 dataGridView.Rows.Remove(dataGridView.SelectedRows[0]);
+                dataTable.Rows.RemoveAt(selectedIndex);
                 dataGridView.DataSource = dataTable;
                 txbID.Text = "";
                 txbName.Text = "";
+            }
+        }
+        public void deleteButton(Guna2TextBox txbID, Guna2TextBox txbName, Guna2TextBox txbLength, Guna2DateTimePicker datePicker,Guna2ComboBox combo, Guna2DataGridView dataGridView, DataTable dataTable)
+        {
+            if (dataGridView.SelectedRows.Count > 0)
+            {
+                int selectedIndex = dataGridView.SelectedRows[0].Index;
+                dataGridView.Rows.Remove(dataGridView.SelectedRows[0]);
+                dataTable.Rows.RemoveAt(selectedIndex);
+                resetControls(txbID, txbName, txbLength, datePicker, combo);
+                dataGridView.DataSource = dataTable;
             }
         }
         // check duplicate values
@@ -146,7 +159,7 @@ namespace exm01
             bool hasDuplicate = false;
             foreach (DataRow row in dataTable.Rows)
             {
-                if (row[column1].ToString() == txbID.Text.ToString() && row[column2].ToString() == txbName.Text && row[column3].ToString().Trim() == comboBox.Text)
+                if (row[column1].ToString().Trim() == txbID.Text.ToString() && row[column2].ToString() == txbName.Text && row[column3].ToString().Trim() == comboBox.Text)
                 {
                     MessageBox.Show("Value already exits", "Dublicate", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     hasDuplicate = true;

@@ -29,11 +29,6 @@ namespace exm01
         private void fmRealisator_Load(object sender, EventArgs e)
         {
             dataSet = DatabaseConnection.Instance.dataSet;
-            //dbConnection = DatabaseConnection.Instance;
-            //connection = dbConnection.GetConnection();
-            //sqlCommand = dbConnection.CreateCommand("SELECT * FROM realisator");
-            //dataSet = dbConnection.fillAdapterToDataSet(sqlCommand, "dsRealisator");
-            realisatorTable = dataSet.Tables["dsRealisator"];
             dgvRealisator.DataSource = realisatorTable;
             dgvRealisator.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             

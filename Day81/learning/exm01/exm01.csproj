@@ -62,6 +62,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>cenimaDatabaseDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ColumnNames.cs" />
     <Compile Include="HelperClass.cs" />
     <Compile Include="DatabaseConnection.cs" />
     <Compile Include="fmFilm.cs">

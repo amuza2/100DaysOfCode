@@ -63,7 +63,7 @@ namespace exm01
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-
+            helperClass.deleteButton(txbId, txbTitle, txbLength, dtpDate, cbxfilm, dgvFilm, dataTableFilm);
         }
     }
 }
