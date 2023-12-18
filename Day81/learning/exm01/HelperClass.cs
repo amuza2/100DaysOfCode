@@ -28,14 +28,13 @@ namespace exm01
                 newRow["realisator_name"] = txbName.Text;
                 dataTable.Rows.Add(newRow);
                 dataGridView.DataSource = dataTable;
-                txbID.Text = "";
-                txbName.Text = "";
+                resetControls(txbID, txbName);
             }
         }
         public void addButton(Guna2TextBox txbID, Guna2TextBox txbTitle, Guna2TextBox txbLength,Guna2DateTimePicker dtpDate, Guna2ComboBox cmbFilm, DataTable dataTable, Guna2DataGridView dataGridView, ErrorProvider errorProvider)
         {
             // Check if the value we want to add is already in the table
-            bool hasDuplicate = checkDuplicatevalues(txbID, txbTitle, dataTable, "title_film", "realisator_name");
+            bool hasDuplicate = checkDuplicatevalues(txbID, txbTitle,cmbFilm, dataTable,"id_film", "title_film", "realisator_name");
             // add values to the table
             bool isNotEmpty = isNotEmptyControl(txbID, txbTitle, txbLength, errorProvider);
             if (!hasDuplicate && isNotEmpty)
@@ -48,21 +47,23 @@ namespace exm01
                 newRow["realisator_name"] = cmbFilm.Text;
                 dataTable.Rows.Add(newRow);
                 dataGridView.DataSource = dataTable;
-                txbID.Text = "";
-                txbTitle.Text = "";
-                txbLength.Text = "";
-                dtpDate.ResetText();
-                cmbFilm.ResetText();
+                resetControls(txbID, txbTitle, txbLength, dtpDate, cmbFilm);
             }
         }
         public void clearButton(Guna2TextBox txbID, Guna2TextBox txbName, DataTable dataTable, Guna2DataGridView dataGridView)
         {
             dataTable.Clear();
             dataGridView.DataSource = dataTable;
-            txbID.Text = "";
-            txbName.Text = "";
+            resetControls(txbID, txbName);
         }
-        public virtual void dataGridViewCellClick(object sender, DataGridViewCellEventArgs e, Guna2TextBox txbID, Guna2TextBox txbName, Guna2DataGridView dataGridView)
+        public void clearButton(Guna2TextBox txbID, Guna2TextBox txbTitle, Guna2TextBox txbLength, Guna2DateTimePicker dtpDate, Guna2ComboBox cmbFilm, DataTable dataTable, Guna2DataGridView dataGridView)
+        {
+            dataTable.Clear();
+            dataGridView.DataSource = dataTable;
+            resetControls(txbID, txbTitle, txbLength, dtpDate, cmbFilm);
+        }
+        // put items from the datagridview into the controls in order to modify them
+        public void dataGridViewCellClick(object sender, DataGridViewCellEventArgs e, Guna2TextBox txbID, Guna2TextBox txbName, Guna2DataGridView dataGridView)
         {
             if (e.RowIndex >= 0) // Check if a row is selected
             {
@@ -71,7 +72,19 @@ namespace exm01
                 txbName.Text = selectedRow.Cells["realisator_name"].Value.ToString().Trim();
             }
         }
-        public virtual void editButton(Guna2TextBox txbID, Guna2TextBox txbName, DataTable dataTable, Guna2DataGridView dataGridView, string column1, string column2)
+        public void dataGridViewCellClick(object sender, DataGridViewCellEventArgs e, Guna2TextBox txbID, Guna2TextBox txbTitle, Guna2TextBox txbLength, Guna2DateTimePicker dtpDate, Guna2ComboBox cmbFilm, Guna2DataGridView dataGridView)
+        {
+            if (e.RowIndex >= 0) // Check if a row is selected
+            {
+                DataGridViewRow selectedRow = dataGridView.Rows[e.RowIndex];
+                txbID.Text = selectedRow.Cells["id_film"].Value.ToString().Trim();
+                txbTitle.Text = selectedRow.Cells["title_film"].Value.ToString().Trim();
+                txbLength.Text = selectedRow.Cells["length_film"].Value.ToString().Trim();
+                dtpDate.Text = selectedRow.Cells["released_date"].Value.ToString().Trim();
+                cmbFilm.Text = selectedRow.Cells["realisator_name"].Value.ToString().Trim();
+            }
+        }
+        public void editButton(Guna2TextBox txbID, Guna2TextBox txbName, DataTable dataTable, Guna2DataGridView dataGridView, string column1, string column2)
         {
             bool hasDuplicate = checkDuplicatevalues(txbName, dataTable, "realisator_name");
             if (!hasDuplicate)
@@ -85,7 +98,24 @@ namespace exm01
                 }
             }
         }
-        public virtual void deleteButton(Guna2TextBox txbID, Guna2TextBox txbName, Guna2DataGridView dataGridView, DataTable dataTable)
+        public void editButton(Guna2TextBox txbID, Guna2TextBox txbTitle, Guna2TextBox txbLength, Guna2DateTimePicker dtpDate, Guna2ComboBox cmbFilm, DataTable dataTable, Guna2DataGridView dataGridView, string column1, string column2, string column3, string column4, string column5)
+        {
+            bool hasDuplicate = checkDuplicatevalues(txbID,txbTitle, cmbFilm, dataTable, "id_film", "title_film" ,"realisator_name");
+            if (!hasDuplicate)
+            {
+                if (dataGridView.SelectedRows.Count > 0)
+                {
+                    DataGridViewRow selectedRow = dataGridView.SelectedRows[0];
+                    selectedRow.Cells[column1].Value = txbID.Text;
+                    selectedRow.Cells[column2].Value = txbTitle.Text;
+                    selectedRow.Cells[column3].Value = txbLength.Text;
+                    selectedRow.Cells[column4].Value = dtpDate.Text;
+                    selectedRow.Cells[column5].Value = cmbFilm.Text;
+                    dataGridView.DataSource = dataTable; // update datatable
+                }
+            }
+        }
+        public void deleteButton(Guna2TextBox txbID, Guna2TextBox txbName, Guna2DataGridView dataGridView, DataTable dataTable)
         {
             if (dataGridView.SelectedRows.Count > 0)
             {
@@ -111,12 +141,12 @@ namespace exm01
             return hasDuplicate;
         }
         
-        private bool checkDuplicatevalues(Guna2TextBox txbID, Guna2TextBox txbName, DataTable dataTable, string column1, string column2)
+        private bool checkDuplicatevalues(Guna2TextBox txbID, Guna2TextBox txbName,Guna2ComboBox comboBox, DataTable dataTable, string column1, string column2, string column3)
         {
             bool hasDuplicate = false;
             foreach (DataRow row in dataTable.Rows)
             {
-                if (row[column1].ToString() == txbID.Text.ToString() || row[column2].ToString() == txbName.Text)
+                if (row[column1].ToString() == txbID.Text.ToString() && row[column2].ToString() == txbName.Text && row[column3].ToString().Trim() == comboBox.Text)
                 {
                     MessageBox.Show("Value already exits", "Dublicate", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     hasDuplicate = true;
@@ -124,14 +154,14 @@ namespace exm01
             }
             return hasDuplicate;
         }
-        private bool checkDuplicatevalues(Guna2TextBox val1, Guna2ComboBox val2, DataTable dataTable, string column1, string colimn2)
+        private bool checkDuplicatevalues(Guna2TextBox val1, Guna2TextBox val2, DataTable dataTable, string column1, string colimn2)
         {
             bool hasDuplicate = false;
-            string title = val1.Text;
-            string realisator = val2.Text;
+            string title = val1.Text.Trim();
+            string realisator = val2.Text.Trim();
             foreach (DataRow row in dataTable.Rows)
             {
-                if (row[column1].ToString() == title && row[colimn2].ToString() == realisator)
+                if (row[column1].ToString().Trim() == title && row[colimn2].ToString().Trim() == realisator)
                 {
                     MessageBox.Show("Value already exits", "Dublicate", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     hasDuplicate = true;
@@ -193,6 +223,19 @@ namespace exm01
             comboBox.DataSource = dataTable;
             comboBox.DisplayMember = columnToShow;
             comboBox.ValueMember = columnToHide;
+        }
+        private void resetControls(Guna2TextBox txbID, Guna2TextBox txbTitle, Guna2TextBox txbLength, Guna2DateTimePicker dtpDate, Guna2ComboBox cmbFilm)
+        {
+            txbID.Text = "";
+            txbTitle.Text = "";
+            txbLength.Text = "";
+            dtpDate.ResetText();
+            cmbFilm.ResetText();
+        }
+        private void resetControls(Guna2TextBox txbID, Guna2TextBox txbName)
+        {
+            txbID.Text = "";
+            txbName.Text = "";
         }
 
 

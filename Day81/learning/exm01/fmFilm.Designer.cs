@@ -228,6 +228,7 @@
             this.btnEdit.Size = new System.Drawing.Size(180, 45);
             this.btnEdit.TabIndex = 7;
             this.btnEdit.Text = "Modifier";
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnDelete
             // 
@@ -245,6 +246,7 @@
             this.btnDelete.Size = new System.Drawing.Size(180, 45);
             this.btnDelete.TabIndex = 8;
             this.btnDelete.Text = "Supprimer";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnClear
             // 
@@ -262,6 +264,7 @@
             this.btnClear.Size = new System.Drawing.Size(180, 45);
             this.btnClear.TabIndex = 9;
             this.btnClear.Text = "Vider";
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // dgvFilm
             // 
@@ -319,6 +322,7 @@
             this.dgvFilm.ThemeStyle.RowsStyle.Height = 22;
             this.dgvFilm.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvFilm.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgvFilm.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView_CellClick);
             // 
             // filmBindingSource
             // 

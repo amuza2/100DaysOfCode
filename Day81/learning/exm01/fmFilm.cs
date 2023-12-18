@@ -38,30 +38,32 @@ namespace exm01
 
         private void txbId_TextChanged(object sender, EventArgs e)
         {
-            //SqlDataAdapter da = new SqlDataAdapter("SELECT DISTINCT Film.id_film, Film.titre_film, Film.duree_film, Film.dataSortie_film, realisateur.Nom_realisateur as Nom_realisateur FROM Film INNER JOIN realisateur ON Film.Id_realisateur = realisateur.Id_realisateur", cc.cnx);
-            //cc.connecter();
-            //rToolStripMenuItem.ShortcutKeys = Keys.Control | Keys.Q;
-            //SqlDataAdapter da = new SqlDataAdapter("SELECT DISTINCT Film.id_film, Film.titre_film, Film.duree_film, Film.dataSortie_film, realisateur.Nom_realisateur as Nom_realisateur FROM Film INNER JOIN realisateur ON Film.Id_realisateur = realisateur.Id_realisateur", cc.cnx);
-            //da.Fill(cc.ds, "Film");
-            //dataGridView1.DataSource = cc.ds.Tables["Film"];
-            //cc.FillComboSearchCode(comboBox1);
-
-
-            //comboBox1.DataSource = cc.ds.Tables["realisateur"];
-            //comboBox1.DisplayMember = "Nom_realisateur";
-            //comboBox1.ValueMember = "Id_realisateur";
-
-
-            //if (cc.ds.Tables.Count > 1)
-            //{
-            //    MessageBox.Show(cc.ds.Tables.Count.ToString());
-            //}
-            //cc.deconnecter();
+            
         }
 
         private void txbId_KeyPress(object sender, KeyPressEventArgs e)
         {
             helperClass.allowIntOnly(e);
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            helperClass.clearButton(txbId, txbTitle, txbLength, dtpDate, cbxfilm, dataTableFilm, dgvFilm);
+        }
+
+        private void DataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            helperClass.dataGridViewCellClick(sender, e, txbId, txbTitle, txbLength, dtpDate, cbxfilm, dgvFilm);
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            helperClass.editButton(txbId, txbTitle, txbLength, dtpDate, cbxfilm, dataTableFilm, dgvFilm, "id_film", "title_film", "length_film", "released_date", "realisator_name");
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
