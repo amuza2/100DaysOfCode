@@ -16,7 +16,7 @@ namespace exm01
         private DatabaseConnection dbConnection;
         private SqlConnection connection;
         SqlDataAdapter adapter;
-        private DataSet mainDataSet = new DataSet();
+        private DataSet mainDataSet;
         public Form1()
         {
             InitializeComponent();
@@ -26,10 +26,10 @@ namespace exm01
         {
             dbConnection = DatabaseConnection.Instance;
             connection = dbConnection.GetConnection();
-            SqlCommand sqlCommandRealisator = dbConnection.CreateCommand("SELECT * FROM realisator");
-            SqlCommand sqlCommandFilm = dbConnection.CreateCommand("SELECT id_film, title_film, length_film, released_date, realisator.realisator_name FROM film \r\nINNER JOIN realisator ON film.id_realisator = realisator.id_realisator");
-            mainDataSet = dbConnection.fillAdapterToDataSet(sqlCommandRealisator, "dsRealisator");
-            mainDataSet = dbConnection.fillAdapterToDataSet(sqlCommandFilm, "dsFilm");
+            SqlCommand sqlCommandRealisator = dbConnection.CreateCommand(ColumnNames.SQLrealisator);
+            SqlCommand sqlCommandFilm = dbConnection.CreateCommand(ColumnNames.SQLfilm);
+            mainDataSet = dbConnection.fillAdapterToDataSet(sqlCommandRealisator, ColumnNames.dsRealisator);
+            mainDataSet = dbConnection.fillAdapterToDataSet(sqlCommandFilm, ColumnNames.dsFilm);
             dbConnection.Disconnecting();
         }
 

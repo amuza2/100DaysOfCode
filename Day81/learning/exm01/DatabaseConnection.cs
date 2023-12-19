@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.Common;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -26,10 +27,11 @@ namespace exm01
         {
             get
             {
-                if(_instance == null) _instance = new DatabaseConnection();
+                if (_instance == null) _instance = new DatabaseConnection();
                 return _instance;
             }
         }
+        public string CheckConnection() => _connection.State.ToString();
         public SqlConnection GetConnection()
         {
             if (_connection.State == ConnectionState.Closed) _connection.Open();

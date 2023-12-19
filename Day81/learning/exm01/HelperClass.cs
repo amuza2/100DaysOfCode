@@ -18,14 +18,14 @@ namespace exm01
         public void addButton(Guna2TextBox txbID, Guna2TextBox txbName, DataTable dataTable, Guna2DataGridView dataGridView, ErrorProvider errorProvider)
         {
             // Check if the value we want to add is already in the table
-            bool hasDuplicate = checkDuplicatevalues(txbID, txbName, dataTable, "id_realisator", "realisator_name");
+            bool hasDuplicate = checkDuplicatevalues(txbID, txbName, dataTable, ColumnNames.idRealisatorCol, ColumnNames.realisatorNameCol);
             // add values to the table
             bool isNotEmpty = isNotEmptyControl(txbID, txbName, errorProvider);
             if (!hasDuplicate && isNotEmpty)
             {
                 DataRow newRow = dataTable.NewRow();
-                newRow["id_realisator"] = int.Parse(txbID.Text);
-                newRow["realisator_name"] = txbName.Text;
+                newRow[ColumnNames.idRealisatorCol] = int.Parse(txbID.Text);
+                newRow[ColumnNames.realisatorNameCol] = txbName.Text;
                 dataTable.Rows.Add(newRow);
                 dataGridView.DataSource = dataTable;
                 resetControls(txbID, txbName);
@@ -34,17 +34,17 @@ namespace exm01
         public void addButton(Guna2TextBox txbID, Guna2TextBox txbTitle, Guna2TextBox txbLength,Guna2DateTimePicker dtpDate, Guna2ComboBox cmbFilm, DataTable dataTable, Guna2DataGridView dataGridView, ErrorProvider errorProvider)
         {
             // Check if the value we want to add is already in the table
-            bool hasDuplicate = checkDuplicatevalues(txbID, txbTitle,cmbFilm, dataTable,"id_film", "title_film", "realisator_name");
+            bool hasDuplicate = checkDuplicatevalues(txbID, txbTitle,cmbFilm, dataTable, ColumnNames.idFilmCol, ColumnNames.titleFilmCol, ColumnNames.realisatorNameCol);
             // add values to the table
             bool isNotEmpty = isNotEmptyControl(txbID, txbTitle, txbLength, errorProvider);
             if (!hasDuplicate && isNotEmpty)
             {
                 DataRow newRow = dataTable.NewRow();
-                newRow["id_film"] = int.Parse(txbID.Text);
-                newRow["title_film"] = txbTitle.Text;
-                newRow["length_film"] = txbLength.Text;
-                newRow["released_date"] = dtpDate.Text;
-                newRow["realisator_name"] = cmbFilm.Text;
+                newRow[ColumnNames.idFilmCol] = int.Parse(txbID.Text);
+                newRow[ColumnNames.titleFilmCol] = txbTitle.Text;
+                newRow[ColumnNames.lengthFilmCol] = txbLength.Text;
+                newRow[ColumnNames.releasedDateCol] = dtpDate.Text;
+                newRow[ColumnNames.realisatorNameCol] = cmbFilm.Text;
                 dataTable.Rows.Add(newRow);
                 resetControls(txbID, txbTitle, txbLength, dtpDate, cmbFilm);
                 dataGridView.DataSource = dataTable;
@@ -68,8 +68,8 @@ namespace exm01
             if (e.RowIndex >= 0) // Check if a row is selected
             {
                 DataGridViewRow selectedRow = dataGridView.Rows[e.RowIndex];
-                txbID.Text = selectedRow.Cells["id_realisator"].Value.ToString().Trim();
-                txbName.Text = selectedRow.Cells["realisator_name"].Value.ToString().Trim();
+                txbID.Text = selectedRow.Cells[ColumnNames.idRealisatorCol].Value.ToString().Trim();
+                txbName.Text = selectedRow.Cells[ColumnNames.realisatorNameCol].Value.ToString().Trim();
             }
         }
         public void dataGridViewCellClick(object sender, DataGridViewCellEventArgs e, Guna2TextBox txbID, Guna2TextBox txbTitle, Guna2TextBox txbLength, Guna2DateTimePicker dtpDate, Guna2ComboBox cmbFilm, Guna2DataGridView dataGridView)
@@ -77,16 +77,16 @@ namespace exm01
             if (e.RowIndex >= 0) // Check if a row is selected
             {
                 DataGridViewRow selectedRow = dataGridView.Rows[e.RowIndex];
-                txbID.Text = selectedRow.Cells["id_film"].Value.ToString().Trim();
-                txbTitle.Text = selectedRow.Cells["title_film"].Value.ToString().Trim();
-                txbLength.Text = selectedRow.Cells["length_film"].Value.ToString().Trim();
-                dtpDate.Text = selectedRow.Cells["released_date"].Value.ToString().Trim();
-                cmbFilm.Text = selectedRow.Cells["realisator_name"].Value.ToString().Trim();
+                txbID.Text = selectedRow.Cells[ColumnNames.idFilmCol].Value.ToString().Trim();
+                txbTitle.Text = selectedRow.Cells[ColumnNames.titleFilmCol].Value.ToString().Trim();
+                txbLength.Text = selectedRow.Cells[ColumnNames.lengthFilmCol].Value.ToString().Trim();
+                dtpDate.Text = selectedRow.Cells[ColumnNames.releasedDateCol].Value.ToString().Trim();
+                cmbFilm.Text = selectedRow.Cells[ColumnNames.realisatorNameCol].Value.ToString().Trim();
             }
         }
         public void editButton(Guna2TextBox txbID, Guna2TextBox txbName, DataTable dataTable, Guna2DataGridView dataGridView, string column1, string column2)
         {
-            bool hasDuplicate = checkDuplicatevalues(txbName, dataTable, "realisator_name");
+            bool hasDuplicate = checkDuplicatevalues(txbName, dataTable, ColumnNames.realisatorNameCol);
             if (!hasDuplicate)
             {
                 if (dataGridView.SelectedRows.Count > 0)
@@ -100,7 +100,7 @@ namespace exm01
         }
         public void editButton(Guna2TextBox txbID, Guna2TextBox txbTitle, Guna2TextBox txbLength, Guna2DateTimePicker dtpDate, Guna2ComboBox cmbFilm, DataTable dataTable, Guna2DataGridView dataGridView, string column1, string column2, string column3, string column4, string column5)
         {
-            bool hasDuplicate = checkDuplicatevalues(txbID,txbTitle, cmbFilm, dataTable, "id_film", "title_film" ,"realisator_name");
+            bool hasDuplicate = checkDuplicatevalues(txbID,txbTitle, cmbFilm, dataTable, ColumnNames.idFilmCol, ColumnNames.titleFilmCol, ColumnNames.realisatorNameCol);
             if (!hasDuplicate)
             {
                 if (dataGridView.SelectedRows.Count > 0)
@@ -123,8 +123,7 @@ namespace exm01
                 dataGridView.Rows.Remove(dataGridView.SelectedRows[0]);
                 dataTable.Rows.RemoveAt(selectedIndex);
                 dataGridView.DataSource = dataTable;
-                txbID.Text = "";
-                txbName.Text = "";
+                resetControls(txbID, txbName);
             }
         }
         public void deleteButton(Guna2TextBox txbID, Guna2TextBox txbName, Guna2TextBox txbLength, Guna2DateTimePicker datePicker,Guna2ComboBox combo, Guna2DataGridView dataGridView, DataTable dataTable)

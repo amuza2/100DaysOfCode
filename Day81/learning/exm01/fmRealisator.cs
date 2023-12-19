@@ -20,18 +20,16 @@ namespace exm01
         {
             InitializeComponent();
         }
-        private DatabaseConnection dbConnection;
-        private SqlConnection connection;
-        private DataSet dataSet = new DataSet();
+        private DataSet dataSet;
         private DataTable realisatorTable;
         HelperClass helperClass = new HelperClass();
 
         private void fmRealisator_Load(object sender, EventArgs e)
         {
             dataSet = DatabaseConnection.Instance.dataSet;
+            realisatorTable = dataSet.Tables[ColumnNames.dsRealisator];
             dgvRealisator.DataSource = realisatorTable;
             dgvRealisator.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            
         }
 
         private void fmRealisator_Load_1(object sender, EventArgs e)
@@ -60,7 +58,7 @@ namespace exm01
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            helperClass.editButton(txbId, txbName, realisatorTable, dgvRealisator, "id_realisator", "realisator_name");
+            helperClass.editButton(txbId, txbName, realisatorTable, dgvRealisator, ColumnNames.idRealisatorCol, ColumnNames.realisatorNameCol);
         }
 
         private void btnDelete_Click(object sender, EventArgs e)

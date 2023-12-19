@@ -8,14 +8,10 @@ namespace exm01
 {
     public partial class fmFilm : Form
     {
-        private DatabaseConnection dbConnection;
-        private SqlConnection connection = new SqlConnection();
         private DataSet dataSet;
         private DataTable dataTableFilm;
         private DataTable dataTableRealisator;
         HelperClass helperClass = new HelperClass();
-        string dsRealisator = "dsRealisator";
-        string dsFilm = "dsFilm";
         public fmFilm()
         {
             InitializeComponent();
@@ -24,11 +20,11 @@ namespace exm01
         private void fmFilm_Load_1(object sender, EventArgs e)
         {
             dataSet = DatabaseConnection.Instance.dataSet;
-            dataTableRealisator = dataSet.Tables[dsRealisator];
-            dataTableFilm = dataSet.Tables[dsFilm];
+            dataTableRealisator = dataSet.Tables[ColumnNames.dsRealisator];
+            dataTableFilm = dataSet.Tables[ColumnNames.dsFilm];
             dgvFilm.DataSource = dataTableFilm;
             dgvFilm.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            helperClass.comboFiller(cbxfilm, dataTableRealisator, "realisator_Name", "id_realisator");
+            helperClass.comboFiller(cbxfilm, dataTableRealisator, ColumnNames.realisatorNameCol, ColumnNames.idRealisatorCol);
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -58,7 +54,7 @@ namespace exm01
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            helperClass.editButton(txbId, txbTitle, txbLength, dtpDate, cbxfilm, dataTableFilm, dgvFilm, "id_film", "title_film", "length_film", "released_date", "realisator_name");
+            helperClass.editButton(txbId, txbTitle, txbLength, dtpDate, cbxfilm, dataTableFilm, dgvFilm, ColumnNames.idFilmCol, ColumnNames.titleFilmCol, ColumnNames.lengthFilmCol, ColumnNames.releasedDateCol, ColumnNames.realisatorNameCol);
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
