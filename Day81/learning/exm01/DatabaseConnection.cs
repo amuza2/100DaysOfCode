@@ -16,12 +16,10 @@ namespace exm01
         private static DatabaseConnection _instance;
         private SqlConnection _connection;
         public DataSet dataSet = new DataSet();
-        public static string ConnectionString { get; set; }
 
         private DatabaseConnection()
         {
-            //connectionString = "Data Source=med;Initial Catalog=cenimaDatabase;Integrated Security=True";
-            _connection = new SqlConnection(ConnectionString);
+            _connection = new SqlConnection();
         }
 
         public static DatabaseConnection Instance
@@ -33,8 +31,9 @@ namespace exm01
             }
         }
         public string CheckConnection() => _connection.State.ToString();
-        public SqlConnection GetConnection()
+        public SqlConnection GetConnection(string connectionString = "")
         {
+            if(!string.IsNullOrEmpty(connectionString)) _connection.ConnectionString = connectionString;
             if (_connection.State == ConnectionState.Closed) _connection.Open();
             return _connection;
         }

@@ -24,9 +24,9 @@ namespace exm01
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            dbConnection = DatabaseConnection.ConnectionString = "Data Source=med;Initial Catalog=cenimaDatabase;Integrated Security=True";
+            string connectionString = "Data Source=med;Initial Catalog=cenimaDatabase;Integrated Security=True";
             dbConnection = DatabaseConnection.Instance;
-            connection = dbConnection.GetConnection();
+            connection = dbConnection.GetConnection(connectionString);
             SqlCommand sqlCommandRealisator = dbConnection.CreateCommand(ColumnNames.SQLrealisator);
             SqlCommand sqlCommandFilm = dbConnection.CreateCommand(ColumnNames.SQLfilm);
             mainDataSet = dbConnection.fillAdapterToDataSet(sqlCommandRealisator, ColumnNames.dsRealisator);
