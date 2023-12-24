@@ -16,11 +16,12 @@ namespace exm01
         private static DatabaseConnection _instance;
         private SqlConnection _connection;
         public DataSet dataSet = new DataSet();
+        public static string ConnectionString { get; set; }
 
         private DatabaseConnection()
         {
-            string connectionString = "Data Source=med;Initial Catalog=cenimaDatabase;Integrated Security=True";
-            _connection = new SqlConnection(connectionString);
+            //connectionString = "Data Source=med;Initial Catalog=cenimaDatabase;Integrated Security=True";
+            _connection = new SqlConnection(ConnectionString);
         }
 
         public static DatabaseConnection Instance

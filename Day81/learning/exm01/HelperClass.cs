@@ -158,7 +158,7 @@ namespace exm01
             bool hasDuplicate = false;
             foreach (DataRow row in dataTable.Rows)
             {
-                if (row[column1].ToString().Trim() == txbID.Text.ToString() && row[column2].ToString() == txbName.Text && row[column3].ToString().Trim() == comboBox.Text)
+                if (row[column1].ToString().Trim() == txbID.Text.ToString().Trim() && row[column2].ToString() == txbName.Text && row[column3].ToString().Trim() == comboBox.Text)
                 {
                     MessageBox.Show("Value already exits", "Dublicate", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     hasDuplicate = true;

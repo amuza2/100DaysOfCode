@@ -15,7 +15,7 @@ namespace exm01
         public static string realisatorNameCol => "realisator_name";
         // film table
         public static string film = "film";
-        // film table columns
+        // film table columnss
         public static string idFilmCol => "id_film";
         public static string titleFilmCol => "title_film";
         public static string lengthFilmCol => "length_film";
