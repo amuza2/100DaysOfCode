@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "app1", "app1.csproj", "{F832756C-423A-494E-8C9E-DC2319AAED66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "databaseManager", "..\databaseManager\databaseManager.csproj", "{7023A23E-8377-44BB-8673-01890ECDA1C7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F832756C-423A-494E-8C9E-DC2319AAED66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F832756C-423A-494E-8C9E-DC2319AAED66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F832756C-423A-494E-8C9E-DC2319AAED66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F832756C-423A-494E-8C9E-DC2319AAED66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7023A23E-8377-44BB-8673-01890ECDA1C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7023A23E-8377-44BB-8673-01890ECDA1C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7023A23E-8377-44BB-8673-01890ECDA1C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7023A23E-8377-44BB-8673-01890ECDA1C7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5A2D620B-9996-499F-A41B-02ADC1F25BC2}
+	EndGlobalSection
+EndGlobal

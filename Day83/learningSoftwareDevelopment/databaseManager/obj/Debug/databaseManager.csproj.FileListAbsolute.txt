@@ -1,0 +1,24 @@
+C:\Users\moham\Documents\github\learning software development\databaseManager\bin\Debug\databaseManager.exe.config
+C:\Users\moham\Documents\github\learning software development\databaseManager\bin\Debug\databaseManager.exe
+C:\Users\moham\Documents\github\learning software development\databaseManager\bin\Debug\databaseManager.pdb
+C:\Users\moham\Documents\github\learning software development\databaseManager\obj\Debug\databaseManager.csproj.AssemblyReference.cache
+C:\Users\moham\Documents\github\learning software development\databaseManager\obj\Debug\databaseManager.Form1.resources
+C:\Users\moham\Documents\github\learning software development\databaseManager\obj\Debug\databaseManager.Properties.Resources.resources
+C:\Users\moham\Documents\github\learning software development\databaseManager\obj\Debug\databaseManager.csproj.GenerateResource.cache
+C:\Users\moham\Documents\github\learning software development\databaseManager\obj\Debug\databaseManager.csproj.CoreCompileInputs.cache
+C:\Users\moham\Documents\github\learning software development\databaseManager\obj\Debug\databaseManager.exe
+C:\Users\moham\Documents\github\learning software development\databaseManager\obj\Debug\databaseManager.pdb
+C:\Users\moham\Documents\github\learning software development\databaseManager\bin\Debug\Guna.UI2.dll
+C:\Users\moham\Documents\github\learning software development\databaseManager\obj\Debug\databaseManager.csproj.CopyComplete
+C:\Users\moham\Documents\github\100DaysOfCode\Day83\learningSoftwareDevelopment\databaseManager\bin\Debug\databaseManager.exe.config
+C:\Users\moham\Documents\github\100DaysOfCode\Day83\learningSoftwareDevelopment\databaseManager\bin\Debug\databaseManager.exe
+C:\Users\moham\Documents\github\100DaysOfCode\Day83\learningSoftwareDevelopment\databaseManager\bin\Debug\databaseManager.pdb
+C:\Users\moham\Documents\github\100DaysOfCode\Day83\learningSoftwareDevelopment\databaseManager\bin\Debug\Guna.UI2.dll
+C:\Users\moham\Documents\github\100DaysOfCode\Day83\learningSoftwareDevelopment\databaseManager\obj\Debug\databaseManager.csproj.AssemblyReference.cache
+C:\Users\moham\Documents\github\100DaysOfCode\Day83\learningSoftwareDevelopment\databaseManager\obj\Debug\databaseManager.Form1.resources
+C:\Users\moham\Documents\github\100DaysOfCode\Day83\learningSoftwareDevelopment\databaseManager\obj\Debug\databaseManager.Properties.Resources.resources
+C:\Users\moham\Documents\github\100DaysOfCode\Day83\learningSoftwareDevelopment\databaseManager\obj\Debug\databaseManager.csproj.GenerateResource.cache
+C:\Users\moham\Documents\github\100DaysOfCode\Day83\learningSoftwareDevelopment\databaseManager\obj\Debug\databaseManager.csproj.CoreCompileInputs.cache
+C:\Users\moham\Documents\github\100DaysOfCode\Day83\learningSoftwareDevelopment\databaseManager\obj\Debug\databaseManager.csproj.CopyComplete
+C:\Users\moham\Documents\github\100DaysOfCode\Day83\learningSoftwareDevelopment\databaseManager\obj\Debug\databaseManager.exe
+C:\Users\moham\Documents\github\100DaysOfCode\Day83\learningSoftwareDevelopment\databaseManager\obj\Debug\databaseManager.pdb
