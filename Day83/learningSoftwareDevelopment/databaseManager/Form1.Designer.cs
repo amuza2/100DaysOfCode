@@ -29,28 +29,36 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorAdd = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorSave = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorRefresh = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorDelete = new System.Windows.Forms.ToolStripButton();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2TextBox6 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox5 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.cmbDivision = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.txbPhone = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txbJobTitle = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txbEmail = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txbLastName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txbFirstName = new Guna.UI2.WinForms.Guna2TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -62,19 +70,11 @@
             this.guna2GroupBox2 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2GroupBox3 = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2RadioButton1 = new Guna.UI2.WinForms.Guna2RadioButton();
             this.guna2RadioButton2 = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2RadioButton1 = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.txbSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnSearch = new Guna.UI2.WinForms.Guna2Button();
-            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorAdd = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSave = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorRefresh = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDelete = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -125,6 +125,24 @@
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
+            // bindingNavigatorMoveFirstItem
+            // 
+            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
+            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
+            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(36, 36);
+            this.bindingNavigatorMoveFirstItem.Text = "Move first";
+            // 
+            // bindingNavigatorMovePreviousItem
+            // 
+            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
+            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
+            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(36, 36);
+            this.bindingNavigatorMovePreviousItem.Text = "Move previous";
+            // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
@@ -145,25 +163,75 @@
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 39);
             // 
+            // bindingNavigatorMoveNextItem
+            // 
+            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
+            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
+            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(36, 36);
+            this.bindingNavigatorMoveNextItem.Text = "Move next";
+            // 
+            // bindingNavigatorMoveLastItem
+            // 
+            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
+            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
+            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(36, 36);
+            this.bindingNavigatorMoveLastItem.Text = "Move last";
+            // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 39);
+            // 
+            // bindingNavigatorAdd
+            // 
+            this.bindingNavigatorAdd.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAdd.Image")));
+            this.bindingNavigatorAdd.Name = "bindingNavigatorAdd";
+            this.bindingNavigatorAdd.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAdd.Size = new System.Drawing.Size(65, 36);
+            this.bindingNavigatorAdd.Text = "Add";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(6, 39);
             // 
+            // bindingNavigatorSave
+            // 
+            this.bindingNavigatorSave.Image = global::databaseManager.Properties.Resources.Save_icon_icons_com_73702;
+            this.bindingNavigatorSave.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.bindingNavigatorSave.Name = "bindingNavigatorSave";
+            this.bindingNavigatorSave.Size = new System.Drawing.Size(67, 36);
+            this.bindingNavigatorSave.Text = "Save";
+            // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(6, 39);
             // 
+            // bindingNavigatorRefresh
+            // 
+            this.bindingNavigatorRefresh.Image = global::databaseManager.Properties.Resources.system_software_update_22485;
+            this.bindingNavigatorRefresh.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.bindingNavigatorRefresh.Name = "bindingNavigatorRefresh";
+            this.bindingNavigatorRefresh.Size = new System.Drawing.Size(82, 36);
+            this.bindingNavigatorRefresh.Text = "Refresh";
+            // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
             this.toolStripSeparator3.Size = new System.Drawing.Size(6, 39);
+            // 
+            // bindingNavigatorDelete
+            // 
+            this.bindingNavigatorDelete.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDelete.Image")));
+            this.bindingNavigatorDelete.Name = "bindingNavigatorDelete";
+            this.bindingNavigatorDelete.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDelete.Size = new System.Drawing.Size(76, 36);
+            this.bindingNavigatorDelete.Text = "Delete";
             // 
             // statusStrip1
             // 
@@ -183,12 +251,12 @@
             // 
             // guna2GroupBox1
             // 
-            this.guna2GroupBox1.Controls.Add(this.guna2ComboBox1);
-            this.guna2GroupBox1.Controls.Add(this.guna2TextBox6);
-            this.guna2GroupBox1.Controls.Add(this.guna2TextBox5);
-            this.guna2GroupBox1.Controls.Add(this.guna2TextBox4);
-            this.guna2GroupBox1.Controls.Add(this.guna2TextBox3);
-            this.guna2GroupBox1.Controls.Add(this.guna2TextBox2);
+            this.guna2GroupBox1.Controls.Add(this.cmbDivision);
+            this.guna2GroupBox1.Controls.Add(this.txbPhone);
+            this.guna2GroupBox1.Controls.Add(this.txbJobTitle);
+            this.guna2GroupBox1.Controls.Add(this.txbEmail);
+            this.guna2GroupBox1.Controls.Add(this.txbLastName);
+            this.guna2GroupBox1.Controls.Add(this.txbFirstName);
             this.guna2GroupBox1.Controls.Add(this.label7);
             this.guna2GroupBox1.Controls.Add(this.label6);
             this.guna2GroupBox1.Controls.Add(this.label5);
@@ -207,139 +275,140 @@
             this.guna2GroupBox1.TabIndex = 2;
             this.guna2GroupBox1.Text = "Employee Info:";
             // 
-            // guna2ComboBox1
+            // cmbDivision
             // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.Empty;
-            this.guna2ComboBox1.FocusedState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox1.FormattingEnabled = true;
-            this.guna2ComboBox1.HoverState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.ItemsAppearance.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(81, 308);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Size = new System.Drawing.Size(306, 36);
-            this.guna2ComboBox1.TabIndex = 7;
+            this.cmbDivision.Animated = true;
+            this.cmbDivision.BackColor = System.Drawing.Color.Transparent;
+            this.cmbDivision.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbDivision.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbDivision.FocusedColor = System.Drawing.Color.Empty;
+            this.cmbDivision.FocusedState.Parent = this.cmbDivision;
+            this.cmbDivision.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbDivision.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbDivision.FormattingEnabled = true;
+            this.cmbDivision.HoverState.Parent = this.cmbDivision;
+            this.cmbDivision.ItemHeight = 30;
+            this.cmbDivision.ItemsAppearance.Parent = this.cmbDivision;
+            this.cmbDivision.Location = new System.Drawing.Point(81, 308);
+            this.cmbDivision.Name = "cmbDivision";
+            this.cmbDivision.ShadowDecoration.Parent = this.cmbDivision;
+            this.cmbDivision.Size = new System.Drawing.Size(306, 36);
+            this.cmbDivision.TabIndex = 7;
             // 
-            // guna2TextBox6
+            // txbPhone
             // 
-            this.guna2TextBox6.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox6.DefaultText = "";
-            this.guna2TextBox6.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox6.DisabledState.Parent = this.guna2TextBox6;
-            this.guna2TextBox6.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox6.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox6.FocusedState.Parent = this.guna2TextBox6;
-            this.guna2TextBox6.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox6.HoverState.Parent = this.guna2TextBox6;
-            this.guna2TextBox6.Location = new System.Drawing.Point(81, 266);
-            this.guna2TextBox6.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.guna2TextBox6.Name = "guna2TextBox6";
-            this.guna2TextBox6.PasswordChar = '\0';
-            this.guna2TextBox6.PlaceholderText = "";
-            this.guna2TextBox6.SelectedText = "";
-            this.guna2TextBox6.ShadowDecoration.Parent = this.guna2TextBox6;
-            this.guna2TextBox6.Size = new System.Drawing.Size(306, 36);
-            this.guna2TextBox6.TabIndex = 6;
+            this.txbPhone.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txbPhone.DefaultText = "";
+            this.txbPhone.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txbPhone.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txbPhone.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txbPhone.DisabledState.Parent = this.txbPhone;
+            this.txbPhone.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txbPhone.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbPhone.FocusedState.Parent = this.txbPhone;
+            this.txbPhone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbPhone.HoverState.Parent = this.txbPhone;
+            this.txbPhone.Location = new System.Drawing.Point(81, 266);
+            this.txbPhone.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txbPhone.Name = "txbPhone";
+            this.txbPhone.PasswordChar = '\0';
+            this.txbPhone.PlaceholderText = "";
+            this.txbPhone.SelectedText = "";
+            this.txbPhone.ShadowDecoration.Parent = this.txbPhone;
+            this.txbPhone.Size = new System.Drawing.Size(306, 36);
+            this.txbPhone.TabIndex = 6;
             // 
-            // guna2TextBox5
+            // txbJobTitle
             // 
-            this.guna2TextBox5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox5.DefaultText = "";
-            this.guna2TextBox5.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox5.DisabledState.Parent = this.guna2TextBox5;
-            this.guna2TextBox5.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox5.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox5.FocusedState.Parent = this.guna2TextBox5;
-            this.guna2TextBox5.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox5.HoverState.Parent = this.guna2TextBox5;
-            this.guna2TextBox5.Location = new System.Drawing.Point(81, 224);
-            this.guna2TextBox5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.guna2TextBox5.Name = "guna2TextBox5";
-            this.guna2TextBox5.PasswordChar = '\0';
-            this.guna2TextBox5.PlaceholderText = "";
-            this.guna2TextBox5.SelectedText = "";
-            this.guna2TextBox5.ShadowDecoration.Parent = this.guna2TextBox5;
-            this.guna2TextBox5.Size = new System.Drawing.Size(306, 36);
-            this.guna2TextBox5.TabIndex = 5;
+            this.txbJobTitle.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txbJobTitle.DefaultText = "";
+            this.txbJobTitle.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txbJobTitle.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txbJobTitle.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txbJobTitle.DisabledState.Parent = this.txbJobTitle;
+            this.txbJobTitle.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txbJobTitle.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbJobTitle.FocusedState.Parent = this.txbJobTitle;
+            this.txbJobTitle.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbJobTitle.HoverState.Parent = this.txbJobTitle;
+            this.txbJobTitle.Location = new System.Drawing.Point(81, 224);
+            this.txbJobTitle.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txbJobTitle.Name = "txbJobTitle";
+            this.txbJobTitle.PasswordChar = '\0';
+            this.txbJobTitle.PlaceholderText = "";
+            this.txbJobTitle.SelectedText = "";
+            this.txbJobTitle.ShadowDecoration.Parent = this.txbJobTitle;
+            this.txbJobTitle.Size = new System.Drawing.Size(306, 36);
+            this.txbJobTitle.TabIndex = 5;
             // 
-            // guna2TextBox4
+            // txbEmail
             // 
-            this.guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox4.DefaultText = "";
-            this.guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.DisabledState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.FocusedState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.HoverState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.Location = new System.Drawing.Point(81, 182);
-            this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.guna2TextBox4.Name = "guna2TextBox4";
-            this.guna2TextBox4.PasswordChar = '\0';
-            this.guna2TextBox4.PlaceholderText = "";
-            this.guna2TextBox4.SelectedText = "";
-            this.guna2TextBox4.ShadowDecoration.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.Size = new System.Drawing.Size(306, 36);
-            this.guna2TextBox4.TabIndex = 4;
+            this.txbEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txbEmail.DefaultText = "";
+            this.txbEmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txbEmail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txbEmail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txbEmail.DisabledState.Parent = this.txbEmail;
+            this.txbEmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txbEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbEmail.FocusedState.Parent = this.txbEmail;
+            this.txbEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbEmail.HoverState.Parent = this.txbEmail;
+            this.txbEmail.Location = new System.Drawing.Point(81, 182);
+            this.txbEmail.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txbEmail.Name = "txbEmail";
+            this.txbEmail.PasswordChar = '\0';
+            this.txbEmail.PlaceholderText = "";
+            this.txbEmail.SelectedText = "";
+            this.txbEmail.ShadowDecoration.Parent = this.txbEmail;
+            this.txbEmail.Size = new System.Drawing.Size(306, 36);
+            this.txbEmail.TabIndex = 4;
             // 
-            // guna2TextBox3
+            // txbLastName
             // 
-            this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox3.DefaultText = "";
-            this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.DisabledState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.FocusedState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.HoverState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Location = new System.Drawing.Point(81, 140);
-            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.guna2TextBox3.Name = "guna2TextBox3";
-            this.guna2TextBox3.PasswordChar = '\0';
-            this.guna2TextBox3.PlaceholderText = "";
-            this.guna2TextBox3.SelectedText = "";
-            this.guna2TextBox3.ShadowDecoration.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Size = new System.Drawing.Size(306, 36);
-            this.guna2TextBox3.TabIndex = 3;
+            this.txbLastName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txbLastName.DefaultText = "";
+            this.txbLastName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txbLastName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txbLastName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txbLastName.DisabledState.Parent = this.txbLastName;
+            this.txbLastName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txbLastName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbLastName.FocusedState.Parent = this.txbLastName;
+            this.txbLastName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbLastName.HoverState.Parent = this.txbLastName;
+            this.txbLastName.Location = new System.Drawing.Point(81, 140);
+            this.txbLastName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txbLastName.Name = "txbLastName";
+            this.txbLastName.PasswordChar = '\0';
+            this.txbLastName.PlaceholderText = "";
+            this.txbLastName.SelectedText = "";
+            this.txbLastName.ShadowDecoration.Parent = this.txbLastName;
+            this.txbLastName.Size = new System.Drawing.Size(306, 36);
+            this.txbLastName.TabIndex = 3;
             // 
-            // guna2TextBox2
+            // txbFirstName
             // 
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.FocusedState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Location = new System.Drawing.Point(81, 98);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderText = "";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.ShadowDecoration.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Size = new System.Drawing.Size(306, 36);
-            this.guna2TextBox2.TabIndex = 2;
+            this.txbFirstName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txbFirstName.DefaultText = "";
+            this.txbFirstName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txbFirstName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txbFirstName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txbFirstName.DisabledState.Parent = this.txbFirstName;
+            this.txbFirstName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txbFirstName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbFirstName.FocusedState.Parent = this.txbFirstName;
+            this.txbFirstName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbFirstName.HoverState.Parent = this.txbFirstName;
+            this.txbFirstName.Location = new System.Drawing.Point(81, 98);
+            this.txbFirstName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txbFirstName.Name = "txbFirstName";
+            this.txbFirstName.PasswordChar = '\0';
+            this.txbFirstName.PlaceholderText = "";
+            this.txbFirstName.SelectedText = "";
+            this.txbFirstName.ShadowDecoration.Parent = this.txbFirstName;
+            this.txbFirstName.Size = new System.Drawing.Size(306, 36);
+            this.txbFirstName.TabIndex = 2;
             // 
             // label7
             // 
@@ -494,7 +563,6 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.guna2DataGridView1.EnableHeadersVisualStyles = false;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.Location = new System.Drawing.Point(0, 40);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
@@ -541,24 +609,27 @@
             this.guna2GroupBox3.TabIndex = 8;
             this.guna2GroupBox3.Text = "Advanced Search:";
             // 
-            // guna2ComboBox2
+            // guna2RadioButton2
             // 
-            this.guna2ComboBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox2.FocusedColor = System.Drawing.Color.Empty;
-            this.guna2ComboBox2.FocusedState.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox2.FormattingEnabled = true;
-            this.guna2ComboBox2.HoverState.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.ItemHeight = 30;
-            this.guna2ComboBox2.ItemsAppearance.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.Location = new System.Drawing.Point(10, 143);
-            this.guna2ComboBox2.Name = "guna2ComboBox2";
-            this.guna2ComboBox2.ShadowDecoration.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.Size = new System.Drawing.Size(377, 36);
-            this.guna2ComboBox2.TabIndex = 7;
+            this.guna2RadioButton2.AutoSize = true;
+            this.guna2RadioButton2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2RadioButton2.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2RadioButton2.CheckedState.BorderThickness = 0;
+            this.guna2RadioButton2.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2RadioButton2.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.guna2RadioButton2.CheckedState.InnerOffset = -4;
+            this.guna2RadioButton2.ForeColor = System.Drawing.Color.Black;
+            this.guna2RadioButton2.Location = new System.Drawing.Point(10, 103);
+            this.guna2RadioButton2.Name = "guna2RadioButton2";
+            this.guna2RadioButton2.Size = new System.Drawing.Size(184, 19);
+            this.guna2RadioButton2.TabIndex = 8;
+            this.guna2RadioButton2.TabStop = true;
+            this.guna2RadioButton2.Text = "Find employee by department";
+            this.guna2RadioButton2.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.guna2RadioButton2.UncheckedState.BorderThickness = 2;
+            this.guna2RadioButton2.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.guna2RadioButton2.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.guna2RadioButton2.UseVisualStyleBackColor = false;
             // 
             // guna2RadioButton1
             // 
@@ -582,49 +653,46 @@
             this.guna2RadioButton1.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
             this.guna2RadioButton1.UseVisualStyleBackColor = false;
             // 
-            // guna2RadioButton2
+            // guna2ComboBox2
             // 
-            this.guna2RadioButton2.AutoSize = true;
-            this.guna2RadioButton2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton2.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton2.CheckedState.BorderThickness = 0;
-            this.guna2RadioButton2.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton2.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2RadioButton2.CheckedState.InnerOffset = -4;
-            this.guna2RadioButton2.ForeColor = System.Drawing.Color.Black;
-            this.guna2RadioButton2.Location = new System.Drawing.Point(10, 103);
-            this.guna2RadioButton2.Name = "guna2RadioButton2";
-            this.guna2RadioButton2.Size = new System.Drawing.Size(184, 19);
-            this.guna2RadioButton2.TabIndex = 8;
-            this.guna2RadioButton2.TabStop = true;
-            this.guna2RadioButton2.Text = "Find employee by department";
-            this.guna2RadioButton2.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2RadioButton2.UncheckedState.BorderThickness = 2;
-            this.guna2RadioButton2.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton2.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton2.UseVisualStyleBackColor = false;
+            this.guna2ComboBox2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBox2.FocusedColor = System.Drawing.Color.Empty;
+            this.guna2ComboBox2.FocusedState.Parent = this.guna2ComboBox2;
+            this.guna2ComboBox2.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.guna2ComboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.guna2ComboBox2.FormattingEnabled = true;
+            this.guna2ComboBox2.HoverState.Parent = this.guna2ComboBox2;
+            this.guna2ComboBox2.ItemHeight = 30;
+            this.guna2ComboBox2.ItemsAppearance.Parent = this.guna2ComboBox2;
+            this.guna2ComboBox2.Location = new System.Drawing.Point(10, 143);
+            this.guna2ComboBox2.Name = "guna2ComboBox2";
+            this.guna2ComboBox2.ShadowDecoration.Parent = this.guna2ComboBox2;
+            this.guna2ComboBox2.Size = new System.Drawing.Size(377, 36);
+            this.guna2ComboBox2.TabIndex = 7;
             // 
-            // guna2TextBox1
+            // txbSearch
             // 
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(449, 51);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(260, 36);
-            this.guna2TextBox1.TabIndex = 9;
+            this.txbSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txbSearch.DefaultText = "";
+            this.txbSearch.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txbSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txbSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txbSearch.DisabledState.Parent = this.txbSearch;
+            this.txbSearch.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txbSearch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbSearch.FocusedState.Parent = this.txbSearch;
+            this.txbSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbSearch.HoverState.Parent = this.txbSearch;
+            this.txbSearch.Location = new System.Drawing.Point(449, 51);
+            this.txbSearch.Name = "txbSearch";
+            this.txbSearch.PasswordChar = '\0';
+            this.txbSearch.PlaceholderText = "";
+            this.txbSearch.SelectedText = "";
+            this.txbSearch.ShadowDecoration.Parent = this.txbSearch;
+            this.txbSearch.Size = new System.Drawing.Size(260, 36);
+            this.txbSearch.TabIndex = 9;
             // 
             // btnSearch
             // 
@@ -645,81 +713,13 @@
             this.btnSearch.TabIndex = 10;
             this.btnSearch.Text = "Search";
             // 
-            // bindingNavigatorMoveFirstItem
-            // 
-            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(36, 36);
-            this.bindingNavigatorMoveFirstItem.Text = "Move first";
-            // 
-            // bindingNavigatorMovePreviousItem
-            // 
-            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
-            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(36, 36);
-            this.bindingNavigatorMovePreviousItem.Text = "Move previous";
-            // 
-            // bindingNavigatorMoveNextItem
-            // 
-            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
-            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
-            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(36, 36);
-            this.bindingNavigatorMoveNextItem.Text = "Move next";
-            // 
-            // bindingNavigatorMoveLastItem
-            // 
-            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
-            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(36, 36);
-            this.bindingNavigatorMoveLastItem.Text = "Move last";
-            // 
-            // bindingNavigatorAdd
-            // 
-            this.bindingNavigatorAdd.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAdd.Image")));
-            this.bindingNavigatorAdd.Name = "bindingNavigatorAdd";
-            this.bindingNavigatorAdd.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAdd.Size = new System.Drawing.Size(65, 36);
-            this.bindingNavigatorAdd.Text = "Add";
-            // 
-            // bindingNavigatorSave
-            // 
-            this.bindingNavigatorSave.Image = global::databaseManager.Properties.Resources.Save_icon_icons_com_73702;
-            this.bindingNavigatorSave.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.bindingNavigatorSave.Name = "bindingNavigatorSave";
-            this.bindingNavigatorSave.Size = new System.Drawing.Size(67, 36);
-            this.bindingNavigatorSave.Text = "Save";
-            // 
-            // bindingNavigatorRefresh
-            // 
-            this.bindingNavigatorRefresh.Image = global::databaseManager.Properties.Resources.system_software_update_22485;
-            this.bindingNavigatorRefresh.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.bindingNavigatorRefresh.Name = "bindingNavigatorRefresh";
-            this.bindingNavigatorRefresh.Size = new System.Drawing.Size(82, 36);
-            this.bindingNavigatorRefresh.Text = "Refresh";
-            // 
-            // bindingNavigatorDelete
-            // 
-            this.bindingNavigatorDelete.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDelete.Image")));
-            this.bindingNavigatorDelete.Name = "bindingNavigatorDelete";
-            this.bindingNavigatorDelete.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDelete.Size = new System.Drawing.Size(76, 36);
-            this.bindingNavigatorDelete.Text = "Delete";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1201, 743);
             this.Controls.Add(this.btnSearch);
-            this.Controls.Add(this.guna2TextBox1);
+            this.Controls.Add(this.txbSearch);
             this.Controls.Add(this.guna2GroupBox3);
             this.Controls.Add(this.guna2GroupBox2);
             this.Controls.Add(this.guna2GroupBox1);
@@ -727,6 +727,8 @@
             this.Controls.Add(this.bindingNavigator1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form_Closing);
+            this.Load += new System.EventHandler(this.form_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
@@ -765,16 +767,16 @@
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
+        private Guna.UI2.WinForms.Guna2TextBox txbFirstName;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2TextBox txbID;
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox6;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox5;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
+        private Guna.UI2.WinForms.Guna2TextBox txbPhone;
+        private Guna.UI2.WinForms.Guna2TextBox txbJobTitle;
+        private Guna.UI2.WinForms.Guna2TextBox txbEmail;
+        private Guna.UI2.WinForms.Guna2TextBox txbLastName;
         private System.Windows.Forms.Label label3;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
+        private Guna.UI2.WinForms.Guna2ComboBox cmbDivision;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
@@ -785,7 +787,7 @@
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox2;
         private Guna.UI2.WinForms.Guna2RadioButton guna2RadioButton2;
         private Guna.UI2.WinForms.Guna2RadioButton guna2RadioButton1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2TextBox txbSearch;
         private Guna.UI2.WinForms.Guna2Button btnSearch;
     }
 }
