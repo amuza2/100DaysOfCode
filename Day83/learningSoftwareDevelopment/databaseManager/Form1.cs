@@ -97,15 +97,45 @@ namespace databaseManager
                 guna2DataGridView1.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
                 guna2DataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
                 guna2DataGridView1.AutoResizeColumnHeadersHeight();
+                //guna2DataGridView1.RowTemplate.Height = 40;
 
                 // Combobox data binding
-                db.command.CommandText = "SELECT DepartmentID, DepartmentName FROM Departments ORDER BY DepartmentID ASC";
+                string sql = "SELECT DepartmentID, DepartmentName FROM Departments ORDER BY DepartmentID ASC";
+                db.command.CommandText = sql;
                 db.dataAdapter.SelectCommand = db.command;
                 db.dataAdapter.Fill(db.dataSet, "Devision");
+
                 cmbDivision.DataSource = db.dataSet.Tables["Devision"];
                 cmbDivision.DisplayMember = "DepartmentName";
                 cmbDivision.ValueMember = "DepartmentID";
                 cmbDivision.DataBindings.Add("SelectedValue", db.bindingSource, "DepartmentID");
+
+                DataRow row1 = db.dataSet.Tables["Devision"].NewRow();
+                row1["DepartmentID"] = 0;
+                row1["DepartmentName"] = "-- Please Select --";
+                db.dataSet.Tables["Devision"].Rows.InsertAt(row1, 0);
+                cmbDivision.SelectedIndex = 0;
+
+                if (btn == null)
+                {
+                    // Combobox data binding
+                    db.command.CommandText = sql;
+                    db.dataAdapter.SelectCommand = db.command;
+                    DataSet dataSet = new DataSet();
+                    db.dataAdapter.Fill(dataSet, "SearchDevision");
+
+                    DataRow row2 = dataSet.Tables["SearchDevision"].NewRow();
+                    row2["DepartmentID"] = 0;
+                    row2["DepartmentName"] = "-- Please Select --";
+                    dataSet.Tables["SearchDevision"].Rows.InsertAt(row2, 0);
+
+                    cmbSearch.DataSource = dataSet.Tables["SearchDevision"];
+                    cmbSearch.DisplayMember = "DepartmentName";
+                    cmbSearch.ValueMember = "DepartmentID";
+
+                    
+
+                }
 
             }
             catch (Exception ex)

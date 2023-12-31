@@ -70,9 +70,9 @@
             this.guna2GroupBox2 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2GroupBox3 = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.guna2RadioButton2 = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.guna2RadioButton1 = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.rdbEmployeeDep = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.rdbEmployeeId = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.cmbSearch = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txbSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnSearch = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
@@ -545,7 +545,7 @@
             this.guna2DataGridView1.BackgroundColor = System.Drawing.Color.DarkGray;
             this.guna2DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.guna2DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.guna2DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -567,7 +567,7 @@
             this.guna2DataGridView1.Location = new System.Drawing.Point(0, 40);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
             this.guna2DataGridView1.ReadOnly = true;
-            this.guna2DataGridView1.RowHeadersVisible = false;
+            this.guna2DataGridView1.RowTemplate.Height = 40;
             this.guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.guna2DataGridView1.Size = new System.Drawing.Size(740, 552);
             this.guna2DataGridView1.TabIndex = 0;
@@ -580,7 +580,7 @@
             this.guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.DarkGray;
             this.guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
@@ -590,15 +590,15 @@
             this.guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.guna2DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 22;
+            this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 40;
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
             // guna2GroupBox3
             // 
-            this.guna2GroupBox3.Controls.Add(this.guna2RadioButton2);
-            this.guna2GroupBox3.Controls.Add(this.guna2RadioButton1);
-            this.guna2GroupBox3.Controls.Add(this.guna2ComboBox2);
+            this.guna2GroupBox3.Controls.Add(this.rdbEmployeeDep);
+            this.guna2GroupBox3.Controls.Add(this.rdbEmployeeId);
+            this.guna2GroupBox3.Controls.Add(this.cmbSearch);
             this.guna2GroupBox3.FillColor = System.Drawing.Color.LimeGreen;
             this.guna2GroupBox3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2GroupBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -609,68 +609,68 @@
             this.guna2GroupBox3.TabIndex = 8;
             this.guna2GroupBox3.Text = "Advanced Search:";
             // 
-            // guna2RadioButton2
+            // rdbEmployeeDep
             // 
-            this.guna2RadioButton2.AutoSize = true;
-            this.guna2RadioButton2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton2.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton2.CheckedState.BorderThickness = 0;
-            this.guna2RadioButton2.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton2.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2RadioButton2.CheckedState.InnerOffset = -4;
-            this.guna2RadioButton2.ForeColor = System.Drawing.Color.Black;
-            this.guna2RadioButton2.Location = new System.Drawing.Point(10, 103);
-            this.guna2RadioButton2.Name = "guna2RadioButton2";
-            this.guna2RadioButton2.Size = new System.Drawing.Size(184, 19);
-            this.guna2RadioButton2.TabIndex = 8;
-            this.guna2RadioButton2.TabStop = true;
-            this.guna2RadioButton2.Text = "Find employee by department";
-            this.guna2RadioButton2.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2RadioButton2.UncheckedState.BorderThickness = 2;
-            this.guna2RadioButton2.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton2.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton2.UseVisualStyleBackColor = false;
+            this.rdbEmployeeDep.AutoSize = true;
+            this.rdbEmployeeDep.BackColor = System.Drawing.Color.Transparent;
+            this.rdbEmployeeDep.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rdbEmployeeDep.CheckedState.BorderThickness = 0;
+            this.rdbEmployeeDep.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rdbEmployeeDep.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.rdbEmployeeDep.CheckedState.InnerOffset = -4;
+            this.rdbEmployeeDep.ForeColor = System.Drawing.Color.Black;
+            this.rdbEmployeeDep.Location = new System.Drawing.Point(10, 103);
+            this.rdbEmployeeDep.Name = "rdbEmployeeDep";
+            this.rdbEmployeeDep.Size = new System.Drawing.Size(184, 19);
+            this.rdbEmployeeDep.TabIndex = 8;
+            this.rdbEmployeeDep.TabStop = true;
+            this.rdbEmployeeDep.Text = "Find employee by department";
+            this.rdbEmployeeDep.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.rdbEmployeeDep.UncheckedState.BorderThickness = 2;
+            this.rdbEmployeeDep.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.rdbEmployeeDep.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.rdbEmployeeDep.UseVisualStyleBackColor = false;
             // 
-            // guna2RadioButton1
+            // rdbEmployeeId
             // 
-            this.guna2RadioButton1.AutoSize = true;
-            this.guna2RadioButton1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton1.CheckedState.BorderThickness = 0;
-            this.guna2RadioButton1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton1.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2RadioButton1.CheckedState.InnerOffset = -4;
-            this.guna2RadioButton1.ForeColor = System.Drawing.Color.Black;
-            this.guna2RadioButton1.Location = new System.Drawing.Point(10, 66);
-            this.guna2RadioButton1.Name = "guna2RadioButton1";
-            this.guna2RadioButton1.Size = new System.Drawing.Size(132, 19);
-            this.guna2RadioButton1.TabIndex = 8;
-            this.guna2RadioButton1.TabStop = true;
-            this.guna2RadioButton1.Text = "Find employee by id";
-            this.guna2RadioButton1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2RadioButton1.UncheckedState.BorderThickness = 2;
-            this.guna2RadioButton1.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton1.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton1.UseVisualStyleBackColor = false;
+            this.rdbEmployeeId.AutoSize = true;
+            this.rdbEmployeeId.BackColor = System.Drawing.Color.Transparent;
+            this.rdbEmployeeId.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rdbEmployeeId.CheckedState.BorderThickness = 0;
+            this.rdbEmployeeId.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rdbEmployeeId.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.rdbEmployeeId.CheckedState.InnerOffset = -4;
+            this.rdbEmployeeId.ForeColor = System.Drawing.Color.Black;
+            this.rdbEmployeeId.Location = new System.Drawing.Point(10, 66);
+            this.rdbEmployeeId.Name = "rdbEmployeeId";
+            this.rdbEmployeeId.Size = new System.Drawing.Size(132, 19);
+            this.rdbEmployeeId.TabIndex = 8;
+            this.rdbEmployeeId.TabStop = true;
+            this.rdbEmployeeId.Text = "Find employee by id";
+            this.rdbEmployeeId.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.rdbEmployeeId.UncheckedState.BorderThickness = 2;
+            this.rdbEmployeeId.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.rdbEmployeeId.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.rdbEmployeeId.UseVisualStyleBackColor = false;
             // 
-            // guna2ComboBox2
+            // cmbSearch
             // 
-            this.guna2ComboBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox2.FocusedColor = System.Drawing.Color.Empty;
-            this.guna2ComboBox2.FocusedState.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox2.FormattingEnabled = true;
-            this.guna2ComboBox2.HoverState.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.ItemHeight = 30;
-            this.guna2ComboBox2.ItemsAppearance.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.Location = new System.Drawing.Point(10, 143);
-            this.guna2ComboBox2.Name = "guna2ComboBox2";
-            this.guna2ComboBox2.ShadowDecoration.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.Size = new System.Drawing.Size(377, 36);
-            this.guna2ComboBox2.TabIndex = 7;
+            this.cmbSearch.BackColor = System.Drawing.Color.Transparent;
+            this.cmbSearch.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbSearch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSearch.FocusedColor = System.Drawing.Color.Empty;
+            this.cmbSearch.FocusedState.Parent = this.cmbSearch;
+            this.cmbSearch.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbSearch.FormattingEnabled = true;
+            this.cmbSearch.HoverState.Parent = this.cmbSearch;
+            this.cmbSearch.ItemHeight = 30;
+            this.cmbSearch.ItemsAppearance.Parent = this.cmbSearch;
+            this.cmbSearch.Location = new System.Drawing.Point(10, 143);
+            this.cmbSearch.Name = "cmbSearch";
+            this.cmbSearch.ShadowDecoration.Parent = this.cmbSearch;
+            this.cmbSearch.Size = new System.Drawing.Size(377, 36);
+            this.cmbSearch.TabIndex = 7;
             // 
             // txbSearch
             // 
@@ -784,9 +784,9 @@
         private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox2;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
         private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox3;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox2;
-        private Guna.UI2.WinForms.Guna2RadioButton guna2RadioButton2;
-        private Guna.UI2.WinForms.Guna2RadioButton guna2RadioButton1;
+        private Guna.UI2.WinForms.Guna2ComboBox cmbSearch;
+        private Guna.UI2.WinForms.Guna2RadioButton rdbEmployeeDep;
+        private Guna.UI2.WinForms.Guna2RadioButton rdbEmployeeId;
         private Guna.UI2.WinForms.Guna2TextBox txbSearch;
         private Guna.UI2.WinForms.Guna2Button btnSearch;
     }
