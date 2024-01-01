@@ -214,5 +214,30 @@ namespace databaseManager
 
             }
         }
+
+        private void bindingNavigatorSave_Click(object sender, EventArgs e)
+        {
+            Guna2TextBox txt;
+            foreach (Control c in guna2GroupBox1.Controls)
+            {
+                if (c.GetType().Equals(typeof(Guna2TextBox)))
+                {
+                    txt = (Guna2TextBox)c;
+                    if (!txt.Name.Equals("txbID"))
+                    {
+                        if (string.IsNullOrEmpty(txt.Text.Trim()))
+                        {
+                            MessageBox.Show("Please fill the required filled", "Empty input");
+                            return;
+                        }
+                    }
+                }
+            }
+            if(cmbDivision.SelectedIndex == 0)
+            {
+                MessageBox.Show("Please select department in combobox", "Empty input");
+                return;
+            }
+        }
     }
 }
