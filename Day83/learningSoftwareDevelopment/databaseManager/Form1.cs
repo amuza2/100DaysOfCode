@@ -37,7 +37,6 @@ namespace databaseManager
                 Guna2TextBox txt;
                 Guna2ComboBox comboBox;
                 Guna2RadioButton radioButton;
-
                 foreach (Control c in cmbDivision.Controls)
                 {
                     if(c.GetType() == typeof(Guna2TextBox))
@@ -78,29 +77,37 @@ namespace databaseManager
                 }
                 else db.command = command;
 
+                string sql = "SELECT DepartmentID, DepartmentName FROM Departments ORDER BY DepartmentID ASC";
+                if(bindingNavigator1.BindingSource != null)
+                {
+                    txbID.DataBindings.Clear();
+                    txbFirstName.DataBindings.Clear();
+                    txbLastName.DataBindings.Clear();
+                    txbEmail.DataBindings.Clear();
+                    txbPhone.DataBindings.Clear();
+                    txbJobTitle.DataBindings.Clear();
+                    cmbDivision.DataBindings.Clear();
+                }
+                
                 db.dataAdapter = new SqlDataAdapter(db.command);
                 db.dataSet = new DataSet();
                 db.dataAdapter.Fill(db.dataSet, "EmployeeList");
                 db.bindingSource = new BindingSource(db.dataSet, "EmployeeList");
                 bindingNavigator1.BindingSource = db.bindingSource;
-
                 // textbox data binding
-                txbID.DataBindings.Add("Text",db.bindingSource ,"AutoID");
+                txbID.DataBindings.Add("Text", db.bindingSource, "AutoID");
                 txbFirstName.DataBindings.Add("Text", db.bindingSource, "FirstName");
                 txbLastName.DataBindings.Add("Text", db.bindingSource, "LastName");
                 txbEmail.DataBindings.Add("Text", db.bindingSource, "Email");
                 txbJobTitle.DataBindings.Add("Text", db.bindingSource, "JobTitle");
                 txbPhone.DataBindings.Add("Text", db.bindingSource, "Phone");
-
                 guna2DataGridView1.Enabled = true;
                 guna2DataGridView1.DataSource = db.bindingSource;
                 guna2DataGridView1.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
                 guna2DataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
                 guna2DataGridView1.AutoResizeColumnHeadersHeight();
-                //guna2DataGridView1.RowTemplate.Height = 40;
 
                 // Combobox data binding
-                string sql = "SELECT DepartmentID, DepartmentName FROM Departments ORDER BY DepartmentID ASC";
                 db.command.CommandText = sql;
                 db.dataAdapter.SelectCommand = db.command;
                 db.dataAdapter.Fill(db.dataSet, "Devision");
@@ -114,7 +121,6 @@ namespace databaseManager
                 row1["DepartmentID"] = 0;
                 row1["DepartmentName"] = "-- Please Select --";
                 db.dataSet.Tables["Devision"].Rows.InsertAt(row1, 0);
-                cmbDivision.SelectedIndex = 0;
 
                 if (btn == null)
                 {
@@ -132,11 +138,7 @@ namespace databaseManager
                     cmbSearch.DataSource = dataSet.Tables["SearchDevision"];
                     cmbSearch.DisplayMember = "DepartmentName";
                     cmbSearch.ValueMember = "DepartmentID";
-
-                    
-
                 }
-
             }
             catch (Exception ex)
             {
@@ -151,6 +153,66 @@ namespace databaseManager
         private void Form_Closing(object sender, FormClosingEventArgs e)
         {
             db.closeConnection();
+        }
+
+        private void bindingNavigatorAdd_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if(bindingNavigatorAdd.Text == "Add")
+                {
+                    bindingNavigatorAdd.Text = "Cancel";
+                    bindingNavigatorAdd.ToolTipText = "Cancel";
+
+                    bindingNavigatorMoveFirstItem.Enabled = false;
+                    bindingNavigatorMoveLastItem.Enabled = false;
+                    bindingNavigatorMovePreviousItem.Enabled = false;
+                    bindingNavigatorMoveNextItem.Enabled = false;
+                    bindingNavigatorPositionItem.Enabled = false;
+                    guna2DataGridView1.ClearSelection();
+                    guna2DataGridView1.Enabled = false;
+                }
+                else
+                {
+                    bindingNavigatorAdd.Text = "Add";
+                    bindingNavigatorAdd.ToolTipText = "Add";
+                    bindingNavigatorMoveFirstItem.Enabled = true;
+                    bindingNavigatorMoveLastItem.Enabled = true;
+                    bindingNavigatorMovePreviousItem.Enabled = true;
+                    bindingNavigatorMoveNextItem.Enabled = true;
+                    bindingNavigatorPositionItem.Enabled = true;
+
+                    updateDataBinding();
+                    return;
+                }
+                Guna2TextBox txt;
+                Guna2ComboBox comboBox;
+                foreach (Control c in guna2GroupBox1.Controls)
+                {
+                    if (c.GetType() == typeof(Guna2TextBox))
+                    {
+                        txt = (Guna2TextBox)c;
+                        txt.Text = "";
+                        if (txt.Name.Equals("txbFirstName"))
+                        {
+                            if (txt.CanSelect) txt.Select();
+                        }
+                    }
+                    else if (c.GetType() == typeof(Guna2ComboBox))
+                    {
+                        comboBox = (Guna2ComboBox)c;
+                        comboBox.SelectedIndex = 0;
+                    }
+                }
+            }
+            catch (Exception)
+            {
+
+            }
+            finally
+            {
+
+            }
         }
     }
 }
