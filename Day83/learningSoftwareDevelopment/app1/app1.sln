@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "app1", "app1.csproj", "{F83
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "databaseManager", "..\databaseManager\databaseManager.csproj", "{7023A23E-8377-44BB-8673-01890ECDA1C7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TP5", "..\TP5\TP5.csproj", "{18C9B797-FDFA-416E-85DE-97A1A4BC3950}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{7023A23E-8377-44BB-8673-01890ECDA1C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7023A23E-8377-44BB-8673-01890ECDA1C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7023A23E-8377-44BB-8673-01890ECDA1C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18C9B797-FDFA-416E-85DE-97A1A4BC3950}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18C9B797-FDFA-416E-85DE-97A1A4BC3950}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18C9B797-FDFA-416E-85DE-97A1A4BC3950}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18C9B797-FDFA-416E-85DE-97A1A4BC3950}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
