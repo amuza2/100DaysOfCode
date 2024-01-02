@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Guna.UI2.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,6 +18,7 @@ namespace TP5
         string connectionString = "Data Source=localhost;Initial Catalog=imdb;Integrated Security=True";
         SqlConnection connection;
         SqlCommand command = new SqlCommand();
+        SqlDataAdapter dataAdapter;
         DataSet dataSet = new DataSet();
         DataTable genreDataTable = new DataTable();
 
@@ -36,7 +38,7 @@ namespace TP5
                 command.CommandText = "SELECT * FROM Genre";
                 command.Connection = connection;
                 connection.Open();
-                SqlDataAdapter dataAdapter = new SqlDataAdapter(command);
+                dataAdapter = new SqlDataAdapter(command);
                 SqlCommandBuilder sqlCommandBuilder = new SqlCommandBuilder(dataAdapter);
                 dataAdapter.Fill(dataSet, "dtGenre");
                 genreDataTable = dataSet.Tables["dtGenre"];
@@ -93,12 +95,20 @@ namespace TP5
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            if(DataGridView1.SelectedRows.Count > 0)
+            if(genreDataTable.Rows.Count > 0 && !string.IsNullOrEmpty(txbID.Text))
             {
-                DataGridViewRow selected = DataGridView1.SelectedRows[0];
-                selected.Cells["codeGenre"].Value = txbID.Text.Trim();
-                selected.Cells["inttitleGenre"].Value = txbGenre.Text.Trim();
-                DataGridView1.DataSource = genreDataTable;
+                string txtID = txbID.Text.Trim();
+                int counter = 0;
+                foreach (DataRow row in genreDataTable.Rows)
+                {
+                    if (row["codeGenre"].Equals(int.Parse(txtID)))
+                    {
+                        genreDataTable.Rows[counter]["inttitleGenre"] = txbGenre.Text.Trim();
+                        DataGridView1.DataSource = genreDataTable;
+                        break;
+                    }
+                    counter++;
+                }
             }
         }
 
@@ -109,6 +119,39 @@ namespace TP5
                 DataGridViewRow selectedRow = DataGridView1.Rows[e.RowIndex];
                 txbID.Text = selectedRow.Cells["codeGenre"].Value.ToString();
                 txbGenre.Text = selectedRow.Cells["inttitleGenre"].Value.ToString();
+            }
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txbID.Text = "";
+            txbGenre.Text = "";
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if(genreDataTable.Rows.Count > 0)
+            {
+                foreach (DataRow row in genreDataTable.Rows)
+                {
+                    if (row["codeGenre"].Equals(int.Parse(txbID.Text.Trim())))
+                    {
+                        int selectedIndex = DataGridView1.SelectedRows[0].Index;
+                        genreDataTable.Rows.RemoveAt(selectedIndex);
+                        DataGridView1.DataSource = genreDataTable;
+                        btnClear_Click(sender, e);
+                        break;
+
+                    }
+                }
+            }
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            if(dataAdapter != null)
+            {
+                dataAdapter.Update(genreDataTable);
             }
         }
     }
