@@ -93,7 +93,13 @@ namespace TP5
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            
+            if(DataGridView1.SelectedRows.Count > 0)
+            {
+                DataGridViewRow selected = DataGridView1.SelectedRows[0];
+                selected.Cells["codeGenre"].Value = txbID.Text.Trim();
+                selected.Cells["inttitleGenre"].Value = txbGenre.Text.Trim();
+                DataGridView1.DataSource = genreDataTable;
+            }
         }
 
         private void CellClick(object sender, DataGridViewCellEventArgs e)
