@@ -21,6 +21,7 @@ namespace TP5
         SqlDataAdapter dataAdapter;
         DataSet dataSet = new DataSet();
         DataTable genreDataTable = new DataTable();
+        CurrencyManager genreManager;
 
         public Form1()
         {
@@ -57,6 +58,9 @@ namespace TP5
         {
             GetGenreDataFromDataBaseTable();
             DataGridView1.DataSource = genreDataTable;
+            txbID.DataBindings.Add("text", genreDataTable, "codeGenre");
+            txbGenre.DataBindings.Add("text", genreDataTable, "inttitleGenre");
+            genreManager = (CurrencyManager)BindingContext[genreDataTable];
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -153,6 +157,26 @@ namespace TP5
             {
                 dataAdapter.Update(genreDataTable);
             }
+        }
+
+        private void btnPrevious_Click(object sender, EventArgs e)
+        {
+            genreManager.Position--;
+        }
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            genreManager.Position++;
+        }
+
+        private void btnLast_Click(object sender, EventArgs e)
+        {
+            genreManager.Position = genreManager.Count - 1;
+        }
+
+        private void btnFirst_Click(object sender, EventArgs e)
+        {
+            genreManager.Position = 0;
         }
     }
 }

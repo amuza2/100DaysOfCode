@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txbID = new Guna.UI2.WinForms.Guna2TextBox();
@@ -40,10 +40,10 @@
             this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
             this.btnClear = new Guna.UI2.WinForms.Guna2Button();
             this.btnSave = new Guna.UI2.WinForms.Guna2Button();
-            this.btnButtom = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.btnDown = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.btnUp = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.btnTop = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.btnFirst = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.btnPrevious = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.btnNext = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.btnLast = new Guna.UI2.WinForms.Guna2CircleButton();
             this.DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -203,96 +203,100 @@
             this.btnSave.Text = "Enregistre";
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // btnButtom
+            // btnFirst
             // 
-            this.btnButtom.Animated = true;
-            this.btnButtom.CheckedState.Parent = this.btnButtom;
-            this.btnButtom.CustomImages.Parent = this.btnButtom;
-            this.btnButtom.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnButtom.ForeColor = System.Drawing.Color.White;
-            this.btnButtom.HoverState.Parent = this.btnButtom;
-            this.btnButtom.Location = new System.Drawing.Point(40, 187);
-            this.btnButtom.Name = "btnButtom";
-            this.btnButtom.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnButtom.ShadowDecoration.Parent = this.btnButtom;
-            this.btnButtom.Size = new System.Drawing.Size(50, 47);
-            this.btnButtom.TabIndex = 5;
-            this.btnButtom.Text = ">>";
+            this.btnFirst.Animated = true;
+            this.btnFirst.CheckedState.Parent = this.btnFirst;
+            this.btnFirst.CustomImages.Parent = this.btnFirst;
+            this.btnFirst.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFirst.ForeColor = System.Drawing.Color.White;
+            this.btnFirst.HoverState.Parent = this.btnFirst;
+            this.btnFirst.Location = new System.Drawing.Point(40, 187);
+            this.btnFirst.Name = "btnFirst";
+            this.btnFirst.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnFirst.ShadowDecoration.Parent = this.btnFirst;
+            this.btnFirst.Size = new System.Drawing.Size(50, 47);
+            this.btnFirst.TabIndex = 5;
+            this.btnFirst.Text = ">>";
+            this.btnFirst.Click += new System.EventHandler(this.btnFirst_Click);
             // 
-            // btnDown
+            // btnPrevious
             // 
-            this.btnDown.Animated = true;
-            this.btnDown.CheckedState.Parent = this.btnDown;
-            this.btnDown.CustomImages.Parent = this.btnDown;
-            this.btnDown.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDown.ForeColor = System.Drawing.Color.White;
-            this.btnDown.HoverState.Parent = this.btnDown;
-            this.btnDown.Location = new System.Drawing.Point(110, 187);
-            this.btnDown.Name = "btnDown";
-            this.btnDown.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnDown.ShadowDecoration.Parent = this.btnDown;
-            this.btnDown.Size = new System.Drawing.Size(50, 47);
-            this.btnDown.TabIndex = 5;
-            this.btnDown.Text = ">";
+            this.btnPrevious.Animated = true;
+            this.btnPrevious.CheckedState.Parent = this.btnPrevious;
+            this.btnPrevious.CustomImages.Parent = this.btnPrevious;
+            this.btnPrevious.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrevious.ForeColor = System.Drawing.Color.White;
+            this.btnPrevious.HoverState.Parent = this.btnPrevious;
+            this.btnPrevious.Location = new System.Drawing.Point(110, 187);
+            this.btnPrevious.Name = "btnPrevious";
+            this.btnPrevious.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnPrevious.ShadowDecoration.Parent = this.btnPrevious;
+            this.btnPrevious.Size = new System.Drawing.Size(50, 47);
+            this.btnPrevious.TabIndex = 5;
+            this.btnPrevious.Text = ">";
+            this.btnPrevious.Click += new System.EventHandler(this.btnPrevious_Click);
             // 
-            // btnUp
+            // btnNext
             // 
-            this.btnUp.Animated = true;
-            this.btnUp.CheckedState.Parent = this.btnUp;
-            this.btnUp.CustomImages.Parent = this.btnUp;
-            this.btnUp.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUp.ForeColor = System.Drawing.Color.White;
-            this.btnUp.HoverState.Parent = this.btnUp;
-            this.btnUp.Location = new System.Drawing.Point(220, 187);
-            this.btnUp.Name = "btnUp";
-            this.btnUp.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnUp.ShadowDecoration.Parent = this.btnUp;
-            this.btnUp.Size = new System.Drawing.Size(50, 47);
-            this.btnUp.TabIndex = 5;
-            this.btnUp.Text = "<";
+            this.btnNext.Animated = true;
+            this.btnNext.CheckedState.Parent = this.btnNext;
+            this.btnNext.CustomImages.Parent = this.btnNext;
+            this.btnNext.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNext.ForeColor = System.Drawing.Color.White;
+            this.btnNext.HoverState.Parent = this.btnNext;
+            this.btnNext.Location = new System.Drawing.Point(220, 187);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnNext.ShadowDecoration.Parent = this.btnNext;
+            this.btnNext.Size = new System.Drawing.Size(50, 47);
+            this.btnNext.TabIndex = 5;
+            this.btnNext.Text = "<";
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
-            // btnTop
+            // btnLast
             // 
-            this.btnTop.Animated = true;
-            this.btnTop.CheckedState.Parent = this.btnTop;
-            this.btnTop.CustomImages.Parent = this.btnTop;
-            this.btnTop.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTop.ForeColor = System.Drawing.Color.White;
-            this.btnTop.HoverState.Parent = this.btnTop;
-            this.btnTop.Location = new System.Drawing.Point(295, 187);
-            this.btnTop.Name = "btnTop";
-            this.btnTop.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnTop.ShadowDecoration.Parent = this.btnTop;
-            this.btnTop.Size = new System.Drawing.Size(50, 47);
-            this.btnTop.TabIndex = 5;
-            this.btnTop.Text = "<<";
+            this.btnLast.Animated = true;
+            this.btnLast.CheckedState.Parent = this.btnLast;
+            this.btnLast.CustomImages.Parent = this.btnLast;
+            this.btnLast.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLast.ForeColor = System.Drawing.Color.White;
+            this.btnLast.HoverState.Parent = this.btnLast;
+            this.btnLast.Location = new System.Drawing.Point(295, 187);
+            this.btnLast.Name = "btnLast";
+            this.btnLast.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnLast.ShadowDecoration.Parent = this.btnLast;
+            this.btnLast.Size = new System.Drawing.Size(50, 47);
+            this.btnLast.TabIndex = 5;
+            this.btnLast.Text = "<<";
+            this.btnLast.Click += new System.EventHandler(this.btnLast_Click);
             // 
             // DataGridView1
             // 
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(223)))), ((int)(((byte)(251)))));
-            this.DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(223)))), ((int)(((byte)(251)))));
+            this.DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(242)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.DataGridView1.ColumnHeadersHeight = 30;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(233)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(185)))), ((int)(((byte)(246)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGridView1.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(233)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(185)))), ((int)(((byte)(246)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
             this.DataGridView1.EnableHeadersVisualStyles = false;
             this.DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(222)))), ((int)(((byte)(251)))));
             this.DataGridView1.Location = new System.Drawing.Point(379, 32);
@@ -331,10 +335,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.DataGridView1);
-            this.Controls.Add(this.btnTop);
-            this.Controls.Add(this.btnUp);
-            this.Controls.Add(this.btnDown);
-            this.Controls.Add(this.btnButtom);
+            this.Controls.Add(this.btnLast);
+            this.Controls.Add(this.btnNext);
+            this.Controls.Add(this.btnPrevious);
+            this.Controls.Add(this.btnFirst);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnDelete);
@@ -364,10 +368,10 @@
         private Guna.UI2.WinForms.Guna2Button btnDelete;
         private Guna.UI2.WinForms.Guna2Button btnClear;
         private Guna.UI2.WinForms.Guna2Button btnSave;
-        private Guna.UI2.WinForms.Guna2CircleButton btnButtom;
-        private Guna.UI2.WinForms.Guna2CircleButton btnDown;
-        private Guna.UI2.WinForms.Guna2CircleButton btnUp;
-        private Guna.UI2.WinForms.Guna2CircleButton btnTop;
+        private Guna.UI2.WinForms.Guna2CircleButton btnFirst;
+        private Guna.UI2.WinForms.Guna2CircleButton btnPrevious;
+        private Guna.UI2.WinForms.Guna2CircleButton btnNext;
+        private Guna.UI2.WinForms.Guna2CircleButton btnLast;
         private Guna.UI2.WinForms.Guna2DataGridView DataGridView1;
     }
 }
