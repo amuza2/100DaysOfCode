@@ -1,0 +1,13 @@
+C:\Users\moham\Documents\github\100DaysOfCode\Day83\learningSoftwareDevelopment\TP5\obj\Debug\TP5.csproj.AssemblyReference.cache
+C:\Users\moham\Documents\github\100DaysOfCode\Day83\learningSoftwareDevelopment\TP5\obj\Debug\TP5.Form1.resources
+C:\Users\moham\Documents\github\100DaysOfCode\Day83\learningSoftwareDevelopment\TP5\obj\Debug\TP5.Form2.resources
+C:\Users\moham\Documents\github\100DaysOfCode\Day83\learningSoftwareDevelopment\TP5\obj\Debug\TP5.Properties.Resources.resources
+C:\Users\moham\Documents\github\100DaysOfCode\Day83\learningSoftwareDevelopment\TP5\obj\Debug\TP5.csproj.GenerateResource.cache
+C:\Users\moham\Documents\github\100DaysOfCode\Day83\learningSoftwareDevelopment\TP5\obj\Debug\TP5.csproj.CoreCompileInputs.cache
+C:\Users\moham\Documents\github\100DaysOfCode\Day83\learningSoftwareDevelopment\TP5\bin\Debug\TP5.exe.config
+C:\Users\moham\Documents\github\100DaysOfCode\Day83\learningSoftwareDevelopment\TP5\bin\Debug\TP5.exe
+C:\Users\moham\Documents\github\100DaysOfCode\Day83\learningSoftwareDevelopment\TP5\bin\Debug\TP5.pdb
+C:\Users\moham\Documents\github\100DaysOfCode\Day83\learningSoftwareDevelopment\TP5\bin\Debug\Guna.UI2.dll
+C:\Users\moham\Documents\github\100DaysOfCode\Day83\learningSoftwareDevelopment\TP5\obj\Debug\TP5.csproj.CopyComplete
+C:\Users\moham\Documents\github\100DaysOfCode\Day83\learningSoftwareDevelopment\TP5\obj\Debug\TP5.exe
+C:\Users\moham\Documents\github\100DaysOfCode\Day83\learningSoftwareDevelopment\TP5\obj\Debug\TP5.pdb

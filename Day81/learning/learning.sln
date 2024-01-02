@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exm01", "exm01\exm01.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codewars", "Challenges\Codewars.csproj", "{9CB87656-DB18-4571-A53E-7218FAED3155}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "prototype", "prototype\prototype.csproj", "{B0C53C1A-30C1-442B-9C9E-F225428515D8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{9CB87656-DB18-4571-A53E-7218FAED3155}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9CB87656-DB18-4571-A53E-7218FAED3155}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9CB87656-DB18-4571-A53E-7218FAED3155}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0C53C1A-30C1-442B-9C9E-F225428515D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0C53C1A-30C1-442B-9C9E-F225428515D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0C53C1A-30C1-442B-9C9E-F225428515D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0C53C1A-30C1-442B-9C9E-F225428515D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
