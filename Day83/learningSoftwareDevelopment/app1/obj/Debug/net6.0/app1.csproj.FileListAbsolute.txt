@@ -12,3 +12,17 @@ C:\Users\moham\Documents\github\learning software development\app1\obj\Debug\net
 C:\Users\moham\Documents\github\learning software development\app1\obj\Debug\net6.0\app1.pdb
 C:\Users\moham\Documents\github\learning software development\app1\obj\Debug\net6.0\app1.genruntimeconfig.cache
 C:\Users\moham\Documents\github\learning software development\app1\obj\Debug\net6.0\ref\app1.dll
+C:\Users\moham\Documents\github\100DaysOfCode\Day83\learningSoftwareDevelopment\app1\bin\Debug\net6.0\app1.exe
+C:\Users\moham\Documents\github\100DaysOfCode\Day83\learningSoftwareDevelopment\app1\bin\Debug\net6.0\app1.deps.json
+C:\Users\moham\Documents\github\100DaysOfCode\Day83\learningSoftwareDevelopment\app1\bin\Debug\net6.0\app1.runtimeconfig.json
+C:\Users\moham\Documents\github\100DaysOfCode\Day83\learningSoftwareDevelopment\app1\bin\Debug\net6.0\app1.dll
+C:\Users\moham\Documents\github\100DaysOfCode\Day83\learningSoftwareDevelopment\app1\bin\Debug\net6.0\app1.pdb
+C:\Users\moham\Documents\github\100DaysOfCode\Day83\learningSoftwareDevelopment\app1\obj\Debug\net6.0\app1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\moham\Documents\github\100DaysOfCode\Day83\learningSoftwareDevelopment\app1\obj\Debug\net6.0\app1.AssemblyInfoInputs.cache
+C:\Users\moham\Documents\github\100DaysOfCode\Day83\learningSoftwareDevelopment\app1\obj\Debug\net6.0\app1.AssemblyInfo.cs
+C:\Users\moham\Documents\github\100DaysOfCode\Day83\learningSoftwareDevelopment\app1\obj\Debug\net6.0\app1.csproj.CoreCompileInputs.cache
+C:\Users\moham\Documents\github\100DaysOfCode\Day83\learningSoftwareDevelopment\app1\obj\Debug\net6.0\app1.dll
+C:\Users\moham\Documents\github\100DaysOfCode\Day83\learningSoftwareDevelopment\app1\obj\Debug\net6.0\refint\app1.dll
+C:\Users\moham\Documents\github\100DaysOfCode\Day83\learningSoftwareDevelopment\app1\obj\Debug\net6.0\app1.pdb
+C:\Users\moham\Documents\github\100DaysOfCode\Day83\learningSoftwareDevelopment\app1\obj\Debug\net6.0\app1.genruntimeconfig.cache
+C:\Users\moham\Documents\github\100DaysOfCode\Day83\learningSoftwareDevelopment\app1\obj\Debug\net6.0\ref\app1.dll

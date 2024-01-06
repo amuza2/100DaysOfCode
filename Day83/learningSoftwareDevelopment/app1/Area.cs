@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace app1
 {
-    internal class Area
+    public class Area
     {
+        string a = Codewarss.name;
+        string b = Codewarss.name;
         public double Width { get; set; }
         public double Height { get; set; }
         public Area(double width)

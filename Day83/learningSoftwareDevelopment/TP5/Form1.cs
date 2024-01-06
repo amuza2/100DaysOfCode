@@ -22,10 +22,15 @@ namespace TP5
         DataSet dataSet = new DataSet();
         DataTable genreDataTable = new DataTable();
         CurrencyManager genreManager;
+        HelpClass helpClass = new HelpClass();
+        private string genreColumnID = "codeGenre";
+        private string genreColumnIntitle = "inttitleGenre";
+
 
         public Form1()
         {
             InitializeComponent();
+            connection = db.getInstance();
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -35,7 +40,7 @@ namespace TP5
         {
             try
             {
-                connection = new SqlConnection(connectionString);
+                connection.ConnectionString =connectionString;
                 command.CommandText = "SELECT * FROM Genre";
                 command.Connection = connection;
                 connection.Open();
@@ -58,62 +63,19 @@ namespace TP5
         {
             GetGenreDataFromDataBaseTable();
             DataGridView1.DataSource = genreDataTable;
-            txbID.DataBindings.Add("text", genreDataTable, "codeGenre");
-            txbGenre.DataBindings.Add("text", genreDataTable, "inttitleGenre");
+            txbID.DataBindings.Add("text", genreDataTable, genreColumnID);
+            txbGenre.DataBindings.Add("text", genreDataTable, genreColumnIntitle);
             genreManager = (CurrencyManager)BindingContext[genreDataTable];
         }
 
+
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            if (isValid())
-            {
-                try
-                {
-                    DataRow newRow = genreDataTable.NewRow();
-                    newRow["codeGenre"] = txbID.Text.Trim();
-                    newRow["inttitleGenre"] = txbGenre.Text.Trim();
-                    genreDataTable.Rows.Add(newRow);
-                    DataGridView1.DataSource = genreDataTable;
-                    MessageBox.Show("data added successfully");
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error saving data: " + ex, "Error");
-                }
-                finally
-                {
-                    connection.Close();
-                }
-            }
+            helpClass.addButton(txbID, txbGenre, DataGridView1, genreDataTable, genreColumnID, genreColumnIntitle);
         }
-
-        private bool isValid()
-        {
-            bool isValidated = false;
-            if (string.IsNullOrEmpty(txbGenre.Text.Trim()))
-                MessageBox.Show("Please add value to the empty field", "Empty field", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            else isValidated = true;
-                    
-            return isValidated;
-        }
-
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            if(genreDataTable.Rows.Count > 0 && !string.IsNullOrEmpty(txbID.Text))
-            {
-                string txtID = txbID.Text.Trim();
-                int counter = 0;
-                foreach (DataRow row in genreDataTable.Rows)
-                {
-                    if (row["codeGenre"].Equals(int.Parse(txtID)))
-                    {
-                        genreDataTable.Rows[counter]["inttitleGenre"] = txbGenre.Text.Trim();
-                        DataGridView1.DataSource = genreDataTable;
-                        break;
-                    }
-                    counter++;
-                }
-            }
+            helpClass.editButton(txbID, txbGenre, DataGridView1, genreDataTable, genreColumnID, genreColumnIntitle);
         }
 
         private void CellClick(object sender, DataGridViewCellEventArgs e)
@@ -145,7 +107,6 @@ namespace TP5
                         DataGridView1.DataSource = genreDataTable;
                         btnClear_Click(sender, e);
                         break;
-
                     }
                 }
             }

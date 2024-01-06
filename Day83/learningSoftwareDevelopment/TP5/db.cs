@@ -8,12 +8,29 @@ using System.Threading.Tasks;
 
 namespace TP5
 {
-    public class db
+    public sealed class db
     {
-        string connectionString = "Data Source=localhost;Initial Catalog=imdb;Integrated Security=True";
+        private static SqlConnection _instance = null;
+        private static readonly object _instanceLock = new object();
         SqlConnection connection;
         SqlCommand command = new SqlCommand();
         DataTable dataTable = new DataTable();
+
+
+        public static SqlConnection getInstance()
+        {
+            if(_instance == null)
+            {
+                lock (_instanceLock)
+                {
+                    if(_instance == null)
+                    {
+                        _instance = new SqlConnection();
+                    }
+                }
+            }
+            return _instance;
+        }
 
         
         

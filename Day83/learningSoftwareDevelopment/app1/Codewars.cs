@@ -1,7 +1,8 @@
 ﻿namespace app1;
 
-public class Codewars
+public class Codewarss
 {
+    public static string name = "Mohammed";
     public static string ExpandedForm(long num)
     {
         string result = "";
