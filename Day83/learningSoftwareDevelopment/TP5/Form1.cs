@@ -7,6 +7,7 @@ using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.Remoting.Messaging;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,16 +16,13 @@ namespace TP5
 {
     public partial class Form1 : Form
     {
-        string connectionString = "Data Source=localhost;Initial Catalog=imdb;Integrated Security=True";
         SqlConnection connection;
-        SqlCommand command = new SqlCommand();
+        SqlCommand command;
         SqlDataAdapter dataAdapter;
-        DataSet dataSet = new DataSet();
-        DataTable genreDataTable = new DataTable();
+        DataTable genreDataTable;
         CurrencyManager genreManager;
         HelpClass helpClass = new HelpClass();
-        private string genreColumnID = "codeGenre";
-        private string genreColumnIntitle = "inttitleGenre";
+        
 
 
         public Form1()
@@ -40,14 +38,12 @@ namespace TP5
         {
             try
             {
-                connection.ConnectionString =connectionString;
-                command.CommandText = "SELECT * FROM Genre";
-                command.Connection = connection;
+                //connection.ConnectionString = db.connectionString;
+                command = helpClass.createCommand(connection, Tables.genreTableQuery);
                 connection.Open();
-                dataAdapter = new SqlDataAdapter(command);
+                helpClass.getTableFromDataBaseToDataSet(command,db.sharedDataSet, Tables.genreDtName);
                 SqlCommandBuilder sqlCommandBuilder = new SqlCommandBuilder(dataAdapter);
-                dataAdapter.Fill(dataSet, "dtGenre");
-                genreDataTable = dataSet.Tables["dtGenre"];
+                genreDataTable = helpClass.getTableFromDataSet(db.sharedDataSet, Tables.genreDtName);
             }
             catch (Exception ex)
             {
@@ -63,53 +59,33 @@ namespace TP5
         {
             GetGenreDataFromDataBaseTable();
             DataGridView1.DataSource = genreDataTable;
-            txbID.DataBindings.Add("text", genreDataTable, genreColumnID);
-            txbGenre.DataBindings.Add("text", genreDataTable, genreColumnIntitle);
             genreManager = (CurrencyManager)BindingContext[genreDataTable];
         }
 
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            helpClass.addButton(txbID, txbGenre, DataGridView1, genreDataTable, genreColumnID, genreColumnIntitle);
+            helpClass.addButton(DataGridView1, genreDataTable, txbID, txbGenre);
         }
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            helpClass.editButton(txbID, txbGenre, DataGridView1, genreDataTable, genreColumnID, genreColumnIntitle);
+            helpClass.editButton(txbID, txbGenre, DataGridView1, genreDataTable, Tables.genreColumnID, Tables.genreColumnIntitle);
         }
 
         private void CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if(e.RowIndex >= 0 && e.RowIndex < genreDataTable.Rows.Count)
-            {
-                DataGridViewRow selectedRow = DataGridView1.Rows[e.RowIndex];
-                txbID.Text = selectedRow.Cells["codeGenre"].Value.ToString();
-                txbGenre.Text = selectedRow.Cells["inttitleGenre"].Value.ToString();
-            }
+            helpClass.cellClick(e, genreDataTable, DataGridView1, txbID, txbGenre);
         }
 
         private void btnClear_Click(object sender, EventArgs e)
         {
-            txbID.Text = "";
-            txbGenre.Text = "";
+            helpClass.clearTextBox(txbID, txbGenre);
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            if(genreDataTable.Rows.Count > 0)
-            {
-                foreach (DataRow row in genreDataTable.Rows)
-                {
-                    if (row["codeGenre"].Equals(int.Parse(txbID.Text.Trim())))
-                    {
-                        int selectedIndex = DataGridView1.SelectedRows[0].Index;
-                        genreDataTable.Rows.RemoveAt(selectedIndex);
-                        DataGridView1.DataSource = genreDataTable;
-                        btnClear_Click(sender, e);
-                        break;
-                    }
-                }
-            }
+            helpClass.deleteButton(genreDataTable, DataGridView1, txbID, txbGenre);
+            btnClear_Click(sender, e);
         }
 
         private void btnSave_Click(object sender, EventArgs e)
