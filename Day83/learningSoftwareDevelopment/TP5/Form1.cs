@@ -16,10 +16,8 @@ namespace TP5
 {
     public partial class Form1 : Form
     {
-        SqlConnection connection;
-        SqlCommand command;
         SqlDataAdapter dataAdapter;
-        DataTable genreDataTable;
+        DataTable genreDataTable = db.sharedDataSet.Tables[Tables.genreDtName];
         CurrencyManager genreManager;
         HelpClass helpClass = new HelpClass();
         
@@ -28,36 +26,14 @@ namespace TP5
         public Form1()
         {
             InitializeComponent();
-            connection = db.getInstance();
         }
 
         private void label2_Click(object sender, EventArgs e)
         {
         }
-        public void GetGenreDataFromDataBaseTable()
-        {
-            try
-            {
-                //connection.ConnectionString = db.connectionString;
-                command = helpClass.createCommand(connection, Tables.genreTableQuery);
-                connection.Open();
-                helpClass.getTableFromDataBaseToDataSet(command,db.sharedDataSet, Tables.genreDtName);
-                SqlCommandBuilder sqlCommandBuilder = new SqlCommandBuilder(dataAdapter);
-                genreDataTable = helpClass.getTableFromDataSet(db.sharedDataSet, Tables.genreDtName);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error during tabales initialisation: " + ex);
-            }
-            finally
-            {
-                connection.Close();
-            }
-        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            GetGenreDataFromDataBaseTable();
             DataGridView1.DataSource = genreDataTable;
             genreManager = (CurrencyManager)BindingContext[genreDataTable];
         }

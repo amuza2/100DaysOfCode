@@ -12,30 +12,46 @@ namespace TP5
     public sealed class db
     {
         private static readonly string connectionString = "Data Source=localhost;Initial Catalog=imdb;Integrated Security=True";
-        private static SqlConnection _instance = null;
+        private static db _instance = null;
         public static DataSet sharedDataSet = new DataSet();
         private static readonly object _instanceLock = new object();
-        SqlConnection connection;
-        SqlCommand command = new SqlCommand();
-        DataTable dataTable = new DataTable();
+        private SqlConnection _connection;
 
-
-        public static SqlConnection getInstance()
+        private db()
         {
-            if(_instance == null)
+            _connection = new SqlConnection();
+        }
+        public static db Instance
+        {
+            get
             {
-                lock (_instanceLock)
+                if(_instance == null)
                 {
-                    if(_instance == null)
+                    lock (_instanceLock)
                     {
-                        _instance = new SqlConnection(connectionString);
+                        if(_instance == null)
+                        {
+                            _instance = new db();
+                        }
                     }
                 }
+                return _instance;
             }
-            return _instance;
+        }
+        public SqlConnection getConnection()
+        {
+            if (!string.IsNullOrEmpty(connectionString)) _connection.ConnectionString = connectionString;
+            if(_connection.State == ConnectionState.Closed) _connection.Open();
+            return _connection;
+        }
+        public void disconnect()
+        {
+            if(_connection != null && _connection.State == ConnectionState.Open)
+            {
+                _connection.Close();
+            }
         }
 
-        
-        
+
     }
 }

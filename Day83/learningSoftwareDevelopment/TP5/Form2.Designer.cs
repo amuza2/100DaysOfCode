@@ -35,20 +35,20 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2GradientCircleButton1 = new Guna.UI2.WinForms.Guna2GradientCircleButton();
-            this.guna2GradientCircleButton2 = new Guna.UI2.WinForms.Guna2GradientCircleButton();
-            this.guna2GradientCircleButton3 = new Guna.UI2.WinForms.Guna2GradientCircleButton();
-            this.guna2GradientCircleButton4 = new Guna.UI2.WinForms.Guna2GradientCircleButton();
-            this.guna2GradientTileButton1 = new Guna.UI2.WinForms.Guna2GradientTileButton();
-            this.guna2GradientTileButton2 = new Guna.UI2.WinForms.Guna2GradientTileButton();
-            this.guna2GradientTileButton3 = new Guna.UI2.WinForms.Guna2GradientTileButton();
-            this.guna2GradientTileButton4 = new Guna.UI2.WinForms.Guna2GradientTileButton();
-            this.guna2GradientTileButton5 = new Guna.UI2.WinForms.Guna2GradientTileButton();
+            this.txbSerieCode = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txbTitleSerie = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnFirst = new Guna.UI2.WinForms.Guna2GradientCircleButton();
+            this.btnPrevious = new Guna.UI2.WinForms.Guna2GradientCircleButton();
+            this.btnNext = new Guna.UI2.WinForms.Guna2GradientCircleButton();
+            this.btnLast = new Guna.UI2.WinForms.Guna2GradientCircleButton();
+            this.btnAdd = new Guna.UI2.WinForms.Guna2GradientTileButton();
+            this.btnEdit = new Guna.UI2.WinForms.Guna2GradientTileButton();
+            this.btnDelete = new Guna.UI2.WinForms.Guna2GradientTileButton();
+            this.btnClear = new Guna.UI2.WinForms.Guna2GradientTileButton();
+            this.btnSave = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.SerieDataGridView = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.dtpReleaseDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.cmbGenre = new Guna.UI2.WinForms.Guna2ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.SerieDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -88,219 +88,197 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Genre";
             // 
-            // guna2TextBox1
+            // txbSerieCode
             // 
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(146, 31);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(281, 35);
-            this.guna2TextBox1.TabIndex = 1;
+            this.txbSerieCode.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txbSerieCode.DefaultText = "";
+            this.txbSerieCode.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txbSerieCode.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txbSerieCode.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txbSerieCode.DisabledState.Parent = this.txbSerieCode;
+            this.txbSerieCode.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txbSerieCode.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbSerieCode.FocusedState.Parent = this.txbSerieCode;
+            this.txbSerieCode.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbSerieCode.HoverState.Parent = this.txbSerieCode;
+            this.txbSerieCode.Location = new System.Drawing.Point(146, 31);
+            this.txbSerieCode.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txbSerieCode.Name = "txbSerieCode";
+            this.txbSerieCode.PasswordChar = '\0';
+            this.txbSerieCode.PlaceholderText = "";
+            this.txbSerieCode.SelectedText = "";
+            this.txbSerieCode.ShadowDecoration.Parent = this.txbSerieCode;
+            this.txbSerieCode.Size = new System.Drawing.Size(281, 35);
+            this.txbSerieCode.TabIndex = 1;
             // 
-            // guna2TextBox2
+            // txbTitleSerie
             // 
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.FocusedState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Location = new System.Drawing.Point(146, 88);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderText = "";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.ShadowDecoration.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Size = new System.Drawing.Size(281, 36);
-            this.guna2TextBox2.TabIndex = 2;
+            this.txbTitleSerie.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txbTitleSerie.DefaultText = "";
+            this.txbTitleSerie.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txbTitleSerie.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txbTitleSerie.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txbTitleSerie.DisabledState.Parent = this.txbTitleSerie;
+            this.txbTitleSerie.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txbTitleSerie.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbTitleSerie.FocusedState.Parent = this.txbTitleSerie;
+            this.txbTitleSerie.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbTitleSerie.HoverState.Parent = this.txbTitleSerie;
+            this.txbTitleSerie.Location = new System.Drawing.Point(146, 88);
+            this.txbTitleSerie.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txbTitleSerie.Name = "txbTitleSerie";
+            this.txbTitleSerie.PasswordChar = '\0';
+            this.txbTitleSerie.PlaceholderText = "";
+            this.txbTitleSerie.SelectedText = "";
+            this.txbTitleSerie.ShadowDecoration.Parent = this.txbTitleSerie;
+            this.txbTitleSerie.Size = new System.Drawing.Size(281, 36);
+            this.txbTitleSerie.TabIndex = 2;
             // 
-            // guna2TextBox4
+            // btnFirst
             // 
-            this.guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox4.DefaultText = "";
-            this.guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.DisabledState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.FocusedState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.HoverState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.Location = new System.Drawing.Point(146, 204);
-            this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.guna2TextBox4.Name = "guna2TextBox4";
-            this.guna2TextBox4.PasswordChar = '\0';
-            this.guna2TextBox4.PlaceholderText = "";
-            this.guna2TextBox4.SelectedText = "";
-            this.guna2TextBox4.ShadowDecoration.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.Size = new System.Drawing.Size(281, 36);
-            this.guna2TextBox4.TabIndex = 4;
+            this.btnFirst.CheckedState.Parent = this.btnFirst;
+            this.btnFirst.CustomImages.Parent = this.btnFirst;
+            this.btnFirst.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFirst.ForeColor = System.Drawing.Color.White;
+            this.btnFirst.HoverState.Parent = this.btnFirst;
+            this.btnFirst.Location = new System.Drawing.Point(194, 257);
+            this.btnFirst.Name = "btnFirst";
+            this.btnFirst.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnFirst.ShadowDecoration.Parent = this.btnFirst;
+            this.btnFirst.Size = new System.Drawing.Size(48, 50);
+            this.btnFirst.TabIndex = 6;
+            this.btnFirst.Text = "<<";
             // 
-            // guna2GradientCircleButton1
+            // btnPrevious
             // 
-            this.guna2GradientCircleButton1.CheckedState.Parent = this.guna2GradientCircleButton1;
-            this.guna2GradientCircleButton1.CustomImages.Parent = this.guna2GradientCircleButton1;
-            this.guna2GradientCircleButton1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientCircleButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientCircleButton1.HoverState.Parent = this.guna2GradientCircleButton1;
-            this.guna2GradientCircleButton1.Location = new System.Drawing.Point(194, 257);
-            this.guna2GradientCircleButton1.Name = "guna2GradientCircleButton1";
-            this.guna2GradientCircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2GradientCircleButton1.ShadowDecoration.Parent = this.guna2GradientCircleButton1;
-            this.guna2GradientCircleButton1.Size = new System.Drawing.Size(48, 50);
-            this.guna2GradientCircleButton1.TabIndex = 6;
-            this.guna2GradientCircleButton1.Text = "<<";
+            this.btnPrevious.CheckedState.Parent = this.btnPrevious;
+            this.btnPrevious.CustomImages.Parent = this.btnPrevious;
+            this.btnPrevious.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrevious.ForeColor = System.Drawing.Color.White;
+            this.btnPrevious.HoverState.Parent = this.btnPrevious;
+            this.btnPrevious.Location = new System.Drawing.Point(249, 257);
+            this.btnPrevious.Name = "btnPrevious";
+            this.btnPrevious.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnPrevious.ShadowDecoration.Parent = this.btnPrevious;
+            this.btnPrevious.Size = new System.Drawing.Size(48, 50);
+            this.btnPrevious.TabIndex = 6;
+            this.btnPrevious.Text = "<";
             // 
-            // guna2GradientCircleButton2
+            // btnNext
             // 
-            this.guna2GradientCircleButton2.CheckedState.Parent = this.guna2GradientCircleButton2;
-            this.guna2GradientCircleButton2.CustomImages.Parent = this.guna2GradientCircleButton2;
-            this.guna2GradientCircleButton2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientCircleButton2.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientCircleButton2.HoverState.Parent = this.guna2GradientCircleButton2;
-            this.guna2GradientCircleButton2.Location = new System.Drawing.Point(249, 257);
-            this.guna2GradientCircleButton2.Name = "guna2GradientCircleButton2";
-            this.guna2GradientCircleButton2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2GradientCircleButton2.ShadowDecoration.Parent = this.guna2GradientCircleButton2;
-            this.guna2GradientCircleButton2.Size = new System.Drawing.Size(48, 50);
-            this.guna2GradientCircleButton2.TabIndex = 6;
-            this.guna2GradientCircleButton2.Text = "<";
+            this.btnNext.CheckedState.Parent = this.btnNext;
+            this.btnNext.CustomImages.Parent = this.btnNext;
+            this.btnNext.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNext.ForeColor = System.Drawing.Color.White;
+            this.btnNext.HoverState.Parent = this.btnNext;
+            this.btnNext.Location = new System.Drawing.Point(304, 257);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnNext.ShadowDecoration.Parent = this.btnNext;
+            this.btnNext.Size = new System.Drawing.Size(48, 50);
+            this.btnNext.TabIndex = 6;
+            this.btnNext.Text = ">";
             // 
-            // guna2GradientCircleButton3
+            // btnLast
             // 
-            this.guna2GradientCircleButton3.CheckedState.Parent = this.guna2GradientCircleButton3;
-            this.guna2GradientCircleButton3.CustomImages.Parent = this.guna2GradientCircleButton3;
-            this.guna2GradientCircleButton3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientCircleButton3.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientCircleButton3.HoverState.Parent = this.guna2GradientCircleButton3;
-            this.guna2GradientCircleButton3.Location = new System.Drawing.Point(304, 257);
-            this.guna2GradientCircleButton3.Name = "guna2GradientCircleButton3";
-            this.guna2GradientCircleButton3.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2GradientCircleButton3.ShadowDecoration.Parent = this.guna2GradientCircleButton3;
-            this.guna2GradientCircleButton3.Size = new System.Drawing.Size(48, 50);
-            this.guna2GradientCircleButton3.TabIndex = 6;
-            this.guna2GradientCircleButton3.Text = ">";
+            this.btnLast.CheckedState.Parent = this.btnLast;
+            this.btnLast.CustomImages.Parent = this.btnLast;
+            this.btnLast.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLast.ForeColor = System.Drawing.Color.White;
+            this.btnLast.HoverState.Parent = this.btnLast;
+            this.btnLast.Location = new System.Drawing.Point(359, 257);
+            this.btnLast.Name = "btnLast";
+            this.btnLast.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnLast.ShadowDecoration.Parent = this.btnLast;
+            this.btnLast.Size = new System.Drawing.Size(48, 50);
+            this.btnLast.TabIndex = 6;
+            this.btnLast.Text = ">>";
             // 
-            // guna2GradientCircleButton4
+            // btnAdd
             // 
-            this.guna2GradientCircleButton4.CheckedState.Parent = this.guna2GradientCircleButton4;
-            this.guna2GradientCircleButton4.CustomImages.Parent = this.guna2GradientCircleButton4;
-            this.guna2GradientCircleButton4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientCircleButton4.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientCircleButton4.HoverState.Parent = this.guna2GradientCircleButton4;
-            this.guna2GradientCircleButton4.Location = new System.Drawing.Point(359, 257);
-            this.guna2GradientCircleButton4.Name = "guna2GradientCircleButton4";
-            this.guna2GradientCircleButton4.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2GradientCircleButton4.ShadowDecoration.Parent = this.guna2GradientCircleButton4;
-            this.guna2GradientCircleButton4.Size = new System.Drawing.Size(48, 50);
-            this.guna2GradientCircleButton4.TabIndex = 6;
-            this.guna2GradientCircleButton4.Text = ">>";
+            this.btnAdd.Animated = true;
+            this.btnAdd.AutoRoundedCorners = true;
+            this.btnAdd.BorderRadius = 17;
+            this.btnAdd.CheckedState.Parent = this.btnAdd;
+            this.btnAdd.CustomImages.Parent = this.btnAdd;
+            this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
+            this.btnAdd.HoverState.Parent = this.btnAdd;
+            this.btnAdd.Location = new System.Drawing.Point(434, 31);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.ShadowDecoration.Parent = this.btnAdd;
+            this.btnAdd.Size = new System.Drawing.Size(180, 36);
+            this.btnAdd.TabIndex = 7;
+            this.btnAdd.Text = "Ajouter";
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // guna2GradientTileButton1
+            // btnEdit
             // 
-            this.guna2GradientTileButton1.Animated = true;
-            this.guna2GradientTileButton1.AutoRoundedCorners = true;
-            this.guna2GradientTileButton1.BorderRadius = 17;
-            this.guna2GradientTileButton1.CheckedState.Parent = this.guna2GradientTileButton1;
-            this.guna2GradientTileButton1.CustomImages.Parent = this.guna2GradientTileButton1;
-            this.guna2GradientTileButton1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientTileButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientTileButton1.HoverState.Parent = this.guna2GradientTileButton1;
-            this.guna2GradientTileButton1.Location = new System.Drawing.Point(434, 31);
-            this.guna2GradientTileButton1.Name = "guna2GradientTileButton1";
-            this.guna2GradientTileButton1.ShadowDecoration.Parent = this.guna2GradientTileButton1;
-            this.guna2GradientTileButton1.Size = new System.Drawing.Size(180, 36);
-            this.guna2GradientTileButton1.TabIndex = 7;
-            this.guna2GradientTileButton1.Text = "Ajouter";
+            this.btnEdit.Animated = true;
+            this.btnEdit.AutoRoundedCorners = true;
+            this.btnEdit.BorderRadius = 17;
+            this.btnEdit.CheckedState.Parent = this.btnEdit;
+            this.btnEdit.CustomImages.Parent = this.btnEdit;
+            this.btnEdit.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEdit.ForeColor = System.Drawing.Color.White;
+            this.btnEdit.HoverState.Parent = this.btnEdit;
+            this.btnEdit.Location = new System.Drawing.Point(434, 88);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.ShadowDecoration.Parent = this.btnEdit;
+            this.btnEdit.Size = new System.Drawing.Size(180, 36);
+            this.btnEdit.TabIndex = 7;
+            this.btnEdit.Text = "Modifier";
             // 
-            // guna2GradientTileButton2
+            // btnDelete
             // 
-            this.guna2GradientTileButton2.Animated = true;
-            this.guna2GradientTileButton2.AutoRoundedCorners = true;
-            this.guna2GradientTileButton2.BorderRadius = 17;
-            this.guna2GradientTileButton2.CheckedState.Parent = this.guna2GradientTileButton2;
-            this.guna2GradientTileButton2.CustomImages.Parent = this.guna2GradientTileButton2;
-            this.guna2GradientTileButton2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientTileButton2.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientTileButton2.HoverState.Parent = this.guna2GradientTileButton2;
-            this.guna2GradientTileButton2.Location = new System.Drawing.Point(434, 88);
-            this.guna2GradientTileButton2.Name = "guna2GradientTileButton2";
-            this.guna2GradientTileButton2.ShadowDecoration.Parent = this.guna2GradientTileButton2;
-            this.guna2GradientTileButton2.Size = new System.Drawing.Size(180, 36);
-            this.guna2GradientTileButton2.TabIndex = 7;
-            this.guna2GradientTileButton2.Text = "Modifier";
+            this.btnDelete.Animated = true;
+            this.btnDelete.AutoRoundedCorners = true;
+            this.btnDelete.BorderRadius = 17;
+            this.btnDelete.CheckedState.Parent = this.btnDelete;
+            this.btnDelete.CustomImages.Parent = this.btnDelete;
+            this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.ForeColor = System.Drawing.Color.White;
+            this.btnDelete.HoverState.Parent = this.btnDelete;
+            this.btnDelete.Location = new System.Drawing.Point(434, 145);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.ShadowDecoration.Parent = this.btnDelete;
+            this.btnDelete.Size = new System.Drawing.Size(180, 36);
+            this.btnDelete.TabIndex = 7;
+            this.btnDelete.Text = "Supprimer";
             // 
-            // guna2GradientTileButton3
+            // btnClear
             // 
-            this.guna2GradientTileButton3.Animated = true;
-            this.guna2GradientTileButton3.AutoRoundedCorners = true;
-            this.guna2GradientTileButton3.BorderRadius = 17;
-            this.guna2GradientTileButton3.CheckedState.Parent = this.guna2GradientTileButton3;
-            this.guna2GradientTileButton3.CustomImages.Parent = this.guna2GradientTileButton3;
-            this.guna2GradientTileButton3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientTileButton3.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientTileButton3.HoverState.Parent = this.guna2GradientTileButton3;
-            this.guna2GradientTileButton3.Location = new System.Drawing.Point(434, 145);
-            this.guna2GradientTileButton3.Name = "guna2GradientTileButton3";
-            this.guna2GradientTileButton3.ShadowDecoration.Parent = this.guna2GradientTileButton3;
-            this.guna2GradientTileButton3.Size = new System.Drawing.Size(180, 36);
-            this.guna2GradientTileButton3.TabIndex = 7;
-            this.guna2GradientTileButton3.Text = "Supprimer";
+            this.btnClear.Animated = true;
+            this.btnClear.AutoRoundedCorners = true;
+            this.btnClear.BorderRadius = 17;
+            this.btnClear.CheckedState.Parent = this.btnClear;
+            this.btnClear.CustomImages.Parent = this.btnClear;
+            this.btnClear.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.ForeColor = System.Drawing.Color.White;
+            this.btnClear.HoverState.Parent = this.btnClear;
+            this.btnClear.Location = new System.Drawing.Point(434, 202);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.ShadowDecoration.Parent = this.btnClear;
+            this.btnClear.Size = new System.Drawing.Size(180, 36);
+            this.btnClear.TabIndex = 7;
+            this.btnClear.Text = "Vider";
             // 
-            // guna2GradientTileButton4
+            // btnSave
             // 
-            this.guna2GradientTileButton4.Animated = true;
-            this.guna2GradientTileButton4.AutoRoundedCorners = true;
-            this.guna2GradientTileButton4.BorderRadius = 17;
-            this.guna2GradientTileButton4.CheckedState.Parent = this.guna2GradientTileButton4;
-            this.guna2GradientTileButton4.CustomImages.Parent = this.guna2GradientTileButton4;
-            this.guna2GradientTileButton4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientTileButton4.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientTileButton4.HoverState.Parent = this.guna2GradientTileButton4;
-            this.guna2GradientTileButton4.Location = new System.Drawing.Point(434, 202);
-            this.guna2GradientTileButton4.Name = "guna2GradientTileButton4";
-            this.guna2GradientTileButton4.ShadowDecoration.Parent = this.guna2GradientTileButton4;
-            this.guna2GradientTileButton4.Size = new System.Drawing.Size(180, 36);
-            this.guna2GradientTileButton4.TabIndex = 7;
-            this.guna2GradientTileButton4.Text = "Vider";
-            // 
-            // guna2GradientTileButton5
-            // 
-            this.guna2GradientTileButton5.Animated = true;
-            this.guna2GradientTileButton5.AutoRoundedCorners = true;
-            this.guna2GradientTileButton5.BorderRadius = 17;
-            this.guna2GradientTileButton5.CheckedState.Parent = this.guna2GradientTileButton5;
-            this.guna2GradientTileButton5.CustomImages.Parent = this.guna2GradientTileButton5;
-            this.guna2GradientTileButton5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientTileButton5.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientTileButton5.HoverState.Parent = this.guna2GradientTileButton5;
-            this.guna2GradientTileButton5.Location = new System.Drawing.Point(434, 259);
-            this.guna2GradientTileButton5.Name = "guna2GradientTileButton5";
-            this.guna2GradientTileButton5.ShadowDecoration.Parent = this.guna2GradientTileButton5;
-            this.guna2GradientTileButton5.Size = new System.Drawing.Size(180, 36);
-            this.guna2GradientTileButton5.TabIndex = 7;
-            this.guna2GradientTileButton5.Text = "Enregistre";
+            this.btnSave.Animated = true;
+            this.btnSave.AutoRoundedCorners = true;
+            this.btnSave.BorderRadius = 17;
+            this.btnSave.CheckedState.Parent = this.btnSave;
+            this.btnSave.CustomImages.Parent = this.btnSave;
+            this.btnSave.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.ForeColor = System.Drawing.Color.White;
+            this.btnSave.HoverState.Parent = this.btnSave;
+            this.btnSave.Location = new System.Drawing.Point(434, 259);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.ShadowDecoration.Parent = this.btnSave;
+            this.btnSave.Size = new System.Drawing.Size(180, 36);
+            this.btnSave.TabIndex = 7;
+            this.btnSave.Text = "Enregistre";
             // 
             // SerieDataGridView
             // 
@@ -359,39 +337,58 @@
             this.SerieDataGridView.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.SerieDataGridView.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // guna2DateTimePicker1
+            // dtpReleaseDate
             // 
-            this.guna2DateTimePicker1.CheckedState.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.HoverState.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(146, 146);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.ShadowDecoration.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(281, 36);
-            this.guna2DateTimePicker1.TabIndex = 9;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2024, 1, 1, 20, 58, 17, 266);
+            this.dtpReleaseDate.CheckedState.Parent = this.dtpReleaseDate;
+            this.dtpReleaseDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dtpReleaseDate.HoverState.Parent = this.dtpReleaseDate;
+            this.dtpReleaseDate.Location = new System.Drawing.Point(146, 146);
+            this.dtpReleaseDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtpReleaseDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtpReleaseDate.Name = "dtpReleaseDate";
+            this.dtpReleaseDate.ShadowDecoration.Parent = this.dtpReleaseDate;
+            this.dtpReleaseDate.Size = new System.Drawing.Size(281, 36);
+            this.dtpReleaseDate.TabIndex = 9;
+            this.dtpReleaseDate.Value = new System.DateTime(2024, 1, 1, 20, 58, 17, 266);
+            // 
+            // cmbGenre
+            // 
+            this.cmbGenre.BackColor = System.Drawing.Color.Transparent;
+            this.cmbGenre.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbGenre.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbGenre.FocusedColor = System.Drawing.Color.Empty;
+            this.cmbGenre.FocusedState.Parent = this.cmbGenre;
+            this.cmbGenre.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbGenre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbGenre.FormattingEnabled = true;
+            this.cmbGenre.HoverState.Parent = this.cmbGenre;
+            this.cmbGenre.ItemHeight = 30;
+            this.cmbGenre.ItemsAppearance.Parent = this.cmbGenre;
+            this.cmbGenre.Location = new System.Drawing.Point(146, 202);
+            this.cmbGenre.Name = "cmbGenre";
+            this.cmbGenre.ShadowDecoration.Parent = this.cmbGenre;
+            this.cmbGenre.Size = new System.Drawing.Size(281, 36);
+            this.cmbGenre.TabIndex = 10;
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(663, 485);
-            this.Controls.Add(this.guna2DateTimePicker1);
+            this.Controls.Add(this.cmbGenre);
+            this.Controls.Add(this.dtpReleaseDate);
             this.Controls.Add(this.SerieDataGridView);
-            this.Controls.Add(this.guna2GradientTileButton5);
-            this.Controls.Add(this.guna2GradientTileButton4);
-            this.Controls.Add(this.guna2GradientTileButton3);
-            this.Controls.Add(this.guna2GradientTileButton2);
-            this.Controls.Add(this.guna2GradientTileButton1);
-            this.Controls.Add(this.guna2GradientCircleButton4);
-            this.Controls.Add(this.guna2GradientCircleButton3);
-            this.Controls.Add(this.guna2GradientCircleButton2);
-            this.Controls.Add(this.guna2GradientCircleButton1);
-            this.Controls.Add(this.guna2TextBox4);
-            this.Controls.Add(this.guna2TextBox2);
-            this.Controls.Add(this.guna2TextBox1);
+            this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.btnClear);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnEdit);
+            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.btnLast);
+            this.Controls.Add(this.btnNext);
+            this.Controls.Add(this.btnPrevious);
+            this.Controls.Add(this.btnFirst);
+            this.Controls.Add(this.txbTitleSerie);
+            this.Controls.Add(this.txbSerieCode);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -413,19 +410,19 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
-        private Guna.UI2.WinForms.Guna2GradientCircleButton guna2GradientCircleButton1;
-        private Guna.UI2.WinForms.Guna2GradientCircleButton guna2GradientCircleButton2;
-        private Guna.UI2.WinForms.Guna2GradientCircleButton guna2GradientCircleButton3;
-        private Guna.UI2.WinForms.Guna2GradientCircleButton guna2GradientCircleButton4;
-        private Guna.UI2.WinForms.Guna2GradientTileButton guna2GradientTileButton1;
-        private Guna.UI2.WinForms.Guna2GradientTileButton guna2GradientTileButton2;
-        private Guna.UI2.WinForms.Guna2GradientTileButton guna2GradientTileButton3;
-        private Guna.UI2.WinForms.Guna2GradientTileButton guna2GradientTileButton4;
-        private Guna.UI2.WinForms.Guna2GradientTileButton guna2GradientTileButton5;
+        private Guna.UI2.WinForms.Guna2TextBox txbSerieCode;
+        private Guna.UI2.WinForms.Guna2TextBox txbTitleSerie;
+        private Guna.UI2.WinForms.Guna2GradientCircleButton btnFirst;
+        private Guna.UI2.WinForms.Guna2GradientCircleButton btnPrevious;
+        private Guna.UI2.WinForms.Guna2GradientCircleButton btnNext;
+        private Guna.UI2.WinForms.Guna2GradientCircleButton btnLast;
+        private Guna.UI2.WinForms.Guna2GradientTileButton btnAdd;
+        private Guna.UI2.WinForms.Guna2GradientTileButton btnEdit;
+        private Guna.UI2.WinForms.Guna2GradientTileButton btnDelete;
+        private Guna.UI2.WinForms.Guna2GradientTileButton btnClear;
+        private Guna.UI2.WinForms.Guna2GradientTileButton btnSave;
         private Guna.UI2.WinForms.Guna2DataGridView SerieDataGridView;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dtpReleaseDate;
+        private Guna.UI2.WinForms.Guna2ComboBox cmbGenre;
     }
 }

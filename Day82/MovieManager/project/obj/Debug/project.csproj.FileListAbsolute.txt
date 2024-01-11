@@ -1,0 +1,9 @@
+C:\Users\moham\Documents\github\100DaysOfCode\Day82\MovieManager\project\bin\Debug\project.exe.config
+C:\Users\moham\Documents\github\100DaysOfCode\Day82\MovieManager\project\bin\Debug\project.exe
+C:\Users\moham\Documents\github\100DaysOfCode\Day82\MovieManager\project\bin\Debug\project.pdb
+C:\Users\moham\Documents\github\100DaysOfCode\Day82\MovieManager\project\obj\Debug\project.csproj.AssemblyReference.cache
+C:\Users\moham\Documents\github\100DaysOfCode\Day82\MovieManager\project\obj\Debug\project.Properties.Resources.resources
+C:\Users\moham\Documents\github\100DaysOfCode\Day82\MovieManager\project\obj\Debug\project.csproj.GenerateResource.cache
+C:\Users\moham\Documents\github\100DaysOfCode\Day82\MovieManager\project\obj\Debug\project.csproj.CoreCompileInputs.cache
+C:\Users\moham\Documents\github\100DaysOfCode\Day82\MovieManager\project\obj\Debug\project.exe
+C:\Users\moham\Documents\github\100DaysOfCode\Day82\MovieManager\project\obj\Debug\project.pdb

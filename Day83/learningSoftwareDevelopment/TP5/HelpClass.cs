@@ -11,6 +11,7 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace TP5
 {
+    
     public class HelpClass
     {
         public void addButton(Guna2DataGridView dataGridView, DataTable dataTable, params object[] values)
@@ -97,15 +98,14 @@ namespace TP5
         }
         public SqlCommand createCommand(SqlConnection connection, string commandSQLString)
         {
-            SqlConnection con = connection;
-            SqlCommand sqlCommand = new SqlCommand(commandSQLString, con);
+            SqlCommand sqlCommand = new SqlCommand(commandSQLString, connection);
             return sqlCommand;
         }
-        public void getTableFromDataBaseToDataSet(SqlCommand command,DataSet dataSet, string dataSetName)
+        public void getTableFromDataBaseToDataTable(SqlCommand command, DataTable dataTable)
         {
             using (SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(command))
             {
-                sqlDataAdapter.Fill(dataSet, dataSetName);
+                sqlDataAdapter.Fill(dataTable);
             }
         }
 
@@ -144,12 +144,40 @@ namespace TP5
                 }
             }
         }
-        public void clearTextBox(Guna2TextBox textBox, Guna2TextBox textBox1)
+        public void clearTextBox(params object[] values)
         {
-            textBox.Clear();
-            textBox1.Clear();
+            for (int i = 0; i < values.Length; i++)
+            {
+                if (values[i].GetType() == typeof(Guna2TextBox))
+                {
+                    Guna2TextBox txb = (Guna2TextBox)values[i];
+                    txb.Clear();
+                }
+            }
+        }
+        public void comboBoxFilter(DataTable dataTable, Guna2ComboBox comboBox, string column1, string column2)
+        {
+            comboBox.DataSource = dataTable;
+            comboBox.DisplayMember = column1;
+            comboBox.ValueMember = column2;
         }
 
+        public void addTablesToDataSet(DataTable dataTable, string sqlQuery)
+        {
+            try
+            {
+                using (SqlConnection connection = db.Instance.getConnection())
+                {
+                    SqlCommand command = createCommand(connection, sqlQuery);
+                    getTableFromDataBaseToDataTable(command, dataTable);
+                    db.Instance.disconnect();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
 
 
     }

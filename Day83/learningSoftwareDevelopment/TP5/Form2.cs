@@ -14,10 +14,9 @@ namespace TP5
 {
     public partial class Form2 : Form
     {
-        SqlConnection connection;
-        SqlCommand command;
         HelpClass helperClass = new HelpClass();
         DataTable serieDataTable;
+        DataTable genreDataTable;
         SqlDataAdapter SqlDataAdapter;
         public Form2()
         {
@@ -26,28 +25,15 @@ namespace TP5
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            getSerieTableFromDataBase();
-            SerieDataGridView.DataSource = serieDataTable; ;
+            serieDataTable = db.sharedDataSet.Tables[Tables.serieDtName];
+            genreDataTable = db.sharedDataSet.Tables[Tables.genreDtName];
+            SerieDataGridView.DataSource = serieDataTable;
+            helperClass.comboBoxFilter(genreDataTable, cmbGenre, Tables.genreColumnIntitle, Tables.genreColumnID);
+
         }
-        public void getSerieTableFromDataBase()
+        private void btnAdd_Click(object sender, EventArgs e)
         {
-            try
-            {
-                using(connection = db.getInstance())
-                {
-                    command = helperClass.createCommand(connection, Tables.serieTableQuery);
-                    connection.Open();
-                    //SqlDataReader myReader = command.ExecuteReader();
-                    //serieDataTable.Load(myReader);
-                    helperClass.getTableFromDataBaseToDataSet(command, db.sharedDataSet, Tables.serieDtName);
-                    //SqlCommandBuilder sqlCommandBuilder = new SqlCommandBuilder(SqlDataAdapter);
-                    serieDataTable = helperClass.getTableFromDataSet(db.sharedDataSet, Tables.serieDtName);
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
+            helperClass.addButton(SerieDataGridView, serieDataTable, txbSerieCode, txbTitleSerie, dtpReleaseDate, cmbGenre);
         }
     }
 }

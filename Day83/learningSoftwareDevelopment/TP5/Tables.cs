@@ -29,6 +29,6 @@ namespace TP5
         public static readonly string serieTitle = "titleSerie";
         public static readonly string serieDate = "dataSortie";
         // serie DataTable name
-        public static readonly string serieDtName = "dfSerie";
+        public static readonly string serieDtName = "dtSerie";
     }
 }
