@@ -28,22 +28,24 @@ namespace TP5
                         {
                             Guna2TextBox txt = (Guna2TextBox)values[i];
                             string textboxValue = txt.Text.Trim();
-                            if (txt.Name.Equals("txtID")) int.Parse(textboxValue);
+                            if (txt.Name.Equals("txbSerieCode")) int.Parse(textboxValue);
                             newRow[i] = textboxValue;
                         }
-                        else if(values[i].GetType() == typeof(Guna2DateTimePicker))
+                        else if (values[i].GetType() == typeof(Guna2DateTimePicker))
                         {
                             Guna2DateTimePicker dateTimePicker = (Guna2DateTimePicker)values[i];
-                            newRow[i] = dateTimePicker;
+                            newRow[Tables.serieDate] = dateTimePicker.Value.ToShortDateString();
                         }
-                        else if(values[i].GetType() == typeof(Guna2ComboBox))
+                        else if (values[i].GetType() == typeof(Guna2ComboBox))
                         {
                             Guna2ComboBox comboBox = (Guna2ComboBox)values[i];
-                            newRow[i] = comboBox.Text;
+                            string selectedTitle = comboBox.Text;
+                            string selectedCode = GetCodeGenreFromTitle(selectedTitle);
+                            newRow[i] = selectedCode;
                         }
                     }
                     dataTable.Rows.Add(newRow);
-                    updateDataGridView(dataGridView, dataTable);
+                    dataGridView.DataSource = dataTable;
                     MessageBox.Show("data added successfully");
                 }
                 catch (Exception ex)
@@ -52,9 +54,21 @@ namespace TP5
                 }
             }
         }
-        private void updateDataGridView(Guna2DataGridView dataGridView, DataTable dataTable)
+
+        private string GetCodeGenreFromTitle(string selectedTitle)
         {
-            dataGridView.DataSource = dataTable;
+            string codeGenre = "";
+            using (SqlConnection connection = db.Instance.getConnection())
+            {
+                string sql = $"SELECT {Tables.genreColumnID} FROM {Tables.genreTableName} WHERE {Tables.genreColumnIntitle} = '{selectedTitle}'";
+                SqlCommand command = new SqlCommand(sql, connection);
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.Read())
+                {
+                    codeGenre = reader[Tables.genreColumnID].ToString();
+                }
+            }
+            return codeGenre;
         }
         private bool isValidinputToAdd(params object[] values)
         {
@@ -98,10 +112,6 @@ namespace TP5
                     counter++;
                 }
             }
-        }
-        public SqlCommand createCommand(SqlConnection connection, string commandSQLString)
-        {
-            return new SqlCommand(commandSQLString, connection);
         }
         public void cellClick(DataGridViewCellEventArgs e, DataTable dataTable, Guna2DataGridView dataGridView, Guna2TextBox textBox1, Guna2TextBox textBox2)
         {

@@ -20,14 +20,14 @@ namespace TP5
 
 
         // SQL Serie Table Query
-        public static readonly string serieTableQuery = "SELECT * FROM Genre INNER JOIN Serie ON Serie.codeGenre = Genre.codeGenre";
+        public static readonly string serieTableQuery = "SELECT * FROM Serie";
         public static readonly string SqlFails = $"SELECT * FROM {genreTableName} INNER JOIN {serieTableName} ON {serieTableName}.{genreColumnID} = {genreTableName}.{genreColumnID}";
         // Serie Table Name
         public static readonly string serieTableName = "Serie";
         // Serie column names
         public static readonly string serieColumnID = "codeSerie";
         public static readonly string serieTitle = "titleSerie";
-        public static readonly string serieDate = "dataSortie";
+        public static readonly string serieDate = "dateSortie";
         // serie DataTable name
         public static readonly string serieDtName = "dtSerie";
     }
