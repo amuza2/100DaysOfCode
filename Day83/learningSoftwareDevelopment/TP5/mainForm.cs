@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -34,10 +35,16 @@ namespace TP5
 
         private void mainForm_Load(object sender, EventArgs e)
         {
-            helperClass.addTablesToDataSet(genreDataTable, Tables.genreTableQuery);
-            helperClass.addTablesToDataSet(serieDataTable, Tables.serieTableQuery);
+            db.Adapter.SelectCommand = helperClass.createCommand(db.Instance.getConnection(), Tables.genreTableQuery);
+            db.sqlCommandBuilder.DataAdapter = db.Adapter;
+            db.sqlCommandBuilder.ConflictOption = ConflictOption.OverwriteChanges;
+            helperClass.getTableFromDataBaseToDataTable(genreDataTable);
+            db.Instance.disconnect();
+            //command = helperClass.addcommand(Tables.serieTableQuery);
+            //helperClass.getTableFromDataBaseToDataTable(serieDataTable);
+
             db.sharedDataSet.Tables.Add(genreDataTable); 
-            db.sharedDataSet.Tables.Add(serieDataTable);
+            //db.sharedDataSet.Tables.Add(serieDataTable);
         }
     }
 }

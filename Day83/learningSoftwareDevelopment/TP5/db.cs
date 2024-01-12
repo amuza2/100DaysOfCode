@@ -16,7 +16,8 @@ namespace TP5
         public static DataSet sharedDataSet = new DataSet();
         private static readonly object _instanceLock = new object();
         private SqlConnection _connection;
-
+        public static SqlDataAdapter Adapter = new SqlDataAdapter();
+        public static SqlCommandBuilder sqlCommandBuilder = new SqlCommandBuilder();
         private db()
         {
             _connection = new SqlConnection();
@@ -51,7 +52,10 @@ namespace TP5
                 _connection.Close();
             }
         }
-
+        public static ConnectionState CheckConnection()
+        {
+            return Instance._connection.State;
+        }
 
     }
 }

@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.Common;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -98,15 +99,11 @@ namespace TP5
         }
         public SqlCommand createCommand(SqlConnection connection, string commandSQLString)
         {
-            SqlCommand sqlCommand = new SqlCommand(commandSQLString, connection);
-            return sqlCommand;
+            return new SqlCommand(commandSQLString, connection);
         }
-        public void getTableFromDataBaseToDataTable(SqlCommand command, DataTable dataTable)
+        public void getTableFromDataBaseToDataTable(DataTable dataTable)
         {
-            using (SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(command))
-            {
-                sqlDataAdapter.Fill(dataTable);
-            }
+            db.Adapter.Fill(dataTable);
         }
 
         public DataTable getTableFromDataSet(DataSet dataSet,string table)
@@ -123,24 +120,21 @@ namespace TP5
                 textBox2.Text = selectedRow.Cells[Tables.genreColumnIntitle].Value.ToString();
             }
         }
-        public void deleteButton(DataTable dataTable, Guna2DataGridView dataGridView, Guna2TextBox textBox, Guna2TextBox textBox1)
+        public void deleteButton(DataTable dataTable, Guna2DataGridView dataGridView, Guna2TextBox textBox, Guna2TextBox textBox1, List<string> ids)
         {
             if (dataTable.Rows.Count > 0)
             {
-                int counter = 0;
                 foreach (DataRow row in dataTable.Rows)
                 {
                     if (row[Tables.genreColumnID].Equals(int.Parse(textBox.Text.Trim())))
                     {
-                        //dataTable.Rows.RemoveAt(counter);
-                        //dataTable.Rows.Remove(row);
                         row.Delete();
                         dataTable.AcceptChanges();
                         dataGridView.DataSource = dataTable;
+                        ids.Add(textBox.Text.Trim());
                         clearTextBox(textBox, textBox1);
                         break;
                     }
-                    counter++;
                 }
             }
         }
@@ -162,16 +156,11 @@ namespace TP5
             comboBox.ValueMember = column2;
         }
 
-        public void addTablesToDataSet(DataTable dataTable, string sqlQuery)
+        public void addcommand(SqlConnection connection,string sqlQuery)
         {
             try
             {
-                using (SqlConnection connection = db.Instance.getConnection())
-                {
-                    SqlCommand command = createCommand(connection, sqlQuery);
-                    getTableFromDataBaseToDataTable(command, dataTable);
-                    db.Instance.disconnect();
-                }
+                db.Adapter.SelectCommand = createCommand(connection, sqlQuery);
             }
             catch (Exception ex)
             {

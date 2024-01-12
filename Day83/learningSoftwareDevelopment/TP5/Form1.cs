@@ -16,10 +16,10 @@ namespace TP5
 {
     public partial class Form1 : Form
     {
-        SqlDataAdapter dataAdapter;
         DataTable genreDataTable = db.sharedDataSet.Tables[Tables.genreDtName];
         CurrencyManager genreManager;
         HelpClass helpClass = new HelpClass();
+        private List<string> IDs = new List<string>();
         
 
 
@@ -60,16 +60,40 @@ namespace TP5
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            helpClass.deleteButton(genreDataTable, DataGridView1, txbID, txbGenre);
-            btnClear_Click(sender, e);
+            try
+            {
+                helpClass.deleteButton(genreDataTable, DataGridView1, txbID, txbGenre, IDs);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error while Deleting: " + ex);
+            }
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if(dataAdapter != null)
+            try
             {
-                dataAdapter.Update(genreDataTable);
+                using (SqlConnection connection = db.Instance.getConnection())
+                {
+                    foreach (var primaryKeyValue in IDs)
+                    {
+                        string sql = $"DELETE FROM {Tables.genreTableName} WHERE {Tables.genreColumnID} = {primaryKeyValue}";
+                        SqlCommand command = new SqlCommand(sql, connection);
+                        command.ExecuteNonQuery();
+                    }
+                    MessageBox.Show("data saved successfully");
+                }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error saving: " + ex);
+            }
+            finally
+            {
+                db.Instance.disconnect();
+            }
+            
         }
 
         private void btnPrevious_Click(object sender, EventArgs e)
