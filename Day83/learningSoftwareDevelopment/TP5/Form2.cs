@@ -17,7 +17,6 @@ namespace TP5
         HelpClass helperClass = new HelpClass();
         DataTable serieDataTable;
         DataTable genreDataTable;
-        SqlDataAdapter SqlDataAdapter;
         public Form2()
         {
             InitializeComponent();

@@ -19,10 +19,6 @@ namespace TP5
         DataTable genreDataTable = db.sharedDataSet.Tables[Tables.genreDtName];
         CurrencyManager genreManager;
         HelpClass helpClass = new HelpClass();
-        private List<string> IDs = new List<string>();
-        
-
-
         public Form1()
         {
             InitializeComponent();
@@ -62,7 +58,7 @@ namespace TP5
         {
             try
             {
-                helpClass.deleteButton(genreDataTable, DataGridView1, txbID, txbGenre, IDs);
+                helpClass.deleteButton(genreDataTable, DataGridView1, txbID, txbGenre);
             }
             catch (Exception ex)
             {
@@ -76,11 +72,47 @@ namespace TP5
             {
                 using (SqlConnection connection = db.Instance.getConnection())
                 {
-                    foreach (var primaryKeyValue in IDs)
+                    //SqlCommand command = null;
+                    //foreach (DataRow row in helpClass.rowsState)
+                    //{
+                    //    if (row.RowState == DataRowState.Deleted)
+                    //    {
+                    //        string sql = $"DELETE FROM {Tables.genreTableName} WHERE {Tables.genreColumnID} = {row[Tables.genreColumnID]}";
+                    //        command = new SqlCommand(sql, connection);
+                    //    }
+                    //    if (command != null) command.ExecuteNonQuery();
+                    //}
+                    //using (SqlCommand cmd = new SqlCommand("ALTER TABLE Genre NOCHECK CONSTRAINT ALL", connection))
+                    //{
+                    //    cmd.ExecuteNonQuery();
+                    //}
+                    //using (SqlCommand cmd = new SqlCommand("DELETE FROM Genre", connection))
+                    //{
+                    //    cmd.ExecuteNonQuery();
+                    //}
+                    //using (SqlCommand cmd = new SqlCommand("ALTER TABLE Genre WITH CHECK CHECK CONSTRAINT ALL", connection))
+                    //{
+                    //    cmd.ExecuteNonQuery();
+                    //}
+                    string sql = $"DELETE FROM Genre WHERE {Tables.genreColumnID} IS NOT NULL";
+                    using (SqlCommand cmd = new SqlCommand(sql, connection))
                     {
-                        string sql = $"DELETE FROM {Tables.genreTableName} WHERE {Tables.genreColumnID} = {primaryKeyValue}";
-                        SqlCommand command = new SqlCommand(sql, connection);
-                        command.ExecuteNonQuery();
+                        cmd.ExecuteNonQuery();
+                    }
+                    using (SqlBulkCopy bulkCopy = new SqlBulkCopy(connection))
+                    {
+                        foreach (DataColumn c in genreDataTable.Columns)
+                            bulkCopy.ColumnMappings.Add(c.ColumnName, c.ColumnName);
+
+                        bulkCopy.DestinationTableName = Tables.genreTableName;
+                        try
+                        {
+                            bulkCopy.WriteToServer(genreDataTable);
+                        }
+                        catch (Exception ex)
+                        {
+                            Console.WriteLine(ex.Message);
+                        }
                     }
                     MessageBox.Show("data saved successfully");
                 }
@@ -88,10 +120,6 @@ namespace TP5
             catch (Exception ex)
             {
                 MessageBox.Show("Error saving: " + ex);
-            }
-            finally
-            {
-                db.Instance.disconnect();
             }
             
         }

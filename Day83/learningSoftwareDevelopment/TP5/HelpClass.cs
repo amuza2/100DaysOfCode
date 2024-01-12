@@ -27,12 +27,14 @@ namespace TP5
                         if (values[i].GetType() == typeof(Guna2TextBox))
                         {
                             Guna2TextBox txt = (Guna2TextBox)values[i];
-                            newRow[i] = txt.Text.Trim();
+                            string textboxValue = txt.Text.Trim();
+                            if (txt.Name.Equals("txtID")) int.Parse(textboxValue);
+                            newRow[i] = textboxValue;
                         }
                         else if(values[i].GetType() == typeof(Guna2DateTimePicker))
                         {
                             Guna2DateTimePicker dateTimePicker = (Guna2DateTimePicker)values[i];
-                            newRow[i] = dateTimePicker.Text;
+                            newRow[i] = dateTimePicker;
                         }
                         else if(values[i].GetType() == typeof(Guna2ComboBox))
                         {
@@ -101,16 +103,6 @@ namespace TP5
         {
             return new SqlCommand(commandSQLString, connection);
         }
-        public void getTableFromDataBaseToDataTable(DataTable dataTable)
-        {
-            db.Adapter.Fill(dataTable);
-        }
-
-        public DataTable getTableFromDataSet(DataSet dataSet,string table)
-        {
-            return dataSet.Tables[table];
-        }
-
         public void cellClick(DataGridViewCellEventArgs e, DataTable dataTable, Guna2DataGridView dataGridView, Guna2TextBox textBox1, Guna2TextBox textBox2)
         {
             if (e.RowIndex >= 0 && e.RowIndex < dataTable.Rows.Count)
@@ -120,7 +112,7 @@ namespace TP5
                 textBox2.Text = selectedRow.Cells[Tables.genreColumnIntitle].Value.ToString();
             }
         }
-        public void deleteButton(DataTable dataTable, Guna2DataGridView dataGridView, Guna2TextBox textBox, Guna2TextBox textBox1, List<string> ids)
+        public void deleteButton(DataTable dataTable, Guna2DataGridView dataGridView, Guna2TextBox textBox, Guna2TextBox textBox1)
         {
             if (dataTable.Rows.Count > 0)
             {
@@ -129,13 +121,12 @@ namespace TP5
                     if (row[Tables.genreColumnID].Equals(int.Parse(textBox.Text.Trim())))
                     {
                         row.Delete();
-                        dataTable.AcceptChanges();
-                        dataGridView.DataSource = dataTable;
-                        ids.Add(textBox.Text.Trim());
                         clearTextBox(textBox, textBox1);
                         break;
                     }
                 }
+                dataTable.AcceptChanges();
+                dataGridView.DataSource = dataTable;
             }
         }
         public void clearTextBox(params object[] values)
@@ -155,19 +146,5 @@ namespace TP5
             comboBox.DisplayMember = column1;
             comboBox.ValueMember = column2;
         }
-
-        public void addcommand(SqlConnection connection,string sqlQuery)
-        {
-            try
-            {
-                db.Adapter.SelectCommand = createCommand(connection, sqlQuery);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-            }
-        }
-
-
     }
 }

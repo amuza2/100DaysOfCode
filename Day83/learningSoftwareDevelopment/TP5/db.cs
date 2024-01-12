@@ -17,7 +17,6 @@ namespace TP5
         private static readonly object _instanceLock = new object();
         private SqlConnection _connection;
         public static SqlDataAdapter Adapter = new SqlDataAdapter();
-        public static SqlCommandBuilder sqlCommandBuilder = new SqlCommandBuilder();
         private db()
         {
             _connection = new SqlConnection();
