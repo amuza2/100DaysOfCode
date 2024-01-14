@@ -41,7 +41,7 @@ namespace TP5
         }
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            helpClass.editButton(txbID, txbGenre, DataGridView1, genreDataTable, Tables.genreColumnID, Tables.genreColumnIntitle);
+            helpClass.editButton(txbID, txbGenre, DataGridView1, genreDataTable);
         }
 
         private void CellClick(object sender, DataGridViewCellEventArgs e)

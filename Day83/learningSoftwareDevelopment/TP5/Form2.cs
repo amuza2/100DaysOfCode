@@ -15,6 +15,7 @@ namespace TP5
     public partial class Form2 : Form
     {
         HelpClass helperClass = new HelpClass();
+        Modify modify = new Modify();
         DataTable serieDataTable;
         DataTable genreDataTable;
         public Form2()
@@ -33,6 +34,11 @@ namespace TP5
         private void btnAdd_Click(object sender, EventArgs e)
         {
             helperClass.addButton(SerieDataGridView, serieDataTable, txbSerieCode, txbTitleSerie, dtpReleaseDate, cmbGenre);
+        }
+
+        private void btnModifier_Click(object sender, EventArgs e)
+        {
+            modify.ModifyButton(txbSerieCode, txbTitleSerie, dtpReleaseDate, cmbGenre, SerieDataGridView, serieDataTable);
         }
     }
 }

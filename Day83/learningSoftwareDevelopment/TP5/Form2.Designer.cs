@@ -228,6 +228,7 @@
             this.btnEdit.Size = new System.Drawing.Size(180, 36);
             this.btnEdit.TabIndex = 7;
             this.btnEdit.Text = "Modifier";
+            this.btnEdit.Click += new System.EventHandler(this.btnModifier_Click);
             // 
             // btnDelete
             // 

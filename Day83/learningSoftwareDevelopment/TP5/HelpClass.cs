@@ -40,7 +40,7 @@ namespace TP5
                         {
                             Guna2ComboBox comboBox = (Guna2ComboBox)values[i];
                             string selectedTitle = comboBox.Text;
-                            string selectedCode = GetCodeGenreFromTitle(selectedTitle);
+                            string selectedCode = GetCodeGenreFromTitle(selectedTitle, Tables.genreColumnID, Tables.genreTableName, Tables.genreColumnIntitle);
                             newRow[i] = selectedCode;
                         }
                     }
@@ -55,17 +55,17 @@ namespace TP5
             }
         }
 
-        private string GetCodeGenreFromTitle(string selectedTitle)
+        public string GetCodeGenreFromTitle(string selectedTitle, string tab1, string tab2, string tab3)
         {
             string codeGenre = "";
             using (SqlConnection connection = db.Instance.getConnection())
             {
-                string sql = $"SELECT {Tables.genreColumnID} FROM {Tables.genreTableName} WHERE {Tables.genreColumnIntitle} = '{selectedTitle}'";
+                string sql = $"SELECT {tab1} FROM {tab2} WHERE {tab3} = '{selectedTitle}'";
                 SqlCommand command = new SqlCommand(sql, connection);
                 SqlDataReader reader = command.ExecuteReader();
                 if (reader.Read())
                 {
-                    codeGenre = reader[Tables.genreColumnID].ToString();
+                    codeGenre = reader[tab1].ToString();
                 }
             }
             return codeGenre;
@@ -95,17 +95,17 @@ namespace TP5
             if(isNotValid) MessageBox.Show("Please add/select value to the empty field", "Empty field", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             return !isNotValid;
         }
-        public void editButton(Guna2TextBox textBox1, Guna2TextBox textBox2, Guna2DataGridView dataGridView, DataTable dataTable, string columnName1, string columnName2)
+        public void editButton(Guna2TextBox textBoxID, Guna2TextBox textBox2, Guna2DataGridView dataGridView, DataTable dataTable)
         {
-            if (dataGridView.Rows.Count > 0 && !string.IsNullOrEmpty(textBox1.Text))
+            if (dataGridView.Rows.Count > 0 && !string.IsNullOrEmpty(textBoxID.Text))
             {
-                string txtID = textBox1.Text.Trim();
+                string txtID = textBoxID.Text.Trim();
                 int counter = 0;
                 foreach (DataRow row in dataTable.Rows)
                 {
-                    if (row[columnName1].Equals(int.Parse(txtID)))
+                    if (row[Tables.genreColumnID].Equals(int.Parse(txtID)))
                     {
-                        dataTable.Rows[counter][columnName2] = textBox2.Text.Trim();
+                        dataTable.Rows[counter][Tables.genreColumnIntitle] = textBox2.Text.Trim();
                         dataGridView.DataSource = dataTable;
                         break;
                     }
@@ -156,5 +156,6 @@ namespace TP5
             comboBox.DisplayMember = column1;
             comboBox.ValueMember = column2;
         }
+
     }
 }
