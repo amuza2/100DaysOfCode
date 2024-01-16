@@ -40,10 +40,11 @@ namespace TP5
                         row[Tables.serieDate] = date.Value.ToShortDateString();
                         HelpClass helpClass = new HelpClass();
                         string selectedTitle = comboBox.Text;
-                        string selectedCode = helpClass.GetCodeGenreFromTitle(selectedTitle, Tables.genreColumnID, Tables.genreTableName, Tables.genreColumnIntitle);
+                        string selectedCode = helpClass.GetCodeFromTitle(selectedTitle, Tables.genreColumnID, Tables.genreTableName, Tables.genreColumnIntitle);
                         row[Tables.genreColumnID] = selectedCode;
 
                         dataGridView.DataSource = dataTable;
+                        break;
                     }
                 }
             }

@@ -40,7 +40,7 @@ namespace TP5
                         {
                             Guna2ComboBox comboBox = (Guna2ComboBox)values[i];
                             string selectedTitle = comboBox.Text;
-                            string selectedCode = GetCodeGenreFromTitle(selectedTitle, Tables.genreColumnID, Tables.genreTableName, Tables.genreColumnIntitle);
+                            string selectedCode = GetCodeFromTitle(selectedTitle, Tables.genreColumnID, Tables.genreTableName, Tables.genreColumnIntitle);
                             newRow[i] = selectedCode;
                         }
                     }
@@ -55,12 +55,27 @@ namespace TP5
             }
         }
 
-        public string GetCodeGenreFromTitle(string selectedTitle, string tab1, string tab2, string tab3)
+        public string GetCodeFromTitle(string selectedTitle, string tab1, string tab2, string tab3)
         {
             string codeGenre = "";
             using (SqlConnection connection = db.Instance.getConnection())
             {
                 string sql = $"SELECT {tab1} FROM {tab2} WHERE {tab3} = '{selectedTitle}'";
+                SqlCommand command = new SqlCommand(sql, connection);
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.Read())
+                {
+                    codeGenre = reader[tab1].ToString();
+                }
+            }
+            return codeGenre;
+        }
+        public string GetCodeFromTitle(int selectedTitle, string tab1, string tab2, string tab3)
+        {
+            string codeGenre = "";
+            using (SqlConnection connection = db.Instance.getConnection())
+            {
+                string sql = $"SELECT {tab1} FROM {tab2} WHERE {tab3} = {selectedTitle}";
                 SqlCommand command = new SqlCommand(sql, connection);
                 SqlDataReader reader = command.ExecuteReader();
                 if (reader.Read())
@@ -122,16 +137,15 @@ namespace TP5
                 textBox2.Text = selectedRow.Cells[Tables.genreColumnIntitle].Value.ToString();
             }
         }
-        public void deleteButton(DataTable dataTable, Guna2DataGridView dataGridView, Guna2TextBox textBox, Guna2TextBox textBox1)
+        public void deleteButton(DataTable dataTable, Guna2DataGridView dataGridView, Guna2TextBox textBox, string idColumn)
         {
-            if (dataTable.Rows.Count > 0)
+            if (dataTable.Rows.Count > 0 && !string.IsNullOrEmpty(textBox.Text.Trim()))
             {
                 foreach (DataRow row in dataTable.Rows)
                 {
-                    if (row[Tables.genreColumnID].Equals(int.Parse(textBox.Text.Trim())))
+                    if (row[idColumn].Equals(int.Parse(textBox.Text.Trim())))
                     {
                         row.Delete();
-                        clearTextBox(textBox, textBox1);
                         break;
                     }
                 }
@@ -139,16 +153,17 @@ namespace TP5
                 dataGridView.DataSource = dataTable;
             }
         }
-        public void clearTextBox(params object[] values)
+        public void clearTextBox(Guna2TextBox textBox1, Guna2TextBox textBox2)
         {
-            for (int i = 0; i < values.Length; i++)
-            {
-                if (values[i].GetType() == typeof(Guna2TextBox))
-                {
-                    Guna2TextBox txb = (Guna2TextBox)values[i];
-                    txb.Clear();
-                }
-            }
+            textBox1.Clear();
+            textBox2.Clear(); 
+        }
+        public void clearTextBox(Guna2TextBox textBox1, Guna2TextBox textBox2, Guna2DateTimePicker dateTimePicker, Guna2ComboBox comboBox)
+        {
+            textBox1.Clear();
+            textBox2.Clear();
+            dateTimePicker.Value = DateTime.Now;
+            comboBox.SelectedIndex = 0;
         }
         public void comboBoxFilter(DataTable dataTable, Guna2ComboBox comboBox, string column1, string column2)
         {

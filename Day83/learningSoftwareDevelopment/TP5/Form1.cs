@@ -19,6 +19,7 @@ namespace TP5
         DataTable genreDataTable = db.sharedDataSet.Tables[Tables.genreDtName];
         CurrencyManager genreManager;
         HelpClass helpClass = new HelpClass();
+        Modify modigy = new Modify();
         public Form1()
         {
             InitializeComponent();
@@ -41,7 +42,7 @@ namespace TP5
         }
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            helpClass.editButton(txbID, txbGenre, DataGridView1, genreDataTable);
+            modigy.ModifyButton(txbID, txbGenre, DataGridView1, genreDataTable);
         }
 
         private void CellClick(object sender, DataGridViewCellEventArgs e)
@@ -56,14 +57,7 @@ namespace TP5
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            try
-            {
-                helpClass.deleteButton(genreDataTable, DataGridView1, txbID, txbGenre);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error while Deleting: " + ex);
-            }
+            helpClass.deleteButton(genreDataTable, DataGridView1, txbID, Tables.genreColumnID);
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -72,28 +66,6 @@ namespace TP5
             {
                 using (SqlConnection connection = db.Instance.getConnection())
                 {
-                    //SqlCommand command = null;
-                    //foreach (DataRow row in helpClass.rowsState)
-                    //{
-                    //    if (row.RowState == DataRowState.Deleted)
-                    //    {
-                    //        string sql = $"DELETE FROM {Tables.genreTableName} WHERE {Tables.genreColumnID} = {row[Tables.genreColumnID]}";
-                    //        command = new SqlCommand(sql, connection);
-                    //    }
-                    //    if (command != null) command.ExecuteNonQuery();
-                    //}
-                    //using (SqlCommand cmd = new SqlCommand("ALTER TABLE Genre NOCHECK CONSTRAINT ALL", connection))
-                    //{
-                    //    cmd.ExecuteNonQuery();
-                    //}
-                    //using (SqlCommand cmd = new SqlCommand("DELETE FROM Genre", connection))
-                    //{
-                    //    cmd.ExecuteNonQuery();
-                    //}
-                    //using (SqlCommand cmd = new SqlCommand("ALTER TABLE Genre WITH CHECK CHECK CONSTRAINT ALL", connection))
-                    //{
-                    //    cmd.ExecuteNonQuery();
-                    //}
                     string sql = $"DELETE FROM Genre WHERE {Tables.genreColumnID} IS NOT NULL";
                     using (SqlCommand cmd = new SqlCommand(sql, connection))
                     {

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Guna.UI2.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,6 +19,7 @@ namespace TP5
         Modify modify = new Modify();
         DataTable serieDataTable;
         DataTable genreDataTable;
+        CurrencyManager serieyManager;
         public Form2()
         {
             InitializeComponent();
@@ -29,6 +31,7 @@ namespace TP5
             genreDataTable = db.sharedDataSet.Tables[Tables.genreDtName];
             SerieDataGridView.DataSource = serieDataTable;
             helperClass.comboBoxFilter(genreDataTable, cmbGenre, Tables.genreColumnIntitle, Tables.genreColumnID);
+            serieyManager = (CurrencyManager)BindingContext[serieDataTable];
 
         }
         private void btnAdd_Click(object sender, EventArgs e)
@@ -39,6 +42,47 @@ namespace TP5
         private void btnModifier_Click(object sender, EventArgs e)
         {
             modify.ModifyButton(txbSerieCode, txbTitleSerie, dtpReleaseDate, cmbGenre, SerieDataGridView, serieDataTable);
+        }
+
+        private void btnNext_click(object sender, EventArgs e)
+        {
+            serieyManager.Position++;
+        }
+
+        private void btnLast_Click(object sender, EventArgs e)
+        {
+            serieyManager.Position = serieyManager.Count - 1;
+        }
+
+        private void btnPrivious_Click(object sender, EventArgs e)
+        {
+            serieyManager.Position--;
+        }
+
+        private void btnFirst_Click(object sender, EventArgs e)
+        {
+            serieyManager.Position = 0;
+        }
+
+        private void btnSupprimer_Click(object sender, EventArgs e)
+        {
+            helperClass.deleteButton(serieDataTable, SerieDataGridView, txbSerieCode,Tables.serieColumnID);
+            helperClass.clearTextBox(txbSerieCode, txbTitleSerie, dtpReleaseDate, cmbGenre);
+        }
+
+        private void cellClick_SerieForm(object sender, DataGridViewCellEventArgs e)
+        {
+            if(e.RowIndex >= 0 && e.RowIndex < serieDataTable.Rows.Count)
+            {
+                DataGridViewRow selectedRow = SerieDataGridView.Rows[e.RowIndex];
+                txbSerieCode.Text = selectedRow.Cells[Tables.serieColumnID].Value.ToString();
+                txbTitleSerie.Text = selectedRow.Cells[Tables.serieTitle].Value.ToString();
+                dtpReleaseDate.Value = (DateTime)selectedRow.Cells[Tables.serieDate].Value;
+                int selectedCode = (int)selectedRow.Cells[Tables.genreColumnID].Value;
+                string genreName = helperClass.GetCodeFromTitle(selectedCode, Tables.genreColumnIntitle, Tables.genreTableName, Tables.genreColumnID);
+                cmbGenre.Text = genreName;
+
+            }
         }
     }
 }

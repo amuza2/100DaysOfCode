@@ -148,6 +148,7 @@
             this.btnFirst.Size = new System.Drawing.Size(48, 50);
             this.btnFirst.TabIndex = 6;
             this.btnFirst.Text = "<<";
+            this.btnFirst.Click += new System.EventHandler(this.btnFirst_Click);
             // 
             // btnPrevious
             // 
@@ -163,6 +164,7 @@
             this.btnPrevious.Size = new System.Drawing.Size(48, 50);
             this.btnPrevious.TabIndex = 6;
             this.btnPrevious.Text = "<";
+            this.btnPrevious.Click += new System.EventHandler(this.btnPrivious_Click);
             // 
             // btnNext
             // 
@@ -178,6 +180,7 @@
             this.btnNext.Size = new System.Drawing.Size(48, 50);
             this.btnNext.TabIndex = 6;
             this.btnNext.Text = ">";
+            this.btnNext.Click += new System.EventHandler(this.btnNext_click);
             // 
             // btnLast
             // 
@@ -193,6 +196,7 @@
             this.btnLast.Size = new System.Drawing.Size(48, 50);
             this.btnLast.TabIndex = 6;
             this.btnLast.Text = ">>";
+            this.btnLast.Click += new System.EventHandler(this.btnLast_Click);
             // 
             // btnAdd
             // 
@@ -246,6 +250,7 @@
             this.btnDelete.Size = new System.Drawing.Size(180, 36);
             this.btnDelete.TabIndex = 7;
             this.btnDelete.Text = "Supprimer";
+            this.btnDelete.Click += new System.EventHandler(this.btnSupprimer_Click);
             // 
             // btnClear
             // 
@@ -337,6 +342,7 @@
             this.SerieDataGridView.ThemeStyle.RowsStyle.Height = 22;
             this.SerieDataGridView.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.SerieDataGridView.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.SerieDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.cellClick_SerieForm);
             // 
             // dtpReleaseDate
             // 
