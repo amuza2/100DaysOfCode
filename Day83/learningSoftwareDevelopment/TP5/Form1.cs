@@ -20,6 +20,7 @@ namespace TP5
         CurrencyManager genreManager;
         HelpClass helpClass = new HelpClass();
         Modify modigy = new Modify();
+        Save save = new Save();
         public Form1()
         {
             InitializeComponent();
@@ -62,38 +63,7 @@ namespace TP5
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            try
-            {
-                using (SqlConnection connection = db.Instance.getConnection())
-                {
-                    string sql = $"DELETE FROM Genre WHERE {Tables.genreColumnID} IS NOT NULL";
-                    using (SqlCommand cmd = new SqlCommand(sql, connection))
-                    {
-                        cmd.ExecuteNonQuery();
-                    }
-                    using (SqlBulkCopy bulkCopy = new SqlBulkCopy(connection))
-                    {
-                        foreach (DataColumn c in genreDataTable.Columns)
-                            bulkCopy.ColumnMappings.Add(c.ColumnName, c.ColumnName);
-
-                        bulkCopy.DestinationTableName = Tables.genreTableName;
-                        try
-                        {
-                            bulkCopy.WriteToServer(genreDataTable);
-                        }
-                        catch (Exception ex)
-                        {
-                            Console.WriteLine(ex.Message);
-                        }
-                    }
-                    MessageBox.Show("data saved successfully");
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error saving: " + ex);
-            }
-            
+            save.SaveButton(genreDataTable, Tables.genreColumnID, Tables.genreTableName);
         }
 
         private void btnPrevious_Click(object sender, EventArgs e)

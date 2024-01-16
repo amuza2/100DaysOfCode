@@ -285,6 +285,7 @@
             this.btnSave.Size = new System.Drawing.Size(180, 36);
             this.btnSave.TabIndex = 7;
             this.btnSave.Text = "Enregistre";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // SerieDataGridView
             // 

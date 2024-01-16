@@ -20,6 +20,7 @@ namespace TP5
         DataTable serieDataTable;
         DataTable genreDataTable;
         CurrencyManager serieyManager;
+        Save save = new Save();
         public Form2()
         {
             InitializeComponent();
@@ -83,6 +84,11 @@ namespace TP5
                 cmbGenre.Text = genreName;
 
             }
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            save.SaveButton(serieDataTable, Tables.serieColumnID, Tables.serieTableName);
         }
     }
 }
