@@ -110,24 +110,6 @@ namespace TP5
             if(isNotValid) MessageBox.Show("Please add/select value to the empty field", "Empty field", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             return !isNotValid;
         }
-        public void editButton(Guna2TextBox textBoxID, Guna2TextBox textBox2, Guna2DataGridView dataGridView, DataTable dataTable)
-        {
-            if (dataGridView.Rows.Count > 0 && !string.IsNullOrEmpty(textBoxID.Text))
-            {
-                string txtID = textBoxID.Text.Trim();
-                int counter = 0;
-                foreach (DataRow row in dataTable.Rows)
-                {
-                    if (row[Tables.genreColumnID].Equals(int.Parse(txtID)))
-                    {
-                        dataTable.Rows[counter][Tables.genreColumnIntitle] = textBox2.Text.Trim();
-                        dataGridView.DataSource = dataTable;
-                        break;
-                    }
-                    counter++;
-                }
-            }
-        }
         public void cellClick(DataGridViewCellEventArgs e, DataTable dataTable, Guna2DataGridView dataGridView, Guna2TextBox textBox1, Guna2TextBox textBox2)
         {
             if (e.RowIndex >= 0 && e.RowIndex < dataTable.Rows.Count)
@@ -135,6 +117,27 @@ namespace TP5
                 DataGridViewRow selectedRow = dataGridView.Rows[e.RowIndex];
                 textBox1.Text = selectedRow.Cells[Tables.genreColumnID].Value.ToString();
                 textBox2.Text = selectedRow.Cells[Tables.genreColumnIntitle].Value.ToString();
+            }
+        }
+        public void cellClick(DataGridViewCellEventArgs e, DataTable dataTable, Guna2DataGridView dataGridView, Guna2TextBox textBox1, Guna2TextBox textBox2, Guna2DateTimePicker dateTimePicker, Guna2ComboBox comboBox)
+        {
+            try
+            {
+                if (e.RowIndex >= 0 && e.RowIndex < dataTable.Rows.Count)
+                {
+                    DataGridViewRow selectedRow = dataGridView.Rows[e.RowIndex];
+                    textBox1.Text = selectedRow.Cells[Tables.serieColumnID].Value.ToString();
+                    textBox2.Text = selectedRow.Cells[Tables.serieTitle].Value.ToString();
+                    dateTimePicker.Value = (DateTime)selectedRow.Cells[Tables.serieDate].Value;
+                    int selectedCode = (int)selectedRow.Cells[Tables.genreColumnID].Value;
+                    string genreName = GetCodeFromTitle(selectedCode, Tables.genreColumnIntitle, Tables.genreTableName, Tables.genreColumnID);
+                    comboBox.Text = genreName;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex);
+                throw;
             }
         }
         public void deleteButton(DataTable dataTable, Guna2DataGridView dataGridView, Guna2TextBox textBox, string idColumn)
@@ -171,6 +174,17 @@ namespace TP5
             comboBox.DisplayMember = column1;
             comboBox.ValueMember = column2;
         }
+        public void GoToGenreForm()
+        {
+            Form1 genreForm = new Form1();
+            genreForm.Show();
+        }
+        public void GoToSerieForm()
+        {
+            Form2 serieForm = new Form2();
+            serieForm.Show();
+        }
+
 
     }
 }

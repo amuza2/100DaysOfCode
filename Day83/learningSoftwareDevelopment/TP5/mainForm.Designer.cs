@@ -57,15 +57,15 @@
             // genreToolStripMenuItem
             // 
             this.genreToolStripMenuItem.Name = "genreToolStripMenuItem";
-            this.genreToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.genreToolStripMenuItem.Text = "&Genre";
+            this.genreToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
+            this.genreToolStripMenuItem.Text = "&Genre            Ctrl + G";
             this.genreToolStripMenuItem.Click += new System.EventHandler(this.genreToolStripMenuItem_Click);
             // 
             // serieToolStripMenuItem
             // 
             this.serieToolStripMenuItem.Name = "serieToolStripMenuItem";
-            this.serieToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.serieToolStripMenuItem.Text = "&Serie";
+            this.serieToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
+            this.serieToolStripMenuItem.Text = "&Serie              Ctrl + S";
             this.serieToolStripMenuItem.Click += new System.EventHandler(this.serieToolStripMenuItem_Click);
             // 
             // mainForm
@@ -78,6 +78,7 @@
             this.Name = "mainForm";
             this.Text = "mainForm";
             this.Load += new System.EventHandler(this.mainForm_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ShortCuts);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

@@ -73,17 +73,7 @@ namespace TP5
 
         private void cellClick_SerieForm(object sender, DataGridViewCellEventArgs e)
         {
-            if(e.RowIndex >= 0 && e.RowIndex < serieDataTable.Rows.Count)
-            {
-                DataGridViewRow selectedRow = SerieDataGridView.Rows[e.RowIndex];
-                txbSerieCode.Text = selectedRow.Cells[Tables.serieColumnID].Value.ToString();
-                txbTitleSerie.Text = selectedRow.Cells[Tables.serieTitle].Value.ToString();
-                dtpReleaseDate.Value = (DateTime)selectedRow.Cells[Tables.serieDate].Value;
-                int selectedCode = (int)selectedRow.Cells[Tables.genreColumnID].Value;
-                string genreName = helperClass.GetCodeFromTitle(selectedCode, Tables.genreColumnIntitle, Tables.genreTableName, Tables.genreColumnID);
-                cmbGenre.Text = genreName;
-
-            }
+            helperClass.cellClick(e, serieDataTable, SerieDataGridView, txbSerieCode, txbTitleSerie, dtpReleaseDate, cmbGenre);
         }
 
         private void btnSave_Click(object sender, EventArgs e)

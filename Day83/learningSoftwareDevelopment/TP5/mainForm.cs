@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic.Devices;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,9 +14,9 @@ namespace TP5
 {
     public partial class mainForm : Form
     {
-        HelpClass helperClass = new HelpClass();
         DataTable serieDataTable = new DataTable(Tables.serieDtName);
         DataTable genreDataTable = new DataTable(Tables.genreDtName);
+        HelpClass helperClass = new HelpClass();
         public mainForm()
         {
             InitializeComponent();
@@ -23,14 +24,12 @@ namespace TP5
 
         private void genreToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form1 genreForm = new Form1();
-            genreForm.Show();
+            helperClass.GoToGenreForm();
         }
 
         private void serieToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form2 serieForm = new Form2();
-            serieForm.Show();
+            helperClass.GoToSerieForm();
         }
 
         private void mainForm_Load(object sender, EventArgs e)
@@ -45,6 +44,18 @@ namespace TP5
             }
             db.sharedDataSet.Tables.Add(genreDataTable);
             db.sharedDataSet.Tables.Add(serieDataTable);
+        }
+
+        private void ShortCuts(object sender, KeyEventArgs e)
+        {
+            if (e.Control && e.KeyCode == Keys.G)
+            {
+                helperClass.GoToGenreForm();
+            }
+            else if(e.Control && e.KeyCode == Keys.S)
+            {
+                helperClass.GoToSerieForm();
+            }
         }
     }
 }
