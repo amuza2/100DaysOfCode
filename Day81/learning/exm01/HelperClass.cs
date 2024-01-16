@@ -250,6 +250,15 @@ namespace exm01
             txbName.Text = "";
         }
 
-
+        public void GotoRealisatorForm()
+        {
+            fmRealisator fmRealisator = new fmRealisator();
+            fmRealisator.Show();
+        }
+        public void GotoFilmForm()
+        {
+            fmFilm fmFilm = new fmFilm();
+            fmFilm.Show();
+        }
     }
 }

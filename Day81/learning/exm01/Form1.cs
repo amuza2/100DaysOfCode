@@ -17,6 +17,7 @@ namespace exm01
         private SqlConnection connection;
         SqlDataAdapter adapter;
         private DataSet mainDataSet;
+        HelperClass helperClass = new HelperClass();
         public Form1()
         {
             InitializeComponent();
@@ -41,20 +42,34 @@ namespace exm01
 
         private void realisateurToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            fmRealisator fmRealisator = new fmRealisator();
-            fmRealisator.Show();
+            helperClass.GotoRealisatorForm();
         }
 
         private void filmToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            fmFilm fmFilm = new fmFilm();
-            fmFilm.Show();
+            helperClass.GotoFilmForm();
         }
 
         private void aboutToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             About about = new About();
             about.Show();
+        }
+
+        private void ShortCuts(object sender, KeyEventArgs e)
+        {
+            if(e.Control && e.KeyCode == Keys.R)
+            {
+                helperClass.GotoRealisatorForm();
+            } 
+            else if(e.Control && e.KeyCode == Keys.F)
+            {
+                helperClass.GotoFilmForm();
+            }
+            else if(e.Control && e.KeyCode == Keys.Q)
+            {
+                Environment.Exit(0);
+            }
         }
     }
 }
