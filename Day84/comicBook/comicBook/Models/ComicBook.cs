@@ -9,10 +9,13 @@ namespace comicBook.Models
     {
         public int Id {  get; set; }
         public string SeriesTitle { get; set; }
-        public int IssueNupber { get; set; }
+        public int IssueNumber { get; set; }
         public int DescriptionHtml { get; set; }
         public Artist[] Artists { get; set; }
         public bool Favorite { get; set; }
+
+        public string DusplayText => SeriesTitle + " #" + IssueNumber;
+        public string CoverImageFileName => SeriesTitle.Replace(" ", "-").ToLower() + "-" + IssueNumber + ".jpg";
 
     }
 }
