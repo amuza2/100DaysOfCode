@@ -16,7 +16,6 @@ C:\Users\moham\source\repos\learning\exm01\obj\Debug\exm01.About.resources
 C:\Users\moham\Documents\github\100DaysOfCode\Day81\learning\exm01\bin\Debug\exm01.exe.config
 C:\Users\moham\Documents\github\100DaysOfCode\Day81\learning\exm01\bin\Debug\exm01.exe
 C:\Users\moham\Documents\github\100DaysOfCode\Day81\learning\exm01\bin\Debug\exm01.pdb
-C:\Users\moham\Documents\github\100DaysOfCode\Day81\learning\exm01\bin\Debug\Guna.UI2.dll
 C:\Users\moham\Documents\github\100DaysOfCode\Day81\learning\exm01\obj\Debug\exm01.csproj.AssemblyReference.cache
 C:\Users\moham\Documents\github\100DaysOfCode\Day81\learning\exm01\obj\Debug\exm01.About.resources
 C:\Users\moham\Documents\github\100DaysOfCode\Day81\learning\exm01\obj\Debug\exm01.fmFilm.resources
