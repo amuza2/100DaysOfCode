@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txbEmployeId = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txbEmployeNom = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txbEmployePrenom = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.dateTimePickerEmploye = new System.Windows.Forms.DateTimePicker();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.txbEmployeFunction = new System.Windows.Forms.TextBox();
+            this.txbEmployePrenom = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.txbEmployeFunction = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txbEmployeNom = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txbEmployeId = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnEmployeAjouter = new System.Windows.Forms.Button();
             this.btnEmployeeAnnule = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
@@ -69,80 +69,12 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Employe";
             // 
-            // label1
+            // dateTimePickerEmploye
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(7, 58);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(134, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Numero Employe:";
-            // 
-            // txbEmployeId
-            // 
-            this.txbEmployeId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbEmployeId.Location = new System.Drawing.Point(154, 55);
-            this.txbEmployeId.Name = "txbEmployeId";
-            this.txbEmployeId.Size = new System.Drawing.Size(213, 26);
-            this.txbEmployeId.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(7, 114);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 20);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Nom:";
-            // 
-            // txbEmployeNom
-            // 
-            this.txbEmployeNom.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbEmployeNom.Location = new System.Drawing.Point(154, 111);
-            this.txbEmployeNom.Name = "txbEmployeNom";
-            this.txbEmployeNom.Size = new System.Drawing.Size(213, 26);
-            this.txbEmployeNom.TabIndex = 1;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(7, 175);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(68, 20);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Prenom:";
-            // 
-            // txbEmployePrenom
-            // 
-            this.txbEmployePrenom.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbEmployePrenom.Location = new System.Drawing.Point(154, 172);
-            this.txbEmployePrenom.Name = "txbEmployePrenom";
-            this.txbEmployePrenom.Size = new System.Drawing.Size(213, 26);
-            this.txbEmployePrenom.TabIndex = 1;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(7, 233);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(49, 20);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Sexe:";
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(154, 235);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(67, 17);
-            this.radioButton1.TabIndex = 2;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Masculin";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.dateTimePickerEmploye.Location = new System.Drawing.Point(154, 284);
+            this.dateTimePickerEmploye.Name = "dateTimePickerEmploye";
+            this.dateTimePickerEmploye.Size = new System.Drawing.Size(213, 20);
+            this.dateTimePickerEmploye.TabIndex = 6;
             // 
             // radioButton2
             // 
@@ -150,17 +82,37 @@
             this.radioButton2.Location = new System.Drawing.Point(282, 235);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(61, 17);
-            this.radioButton2.TabIndex = 2;
+            this.radioButton2.TabIndex = 5;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Feminin";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
-            // dateTimePickerEmploye
+            // radioButton1
             // 
-            this.dateTimePickerEmploye.Location = new System.Drawing.Point(154, 284);
-            this.dateTimePickerEmploye.Name = "dateTimePickerEmploye";
-            this.dateTimePickerEmploye.Size = new System.Drawing.Size(213, 20);
-            this.dateTimePickerEmploye.TabIndex = 3;
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(154, 235);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(67, 17);
+            this.radioButton1.TabIndex = 4;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Masculin";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // txbEmployeFunction
+            // 
+            this.txbEmployeFunction.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbEmployeFunction.Location = new System.Drawing.Point(154, 339);
+            this.txbEmployeFunction.Name = "txbEmployeFunction";
+            this.txbEmployeFunction.Size = new System.Drawing.Size(213, 26);
+            this.txbEmployeFunction.TabIndex = 7;
+            // 
+            // txbEmployePrenom
+            // 
+            this.txbEmployePrenom.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbEmployePrenom.Location = new System.Drawing.Point(154, 172);
+            this.txbEmployePrenom.Name = "txbEmployePrenom";
+            this.txbEmployePrenom.Size = new System.Drawing.Size(213, 26);
+            this.txbEmployePrenom.TabIndex = 3;
             // 
             // label5
             // 
@@ -182,33 +134,83 @@
             this.label6.TabIndex = 0;
             this.label6.Text = "Function:";
             // 
-            // txbEmployeFunction
+            // label4
             // 
-            this.txbEmployeFunction.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbEmployeFunction.Location = new System.Drawing.Point(154, 339);
-            this.txbEmployeFunction.Name = "txbEmployeFunction";
-            this.txbEmployeFunction.Size = new System.Drawing.Size(213, 26);
-            this.txbEmployeFunction.TabIndex = 1;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(7, 233);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(49, 20);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Sexe:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(7, 175);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(68, 20);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Prenom:";
+            // 
+            // txbEmployeNom
+            // 
+            this.txbEmployeNom.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbEmployeNom.Location = new System.Drawing.Point(154, 111);
+            this.txbEmployeNom.Name = "txbEmployeNom";
+            this.txbEmployeNom.Size = new System.Drawing.Size(213, 26);
+            this.txbEmployeNom.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(7, 114);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(46, 20);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Nom:";
+            // 
+            // txbEmployeId
+            // 
+            this.txbEmployeId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbEmployeId.Location = new System.Drawing.Point(154, 55);
+            this.txbEmployeId.Name = "txbEmployeId";
+            this.txbEmployeId.Size = new System.Drawing.Size(213, 26);
+            this.txbEmployeId.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(7, 58);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(134, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Numero Employe:";
             // 
             // btnEmployeAjouter
             // 
             this.btnEmployeAjouter.BackColor = System.Drawing.Color.LightSkyBlue;
             this.btnEmployeAjouter.Location = new System.Drawing.Point(42, 408);
             this.btnEmployeAjouter.Name = "btnEmployeAjouter";
-            this.btnEmployeAjouter.Size = new System.Drawing.Size(138, 23);
+            this.btnEmployeAjouter.Size = new System.Drawing.Size(138, 30);
             this.btnEmployeAjouter.TabIndex = 1;
             this.btnEmployeAjouter.Text = "Ajouter";
             this.btnEmployeAjouter.UseVisualStyleBackColor = false;
+            this.btnEmployeAjouter.Click += new System.EventHandler(this.btnEmployeAjouter_Click);
             // 
             // btnEmployeeAnnule
             // 
             this.btnEmployeeAnnule.BackColor = System.Drawing.Color.LightSkyBlue;
             this.btnEmployeeAnnule.Location = new System.Drawing.Point(254, 408);
             this.btnEmployeeAnnule.Name = "btnEmployeeAnnule";
-            this.btnEmployeeAnnule.Size = new System.Drawing.Size(138, 23);
+            this.btnEmployeeAnnule.Size = new System.Drawing.Size(138, 30);
             this.btnEmployeeAnnule.TabIndex = 1;
             this.btnEmployeeAnnule.Text = "Annulé";
             this.btnEmployeeAnnule.UseVisualStyleBackColor = false;
+            this.btnEmployeeAnnule.Click += new System.EventHandler(this.btnEmployeeAnnule_Click);
             // 
             // AjouterEmploye
             // 
@@ -220,6 +222,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "AjouterEmploye";
             this.Text = "AjouterEmploye";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ShortcutKey);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

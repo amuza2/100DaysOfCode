@@ -10,3 +10,4 @@ C:\Users\moham\Documents\github\100DaysOfCode\Day84\Project1\Project1\obj\Debug\
 C:\Users\moham\Documents\github\100DaysOfCode\Day84\Project1\Project1\obj\Debug\Project1.csproj.CoreCompileInputs.cache
 C:\Users\moham\Documents\github\100DaysOfCode\Day84\Project1\Project1\obj\Debug\Project1.exe
 C:\Users\moham\Documents\github\100DaysOfCode\Day84\Project1\Project1\obj\Debug\Project1.pdb
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\Project1\Project1\obj\Debug\Project1.AjouterEmploye.resources

@@ -70,6 +70,7 @@
             this.btnEmployeAjouter.TabIndex = 0;
             this.btnEmployeAjouter.Text = "Ajouter Employe";
             this.btnEmployeAjouter.UseVisualStyleBackColor = false;
+            this.btnEmployeAjouter.Click += new System.EventHandler(this.btnEmployeAjouter_Click);
             // 
             // btnProjetAjouter
             // 

@@ -67,6 +67,8 @@
     <Compile Include="AjouterEmploye.Designer.cs">
       <DependentUpon>AjouterEmploye.cs</DependentUpon>
     </Compile>
+    <Compile Include="db.cs" />
+    <Compile Include="EmployeHelper.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +77,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Shortuts.cs" />
+    <Compile Include="Tables.cs" />
     <EmbeddedResource Include="AjouterEmploye.resx">
       <DependentUpon>AjouterEmploye.cs</DependentUpon>
     </EmbeddedResource>
