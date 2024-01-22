@@ -67,6 +67,12 @@
     <Compile Include="AjouterEmploye.Designer.cs">
       <DependentUpon>AjouterEmploye.cs</DependentUpon>
     </Compile>
+    <Compile Include="AjouterProjet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjouterProjet.Designer.cs">
+      <DependentUpon>AjouterProjet.cs</DependentUpon>
+    </Compile>
     <Compile Include="db.cs" />
     <Compile Include="EmployeHelper.cs" />
     <Compile Include="Main.cs">
@@ -81,6 +87,9 @@
     <Compile Include="Tables.cs" />
     <EmbeddedResource Include="AjouterEmploye.resx">
       <DependentUpon>AjouterEmploye.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AjouterProjet.resx">
+      <DependentUpon>AjouterProjet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
