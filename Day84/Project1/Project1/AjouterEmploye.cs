@@ -30,7 +30,7 @@ namespace Project1
 
         private void btnEmployeAjouter_Click(object sender, EventArgs e)
         {
-            employeHelper.ajouterEmployer(txbEmployeNom, txbEmployePrenom, radioButtonToPass, dateTimePickerEmploye, txbEmployeFunction);
+            employeHelper.ajouterEmployer(txbEmployeId,txbEmployeNom, txbEmployePrenom, radioButtonToPass, dateTimePickerEmploye, txbEmployeFunction);
         }
 
         private void ShortcutKey(object sender, KeyEventArgs e)
@@ -41,7 +41,7 @@ namespace Project1
                 txbEmployeNom.Text = "Moh";
                 txbEmployePrenom.Text = "Chami";
                 radioButton1.Checked = true;
-                dateTimePickerEmploye.Value = DateTime.Now;
+                dateTimePickerEmploye.Text = DateTime.Now.ToString("d/M/yyyy");
                 txbEmployeFunction.Text = "programmer";
             }
         }
