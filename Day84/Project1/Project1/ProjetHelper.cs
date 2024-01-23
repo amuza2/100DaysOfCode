@@ -105,8 +105,8 @@ namespace Project1
                     {
                         if(comboBox.Text.ToString() == row[Tables.CodeProjet].ToString())
                         {
-                            textBox1.Text = row[Tables.DateDebut].ToString();
-                            textBox2.Text = row[Tables.DateFin].ToString();
+                            textBox1.Text = ((DateTime)row[Tables.DateDebut]).ToString("d/M/yyyy");
+                            textBox2.Text = ((DateTime)row[Tables.DateFin]).ToString("d/M/yyyy");
                             break;
                         }
                     }
@@ -117,6 +117,100 @@ namespace Project1
                 }
             }
         }
+        public void showProjets(TextBox textBox0, TextBox textBox1, TextBox textBox2, int rowIndex)
+        {
+            string sql = $"SELECT * FROM {Tables.Projet}";
+            using (SqlCommand command = new SqlCommand(sql, db.Instance.getConnection()))
+            {
+                try
+                {
+                    SqlDataReader reader = command.ExecuteReader();
+                    DataTable dataTable = new DataTable();
+                    dataTable.Load(reader);
+                    foreach (DataRow row in dataTable.Rows)
+                    {
+                        if(rowIndex == int.Parse(row[Tables.CodeProjet].ToString()))
+                        {
+                            textBox0.Text = row[Tables.TypeProjet].ToString();
+                            textBox1.Text = ((DateTime)row[Tables.DateDebut]).ToString("d/M/yyyy");
+                            textBox2.Text = ((DateTime)row[Tables.DateFin]).ToString("d/M/yyyy");
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    db.Instance.disconnect();
+                }
+            }
+        }
 
+        public void showProjetsInDataGridView(DataGridView dataGridView)
+        {
+            string sql = $"SELECT * FROM {Tables.Projet}";
+            using(SqlCommand command = new SqlCommand(sql, db.Instance.getConnection()))
+            {
+                try
+                {
+                    SqlDataReader reader = command.ExecuteReader();
+                    DataTable dataTable = new DataTable();
+                    dataTable.Load(reader);
+                    dataGridView.DataSource = dataTable;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    db.Instance.disconnect();
+                }
+            }
+        }
+
+        public void sortByDate(DataGridView dataGridView)
+        {
+            string sql = $"SELECT * FROM {Tables.Projet} ORDER BY {Tables.DateDebut}";
+            using( SqlCommand command = new SqlCommand(sql, db.Instance.getConnection()))
+            {
+                try
+                {
+                    SqlDataReader reader = command.ExecuteReader();
+                    DataTable dataTable = new DataTable();
+                    dataTable.Load(reader);
+                    dataGridView.DataSource = dataTable;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+
+        public void sortByType(DataGridView dataGridView)
+        {
+            string sql = $"SELECT * FROM {Tables.Projet} ORDER BY {Tables.TypeProjet}";
+            using(SqlCommand command = new SqlCommand(sql , db.Instance.getConnection()))
+            {
+                try
+                {
+                    SqlDataReader reader = command.ExecuteReader();
+                    DataTable dataTable = new DataTable();
+                    dataTable.Load(reader);
+                    dataGridView.DataSource = dataTable;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    db.Instance.disconnect();
+                }
+            }
+        }
     }
 }

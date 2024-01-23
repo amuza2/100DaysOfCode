@@ -193,6 +193,7 @@
             this.btnProjetConsulter.TabIndex = 0;
             this.btnProjetConsulter.Text = "Consulter Projet";
             this.btnProjetConsulter.UseVisualStyleBackColor = false;
+            this.btnProjetConsulter.Click += new System.EventHandler(this.btnProjetConsulter_Click);
             // 
             // Main
             // 

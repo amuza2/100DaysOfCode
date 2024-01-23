@@ -91,6 +91,18 @@
     <Compile Include="ChercherEmployer.Designer.cs">
       <DependentUpon>ChercherEmployer.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConsulterProjet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsulterProjet.Designer.cs">
+      <DependentUpon>ConsulterProjet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsulterProjets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsulterProjets.Designer.cs">
+      <DependentUpon>ConsulterProjets.cs</DependentUpon>
+    </Compile>
     <Compile Include="db.cs" />
     <Compile Include="EmployeHelper.cs" />
     <Compile Include="InscriptionHelper.cs" />
@@ -119,6 +131,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChercherEmployer.resx">
       <DependentUpon>ChercherEmployer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsulterProjet.resx">
+      <DependentUpon>ConsulterProjet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsulterProjets.resx">
+      <DependentUpon>ConsulterProjets.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
