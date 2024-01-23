@@ -12,6 +12,7 @@ namespace Project1
 {
     public partial class ChercherEmployer : Form
     {
+        EmployeHelper employeHelper = new EmployeHelper();
         public ChercherEmployer()
         {
             InitializeComponent();
@@ -22,6 +23,11 @@ namespace Project1
             radioButton1.Checked = true;
             radioButton2.Checked = false;
             radioButton3.Checked = false;
+        }
+
+        private void txbSearch_TextChanged(object sender, EventArgs e)
+        {
+            employeHelper.searchEmployes(dataGridView1, txbSearch, radioButton1, radioButton2, radioButton3);
         }
     }
 }

@@ -69,12 +69,45 @@ namespace Project1
             }
         }
 
-        public void searchEmployes(RadioButton radioButton)
+        public void searchEmployes(DataGridView dataGridView,TextBox textBox, params Object[] controls)
         {
-            string sql = $"SELECT * FROM {Tables.Employe} WHERE {Tables.NomEmploye} LIKE %{radioButton.Text}%";
-            using(SqlCommand command = new SqlCommand(sql, db.Instance.getConnection()))
+            if(textBox.Text.Trim().Length > 0)
             {
-
+                string radioButtonValue = "";
+                string searchBy = "";
+                foreach (RadioButton control in controls)
+                {
+                    if(control.Checked)
+                    {
+                        radioButtonValue = control.Text;
+                        break;
+                    }
+                }
+                if (!string.IsNullOrEmpty(radioButtonValue))
+                {
+                    if (radioButtonValue == "Nom") searchBy = Tables.NomEmploye;
+                    else if (radioButtonValue == "Prenom") searchBy = Tables.PrenomEmploye;
+                    else searchBy = Tables.FonctionEmploye;
+                }
+                string sql = $"SELECT * FROM {Tables.Employe} WHERE {searchBy} LIKE '{textBox.Text.Trim()}%'";
+                using(SqlCommand command = new SqlCommand(sql, db.Instance.getConnection()))
+                {
+                    try
+                    {
+                        SqlDataReader reader = command.ExecuteReader();
+                        DataTable dataTable = new DataTable();
+                        dataTable.Load(reader);
+                        dataGridView.DataSource = dataTable;
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                    finally
+                    {
+                        db.Instance.disconnect();
+                    }
+                }
             }
         }
     }
