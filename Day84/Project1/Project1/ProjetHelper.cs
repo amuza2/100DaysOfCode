@@ -88,12 +88,33 @@ namespace Project1
                 }
             }
         }
-        public void showProjets()
+        public void showProjets(ComboBox comboBox, TextBox textBox1, TextBox textBox2)
         {
             string sql = $"SELECT * FROM {Tables.Projet}";
             using(SqlCommand command = new SqlCommand(sql, db.Instance.getConnection()))
             {
-
+                try
+                {
+                    SqlDataReader reader = command.ExecuteReader();
+                    DataTable dataTable = new DataTable();
+                    dataTable.Load(reader);
+                    comboBox.DataSource = dataTable;
+                    comboBox.DisplayMember = Tables.CodeProjet;
+                    comboBox.ValueMember = Tables.TypeProjet;
+                    foreach (DataRow row in dataTable.Rows)
+                    {
+                        if(comboBox.Text.ToString() == row[Tables.CodeProjet].ToString())
+                        {
+                            textBox1.Text = row[Tables.DateDebut].ToString();
+                            textBox2.Text = row[Tables.DateFin].ToString();
+                            break;
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
         }
 

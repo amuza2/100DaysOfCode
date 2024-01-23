@@ -10,6 +10,7 @@ namespace Project1
     {
         // Employe Table and Columns
         public static string Employe = "Employe";
+        public static string NumEmploye = "NumEmploye";
         public static string NomEmploye = "NomEmploye";
         public static string PrenomEmploye = "PrenomEmploye";
         public static string SexeEmploye = "SexeEmploye";

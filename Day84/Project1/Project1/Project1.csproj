@@ -85,6 +85,12 @@
     <Compile Include="AjouterType.Designer.cs">
       <DependentUpon>AjouterType.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChercherEmployer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChercherEmployer.Designer.cs">
+      <DependentUpon>ChercherEmployer.cs</DependentUpon>
+    </Compile>
     <Compile Include="db.cs" />
     <Compile Include="EmployeHelper.cs" />
     <Compile Include="InscriptionHelper.cs" />
@@ -110,6 +116,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AjouterType.resx">
       <DependentUpon>AjouterType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChercherEmployer.resx">
+      <DependentUpon>ChercherEmployer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>

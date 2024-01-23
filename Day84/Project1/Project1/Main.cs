@@ -39,5 +39,11 @@ namespace Project1
             AjouterInscription ajouterInscription = new AjouterInscription();
             ajouterInscription.Show();
         }
+
+        private void btnEmployeRechercher_Click(object sender, EventArgs e)
+        {
+            ChercherEmployer chercherEmployer = new ChercherEmployer();
+            chercherEmployer.Show();
+        }
     }
 }

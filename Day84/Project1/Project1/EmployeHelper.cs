@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -35,8 +36,46 @@ namespace Project1
                 {
                     db.Instance.disconnect();
                 }
+            } 
+        }
+
+        public void showEmploye(ComboBox comboBox, TextBox textBox1, TextBox textBox2, TextBox textBox3)
+        {
+            string sql = $"SELECT {Tables.NumEmploye}, {Tables.NomEmploye}, {Tables.PrenomEmploye}, {Tables.FonctionEmploye} FROM {Tables.Employe}";
+            using(SqlCommand command = new SqlCommand(sql, db.Instance.getConnection()))
+            {
+                try
+                {
+                    SqlDataReader reader = command.ExecuteReader();
+                    DataTable dataTable = new DataTable();
+                    dataTable.Load(reader);
+                    comboBox.DataSource = dataTable;
+                    comboBox.DisplayMember = Tables.NumEmploye;
+                    foreach (DataRow row in dataTable.Rows)
+                    {
+                        if(comboBox.Text == row[Tables.NumEmploye].ToString())
+                        {
+                            textBox1.Text = row[Tables.NomEmploye].ToString();
+                            textBox2.Text = row[Tables.PrenomEmploye].ToString();
+                            textBox3.Text = row[Tables.FonctionEmploye].ToString();
+                            break;
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
-           
+        }
+
+        public void searchEmployes(RadioButton radioButton)
+        {
+            string sql = $"SELECT * FROM {Tables.Employe} WHERE {Tables.NomEmploye} LIKE %{radioButton.Text}%";
+            using(SqlCommand command = new SqlCommand(sql, db.Instance.getConnection()))
+            {
+
+            }
         }
     }
 }

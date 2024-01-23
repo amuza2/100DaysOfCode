@@ -70,6 +70,7 @@
             this.btnEmployeRechercher.TabIndex = 0;
             this.btnEmployeRechercher.Text = "Rechercher Employe";
             this.btnEmployeRechercher.UseVisualStyleBackColor = false;
+            this.btnEmployeRechercher.Click += new System.EventHandler(this.btnEmployeRechercher_Click);
             // 
             // btnEmployeModifier
             // 
