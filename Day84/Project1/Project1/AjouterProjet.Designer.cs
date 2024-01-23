@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtProjetCode = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txbProjetType = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.dateTimePickerProjetDebutDate = new System.Windows.Forms.DateTimePicker();
+            this.cmbTypeProjet = new System.Windows.Forms.ComboBox();
             this.dateTimePickerProjetFinDate = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerProjetDebutDate = new System.Windows.Forms.DateTimePicker();
+            this.txtProjetCode = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnAjouterType = new System.Windows.Forms.Button();
             this.btnProjetValider = new System.Windows.Forms.Button();
             this.btnAnnule = new System.Windows.Forms.Button();
@@ -45,9 +45,9 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.cmbTypeProjet);
             this.groupBox1.Controls.Add(this.dateTimePickerProjetFinDate);
             this.groupBox1.Controls.Add(this.dateTimePickerProjetDebutDate);
-            this.groupBox1.Controls.Add(this.txbProjetType);
             this.groupBox1.Controls.Add(this.txtProjetCode);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
@@ -60,15 +60,28 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Projet";
             // 
-            // label1
+            // cmbTypeProjet
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(15, 29);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Code Projet:";
+            this.cmbTypeProjet.FormattingEnabled = true;
+            this.cmbTypeProjet.Location = new System.Drawing.Point(133, 78);
+            this.cmbTypeProjet.Name = "cmbTypeProjet";
+            this.cmbTypeProjet.Size = new System.Drawing.Size(200, 21);
+            this.cmbTypeProjet.TabIndex = 5;
+            this.cmbTypeProjet.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // dateTimePickerProjetFinDate
+            // 
+            this.dateTimePickerProjetFinDate.Location = new System.Drawing.Point(133, 179);
+            this.dateTimePickerProjetFinDate.Name = "dateTimePickerProjetFinDate";
+            this.dateTimePickerProjetFinDate.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePickerProjetFinDate.TabIndex = 4;
+            // 
+            // dateTimePickerProjetDebutDate
+            // 
+            this.dateTimePickerProjetDebutDate.Location = new System.Drawing.Point(133, 124);
+            this.dateTimePickerProjetDebutDate.Name = "dateTimePickerProjetDebutDate";
+            this.dateTimePickerProjetDebutDate.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePickerProjetDebutDate.TabIndex = 3;
             // 
             // txtProjetCode
             // 
@@ -77,34 +90,6 @@
             this.txtProjetCode.Name = "txtProjetCode";
             this.txtProjetCode.Size = new System.Drawing.Size(200, 26);
             this.txtProjetCode.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(15, 78);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 20);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Type Projet:";
-            // 
-            // txbProjetType
-            // 
-            this.txbProjetType.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbProjetType.Location = new System.Drawing.Point(133, 72);
-            this.txbProjetType.Name = "txbProjetType";
-            this.txbProjetType.Size = new System.Drawing.Size(200, 26);
-            this.txbProjetType.TabIndex = 1;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(15, 125);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(96, 20);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Date Debut:";
             // 
             // label4
             // 
@@ -116,19 +101,35 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Date Fin:";
             // 
-            // dateTimePickerProjetDebutDate
+            // label3
             // 
-            this.dateTimePickerProjetDebutDate.Location = new System.Drawing.Point(133, 124);
-            this.dateTimePickerProjetDebutDate.Name = "dateTimePickerProjetDebutDate";
-            this.dateTimePickerProjetDebutDate.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePickerProjetDebutDate.TabIndex = 2;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(15, 125);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(96, 20);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Date Debut:";
             // 
-            // dateTimePickerProjetFinDate
+            // label2
             // 
-            this.dateTimePickerProjetFinDate.Location = new System.Drawing.Point(133, 179);
-            this.dateTimePickerProjetFinDate.Name = "dateTimePickerProjetFinDate";
-            this.dateTimePickerProjetFinDate.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePickerProjetFinDate.TabIndex = 2;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(15, 78);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(92, 20);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Type Projet:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(15, 29);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(96, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Code Projet:";
             // 
             // btnAjouterType
             // 
@@ -136,9 +137,10 @@
             this.btnAjouterType.Location = new System.Drawing.Point(32, 268);
             this.btnAjouterType.Name = "btnAjouterType";
             this.btnAjouterType.Size = new System.Drawing.Size(91, 27);
-            this.btnAjouterType.TabIndex = 1;
+            this.btnAjouterType.TabIndex = 5;
             this.btnAjouterType.Text = "Ajouter Type";
             this.btnAjouterType.UseVisualStyleBackColor = false;
+            this.btnAjouterType.Click += new System.EventHandler(this.btnAjouterType_Click);
             // 
             // btnProjetValider
             // 
@@ -146,9 +148,10 @@
             this.btnProjetValider.Location = new System.Drawing.Point(155, 268);
             this.btnProjetValider.Name = "btnProjetValider";
             this.btnProjetValider.Size = new System.Drawing.Size(91, 27);
-            this.btnProjetValider.TabIndex = 1;
+            this.btnProjetValider.TabIndex = 6;
             this.btnProjetValider.Text = "Valider";
             this.btnProjetValider.UseVisualStyleBackColor = false;
+            this.btnProjetValider.Click += new System.EventHandler(this.btnProjetValider_Click);
             // 
             // btnAnnule
             // 
@@ -156,7 +159,7 @@
             this.btnAnnule.Location = new System.Drawing.Point(276, 268);
             this.btnAnnule.Name = "btnAnnule";
             this.btnAnnule.Size = new System.Drawing.Size(91, 27);
-            this.btnAnnule.TabIndex = 1;
+            this.btnAnnule.TabIndex = 7;
             this.btnAnnule.Text = "Annulé";
             this.btnAnnule.UseVisualStyleBackColor = false;
             this.btnAnnule.Click += new System.EventHandler(this.btnAnnule_Click);
@@ -172,6 +175,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "AjouterProjet";
             this.Text = "AjouterProjet";
+            this.Load += new System.EventHandler(this.AjouterProjet_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -183,7 +187,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txtProjetCode;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txbProjetType;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
@@ -192,5 +195,6 @@
         private System.Windows.Forms.Button btnAjouterType;
         private System.Windows.Forms.Button btnProjetValider;
         private System.Windows.Forms.Button btnAnnule;
+        private System.Windows.Forms.ComboBox cmbTypeProjet;
     }
 }

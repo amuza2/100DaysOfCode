@@ -21,6 +21,7 @@ namespace Project1
         public static string DateInscription = "DateInscription";
 
         // Projet Table and Columns
+        public static string Projet = "Projet";
         public static string CodeProjet = "CodeProjet";
         public static string DateDebut = "DateDebut";
         public static string DateFin = "DateFin";

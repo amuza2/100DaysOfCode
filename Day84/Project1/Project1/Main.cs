@@ -22,5 +22,22 @@ namespace Project1
             AjouterEmploye ajouterEmploye = new AjouterEmploye();
             ajouterEmploye.Show();
         }
+
+        private void btnProjetAjouter_Click(object sender, EventArgs e)
+        {
+            AjouterProjet ajouterProjet = new AjouterProjet();
+            ajouterProjet.Show();
+        }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+            lblDate.Text = DateTime.Now.ToString("d/MM/yyyy");
+        }
+
+        private void btnInscriptionCreation_Click(object sender, EventArgs e)
+        {
+            AjouterInscription ajouterInscription = new AjouterInscription();
+            ajouterInscription.Show();
+        }
     }
 }

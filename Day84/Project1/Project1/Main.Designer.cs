@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.grbEmploye = new System.Windows.Forms.GroupBox();
+            this.btnEmployeRechercher = new System.Windows.Forms.Button();
+            this.btnEmployeModifier = new System.Windows.Forms.Button();
+            this.btnEmployeConsulter = new System.Windows.Forms.Button();
             this.btnEmployeAjouter = new System.Windows.Forms.Button();
             this.btnProjetAjouter = new System.Windows.Forms.Button();
-            this.btnEmployeConsulter = new System.Windows.Forms.Button();
-            this.btnEmployeModifier = new System.Windows.Forms.Button();
-            this.btnEmployeRechercher = new System.Windows.Forms.Button();
             this.grbDate = new System.Windows.Forms.GroupBox();
             this.lblDate = new System.Windows.Forms.Label();
             this.grbInscription = new System.Windows.Forms.GroupBox();
-            this.btnInscriptionConsultation = new System.Windows.Forms.Button();
             this.btnInscriptionCreation = new System.Windows.Forms.Button();
+            this.btnInscriptionConsultation = new System.Windows.Forms.Button();
             this.grbProjet = new System.Windows.Forms.GroupBox();
             this.btnProjetConsulter = new System.Windows.Forms.Button();
             this.grbEmploye.SuspendLayout();
@@ -59,6 +59,39 @@
             this.grbEmploye.TabIndex = 0;
             this.grbEmploye.TabStop = false;
             this.grbEmploye.Text = "Employe";
+            // 
+            // btnEmployeRechercher
+            // 
+            this.btnEmployeRechercher.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnEmployeRechercher.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEmployeRechercher.Location = new System.Drawing.Point(39, 131);
+            this.btnEmployeRechercher.Name = "btnEmployeRechercher";
+            this.btnEmployeRechercher.Size = new System.Drawing.Size(265, 36);
+            this.btnEmployeRechercher.TabIndex = 0;
+            this.btnEmployeRechercher.Text = "Rechercher Employe";
+            this.btnEmployeRechercher.UseVisualStyleBackColor = false;
+            // 
+            // btnEmployeModifier
+            // 
+            this.btnEmployeModifier.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnEmployeModifier.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEmployeModifier.Location = new System.Drawing.Point(39, 75);
+            this.btnEmployeModifier.Name = "btnEmployeModifier";
+            this.btnEmployeModifier.Size = new System.Drawing.Size(265, 36);
+            this.btnEmployeModifier.TabIndex = 0;
+            this.btnEmployeModifier.Text = "Modifier Employe";
+            this.btnEmployeModifier.UseVisualStyleBackColor = false;
+            // 
+            // btnEmployeConsulter
+            // 
+            this.btnEmployeConsulter.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnEmployeConsulter.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEmployeConsulter.Location = new System.Drawing.Point(39, 187);
+            this.btnEmployeConsulter.Name = "btnEmployeConsulter";
+            this.btnEmployeConsulter.Size = new System.Drawing.Size(265, 36);
+            this.btnEmployeConsulter.TabIndex = 0;
+            this.btnEmployeConsulter.Text = "Consulter Employe";
+            this.btnEmployeConsulter.UseVisualStyleBackColor = false;
             // 
             // btnEmployeAjouter
             // 
@@ -82,39 +115,7 @@
             this.btnProjetAjouter.TabIndex = 0;
             this.btnProjetAjouter.Text = "Ajouter Projet";
             this.btnProjetAjouter.UseVisualStyleBackColor = false;
-            // 
-            // btnEmployeConsulter
-            // 
-            this.btnEmployeConsulter.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.btnEmployeConsulter.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEmployeConsulter.Location = new System.Drawing.Point(39, 187);
-            this.btnEmployeConsulter.Name = "btnEmployeConsulter";
-            this.btnEmployeConsulter.Size = new System.Drawing.Size(265, 36);
-            this.btnEmployeConsulter.TabIndex = 0;
-            this.btnEmployeConsulter.Text = "Consulter Employe";
-            this.btnEmployeConsulter.UseVisualStyleBackColor = false;
-            // 
-            // btnEmployeModifier
-            // 
-            this.btnEmployeModifier.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.btnEmployeModifier.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEmployeModifier.Location = new System.Drawing.Point(39, 75);
-            this.btnEmployeModifier.Name = "btnEmployeModifier";
-            this.btnEmployeModifier.Size = new System.Drawing.Size(265, 36);
-            this.btnEmployeModifier.TabIndex = 0;
-            this.btnEmployeModifier.Text = "Modifier Employe";
-            this.btnEmployeModifier.UseVisualStyleBackColor = false;
-            // 
-            // btnEmployeRechercher
-            // 
-            this.btnEmployeRechercher.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.btnEmployeRechercher.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEmployeRechercher.Location = new System.Drawing.Point(39, 131);
-            this.btnEmployeRechercher.Name = "btnEmployeRechercher";
-            this.btnEmployeRechercher.Size = new System.Drawing.Size(265, 36);
-            this.btnEmployeRechercher.TabIndex = 0;
-            this.btnEmployeRechercher.Text = "Rechercher Employe";
-            this.btnEmployeRechercher.UseVisualStyleBackColor = false;
+            this.btnProjetAjouter.Click += new System.EventHandler(this.btnProjetAjouter_Click);
             // 
             // grbDate
             // 
@@ -147,17 +148,6 @@
             this.grbInscription.TabStop = false;
             this.grbInscription.Text = "Inscription";
             // 
-            // btnInscriptionConsultation
-            // 
-            this.btnInscriptionConsultation.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.btnInscriptionConsultation.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInscriptionConsultation.Location = new System.Drawing.Point(67, 30);
-            this.btnInscriptionConsultation.Name = "btnInscriptionConsultation";
-            this.btnInscriptionConsultation.Size = new System.Drawing.Size(265, 36);
-            this.btnInscriptionConsultation.TabIndex = 0;
-            this.btnInscriptionConsultation.Text = "Consultation";
-            this.btnInscriptionConsultation.UseVisualStyleBackColor = false;
-            // 
             // btnInscriptionCreation
             // 
             this.btnInscriptionCreation.BackColor = System.Drawing.Color.LightSkyBlue;
@@ -168,6 +158,18 @@
             this.btnInscriptionCreation.TabIndex = 0;
             this.btnInscriptionCreation.Text = "Creation";
             this.btnInscriptionCreation.UseVisualStyleBackColor = false;
+            this.btnInscriptionCreation.Click += new System.EventHandler(this.btnInscriptionCreation_Click);
+            // 
+            // btnInscriptionConsultation
+            // 
+            this.btnInscriptionConsultation.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnInscriptionConsultation.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInscriptionConsultation.Location = new System.Drawing.Point(67, 30);
+            this.btnInscriptionConsultation.Name = "btnInscriptionConsultation";
+            this.btnInscriptionConsultation.Size = new System.Drawing.Size(265, 36);
+            this.btnInscriptionConsultation.TabIndex = 0;
+            this.btnInscriptionConsultation.Text = "Consultation";
+            this.btnInscriptionConsultation.UseVisualStyleBackColor = false;
             // 
             // grbProjet
             // 
@@ -202,6 +204,7 @@
             this.Controls.Add(this.grbEmploye);
             this.Name = "Main";
             this.Text = "Main";
+            this.Load += new System.EventHandler(this.Main_Load);
             this.grbEmploye.ResumeLayout(false);
             this.grbDate.ResumeLayout(false);
             this.grbDate.PerformLayout();

@@ -90,7 +90,7 @@
             this.txbProjetLibele.Location = new System.Drawing.Point(133, 83);
             this.txbProjetLibele.Name = "txbProjetLibele";
             this.txbProjetLibele.Size = new System.Drawing.Size(208, 26);
-            this.txbProjetLibele.TabIndex = 1;
+            this.txbProjetLibele.TabIndex = 2;
             this.txbProjetLibele.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label3
@@ -109,7 +109,7 @@
             this.txbProjetDuree.Location = new System.Drawing.Point(133, 141);
             this.txbProjetDuree.Name = "txbProjetDuree";
             this.txbProjetDuree.Size = new System.Drawing.Size(208, 26);
-            this.txbProjetDuree.TabIndex = 1;
+            this.txbProjetDuree.TabIndex = 3;
             this.txbProjetDuree.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // btnAjouterType
@@ -118,9 +118,10 @@
             this.btnAjouterType.Location = new System.Drawing.Point(49, 224);
             this.btnAjouterType.Name = "btnAjouterType";
             this.btnAjouterType.Size = new System.Drawing.Size(98, 31);
-            this.btnAjouterType.TabIndex = 1;
+            this.btnAjouterType.TabIndex = 4;
             this.btnAjouterType.Text = "Ajouter";
             this.btnAjouterType.UseVisualStyleBackColor = false;
+            this.btnAjouterType.Click += new System.EventHandler(this.btnAjouterType_Click);
             // 
             // btnAnnule
             // 
@@ -128,9 +129,10 @@
             this.btnAnnule.Location = new System.Drawing.Point(236, 224);
             this.btnAnnule.Name = "btnAnnule";
             this.btnAnnule.Size = new System.Drawing.Size(98, 31);
-            this.btnAnnule.TabIndex = 1;
+            this.btnAnnule.TabIndex = 5;
             this.btnAnnule.Text = "Annulé";
             this.btnAnnule.UseVisualStyleBackColor = false;
+            this.btnAnnule.Click += new System.EventHandler(this.btnAnnule_Click);
             // 
             // AjouterType
             // 

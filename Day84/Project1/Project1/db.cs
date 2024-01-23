@@ -37,7 +37,7 @@ namespace Project1
         }
         public SqlConnection getConnection()
         {
-            if (!string.IsNullOrEmpty(connectionString)) _connection.ConnectionString = connectionString;
+            if (!string.IsNullOrEmpty(connectionString) && _connection.State == ConnectionState.Closed) _connection.ConnectionString = connectionString;
             if (_connection.State == ConnectionState.Closed) _connection.Open();
             return _connection;
         }

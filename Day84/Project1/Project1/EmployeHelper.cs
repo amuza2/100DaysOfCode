@@ -11,19 +11,32 @@ namespace Project1
     internal class EmployeHelper
     {
         public void ajouterEmployer(TextBox id,TextBox nom, TextBox prenom, RadioButton sexe, DateTimePicker born, TextBox fonction)
-        {
-            try
+        { 
+            string sql = $"INSERT INTO {Tables.Employe} VALUES (@Data1, @Data2, @Data3, @Data4, @Data5, @Data6)";
+            using (SqlCommand command = new SqlCommand(sql, db.Instance.getConnection()))
             {
-                string sql = $"INSERT INTO {Tables.Employe} VALUES ({int.Parse(id.Text.Trim())},'{nom.Text.Trim()}','{prenom.Text.Trim()}','{sexe.Text}','{born.Value.ToShortDateString()}','{fonction.Text.Trim()}')";
-                SqlCommand command = new SqlCommand(sql, db.Instance.getConnection());
-                command.ExecuteNonQuery();
-                db.Instance.disconnect();
-                MessageBox.Show("Value added successfully");
+                command.Parameters.AddWithValue("@Data1", id.Text.Trim());
+                command.Parameters.AddWithValue("@Data2", nom.Text.Trim());
+                command.Parameters.AddWithValue("@Data3", prenom.Text.Trim());
+                command.Parameters.AddWithValue("@Data4", sexe.Text);
+                command.Parameters.AddWithValue("@Data5", born.Value.ToString("d/M/yyyy"));
+                command.Parameters.AddWithValue("@Data6", fonction.Text.Trim());
+
+                try
+                {
+                    command.ExecuteNonQuery();
+                    MessageBox.Show("Value added successfully");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    db.Instance.disconnect();
+                }
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+           
         }
     }
 }
