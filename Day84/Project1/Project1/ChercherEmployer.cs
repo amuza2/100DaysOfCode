@@ -29,5 +29,10 @@ namespace Project1
         {
             employeHelper.searchEmployes(dataGridView1, txbSearch, radioButton1, radioButton2, radioButton3);
         }
+
+        private void btnFermer_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -35,6 +35,7 @@
             this.txbSearch = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnFermer = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -102,7 +103,7 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.dataGridView1);
-            this.groupBox2.Location = new System.Drawing.Point(21, 175);
+            this.groupBox2.Location = new System.Drawing.Point(21, 147);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(746, 245);
             this.groupBox2.TabIndex = 1;
@@ -120,11 +121,23 @@
             this.dataGridView1.Size = new System.Drawing.Size(740, 226);
             this.dataGridView1.TabIndex = 0;
             // 
+            // btnFermer
+            // 
+            this.btnFermer.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnFermer.Location = new System.Drawing.Point(619, 402);
+            this.btnFermer.Name = "btnFermer";
+            this.btnFermer.Size = new System.Drawing.Size(131, 36);
+            this.btnFermer.TabIndex = 2;
+            this.btnFermer.Text = "Fermer";
+            this.btnFermer.UseVisualStyleBackColor = false;
+            this.btnFermer.Click += new System.EventHandler(this.btnFermer_Click);
+            // 
             // ChercherEmployer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnFermer);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "ChercherEmployer";
@@ -147,5 +160,6 @@
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnFermer;
     }
 }
