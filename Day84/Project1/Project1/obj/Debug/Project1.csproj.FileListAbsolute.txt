@@ -17,3 +17,4 @@ C:\Users\moham\Documents\github\100DaysOfCode\Day84\Project1\Project1\obj\Debug\
 C:\Users\moham\Documents\github\100DaysOfCode\Day84\Project1\Project1\obj\Debug\Project1.ChercherEmployer.resources
 C:\Users\moham\Documents\github\100DaysOfCode\Day84\Project1\Project1\obj\Debug\Project1.ConsulterProjet.resources
 C:\Users\moham\Documents\github\100DaysOfCode\Day84\Project1\Project1\obj\Debug\Project1.ConsulterProjets.resources
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\Project1\Project1\obj\Debug\Project1.ConsulterEmploye.resources

@@ -51,5 +51,11 @@ namespace Project1
             ConsulterProjets consulterProjet = new ConsulterProjets();
             consulterProjet.Show();
         }
+
+        private void btnEmployeConsulter_Click(object sender, EventArgs e)
+        {
+            ConsulterEmploye consulterEmploye = new ConsulterEmploye();
+            consulterEmploye.Show();
+        }
     }
 }

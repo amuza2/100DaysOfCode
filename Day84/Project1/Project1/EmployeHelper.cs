@@ -110,5 +110,81 @@ namespace Project1
                 }
             }
         }
+
+        public void showEmployesToEdit(ComboBox comboBox, TextBox textBox1, TextBox textBox2, RadioButton radioButton1, RadioButton radioButton2, DateTimePicker dateTimePicker, TextBox textBox3)
+        {
+            string sql = $"SELECT * FROM {Tables.Employe}";
+            using( SqlCommand command = new SqlCommand(sql,db.Instance.getConnection()))
+            {
+                try
+                {
+                    SqlDataReader reader = command.ExecuteReader();
+                    DataTable dataTable = new DataTable();
+                    dataTable.Load(reader);
+                    comboBox.DataSource = dataTable;
+                    comboBox.DisplayMember = Tables.NumEmploye;
+                    foreach (DataRow row in dataTable.Rows)
+                    {
+                        if(comboBox.Text == row[Tables.NumEmploye].ToString())
+                        {
+                            textBox1.Text = row[Tables.NomEmploye].ToString();
+                            textBox2.Text = row[Tables.PrenomEmploye].ToString();
+                            if (row[Tables.SexeEmploye].ToString().Trim() == "Masculin")
+                            {
+                                radioButton1.Checked = true;
+                                radioButton2.Checked = false;
+                            }
+                            else
+                            {
+                                radioButton1.Checked = false;
+                                radioButton2.Checked = true;
+                            }
+                            dateTimePicker.Value = (DateTime)row[Tables.DNaissEmploye];
+                            textBox3.Text = row[Tables.FonctionEmploye].ToString();
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+
+        public void modifyEmploye(ComboBox comboBox, TextBox textBox1, TextBox textBox2, RadioButton radioButton1, RadioButton radioButton2, DateTimePicker dateTimePicker, TextBox textBox3)
+        {
+            string sql = $"UPDATE {Tables.Employe} SET " +
+                $"{Tables.NomEmploye} = @Data1, " +
+                $"{Tables.PrenomEmploye} = @Data2, " +
+                $"{Tables.SexeEmploye} = @Data3, " +
+                $"{Tables.DNaissEmploye} = @Data4, " +
+                $"{Tables.FonctionEmploye} = @Data5 " +
+                $"WHERE {Tables.NumEmploye} = @Data6";
+            using(SqlCommand command = new SqlCommand(sql, db.Instance.getConnection()))
+            {
+                command.Parameters.AddWithValue("@Data1", textBox1.Text.Trim());
+                command.Parameters.AddWithValue("@Data2", textBox2.Text.Trim());
+                RadioButton selectedRadio;
+                if (radioButton1.Checked) selectedRadio = radioButton1;
+                else selectedRadio = radioButton2;
+                command.Parameters.AddWithValue("@Data3", selectedRadio.Text.Trim());
+                command.Parameters.AddWithValue("@Data4", dateTimePicker.Value);
+                command.Parameters.AddWithValue("@Data5", textBox3.Text.Trim());
+                command.Parameters.AddWithValue("@Data6", comboBox.Text.Trim());
+                try
+                {
+                    command.ExecuteNonQuery();
+                    MessageBox.Show("Values modified Successfully");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    db.Instance.disconnect();
+                }
+            }
+        }
     }
 }

@@ -93,6 +93,7 @@
             this.btnEmployeConsulter.TabIndex = 0;
             this.btnEmployeConsulter.Text = "Consulter Employe";
             this.btnEmployeConsulter.UseVisualStyleBackColor = false;
+            this.btnEmployeConsulter.Click += new System.EventHandler(this.btnEmployeConsulter_Click);
             // 
             // btnEmployeAjouter
             // 
