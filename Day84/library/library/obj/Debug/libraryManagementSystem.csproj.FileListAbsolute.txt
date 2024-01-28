@@ -1,0 +1,17 @@
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\library\library\bin\Debug\Database1.mdf
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\library\library\bin\Debug\Database1_log.ldf
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\library\library\bin\Debug\library.exe.config
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\library\library\bin\Debug\library.exe
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\library\library\bin\Debug\library.pdb
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\library\library\obj\Debug\libraryManagementSystem.csproj.AssemblyReference.cache
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\library\library\obj\Debug\library.AjouterEtudient.resources
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\library\library\obj\Debug\library.AjouterLivre.resources
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\library\library\obj\Debug\library.AjouterTheme.resources
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\library\library\obj\Debug\library.ChercherLivre.resources
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\library\library\obj\Debug\library.EmpruntLivre.resources
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\library\library\obj\Debug\library.Form1.resources
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\library\library\obj\Debug\library.Properties.Resources.resources
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\library\library\obj\Debug\libraryManagementSystem.csproj.GenerateResource.cache
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\library\library\obj\Debug\libraryManagementSystem.csproj.CoreCompileInputs.cache
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\library\library\obj\Debug\library.exe
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\library\library\obj\Debug\library.pdb

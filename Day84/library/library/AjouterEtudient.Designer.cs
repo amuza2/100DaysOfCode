@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbNom = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.tbAddress = new System.Windows.Forms.TextBox();
+            this.btnAjouter = new System.Windows.Forms.Button();
+            this.btnAnnule = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -47,13 +47,13 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Nom Etudient:";
             // 
-            // textBox1
+            // tbNom
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(161, 70);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(195, 26);
-            this.textBox1.TabIndex = 1;
+            this.tbNom.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbNom.Location = new System.Drawing.Point(161, 70);
+            this.tbNom.Name = "tbNom";
+            this.tbNom.Size = new System.Drawing.Size(195, 26);
+            this.tbNom.TabIndex = 1;
             // 
             // label2
             // 
@@ -65,33 +65,35 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Address:";
             // 
-            // textBox2
+            // tbAddress
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(161, 126);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(195, 26);
-            this.textBox2.TabIndex = 1;
+            this.tbAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbAddress.Location = new System.Drawing.Point(161, 126);
+            this.tbAddress.Name = "tbAddress";
+            this.tbAddress.Size = new System.Drawing.Size(195, 26);
+            this.tbAddress.TabIndex = 2;
             // 
-            // button1
+            // btnAjouter
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(58, 182);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(106, 35);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Ajouter";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAjouter.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAjouter.Location = new System.Drawing.Point(58, 182);
+            this.btnAjouter.Name = "btnAjouter";
+            this.btnAjouter.Size = new System.Drawing.Size(106, 35);
+            this.btnAjouter.TabIndex = 3;
+            this.btnAjouter.Text = "Ajouter";
+            this.btnAjouter.UseVisualStyleBackColor = true;
+            this.btnAjouter.Click += new System.EventHandler(this.btnAjouter_Click);
             // 
-            // button2
+            // btnAnnule
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(207, 182);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(106, 35);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Annule";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnAnnule.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnnule.Location = new System.Drawing.Point(207, 182);
+            this.btnAnnule.Name = "btnAnnule";
+            this.btnAnnule.Size = new System.Drawing.Size(106, 35);
+            this.btnAnnule.TabIndex = 4;
+            this.btnAnnule.Text = "Annule";
+            this.btnAnnule.UseVisualStyleBackColor = true;
+            this.btnAnnule.Click += new System.EventHandler(this.btnAnnule_Click);
             // 
             // label3
             // 
@@ -108,11 +110,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(377, 238);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.btnAnnule);
+            this.Controls.Add(this.btnAjouter);
+            this.Controls.Add(this.tbAddress);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbNom);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Name = "AjouterEtudient";
@@ -125,11 +127,11 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbNom;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox tbAddress;
+        private System.Windows.Forms.Button btnAjouter;
+        private System.Windows.Forms.Button btnAnnule;
         private System.Windows.Forms.Label label3;
     }
 }

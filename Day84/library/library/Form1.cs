@@ -12,9 +12,22 @@ namespace library
 {
     public partial class Form1 : Form
     {
+        HelperClass helper = new HelperClass();
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void btnAjouterLivre_Click(object sender, EventArgs e)
+        {
+            AjouterLivre ajouterLivre = new AjouterLivre();
+            ajouterLivre.Show();
+        }
+
+        private void btnListLivre_Click(object sender, EventArgs e)
+        {
+            ChercherLivre chercherLivre = new ChercherLivre();
+            chercherLivre.Show();
         }
     }
 }

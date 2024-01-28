@@ -28,60 +28,62 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnAjouterLivre = new System.Windows.Forms.Button();
+            this.btnListLivre = new System.Windows.Forms.Button();
+            this.btnAjouterEtudient = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // btnAjouterLivre
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(64, 61);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(122, 39);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Ajouter Livre";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAjouterLivre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAjouterLivre.Location = new System.Drawing.Point(64, 61);
+            this.btnAjouterLivre.Name = "btnAjouterLivre";
+            this.btnAjouterLivre.Size = new System.Drawing.Size(122, 39);
+            this.btnAjouterLivre.TabIndex = 0;
+            this.btnAjouterLivre.Text = "Ajouter Livre";
+            this.btnAjouterLivre.UseVisualStyleBackColor = true;
+            this.btnAjouterLivre.Click += new System.EventHandler(this.btnAjouterLivre_Click);
             // 
-            // button2
+            // btnListLivre
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(208, 61);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(122, 39);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "List de Livre";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnListLivre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnListLivre.Location = new System.Drawing.Point(208, 61);
+            this.btnListLivre.Name = "btnListLivre";
+            this.btnListLivre.Size = new System.Drawing.Size(122, 39);
+            this.btnListLivre.TabIndex = 0;
+            this.btnListLivre.Text = "List de Livre";
+            this.btnListLivre.UseVisualStyleBackColor = true;
+            this.btnListLivre.Click += new System.EventHandler(this.btnListLivre_Click);
             // 
-            // button3
+            // btnAjouterEtudient
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(352, 61);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(145, 39);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "Ajouter Etudient";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnAjouterEtudient.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAjouterEtudient.Location = new System.Drawing.Point(352, 61);
+            this.btnAjouterEtudient.Name = "btnAjouterEtudient";
+            this.btnAjouterEtudient.Size = new System.Drawing.Size(145, 39);
+            this.btnAjouterEtudient.TabIndex = 0;
+            this.btnAjouterEtudient.Text = "Ajouter Etudient";
+            this.btnAjouterEtudient.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnAjouterEtudient);
+            this.Controls.Add(this.btnListLivre);
+            this.Controls.Add(this.btnAjouterLivre);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Library Management System";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnAjouterLivre;
+        private System.Windows.Forms.Button btnListLivre;
+        private System.Windows.Forms.Button btnAjouterEtudient;
     }
 }
 

@@ -12,9 +12,20 @@ namespace library
 {
     public partial class AjouterTheme : Form
     {
+        HelperClass helper = new HelperClass();
         public AjouterTheme()
         {
             InitializeComponent();
+        }
+
+        private void btnAnnule_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnAjouterTheme_Click(object sender, EventArgs e)
+        {
+            helper.AjouterTheme(tbThemeName);
         }
     }
 }

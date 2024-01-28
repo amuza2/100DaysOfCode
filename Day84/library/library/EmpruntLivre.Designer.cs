@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbCode = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tbTitre = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.TbAuteur = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tbNb = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.tbTheme = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label7 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnAjouterEtudient = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -60,13 +60,14 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Code:";
             // 
-            // textBox1
+            // tbCode
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(200, 90);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(193, 26);
-            this.textBox1.TabIndex = 1;
+            this.tbCode.Enabled = false;
+            this.tbCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbCode.Location = new System.Drawing.Point(200, 90);
+            this.tbCode.Name = "tbCode";
+            this.tbCode.Size = new System.Drawing.Size(193, 26);
+            this.tbCode.TabIndex = 1;
             // 
             // label2
             // 
@@ -78,13 +79,14 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Titre:";
             // 
-            // textBox2
+            // tbTitre
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(200, 142);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(193, 26);
-            this.textBox2.TabIndex = 1;
+            this.tbTitre.Enabled = false;
+            this.tbTitre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbTitre.Location = new System.Drawing.Point(200, 142);
+            this.tbTitre.Name = "tbTitre";
+            this.tbTitre.Size = new System.Drawing.Size(193, 26);
+            this.tbTitre.TabIndex = 1;
             // 
             // label3
             // 
@@ -96,13 +98,14 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Auteur:";
             // 
-            // textBox3
+            // TbAuteur
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(200, 194);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(193, 26);
-            this.textBox3.TabIndex = 1;
+            this.TbAuteur.Enabled = false;
+            this.TbAuteur.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TbAuteur.Location = new System.Drawing.Point(200, 194);
+            this.TbAuteur.Name = "TbAuteur";
+            this.TbAuteur.Size = new System.Drawing.Size(193, 26);
+            this.TbAuteur.TabIndex = 1;
             // 
             // label4
             // 
@@ -114,13 +117,14 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Nombre D\'examplaire:";
             // 
-            // textBox4
+            // tbNb
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(200, 246);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(193, 26);
-            this.textBox4.TabIndex = 1;
+            this.tbNb.Enabled = false;
+            this.tbNb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbNb.Location = new System.Drawing.Point(200, 246);
+            this.tbNb.Name = "tbNb";
+            this.tbNb.Size = new System.Drawing.Size(193, 26);
+            this.tbNb.TabIndex = 1;
             // 
             // label5
             // 
@@ -132,13 +136,14 @@
             this.label5.TabIndex = 0;
             this.label5.Text = "Theme:";
             // 
-            // textBox5
+            // tbTheme
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(200, 298);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(193, 26);
-            this.textBox5.TabIndex = 1;
+            this.tbTheme.Enabled = false;
+            this.tbTheme.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbTheme.Location = new System.Drawing.Point(200, 298);
+            this.tbTheme.Name = "tbTheme";
+            this.tbTheme.Size = new System.Drawing.Size(193, 26);
+            this.tbTheme.TabIndex = 1;
             // 
             // label6
             // 
@@ -187,15 +192,16 @@
             this.button1.Text = "Valider";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnAjouterEtudient
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(617, 388);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(178, 30);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Ajouter Etudient";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnAjouterEtudient.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAjouterEtudient.Location = new System.Drawing.Point(617, 388);
+            this.btnAjouterEtudient.Name = "btnAjouterEtudient";
+            this.btnAjouterEtudient.Size = new System.Drawing.Size(178, 30);
+            this.btnAjouterEtudient.TabIndex = 3;
+            this.btnAjouterEtudient.Text = "Ajouter Etudient";
+            this.btnAjouterEtudient.UseVisualStyleBackColor = true;
+            this.btnAjouterEtudient.Click += new System.EventHandler(this.btnAjouterEtudient_Click);
             // 
             // button3
             // 
@@ -206,6 +212,7 @@
             this.button3.TabIndex = 3;
             this.button3.Text = "Annulé";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label8
             // 
@@ -232,25 +239,26 @@
             this.ClientSize = new System.Drawing.Size(960, 441);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnAjouterEtudient);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.tbTheme);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.tbNb);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.TbAuteur);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.tbTitre);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbCode);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label1);
             this.Name = "EmpruntLivre";
             this.Text = "EmpruntLivre";
+            this.Load += new System.EventHandler(this.EmpruntLivre_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -260,21 +268,21 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbCode;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tbTitre;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox TbAuteur;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tbNb;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox tbTheme;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnAjouterEtudient;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;

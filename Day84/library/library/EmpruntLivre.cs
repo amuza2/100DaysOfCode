@@ -12,9 +12,33 @@ namespace library
 {
     public partial class EmpruntLivre : Form
     {
-        public EmpruntLivre()
+        HelperClass helper = new HelperClass();
+        int row;
+        public EmpruntLivre(int itemIndex)
         {
             InitializeComponent();
+            row = itemIndex;
+        }
+
+        private void EmpruntLivre_Load(object sender, EventArgs e)
+        {
+            helper.showLivre(tbCode, tbTitre, TbAuteur, tbNb, tbTheme, row);
+            helper.showStudent(dataGridView1);
+        }
+
+        private void btnAjouterEtudient_Click(object sender, EventArgs e)
+        {
+            AjouterEtudient ajouterEtudient = new AjouterEtudient();
+            ajouterEtudient.Show();
+        }
+        public void ShowStudentGrid()
+        {
+            helper.showStudent(dataGridView1);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
