@@ -1,0 +1,12 @@
+C:\Users\moham\Documents\github\100DaysOfCode\Day82\EntiryFrameworkCleanStart\EntiryFrameworkCleanStart\bin\Debug\EntiryFrameworkCleanStart.exe.config
+C:\Users\moham\Documents\github\100DaysOfCode\Day82\EntiryFrameworkCleanStart\EntiryFrameworkCleanStart\bin\Debug\EntiryFrameworkCleanStart.exe
+C:\Users\moham\Documents\github\100DaysOfCode\Day82\EntiryFrameworkCleanStart\EntiryFrameworkCleanStart\bin\Debug\EntiryFrameworkCleanStart.pdb
+C:\Users\moham\Documents\github\100DaysOfCode\Day82\EntiryFrameworkCleanStart\EntiryFrameworkCleanStart\bin\Debug\EntityFramework.dll
+C:\Users\moham\Documents\github\100DaysOfCode\Day82\EntiryFrameworkCleanStart\EntiryFrameworkCleanStart\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\moham\Documents\github\100DaysOfCode\Day82\EntiryFrameworkCleanStart\EntiryFrameworkCleanStart\bin\Debug\EntityFramework.xml
+C:\Users\moham\Documents\github\100DaysOfCode\Day82\EntiryFrameworkCleanStart\EntiryFrameworkCleanStart\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\moham\Documents\github\100DaysOfCode\Day82\EntiryFrameworkCleanStart\EntiryFrameworkCleanStart\obj\Debug\EntiryFrameworkCleanStart.csproj.AssemblyReference.cache
+C:\Users\moham\Documents\github\100DaysOfCode\Day82\EntiryFrameworkCleanStart\EntiryFrameworkCleanStart\obj\Debug\EntiryFrameworkCleanStart.csproj.CoreCompileInputs.cache
+C:\Users\moham\Documents\github\100DaysOfCode\Day82\EntiryFrameworkCleanStart\EntiryFrameworkCleanStart\obj\Debug\EntiryFrameworkCleanStart.csproj.CopyComplete
+C:\Users\moham\Documents\github\100DaysOfCode\Day82\EntiryFrameworkCleanStart\EntiryFrameworkCleanStart\obj\Debug\EntiryFrameworkCleanStart.exe
+C:\Users\moham\Documents\github\100DaysOfCode\Day82\EntiryFrameworkCleanStart\EntiryFrameworkCleanStart\obj\Debug\EntiryFrameworkCleanStart.pdb

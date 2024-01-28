@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="PlutoModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="PlutoModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Authors">
           <Key>
             <PropertyRef Name="AuthorID" />
@@ -20,9 +20,8 @@
           <Property Name="AuthorID" Type="int" Nullable="false" />
           <Property Name="Title" Type="varchar" MaxLength="255" Nullable="false" />
           <Property Name="Description" Type="varchar" MaxLength="8000" Nullable="false" />
-          <Property Name="Price" Type="smallint" Nullable="false" />
-          <Property Name="LevelString" Type="varchar" MaxLength="50" Nullable="false" />
-          <Property Name="Level" Type="tinyint" Nullable="false" />
+          <Property Name="FullPrice" Type="smallint" Nullable="false" />
+          <Property Name="Level" Type="varchar" MaxLength="50" Nullable="false" />
         </EntityType>
         <EntityType Name="CourseSections">
           <Key>
@@ -120,6 +119,41 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Function Name="DeleteCourse" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="CourseID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="funcGetAuthorCourses" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="AuthorID" Type="int" Mode="In" />
+          <ReturnType>
+            <CollectionType>
+              <RowType>
+                <Property Name="CourseID" Type="int" Nullable="false" />
+                <Property Name="AuthorID" Type="int" Nullable="false" />
+                <Property Name="Title" Type="varchar" MaxLength="255" Nullable="false" />
+                <Property Name="Description" Type="varchar" MaxLength="8000" Nullable="false" />
+                <Property Name="Price" Type="smallint" Nullable="false" />
+                <Property Name="LevelString" Type="varchar" MaxLength="50" Nullable="false" />
+                <Property Name="Level" Type="tinyint" Nullable="false" />
+              </RowType>
+            </CollectionType>
+          </ReturnType>
+        </Function>
+        <Function Name="GetCourses" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="InsertCourse" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="AuthorID" Type="int" Mode="In" />
+          <Parameter Name="Title" Type="varchar" Mode="In" />
+          <Parameter Name="Description" Type="varchar" Mode="In" />
+          <Parameter Name="Price" Type="smallint" Mode="In" />
+          <Parameter Name="LevelString" Type="varchar" Mode="In" />
+          <Parameter Name="Level" Type="tinyint" Mode="In" />
+        </Function>
+        <Function Name="UpdateCourse" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="CourseID" Type="int" Mode="In" />
+          <Parameter Name="Title" Type="varchar" Mode="In" />
+          <Parameter Name="Description" Type="varchar" Mode="In" />
+          <Parameter Name="LevelString" Type="varchar" Mode="In" />
+          <Parameter Name="Level" Type="tinyint" Mode="In" />
+        </Function>
         <EntityContainer Name="PlutoModelStoreContainer">
           <EntitySet Name="Authors" EntityType="Self.Authors" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Courses" EntityType="Self.Courses" Schema="dbo" store:Type="Tables" />
@@ -145,8 +179,7 @@
             <End Role="CourseTags" EntitySet="CourseTags" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="PlutoModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -158,7 +191,7 @@
           <Property Name="Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
           <NavigationProperty Name="Courses" Relationship="Self.FK_Courses_Authors" FromRole="Authors" ToRole="Courses" />
         </EntityType>
-        <EntityType Name="Cours">
+        <EntityType Name="Course">
           <Key>
             <PropertyRef Name="CourseID" />
           </Key>
@@ -166,12 +199,11 @@
           <Property Name="AuthorID" Type="Int32" Nullable="false" />
           <Property Name="Title" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Description" Type="String" MaxLength="8000" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="Price" Type="Int16" Nullable="false" />
-          <Property Name="LevelString" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="Level" Type="Byte" Nullable="false" />
+          <Property Name="Level" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
           <NavigationProperty Name="Author" Relationship="Self.FK_Courses_Authors" FromRole="Courses" ToRole="Authors" />
           <NavigationProperty Name="CourseSections" Relationship="Self.FK_CourseSections_Courses" FromRole="Courses" ToRole="CourseSections" />
           <NavigationProperty Name="Tags" Relationship="Self.CourseTags" FromRole="Courses" ToRole="Tags" />
+          <Property Name="FullPrice" Type="Int16" Nullable="false" />
         </EntityType>
         <EntityType Name="CourseSection">
           <Key>
@@ -211,7 +243,7 @@
           <End Role="Authors" Type="Self.Author" Multiplicity="1">
             <OnDelete Action="Cascade" />
           </End>
-          <End Role="Courses" Type="PlutoModel.Cours" Multiplicity="*" />
+          <End Role="Courses" Type="PlutoModel.Course" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Authors">
               <PropertyRef Name="AuthorID" />
@@ -222,7 +254,7 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_CourseSections_Courses">
-          <End Role="Courses" Type="PlutoModel.Cours" Multiplicity="1">
+          <End Role="Courses" Type="PlutoModel.Course" Multiplicity="1">
             <OnDelete Action="Cascade" />
           </End>
           <End Role="CourseSections" Type="Self.CourseSection" Multiplicity="*" />
@@ -236,29 +268,68 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="CourseTags">
-          <End Role="Courses" Type="PlutoModel.Cours" Multiplicity="*" />
+          <End Role="Courses" Type="PlutoModel.Course" Multiplicity="*" />
           <End Role="Tags" Type="Self.Tag" Multiplicity="*" />
         </Association>
         <EntityContainer Name="PlutoDbContext" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Authors" EntityType="Self.Author" />
-          <EntitySet Name="Cours" EntityType="PlutoModel.Cours" />
+          <EntitySet Name="Courses" EntityType="PlutoModel.Course" />
           <EntitySet Name="CourseSections" EntityType="Self.CourseSection" />
           <EntitySet Name="Posts" EntityType="Self.Post" />
           <EntitySet Name="Tags" EntityType="Self.Tag" />
           <EntitySet Name="tblUsers" EntityType="Self.tblUser" />
           <AssociationSet Name="FK_Courses_Authors" Association="Self.FK_Courses_Authors">
             <End Role="Authors" EntitySet="Authors" />
-            <End Role="Courses" EntitySet="Cours" />
+            <End Role="Courses" EntitySet="Courses" />
           </AssociationSet>
           <AssociationSet Name="FK_CourseSections_Courses" Association="Self.FK_CourseSections_Courses">
-            <End Role="Courses" EntitySet="Cours" />
+            <End Role="Courses" EntitySet="Courses" />
             <End Role="CourseSections" EntitySet="CourseSections" />
           </AssociationSet>
           <AssociationSet Name="CourseTags" Association="Self.CourseTags">
-            <End Role="Courses" EntitySet="Cours" />
+            <End Role="Courses" EntitySet="Courses" />
             <End Role="Tags" EntitySet="Tags" />
           </AssociationSet>
+          <FunctionImport Name="DeleteCourse">
+            <Parameter Name="CourseID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="GetAuthorCourses" IsComposable="true" ReturnType="Collection(PlutoModel.funcGetAuthorCourses_Result)">
+            <Parameter Name="AuthorID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="GetCourses" ReturnType="Collection(PlutoModel.GetCourses_Result)" />
+          <FunctionImport Name="InsertCourse">
+            <Parameter Name="AuthorID" Mode="In" Type="Int32" />
+            <Parameter Name="Title" Mode="In" Type="String" />
+            <Parameter Name="Description" Mode="In" Type="String" />
+            <Parameter Name="Price" Mode="In" Type="Int16" />
+            <Parameter Name="LevelString" Mode="In" Type="String" />
+            <Parameter Name="Level" Mode="In" Type="Byte" />
+          </FunctionImport>
+          <FunctionImport Name="UpdateCourse">
+            <Parameter Name="CourseID" Mode="In" Type="Int32" />
+            <Parameter Name="Title" Mode="In" Type="String" />
+            <Parameter Name="Description" Mode="In" Type="String" />
+            <Parameter Name="LevelString" Mode="In" Type="String" />
+            <Parameter Name="Level" Mode="In" Type="Byte" />
+          </FunctionImport>
         </EntityContainer>
+        <ComplexType Name="funcGetAuthorCourses_Result">
+          <Property Type="Int32" Name="CourseID" Nullable="false" />
+          <Property Type="Int32" Name="AuthorID" Nullable="false" />
+          <Property Type="String" Name="Title" Nullable="false" MaxLength="255" />
+          <Property Type="String" Name="Description" Nullable="false" MaxLength="8000" />
+          <Property Type="Int16" Name="Price" Nullable="false" />
+          <Property Type="String" Name="LevelString" Nullable="false" MaxLength="50" />
+          <Property Type="Byte" Name="Level" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="GetCourses_Result">
+          <Property Type="Int32" Name="CourseID" Nullable="false" />
+          <Property Type="Int32" Name="AuthorID" Nullable="false" />
+          <Property Type="String" Name="Title" Nullable="false" MaxLength="255" />
+          <Property Type="String" Name="Description" Nullable="false" MaxLength="8000" />
+          <Property Type="Int16" Name="FullPrice" Nullable="false" />
+          <Property Type="String" Name="Level" Nullable="false" MaxLength="50" />
+        </ComplexType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -273,15 +344,14 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="Cours">
-            <EntityTypeMapping TypeName="PlutoModel.Cours">
+          <EntitySetMapping Name="Courses">
+            <EntityTypeMapping TypeName="PlutoModel.Course">
               <MappingFragment StoreEntitySet="Courses">
+                <ScalarProperty Name="FullPrice" ColumnName="FullPrice" />
                 <ScalarProperty Name="CourseID" ColumnName="CourseID" />
                 <ScalarProperty Name="AuthorID" ColumnName="AuthorID" />
                 <ScalarProperty Name="Title" ColumnName="Title" />
                 <ScalarProperty Name="Description" ColumnName="Description" />
-                <ScalarProperty Name="Price" ColumnName="Price" />
-                <ScalarProperty Name="LevelString" ColumnName="LevelString" />
                 <ScalarProperty Name="Level" ColumnName="Level" />
               </MappingFragment>
             </EntityTypeMapping>
@@ -330,6 +400,34 @@
               <ScalarProperty Name="TagID" ColumnName="TagID" />
             </EndProperty>
           </AssociationSetMapping>
+          <FunctionImportMapping FunctionImportName="DeleteCourse" FunctionName="PlutoModel.Store.DeleteCourse" />
+          <FunctionImportMapping FunctionImportName="GetAuthorCourses" FunctionName="PlutoModel.Store.funcGetAuthorCourses">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="PlutoModel.funcGetAuthorCourses_Result">
+                <ScalarProperty Name="CourseID" ColumnName="CourseID" />
+                <ScalarProperty Name="AuthorID" ColumnName="AuthorID" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="LevelString" ColumnName="LevelString" />
+                <ScalarProperty Name="Level" ColumnName="Level" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GetCourses" FunctionName="PlutoModel.Store.GetCourses">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="PlutoModel.GetCourses_Result">
+                <ScalarProperty Name="CourseID" ColumnName="CourseID" />
+                <ScalarProperty Name="AuthorID" ColumnName="AuthorID" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="FullPrice" ColumnName="FullPrice" />
+                <ScalarProperty Name="Level" ColumnName="Level" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="InsertCourse" FunctionName="PlutoModel.Store.InsertCourse" />
+          <FunctionImportMapping FunctionImportName="UpdateCourse" FunctionName="PlutoModel.Store.UpdateCourse" />
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

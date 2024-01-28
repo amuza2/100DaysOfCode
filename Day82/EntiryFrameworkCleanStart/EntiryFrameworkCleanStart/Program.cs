@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EntiryFrameworkCleanStart.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,13 @@ namespace EntiryFrameworkCleanStart
     {
         static void Main(string[] args)
         {
+            var dbContxt = new PlutoDbContext();
+            dbContxt.GetAuthorCourses();
+            var courses = dbContxt.GetCourses();
+            foreach (var item in courses)
+            {
+                Console.WriteLine(item.Title);
+            }
         }
     }
 }

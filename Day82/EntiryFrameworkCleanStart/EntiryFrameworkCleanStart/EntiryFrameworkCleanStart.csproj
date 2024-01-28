@@ -55,10 +55,16 @@
     <Compile Include="Entities\Author.cs">
       <DependentUpon>PlutoModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Entities\Cours.cs">
+    <Compile Include="Entities\Course.cs">
       <DependentUpon>PlutoModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Entities\CourseSection.cs">
+      <DependentUpon>PlutoModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\funcGetAuthorCourses_Result.cs">
+      <DependentUpon>PlutoModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\GetCourses_Result.cs">
       <DependentUpon>PlutoModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Entities\PlutoModel.Context.cs">
