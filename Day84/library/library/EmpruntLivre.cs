@@ -40,5 +40,10 @@ namespace library
         {
             this.Close();
         }
+
+        private void btnValider_Click(object sender, EventArgs e)
+        {
+            helper.AjouterEmprunt(tbCode, dataGridView1, dateTimePicker1);
+        }
     }
 }

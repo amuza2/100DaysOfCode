@@ -251,5 +251,62 @@ namespace library
                 }
             }
         }
+        public void AjouterEmprunt(TextBox textBox, DataGridView dataGridView, DateTimePicker dateTimePicker)
+        {
+            string studentCode = "";
+            if (dataGridView.SelectedRows != null && dataGridView.SelectedRows.Count == 1)
+            {
+                DataGridViewRow row = dataGridView.Rows[0];
+                studentCode = row.Cells[Tables.CodeAdherent].Value.ToString();
+            }
+            if(!string.IsNullOrEmpty(studentCode))
+            {
+                try
+                {
+                    int availableBooks = 0;
+                    int livreCode = int.Parse(textBox.Text.Trim());
+                    SqlConnection connection = db.Instance.getConnection();
+
+                    string availableBooksQuery = $"SELECT {Tables.NbExamplaires} FROM {Tables.Livre} WHERE {Tables.CodeLivre} = @bookCode";
+                    using (SqlCommand command = new SqlCommand(availableBooksQuery, connection))
+                    {
+                        command.Parameters.AddWithValue("@bookCode", livreCode);
+                        SqlDataReader reader = command.ExecuteReader();
+                        if (reader.Read()) availableBooks = int.Parse(reader.GetString(0));
+                        reader.Close();
+                    }
+
+                    string sql = $"INSERT INTO {Tables.Emprunt} VALUES (@Data1, @Data2, @Data3, @Data4)";
+                    using (SqlCommand command = new SqlCommand(sql, connection))
+                    {
+                        if (availableBooks > 0)
+                        {
+                            DateTime returnDate = dateTimePicker.Value;
+                            command.Parameters.AddWithValue("@Data1", studentCode);
+                            command.Parameters.AddWithValue("@Data2", livreCode);
+                            command.Parameters.AddWithValue("@Data3", DateTime.Now);
+                            command.Parameters.AddWithValue("@Data4", returnDate);
+                            command.ExecuteNonQuery();
+
+                            string decreaseNbBook = $"UPDATE {Tables.Livre} SET {Tables.NbExamplaires} = {--availableBooks} WHERE {Tables.CodeLivre} = {livreCode}";
+                            command.CommandText = decreaseNbBook;
+                            command.ExecuteNonQuery();
+                            MessageBox.Show("Emprunt ajouter avec success");
+                        }
+                        else MessageBox.Show("Tout les livre sont emprunter");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    db.Instance.disconnect();
+                }
+            }
+            
+        }
+
     }
 }
