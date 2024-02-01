@@ -64,6 +64,7 @@
             this.btnAjouterEtudient.TabIndex = 0;
             this.btnAjouterEtudient.Text = "Ajouter Etudient";
             this.btnAjouterEtudient.UseVisualStyleBackColor = true;
+            this.btnAjouterEtudient.Click += new System.EventHandler(this.btnAjouterEtudient_Click);
             // 
             // Form1
             // 

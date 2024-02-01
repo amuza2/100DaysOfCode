@@ -28,11 +28,6 @@ namespace library
                     if(CheckNotEmptyControls(titre, auteur, nbExamplaires, theme))
                     {
                         command.ExecuteNonQuery();
-                        AjouterLivre ajouterLivre = Application.OpenForms["AjouterLivre"] as AjouterLivre;
-                        if(ajouterLivre != null)
-                        {
-                            ajouterLivre.UpdateThemesComboBox();
-                        }
                         MessageBox.Show("Livre ajouter avec success");
                         ClearControls(titre, auteur, nbExamplaires);
                     }
@@ -57,6 +52,11 @@ namespace library
                 try
                 {
                     command.ExecuteNonQuery();
+                    AjouterLivre ajouterLivre = Application.OpenForms["AjouterLivre"] as AjouterLivre;
+                    if (ajouterLivre != null)
+                    {
+                        ajouterLivre.UpdateThemesComboBox();
+                    }
                     MessageBox.Show("Theme ajouter avec success");
                     nomTheme.Clear();
                 }

@@ -29,5 +29,11 @@ namespace library
             ChercherLivre chercherLivre = new ChercherLivre();
             chercherLivre.Show();
         }
+
+        private void btnAjouterEtudient_Click(object sender, EventArgs e)
+        {
+            AjouterEtudient ajouterEtudient = new AjouterEtudient();
+            ajouterEtudient.Show();
+        }
     }
 }
