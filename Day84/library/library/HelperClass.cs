@@ -110,9 +110,8 @@ namespace library
             textBox3.Clear();
         }
 
-        public void ListOfBooks(DataGridView dataGridView)
+        public void showLivre(DataGridView dataGridView, string sql)
         {
-            string sql = $"SELECT * FROM {Tables.Livre}";
             using (SqlCommand command = new SqlCommand(sql, db.Instance.getConnection()))
             {
                 try
@@ -121,6 +120,37 @@ namespace library
                     DataTable dataTable = new DataTable();
                     dataTable.Load(reader);
                     dataGridView.DataSource = dataTable;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    db.Instance.disconnect();
+                }
+            }
+        }
+        public void showLivre(TextBox code, TextBox title, TextBox auteur, TextBox nb, TextBox theme,string sql, int rowIndex)
+        {
+            using (SqlCommand command = new SqlCommand(sql, db.Instance.getConnection()))
+            {
+                try
+                {
+                    SqlDataReader reader = command.ExecuteReader();
+                    DataTable dataTable = new DataTable();
+                    dataTable.Load(reader);
+                    foreach (DataRow row in dataTable.Rows)
+                    {
+                        if (rowIndex == int.Parse(row[Tables.CodeLivre].ToString()))
+                        {
+                            code.Text = row[Tables.CodeLivre].ToString();
+                            title.Text = row[Tables.TitreLivre].ToString();
+                            auteur.Text = row[Tables.AuteurLivre].ToString();
+                            nb.Text = row[Tables.NbExamplaires].ToString();
+                            theme.Text = row[Tables.CodeTheme].ToString();
+                        }
+                    }
                 }
                 catch (Exception ex)
                 {
@@ -169,35 +199,50 @@ namespace library
                 }
             }
         }
-        public void showLivre(TextBox code, TextBox title, TextBox auteur, TextBox nb, TextBox theme, int rowIndex)
+        public void ChercherParCode(TextBox searchTextBox, DataGridView dataGridView)
         {
-            string sql = $"SELECT * FROM {Tables.Livre}";
-            using (SqlCommand command = new SqlCommand(sql, db.Instance.getConnection()))
+            if(searchTextBox.Text.Length > 0)
             {
-                try
+                string livreCode = searchTextBox.Text.Trim();
+                using (SqlCommand command = new SqlCommand(Tables.sql1, db.Instance.getConnection()))
                 {
-                    SqlDataReader reader = command.ExecuteReader();
-                    DataTable dataTable = new DataTable();
-                    dataTable.Load(reader);
-                    foreach (DataRow row in dataTable.Rows)
+                    command.Parameters.AddWithValue("@Data1", livreCode);
+                    try
                     {
-                        if (rowIndex == int.Parse(row[Tables.CodeLivre].ToString()))
-                        {
-                            code.Text = row[Tables.CodeLivre].ToString();
-                            title.Text = row[Tables.TitreLivre].ToString();
-                            auteur.Text = row[Tables.AuteurLivre].ToString();
-                            nb.Text = row[Tables.NbExamplaires].ToString();
-                            theme.Text = row[Tables.CodeTheme].ToString();
-                        }
+                        SqlDataReader reader = command.ExecuteReader();
+                        DataTable dataTable = new DataTable();
+                        dataTable.Load(reader);
+                        dataGridView.DataSource = dataTable;
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                    finally
+                    {
+                        db.Instance.disconnect();
                     }
                 }
-                catch (Exception ex)
+            }
+            else
+            {
+                using (SqlCommand command = new SqlCommand(Tables.sql2, db.Instance.getConnection()))
                 {
-                    MessageBox.Show(ex.Message);
-                }
-                finally
-                {
-                    db.Instance.disconnect();
+                    try
+                    {
+                        SqlDataReader reader = command.ExecuteReader();
+                        DataTable dataTable = new DataTable();
+                        dataTable.Load(reader);
+                        dataGridView.DataSource = dataTable;
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                    finally
+                    {
+                        db.Instance.disconnect();
+                    }
                 }
             }
         }
@@ -307,6 +352,8 @@ namespace library
             }
             
         }
+         
+
 
     }
 }

@@ -20,7 +20,7 @@ namespace library
 
         private void ChercherLivre_Load(object sender, EventArgs e)
         {
-            helper.ListOfBooks(dataGridView1);
+            helper.showLivre(dataGridView1, Tables.sql);
         }
 
         private void tbSearch_KeyPress(object sender, KeyPressEventArgs e)

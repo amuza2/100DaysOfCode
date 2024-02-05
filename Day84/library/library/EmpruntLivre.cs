@@ -22,7 +22,7 @@ namespace library
 
         private void EmpruntLivre_Load(object sender, EventArgs e)
         {
-            helper.showLivre(tbCode, tbTitre, TbAuteur, tbNb, tbTheme, row);
+            helper.showLivre(tbCode, tbTitre, TbAuteur, tbNb, tbTheme,Tables.sql1, row);
             helper.showStudent(dataGridView1);
         }
 

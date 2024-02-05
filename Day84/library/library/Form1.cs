@@ -35,5 +35,11 @@ namespace library
             AjouterEtudient ajouterEtudient = new AjouterEtudient();
             ajouterEtudient.Show();
         }
+
+        private void btnRetourEmprunt_Click(object sender, EventArgs e)
+        {
+            RetourEmprunt retourEmprunt = new RetourEmprunt();
+            retourEmprunt.Show();
+        }
     }
 }

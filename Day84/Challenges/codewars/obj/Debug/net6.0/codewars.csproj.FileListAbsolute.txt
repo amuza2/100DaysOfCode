@@ -1,0 +1,14 @@
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\Challenges\codewars\bin\Debug\net6.0\codewars.exe
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\Challenges\codewars\bin\Debug\net6.0\codewars.deps.json
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\Challenges\codewars\bin\Debug\net6.0\codewars.runtimeconfig.json
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\Challenges\codewars\bin\Debug\net6.0\codewars.dll
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\Challenges\codewars\bin\Debug\net6.0\codewars.pdb
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\Challenges\codewars\obj\Debug\net6.0\codewars.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\Challenges\codewars\obj\Debug\net6.0\codewars.AssemblyInfoInputs.cache
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\Challenges\codewars\obj\Debug\net6.0\codewars.AssemblyInfo.cs
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\Challenges\codewars\obj\Debug\net6.0\codewars.csproj.CoreCompileInputs.cache
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\Challenges\codewars\obj\Debug\net6.0\codewars.dll
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\Challenges\codewars\obj\Debug\net6.0\refint\codewars.dll
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\Challenges\codewars\obj\Debug\net6.0\codewars.pdb
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\Challenges\codewars\obj\Debug\net6.0\codewars.genruntimeconfig.cache
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\Challenges\codewars\obj\Debug\net6.0\ref\codewars.dll

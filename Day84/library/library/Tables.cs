@@ -27,5 +27,18 @@ namespace library
         public static string Theme = "Theme";
         public static string CodeTheme = "CodeTheme";
         public static string ThemeName = "ThemeName";
+
+        // sql Queries
+        // show all books
+        public static string sql = $"SELECT * FROM {Livre}";
+
+        // show columns for Emprunted books with param
+        public static string sql1 = $"SELECT E.{CodeLivre}, L.{TitreLivre}, E.{CodeAdherent},A.{NomAdherent}, E.{Date_Emprunt}, E.{Date_Retour} FROM {Emprunt} AS E, {Adherent} AS A, {Livre} AS L " +
+                $"WHERE E.{CodeLivre} = @Data1 AND E.{CodeAdherent} = A.{CodeAdherent}";
+        
+        // show columns for Emprunted books withour param
+        public static string sql2 = $"SELECT E.{CodeLivre}, L.{TitreLivre}, E.{CodeAdherent},A.{NomAdherent}, E.{Date_Emprunt}, E.{Date_Retour} FROM {Emprunt} AS E, {Adherent} AS A, {Livre} AS L " +
+            $"WHERE E.{CodeLivre} = L.{CodeLivre} AND A.{CodeAdherent} = E.{CodeAdherent}";
+
     }
 }

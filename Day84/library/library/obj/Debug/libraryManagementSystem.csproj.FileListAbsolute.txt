@@ -15,3 +15,4 @@ C:\Users\moham\Documents\github\100DaysOfCode\Day84\library\library\obj\Debug\li
 C:\Users\moham\Documents\github\100DaysOfCode\Day84\library\library\obj\Debug\libraryManagementSystem.csproj.CoreCompileInputs.cache
 C:\Users\moham\Documents\github\100DaysOfCode\Day84\library\library\obj\Debug\library.exe
 C:\Users\moham\Documents\github\100DaysOfCode\Day84\library\library\obj\Debug\library.pdb
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\library\library\obj\Debug\library.RetourEmprunt.resources

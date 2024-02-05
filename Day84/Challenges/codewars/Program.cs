@@ -1,0 +1,11 @@
+﻿Console.WriteLine(codewars.Kata.HasSubpattern("a") == false);
+Console.WriteLine(codewars.Kata.HasSubpattern("aaaa") == true);
+Console.WriteLine(codewars.Kata.HasSubpattern("abcd") == false);
+Console.WriteLine(codewars.Kata.HasSubpattern("abababab") == true);
+Console.WriteLine(codewars.Kata.HasSubpattern("ababababa") == false);
+Console.WriteLine(codewars.Kata.HasSubpattern("123a123a123a") == true);
+Console.WriteLine(codewars.Kata.HasSubpattern("123A123a123a") == false);
+Console.WriteLine(codewars.Kata.HasSubpattern("abbaabbaabba") == true);
+Console.WriteLine(codewars.Kata.HasSubpattern("abbabbabba") == false);
+Console.WriteLine(codewars.Kata.HasSubpattern("abcdabcabcd") == false);
+Console.WriteLine(codewars.Kata.HasSubpattern("kv") == false);
