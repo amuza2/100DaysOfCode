@@ -353,7 +353,31 @@ namespace library
             
         }
          
+        public void GetUserRegistrationInput(TextBox username, TextBox password, TextBox RPassword)
+        {
+            CheckPasswordRequirements(password, RPassword);
+        }
+        private bool CheckPasswordRequirements(TextBox password, TextBox RPassword)
+        {
+            string passwordStr = password.Text.Trim();
+            if (passwordStr.Length < 8) return false;
+            bool isUpper = false;
+            foreach(char character in passwordStr)
+            {
+                if (Char.IsUpper(character))
+                {
+                    isUpper = true;
+                    break;
+                }
+            }
+            if (!isUpper) return false;
+            bool containsSymbole = passwordStr.Any(Char.IsSymbol);
+            if(!containsSymbole) return false;
 
+            if (!passwordStr.Equals(RPassword)) return false;
+
+            return true;
+        }
 
     }
 }

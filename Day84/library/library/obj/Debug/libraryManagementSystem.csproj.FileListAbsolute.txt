@@ -16,3 +16,16 @@ C:\Users\moham\Documents\github\100DaysOfCode\Day84\library\library\obj\Debug\li
 C:\Users\moham\Documents\github\100DaysOfCode\Day84\library\library\obj\Debug\library.exe
 C:\Users\moham\Documents\github\100DaysOfCode\Day84\library\library\obj\Debug\library.pdb
 C:\Users\moham\Documents\github\100DaysOfCode\Day84\library\library\obj\Debug\library.RetourEmprunt.resources
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\library\library\obj\Debug\library.Login.resources
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\library\library\obj\Debug\library.Register.resources
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\library\library\bin\Debug\BCrypt.Net-Next.dll
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\library\library\bin\Debug\System.Buffers.dll
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\library\library\bin\Debug\System.Memory.dll
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\library\library\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\library\library\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\library\library\bin\Debug\BCrypt.Net-Next.xml
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\library\library\bin\Debug\System.Buffers.xml
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\library\library\bin\Debug\System.Memory.xml
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\library\library\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\library\library\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\library\library\obj\Debug\libraryM.697EA730.Up2Date

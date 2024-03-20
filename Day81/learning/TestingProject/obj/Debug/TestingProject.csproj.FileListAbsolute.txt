@@ -1,0 +1,7 @@
+C:\Users\moham\Documents\github\100DaysOfCode\Day81\learning\TestingProject\bin\Debug\TestingProject.exe.config
+C:\Users\moham\Documents\github\100DaysOfCode\Day81\learning\TestingProject\bin\Debug\TestingProject.exe
+C:\Users\moham\Documents\github\100DaysOfCode\Day81\learning\TestingProject\bin\Debug\TestingProject.pdb
+C:\Users\moham\Documents\github\100DaysOfCode\Day81\learning\TestingProject\obj\Debug\TestingProject.csproj.AssemblyReference.cache
+C:\Users\moham\Documents\github\100DaysOfCode\Day81\learning\TestingProject\obj\Debug\TestingProject.csproj.CoreCompileInputs.cache
+C:\Users\moham\Documents\github\100DaysOfCode\Day81\learning\TestingProject\obj\Debug\TestingProject.exe
+C:\Users\moham\Documents\github\100DaysOfCode\Day81\learning\TestingProject\obj\Debug\TestingProject.pdb

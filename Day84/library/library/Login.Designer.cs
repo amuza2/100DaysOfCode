@@ -83,7 +83,7 @@
             this.txbPassword.Location = new System.Drawing.Point(97, 134);
             this.txbPassword.Name = "txbPassword";
             this.txbPassword.Size = new System.Drawing.Size(202, 26);
-            this.txbPassword.TabIndex = 1;
+            this.txbPassword.TabIndex = 2;
             // 
             // linklblForgotPassword
             // 
@@ -128,6 +128,7 @@
             this.btnRegister.TabIndex = 4;
             this.btnRegister.Text = "Register";
             this.btnRegister.UseVisualStyleBackColor = false;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // Login
             // 

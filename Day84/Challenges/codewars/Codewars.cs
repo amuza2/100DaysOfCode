@@ -13,22 +13,24 @@
                 else return false;
             }
 
-            bool areAllTrue = true;
-            int incrementer = stringLength % 2 == 0 ? 2 : 3;
-            int incValue = incrementer;
-            for (int i = 0; i < stringLength / 2; i++)
+            bool areAllTrue = false;
+            int incrementer = stringLength % 2 == 0 ? 2 : 1;
+            int incVal = 2;
+            for (int i = 0; i < stringLength; i++)
             {
-                if(i <= stringLength / 2 && incrementer <= stringLength / 2)
+                if(stringLength - incrementer >= incrementer && stringLength - incrementer % incrementer == 0)
                 {
                     areAllTrue = true;
                     string firstPart = str.Substring(0, incrementer);
-                    for (int j = incrementer; j < stringLength; j += incValue)
+                    for (int j = incrementer; j < stringLength; j += incrementer)
                     {
-                        string otherPart = str.Substring(incrementer, incrementer);
+                        string otherPart = str.Substring(j, incrementer);
                         if (otherPart != firstPart)
                         {
-                            incrementer = incrementer % 2 == 0 ? incrementer += 2 : incrementer += 3;
+                            if(incrementer + incVal > stringLength / 2 ) incrementer = stringLength / 2;
+                            else incrementer += incVal;
                             areAllTrue = false;
+                            Console.WriteLine(incrementer);
                             break;
                         }
                     }
@@ -38,6 +40,10 @@
             }
             
             return areAllTrue;
+        }
+        public static int TestingMethod(string str)
+        {
+            return str.Length % 2;
         }
     }
 }

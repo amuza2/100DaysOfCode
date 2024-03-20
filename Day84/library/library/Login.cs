@@ -16,5 +16,12 @@ namespace library
         {
             InitializeComponent();
         }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Register RMregister = new Register();
+            RMregister.Show();
+        }
     }
 }

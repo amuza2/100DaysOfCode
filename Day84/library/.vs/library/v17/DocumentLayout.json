@@ -1,0 +1,120 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\library\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{469C0DE2-7007-4EC0-AD43-684AB0F57B3D}|library\\libraryManagementSystem.csproj|c:\\users\\moham\\documents\\github\\100daysofcode\\day84\\library\\library\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{469C0DE2-7007-4EC0-AD43-684AB0F57B3D}|library\\libraryManagementSystem.csproj|solutionrelative:library\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{469C0DE2-7007-4EC0-AD43-684AB0F57B3D}|library\\libraryManagementSystem.csproj|C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\library\\library\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{469C0DE2-7007-4EC0-AD43-684AB0F57B3D}|library\\libraryManagementSystem.csproj|solutionrelative:library\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{469C0DE2-7007-4EC0-AD43-684AB0F57B3D}|library\\libraryManagementSystem.csproj|C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\library\\library\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{469C0DE2-7007-4EC0-AD43-684AB0F57B3D}|library\\libraryManagementSystem.csproj|solutionrelative:library\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{469C0DE2-7007-4EC0-AD43-684AB0F57B3D}|library\\libraryManagementSystem.csproj|C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\library\\library\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{469C0DE2-7007-4EC0-AD43-684AB0F57B3D}|library\\libraryManagementSystem.csproj|solutionrelative:library\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{469C0DE2-7007-4EC0-AD43-684AB0F57B3D}|library\\libraryManagementSystem.csproj|c:\\users\\moham\\documents\\github\\100daysofcode\\day84\\library\\library\\helperclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{469C0DE2-7007-4EC0-AD43-684AB0F57B3D}|library\\libraryManagementSystem.csproj|solutionrelative:library\\helperclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\library\\library\\Login.cs",
+              "RelativeDocumentMoniker": "library\\Login.cs",
+              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\library\\library\\Login.cs",
+              "RelativeToolTip": "library\\Login.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABUAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-20T08:57:50.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Register.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\library\\library\\Register.cs",
+              "RelativeDocumentMoniker": "library\\Register.cs",
+              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\library\\library\\Register.cs [Design]",
+              "RelativeToolTip": "library\\Register.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-05T21:39:08.231Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Login.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\library\\library\\Login.cs",
+              "RelativeDocumentMoniker": "library\\Login.cs",
+              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\library\\library\\Login.cs [Design]",
+              "RelativeToolTip": "library\\Login.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-05T20:20:20.471Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HelperClass.cs",
+              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\library\\library\\HelperClass.cs",
+              "RelativeDocumentMoniker": "library\\HelperClass.cs",
+              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\library\\library\\HelperClass.cs",
+              "RelativeToolTip": "library\\HelperClass.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHgBAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-02T17:12:36.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\library\\library\\Form1.cs",
+              "RelativeDocumentMoniker": "library\\Form1.cs",
+              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\library\\library\\Form1.cs [Design]",
+              "RelativeToolTip": "library\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-02T17:11:22.088Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
