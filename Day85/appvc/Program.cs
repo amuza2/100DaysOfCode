@@ -52,16 +52,16 @@ namespace exercice1
         }
         private static void Main(string[] args)
         {
-            var deliveryValidator = new DateValidationHandler(IsWeekendDate);
             var orderValidator = new DateValidationHandler(IsPastDate);
+            var deliveryValidator = new DateValidationHandler(IsWeekendDate);
             var order = new Order(orderValidator, deliveryValidator)
             {
                 OrderDate = DateTime.Today.AddDays(-10),
-                DeliveryDate = new DateTime(2020,12, 31)
+                DeliveryDate = new DateTime(2024,12, 28)
             };
 
             System.Console.WriteLine($"Ordered: {order.OrderDate:dd-MMM-yy}");
-            System.Console.WriteLine($"Desivered: {order.DeliveryDate:dd-MMM-yy}");
+            System.Console.WriteLine($"Desivered: {order.DeliveryDate:ddd-dd-MMM-yy}");
             System.Console.WriteLine($"IsValid: {order.isValid()}");
         }
     }
