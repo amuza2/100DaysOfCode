@@ -1,0 +1,15 @@
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\appvc\bin\Debug\net8.0\appvc.exe
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\appvc\bin\Debug\net8.0\appvc.deps.json
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\appvc\bin\Debug\net8.0\appvc.runtimeconfig.json
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\appvc\bin\Debug\net8.0\appvc.dll
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\appvc\bin\Debug\net8.0\appvc.pdb
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\appvc\obj\Debug\net8.0\appvc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\appvc\obj\Debug\net8.0\appvc.AssemblyInfoInputs.cache
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\appvc\obj\Debug\net8.0\appvc.AssemblyInfo.cs
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\appvc\obj\Debug\net8.0\appvc.csproj.CoreCompileInputs.cache
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\appvc\obj\Debug\net8.0\appvc.sourcelink.json
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\appvc\obj\Debug\net8.0\appvc.dll
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\appvc\obj\Debug\net8.0\refint\appvc.dll
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\appvc\obj\Debug\net8.0\appvc.pdb
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\appvc\obj\Debug\net8.0\appvc.genruntimeconfig.cache
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\appvc\obj\Debug\net8.0\ref\appvc.dll
