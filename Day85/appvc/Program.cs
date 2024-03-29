@@ -1,25 +1,11 @@
 ﻿using System;
+using System.Globalization;
 using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
+using System.Security.Cryptography.X509Certificates;
 
 namespace exercice1
 {
-    public delegate bool DateValidationHandler(DateTime dateTime);
-    public class Order
-    {
-        private readonly DateValidationHandler _orderDateValidator;
-        private readonly DateValidationHandler _deleveryDateValidator;
-        public DateTime OrderDate { get; set; }
-        public DateTime DeliveryDate { get; set; }
-        public Order(DateValidationHandler orderDateValidator,
-            DateValidationHandler deliveryDateValidator)
-        {
-            _orderDateValidator = orderDateValidator;
-            _deleveryDateValidator = deliveryDateValidator;
-        }
-        public bool isValid() =>
-            _orderDateValidator(OrderDate) &&
-            _deleveryDateValidator(DeliveryDate);
-    }
     public static class Program
     {
         public static void method1()
@@ -39,31 +25,54 @@ namespace exercice1
                 Console.WriteLine(string.Format(template, item.Item1, item.Item2, percent));
             }
         }
-        private static bool IsWeekendDate(DateTime date)
-        {
-            System.Console.WriteLine("Called IsWeekendDate");
-            return date.DayOfWeek == DayOfWeek.Saturday ||
-            date.DayOfWeek == DayOfWeek.Sunday;
-        }
-        private static bool IsPastDate(DateTime date)
-        {
-            System.Console.WriteLine("Called IsPastDate");
-            return date < DateTime.Today;
-        }
+        
         private static void Main(string[] args)
         {
-            var orderValidator = new DateValidationHandler(IsPastDate);
-            var deliveryValidator = new DateValidationHandler(IsWeekendDate);
-            var order = new Order(orderValidator, deliveryValidator)
-            {
-                OrderDate = DateTime.Today.AddDays(-10),
-                DeliveryDate = new DateTime(2024,12, 28)
-            };
+         
 
-            System.Console.WriteLine($"Ordered: {order.OrderDate:dd-MMM-yy}");
-            System.Console.WriteLine($"Desivered: {order.DeliveryDate:ddd-dd-MMM-yy}");
-            System.Console.WriteLine($"IsValid: {order.isValid()}");
+         
+
+            // var random = new Random();
+            // string input;
+            // do
+            // {
+            //     Console.Write("Yesterday's distance: ");
+            //     input = Console.ReadLine();
+            //     double.TryParse(input, NumberStyles.Any, CultureInfo.CurrentCulture, out var distanceYesterday);
+            //     var carYesterday = new Car
+            //     {
+            //         Distance = distanceYesterday,
+            //         JourneyTime = random.NextDouble() * 10D
+            //     };
+            //     Console.Write("    Today's distance: ");
+            //     input = Console.ReadLine();
+            //     double.TryParse(input, NumberStyles.Any, CultureInfo.CurrentCulture, out var distanceToday);
+
+            //     var carToday = new Car
+            //     {
+            //         Distance = distanceToday,
+            //         JourneyTime = random.NextDouble() * 10D
+            //     };
+            //     var comparer = new JourneyComparer();
+            //     comparer.Compare(carYesterday, carToday);
+            //     Console.WriteLine();
+            //     Console.WriteLine("Journey Details\t\tDistance\tTime\tAvg Speed");
+            //     Console.WriteLine("---------------------------------------------------------");
+            //     Console.WriteLine();
+            //     System.Console.Write($"Yesterday\t\t{comparer.Distance.Yesterday:N0} \t\t");
+            //     System.Console.WriteLine($"{comparer.JourneyTime.Yesterday:N0}\t{comparer.AverageSpeed.Yesterday:N0}");
+            //     System.Console.Write($"Today\t\t\t{comparer.Distance.Today:N0}\t\t");
+            //     System.Console.WriteLine($"{comparer.JourneyTime.Today:N0}\t{comparer.AverageSpeed.Today:N0}");
+            //     System.Console.WriteLine("========================================================");
+            //     System.Console.Write($"Difference\t\t{comparer.Distance.Difference:N0}\t\t");
+            //     System.Console.WriteLine($"{comparer.JourneyTime.Difference:N0} \t{comparer.AverageSpeed.Difference:N0}");
+            //     System.Console.WriteLine("========================================================");
+            // }
+            // while (!string.IsNullOrEmpty(input));
+
         }
+
+        
     }
 
 }

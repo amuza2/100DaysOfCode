@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("appvc")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c6815e9eae44a3cec0ff0bde6b972159bdee3137")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e593857445b1ea7ce5e508d33f08f2a81c51c762")]
 [assembly: System.Reflection.AssemblyProductAttribute("appvc")]
 [assembly: System.Reflection.AssemblyTitleAttribute("appvc")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
