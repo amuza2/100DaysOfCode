@@ -10,7 +10,7 @@ namespace MauiApp1
             navBar.BarBackground = Colors.Black;
             navBar.BarTextColor = Colors.White;
 
-            MainPage = new TabbedPageDemo();
+            MainPage = new AbsoluteLayoutDemo();
         }
     }
 }

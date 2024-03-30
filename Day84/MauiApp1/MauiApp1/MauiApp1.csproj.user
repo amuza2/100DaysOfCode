@@ -14,10 +14,28 @@
     <MauiXaml Update="abouza.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="AbsoluteLayoutDemo.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="FlexLayoutDemo.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="FloutPageDemo.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="GridDemo.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="HorizantalStackLayoutDemo.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="StackLayout.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="TabbedPageDemo.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="VerticalStackLayoutDemo.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
   </ItemGroup>
