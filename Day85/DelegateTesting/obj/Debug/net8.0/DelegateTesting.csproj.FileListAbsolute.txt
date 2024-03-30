@@ -1,0 +1,15 @@
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\DelegateTesting\bin\Debug\net8.0\DelegateTesting.exe
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\DelegateTesting\bin\Debug\net8.0\DelegateTesting.deps.json
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\DelegateTesting\bin\Debug\net8.0\DelegateTesting.runtimeconfig.json
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\DelegateTesting\bin\Debug\net8.0\DelegateTesting.dll
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\DelegateTesting\bin\Debug\net8.0\DelegateTesting.pdb
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\DelegateTesting\obj\Debug\net8.0\DelegateTesting.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\DelegateTesting\obj\Debug\net8.0\DelegateTesting.AssemblyInfoInputs.cache
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\DelegateTesting\obj\Debug\net8.0\DelegateTesting.AssemblyInfo.cs
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\DelegateTesting\obj\Debug\net8.0\DelegateTesting.csproj.CoreCompileInputs.cache
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\DelegateTesting\obj\Debug\net8.0\DelegateTesting.sourcelink.json
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\DelegateTesting\obj\Debug\net8.0\DelegateTesting.dll
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\DelegateTesting\obj\Debug\net8.0\refint\DelegateTesting.dll
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\DelegateTesting\obj\Debug\net8.0\DelegateTesting.pdb
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\DelegateTesting\obj\Debug\net8.0\DelegateTesting.genruntimeconfig.cache
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\DelegateTesting\obj\Debug\net8.0\ref\DelegateTesting.dll
