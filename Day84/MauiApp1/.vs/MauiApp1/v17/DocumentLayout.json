@@ -3,24 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\MauiApp1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B29EFB7D-2720-4823-B318-E1401F85230F}|MauiApp1\\MauiApp1.csproj|c:\\users\\moham\\documents\\github\\100daysofcode\\day84\\mauiapp1\\mauiapp1\\absolutelayoutdemo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B29EFB7D-2720-4823-B318-E1401F85230F}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\absolutelayoutdemo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{94155435-FF23-439A-B878-C4B571508FF0}|MauiAppControls\\MauiAppControls.csproj|c:\\users\\moham\\documents\\github\\100daysofcode\\day84\\mauiapp1\\mauiappcontrols\\collectioncontroldemo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{94155435-FF23-439A-B878-C4B571508FF0}|MauiAppControls\\MauiAppControls.csproj|solutionrelative:mauiappcontrols\\collectioncontroldemo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B29EFB7D-2720-4823-B318-E1401F85230F}|MauiApp1\\MauiApp1.csproj|c:\\users\\moham\\documents\\github\\100daysofcode\\day84\\mauiapp1\\mauiapp1\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B29EFB7D-2720-4823-B318-E1401F85230F}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B29EFB7D-2720-4823-B318-E1401F85230F}|MauiApp1\\MauiApp1.csproj|c:\\users\\moham\\documents\\github\\100daysofcode\\day84\\mauiapp1\\mauiapp1\\flexlayoutdemo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B29EFB7D-2720-4823-B318-E1401F85230F}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\flexlayoutdemo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B29EFB7D-2720-4823-B318-E1401F85230F}|MauiApp1\\MauiApp1.csproj|c:\\users\\moham\\documents\\github\\100daysofcode\\day84\\mauiapp1\\mauiapp1\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B29EFB7D-2720-4823-B318-E1401F85230F}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B29EFB7D-2720-4823-B318-E1401F85230F}|MauiApp1\\MauiApp1.csproj|c:\\users\\moham\\documents\\github\\100daysofcode\\day84\\mauiapp1\\mauiapp1\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B29EFB7D-2720-4823-B318-E1401F85230F}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{94155435-FF23-439A-B878-C4B571508FF0}|MauiAppControls\\MauiAppControls.csproj|c:\\users\\moham\\documents\\github\\100daysofcode\\day84\\mauiapp1\\mauiappcontrols\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94155435-FF23-439A-B878-C4B571508FF0}|MauiAppControls\\MauiAppControls.csproj|solutionrelative:mauiappcontrols\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,66 +31,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AbsoluteLayoutDemo.xaml",
-              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\MauiApp1\\MauiApp1\\AbsoluteLayoutDemo.xaml",
-              "RelativeDocumentMoniker": "MauiApp1\\AbsoluteLayoutDemo.xaml",
-              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\MauiApp1\\MauiApp1\\AbsoluteLayoutDemo.xaml",
-              "RelativeToolTip": "MauiApp1\\AbsoluteLayoutDemo.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "CollectionControlDemo.xaml",
+              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\MauiApp1\\MauiAppControls\\CollectionControlDemo.xaml",
+              "RelativeDocumentMoniker": "MauiAppControls\\CollectionControlDemo.xaml",
+              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\MauiApp1\\MauiAppControls\\CollectionControlDemo.xaml",
+              "RelativeToolTip": "MauiAppControls\\CollectionControlDemo.xaml",
+              "ViewState": "AQIAABQAAAAAAAAAAAAAABgAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-30T12:51:39.383Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FlexLayoutDemo.xaml",
-              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\MauiApp1\\MauiApp1\\FlexLayoutDemo.xaml",
-              "RelativeDocumentMoniker": "MauiApp1\\FlexLayoutDemo.xaml",
-              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\MauiApp1\\MauiApp1\\FlexLayoutDemo.xaml",
-              "RelativeToolTip": "MauiApp1\\FlexLayoutDemo.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-30T12:25:24.684Z",
+              "WhenOpened": "2024-03-31T11:20:45.789Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\MauiApp1\\MauiApp1\\App.xaml.cs",
-              "RelativeDocumentMoniker": "MauiApp1\\App.xaml.cs",
-              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\MauiApp1\\MauiApp1\\App.xaml.cs",
-              "RelativeToolTip": "MauiApp1\\App.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAtAAAA",
+              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\MauiApp1\\MauiAppControls\\App.xaml.cs",
+              "RelativeDocumentMoniker": "MauiAppControls\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\MauiApp1\\MauiAppControls\\App.xaml.cs",
+              "RelativeToolTip": "MauiAppControls\\App.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-29T03:00:56.232Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MainPage.xaml",
-              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\MauiApp1\\MauiApp1\\MainPage.xaml",
-              "RelativeDocumentMoniker": "MauiApp1\\MainPage.xaml",
-              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\MauiApp1\\MauiApp1\\MainPage.xaml",
-              "RelativeToolTip": "MauiApp1\\MainPage.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-26T03:46:28.27Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MainPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\MauiApp1\\MauiApp1\\MainPage.xaml.cs",
-              "RelativeDocumentMoniker": "MauiApp1\\MainPage.xaml.cs",
-              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\MauiApp1\\MauiApp1\\MainPage.xaml.cs",
-              "RelativeToolTip": "MauiApp1\\MainPage.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-26T03:45:22.176Z",
+              "WhenOpened": "2024-03-30T14:42:47.069Z",
               "EditorCaption": ""
             }
           ]
