@@ -4,39 +4,19 @@
              x:Class="MauiAppControls.CollectionControlDemo"
              Title="CollectionControlDemo">
 
-    <StackLayout>
-        <CarouselView IndicatorView="indicatorView">
-            <CarouselView.ItemsSource>
-                <x:Array Type="{x:Type x:String}">
-                    <x:String>mono</x:String>
-                    <x:String>monodroid</x:String>
-                    <x:String>monoTauch</x:String>
-                    <x:String>monorail</x:String>
-                    <x:String>monoDevelop</x:String>
-                    <x:String>monoModel</x:String>
-                </x:Array>
-            </CarouselView.ItemsSource>
-            <CarouselView.ItemTemplate>
-                <DataTemplate>
-                    <StackLayout>
-                        <Frame Margin="30"
-                               BorderColor="DarkGray"
-                               CornerRadius="10"
-                               HasShadow="True"
-                               WidthRequest="150"
-                               HeightRequest="100"
-                               HorizontalOptions="Center"
-                               VerticalOptions="CenterAndExpand">
-                            <Label Text="{Binding .}" HorizontalOptions="Center"/>
-                        </Frame>
-                    </StackLayout>
-                </DataTemplate>
-            </CarouselView.ItemTemplate>
-        </CarouselView>
-        <IndicatorView x:Name="indicatorView"
-                       HorizontalOptions="Center"
-                       IndicatorColor="Red"
-                       SelectedIndicatorColor="Black"/>
-    </StackLayout>
+    <CarouselView ItemsSource="{Binding Recipes}">
+        <CarouselView.ItemTemplate>
+            <DataTemplate x:DataType="models:Recipe">
+                <StackLayout>
+                    <Label Text="{Binding Name}" FontSize="Large" HorizontalOptions="Center" />
+                    <Image Source="{Binding ImageUrl}" Aspect="AspectFill" />
+                    <Label Text="{Binding Description}" />
+                </StackLayout>
+            </DataTemplate>
+        </CarouselView.ItemTemplate>
+    </CarouselView>
+
+
+
 
 </ContentPage>
