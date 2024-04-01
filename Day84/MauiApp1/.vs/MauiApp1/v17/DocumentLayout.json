@@ -1,16 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\MauiApp1\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{94155435-FF23-439A-B878-C4B571508FF0}|MauiAppControls\\MauiAppControls.csproj|c:\\users\\moham\\documents\\github\\100daysofcode\\day84\\mauiapp1\\mauiappcontrols\\collectioncontroldemo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{94155435-FF23-439A-B878-C4B571508FF0}|MauiAppControls\\MauiAppControls.csproj|solutionrelative:mauiappcontrols\\collectioncontroldemo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{94155435-FF23-439A-B878-C4B571508FF0}|MauiAppControls\\MauiAppControls.csproj|c:\\users\\moham\\documents\\github\\100daysofcode\\day84\\mauiapp1\\mauiappcontrols\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94155435-FF23-439A-B878-C4B571508FF0}|MauiAppControls\\MauiAppControls.csproj|solutionrelative:mauiappcontrols\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -18,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -27,31 +18,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CollectionControlDemo.xaml",
-              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\MauiApp1\\MauiAppControls\\CollectionControlDemo.xaml",
-              "RelativeDocumentMoniker": "MauiAppControls\\CollectionControlDemo.xaml",
-              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\MauiApp1\\MauiAppControls\\CollectionControlDemo.xaml",
-              "RelativeToolTip": "MauiAppControls\\CollectionControlDemo.xaml",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAcAAABMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-31T11:20:45.789Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\MauiApp1\\MauiAppControls\\App.xaml.cs",
-              "RelativeDocumentMoniker": "MauiAppControls\\App.xaml.cs",
-              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\MauiApp1\\MauiAppControls\\App.xaml.cs",
-              "RelativeToolTip": "MauiAppControls\\App.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-30T14:42:47.069Z"
             }
           ]
         },
