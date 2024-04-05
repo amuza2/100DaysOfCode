@@ -9,59 +9,106 @@
         <Color x:Key="Tertiary">#705c2e</Color>
     </ContentPage.Resources>
 
-    <Grid x:Name="Container"
-          BackgroundColor="Black">
-        <Frame Margin="10,0, 10,0"
-               VerticalOptions="Center"
-               BackgroundColor="LightBlue">
-            <VerticalStackLayout Spacing="15">
-                <Label Text="Color Maker"
-                       FontSize="Large"
-                       FontAttributes="Bold"
-                       HorizontalTextAlignment="Center"
-                       TextColor="LightGray"/>
-                <Label Text="Red Value:"/>
+    <Grid x:Name="Container">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Frame Grid.Row="0"
+               BackgroundColor="CornflowerBlue"
+               HeightRequest="70"
+               WidthRequest="320"
+               HorizontalOptions="Center">
+            <Label x:Name="lblTitle"
+                   Text="Color Picker"
+                   TextColor="White"
+                   FontAttributes="Bold"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   FontSize="20"/>
+        </Frame>
+        <Frame Grid.Row="1"
+               BackgroundColor="CornflowerBlue"
+               HeightRequest="100"
+               WidthRequest="320"
+               HorizontalOptions="Center">
+
+            <VerticalStackLayout>
+                <Label Text="Red color"
+                       Margin="0,0,0,15"/>
                 <Slider x:Name="sldRed"
                         ThumbColor="{StaticResource Primary}"
                         MaximumTrackColor="{StaticResource Tertiary}"
                         MinimumTrackColor="{StaticResource Secondary}"
                         ValueChanged="Slider_ValueChanged"/>
-                <Label Text="Green Value:"/>
+            </VerticalStackLayout>
+        </Frame>
+        <Frame Grid.Row="2"
+               BackgroundColor="CornflowerBlue"
+               HeightRequest="100"
+               WidthRequest="320"
+               HorizontalOptions="Center">
+            <VerticalStackLayout>
+                <Label Text="Blue color"
+                       Margin="0,0,0,15"/>
+                <Slider x:Name="sldBlue"
+                        ThumbColor="{StaticResource Primary}"
+                        MaximumTrackColor="{StaticResource Tertiary}"
+                        MinimumTrackColor="{StaticResource Secondary}"
+                        ValueChanged="Slider_ValueChanged"
+                        />
+            </VerticalStackLayout>
+
+        </Frame>
+        <Frame Grid.Row="3"
+               BackgroundColor="CornflowerBlue"
+               HeightRequest="100"
+               WidthRequest="320"
+               HorizontalOptions="Center">
+            <VerticalStackLayout>
+                <Label Text="Green color"
+                       Margin="0,0,0,15"/>
                 <Slider x:Name="sldGreen"
                         ThumbColor="{StaticResource Primary}"
                         MaximumTrackColor="{StaticResource Tertiary}"
                         MinimumTrackColor="{StaticResource Secondary}"
                         ValueChanged="Slider_ValueChanged"/>
-                <Label Text="Blue Value"/>
-                <Slider x:Name="sldBlue"
-                        ThumbColor="{StaticResource Primary}"
-                        MaximumTrackColor="{StaticResource Tertiary}"
-                        MinimumTrackColor="{StaticResource Secondary}"
-                        ValueChanged="Slider_ValueChanged"/>
-                <Frame CornerRadius="25"
-                       HorizontalOptions="Center">
-                    <HorizontalStackLayout>
-                        <Label x:Name="lblHex"
-                               Text="Hex Value: #000000"
-                               HorizontalTextAlignment="Center"
-                               VerticalTextAlignment="Center"/>
-                        <ImageButton Margin="10,0,0,0"
-                                     HeightRequest="20"
-                                     Source="copy.svg"
-                                     VerticalOptions="Center"
-                                     WidthRequest="20"
-                                     Clicked="ImageButton_Clicked"/>
-                    </HorizontalStackLayout>
-                </Frame>
-                <Button x:Name="btnRandom"
-                        BackgroundColor="{StaticResource Primary}"
-                        Text="Generate Random Color"
-                        Margin="20,0,20,0"
-                        CornerRadius="30"
-                        Clicked="btnRandom_Clicked"
-                        />
             </VerticalStackLayout>
         </Frame>
+        <Frame Grid.Row="4"
+               BackgroundColor="CornflowerBlue"
+               HeightRequest="70"
+               WidthRequest="320">
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <Label x:Name="lblColor"
+                       Text="Color Value: #000000"
+                       FontSize="18"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"/>
+                <Image Source="copy.svg"
+                       Margin="20,0,0,0"/>
+            </HorizontalStackLayout>
+        </Frame>
+        <Frame Grid.Row="5"
+               BackgroundColor="CornflowerBlue"
+               HeightRequest="80"
+               WidthRequest="320"
+               Margin="0,-30,0,0">
+            <Button Text="Generate Color"
+                    BackgroundColor="LightBlue"
+                    Clicked="Button_Clicked"/>
+
+        </Frame>
+
+
     </Grid>
+
+
 
 </ContentPage>
