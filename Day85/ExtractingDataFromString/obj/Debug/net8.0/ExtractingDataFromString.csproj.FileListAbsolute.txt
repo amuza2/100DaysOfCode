@@ -1,0 +1,15 @@
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\ExtractingDataFromString\bin\Debug\net8.0\ExtractingDataFromString.exe
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\ExtractingDataFromString\bin\Debug\net8.0\ExtractingDataFromString.deps.json
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\ExtractingDataFromString\bin\Debug\net8.0\ExtractingDataFromString.runtimeconfig.json
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\ExtractingDataFromString\bin\Debug\net8.0\ExtractingDataFromString.dll
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\ExtractingDataFromString\bin\Debug\net8.0\ExtractingDataFromString.pdb
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\ExtractingDataFromString\obj\Debug\net8.0\ExtractingDataFromString.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\ExtractingDataFromString\obj\Debug\net8.0\ExtractingDataFromString.AssemblyInfoInputs.cache
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\ExtractingDataFromString\obj\Debug\net8.0\ExtractingDataFromString.AssemblyInfo.cs
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\ExtractingDataFromString\obj\Debug\net8.0\ExtractingDataFromString.csproj.CoreCompileInputs.cache
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\ExtractingDataFromString\obj\Debug\net8.0\ExtractingDataFromString.sourcelink.json
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\ExtractingDataFromString\obj\Debug\net8.0\ExtractingDataFromString.dll
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\ExtractingDataFromString\obj\Debug\net8.0\refint\ExtractingDataFromString.dll
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\ExtractingDataFromString\obj\Debug\net8.0\ExtractingDataFromString.pdb
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\ExtractingDataFromString\obj\Debug\net8.0\ExtractingDataFromString.genruntimeconfig.cache
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\ExtractingDataFromString\obj\Debug\net8.0\ref\ExtractingDataFromString.dll

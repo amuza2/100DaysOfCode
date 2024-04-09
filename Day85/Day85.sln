@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "appvc", "appvc\appvc.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DelegateTesting", "DelegateTesting\DelegateTesting.csproj", "{C2F21A9D-CD9E-4275-951A-1943678E05AD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linq", "Linq\Linq.csproj", "{D063383D-5F0D-4B0C-A64A-53C5A8AF7A2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtractingDataFromString", "ExtractingDataFromString\ExtractingDataFromString.csproj", "{F529DF8A-F5D9-4553-BC48-F679507F7DB7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{C2F21A9D-CD9E-4275-951A-1943678E05AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2F21A9D-CD9E-4275-951A-1943678E05AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C2F21A9D-CD9E-4275-951A-1943678E05AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D063383D-5F0D-4B0C-A64A-53C5A8AF7A2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D063383D-5F0D-4B0C-A64A-53C5A8AF7A2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D063383D-5F0D-4B0C-A64A-53C5A8AF7A2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D063383D-5F0D-4B0C-A64A-53C5A8AF7A2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F529DF8A-F5D9-4553-BC48-F679507F7DB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F529DF8A-F5D9-4553-BC48-F679507F7DB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F529DF8A-F5D9-4553-BC48-F679507F7DB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F529DF8A-F5D9-4553-BC48-F679507F7DB7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

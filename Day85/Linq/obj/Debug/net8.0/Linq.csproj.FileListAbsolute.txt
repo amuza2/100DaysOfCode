@@ -1,0 +1,15 @@
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\Linq\bin\Debug\net8.0\Linq.exe
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\Linq\bin\Debug\net8.0\Linq.deps.json
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\Linq\bin\Debug\net8.0\Linq.runtimeconfig.json
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\Linq\bin\Debug\net8.0\Linq.dll
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\Linq\bin\Debug\net8.0\Linq.pdb
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\Linq\obj\Debug\net8.0\Linq.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\Linq\obj\Debug\net8.0\Linq.AssemblyInfoInputs.cache
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\Linq\obj\Debug\net8.0\Linq.AssemblyInfo.cs
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\Linq\obj\Debug\net8.0\Linq.csproj.CoreCompileInputs.cache
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\Linq\obj\Debug\net8.0\Linq.sourcelink.json
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\Linq\obj\Debug\net8.0\Linq.dll
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\Linq\obj\Debug\net8.0\refint\Linq.dll
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\Linq\obj\Debug\net8.0\Linq.pdb
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\Linq\obj\Debug\net8.0\Linq.genruntimeconfig.cache
+C:\Users\moham\Documents\github\100DaysOfCode\Day85\Linq\obj\Debug\net8.0\ref\Linq.dll
