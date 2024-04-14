@@ -25,7 +25,7 @@ namespace ExtracingData
             decimal price = 0;
             MatchCollection matches = Regex.Matches(priceStr, @"\d+\.\d+");
             if(matches.Count > 0) price = decimal.Parse(matches[0].Value);
-            System.Console.WriteLine(price);
+            
 
             
         }
