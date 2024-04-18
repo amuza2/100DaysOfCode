@@ -1,0 +1,15 @@
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\testingConcurency\thread01\bin\Debug\net6.0\thread01.exe
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\testingConcurency\thread01\bin\Debug\net6.0\thread01.deps.json
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\testingConcurency\thread01\bin\Debug\net6.0\thread01.runtimeconfig.json
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\testingConcurency\thread01\bin\Debug\net6.0\thread01.dll
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\testingConcurency\thread01\bin\Debug\net6.0\thread01.pdb
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\testingConcurency\thread01\obj\Debug\net6.0\thread01.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\testingConcurency\thread01\obj\Debug\net6.0\thread01.AssemblyInfoInputs.cache
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\testingConcurency\thread01\obj\Debug\net6.0\thread01.AssemblyInfo.cs
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\testingConcurency\thread01\obj\Debug\net6.0\thread01.csproj.CoreCompileInputs.cache
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\testingConcurency\thread01\obj\Debug\net6.0\thread01.sourcelink.json
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\testingConcurency\thread01\obj\Debug\net6.0\thread01.dll
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\testingConcurency\thread01\obj\Debug\net6.0\refint\thread01.dll
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\testingConcurency\thread01\obj\Debug\net6.0\thread01.pdb
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\testingConcurency\thread01\obj\Debug\net6.0\thread01.genruntimeconfig.cache
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\testingConcurency\thread01\obj\Debug\net6.0\ref\thread01.dll

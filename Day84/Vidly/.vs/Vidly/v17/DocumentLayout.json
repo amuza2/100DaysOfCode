@@ -1,0 +1,72 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\Vidly\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{88E236AC-3BC8-4223-A4E5-AFD3436D0274}|Vidly\\Vidly.csproj|c:\\users\\moham\\documents\\github\\100daysofcode\\day84\\vidly\\vidly\\controllers\\moviecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88E236AC-3BC8-4223-A4E5-AFD3436D0274}|Vidly\\Vidly.csproj|solutionrelative:vidly\\controllers\\moviecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88E236AC-3BC8-4223-A4E5-AFD3436D0274}|Vidly\\Vidly.csproj|c:\\users\\moham\\documents\\github\\100daysofcode\\day84\\vidly\\vidly\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88E236AC-3BC8-4223-A4E5-AFD3436D0274}|Vidly\\Vidly.csproj|solutionrelative:vidly\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MovieController.cs",
+              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\Vidly\\Vidly\\Controllers\\MovieController.cs",
+              "RelativeDocumentMoniker": "Vidly\\Controllers\\MovieController.cs",
+              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\Vidly\\Vidly\\Controllers\\MovieController.cs",
+              "RelativeToolTip": "Vidly\\Controllers\\MovieController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T08:46:00.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\Vidly\\Vidly\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "Vidly\\App_Start\\RouteConfig.cs",
+              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\Vidly\\Vidly\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "Vidly\\App_Start\\RouteConfig.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T08:30:17.268Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
