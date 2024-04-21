@@ -10,6 +10,7 @@ namespace DatabaseFirstDemoEF
     {
         static void Main(string[] args)
         {
+
         }
     }
 }
