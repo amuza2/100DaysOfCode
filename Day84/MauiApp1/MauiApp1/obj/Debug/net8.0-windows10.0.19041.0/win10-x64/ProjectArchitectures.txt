@@ -1,1 +1,0 @@
-C:\Users\moham\Documents\github\100DaysOfCode\Day84\MauiApp1\MauiApp1\MauiApp1.csproj;x64

@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ColorMakerMAUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+a7c0a464ee2a664e048260fead468b3b55704fb2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+53b8cd326f653f5bb48f128de39c0e879a58cc45")]
 [assembly: System.Reflection.AssemblyProductAttribute("ColorMakerMAUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ColorMakerMAUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
