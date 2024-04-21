@@ -15,6 +15,7 @@ namespace ColorMakerMAUI
 
         private void Slider_ValueChanged(object sender, ValueChangedEventArgs e)
         {
+            // Condition to disable button call when a slider in used
             if(!buttonIsActive)
             {
                 var red = sldRed.Value;
@@ -44,6 +45,7 @@ namespace ColorMakerMAUI
                 rnd.Next(256),
                 rnd.Next(256)
                 );
+
             setColor(color);
             sldBlue.Value = color.Blue;
             sldGreen.Value = color.Green;
