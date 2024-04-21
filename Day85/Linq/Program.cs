@@ -4,16 +4,14 @@
     {
         static void Main(string[] args)
         {
-            var actions = new List<Action>();
-            for (int i = 0; i < 5; i++)
-            {
-                var closurei = i;
-                actions.Add(() => Console.WriteLine($"MyAction: i={closurei}"));
-            }
-            foreach (var action in actions)
-            {
-                action();
-            }
+            var colors = new List<string> { "red", "green",};
+            colors.Add("orange");
+            colors.AddRange(new string[] {"yellow", "pink"});
+            colors.Insert(0, "blue");
+
+            var exist = colors.Exists(color =>
+                color.EndsWith("ink"));
+            System.Console.WriteLine(exist);
         }
     }  
 }
