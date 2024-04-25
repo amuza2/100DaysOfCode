@@ -1,0 +1,1 @@
+C:\Users\moham\Documents\github\100DaysOfCode\Day86\KidStoryAppProject\KidStoryAppProject\KidStoryAppProject.csproj;x64
