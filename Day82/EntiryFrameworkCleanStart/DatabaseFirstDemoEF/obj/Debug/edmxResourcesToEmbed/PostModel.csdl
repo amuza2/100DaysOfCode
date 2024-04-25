@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="cenimaDatabaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="film">
+    <Key>
+      <PropertyRef Name="id_film" />
+    </Key>
+    <Property Name="id_film" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="title_film" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="length_film" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="released_date" Type="DateTime" Precision="0" />
+    <Property Name="id_realisator" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="cenimaDatabaseEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="films" EntityType="Self.film" />
+  </EntityContainer>
+</Schema>

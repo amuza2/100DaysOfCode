@@ -1,0 +1,12 @@
+C:\Users\moham\Documents\github\100DaysOfCode\Day82\EntiryFrameworkCleanStart\DatabaseFirstDemoEF\bin\Debug\DatabaseFirstDemoEF.exe.config
+C:\Users\moham\Documents\github\100DaysOfCode\Day82\EntiryFrameworkCleanStart\DatabaseFirstDemoEF\bin\Debug\DatabaseFirstDemoEF.exe
+C:\Users\moham\Documents\github\100DaysOfCode\Day82\EntiryFrameworkCleanStart\DatabaseFirstDemoEF\bin\Debug\DatabaseFirstDemoEF.pdb
+C:\Users\moham\Documents\github\100DaysOfCode\Day82\EntiryFrameworkCleanStart\DatabaseFirstDemoEF\bin\Debug\EntityFramework.dll
+C:\Users\moham\Documents\github\100DaysOfCode\Day82\EntiryFrameworkCleanStart\DatabaseFirstDemoEF\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\moham\Documents\github\100DaysOfCode\Day82\EntiryFrameworkCleanStart\DatabaseFirstDemoEF\bin\Debug\EntityFramework.xml
+C:\Users\moham\Documents\github\100DaysOfCode\Day82\EntiryFrameworkCleanStart\DatabaseFirstDemoEF\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\moham\Documents\github\100DaysOfCode\Day82\EntiryFrameworkCleanStart\DatabaseFirstDemoEF\obj\Debug\DatabaseFirstDemoEF.csproj.AssemblyReference.cache
+C:\Users\moham\Documents\github\100DaysOfCode\Day82\EntiryFrameworkCleanStart\DatabaseFirstDemoEF\obj\Debug\DatabaseFirstDemoEF.csproj.CoreCompileInputs.cache
+C:\Users\moham\Documents\github\100DaysOfCode\Day82\EntiryFrameworkCleanStart\DatabaseFirstDemoEF\obj\Debug\Database.9E382565.Up2Date
+C:\Users\moham\Documents\github\100DaysOfCode\Day82\EntiryFrameworkCleanStart\DatabaseFirstDemoEF\obj\Debug\DatabaseFirstDemoEF.exe
+C:\Users\moham\Documents\github\100DaysOfCode\Day82\EntiryFrameworkCleanStart\DatabaseFirstDemoEF\obj\Debug\DatabaseFirstDemoEF.pdb

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="cenimaDatabaseModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="film">
+    <Key>
+      <PropertyRef Name="id_film" />
+    </Key>
+    <Property Name="id_film" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="title_film" Type="nchar" MaxLength="50" />
+    <Property Name="length_film" Type="nchar" MaxLength="20" />
+    <Property Name="released_date" Type="date" />
+    <Property Name="id_realisator" Type="int" />
+  </EntityType>
+  <EntityContainer Name="cenimaDatabaseModelStoreContainer">
+    <EntitySet Name="film" EntityType="Self.film" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="cenimaDatabaseModelStoreContainer" CdmEntityContainer="cenimaDatabaseEntities">
+    <EntitySetMapping Name="films">
+      <EntityTypeMapping TypeName="cenimaDatabaseModel.film">
+        <MappingFragment StoreEntitySet="film">
+          <ScalarProperty Name="id_film" ColumnName="id_film" />
+          <ScalarProperty Name="title_film" ColumnName="title_film" />
+          <ScalarProperty Name="length_film" ColumnName="length_film" />
+          <ScalarProperty Name="released_date" ColumnName="released_date" />
+          <ScalarProperty Name="id_realisator" ColumnName="id_realisator" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
