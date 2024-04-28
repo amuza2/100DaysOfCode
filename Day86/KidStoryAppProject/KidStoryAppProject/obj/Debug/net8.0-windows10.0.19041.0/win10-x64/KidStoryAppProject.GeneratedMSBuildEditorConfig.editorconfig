@@ -41,3 +41,9 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = KidStoryAppProject.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/moham/Documents/github/100DaysOfCode/Day86/KidStoryAppProject/KidStoryAppProject/Story1.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = KidStoryAppProject.Story1.xaml
+build_metadata.AdditionalFiles.TargetPath = Story1.xaml
+build_metadata.AdditionalFiles.RelativePath = Story1.xaml

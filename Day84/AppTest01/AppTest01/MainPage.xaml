@@ -40,11 +40,12 @@
                        HorizontalTextAlignment="Center"
                        Text="$0.00"
                        TextColor="{StaticResource LightFont}"
-                       VerticalOptions="Center"
+                       VerticalOptions="CenterAndExpand"
                        />
                 <BoxView Grid.Row="1"
                          Grid.Column="1"
                          Margin="0, 10, 0, 0"
+                         VerticalOptions="Center"
                          Color="#adadad"/>
 
             </Grid>

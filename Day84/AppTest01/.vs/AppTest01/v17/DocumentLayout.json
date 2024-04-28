@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\AppTest01\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{297602E4-587F-4E99-A3A0-4A07C1753342}|AppTest01\\AppTest01.csproj|c:\\users\\moham\\documents\\github\\100daysofcode\\day84\\apptest01\\apptest01\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{297602E4-587F-4E99-A3A0-4A07C1753342}|AppTest01\\AppTest01.csproj|solutionrelative:apptest01\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{8910FCE9-3848-4D50-ABD0-1D82613B6ABE}|AppTest02\\AppTest02.csproj|c:\\users\\moham\\documents\\github\\100daysofcode\\day84\\apptest01\\apptest02\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8910FCE9-3848-4D50-ABD0-1D82613B6ABE}|AppTest02\\AppTest02.csproj|solutionrelative:apptest02\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{297602E4-587F-4E99-A3A0-4A07C1753342}|AppTest01\\AppTest01.csproj|c:\\users\\moham\\documents\\github\\100daysofcode\\day84\\apptest01\\apptest01\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{297602E4-587F-4E99-A3A0-4A07C1753342}|AppTest01\\AppTest01.csproj|solutionrelative:apptest01\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8910FCE9-3848-4D50-ABD0-1D82613B6ABE}|AppTest02\\AppTest02.csproj|c:\\users\\moham\\documents\\github\\100daysofcode\\day84\\apptest01\\apptest02\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8910FCE9-3848-4D50-ABD0-1D82613B6ABE}|AppTest02\\AppTest02.csproj|solutionrelative:apptest02\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,28 +30,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainPage.xaml",
-              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\AppTest01\\AppTest01\\MainPage.xaml",
-              "RelativeDocumentMoniker": "AppTest01\\MainPage.xaml",
-              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\AppTest01\\AppTest01\\MainPage.xaml",
-              "RelativeToolTip": "AppTest01\\MainPage.xaml",
-              "ViewState": "AQIAACoAAAAAAAAAAAAAAB4AAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-25T17:26:33.575Z",
+              "DocumentIndex": 1,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\AppTest01\\AppTest02\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "AppTest02\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\AppTest01\\AppTest02\\MainPage.xaml.cs",
+              "RelativeToolTip": "AppTest02\\MainPage.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-26T23:30:19.15Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\AppTest01\\AppTest01\\MainPage.xaml.cs",
-              "RelativeDocumentMoniker": "AppTest01\\MainPage.xaml.cs",
-              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\AppTest01\\AppTest01\\MainPage.xaml.cs",
-              "RelativeToolTip": "AppTest01\\MainPage.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-25T17:26:19.431Z",
+              "DocumentIndex": 0,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\AppTest01\\AppTest02\\MainPage.xaml",
+              "RelativeDocumentMoniker": "AppTest02\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\AppTest01\\AppTest02\\MainPage.xaml",
+              "RelativeToolTip": "AppTest02\\MainPage.xaml",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAACgAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-04-26T23:16:40.206Z",
               "EditorCaption": ""
             }
           ]
