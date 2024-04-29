@@ -3,8 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="KidStoryAppProject.MainPage">
 
-
-
     <VerticalStackLayout Spacing="20"
                          Padding="10">
         <Frame BackgroundColor="LightSkyBlue">
@@ -17,13 +15,16 @@
             <VerticalStackLayout Spacing="20">
                 <Button Text="الأرنب والسلحفاة"
                         WidthRequest="150"
-                        FontSize="20"/>
+                        FontSize="20"
+                        Clicked="Button_Clicked"/>
                 <Button Text="ليلي والذئب"
                         WidthRequest="150"
-                        FontSize="20"/>
+                        FontSize="20"
+                        Clicked="Button_Clicked"/>
                 <Button Text="النملة والصرصور"
                         WidthRequest="150"
-                        FontSize="20"/>
+                        FontSize="20"
+                        Clicked="Button_Clicked"/>
 
             </VerticalStackLayout>
         </Frame>
