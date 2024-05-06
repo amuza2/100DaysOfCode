@@ -89,10 +89,11 @@
                        Text="Color Value: #000000"
                        FontSize="18"
                        FontAttributes="Bold"
-                       HorizontalOptions="Center"
-                       VerticalOptions="Center"/>
-                <Image Source="copy.svg"
-                       Margin="20,0,0,0"/>
+                       VerticalTextAlignment="Center"
+                       Margin="50,0,0,0"/>
+                <ImageButton Source="copy.svg"
+                             Margin="0,0,0,0"
+                             Clicked="ImageButton_Clicked"/>
             </HorizontalStackLayout>
         </Frame>
         <Frame Grid.Row="5"

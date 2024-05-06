@@ -7,7 +7,9 @@ namespace ColorMakerMAUI
 {
     public partial class MainPage : ContentPage
     {
-        bool buttonIsActive = false;
+        private bool _buttonIsActive = false;
+        private string _hexValue;
+
         public MainPage()
         {
             InitializeComponent();
@@ -16,7 +18,7 @@ namespace ColorMakerMAUI
         private void Slider_ValueChanged(object sender, ValueChangedEventArgs e)
         {
             // Condition to disable button call when a slider in used
-            if(!buttonIsActive)
+            if(!_buttonIsActive)
             {
                 var red = sldRed.Value;
                 var green = sldGreen.Value;
@@ -32,13 +34,14 @@ namespace ColorMakerMAUI
         private void setColor(Color color)
         {
             Container.BackgroundColor = color;
-            lblColor.Text = "Color Value: " + color.ToHex().ToString();
-            Debug.WriteLine(color.ToString());
+            _hexValue = color.ToHex();
+            lblColor.Text = "Color Value: " + _hexValue;
+            //Debug.WriteLine(color.ToString());
         }
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            buttonIsActive = true;
+            _buttonIsActive = true;
             var rnd = new Random();
             var color = Color.FromRgb(
                 rnd.Next(256),
@@ -50,7 +53,18 @@ namespace ColorMakerMAUI
             sldBlue.Value = color.Blue;
             sldGreen.Value = color.Green;
             sldRed.Value = color.Red;
-            buttonIsActive = false;
+            _buttonIsActive = false;
+        }
+
+        private async void ImageButton_Clicked(object sender, EventArgs e)
+        {
+            await Clipboard.SetTextAsync(_hexValue);
+            var toast = Toast.Make(
+                "Color copied",
+                CommunityToolkit.Maui.Core.ToastDuration.Short,
+                12
+                );
+            await toast.Show();
         }
     }
 
