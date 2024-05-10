@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day83\\learningSoftwareDevelopment\\app1\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2FD8A284-6F0A-4BEA-BCC4-788EBA283F36}|LoginPage\\LoginPage.csproj|c:\\users\\moham\\documents\\github\\100daysofcode\\day83\\learningsoftwaredevelopment\\app1\\loginpage\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2FD8A284-6F0A-4BEA-BCC4-788EBA283F36}|LoginPage\\LoginPage.csproj|solutionrelative:loginpage\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FD8A284-6F0A-4BEA-BCC4-788EBA283F36}|LoginPage\\LoginPage.csproj|c:\\users\\moham\\documents\\github\\100daysofcode\\day83\\learningsoftwaredevelopment\\app1\\loginpage\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2FD8A284-6F0A-4BEA-BCC4-788EBA283F36}|LoginPage\\LoginPage.csproj|solutionrelative:loginpage\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FD8A284-6F0A-4BEA-BCC4-788EBA283F36}|LoginPage\\LoginPage.csproj|c:\\users\\moham\\documents\\github\\100daysofcode\\day83\\learningsoftwaredevelopment\\app1\\loginpage\\views\\login\\welcome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2FD8A284-6F0A-4BEA-BCC4-788EBA283F36}|LoginPage\\LoginPage.csproj|solutionrelative:loginpage\\views\\login\\welcome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
@@ -9,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 187,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,6 +35,45 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Welcome.cshtml",
+              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day83\\learningSoftwareDevelopment\\app1\\LoginPage\\Views\\Login\\Welcome.cshtml",
+              "RelativeDocumentMoniker": "LoginPage\\Views\\Login\\Welcome.cshtml",
+              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day83\\learningSoftwareDevelopment\\app1\\LoginPage\\Views\\Login\\Welcome.cshtml",
+              "RelativeToolTip": "LoginPage\\Views\\Login\\Welcome.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-09T16:16:36.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day83\\learningSoftwareDevelopment\\app1\\LoginPage\\Views\\Login\\Index.cshtml",
+              "RelativeDocumentMoniker": "LoginPage\\Views\\Login\\Index.cshtml",
+              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day83\\learningSoftwareDevelopment\\app1\\LoginPage\\Views\\Login\\Index.cshtml",
+              "RelativeToolTip": "LoginPage\\Views\\Login\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-09T15:40:58.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day83\\learningSoftwareDevelopment\\app1\\LoginPage\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "LoginPage\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day83\\learningSoftwareDevelopment\\app1\\LoginPage\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "LoginPage\\Controllers\\LoginController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T15:39:28.697Z",
+              "EditorCaption": ""
             }
           ]
         },

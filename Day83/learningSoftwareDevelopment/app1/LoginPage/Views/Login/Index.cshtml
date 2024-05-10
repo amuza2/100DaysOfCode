@@ -1,0 +1,27 @@
+﻿@model LoginPage.Models.User
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Index</h2>
+
+@using (Html.BeginForm("Welcome", "Login", FormMethod.Post))
+{
+    @Html.AntiForgeryToken();
+
+    <div>
+        <label>Username:</label>
+        @Html.TextBoxFor(m => m.Username)
+        @Html.ValidationMessageFor(m => m.Username)
+    </div>
+    
+    <div>
+        <label>Password</label>
+        @Html.PasswordFor(m => m.Password, new {Type="password"})
+        @Html.ValidationMessageFor(m => m.Password)
+    </div>
+
+    <input type="submit" value="login"/>
+
+}
+

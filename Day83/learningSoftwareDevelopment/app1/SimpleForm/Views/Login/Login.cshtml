@@ -1,0 +1,56 @@
+﻿@model SimpleForm.Models.Person
+@{
+    ViewBag.Title = "Login";
+}
+
+
+<h2>Login</h2>
+@using (Html.BeginForm("DisplayLoginInput", "Login", FormMethod.Post))
+{
+    <label>Are you married:</label>
+    @Html.RadioButtonFor(m => m.Married, "Male") @Html.Label("Male")
+    @Html.RadioButtonFor(m => m.Married, "False") @Html.Label("Female")
+    <br />
+    <label>Cases a cocher:</label>
+    @Html.CheckBoxFor(m => m.Check) @Html.Label("1")
+    @Html.CheckBoxFor(m => m.Check) @Html.Label("2")
+    @Html.CheckBoxFor(m => m.Check) @Html.Label("3")
+    <br />
+    
+    <label>Champ de saisie</label>
+    @Html.TextBoxFor(m => m.Username)
+    <br />
+    <label>Password</label> 
+    @Html.TextBoxFor(m => m.Password, new { Type = "password" })
+    <br />
+    <label>Boite de saisie</label>
+    @Html.TextAreaFor(m => m.Multiline)
+    <br />
+
+    <label>List deroulante</label>
+    @Html.DropDownListFor(m => m.ChooseFromList, new SelectList(new List<string> { "choix1", "choix2", "choix3" }))
+
+    <br />
+    <label>List a choix Unique</label>
+    @Html.ListBoxFor(m => m.ChooseOneFromList, new SelectList(new List<string> { "choix1", "choix2", "choix3" }))
+    <br />
+
+    <label>List a choix multiple</label>
+    <select id="ChooseMultipleFromList" multiple="multiple" name="ChooseMultipleFromList">
+        <option value="choix1">choix1</option>
+        <option value="choix2">choix2</option>
+        <option value="choix3">choix3</option>
+    </select>
+    <br />
+
+
+
+    <input type="submit" value="Submit" />
+}
+@*<form action="/Login/Login" method="post">
+        <label for="fname">Username:</label>
+        <input type="text" name="username" value=@Model.Name><br>
+        <label for="lname">Password:</label>
+        <input type="text" name="password" value=@Model.Password><br><br>
+        <input type="submit" value="Submit">
+    </form>*@
