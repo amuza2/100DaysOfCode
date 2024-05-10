@@ -3,16 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\Vidly\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{88E236AC-3BC8-4223-A4E5-AFD3436D0274}|Vidly\\Vidly.csproj|c:\\users\\moham\\documents\\github\\100daysofcode\\day84\\vidly\\vidly\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88E236AC-3BC8-4223-A4E5-AFD3436D0274}|Vidly\\Vidly.csproj|solutionrelative:vidly\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{88E236AC-3BC8-4223-A4E5-AFD3436D0274}|Vidly\\Vidly.csproj|c:\\users\\moham\\documents\\github\\100daysofcode\\day84\\vidly\\vidly\\migrations\\202405042115224_initialmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88E236AC-3BC8-4223-A4E5-AFD3436D0274}|Vidly\\Vidly.csproj|solutionrelative:vidly\\migrations\\202405042115224_initialmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88E236AC-3BC8-4223-A4E5-AFD3436D0274}|Vidly\\Vidly.csproj|c:\\users\\moham\\documents\\github\\100daysofcode\\day84\\vidly\\vidly\\views\\movie\\random.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{88E236AC-3BC8-4223-A4E5-AFD3436D0274}|Vidly\\Vidly.csproj|solutionrelative:vidly\\views\\movie\\random.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{88E236AC-3BC8-4223-A4E5-AFD3436D0274}|Vidly\\Vidly.csproj|c:\\users\\moham\\documents\\github\\100daysofcode\\day84\\vidly\\vidly\\models\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88E236AC-3BC8-4223-A4E5-AFD3436D0274}|Vidly\\Vidly.csproj|solutionrelative:vidly\\models\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88E236AC-3BC8-4223-A4E5-AFD3436D0274}|Vidly\\Vidly.csproj|c:\\users\\moham\\documents\\github\\100daysofcode\\day84\\vidly\\vidly\\migrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88E236AC-3BC8-4223-A4E5-AFD3436D0274}|Vidly\\Vidly.csproj|solutionrelative:vidly\\migrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88E236AC-3BC8-4223-A4E5-AFD3436D0274}|Vidly\\Vidly.csproj|c:\\users\\moham\\documents\\github\\100daysofcode\\day84\\vidly\\vidly\\views\\customer\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{88E236AC-3BC8-4223-A4E5-AFD3436D0274}|Vidly\\Vidly.csproj|solutionrelative:vidly\\views\\customer\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88E236AC-3BC8-4223-A4E5-AFD3436D0274}|Vidly\\Vidly.csproj|C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\Vidly\\vidly\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88E236AC-3BC8-4223-A4E5-AFD3436D0274}|Vidly\\Vidly.csproj|solutionrelative:vidly\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88E236AC-3BC8-4223-A4E5-AFD3436D0274}|Vidly\\Vidly.csproj|C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\Vidly\\vidly\\views\\customer\\customer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{88E236AC-3BC8-4223-A4E5-AFD3436D0274}|Vidly\\Vidly.csproj|solutionrelative:vidly\\views\\customer\\customer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{88E236AC-3BC8-4223-A4E5-AFD3436D0274}|Vidly\\Vidly.csproj|C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\Vidly\\vidly\\controllers\\moviecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{88E236AC-3BC8-4223-A4E5-AFD3436D0274}|Vidly\\Vidly.csproj|solutionrelative:vidly\\controllers\\moviecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88E236AC-3BC8-4223-A4E5-AFD3436D0274}|Vidly\\Vidly.csproj|C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\Vidly\\vidly\\views\\movie\\movies.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{88E236AC-3BC8-4223-A4E5-AFD3436D0274}|Vidly\\Vidly.csproj|solutionrelative:vidly\\views\\movie\\movies.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88E236AC-3BC8-4223-A4E5-AFD3436D0274}|Vidly\\Vidly.csproj|C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\Vidly\\vidly\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{88E236AC-3BC8-4223-A4E5-AFD3436D0274}|Vidly\\Vidly.csproj|solutionrelative:vidly\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,40 +59,119 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "BundleConfig.cs",
-              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\Vidly\\Vidly\\App_Start\\BundleConfig.cs",
-              "RelativeDocumentMoniker": "Vidly\\App_Start\\BundleConfig.cs",
-              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\Vidly\\Vidly\\App_Start\\BundleConfig.cs",
-              "RelativeToolTip": "Vidly\\App_Start\\BundleConfig.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAUwBkAAAAwAAAA",
+              "Title": "202405042115224_InitialModel.cs",
+              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\Vidly\\Vidly\\Migrations\\202405042115224_InitialModel.cs",
+              "RelativeDocumentMoniker": "Vidly\\Migrations\\202405042115224_InitialModel.cs",
+              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\Vidly\\Vidly\\Migrations\\202405042115224_InitialModel.cs",
+              "RelativeToolTip": "Vidly\\Migrations\\202405042115224_InitialModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T17:26:37.378Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Random.cshtml",
-              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\Vidly\\Vidly\\Views\\Movie\\Random.cshtml",
-              "RelativeDocumentMoniker": "Vidly\\Views\\Movie\\Random.cshtml",
-              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\Vidly\\Vidly\\Views\\Movie\\Random.cshtml",
-              "RelativeToolTip": "Vidly\\Views\\Movie\\Random.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-19T16:59:48.879Z",
+              "WhenOpened": "2024-05-04T21:15:27.19Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Configuration.cs",
+              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\Vidly\\Vidly\\Migrations\\Configuration.cs",
+              "RelativeDocumentMoniker": "Vidly\\Migrations\\Configuration.cs",
+              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\Vidly\\Vidly\\Migrations\\Configuration.cs",
+              "RelativeToolTip": "Vidly\\Migrations\\Configuration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T21:13:47.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MyDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\Vidly\\Vidly\\Models\\MyDbContext.cs",
+              "RelativeDocumentMoniker": "Vidly\\Models\\MyDbContext.cs",
+              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\Vidly\\Vidly\\Models\\MyDbContext.cs",
+              "RelativeToolTip": "Vidly\\Models\\MyDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T21:11:28.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\Vidly\\Vidly\\Views\\Customer\\Details.cshtml",
+              "RelativeDocumentMoniker": "Vidly\\Views\\Customer\\Details.cshtml",
+              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\Vidly\\Vidly\\Views\\Customer\\Details.cshtml",
+              "RelativeToolTip": "Vidly\\Views\\Customer\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-03T21:21:50.359Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Movies.cshtml",
+              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\Vidly\\Vidly\\Views\\Movie\\Movies.cshtml",
+              "RelativeDocumentMoniker": "Vidly\\Views\\Movie\\Movies.cshtml",
+              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\Vidly\\Vidly\\Views\\Movie\\Movies.cshtml",
+              "RelativeToolTip": "Vidly\\Views\\Movie\\Movies.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-03T19:32:46.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Customer.cshtml",
+              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\Vidly\\Vidly\\Views\\Customer\\Customer.cshtml",
+              "RelativeDocumentMoniker": "Vidly\\Views\\Customer\\Customer.cshtml",
+              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\Vidly\\Vidly\\Views\\Customer\\Customer.cshtml",
+              "RelativeToolTip": "Vidly\\Views\\Customer\\Customer.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-03T19:30:26.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\Vidly\\Vidly\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "Vidly\\Controllers\\CustomerController.cs",
+              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\Vidly\\Vidly\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "Vidly\\Controllers\\CustomerController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA8AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T19:15:49.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "MovieController.cs",
               "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\Vidly\\Vidly\\Controllers\\MovieController.cs",
               "RelativeDocumentMoniker": "Vidly\\Controllers\\MovieController.cs",
               "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\Vidly\\Vidly\\Controllers\\MovieController.cs",
               "RelativeToolTip": "Vidly\\Controllers\\MovieController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAsAAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T08:46:00.722Z"
+              "WhenOpened": "2024-05-03T19:14:29.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\Vidly\\Vidly\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Vidly\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\Vidly\\Vidly\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Vidly\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-03T18:45:36.471Z",
+              "EditorCaption": ""
             }
           ]
         },

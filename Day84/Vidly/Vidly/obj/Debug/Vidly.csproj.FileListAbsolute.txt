@@ -77,3 +77,7 @@ C:\Users\moham\Documents\github\100DaysOfCode\Day84\Vidly\Vidly\obj\Debug\Vidly.
 C:\Users\moham\Documents\github\100DaysOfCode\Day84\Vidly\Vidly\obj\Debug\Vidly.csproj.Up2Date
 C:\Users\moham\Documents\github\100DaysOfCode\Day84\Vidly\Vidly\obj\Debug\Vidly.dll
 C:\Users\moham\Documents\github\100DaysOfCode\Day84\Vidly\Vidly\obj\Debug\Vidly.pdb
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\Vidly\Vidly\bin\EntityFramework.dll
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\Vidly\Vidly\bin\EntityFramework.SqlServer.dll
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\Vidly\Vidly\bin\EntityFramework.xml
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\Vidly\Vidly\bin\EntityFramework.SqlServer.xml
