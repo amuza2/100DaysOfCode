@@ -1,4 +1,10 @@
-﻿obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\dotnet_bot.png
+﻿obj\Debug\net8.0-android\resizetizer\r\drawable\aa.png
+obj\Debug\net8.0-android\resizetizer\r\drawable\bb.png
+obj\Debug\net8.0-android\resizetizer\r\drawable\cc.png
+obj\Debug\net8.0-android\resizetizer\r\drawable\dd.png
+obj\Debug\net8.0-android\resizetizer\r\drawable\ee.png
+obj\Debug\net8.0-android\resizetizer\r\drawable\ff.png
+obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\dotnet_bot.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\dotnet_bot.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\dotnet_bot.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\dotnet_bot.png

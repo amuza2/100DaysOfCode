@@ -9,10 +9,12 @@
             <Label Text="قصص أطفال"
                    HorizontalOptions="Center"
                    FontSize="40"/>
+
         </Frame>
         <Frame BackgroundColor="LightSkyBlue"
                Margin="0,90,0,0">
             <VerticalStackLayout Spacing="20">
+
                 <Button Text="الأرنب والسلحفاة"
                         WidthRequest="150"
                         FontSize="20"

@@ -100,7 +100,9 @@ public partial class Story1 : ContentPage
 
     };
 
-    string[] imagesStory1 = { "1", "2", "3", "4", "5", "6" };
+    string[] imagesStory1 = { "aa", "bb", "cc", "dd", "ee", "ff" };
+    string[] imagesStory2 = { "s2a", "s2b", "s2c", "s2d", "s2e", "s2f" };
+    string[] imagesStory3 = { "s3a", "s3b", "s3c", "s3d", "s3e", "s3f" };
     string[] choosedStoryContent = null;
 	int page = 0;
     string title;
@@ -138,7 +140,7 @@ public partial class Story1 : ContentPage
             if(page < choosedStoryContent.Length - 1) page++;
             lblStoryText.Text = choosedStoryContent[page];
             Paging();
-            //img.Source = $"{imagesStory1[page]}.png";
+            img.Source = $"{imagesStory1[page]}.png";
         }
     }
 

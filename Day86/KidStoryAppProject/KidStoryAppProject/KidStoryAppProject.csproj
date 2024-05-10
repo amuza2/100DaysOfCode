@@ -56,7 +56,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiImage Include="Resources\Images\Story1\dotnet_bot.png" Resize="True" BaseSize="300,185" />
+	  <None Remove="Resources\Images\aa.png" />
+	  <None Remove="Resources\Images\bb.png" />
+	  <None Remove="Resources\Images\cc.png" />
+	  <None Remove="Resources\Images\dd.png" />
+	  <None Remove="Resources\Images\ee.png" />
+	  <None Remove="Resources\Images\ff.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -66,9 +71,17 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiImage Update="Resources\Images\dotnet_bot.png" Resize="True" BaseSize="300,185" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <MauiXaml Update="Story1.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Resources\Images\Story1\" />
 	</ItemGroup>
 
 </Project>

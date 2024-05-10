@@ -17,9 +17,7 @@
             </Frame>
 
             <Image x:Name="img"
-                   Source="Story1/1.png"
-                   Aspect="Center"
-                   Scale=".3"/>
+                   Source="aa.png"/>
 
             <Frame BackgroundColor="SkyBlue"
                    Padding="15"

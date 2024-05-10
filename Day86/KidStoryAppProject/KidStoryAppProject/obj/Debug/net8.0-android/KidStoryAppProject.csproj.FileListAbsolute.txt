@@ -1037,3 +1037,9 @@ C:\Users\moham\Documents\github\100DaysOfCode\Day86\KidStoryAppProject\KidStoryA
 C:\Users\moham\Documents\github\100DaysOfCode\Day86\KidStoryAppProject\KidStoryAppProject\obj\Debug\net8.0-android\stamp\_GenerateJavaStubs.stamp
 C:\Users\moham\Documents\github\100DaysOfCode\Day86\KidStoryAppProject\KidStoryAppProject\obj\Debug\net8.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\moham\Documents\github\100DaysOfCode\Day86\KidStoryAppProject\KidStoryAppProject\obj\Debug\net8.0-android\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\moham\Documents\github\100DaysOfCode\Day86\KidStoryAppProject\KidStoryAppProject\obj\Debug\net8.0-android\resizetizer\r\drawable\aa.png
+C:\Users\moham\Documents\github\100DaysOfCode\Day86\KidStoryAppProject\KidStoryAppProject\obj\Debug\net8.0-android\resizetizer\r\drawable\bb.png
+C:\Users\moham\Documents\github\100DaysOfCode\Day86\KidStoryAppProject\KidStoryAppProject\obj\Debug\net8.0-android\resizetizer\r\drawable\cc.png
+C:\Users\moham\Documents\github\100DaysOfCode\Day86\KidStoryAppProject\KidStoryAppProject\obj\Debug\net8.0-android\resizetizer\r\drawable\dd.png
+C:\Users\moham\Documents\github\100DaysOfCode\Day86\KidStoryAppProject\KidStoryAppProject\obj\Debug\net8.0-android\resizetizer\r\drawable\ee.png
+C:\Users\moham\Documents\github\100DaysOfCode\Day86\KidStoryAppProject\KidStoryAppProject\obj\Debug\net8.0-android\resizetizer\r\drawable\ff.png
