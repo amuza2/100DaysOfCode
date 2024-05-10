@@ -28,11 +28,13 @@
                     <RowDefinition Height=".1*"/>
                     <RowDefinition Height=".9*"/>
                 </Grid.RowDefinitions>
+
                 <Label Grid.ColumnSpan="3"
                        FontAttributes="Bold"
                        HorizontalTextAlignment="Center"
                        Text="Total Per/People"
                        TextColor="{StaticResource DarkFont}" />
+
                 <Label x:Name="lblTotal"
                        Grid.Row="1"
                        FontAttributes="Bold"
@@ -46,10 +48,33 @@
                          Grid.Column="1"
                          Margin="0, 10, 0, 0"
                          VerticalOptions="Center"
-                         Color="#adadad"/>
+                         Color="Red"/>
+
+                <VerticalStackLayout Grid.Row="1"
+                                     Grid.Column="2"
+                                     HorizontalOptions="Center"
+                                     VerticalOptions="Center"
+                                     >
+                    <Label Text="Subtotal"
+                           TextColor="{StaticResource LightFont}"/>
+                    <Label x:Name="lblSubtotal"
+                           FontAttributes="Bold"
+                           TextColor="{StaticResource LightFont}"
+                           Text="$0.00"
+                           />
+                    <Label Margin="0,10,0,0"
+                           Text="Tip"
+                           TextColor="{StaticResource LightFont}"/>
+                    <Label x:Name="lblTipPerPerson"
+                           FontAttributes="Bold"
+                           TextColor="{StaticResource LightFont}"
+                           Text="$0.00"
+                           />
+                </VerticalStackLayout>
 
             </Grid>
         </Frame>
+
 
     </Grid>
 
