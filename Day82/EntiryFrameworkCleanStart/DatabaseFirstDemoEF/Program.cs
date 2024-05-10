@@ -13,9 +13,9 @@ namespace DatabaseFirstDemoEF
             var context = new cenimaDatabaseEntities();
             var film = new film()
             {
-                id_realisator = 1,
-                title_film = "EF Test Title",
-                length_film = "2h:45m",
+                id_realisator = 3,
+                title_film = "EF Test Title 2",
+                length_film = "1h",
                 released_date = DateTime.Now,
             };
             context.films.Add(film);
