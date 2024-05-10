@@ -40,7 +40,7 @@
               "RelativeDocumentMoniker": "comicBook\\Models\\ComicBook.cs",
               "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\comicBook\\comicBook\\Models\\ComicBook.cs",
               "RelativeToolTip": "comicBook\\Models\\ComicBook.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-10T09:51:53.6Z",
               "EditorCaption": ""
@@ -55,8 +55,7 @@
               "RelativeToolTip": "comicBook\\Models\\Artist.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-10T09:51:51.573Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-10T09:51:51.573Z"
             },
             {
               "$type": "Document",
@@ -68,8 +67,7 @@
               "RelativeToolTip": "comicBook\\Controllers\\ComicBooksController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-01-18T16:00:29.251Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-01-18T16:00:29.251Z"
             }
           ]
         },
