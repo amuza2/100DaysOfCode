@@ -14,7 +14,7 @@ namespace comicBook.Models
         public Artist[] Artists { get; set; }
         public bool Favorite { get; set; }
 
-        public string DusplayText => SeriesTitle + " #" + IssueNumber;
+        public string DisplayText => SeriesTitle + " #" + IssueNumber;
         public string CoverImageFileName => SeriesTitle.Replace(" ", "-").ToLower() + "-" + IssueNumber + ".jpg";
 
     }

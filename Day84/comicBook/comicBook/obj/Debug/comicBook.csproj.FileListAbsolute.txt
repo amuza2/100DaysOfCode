@@ -67,6 +67,6 @@ C:\Users\moham\Documents\github\100DaysOfCode\Day84\comicBook\comicBook\bin\Syst
 C:\Users\moham\Documents\github\100DaysOfCode\Day84\comicBook\comicBook\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\moham\Documents\github\100DaysOfCode\Day84\comicBook\comicBook\obj\Debug\comicBook.csproj.AssemblyReference.cache
 C:\Users\moham\Documents\github\100DaysOfCode\Day84\comicBook\comicBook\obj\Debug\comicBook.csproj.CoreCompileInputs.cache
-C:\Users\moham\Documents\github\100DaysOfCode\Day84\comicBook\comicBook\obj\Debug\comicBook.csproj.CopyComplete
 C:\Users\moham\Documents\github\100DaysOfCode\Day84\comicBook\comicBook\obj\Debug\comicBook.dll
 C:\Users\moham\Documents\github\100DaysOfCode\Day84\comicBook\comicBook\obj\Debug\comicBook.pdb
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\comicBook\comicBook\obj\Debug\comicBook.csproj.Up2Date

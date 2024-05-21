@@ -27,6 +27,6 @@ namespace comicBook.Controllers
             };
             return View(comicBook);
         }
-        
+
     }
 }
