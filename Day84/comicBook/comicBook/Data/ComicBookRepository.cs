@@ -57,7 +57,8 @@ namespace comicBook.Data
 				Favorite = false
 			}
 
-	};
+		};
+		public ComicBook[] GetComicBooks() => _comicBooks;
 		public ComicBook GetComicBook(int id)
 		{
 			ComicBook selectedComicBook = null;

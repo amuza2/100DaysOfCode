@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\comicBook\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D00344F1-AF35-41DB-B987-92DA8A7C99FF}|comicBook\\comicBook.csproj|c:\\users\\moham\\documents\\github\\100daysofcode\\day84\\comicbook\\comicbook\\views\\comicbooks\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D00344F1-AF35-41DB-B987-92DA8A7C99FF}|comicBook\\comicBook.csproj|solutionrelative:comicbook\\views\\comicbooks\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D00344F1-AF35-41DB-B987-92DA8A7C99FF}|comicBook\\comicBook.csproj|C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\comicBook\\comicbook\\controllers\\comicbookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D00344F1-AF35-41DB-B987-92DA8A7C99FF}|comicBook\\comicBook.csproj|solutionrelative:comicbook\\controllers\\comicbookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D00344F1-AF35-41DB-B987-92DA8A7C99FF}|comicBook\\comicBook.csproj|c:\\users\\moham\\documents\\github\\100daysofcode\\day84\\comicbook\\comicbook\\data\\comicbookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D00344F1-AF35-41DB-B987-92DA8A7C99FF}|comicBook\\comicBook.csproj|solutionrelative:comicbook\\data\\comicbookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D00344F1-AF35-41DB-B987-92DA8A7C99FF}|comicBook\\comicBook.csproj|c:\\users\\moham\\documents\\github\\100daysofcode\\day84\\comicbook\\comicbook\\views\\comicbooks\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -13,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D00344F1-AF35-41DB-B987-92DA8A7C99FF}|comicBook\\comicBook.csproj|C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\comicBook\\comicbook\\models\\artist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D00344F1-AF35-41DB-B987-92DA8A7C99FF}|comicBook\\comicBook.csproj|solutionrelative:comicbook\\models\\artist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D00344F1-AF35-41DB-B987-92DA8A7C99FF}|comicBook\\comicBook.csproj|c:\\users\\moham\\documents\\github\\100daysofcode\\day84\\comicbook\\comicbook\\data\\comicbookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D00344F1-AF35-41DB-B987-92DA8A7C99FF}|comicBook\\comicBook.csproj|solutionrelative:comicbook\\data\\comicbookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,33 +58,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\comicBook\\comicBook\\Views\\ComicBooks\\Index.cshtml",
+              "RelativeDocumentMoniker": "comicBook\\Views\\ComicBooks\\Index.cshtml",
+              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\comicBook\\comicBook\\Views\\ComicBooks\\Index.cshtml",
+              "RelativeToolTip": "comicBook\\Views\\ComicBooks\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-21T23:05:31.059Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ComicBookRepository.cs",
               "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\comicBook\\comicBook\\Data\\ComicBookRepository.cs",
               "RelativeDocumentMoniker": "comicBook\\Data\\ComicBookRepository.cs",
               "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\comicBook\\comicBook\\Data\\ComicBookRepository.cs",
               "RelativeToolTip": "comicBook\\Data\\ComicBookRepository.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAywBsAAAASAAAA",
+              "ViewState": "AQIAACAAAAAAAAAAAAAcwDwAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-21T21:22:05.476Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Detail.cshtml",
               "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\comicBook\\comicBook\\Views\\ComicBooks\\Detail.cshtml",
               "RelativeDocumentMoniker": "comicBook\\Views\\ComicBooks\\Detail.cshtml",
               "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\comicBook\\comicBook\\Views\\ComicBooks\\Detail.cshtml",
               "RelativeToolTip": "comicBook\\Views\\ComicBooks\\Detail.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAARAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-05-21T01:25:12.541Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Artist.cs",
               "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\comicBook\\comicBook\\Models\\Artist.cs",
               "RelativeDocumentMoniker": "comicBook\\Models\\Artist.cs",
@@ -93,13 +110,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ComicBooksController.cs",
               "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\comicBook\\comicBook\\Controllers\\ComicBooksController.cs",
               "RelativeDocumentMoniker": "comicBook\\Controllers\\ComicBooksController.cs",
               "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\comicBook\\comicBook\\Controllers\\ComicBooksController.cs",
               "RelativeToolTip": "comicBook\\Controllers\\ComicBooksController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAlAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-01-18T16:00:29.251Z",
               "EditorCaption": ""
