@@ -1,5 +1,6 @@
 import PySimpleGUI as sg
- 
+
+# Create a custom popup specifying the window size 
 def custom_yes_no_popup(message, title="Custom Yes/No Popup", size=(300, 150)):
     
     layout = [
