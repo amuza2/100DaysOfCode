@@ -6,7 +6,7 @@
         {
             InitializeComponent();
 
-            MainPage = new TextToSpeechTest();
+            MainPage = new MainPage();
         }
     }
 }

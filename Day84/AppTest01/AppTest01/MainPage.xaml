@@ -15,14 +15,15 @@
             <RowDefinition Height=".3*"/>
             <RowDefinition Height=".7*"/>
         </Grid.RowDefinitions>
+        <!--Upper Part-->
         <Frame Padding="10"
                BackgroundColor="{StaticResource SectionColor}"
                BorderColor="Transparent">
             <Grid>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition Width="1"/>
-                    <ColumnDefinition/>
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="2"/>
+                    <ColumnDefinition />
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
                     <RowDefinition Height=".1*"/>
@@ -42,13 +43,16 @@
                        HorizontalTextAlignment="Center"
                        Text="$0.00"
                        TextColor="{StaticResource LightFont}"
-                       VerticalOptions="CenterAndExpand"
+                       VerticalOptions="Center"
                        />
-                <BoxView Grid.Row="1"
-                         Grid.Column="1"
-                         Margin="0, 10, 0, 0"
-                         VerticalOptions="Center"
-                         Color="Red"/>
+
+                <Frame Grid.Row="1"
+                       Grid.Column="1"
+                       HeightRequest="150"
+                       VerticalOptions="Center"
+                       BackgroundColor="DarkRed"
+                       BorderColor="Transparent"/>
+
 
                 <VerticalStackLayout Grid.Row="1"
                                      Grid.Column="2"
@@ -75,6 +79,99 @@
             </Grid>
         </Frame>
 
+        <!--Lower Part-->
+        <Grid Grid.Row="1"
+              Margin="0,15,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width=".3*"/>
+                <ColumnDefinition Width=".7*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Label Text="Enter your bill: $"
+                   TextColor="{StaticResource LightFont}"
+                   VerticalOptions="Center"/>
+            <Entry x:Name="txbBill"
+                   Grid.Column="1"
+                   BackgroundColor="{StaticResource SectionColor}"
+                   Keyboard="Numeric"
+                   Placeholder="0.0"
+                   TextColor="{StaticResource LightFont}"
+                   VerticalOptions="Center"
+                   Completed="txbBill_Completed"/>
+            <Label Grid.Row="1"
+                   Text="Choose your tip"
+                   TextColor="{StaticResource LightFont}"
+                   VerticalOptions="Center"/>
+            <HorizontalStackLayout Spacing="10"
+                                   Grid.Row="1"
+                                   Grid.Column="1"
+                                   HorizontalOptions="CenterAndExpand"
+                                   HeightRequest="60">
+                <Button x:Name="btnTip1"
+                        Text="10%"
+                        WidthRequest="60"
+                        Pressed="btnTip1_Pressed"/>
+                <Button x:Name="btnTip2"
+                        Text="15%"
+                        WidthRequest="60"
+                        Pressed="btnTip2_Pressed"/>
+                <Button x:Name="btnTip3"
+                        Text="20%"
+                        WidthRequest="60"
+                        Pressed="btnTip3_Pressed"/>
+            </HorizontalStackLayout>
+
+            <Label Grid.Row="2"
+                   x:Name="lblsldTip"
+                   Text="Tip: 0%"
+                   VerticalOptions="Center"
+                   TextColor="{StaticResource LightFont}"/>
+            <Slider x:Name="sliderTip"
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    Minimum="0"
+                    Maximum="50"
+                    
+                    ThumbColor="Violet"
+                    ValueChanged="sliderTip_ValueChanged"/>
+
+            <Label Grid.Row="3"
+                   Text="Split the total"
+                   VerticalOptions="Center"
+                   TextColor="{StaticResource LightFont}"/>
+            <HorizontalStackLayout Grid.Row="3"
+                                   Grid.Column="1"
+                                   HorizontalOptions="CenterAndExpand"
+                                   HeightRequest="60">
+                <Button x:Name="btnMinus"
+                        Text="-"
+                        WidthRequest="60"
+                        Clicked="btnMinus_Clicked"/>
+                <Frame WidthRequest="90"
+                       BackgroundColor="{StaticResource SectionColor}"
+                       BorderColor="Transparent">
+                    <Label x:Name="lblPerson"
+                           Text="1"
+                           FontSize="30"
+                           Margin="-5,-8,0,0"
+                           TextColor="{StaticResource LightFont}"
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center"/>
+                </Frame>
+                <Button x:Name="btnPlus"
+                        Text="+"
+                        WidthRequest="60"
+                        Clicked="btnPlus_Clicked"/>
+            </HorizontalStackLayout>
+
+
+        </Grid>
 
     </Grid>
 

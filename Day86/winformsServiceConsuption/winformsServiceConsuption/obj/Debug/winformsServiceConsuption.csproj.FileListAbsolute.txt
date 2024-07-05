@@ -1,0 +1,10 @@
+C:\Users\moham\Documents\github\100DaysOfCode\Day86\winformsServiceConsuption\winformsServiceConsuption\bin\Debug\winformsServiceConsuption.exe.config
+C:\Users\moham\Documents\github\100DaysOfCode\Day86\winformsServiceConsuption\winformsServiceConsuption\bin\Debug\winformsServiceConsuption.exe
+C:\Users\moham\Documents\github\100DaysOfCode\Day86\winformsServiceConsuption\winformsServiceConsuption\bin\Debug\winformsServiceConsuption.pdb
+C:\Users\moham\Documents\github\100DaysOfCode\Day86\winformsServiceConsuption\winformsServiceConsuption\obj\Debug\winformsServiceConsuption.csproj.AssemblyReference.cache
+C:\Users\moham\Documents\github\100DaysOfCode\Day86\winformsServiceConsuption\winformsServiceConsuption\obj\Debug\winformsServiceConsuption.Form1.resources
+C:\Users\moham\Documents\github\100DaysOfCode\Day86\winformsServiceConsuption\winformsServiceConsuption\obj\Debug\winformsServiceConsuption.Properties.Resources.resources
+C:\Users\moham\Documents\github\100DaysOfCode\Day86\winformsServiceConsuption\winformsServiceConsuption\obj\Debug\winformsServiceConsuption.csproj.GenerateResource.cache
+C:\Users\moham\Documents\github\100DaysOfCode\Day86\winformsServiceConsuption\winformsServiceConsuption\obj\Debug\winformsServiceConsuption.csproj.CoreCompileInputs.cache
+C:\Users\moham\Documents\github\100DaysOfCode\Day86\winformsServiceConsuption\winformsServiceConsuption\obj\Debug\winformsServiceConsuption.exe
+C:\Users\moham\Documents\github\100DaysOfCode\Day86\winformsServiceConsuption\winformsServiceConsuption\obj\Debug\winformsServiceConsuption.pdb

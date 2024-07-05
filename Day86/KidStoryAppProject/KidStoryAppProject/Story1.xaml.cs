@@ -1,4 +1,5 @@
-﻿namespace KidStoryAppProject;
+﻿
+namespace KidStoryAppProject;
 
 public partial class Story1 : ContentPage
 {
@@ -101,11 +102,14 @@ public partial class Story1 : ContentPage
     };
 
     string[] imagesStory1 = { "aa", "bb", "cc", "dd", "ee", "ff" };
-    string[] imagesStory2 = { "s2a", "s2b", "s2c", "s2d", "s2e", "s2f" };
-    string[] imagesStory3 = { "s3a", "s3b", "s3c", "s3d", "s3e", "s3f" };
-    string[] choosedStoryContent = null;
+    string[] imagesStory2 = { "s2a", "s2b", "s2c", "s2d", "s2e", "s2e", "s2f" };
+    string[] imagesStory3 = { "s3a", "s3b", "s3c", "s3d", "s3f", "s3g", "s3h", "s3j", "s3k", "s3k1", "s3m" };
+    string[] choosedStoryContent = {};
 	int page = 0;
+    string[] images = [];
     string title;
+    Locale arabicVoice;
+    CancellationTokenSource speech;
 	public Story1(string storyButton)
 	{
 		InitializeComponent();
@@ -113,23 +117,42 @@ public partial class Story1 : ContentPage
         title = storyButton;
 		lblStoryTitle.Text = $"{(page+1)}/{choosedStoryContent.Length}{title}";
 		GenerateContent();
+        if (page == 0) btnBefore.IsVisible = false;
     }
+    protected async override void OnAppearing()
+    {
+        base.OnAppearing();
+        IEnumerable<Locale> locals = await TextToSpeech.GetLocalesAsync();
+        arabicVoice = locals.Single(v => v.Name == "Arabic");
+	}
     private void Paging()
     {
         lblStoryTitle.Text = $"{(page + 1)}/{choosedStoryContent.Length}{title}";
     }
 	private void chooseContent(string story)
 	{
-		if (story == "الأرنب والسلحفاة") choosedStoryContent = story1;
-		else if (story == "ليلي والذئب") choosedStoryContent = story2;
-		else if (story == "النملة والصرصور") choosedStoryContent = story3;
+		if (story == "الأرنب والسلحفاة")
+        {
+            choosedStoryContent = story1;
+            images = imagesStory1;
+        }
+		else if (story == "ليلي والذئب")
+        {
+            choosedStoryContent = story2;
+            images = imagesStory2;
+        }
+		else if (story == "النملة والصرصور")
+        {
+            choosedStoryContent = story3;
+            images = imagesStory3;
+        }
     }
 	private void GenerateContent()
 	{
 		if(page != choosedStoryContent.Length)
 		{
 			lblStoryText.Text = choosedStoryContent[page];
-            img.Source = $"{imagesStory1[page]}.png";
+            img.Source = $"{images[page]}.png";
 		}
 	}
 
@@ -140,8 +163,18 @@ public partial class Story1 : ContentPage
             if(page < choosedStoryContent.Length - 1) page++;
             lblStoryText.Text = choosedStoryContent[page];
             Paging();
-            img.Source = $"{imagesStory1[page]}.png";
+            img.Source = $"{images[page]}.png";
+            if (speech != null)
+            {
+                CancelSpeech();
+            }
         }
+        // hide next button in the last page
+        if(page == choosedStoryContent.Length - 1)
+            btnAfter.IsVisible = false;
+        // show before button on page 1
+        if(page == 1) btnBefore.IsVisible = true;
+
     }
 
     private void BeforeButton_Clicked(object sender, EventArgs e)
@@ -151,7 +184,45 @@ public partial class Story1 : ContentPage
             page--;
             lblStoryText.Text = choosedStoryContent[page];
             Paging();
-            img.Source = $"{imagesStory1[page]}.png";
+            img.Source = $"{images[page]}.png";
+            if (speech != null)
+            {
+                CancelSpeech();
+            }
         }
+        // hide before button
+        if (page == 0) btnBefore.IsVisible = false;
+        // show after button
+        if (!btnAfter.IsVisible) btnAfter.IsVisible = true;
+    }
+    // text to speech feature
+    private async void btnSpeaker_Clicked(object sender, EventArgs e)
+    {
+        if(speech != null)
+        {
+            CancelSpeech();
+        }
+        else
+        {
+            speech = new CancellationTokenSource();
+            await TextToSpeech.Default.SpeakAsync(choosedStoryContent[page], new SpeechOptions
+            {
+                Locale = arabicVoice
+            }, cancelToken: speech.Token);
+        }
+    }
+    private void CancelSpeech()
+    {
+        speech.Cancel();
+        speech.Dispose();
+        speech = null;
+    }
+    protected override bool OnBackButtonPressed()
+    {
+        if (speech != null)
+        {
+            CancelSpeech();
+        }
+		return true;
     }
 }

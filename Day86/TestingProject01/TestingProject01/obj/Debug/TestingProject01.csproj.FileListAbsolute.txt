@@ -1,0 +1,14 @@
+C:\Users\moham\Documents\github\100DaysOfCode\Day86\TestingProject01\TestingProject01\bin\Debug\TestingProject01.exe.config
+C:\Users\moham\Documents\github\100DaysOfCode\Day86\TestingProject01\TestingProject01\bin\Debug\TestingProject01.exe
+C:\Users\moham\Documents\github\100DaysOfCode\Day86\TestingProject01\TestingProject01\bin\Debug\TestingProject01.pdb
+C:\Users\moham\Documents\github\100DaysOfCode\Day86\TestingProject01\TestingProject01\bin\Debug\EntityFramework.dll
+C:\Users\moham\Documents\github\100DaysOfCode\Day86\TestingProject01\TestingProject01\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\moham\Documents\github\100DaysOfCode\Day86\TestingProject01\TestingProject01\bin\Debug\EntityFramework.xml
+C:\Users\moham\Documents\github\100DaysOfCode\Day86\TestingProject01\TestingProject01\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\moham\Documents\github\100DaysOfCode\Day86\TestingProject01\TestingProject01\obj\Debug\TestingProject01.csproj.AssemblyReference.cache
+C:\Users\moham\Documents\github\100DaysOfCode\Day86\TestingProject01\TestingProject01\obj\Debug\TestingProject01.csproj.CoreCompileInputs.cache
+C:\Users\moham\Documents\github\100DaysOfCode\Day86\TestingProject01\TestingProject01\obj\Debug\TestingP.6B733A6C.Up2Date
+C:\Users\moham\Documents\github\100DaysOfCode\Day86\TestingProject01\TestingProject01\obj\Debug\TestingProject01.exe
+C:\Users\moham\Documents\github\100DaysOfCode\Day86\TestingProject01\TestingProject01\obj\Debug\TestingProject01.pdb
+C:\Users\moham\Documents\github\100DaysOfCode\Day86\TestingProject01\TestingProject01\obj\Debug\TestingProject01.Migrations.CreatePost.resources
+C:\Users\moham\Documents\github\100DaysOfCode\Day86\TestingProject01\TestingProject01\obj\Debug\TestingProject01.csproj.GenerateResource.cache

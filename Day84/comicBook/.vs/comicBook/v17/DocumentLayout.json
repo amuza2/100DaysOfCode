@@ -3,32 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\comicBook\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D00344F1-AF35-41DB-B987-92DA8A7C99FF}|comicBook\\comicBook.csproj|c:\\users\\moham\\documents\\github\\100daysofcode\\day84\\comicbook\\comicbook\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D00344F1-AF35-41DB-B987-92DA8A7C99FF}|comicBook\\comicBook.csproj|solutionrelative:comicbook\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D00344F1-AF35-41DB-B987-92DA8A7C99FF}|comicBook\\comicBook.csproj|C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\comicBook\\comicbook\\data\\comicbookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D00344F1-AF35-41DB-B987-92DA8A7C99FF}|comicBook\\comicBook.csproj|c:\\users\\moham\\documents\\github\\100daysofcode\\day84\\comicbook\\comicbook\\data\\comicbookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D00344F1-AF35-41DB-B987-92DA8A7C99FF}|comicBook\\comicBook.csproj|solutionrelative:comicbook\\data\\comicbookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D00344F1-AF35-41DB-B987-92DA8A7C99FF}|comicBook\\comicBook.csproj|C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\comicBook\\comicbook\\views\\comicbooks\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D00344F1-AF35-41DB-B987-92DA8A7C99FF}|comicBook\\comicBook.csproj|solutionrelative:comicbook\\views\\comicbooks\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D00344F1-AF35-41DB-B987-92DA8A7C99FF}|comicBook\\comicBook.csproj|c:\\users\\moham\\documents\\github\\100daysofcode\\day84\\comicbook\\comicbook\\views\\comicbooks\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D00344F1-AF35-41DB-B987-92DA8A7C99FF}|comicBook\\comicBook.csproj|solutionrelative:comicbook\\views\\comicbooks\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D00344F1-AF35-41DB-B987-92DA8A7C99FF}|comicBook\\comicBook.csproj|c:\\users\\moham\\documents\\github\\100daysofcode\\day84\\comicbook\\comicbook\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D00344F1-AF35-41DB-B987-92DA8A7C99FF}|comicBook\\comicBook.csproj|solutionrelative:comicbook\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D00344F1-AF35-41DB-B987-92DA8A7C99FF}|comicBook\\comicBook.csproj|C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\comicBook\\comicbook\\controllers\\comicbookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D00344F1-AF35-41DB-B987-92DA8A7C99FF}|comicBook\\comicBook.csproj|solutionrelative:comicbook\\controllers\\comicbookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D00344F1-AF35-41DB-B987-92DA8A7C99FF}|comicBook\\comicBook.csproj|C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\comicBook\\comicbook\\models\\artist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D00344F1-AF35-41DB-B987-92DA8A7C99FF}|comicBook\\comicBook.csproj|solutionrelative:comicbook\\models\\artist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D00344F1-AF35-41DB-B987-92DA8A7C99FF}|comicBook\\comicBook.csproj|C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\comicBook\\comicbook\\views\\comicbooks\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D00344F1-AF35-41DB-B987-92DA8A7C99FF}|comicBook\\comicBook.csproj|solutionrelative:comicbook\\views\\comicbooks\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45C2591A-2CD3-4B26-8F79-4002A5CD557F}|FitnessFrog\\FitnessFrog.csproj|C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\comicBook\\fitnessfrog\\views\\entries\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{45C2591A-2CD3-4B26-8F79-4002A5CD557F}|FitnessFrog\\FitnessFrog.csproj|solutionrelative:fitnessfrog\\views\\entries\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45C2591A-2CD3-4B26-8F79-4002A5CD557F}|FitnessFrog\\FitnessFrog.csproj|C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\comicBook\\fitnessfrog\\models\\activity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45C2591A-2CD3-4B26-8F79-4002A5CD557F}|FitnessFrog\\FitnessFrog.csproj|solutionrelative:fitnessfrog\\models\\activity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45C2591A-2CD3-4B26-8F79-4002A5CD557F}|FitnessFrog\\FitnessFrog.csproj|C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\comicBook\\fitnessfrog\\models\\entry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45C2591A-2CD3-4B26-8F79-4002A5CD557F}|FitnessFrog\\FitnessFrog.csproj|solutionrelative:fitnessfrog\\models\\entry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,6 +54,14 @@
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:130:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
@@ -67,91 +71,76 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\comicBook\\comicBook\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "comicBook\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\comicBook\\comicBook\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "comicBook\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAACEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-22T10:47:44.809Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RouteConfig.cs",
-              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\comicBook\\comicBook\\App_Start\\RouteConfig.cs",
-              "RelativeDocumentMoniker": "comicBook\\App_Start\\RouteConfig.cs",
-              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\comicBook\\comicBook\\App_Start\\RouteConfig.cs",
-              "RelativeToolTip": "comicBook\\App_Start\\RouteConfig.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T09:57:59.521Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\comicBook\\comicBook\\Views\\ComicBooks\\Index.cshtml",
-              "RelativeDocumentMoniker": "comicBook\\Views\\ComicBooks\\Index.cshtml",
-              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\comicBook\\comicBook\\Views\\ComicBooks\\Index.cshtml",
-              "RelativeToolTip": "comicBook\\Views\\ComicBooks\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-21T23:05:31.059Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "ComicBookRepository.cs",
               "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\comicBook\\comicBook\\Data\\ComicBookRepository.cs",
               "RelativeDocumentMoniker": "comicBook\\Data\\ComicBookRepository.cs",
               "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\comicBook\\comicBook\\Data\\ComicBookRepository.cs",
               "RelativeToolTip": "comicBook\\Data\\ComicBookRepository.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAcwDwAAAA0AAAA",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAswD0AAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-21T21:22:05.476Z",
+              "WhenOpened": "2024-05-31T16:48:33.994Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Detail.cshtml",
-              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\comicBook\\comicBook\\Views\\ComicBooks\\Detail.cshtml",
-              "RelativeDocumentMoniker": "comicBook\\Views\\ComicBooks\\Detail.cshtml",
-              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\comicBook\\comicBook\\Views\\ComicBooks\\Detail.cshtml",
-              "RelativeToolTip": "comicBook\\Views\\ComicBooks\\Detail.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-21T01:25:12.541Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Artist.cs",
-              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\comicBook\\comicBook\\Models\\Artist.cs",
-              "RelativeDocumentMoniker": "comicBook\\Models\\Artist.cs",
-              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\comicBook\\comicBook\\Models\\Artist.cs",
-              "RelativeToolTip": "comicBook\\Models\\Artist.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-10T09:51:51.573Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "ComicBooksController.cs",
               "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\comicBook\\comicBook\\Controllers\\ComicBooksController.cs",
               "RelativeDocumentMoniker": "comicBook\\Controllers\\ComicBooksController.cs",
               "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\comicBook\\comicBook\\Controllers\\ComicBooksController.cs",
               "RelativeToolTip": "comicBook\\Controllers\\ComicBooksController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAWAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-01-18T16:00:29.251Z"
+              "WhenOpened": "2024-05-31T16:37:23.879Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\comicBook\\comicBook\\Views\\ComicBooks\\Index.cshtml",
+              "RelativeDocumentMoniker": "comicBook\\Views\\ComicBooks\\Index.cshtml",
+              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\comicBook\\comicBook\\Views\\ComicBooks\\Index.cshtml",
+              "RelativeToolTip": "comicBook\\Views\\ComicBooks\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-31T15:19:16.08Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Activity.cs",
+              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\comicBook\\FitnessFrog\\Models\\Activity.cs",
+              "RelativeDocumentMoniker": "FitnessFrog\\Models\\Activity.cs",
+              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\comicBook\\FitnessFrog\\Models\\Activity.cs",
+              "RelativeToolTip": "FitnessFrog\\Models\\Activity.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAswCQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T21:16:35.596Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Entry.cs",
+              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\comicBook\\FitnessFrog\\Models\\Entry.cs",
+              "RelativeDocumentMoniker": "FitnessFrog\\Models\\Entry.cs",
+              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\comicBook\\FitnessFrog\\Models\\Entry.cs",
+              "RelativeToolTip": "FitnessFrog\\Models\\Entry.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T21:16:33.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Add.cshtml",
+              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\comicBook\\FitnessFrog\\Views\\Entries\\Add.cshtml",
+              "RelativeDocumentMoniker": "FitnessFrog\\Views\\Entries\\Add.cshtml",
+              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\comicBook\\FitnessFrog\\Views\\Entries\\Add.cshtml",
+              "RelativeToolTip": "FitnessFrog\\Views\\Entries\\Add.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-22T21:07:30.965Z"
             }
           ]
         },

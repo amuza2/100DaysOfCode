@@ -630,15 +630,11 @@ C:\Users\moham\Documents\github\100DaysOfCode\Day84\AppTest01\AppTest01\obj\Debu
 C:\Users\moham\Documents\github\100DaysOfCode\Day84\AppTest01\AppTest01\obj\Debug\net8.0-android\android\src\crc64338477404e88479c\ControlsAccessibilityDelegate.java
 C:\Users\moham\Documents\github\100DaysOfCode\Day84\AppTest01\AppTest01\obj\Debug\net8.0-android\android\src\crc64338477404e88479c\DragAndDropGestureHandler.java
 C:\Users\moham\Documents\github\100DaysOfCode\Day84\AppTest01\AppTest01\obj\Debug\net8.0-android\android\src\crc64338477404e88479c\DragAndDropGestureHandler_CustomLocalStateData.java
-C:\Users\moham\Documents\github\100DaysOfCode\Day84\AppTest01\AppTest01\obj\Debug\net8.0-android\android\src\crc64338477404e88479c\FormattedStringExtensions_FontSpan.java
-C:\Users\moham\Documents\github\100DaysOfCode\Day84\AppTest01\AppTest01\obj\Debug\net8.0-android\android\src\crc64338477404e88479c\FormattedStringExtensions_LetterSpacingSpan.java
-C:\Users\moham\Documents\github\100DaysOfCode\Day84\AppTest01\AppTest01\obj\Debug\net8.0-android\android\src\crc64338477404e88479c\FormattedStringExtensions_LineHeightSpan.java
 C:\Users\moham\Documents\github\100DaysOfCode\Day84\AppTest01\AppTest01\obj\Debug\net8.0-android\android\src\crc64338477404e88479c\FragmentContainer.java
 C:\Users\moham\Documents\github\100DaysOfCode\Day84\AppTest01\AppTest01\obj\Debug\net8.0-android\android\src\crc64338477404e88479c\GenericAnimatorListener.java
 C:\Users\moham\Documents\github\100DaysOfCode\Day84\AppTest01\AppTest01\obj\Debug\net8.0-android\android\src\crc64338477404e88479c\GenericGlobalLayoutListener.java
 C:\Users\moham\Documents\github\100DaysOfCode\Day84\AppTest01\AppTest01\obj\Debug\net8.0-android\android\src\crc64338477404e88479c\GenericMenuClickListener.java
 C:\Users\moham\Documents\github\100DaysOfCode\Day84\AppTest01\AppTest01\obj\Debug\net8.0-android\android\src\crc64338477404e88479c\GradientStrokeDrawable.java
-C:\Users\moham\Documents\github\100DaysOfCode\Day84\AppTest01\AppTest01\obj\Debug\net8.0-android\android\src\crc64338477404e88479c\GradientStrokeDrawable_GradientShaderFactory.java
 C:\Users\moham\Documents\github\100DaysOfCode\Day84\AppTest01\AppTest01\obj\Debug\net8.0-android\android\src\crc64338477404e88479c\InnerGestureListener.java
 C:\Users\moham\Documents\github\100DaysOfCode\Day84\AppTest01\AppTest01\obj\Debug\net8.0-android\android\src\crc64338477404e88479c\InnerScaleListener.java
 C:\Users\moham\Documents\github\100DaysOfCode\Day84\AppTest01\AppTest01\obj\Debug\net8.0-android\android\src\crc64338477404e88479c\MauiViewPager.java
@@ -1037,3 +1033,8 @@ C:\Users\moham\Documents\github\100DaysOfCode\Day84\AppTest01\AppTest01\obj\Debu
 C:\Users\moham\Documents\github\100DaysOfCode\Day84\AppTest01\AppTest01\obj\Debug\net8.0-android\stamp\_GenerateJavaStubs.stamp
 C:\Users\moham\Documents\github\100DaysOfCode\Day84\AppTest01\AppTest01\obj\Debug\net8.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\moham\Documents\github\100DaysOfCode\Day84\AppTest01\AppTest01\obj\Debug\net8.0-android\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\AppTest01\AppTest01\obj\Debug\net8.0-android\_CompileBindingJava.FileList.txt
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\AppTest01\AppTest01\obj\Debug\net8.0-android\mauiimage.outputs
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\AppTest01\AppTest01\obj\Debug\net8.0-android\android\src\crc6452ffdc5b34af3a0f\FragmentManagerExtensions_CallBacks.java
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\AppTest01\AppTest01\obj\Debug\net8.0-android\android\src\crc6452ffdc5b34af3a0f\MauiMaterialButton_MauiResizableDrawable.java
+C:\Users\moham\Documents\github\100DaysOfCode\Day84\AppTest01\AppTest01\obj\Debug\net8.0-android\_CompileJava.FileList.txt

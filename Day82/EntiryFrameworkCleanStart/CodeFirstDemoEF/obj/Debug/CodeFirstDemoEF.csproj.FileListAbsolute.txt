@@ -1,0 +1,14 @@
+C:\Users\moham\Documents\github\100DaysOfCode\Day82\EntiryFrameworkCleanStart\CodeFirstDemoEF\bin\Debug\CodeFirstDemoEF.exe.config
+C:\Users\moham\Documents\github\100DaysOfCode\Day82\EntiryFrameworkCleanStart\CodeFirstDemoEF\bin\Debug\CodeFirstDemoEF.exe
+C:\Users\moham\Documents\github\100DaysOfCode\Day82\EntiryFrameworkCleanStart\CodeFirstDemoEF\bin\Debug\CodeFirstDemoEF.pdb
+C:\Users\moham\Documents\github\100DaysOfCode\Day82\EntiryFrameworkCleanStart\CodeFirstDemoEF\bin\Debug\EntityFramework.dll
+C:\Users\moham\Documents\github\100DaysOfCode\Day82\EntiryFrameworkCleanStart\CodeFirstDemoEF\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\moham\Documents\github\100DaysOfCode\Day82\EntiryFrameworkCleanStart\CodeFirstDemoEF\bin\Debug\EntityFramework.xml
+C:\Users\moham\Documents\github\100DaysOfCode\Day82\EntiryFrameworkCleanStart\CodeFirstDemoEF\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\moham\Documents\github\100DaysOfCode\Day82\EntiryFrameworkCleanStart\CodeFirstDemoEF\obj\Debug\CodeFirstDemoEF.csproj.AssemblyReference.cache
+C:\Users\moham\Documents\github\100DaysOfCode\Day82\EntiryFrameworkCleanStart\CodeFirstDemoEF\obj\Debug\CodeFirstDemoEF.csproj.CoreCompileInputs.cache
+C:\Users\moham\Documents\github\100DaysOfCode\Day82\EntiryFrameworkCleanStart\CodeFirstDemoEF\obj\Debug\CodeFirs.EC2672D8.Up2Date
+C:\Users\moham\Documents\github\100DaysOfCode\Day82\EntiryFrameworkCleanStart\CodeFirstDemoEF\obj\Debug\CodeFirstDemoEF.exe
+C:\Users\moham\Documents\github\100DaysOfCode\Day82\EntiryFrameworkCleanStart\CodeFirstDemoEF\obj\Debug\CodeFirstDemoEF.pdb
+C:\Users\moham\Documents\github\100DaysOfCode\Day82\EntiryFrameworkCleanStart\CodeFirstDemoEF\obj\Debug\CodeFirstDemoEF.Migrations.CreatePost.resources
+C:\Users\moham\Documents\github\100DaysOfCode\Day82\EntiryFrameworkCleanStart\CodeFirstDemoEF\obj\Debug\CodeFirstDemoEF.csproj.GenerateResource.cache

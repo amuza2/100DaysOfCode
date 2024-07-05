@@ -1,4 +1,6 @@
-﻿namespace KidStoryAppProject
+﻿using static Microsoft.Maui.ApplicationModel.Permissions;
+
+namespace KidStoryAppProject
 {
     public partial class MainPage : ContentPage
     {
@@ -17,6 +19,7 @@
                 Navigation.PushAsync(new Story1(storyButton));
             }
         }
-    }
+	
+	}
 
 }

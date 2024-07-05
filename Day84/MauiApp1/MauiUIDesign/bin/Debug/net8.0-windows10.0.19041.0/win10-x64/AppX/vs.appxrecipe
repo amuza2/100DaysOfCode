@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\moham\Documents\github\100DaysOfCode\Day84\MauiApp1\MauiUIDesign\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-05-12T19:51:04.674</Modified>
+      <Modified>2024-05-19T22:12:50.582</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\moham\Documents\github\100DaysOfCode\Day84\MauiApp1\MauiUIDesign\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-05-12T19:51:04.431</Modified>
+      <Modified>2024-05-19T22:12:50.216</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\moham\Documents\github\100DaysOfCode\Day84\MauiApp1\MauiUIDesign\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\MauiUIDesign.runtimeconfig.json">
       <PackagePath>MauiUIDesign.runtimeconfig.json</PackagePath>
@@ -44,11 +44,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\moham\Documents\github\100DaysOfCode\Day84\MauiApp1\MauiUIDesign\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\MauiUIDesign.dll">
       <PackagePath>MauiUIDesign.dll</PackagePath>
-      <Modified>2024-05-12T19:51:03.079</Modified>
+      <Modified>2024-05-19T22:12:48.275</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\moham\Documents\github\100DaysOfCode\Day84\MauiApp1\MauiUIDesign\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>MauiUIDesign.exe</PackagePath>
-      <Modified>2024-05-12T19:51:03.152</Modified>
+      <Modified>2024-05-19T22:12:48.345</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\moham\Documents\github\100DaysOfCode\Day84\MauiApp1\MauiUIDesign\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -288,7 +288,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\moham\Documents\github\100DaysOfCode\Day84\MauiApp1\MauiUIDesign\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\MauiUIDesign.deps.json">
       <PackagePath>MauiUIDesign.deps.json</PackagePath>
-      <Modified>2024-05-12T19:02:14.574</Modified>
+      <Modified>2024-05-19T22:12:49.636</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\moham\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>

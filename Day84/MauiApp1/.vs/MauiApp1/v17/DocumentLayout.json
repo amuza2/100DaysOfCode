@@ -1,20 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\MauiApp1\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{551D16FC-03A6-41C8-A1D6-A55C48EACC3C}|ColorMakerMAUI\\ColorMakerMAUI.csproj|c:\\users\\moham\\documents\\github\\100daysofcode\\day84\\mauiapp1\\colormakermaui\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{551D16FC-03A6-41C8-A1D6-A55C48EACC3C}|ColorMakerMAUI\\ColorMakerMAUI.csproj|solutionrelative:colormakermaui\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{551D16FC-03A6-41C8-A1D6-A55C48EACC3C}|ColorMakerMAUI\\ColorMakerMAUI.csproj|c:\\users\\moham\\documents\\github\\100daysofcode\\day84\\mauiapp1\\colormakermaui\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{551D16FC-03A6-41C8-A1D6-A55C48EACC3C}|ColorMakerMAUI\\ColorMakerMAUI.csproj|solutionrelative:colormakermaui\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{551D16FC-03A6-41C8-A1D6-A55C48EACC3C}|ColorMakerMAUI\\ColorMakerMAUI.csproj|c:\\users\\moham\\documents\\github\\100daysofcode\\day84\\mauiapp1\\colormakermaui\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{551D16FC-03A6-41C8-A1D6-A55C48EACC3C}|ColorMakerMAUI\\ColorMakerMAUI.csproj|solutionrelative:colormakermaui\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -22,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,50 +17,35 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MauiProgram.cs",
-              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\MauiApp1\\ColorMakerMAUI\\MauiProgram.cs",
-              "RelativeDocumentMoniker": "ColorMakerMAUI\\MauiProgram.cs",
-              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\MauiApp1\\ColorMakerMAUI\\MauiProgram.cs",
-              "RelativeToolTip": "ColorMakerMAUI\\MauiProgram.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAA0wAoAAABAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T20:00:54.465Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainPage.xaml",
-              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\MauiApp1\\ColorMakerMAUI\\MainPage.xaml",
-              "RelativeDocumentMoniker": "ColorMakerMAUI\\MainPage.xaml",
-              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\MauiApp1\\ColorMakerMAUI\\MainPage.xaml",
-              "RelativeToolTip": "ColorMakerMAUI\\MainPage.xaml",
-              "ViewState": "AQIAAFQAAAAAAAAAAAAAAFkAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-02T11:13:40.671Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MainPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\MauiApp1\\ColorMakerMAUI\\MainPage.xaml.cs",
-              "RelativeDocumentMoniker": "ColorMakerMAUI\\MainPage.xaml.cs",
-              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day84\\MauiApp1\\ColorMakerMAUI\\MainPage.xaml.cs",
-              "RelativeToolTip": "ColorMakerMAUI\\MainPage.xaml.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAAwCUAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T11:12:10.357Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             }
           ]
         },

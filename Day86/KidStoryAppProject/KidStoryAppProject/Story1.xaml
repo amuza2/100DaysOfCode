@@ -9,11 +9,19 @@
             <Frame Padding="10"
                    BackgroundColor="LightSkyBlue"
                    BorderColor="Transparent">
-                <Label x:Name="lblStoryTitle"
-                       Text="Welcome to .NET MAUI!"
-                       VerticalOptions="Center"
-                       HorizontalOptions="Center"
-                       FontSize="40"/>
+                <HorizontalStackLayout HorizontalOptions="Center">
+                    <Label x:Name="lblStoryTitle"
+                           Text="Welcome to .NET MAUI!"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"
+                           FontSize="40"/>
+                    <ImageButton x:Name="btnSpeaker"
+                                 Source="speaker.png"
+                                 WidthRequest="50"
+                                 HeightRequest="50"
+                                 Clicked="btnSpeaker_Clicked"
+                                 />
+                </HorizontalStackLayout>
             </Frame>
 
             <Image x:Name="img"
@@ -24,14 +32,17 @@
                    BorderColor="Transparent">
                 <Label x:Name="lblStoryText"
                        Text="..........."
-                       FontSize="18"/>
+                       FontSize="18"
+                       HorizontalTextAlignment="End"/>
             </Frame>
             <HorizontalStackLayout Spacing="20"
                                    HorizontalOptions="Center">
-                <Button Text="قبل"
+                <Button x:Name="btnBefore"
+                        Text="قبل"
                         Clicked="BeforeButton_Clicked"
                         WidthRequest="100"/>
-                <Button Text="تالي"
+                <Button x:Name="btnAfter"
+                        Text="تالي"
                         Clicked="NextButton_Clicked"
                         WidthRequest="100"/>
             </HorizontalStackLayout>
