@@ -1,0 +1,13 @@
+body::before {
+    display: block;
+    content: '';
+    height: 70px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 70px;
+}
