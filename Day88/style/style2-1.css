@@ -1,0 +1,19 @@
+:root {
+    --bs-navbar-height: 90px;
+}
+
+body {
+    padding-top: 40px;
+}
+
+/* .navbar {
+    height: var(--bs-navbar-height);
+} */
+
+section {
+    scroll-margin-top: var(--bs-navbar-height);
+}
+
+.custom-image-width {
+    width: 90px;
+}
