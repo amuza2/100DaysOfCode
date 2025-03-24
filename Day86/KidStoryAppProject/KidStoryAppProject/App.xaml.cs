@@ -6,7 +6,17 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            // MainPage = new AppShell();
+           var navigationPage = new NavigationPage(new MainPage())
+        {
+            BarBackgroundColor = Colors.Pink,
+            BarTextColor = Colors.White
+        };
+        
+        // Hide the navigation bar
+        NavigationPage.SetHasNavigationBar(navigationPage.CurrentPage, false);
+        
+        MainPage = navigationPage;
         }
     }
 }

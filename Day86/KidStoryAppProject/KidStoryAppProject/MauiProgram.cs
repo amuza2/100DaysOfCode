@@ -15,6 +15,12 @@ namespace KidStoryAppProject
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
 
+                builder.Services.AddSingleton<IStoryRepository, ArabicStoryRepository>();
+                builder.Services.AddSingleton<IStoryService, StoryService>();
+                builder.Services.AddSingleton<ITextToSpeechService, TextToSpeechService>();
+                builder.Services.AddTransient<Story1>();
+                builder.Services.AddTransient<MainPage>();
+
 #if DEBUG
     		builder.Logging.AddDebug();
 #endif

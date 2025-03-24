@@ -1,35 +1,136 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="KidStoryAppProject.MainPage">
+<ContentPage
+    x:Class="KidStoryAppProject.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundColor="#FFF5E6">
 
-    <VerticalStackLayout Spacing="20"
-                         Padding="10">
-        <Frame BackgroundColor="LightSkyBlue">
-            <Label Text="قصص أطفال"
-                   HorizontalOptions="Center"
-                   FontSize="40"/>
-
+    <Grid RowDefinitions="Auto,*">
+        <!--  Header  -->
+        <Frame
+            Grid.Row="0"
+            Margin="20,20,20,0"
+            BackgroundColor="#FFB6C1"
+            CornerRadius="25"
+            HasShadow="True">
+            <Label
+                FontAttributes="Bold"
+                FontSize="32"
+                HorizontalOptions="Center"
+                Text="أطفالنا"
+                TextColor="White" />
         </Frame>
-        <Frame BackgroundColor="LightSkyBlue"
-               Margin="0,90,0,0">
-            <VerticalStackLayout Spacing="20">
 
-                <Button Text="الأرنب والسلحفاة"
-                        WidthRequest="150"
-                        FontSize="20"
-                        Clicked="Button_Clicked"/>
-                <Button Text="ليلي والذئب"
-                        WidthRequest="150"
-                        FontSize="20"
-                        Clicked="Button_Clicked"/>
-                <Button Text="النملة والصرصور"
-                        WidthRequest="150"
-                        FontSize="20"
-                        Clicked="Button_Clicked"/>
+        <!--  Stories Collection  -->
+        <CollectionView
+            x:Name="storiesCollection"
+            Grid.Row="1"
+            Margin="20">
+            <CollectionView.ItemsLayout>
+                <GridItemsLayout
+                    Orientation="Vertical"
+                    Span="1"
+                    VerticalItemSpacing="20" />
+            </CollectionView.ItemsLayout>
 
-            </VerticalStackLayout>
-        </Frame>
-    </VerticalStackLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame
+                        Margin="5"
+                        Padding="15"
+                        BackgroundColor="White"
+                        CornerRadius="20"
+                        HasShadow="True">
+                        <Grid ColumnDefinitions="*,Auto" ColumnSpacing="10">
+                            <!--  Story Image  -->
+                            <Frame
+                                Grid.Column="1"
+                                Padding="0"
+                                CornerRadius="15"
+                                HeightRequest="160"
+                                IsClippedToBounds="True"
+                                WidthRequest="120">
+                                <Image Aspect="AspectFill" Source="{Binding CoverImage}" />
+                            </Frame>
+                            <!--  Story Details and Button  -->
+                            <Grid Grid.Column="0" RowDefinitions="Auto,Auto,*">
+
+                                <!--  Title  -->
+                                <Label
+                                    Grid.Row="0"
+                                    Margin="0,0,0,5"
+                                    FontAttributes="Bold"
+                                    FontSize="22"
+                                    Text="{Binding Title}"
+                                    TextColor="#333333" />
+
+                                <!--  Description  -->
+                                <Label
+                                    Grid.Row="1"
+                                    FontSize="16"
+                                    LineBreakMode="TailTruncation"
+                                    MaxLines="2"
+                                    Text="{Binding Description}"
+                                    TextColor="#666666" />
+
+                                <!--  Read Story Button  -->
+                                <HorizontalStackLayout
+                                    Grid.Row="2"
+                                    Margin="0,10,0,0"
+                                    HorizontalOptions="Start"
+                                    Spacing="10"
+                                    VerticalOptions="End">
+                                    <!--  Read Button  -->
+                                    <Button
+                                        BackgroundColor="#FFB6C1"
+                                        Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}}, Path=ReadStoryCommand}"
+                                        CommandParameter="{Binding .}"
+                                        CornerRadius="25"
+                                        FontAttributes="Bold"
+                                        FontSize="16"
+                                        HeightRequest="45"
+                                        Text="إقرأ"
+                                        TextColor="White"
+                                        WidthRequest="80">
+                                        <Button.Shadow>
+                                            <Shadow
+                                                Brush="#80000000"
+                                                Radius="3"
+                                                Offset="0,3" />
+                                        </Button.Shadow>
+                                    </Button>
+
+                                    <!--  Listen Button  -->
+                                    <Button
+                                        BackgroundColor="#FFB6C1"
+                                        Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}}, Path=ListenStoryCommand}"
+                                        CommandParameter="{Binding .}"
+                                        CornerRadius="25"
+                                        FontAttributes="Bold"
+                                        FontSize="16"
+                                        HeightRequest="45"
+                                        Text="إسمع"
+                                        TextColor="White"
+                                        WidthRequest="80">
+                                        <Button.Shadow>
+                                            <Shadow
+                                                Brush="#80000000"
+                                                Radius="3"
+                                                Offset="0,3" />
+                                        </Button.Shadow>
+                                    </Button>
+                                </HorizontalStackLayout>
+
+                            </Grid>
+
+
+
+
+                        </Grid>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
 
 </ContentPage>

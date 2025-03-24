@@ -1,52 +1,107 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="KidStoryAppProject.Story1"
-             Title="Home">
-    <ScrollView>
-        <VerticalStackLayout HorizontalOptions="Center"
-                             Spacing="20">
-            <Frame Padding="10"
-                   BackgroundColor="LightSkyBlue"
-                   BorderColor="Transparent">
-                <HorizontalStackLayout HorizontalOptions="Center">
-                    <Label x:Name="lblStoryTitle"
-                           Text="Welcome to .NET MAUI!"
-                           VerticalOptions="Center"
-                           HorizontalOptions="Center"
-                           FontSize="40"/>
-                    <ImageButton x:Name="btnSpeaker"
-                                 Source="speaker.png"
-                                 WidthRequest="50"
-                                 HeightRequest="50"
-                                 Clicked="btnSpeaker_Clicked"
-                                 />
-                </HorizontalStackLayout>
-            </Frame>
+<ContentPage
+    x:Class="KidStoryAppProject.Story1"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="قصة"
+    BackgroundColor="#FFF5E6">
 
-            <Image x:Name="img"
-                   Source="aa.png"/>
+    <Grid RowDefinitions="Auto,*,Auto">
+        <!--  Header with Title and Speaker  -->
+        <Frame
+            Grid.Row="0"
+            Margin="20,20,20,0"
+            Padding="15"
+            BackgroundColor="#FFB6C1"
+            CornerRadius="25"
+            HasShadow="True">
+            <Grid ColumnDefinitions="Auto,*">
 
-            <Frame BackgroundColor="SkyBlue"
-                   Padding="15"
-                   BorderColor="Transparent">
-                <Label x:Name="lblStoryText"
-                       Text="..........."
-                       FontSize="18"
-                       HorizontalTextAlignment="End"/>
-            </Frame>
-            <HorizontalStackLayout Spacing="20"
-                                   HorizontalOptions="Center">
-                <Button x:Name="btnBefore"
-                        Text="قبل"
-                        Clicked="BeforeButton_Clicked"
-                        WidthRequest="100"/>
-                <Button x:Name="btnAfter"
-                        Text="تالي"
-                        Clicked="NextButton_Clicked"
-                        WidthRequest="100"/>
-            </HorizontalStackLayout>
+                <ImageButton
+                    x:Name="btnSpeaker"
+                    Grid.Column="0"
+                    Aspect="AspectFit"
+                    BackgroundColor="Transparent"
+                    Clicked="btnSpeaker_Clicked"
+                    HeightRequest="40"
+                    HorizontalOptions="Start"
+                    Source="speaker.png"
+                    WidthRequest="40" />
 
-        </VerticalStackLayout>
-    </ScrollView>
+                <Label
+                    x:Name="lblStoryTitle"
+                    Grid.Column="1"
+                    FontAttributes="Bold"
+                    FontSize="28"
+                    HorizontalOptions="End"
+                    HorizontalTextAlignment="End"
+                    Text="صفحة"
+                    TextColor="White"
+                    VerticalOptions="Center" />
+
+            </Grid>
+        </Frame>
+
+        <!--  Story Content  -->
+        <ScrollView Grid.Row="1" Margin="20,10">
+            <VerticalStackLayout Spacing="20">
+                <!--  Story Image  -->
+                <Frame
+                    Padding="0"
+                    CornerRadius="20"
+                    HasShadow="True"
+                    IsClippedToBounds="True">
+                    <Image
+                        x:Name="img"
+                        Aspect="AspectFill"
+                        HeightRequest="300" />
+                </Frame>
+
+                <!--  Story Text  -->
+                <Frame
+                    Padding="20"
+                    BackgroundColor="White"
+                    CornerRadius="20"
+                    HasShadow="True">
+                    <Label
+                        x:Name="lblStoryText"
+                        FontSize="20"
+                        HorizontalOptions="End"
+                        HorizontalTextAlignment="End"
+                        LineHeight="1.5"
+                        TextColor="#333333" />
+                </Frame>
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <!--  Navigation Buttons  -->
+        <Grid
+            Grid.Row="2"
+            Margin="20,0,20,20"
+            ColumnDefinitions="*,*">
+
+            <Button
+                x:Name="btnBefore"
+                Grid.Column="0"
+                Margin="5"
+                BackgroundColor="#FFB6C1"
+                Clicked="BeforeButton_Clicked"
+                CornerRadius="25"
+                FontSize="18"
+                Text="قبل"
+                TextColor="White" />
+
+            <Button
+                x:Name="btnAfter"
+                Grid.Column="1"
+                Margin="5"
+                BackgroundColor="#FFB6C1"
+                Clicked="NextButton_Clicked"
+                CornerRadius="25"
+                FontSize="18"
+                Text="بعد"
+                TextColor="White" />
+        </Grid>
+    </Grid>
+
 </ContentPage>

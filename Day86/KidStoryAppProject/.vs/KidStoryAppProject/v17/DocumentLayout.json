@@ -3,24 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day86\\KidStoryAppProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DEF5955C-C594-40E6-8BB7-24F5F7E42C47}|KidStoryAppProject\\KidStoryAppProject.csproj|c:\\users\\moham\\documents\\github\\100daysofcode\\day86\\kidstoryappproject\\kidstoryappproject\\story1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DEF5955C-C594-40E6-8BB7-24F5F7E42C47}|KidStoryAppProject\\KidStoryAppProject.csproj|solutionrelative:kidstoryappproject\\story1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DEF5955C-C594-40E6-8BB7-24F5F7E42C47}|KidStoryAppProject\\KidStoryAppProject.csproj|c:\\users\\moham\\documents\\github\\100daysofcode\\day86\\kidstoryappproject\\kidstoryappproject\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DEF5955C-C594-40E6-8BB7-24F5F7E42C47}|KidStoryAppProject\\KidStoryAppProject.csproj|solutionrelative:kidstoryappproject\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DEF5955C-C594-40E6-8BB7-24F5F7E42C47}|KidStoryAppProject\\KidStoryAppProject.csproj|c:\\users\\moham\\documents\\github\\100daysofcode\\day86\\kidstoryappproject\\kidstoryappproject\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DEF5955C-C594-40E6-8BB7-24F5F7E42C47}|KidStoryAppProject\\KidStoryAppProject.csproj|solutionrelative:kidstoryappproject\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DEF5955C-C594-40E6-8BB7-24F5F7E42C47}|KidStoryAppProject\\KidStoryAppProject.csproj|c:\\users\\moham\\documents\\github\\100daysofcode\\day86\\kidstoryappproject\\kidstoryappproject\\kidstoryappproject.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{DEF5955C-C594-40E6-8BB7-24F5F7E42C47}|KidStoryAppProject\\KidStoryAppProject.csproj|solutionrelative:kidstoryappproject\\kidstoryappproject.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DEF5955C-C594-40E6-8BB7-24F5F7E42C47}|KidStoryAppProject\\KidStoryAppProject.csproj|c:\\users\\moham\\documents\\github\\100daysofcode\\day86\\kidstoryappproject\\kidstoryappproject\\story1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{DEF5955C-C594-40E6-8BB7-24F5F7E42C47}|KidStoryAppProject\\KidStoryAppProject.csproj|solutionrelative:kidstoryappproject\\story1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{DEF5955C-C594-40E6-8BB7-24F5F7E42C47}|KidStoryAppProject\\KidStoryAppProject.csproj|c:\\users\\moham\\documents\\github\\100daysofcode\\day86\\kidstoryappproject\\kidstoryappproject\\platforms\\android\\mainapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEF5955C-C594-40E6-8BB7-24F5F7E42C47}|KidStoryAppProject\\KidStoryAppProject.csproj|solutionrelative:kidstoryappproject\\platforms\\android\\mainapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEF5955C-C594-40E6-8BB7-24F5F7E42C47}|KidStoryAppProject\\KidStoryAppProject.csproj|c:\\users\\moham\\documents\\github\\100daysofcode\\day86\\kidstoryappproject\\kidstoryappproject\\resources\\styles\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DEF5955C-C594-40E6-8BB7-24F5F7E42C47}|KidStoryAppProject\\KidStoryAppProject.csproj|solutionrelative:kidstoryappproject\\resources\\styles\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEF5955C-C594-40E6-8BB7-24F5F7E42C47}|KidStoryAppProject\\KidStoryAppProject.csproj|c:\\users\\moham\\documents\\github\\100daysofcode\\day86\\kidstoryappproject\\kidstoryappproject\\platforms\\android\\resources\\values\\colors.xml||{6B79B2C4-8503-4A04-8248-ADCEF2B49CB1}",
+      "RelativeMoniker": "D:0:0:{DEF5955C-C594-40E6-8BB7-24F5F7E42C47}|KidStoryAppProject\\KidStoryAppProject.csproj|solutionrelative:kidstoryappproject\\platforms\\android\\resources\\values\\colors.xml||{6B79B2C4-8503-4A04-8248-ADCEF2B49CB1}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DEF5955C-C594-40E6-8BB7-24F5F7E42C47}|KidStoryAppProject\\KidStoryAppProject.csproj|c:\\users\\moham\\documents\\github\\100daysofcode\\day86\\kidstoryappproject\\kidstoryappproject\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{DEF5955C-C594-40E6-8BB7-24F5F7E42C47}|KidStoryAppProject\\KidStoryAppProject.csproj|solutionrelative:kidstoryappproject\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEF5955C-C594-40E6-8BB7-24F5F7E42C47}|KidStoryAppProject\\KidStoryAppProject.csproj|c:\\users\\moham\\documents\\github\\100daysofcode\\day86\\kidstoryappproject\\kidstoryappproject\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEF5955C-C594-40E6-8BB7-24F5F7E42C47}|KidStoryAppProject\\KidStoryAppProject.csproj|solutionrelative:kidstoryappproject\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEF5955C-C594-40E6-8BB7-24F5F7E42C47}|KidStoryAppProject\\KidStoryAppProject.csproj|c:\\users\\moham\\documents\\github\\100daysofcode\\day86\\kidstoryappproject\\kidstoryappproject\\story1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEF5955C-C594-40E6-8BB7-24F5F7E42C47}|KidStoryAppProject\\KidStoryAppProject.csproj|solutionrelative:kidstoryappproject\\story1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEF5955C-C594-40E6-8BB7-24F5F7E42C47}|KidStoryAppProject\\KidStoryAppProject.csproj|c:\\users\\moham\\documents\\github\\100daysofcode\\day86\\kidstoryappproject\\kidstoryappproject\\storyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEF5955C-C594-40E6-8BB7-24F5F7E42C47}|KidStoryAppProject\\KidStoryAppProject.csproj|solutionrelative:kidstoryappproject\\storyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DEF5955C-C594-40E6-8BB7-24F5F7E42C47}|KidStoryAppProject\\KidStoryAppProject.csproj|c:\\users\\moham\\documents\\github\\100daysofcode\\day86\\kidstoryappproject\\kidstoryappproject\\arabicstoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DEF5955C-C594-40E6-8BB7-24F5F7E42C47}|KidStoryAppProject\\KidStoryAppProject.csproj|solutionrelative:kidstoryappproject\\arabicstoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,10 +55,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Bookmark",
@@ -65,65 +81,146 @@
               "Name": "ST:131:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MauiProgram.cs",
-              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day86\\KidStoryAppProject\\KidStoryAppProject\\MauiProgram.cs",
-              "RelativeDocumentMoniker": "KidStoryAppProject\\MauiProgram.cs",
-              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day86\\KidStoryAppProject\\KidStoryAppProject\\MauiProgram.cs",
-              "RelativeToolTip": "KidStoryAppProject\\MauiProgram.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T01:34:31.411Z"
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day86\\KidStoryAppProject\\KidStoryAppProject\\MainPage.xaml.cs",
-              "RelativeDocumentMoniker": "KidStoryAppProject\\MainPage.xaml.cs",
-              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day86\\KidStoryAppProject\\KidStoryAppProject\\MainPage.xaml.cs",
-              "RelativeToolTip": "KidStoryAppProject\\MainPage.xaml.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAxwBUAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T01:32:25.939Z"
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Story1.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day86\\KidStoryAppProject\\KidStoryAppProject\\Story1.xaml.cs",
-              "RelativeDocumentMoniker": "KidStoryAppProject\\Story1.xaml.cs",
-              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day86\\KidStoryAppProject\\KidStoryAppProject\\Story1.xaml.cs",
-              "RelativeToolTip": "KidStoryAppProject\\Story1.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAH0AAAA9AAAA",
+              "Title": "KidStoryAppProject",
+              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day86\\KidStoryAppProject\\KidStoryAppProject\\KidStoryAppProject.csproj",
+              "RelativeDocumentMoniker": "KidStoryAppProject\\KidStoryAppProject.csproj",
+              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day86\\KidStoryAppProject\\KidStoryAppProject\\KidStoryAppProject.csproj",
+              "RelativeToolTip": "KidStoryAppProject\\KidStoryAppProject.csproj",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-23T19:32:25.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "colors.xml",
+              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day86\\KidStoryAppProject\\KidStoryAppProject\\Platforms\\Android\\Resources\\values\\colors.xml",
+              "RelativeDocumentMoniker": "KidStoryAppProject\\Platforms\\Android\\Resources\\values\\colors.xml",
+              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day86\\KidStoryAppProject\\KidStoryAppProject\\Platforms\\Android\\Resources\\values\\colors.xml",
+              "RelativeToolTip": "KidStoryAppProject\\Platforms\\Android\\Resources\\values\\colors.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-02-23T19:13:35.671Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainApplication.cs",
+              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day86\\KidStoryAppProject\\KidStoryAppProject\\Platforms\\Android\\MainApplication.cs",
+              "RelativeDocumentMoniker": "KidStoryAppProject\\Platforms\\Android\\MainApplication.cs",
+              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day86\\KidStoryAppProject\\KidStoryAppProject\\Platforms\\Android\\MainApplication.cs",
+              "RelativeToolTip": "KidStoryAppProject\\Platforms\\Android\\MainApplication.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T23:17:38.199Z",
+              "WhenOpened": "2025-02-23T19:13:27.391Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "Styles.xaml",
+              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day86\\KidStoryAppProject\\KidStoryAppProject\\Resources\\Styles\\Styles.xaml",
+              "RelativeDocumentMoniker": "KidStoryAppProject\\Resources\\Styles\\Styles.xaml",
+              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day86\\KidStoryAppProject\\KidStoryAppProject\\Resources\\Styles\\Styles.xaml",
+              "RelativeToolTip": "KidStoryAppProject\\Resources\\Styles\\Styles.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-23T19:05:20.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Story1.xaml",
               "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day86\\KidStoryAppProject\\KidStoryAppProject\\Story1.xaml",
               "RelativeDocumentMoniker": "KidStoryAppProject\\Story1.xaml",
               "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day86\\KidStoryAppProject\\KidStoryAppProject\\Story1.xaml",
               "RelativeToolTip": "KidStoryAppProject\\Story1.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACsAAAApAAAA",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAEcAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-29T23:17:23.891Z"
+              "WhenOpened": "2025-02-23T17:54:51.937Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
+              "Title": "ArabicStoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day86\\KidStoryAppProject\\KidStoryAppProject\\ArabicStoryRepository.cs",
+              "RelativeDocumentMoniker": "KidStoryAppProject\\ArabicStoryRepository.cs",
+              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day86\\KidStoryAppProject\\KidStoryAppProject\\ArabicStoryRepository.cs",
+              "RelativeToolTip": "KidStoryAppProject\\ArabicStoryRepository.cs",
+              "ViewState": "AgIAAJgAAAAAAAAAAAAAAH4AAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T17:10:46.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "StoryService.cs",
+              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day86\\KidStoryAppProject\\KidStoryAppProject\\StoryService.cs",
+              "RelativeDocumentMoniker": "KidStoryAppProject\\StoryService.cs",
+              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day86\\KidStoryAppProject\\KidStoryAppProject\\StoryService.cs",
+              "RelativeToolTip": "KidStoryAppProject\\StoryService.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAADAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T17:10:10.513Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Story1.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day86\\KidStoryAppProject\\KidStoryAppProject\\Story1.xaml.cs",
+              "RelativeDocumentMoniker": "KidStoryAppProject\\Story1.xaml.cs",
+              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day86\\KidStoryAppProject\\KidStoryAppProject\\Story1.xaml.cs",
+              "RelativeToolTip": "KidStoryAppProject\\Story1.xaml.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACAAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T17:55:28.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "MainPage.xaml",
               "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day86\\KidStoryAppProject\\KidStoryAppProject\\MainPage.xaml",
               "RelativeDocumentMoniker": "KidStoryAppProject\\MainPage.xaml",
               "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day86\\KidStoryAppProject\\KidStoryAppProject\\MainPage.xaml",
               "RelativeToolTip": "KidStoryAppProject\\MainPage.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAmAAAA",
+              "ViewState": "AgIAADcAAAAAAAAAAAAAAHgAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-04-29T22:20:09.431Z"
+              "WhenOpened": "2024-04-29T22:20:09.431Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day86\\KidStoryAppProject\\KidStoryAppProject\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "KidStoryAppProject\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day86\\KidStoryAppProject\\KidStoryAppProject\\MainPage.xaml.cs",
+              "RelativeToolTip": "KidStoryAppProject\\MainPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T01:32:25.939Z",
+              "EditorCaption": ""
             }
           ]
         },

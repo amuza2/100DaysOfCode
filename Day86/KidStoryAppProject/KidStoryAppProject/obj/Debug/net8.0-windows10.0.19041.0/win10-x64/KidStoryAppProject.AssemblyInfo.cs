@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KidStoryAppProject")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+bb81039aebca67bbd53c8011f1e8ac6ddd8f1b99")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+6c63184d014d97444b0a1da9eb4284463b866c51")]
 [assembly: System.Reflection.AssemblyProductAttribute("KidStoryAppProject")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KidStoryAppProject")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

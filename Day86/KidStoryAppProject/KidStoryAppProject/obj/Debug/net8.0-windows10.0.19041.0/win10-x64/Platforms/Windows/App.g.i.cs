@@ -18,9 +18,10 @@ namespace KidStoryAppProject.WinUI
     public static class Program
     {
         [global::System.Runtime.InteropServices.DllImport("Microsoft.ui.xaml.dll")]
+        [global::System.Runtime.InteropServices.DefaultDllImportSearchPaths(global::System.Runtime.InteropServices.DllImportSearchPath.SafeDirectories)]
         private static extern void XamlCheckProcessRequirements();
 
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.UI.Xaml.Markup.Compiler"," 3.0.0.2307")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.UI.Xaml.Markup.Compiler"," 3.0.0.2408")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.STAThreadAttribute]
         static void Main(string[] args)
@@ -39,12 +40,12 @@ namespace KidStoryAppProject.WinUI
 
     partial class App : global::Microsoft.Maui.MauiWinUIApplication
     {
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.UI.Xaml.Markup.Compiler"," 3.0.0.2307")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.UI.Xaml.Markup.Compiler"," 3.0.0.2408")]
         private bool _contentLoaded;
         /// <summary>
         /// InitializeComponent()
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.UI.Xaml.Markup.Compiler"," 3.0.0.2307")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.UI.Xaml.Markup.Compiler"," 3.0.0.2408")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         public void InitializeComponent()
         {
@@ -58,6 +59,12 @@ namespace KidStoryAppProject.WinUI
 
 #if DEBUG && !DISABLE_XAML_GENERATED_BINDING_DEBUG_OUTPUT
             DebugSettings.BindingFailed += (sender, args) =>
+            {
+                global::System.Diagnostics.Debug.WriteLine(args.Message);
+            };
+#endif
+#if DEBUG && !DISABLE_XAML_GENERATED_RESOURCE_REFERENCE_DEBUG_OUTPUT
+            DebugSettings.XamlResourceReferenceFailed  += (sender, args) =>
             {
                 global::System.Diagnostics.Debug.WriteLine(args.Message);
             };

@@ -859,6 +859,9 @@ microsoft.maui.platform.MauiBoxView;crc6452ffdc5b34af3a0f.MauiBoxView
 Microsoft.Maui.Platform.MauiDatePicker, Microsoft.Maui;crc6452ffdc5b34af3a0f.MauiDatePicker
 Microsoft.Maui.Platform.MauiDatePicker;crc6452ffdc5b34af3a0f.MauiDatePicker
 microsoft.maui.platform.MauiDatePicker;crc6452ffdc5b34af3a0f.MauiDatePicker
+Microsoft.Maui.Platform.MauiLayerDrawable, Microsoft.Maui;crc6452ffdc5b34af3a0f.MauiLayerDrawable
+Microsoft.Maui.Platform.MauiLayerDrawable;crc6452ffdc5b34af3a0f.MauiLayerDrawable
+microsoft.maui.platform.MauiLayerDrawable;crc6452ffdc5b34af3a0f.MauiLayerDrawable
 Microsoft.Maui.Platform.MauiMaterialButton, Microsoft.Maui;crc6452ffdc5b34af3a0f.MauiMaterialButton
 Microsoft.Maui.Platform.MauiMaterialButton;crc6452ffdc5b34af3a0f.MauiMaterialButton
 microsoft.maui.platform.MauiMaterialButton;crc6452ffdc5b34af3a0f.MauiMaterialButton
