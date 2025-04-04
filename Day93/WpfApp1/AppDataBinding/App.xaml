@@ -1,0 +1,15 @@
+﻿<Application
+    x:Class="AppDataBinding.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:AppDataBinding">
+    <Application.Resources>
+        <BooleanToVisibilityConverter x:Key="BoolToVis" />
+        <ControlTemplate x:Key="ValidationErrorTemplate">
+            <StackPanel>
+                <AdornedElementPlaceholder x:Name="textBox" />
+                <TextBlock Foreground="Red" Text="{Binding [0].ErrorContent}" />
+            </StackPanel>
+        </ControlTemplate>
+    </Application.Resources>
+</Application>

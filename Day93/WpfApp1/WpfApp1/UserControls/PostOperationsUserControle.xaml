@@ -1,0 +1,23 @@
+﻿<UserControl
+    x:Class="WpfApp1.UserControls.PostOperationsUserControle"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:WpfApp1.UserControls"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="32"
+    d:DesignWidth="400"
+    mc:Ignorable="d">
+    <Grid>
+        <StackPanel Orientation="Horizontal">
+            <Image
+                Name="imgHeart"
+                Margin="0,0,8,0"
+                MouseDown="imgHeart_MouseDown"
+                Source="pack://application:,,,/Icons/heart_black.png" />
+            <Image Margin="0,0,8,0" Source="pack://application:,,,/Icons/comment.png" />
+            <Image Margin="0,0,8,0" Source="pack://application:,,,/Icons/send.png" />
+        </StackPanel>
+        <Image HorizontalAlignment="Right" Source="pack://application:,,,/Icons/bookmark.png" />
+    </Grid>
+</UserControl>

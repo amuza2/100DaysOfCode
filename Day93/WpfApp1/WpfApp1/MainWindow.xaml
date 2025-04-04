@@ -1,0 +1,80 @@
+﻿<Window
+    x:Class="WpfApp1.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:WpfApp1"
+    xmlns:local1="clr-namespace:WpfApp1.UserControls"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Simple binding"
+    Width="550"
+    Height="300"
+    FontSize="14"
+    mc:Ignorable="d">
+
+    <Window.DataContext>
+        <local:MainViewModel />
+    </Window.DataContext>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <StackPanel HorizontalAlignment="Center">
+            <Label
+                x:Name="lblNumbers"
+                HorizontalAlignment="Center"
+                Content="{Binding DisplayText}"
+                FontSize="16" />
+            <StackPanel Orientation="Horizontal">
+                <Button
+                    x:Name="btnEven"
+                    Width="100"
+                    Margin="5"
+                    Command="{Binding ShowEvenCommand}"
+                    Content="Even" />
+                <Button
+                    x:Name="btnOdd"
+                    Width="100"
+                    Margin="5"
+                    Command="{Binding ShowOddCommand}"
+                    Content="Odd" />
+                <Button
+                    x:Name="btnReset"
+                    Width="100"
+                    Margin="5"
+                    Command="{Binding ResetCommand}"
+                    Content="Reset" />
+                <Button
+                    x:Name="btnAscending"
+                    Width="100"
+                    Margin="5"
+                    Command="{Binding AceCommand}"
+                    Content="Ascending" />
+                <Button
+                    x:Name="btnDescending"
+                    Width="100"
+                    Margin="5"
+                    Command="{Binding DescCommand}"
+                    Content="Descending" />
+
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="1">
+            <TextBox
+                x:Name="txbSoundString"
+                Width="150"
+                FontSize="20"
+                Text="{Binding Sound}" />
+            <Button
+                x:Name="btnSound"
+                Width="100"
+                Margin="5"
+                Command="{Binding SoundCommand, Mode=OneTime}"
+                Content="hear Sound" />
+        </StackPanel>
+    </Grid>
+
+
+</Window>

@@ -1,0 +1,55 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <!--<UseWindowsForms>False</UseWindowsForms>-->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Icons\bookmark.png" />
+    <None Remove="Icons\comment.png" />
+    <None Remove="Icons\heart_black.png" />
+    <None Remove="Icons\heart_red.png" />
+    <None Remove="Icons\send.png" />
+    <None Remove="Images\imgPost1.jpeg" />
+    <None Remove="Video\Facebook.mp4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Skins\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="extended.wpf.toolkit" Version="4.6.1" />
+    <PackageReference Include="System.Speech" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Icons\bookmark.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Icons\comment.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Icons\heart_black.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Icons\heart_red.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Icons\send.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\imgPost1.jpeg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Video\Facebook.mp4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

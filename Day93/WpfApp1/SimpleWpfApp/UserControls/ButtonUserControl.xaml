@@ -1,0 +1,18 @@
+﻿<UserControl
+    x:Class="SimpleWpfApp.UserControls.ButtonUserControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:SimpleWpfApp.UserControls"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="50"
+    d:DesignWidth="300"
+    mc:Ignorable="d">
+
+    <Grid Margin="10">
+        <Button
+            Padding="10,5"
+            Command="{Binding AddUserCommand}"
+            Content="Add User" />
+    </Grid>
+</UserControl>

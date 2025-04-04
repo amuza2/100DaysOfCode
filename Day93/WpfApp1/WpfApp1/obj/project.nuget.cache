@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "uL67vZJ1/pE=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day93\\WpfApp1\\WpfApp1\\WpfApp1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\moham\\.nuget\\packages\\extended.wpf.toolkit\\4.6.1\\extended.wpf.toolkit.4.6.1.nupkg.sha512",
+    "C:\\Users\\moham\\.nuget\\packages\\system.speech\\8.0.0\\system.speech.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
