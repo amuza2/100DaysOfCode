@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Sf4qOD7DdeA=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day92\\webApiClient\\webApiClient.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\moham\\.nuget\\packages\\octokit\\14.0.0\\octokit.14.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
