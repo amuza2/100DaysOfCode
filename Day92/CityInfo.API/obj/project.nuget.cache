@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "8Y9xtjxc6g4=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day92\\CityInfo.API\\CityInfo.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\moham\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.2\\microsoft.aspnetcore.openapi.9.0.2.nupkg.sha512",
+    "C:\\Users\\moham\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512",
+    "C:\\Users\\moham\\.nuget\\packages\\scalar.aspnetcore\\2.1.6\\scalar.aspnetcore.2.1.6.nupkg.sha512"
+  ],
+  "logs": []
+}

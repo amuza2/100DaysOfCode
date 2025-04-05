@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "NsYSWuFaZo296l/4L5xySKBlcD9+flPZ0ST88ouLWvU=",
+  "Source": "CityInfo.API",
+  "BasePath": "_content/CityInfo.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
