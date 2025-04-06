@@ -61,7 +61,7 @@ namespace AppDataBinding.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/AppDataBinding;V1.0.0.0;component/views/addandeditwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/AppDataBinding;component/views/addandeditwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\AddAndEditWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

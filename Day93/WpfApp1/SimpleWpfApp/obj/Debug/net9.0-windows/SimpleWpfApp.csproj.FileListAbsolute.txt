@@ -23,11 +23,6 @@ C:\Users\moham\source\repos\WpfApp1\SimpleWpfApp\obj\Debug\net9.0-windows\refint
 C:\Users\moham\source\repos\WpfApp1\SimpleWpfApp\obj\Debug\net9.0-windows\SimpleWpfApp.pdb
 C:\Users\moham\source\repos\WpfApp1\SimpleWpfApp\obj\Debug\net9.0-windows\SimpleWpfApp.genruntimeconfig.cache
 C:\Users\moham\source\repos\WpfApp1\SimpleWpfApp\obj\Debug\net9.0-windows\ref\SimpleWpfApp.dll
-C:\Users\moham\Documents\github\100DaysOfCode\Day93\WpfApp1\SimpleWpfApp\bin\Debug\net9.0-windows\SimpleWpfApp.exe
-C:\Users\moham\Documents\github\100DaysOfCode\Day93\WpfApp1\SimpleWpfApp\bin\Debug\net9.0-windows\SimpleWpfApp.deps.json
-C:\Users\moham\Documents\github\100DaysOfCode\Day93\WpfApp1\SimpleWpfApp\bin\Debug\net9.0-windows\SimpleWpfApp.runtimeconfig.json
-C:\Users\moham\Documents\github\100DaysOfCode\Day93\WpfApp1\SimpleWpfApp\bin\Debug\net9.0-windows\SimpleWpfApp.dll
-C:\Users\moham\Documents\github\100DaysOfCode\Day93\WpfApp1\SimpleWpfApp\bin\Debug\net9.0-windows\SimpleWpfApp.pdb
 C:\Users\moham\Documents\github\100DaysOfCode\Day93\WpfApp1\SimpleWpfApp\obj\Debug\net9.0-windows\MainWindow.g.cs
 C:\Users\moham\Documents\github\100DaysOfCode\Day93\WpfApp1\SimpleWpfApp\obj\Debug\net9.0-windows\UserControls\ButtonUserControl.g.cs
 C:\Users\moham\Documents\github\100DaysOfCode\Day93\WpfApp1\SimpleWpfApp\obj\Debug\net9.0-windows\UserControls\FillUserDataUserControl.g.cs
@@ -35,6 +30,11 @@ C:\Users\moham\Documents\github\100DaysOfCode\Day93\WpfApp1\SimpleWpfApp\obj\Deb
 C:\Users\moham\Documents\github\100DaysOfCode\Day93\WpfApp1\SimpleWpfApp\obj\Debug\net9.0-windows\GeneratedInternalTypeHelper.g.cs
 C:\Users\moham\Documents\github\100DaysOfCode\Day93\WpfApp1\SimpleWpfApp\obj\Debug\net9.0-windows\SimpleWpfApp_MarkupCompile.cache
 C:\Users\moham\Documents\github\100DaysOfCode\Day93\WpfApp1\SimpleWpfApp\obj\Debug\net9.0-windows\SimpleWpfApp_MarkupCompile.lref
+C:\Users\moham\Documents\github\100DaysOfCode\Day93\WpfApp1\SimpleWpfApp\bin\Debug\net9.0-windows\SimpleWpfApp.exe
+C:\Users\moham\Documents\github\100DaysOfCode\Day93\WpfApp1\SimpleWpfApp\bin\Debug\net9.0-windows\SimpleWpfApp.deps.json
+C:\Users\moham\Documents\github\100DaysOfCode\Day93\WpfApp1\SimpleWpfApp\bin\Debug\net9.0-windows\SimpleWpfApp.runtimeconfig.json
+C:\Users\moham\Documents\github\100DaysOfCode\Day93\WpfApp1\SimpleWpfApp\bin\Debug\net9.0-windows\SimpleWpfApp.dll
+C:\Users\moham\Documents\github\100DaysOfCode\Day93\WpfApp1\SimpleWpfApp\bin\Debug\net9.0-windows\SimpleWpfApp.pdb
 C:\Users\moham\Documents\github\100DaysOfCode\Day93\WpfApp1\SimpleWpfApp\obj\Debug\net9.0-windows\MainWindow.baml
 C:\Users\moham\Documents\github\100DaysOfCode\Day93\WpfApp1\SimpleWpfApp\obj\Debug\net9.0-windows\UserControls\ButtonUserControl.baml
 C:\Users\moham\Documents\github\100DaysOfCode\Day93\WpfApp1\SimpleWpfApp\obj\Debug\net9.0-windows\UserControls\FillUserDataUserControl.baml
@@ -49,3 +49,4 @@ C:\Users\moham\Documents\github\100DaysOfCode\Day93\WpfApp1\SimpleWpfApp\obj\Deb
 C:\Users\moham\Documents\github\100DaysOfCode\Day93\WpfApp1\SimpleWpfApp\obj\Debug\net9.0-windows\SimpleWpfApp.pdb
 C:\Users\moham\Documents\github\100DaysOfCode\Day93\WpfApp1\SimpleWpfApp\obj\Debug\net9.0-windows\SimpleWpfApp.genruntimeconfig.cache
 C:\Users\moham\Documents\github\100DaysOfCode\Day93\WpfApp1\SimpleWpfApp\obj\Debug\net9.0-windows\ref\SimpleWpfApp.dll
+C:\Users\moham\Documents\github\100DaysOfCode\Day93\WpfApp1\SimpleWpfApp\obj\Debug\net9.0-windows\App.baml

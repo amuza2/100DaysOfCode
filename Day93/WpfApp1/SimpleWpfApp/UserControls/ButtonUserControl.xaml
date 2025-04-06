@@ -10,9 +10,29 @@
     mc:Ignorable="d">
 
     <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+
         <Button
+            Grid.Column="0"
             Padding="10,5"
             Command="{Binding AddUserCommand}"
-            Content="Add User" />
+            Content="{Binding IsEditing, Converter={StaticResource ButtonTextConverter}}" />
+
+        <Button
+            Grid.Column="1"
+            Margin="10,0,0,0"
+            Padding="10,5"
+            Command="{Binding CancelEditCommand}"
+            Content="Cancel"
+            Visibility="{Binding IsEditing, Converter={StaticResource BooleanToVisibilityConverter}}" />
+
+
+        <!--<Button
+        Padding="10,5"
+        Command="{Binding AddUserCommand}"
+        Content="Add User" />-->
     </Grid>
 </UserControl>
