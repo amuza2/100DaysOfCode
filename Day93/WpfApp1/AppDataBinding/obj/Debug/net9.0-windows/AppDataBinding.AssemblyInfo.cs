@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AppDataBinding")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a8216d110766b597fbb6013f02952058f8a5f65f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e1dcfe9fed79ce8c5651bb081ec611356e63f5fd")]
 [assembly: System.Reflection.AssemblyProductAttribute("AppDataBinding")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AppDataBinding")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
