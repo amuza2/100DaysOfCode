@@ -1,15 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day93\\WpfApp1\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AAFF44EE-2242-4A8E-BBEC-196CBDB2A342}|WPFProject01\\WPFProject01.csproj|c:\\users\\moham\\documents\\github\\100daysofcode\\day93\\wpfapp1\\wpfproject01\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{AAFF44EE-2242-4A8E-BBEC-196CBDB2A342}|WPFProject01\\WPFProject01.csproj|solutionrelative:wpfproject01\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 181,
-          "SelectedChildIndex": -1,
+          "DockedWidth": 200,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,11 +63,23 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day93\\WpfApp1\\WPFProject01\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "WPFProject01\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day93\\WpfApp1\\WPFProject01\\MainWindow.xaml",
+              "RelativeToolTip": "WPFProject01\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-08T19:57:39.988Z",
+              "EditorCaption": ""
             }
           ]
         },
         {
-          "DockedWidth": 209,
+          "DockedWidth": 200,
           "SelectedChildIndex": -1,
           "Children": [
             {

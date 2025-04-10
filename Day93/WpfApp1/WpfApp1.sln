@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppDataBinding", "AppDataBi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleWpfApp", "SimpleWpfApp\SimpleWpfApp.csproj", "{D067C831-F270-4E29-A072-02611ED00EDF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFProject01", "WPFProject01\WPFProject01.csproj", "{AAFF44EE-2242-4A8E-BBEC-196CBDB2A342}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{D067C831-F270-4E29-A072-02611ED00EDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D067C831-F270-4E29-A072-02611ED00EDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D067C831-F270-4E29-A072-02611ED00EDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAFF44EE-2242-4A8E-BBEC-196CBDB2A342}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAFF44EE-2242-4A8E-BBEC-196CBDB2A342}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAFF44EE-2242-4A8E-BBEC-196CBDB2A342}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAFF44EE-2242-4A8E-BBEC-196CBDB2A342}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
