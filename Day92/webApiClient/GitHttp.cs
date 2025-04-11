@@ -46,7 +46,6 @@ public class GitHttp
 
             request.Headers.Add("Authorization", authHeader);
 
-
             var response = await _client.SendAsync(request);
             if (!response.IsSuccessStatusCode)
             {
