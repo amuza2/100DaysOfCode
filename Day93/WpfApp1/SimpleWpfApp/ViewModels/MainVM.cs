@@ -1,69 +1,62 @@
-﻿using SimpleWpfApp.Command;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
+using SimpleWpfApp.Command;
 using SimpleWpfApp.Models;
-using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Input;
+using System.ComponentModel.DataAnnotations;
 
 namespace SimpleWpfApp.ViewModels;
 
-public class MainVM : INotifyPropertyChanged
+public partial class MainVM : ObservableValidator
 {
-    private User _currentUser;
+    [ObservableProperty]
+    [NotifyCanExecuteChangedFor(nameof(AddUserCommand))]
+    [Required(ErrorMessage = "Name is required")]
+    [MinLength(3, ErrorMessage = "Name cannot be less than 3 characters")]
+
+    private string _name;
+
+    [ObservableProperty]
+    [Required(ErrorMessage = "Description is required")]
+    private string _description;
+
+    [ObservableProperty]
+    private bool _isActive;
+
+    public ObservableCollection<User> Users { get; }
+
+    public ObservableCollection<ValidationResult> ValidationErrors { get; set; }
 
     public MainVM()
     {
         Users = new ObservableCollection<User>();
-        CurrentUser = new User();
-        AddUserCommand = new RelayCommand(AddUser, CanAddUser);
     }
-
-    public ObservableCollection<User> Users { get; }
-
-    public User CurrentUser
-    {
-        get => _currentUser;
-        set
-        {
-            if (_currentUser != value)
-            {
-                _currentUser = value;
-                OnPropertyChanged();
-            }
-        }
-    }
-
-    public RelayCommand AddUserCommand { get; }
 
     private bool CanAddUser(object obj)
     {
-        return !string.IsNullOrWhiteSpace(CurrentUser.Name);
+        ValidateAllProperties();
+
+        return !string.IsNullOrWhiteSpace(Name) && !HasErrors && Name.Length >= 3;
     }
 
+    [RelayCommand(CanExecute = nameof(CanAddUser))]
     private void AddUser(object obj)
     {
+        ValidateAllProperties();
+
+        if(HasErrors)
+            return;
+        
         Users.Add(new User
         {
-            Name = CurrentUser.Name,
-            Description = CurrentUser.Description,
-            IsActive = CurrentUser.IsActive
+            Name = Name,
+            Description = Description,
+            IsActive = IsActive
         });
+        Name = string.Empty;
+        Description = string.Empty;
+        IsActive = false;
 
-        // Reset current user
-        CurrentUser = new User();
     }
-
-    public event PropertyChangedEventHandler PropertyChanged;
-
-    protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
-    {
-        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-    }
-
-
 }

@@ -14,7 +14,7 @@
             <TextBox Margin="0,0,0,10" Text="{Binding CurrentUser.Name, UpdateSourceTrigger=PropertyChanged}" />
 
             <Label Content="Description:" />
-            <TextBox Margin="0,0,0,10" Text="{Binding CurrentUser.Description}" />
+            <TextBox Margin="0,0,0,10" Text="{Binding CurrentUser.Description, UpdateSourceTrigger=PropertyChanged}" />
 
             <CheckBox
                 Margin="0,0,0,10"

@@ -7,6 +7,7 @@ Console.WriteLine("Hello, World!");
 // var result = await RunApiKey.Run();
 
 // Console.WriteLine(result);
-var basicToken = GitHttp.GetBasicToken();
-await GitHttp.GetUser61Times(basicToken);
+// var basicToken = GitHttp.GetBasicToken();
+// await GitHttp.GetUser61Times(basicToken);
 
+await Demo.Run();

@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CityInfo.API", "CityInfo.AP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "webApiClient", "webApiClient\webApiClient.csproj", "{6CEE8827-2BFD-4347-8F5C-C16A943AA63D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnRazorPages", "LearnRazorPages\LearnRazorPages.csproj", "{B13ACEE4-5E0C-4D0D-9634-98EDFB7E114C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,18 @@ Global
 		{6CEE8827-2BFD-4347-8F5C-C16A943AA63D}.Release|x64.Build.0 = Release|Any CPU
 		{6CEE8827-2BFD-4347-8F5C-C16A943AA63D}.Release|x86.ActiveCfg = Release|Any CPU
 		{6CEE8827-2BFD-4347-8F5C-C16A943AA63D}.Release|x86.Build.0 = Release|Any CPU
+		{B13ACEE4-5E0C-4D0D-9634-98EDFB7E114C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B13ACEE4-5E0C-4D0D-9634-98EDFB7E114C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B13ACEE4-5E0C-4D0D-9634-98EDFB7E114C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B13ACEE4-5E0C-4D0D-9634-98EDFB7E114C}.Debug|x64.Build.0 = Debug|Any CPU
+		{B13ACEE4-5E0C-4D0D-9634-98EDFB7E114C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B13ACEE4-5E0C-4D0D-9634-98EDFB7E114C}.Debug|x86.Build.0 = Debug|Any CPU
+		{B13ACEE4-5E0C-4D0D-9634-98EDFB7E114C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B13ACEE4-5E0C-4D0D-9634-98EDFB7E114C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B13ACEE4-5E0C-4D0D-9634-98EDFB7E114C}.Release|x64.ActiveCfg = Release|Any CPU
+		{B13ACEE4-5E0C-4D0D-9634-98EDFB7E114C}.Release|x64.Build.0 = Release|Any CPU
+		{B13ACEE4-5E0C-4D0D-9634-98EDFB7E114C}.Release|x86.ActiveCfg = Release|Any CPU
+		{B13ACEE4-5E0C-4D0D-9634-98EDFB7E114C}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

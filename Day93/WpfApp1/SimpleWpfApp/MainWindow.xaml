@@ -10,11 +10,8 @@
     Title="MainWindow"
     Width="500"
     Height="450"
+    ThemeMode="System"
     mc:Ignorable="d">
-
-    <Window.DataContext>
-        <viewmodels:MainVM />
-    </Window.DataContext>
 
     <Grid Margin="10">
         <Grid.RowDefinitions>
@@ -24,10 +21,33 @@
         </Grid.RowDefinitions>
 
         <!--  User Input Control  -->
-        <views:FillUserDataUserControl Grid.Row="0" />
+        <StackPanel>
+            <Label Content="Name:" />
+            <TextBox Margin="0,0,0,10" Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}" />
+            <TextBlock
+                Margin="0,0,0,10"
+                Foreground="Red"
+                Text="{Binding (Validation.Errors)[0].ErrorContent, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type TextBox}}}" />
+
+            <Label Content="Description:" />
+            <TextBox Margin="0,0,0,10" Text="{Binding Description, UpdateSourceTrigger=PropertyChanged}" />
+            <TextBlock
+                Margin="0,0,0,10"
+                Foreground="Red"
+                Text="{Binding (Validation.Errors)[0].ErrorContent, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type TextBox}}}" />
+
+            <CheckBox
+                Margin="0,0,0,10"
+                Content="Is Active"
+                IsChecked="{Binding IsActive, UpdateSourceTrigger=PropertyChanged}" />
+        </StackPanel>
 
         <!--  Button Control  -->
-        <views:ButtonUserControl Grid.Row="1" />
+        <Button
+            Grid.Row="1"
+            Padding="10,5"
+            Command="{Binding AddUserCommand}"
+            Content="Add User" />
 
         <!--  DataGrid  -->
         <DataGrid
