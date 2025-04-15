@@ -50,3 +50,6 @@ C:\Users\moham\Documents\github\100DaysOfCode\Day93\WpfApp1\SimpleWpfApp\obj\Deb
 C:\Users\moham\Documents\github\100DaysOfCode\Day93\WpfApp1\SimpleWpfApp\obj\Debug\net9.0-windows\SimpleWpfApp.genruntimeconfig.cache
 C:\Users\moham\Documents\github\100DaysOfCode\Day93\WpfApp1\SimpleWpfApp\obj\Debug\net9.0-windows\ref\SimpleWpfApp.dll
 C:\Users\moham\Documents\github\100DaysOfCode\Day93\WpfApp1\SimpleWpfApp\obj\Debug\net9.0-windows\App.baml
+C:\Users\moham\Documents\github\100DaysOfCode\Day93\WpfApp1\SimpleWpfApp\bin\Debug\net9.0-windows\CommunityToolkit.Mvvm.dll
+C:\Users\moham\Documents\github\100DaysOfCode\Day93\WpfApp1\SimpleWpfApp\obj\Debug\net9.0-windows\SimpleWpfApp.csproj.AssemblyReference.cache
+C:\Users\moham\Documents\github\100DaysOfCode\Day93\WpfApp1\SimpleWpfApp\obj\Debug\net9.0-windows\SimpleWp.075F94E8.Up2Date

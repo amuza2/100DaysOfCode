@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day93\\WpfApp1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AAFF44EE-2242-4A8E-BBEC-196CBDB2A342}|WPFProject01\\WPFProject01.csproj|c:\\users\\moham\\documents\\github\\100daysofcode\\day93\\wpfapp1\\wpfproject01\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{AAFF44EE-2242-4A8E-BBEC-196CBDB2A342}|WPFProject01\\WPFProject01.csproj|solutionrelative:wpfproject01\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{D067C831-F270-4E29-A072-02611ED00EDF}|SimpleWpfApp\\SimpleWpfApp.csproj|c:\\users\\moham\\documents\\github\\100daysofcode\\day93\\wpfapp1\\simplewpfapp\\viewmodels\\mainvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D067C831-F270-4E29-A072-02611ED00EDF}|SimpleWpfApp\\SimpleWpfApp.csproj|solutionrelative:simplewpfapp\\viewmodels\\mainvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D067C831-F270-4E29-A072-02611ED00EDF}|SimpleWpfApp\\SimpleWpfApp.csproj|c:\\users\\moham\\documents\\github\\100daysofcode\\day93\\wpfapp1\\simplewpfapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D067C831-F270-4E29-A072-02611ED00EDF}|SimpleWpfApp\\SimpleWpfApp.csproj|solutionrelative:simplewpfapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -13,7 +17,7 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
+          "DockedWidth": 444,
           "SelectedChildIndex": 12,
           "Children": [
             {
@@ -67,19 +71,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day93\\WpfApp1\\WPFProject01\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "WPFProject01\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day93\\WpfApp1\\WPFProject01\\MainWindow.xaml",
-              "RelativeToolTip": "WPFProject01\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-08T19:57:39.988Z",
+              "Title": "MainVM.cs",
+              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day93\\WpfApp1\\SimpleWpfApp\\ViewModels\\MainVM.cs",
+              "RelativeDocumentMoniker": "SimpleWpfApp\\ViewModels\\MainVM.cs",
+              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day93\\WpfApp1\\SimpleWpfApp\\ViewModels\\MainVM.cs",
+              "RelativeToolTip": "SimpleWpfApp\\ViewModels\\MainVM.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAF4AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T12:02:30.99Z",
               "EditorCaption": ""
             }
           ]
         },
         {
-          "DockedWidth": 200,
+          "DockedWidth": 352,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day93\\WpfApp1\\SimpleWpfApp\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "SimpleWpfApp\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day93\\WpfApp1\\SimpleWpfApp\\MainWindow.xaml",
+              "RelativeToolTip": "SimpleWpfApp\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-15T12:01:40.148Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 89,
           "SelectedChildIndex": -1,
           "Children": [
             {

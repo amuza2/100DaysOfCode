@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "pO427TlrPv0=",
+  "dgSpecHash": "UQfWURJw/yk=",
   "success": true,
   "projectFilePath": "C:\\Users\\moham\\Documents\\github\\100DaysOfCode\\Day93\\WpfApp1\\SimpleWpfApp\\SimpleWpfApp.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\moham\\.nuget\\packages\\communitytoolkit.mvvm\\8.4.0\\communitytoolkit.mvvm.8.4.0.nupkg.sha512"
+  ],
   "logs": []
 }
