@@ -61,7 +61,7 @@ namespace WpfApp1.UserControls {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WpfApp1;V1.0.0.0;component/usercontrols/postoperationsusercontrole.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WpfApp1;component/usercontrols/postoperationsusercontrole.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\UserControls\PostOperationsUserControle.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
