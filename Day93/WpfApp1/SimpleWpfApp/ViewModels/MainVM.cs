@@ -1,4 +1,5 @@
 ﻿using SimpleWpfApp.Command;
+using SimpleWpfApp.Enums;
 using SimpleWpfApp.Models;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
