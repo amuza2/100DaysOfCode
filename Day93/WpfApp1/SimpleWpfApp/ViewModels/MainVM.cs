@@ -14,11 +14,11 @@ public partial class MainVM : ObservableValidator
     [NotifyCanExecuteChangedFor(nameof(AddUserCommand))]
     [Required(ErrorMessage = "Name is required")]
     [MinLength(3, ErrorMessage = "Name cannot be less than 3 characters")]
-
     private string _name;
 
+    //[Required(ErrorMessage = "Description is required")]
+    //[MinLength(3, ErrorMessage = "Description cannot be less than 3 characters")]
     [ObservableProperty]
-    [Required(ErrorMessage = "Description is required")]
     private string _description;
 
     [ObservableProperty]
@@ -26,28 +26,31 @@ public partial class MainVM : ObservableValidator
 
     public ObservableCollection<User> Users { get; }
 
-    public ObservableCollection<ValidationResult> ValidationErrors { get; set; }
+    //public ObservableCollection<ValidationResult> ValidationErrors { get; set; }
 
     public MainVM()
     {
         Users = new ObservableCollection<User>();
+    }
+    partial void OnNameChanged(string value)
+    {
+        ValidateProperty(value, nameof(Name));
     }
 
     private bool CanAddUser(object obj)
     {
         ValidateAllProperties();
 
-        return !string.IsNullOrWhiteSpace(Name) && !HasErrors && Name.Length >= 3;
+        return !HasErrors;
     }
 
+    //[RelayCommand]
     [RelayCommand(CanExecute = nameof(CanAddUser))]
     private void AddUser(object obj)
     {
-        ValidateAllProperties();
-
-        if(HasErrors)
+        if (HasErrors)
             return;
-        
+
         Users.Add(new User
         {
             Name = Name,

@@ -2,12 +2,9 @@
 
 namespace SimpleWpfApp.Models;
 
-public partial class User : ObservableObject
+public class User
 {
-    [ObservableProperty]
-    private string _name;
-    [ObservableProperty]
-    private string _description;
-    [ObservableProperty]
-    private bool _isActive;
+    public string Name { get; set; }
+    public string Description { get; set; }
+    public bool IsActive { get; set; }
 }

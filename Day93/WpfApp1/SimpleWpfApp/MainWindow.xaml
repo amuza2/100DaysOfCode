@@ -4,13 +4,17 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:SimpleWpfApp"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:viewmodels="clr-namespace:SimpleWpfApp.ViewModels"
     xmlns:views="clr-namespace:SimpleWpfApp.UserControls"
     Title="MainWindow"
     Width="500"
     Height="450"
-    ThemeMode="System"
+    FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto"
+    Style="{StaticResource MaterialDesignWindow}"
+    TextElement.FontSize="14"
+    TextElement.FontWeight="Medium"
     mc:Ignorable="d">
 
     <Grid Margin="10">
@@ -22,24 +26,24 @@
 
         <!--  User Input Control  -->
         <StackPanel>
-            <Label Content="Name:" />
-            <TextBox Margin="0,0,0,10" Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}" />
-            <TextBlock
-                Margin="0,0,0,10"
-                Foreground="Red"
-                Text="{Binding (Validation.Errors)[0].ErrorContent, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type TextBox}}}" />
+            <TextBlock Text="Name:" />
+            <TextBox
+                x:Name="NameTextBox"
+                Margin="0,0,2,10"
+                Text="{Binding Name, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" />
+            <!--<TextBlock
+            Margin="0,-5,0,10"
+            Foreground="Red"
+            Text="{Binding (Validation.Errors)[0].ErrorContent, ElementName=NameTextBox, FallbackValue=''}" />-->
 
-            <Label Content="Description:" />
-            <TextBox Margin="0,0,0,10" Text="{Binding Description, UpdateSourceTrigger=PropertyChanged}" />
-            <TextBlock
-                Margin="0,0,0,10"
-                Foreground="Red"
-                Text="{Binding (Validation.Errors)[0].ErrorContent, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type TextBox}}}" />
+
+            <TextBlock Margin="0,20,0,0" Text="Description:" />
+            <TextBox Margin="0,0,0,10" Text="{Binding Description, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" />
 
             <CheckBox
                 Margin="0,0,0,10"
                 Content="Is Active"
-                IsChecked="{Binding IsActive, UpdateSourceTrigger=PropertyChanged}" />
+                IsChecked="{Binding IsActive, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" />
         </StackPanel>
 
         <!--  Button Control  -->
@@ -47,7 +51,16 @@
             Grid.Row="1"
             Padding="10,5"
             Command="{Binding AddUserCommand}"
-            Content="Add User" />
+            FontWeight="Light"
+            Foreground="#fff">
+            <StackPanel VerticalAlignment="Center" Orientation="Horizontal">
+                <materialDesign:PackIcon
+                    Width="16"
+                    Height="16"
+                    Kind="Add" />
+                <TextBlock Text="Add User" />
+            </StackPanel>
+        </Button>
 
         <!--  DataGrid  -->
         <DataGrid

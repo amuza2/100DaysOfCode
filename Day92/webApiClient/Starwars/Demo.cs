@@ -6,7 +6,7 @@ public static class Demo
 {
     public static async Task Run()
     {
-        var client = new StarWarsClient();
+        var client = new StarWarsClientRestSharp();
         var filmResponse = await client.GetFilms();
         var films = filmResponse.Data;
 
